@@ -23,21 +23,28 @@ config-key caveat, and current styling capabilities).
 
 ## Step 2 — Stand up WordPress (default: no Docker, one command)
 
-Prefer the **Docker-free** path — it needs nothing but Node:
+Prefer the **pre-baked snapshot** path — no Docker, no git clone, nothing but Node:
 
 ```
-git clone https://github.com/Algorismus-io/elementor-ultra-mcp
-cd elementor-ultra-mcp && node dev/playground/setup-playground.mjs
+npx @algorismus/elementor-ultra-playground
 ```
 
-This runs WordPress (PHP-WASM) + Elementor free + the companion plugin on `http://127.0.0.1:8899`,
-handles permalinks and plain-HTTP app-password auth, and **prints `WP_URL` / `WP_USER` /
-`WP_APP_PASSWORD`**. Leave it running. When it finishes green, **skip Steps 3–4** and verify:
+This hydrates a ready-made WordPress (PHP-WASM) + Elementor free + companion plugin site on
+`http://127.0.0.1:8899` — booting from a snapshot instead of installing WordPress and Elementor from
+scratch, so it's up in seconds (~25–30 s the first time incl. a one-time ~50 MB download; ~5 s after).
+It **prints `WP_URL` / `WP_USER` / `WP_APP_PASSWORD`** (the app password is baked into the snapshot).
+Leave it running. When it's green, **skip Steps 3–4** and verify:
 `curl -u USER:APP_PASSWORD http://127.0.0.1:8899/wp-json/elementor-ultra/v1/site/capabilities` → 200.
 
+Reset any time with `npx @algorismus/elementor-ultra-playground --fresh`; change port with `--port`.
+
+Fallbacks, only if the snapshot path fails: the same Playground provisioner from source
+(`git clone https://github.com/Algorismus-io/elementor-ultra-mcp && cd elementor-ultra-mcp && node
+dev/playground/setup-playground.mjs`), or Docker (`bash dev/setup.sh`).
+
 Only ask the human about a WordPress target if they have an **existing site** to use, or explicitly
-prefer Docker (`bash dev/setup.sh`) or a stack they already run (XAMPP/LocalWP). For an existing
-site: get its URL, confirm `…/wp-json/` lists an `elementor` namespace, then do Steps 3–4.
+prefer a stack they already run (XAMPP/LocalWP). For an existing site: get its URL, confirm
+`…/wp-json/` lists an `elementor` namespace, then do Steps 3–4.
 
 ## Step 3 — Authenticate (existing sites only)
 
