@@ -37,6 +37,8 @@ Leave it running. When it's green, **skip Steps 3–4** and verify:
 `curl -u USER:APP_PASSWORD http://127.0.0.1:8899/wp-json/elementor-ultra/v1/site/capabilities` → 200.
 
 Reset any time with `npx @algorismus/elementor-ultra-playground --fresh`; change port with `--port`.
+The server self-supervises: if it ever crashes it restarts itself within seconds and your site state
+persists — if a request suddenly fails, wait ~15 s and retry before diagnosing.
 
 Fallbacks, only if the snapshot path fails: the same Playground provisioner from source
 (`git clone https://github.com/Algorismus-io/elementor-ultra-mcp && cd elementor-ultra-mcp && node
@@ -57,7 +59,7 @@ passwords need HTTPS in production.)
 ## Step 4 — Companion plugin (existing sites only)
 
 If `…/wp-json/elementor-ultra/v1/site/capabilities` 404s, install `elementor-ultra-mcp.zip` from
-`https://github.com/Algorismus-io/elementor-ultra-mcp/releases` (Plugins → Add New → Upload →
+`https://github.com/Algorismus-io/elementor-ultra-mcp/releases` (use the latest `plugin-v*` release; Plugins → Add New → Upload →
 Activate), or via wp-cli if you have shell access. Re-check for 200.
 
 ## Step 5 — Wire the MCP server into this client
