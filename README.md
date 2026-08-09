@@ -25,14 +25,17 @@ Prefer a wizard? `npx @algorismus/create-elementor-ultra`.
 | CLI + compiler | [`@algorismus/elementor-jsx`](https://github.com/Algorismus-io/elementor-jsx) | write small typed JSX components → native Elementor V4 JSON, deploy over REST |
 | MCP server | [`@algorismus/elementor-ultra-mcp`](https://github.com/Algorismus-io/elementor-ultra-mcp) | ~90 agent tools; runs via `npx` — build, refactor, govern pages, HTML→Elementor convert |
 | Companion plugin | in the MCP repo's [releases](https://github.com/Algorismus-io/elementor-ultra-mcp/releases) | the authoritative WordPress REST write path (validation, backups, rollback) |
+| Verify studio | [`@algorismus/elementor-ultra-studio`](https://github.com/Algorismus-io/elementor-ultra-studio) | post-deploy gates + health doctor: `eu-studio check / doctor / measure` (Playwright-driven, no hand-written scripts) |
 | Installer | [`@algorismus/create-elementor-ultra`](https://github.com/Algorismus-io/create-elementor-ultra) | one-command interactive onboarding + the skills knowledge base |
 
 ## Common tasks
 
 - **Set up** → paste the prompt above, or `npx @algorismus/create-elementor-ultra`
+- **Iterate live** → `npx exjsx dev site --gates` (watch → rebuild → smart deploy → preview on :4477; `--gates` re-checks changed pages per save)
 - **Update** → [UPDATE.md](UPDATE.md) (`npm i -D @algorismus/elementor-jsx@latest`, then rebuild + redeploy)
-- **Local WordPress with no Docker** → `node dev/playground/setup-playground.mjs` in the MCP repo
+- **Local WordPress with no Docker** → `npx @algorismus/elementor-ultra-playground` (pre-baked snapshot, up in seconds)
 - **Fix an error** → the skills knowledge base's `references/troubleshooting.md`
+- **Docs** → [docs.wpos.ai/ultra](https://docs.wpos.ai/ultra)
 
 ## Requirements
 

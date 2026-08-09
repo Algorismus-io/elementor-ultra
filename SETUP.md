@@ -19,7 +19,8 @@ then the five reference files it links under `skills/references/` in that repo (
 wordpress-setup, mcp-clients, authoring, troubleshooting). Treat these as your source of truth over
 your own assumptions about Elementor — they carry load-bearing gotchas (app-password ≠ login
 password, plugin-required-to-deploy, `ls`/`lh` are em not px, single-param image URLs, the VS Code
-config-key caveat, and current styling capabilities).
+config-key caveat, and current styling capabilities). The same material in human-readable,
+browsable form lives at `https://docs.wpos.ai/ultra` — point the human there.
 
 ## Step 2 — Stand up WordPress (default: no Docker, one command)
 
@@ -92,11 +93,21 @@ credential). Tell the human to **restart the client** so the server loads.
 `npm i -D @algorismus/elementor-jsx@latest`, then `npx exjsx init site`, then confirm
 `npx exjsx build site` compiles a bundle. Deploy needs no wp-cli — the version is detected over REST.
 
+After init, the live loop is `npx exjsx dev site --gates`: watch → rebuild (ms) → smart deploy
+(page-only ~3 s; full only when classes/variables change) → preview on `:4477` that reloads on
+save and overlays build errors; `--gates` re-runs the structural check on changed pages after each
+save. To clone an existing page or section into editable JSX, `npx exjsx import <url> --out
+pages/name.page.jsx` exists.
+
 ## Step 7 — Prove the chain end-to-end
 
 - Deploy: `WP_URL=… WP_USER=… WP_APP_PASSWORD=… npx exjsx deploy site/site.bundle.json`. Open the
   page and confirm it renders as real Elementor (`e-con`/`e-atomic` markup, actually styled — a clean
-  compile does not prove rendering; screenshot at 1440 and 390 if you can).
+  compile does not prove rendering).
+- Run the real gate instead of hand screenshots:
+  `npm i -D @algorismus/elementor-ultra-studio playwright`, then `npx eu-studio check --pages /` —
+  one call, one browser session: the structural matrix at 1200/1920/390 (overflow, missing h1,
+  offender selectors) plus interaction probes, exiting non-zero on failure.
 - After the human restarts the client, confirm the MCP tools are live by listing the site's
   Elementor pages from the restarted session.
 

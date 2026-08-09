@@ -19,6 +19,12 @@ npx exjsx build site
 WP_URL=… WP_USER=… WP_APP_PASSWORD=… npx exjsx deploy site/site.bundle.json --force
 ```
 
+Updating also brings the newer verbs: `exjsx dev <dir> [--gates]` — the live loop (watch →
+rebuild in ms → smart deploy → preview on `:4477`; `--gates` re-runs the structural check on
+changed pages per save) — and `exjsx import <url> --out pages/name.page.jsx`, which captures an
+existing page's computed styles into editable JSX. Run `npx exjsx api` for the current one-page
+API card.
+
 ## MCP server (`@algorismus/elementor-ultra-mcp`)
 
 Nothing to do — the MCP config runs it with `npx -y @algorismus/elementor-ultra-mcp`, which pulls
