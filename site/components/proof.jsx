@@ -34,7 +34,7 @@ export const Proof = ({ theme: t }) => (
       <div class="ultra-stamp">CERTIFIED 4.1.4 / 4.2.0</div>
       <video id="chrig-video" muted playsinline preload="metadata"
         poster="https://docs.wpos.ai/images/ultra/examples/housemait-thumb.jpg"
-        src="https://docs.wpos.ai/videos/ultra/examples/housemait.mp4"></video>
+        src="https://docs.wpos.ai/videos/ultra/examples/housemait.mp4?v=3"></video>
       <div class="chrig-rail" id="chrig-rail" aria-label="Film timeline">
         <div class="chrig-progress" id="chrig-progress"></div>
       </div>
@@ -57,7 +57,7 @@ export const Proof = ({ theme: t }) => (
   var fullBtn=document.getElementById('chrig-full');
   var cap=document.querySelector('.chrig-cap');
   var full=false, active=-1, F=FILMS[0], cards=[], pendingSeek=null;
-  var BASE='https://docs.wpos.ai';
+  var BASE='https://docs.wpos.ai', VQ='?v=3';
   function endT(i){return i<F.ch.length-1?F.ch[i+1].s:F.end}
   function go(i,seek){
     if(i===active&&!seek)return;
@@ -182,7 +182,7 @@ export const Proof = ({ theme: t }) => (
     fullBtn.textContent='\u25b6 WATCH FULL FILM';
     v.pause();
     v.poster=BASE+'/images/ultra/examples/'+F.slug+'-thumb.jpg';
-    v.src=BASE+'/videos/ultra/examples/'+F.slug+'.mp4';
+    v.src=BASE+'/videos/ultra/examples/'+F.slug+'.mp4'+VQ;
     buildFilm();
     var chips=document.querySelectorAll('#chip-row>div');
     chips.forEach(function(c,j){c.classList.toggle('film-on',j===i)});
