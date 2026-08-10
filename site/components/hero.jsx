@@ -24,7 +24,7 @@ export const Hero = ({ theme: t }) => (
   <span class="al-label">WORKS WITH</span>
   <span class="al-chip"><img src="/wp-content/uploads/logos/claude.svg" alt="" />Claude Code</span>
   <span class="al-chip"><img src="/wp-content/uploads/logos/cursor.svg" alt="" />Cursor</span>
-  <span class="al-chip"><img src="/wp-content/uploads/logos/windsurf.svg" alt="" />Windsurf</span>
+  <span class="al-chip"><img src="/wp-content/uploads/logos/codex.svg" alt="" />Codex</span>
   <span class="al-chip"><img src="/wp-content/uploads/logos/githubcopilot.svg" alt="" />Copilot</span>
   <span class="al-chip al-any">any MCP agent</span>
 </div>
