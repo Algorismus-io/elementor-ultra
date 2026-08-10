@@ -111,7 +111,7 @@ export const Chrome = ({ theme: t }) => (
   #chrig-full{appearance:none;border:1.5px solid ${t.color.goBright};background:transparent;color:${t.color.goBright};
     border-radius:999px;padding:7px 14px;font-family:'GeistM',monospace;font-size:11.5px;letter-spacing:.1em;cursor:pointer;white-space:nowrap}
   #chrig-full:hover{background:${t.color.goBright};color:${t.color.stage}}
-  .chrig-chapters{display:flex;flex-direction:column;gap:14vh;padding:6vh 0 10vh}
+  .chrig-chapters{display:flex;flex-direction:column;gap:4.5vh;padding:1vh 0 4vh}
   .chrig-card{border:1.5px solid ${t.color.line};border-radius:14px;padding:18px 20px;background:#FFFFFF;
     cursor:pointer;opacity:.45;transform:translateY(6px);transition:opacity .4s,transform .4s,border-color .4s}
   .chrig-card.on{opacity:1;transform:none;border-color:${t.color.ink};box-shadow:6px 6px 0 ${t.color.ink}}
@@ -131,6 +131,12 @@ export const Chrome = ({ theme: t }) => (
     .chrig-cap{font-size:10px}
   }
 
+  #chip-row>div{position:relative;transition:transform .25s,box-shadow .25s}
+  #chip-row>div.film-on{box-shadow:5px 5px 0 ${t.color.ink};transform:translateY(-3px)}
+  #chip-row>div.film-on::after{content:'\\25b6  IN PLAYER';position:absolute;right:10px;bottom:8px;
+    font-family:'GeistM',monospace;font-size:9px;letter-spacing:.1em;opacity:.85}
+  .chip-go{position:absolute;top:8px;right:10px;font-size:13px;text-decoration:none;opacity:.7;color:inherit}
+  .chip-go:hover{opacity:1}
   /* ---- exhibits: rotation + stamp ---- */
   #film-frame{transform:rotate(-.6deg);position:relative}
   #seam-blob{transform:rotate(-.8deg)}
