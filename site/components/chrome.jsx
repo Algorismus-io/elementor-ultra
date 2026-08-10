@@ -113,9 +113,9 @@ export const Chrome = ({ theme: t }) => (
     mask-image:linear-gradient(to bottom,transparent,black 7%,black 89%,transparent)}
   .chrig-frame{background:${t.color.ink};border-radius:18px;padding:10px;position:relative;transform:rotate(-.4deg)}
   .chrig-frame video{width:100%;display:block;border-radius:10px;background:#000}
-  .chrig-rail{position:relative;height:22px;margin:12px 6px 2px;background:#26262E;border-radius:6px;cursor:pointer}
-  .chrig-progress{position:absolute;left:0;top:0;bottom:0;background:${t.color.goBright};border-radius:6px;width:0;opacity:.85}
-  .chrig-tick{position:absolute;top:-4px;width:3px;height:30px;background:${t.color.paper};border:0;padding:0;
+  .chrig-rail{position:relative;height:8px;margin:14px 6px 4px;background:#26262E;border-radius:4px;cursor:pointer}
+  .chrig-progress{position:absolute;left:0;top:0;bottom:0;background:${t.color.goBright};border-radius:4px;width:0;opacity:.85}
+  .chrig-tick{position:absolute;top:-4px;width:2.5px;height:16px;background:${t.color.paper};border:0;padding:0;
     cursor:pointer;opacity:.55;transition:opacity .2s,transform .2s}
   .chrig-tick:hover{opacity:1;transform:scaleY(1.15)}
   .chrig-tick.on{opacity:1;background:${t.color.goBright};box-shadow:0 0 0 2px rgba(40,200,64,.35)}
@@ -144,7 +144,7 @@ export const Chrome = ({ theme: t }) => (
     .chrig.finale .chrig-chapters-vp{opacity:1;pointer-events:auto}
     /* the clip strip — horizontal video-editor timeline */
     .chrig-chapters{flex-direction:row;overflow-x:auto;gap:10px;padding:4px 2px 12px;transition:none;
-      scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;transform:none !important;max-width:100%}
+      scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;transform:none !important;max-width:100%;position:relative}
     .chrig-card{flex:0 0 205px;scroll-snap-align:start;padding:12px 14px;opacity:.55;transform:none}
     .chrig-card.on{opacity:1;box-shadow:3px 3px 0 ${t.color.ink}}
     .cc-t{font-size:18px;margin:6px 0 0}

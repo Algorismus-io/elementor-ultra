@@ -168,7 +168,17 @@ export const Proof = ({ theme: t }) => (
       }
       return;
     }
-    if(full||active<0)return;
+    if(full){
+      var fi=chapterAt(v.currentTime);
+      if(fi!==active){
+        active=fi;
+        cards.forEach(function(c,j){c.classList.toggle('on',j===fi)});
+        rail.querySelectorAll('.chrig-tick').forEach(function(k,j){k.classList.toggle('on',j===fi)});
+        centerCard(fi);
+      }
+      return;
+    }
+    if(active<0)return;
     if(v.currentTime>=endT(active)-.05){
       if(canAuto()&&!advancing){
         advancing=true;
