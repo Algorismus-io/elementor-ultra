@@ -58,6 +58,7 @@ LIFECYCLE ... update: npm i -D @algorismus/elementor-jsx@latest, then
 DOCS ........ https://docs.wpos.ai/ultra
 REPO ........ https://github.com/Algorismus-io/elementor-jsx
 SETUP REPO .. https://github.com/Algorismus-io/elementor-ultra
+NPM ......... https://www.npmjs.com/package/@algorismus/elementor-jsx
 
 PROOF ....... 8 production-shaped sites, built live on camera,
               one prompt each, zero human edits:

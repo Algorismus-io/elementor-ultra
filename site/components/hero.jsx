@@ -10,6 +10,7 @@ export const Nav = ({ theme: t }) => (
       <text href="https://docs.wpos.ai/ultra" size={14} font={t.font.body} color={t.color.dim}>Docs</text>
       <text href="https://docs.wpos.ai/ultra/examples/overview" size={14} font={t.font.body} color={t.color.dim}>Examples</text>
       <text href="https://github.com/Algorismus-io/elementor-jsx" size={14} font={t.font.body} color={t.color.dim}>GitHub</text>
+      <text href="https://www.npmjs.com/package/@algorismus/elementor-jsx" size={14} font={t.font.body} color={t.color.dim}>npm</text>
     </row>
   </row>
 );
