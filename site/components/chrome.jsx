@@ -100,6 +100,11 @@ export const Chrome = ({ theme: t }) => (
   .chrig{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:26px;width:100%;
     position:sticky;top:86px;align-items:start}
   .chrig-stage{}
+  .chrig{transition:grid-template-columns .7s cubic-bezier(.22,1,.36,1)}
+  .chrig.finale{grid-template-columns:minmax(0,1fr) minmax(0,0.001fr);gap:0}
+  .chrig.finale .chrig-chapters-vp{opacity:0;pointer-events:none;transition:opacity .45s ease}
+  .chrig.finale .chrig-frame{transform:none}
+  .chrig-chapters-vp{transition:opacity .45s ease}
   .chrig-chapters-vp{height:calc(100vh - 140px);overflow:hidden;position:relative;
     -webkit-mask-image:linear-gradient(to bottom,transparent,black 7%,black 89%,transparent);
     mask-image:linear-gradient(to bottom,transparent,black 7%,black 89%,transparent)}
@@ -131,6 +136,8 @@ export const Chrome = ({ theme: t }) => (
     .chrig{display:flex;flex-direction:column;gap:16px;position:static}
     .chrig-chapters-vp{height:auto;overflow:visible;-webkit-mask-image:none;mask-image:none}
     .chrig-chapters{padding:0;transition:none}
+    .chrig.finale{grid-template-columns:none;gap:16px}
+    .chrig.finale .chrig-chapters-vp{opacity:1;pointer-events:auto}
     .chrig-stage{position:static}
     .chrig-frame{transform:none}
     .chrig-chapters{gap:12px;padding:0}
