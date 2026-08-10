@@ -29,6 +29,25 @@ export const Chrome = ({ theme: t }) => (
   #human-surface,#agent-surface{animation:ultra-fade .45s ease}
   @keyframes ultra-fade{from{opacity:0}to{opacity:1}}
 
+  /* ---- hero: logo strip + mega heading ---- */
+  .agent-logos{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:4px 0 10px;
+    font-family:'GeistM',ui-monospace,monospace}
+  .agent-logos .al-label{font-size:11px;letter-spacing:.16em;color:${t.color.dim};margin-right:6px}
+  .al-chip{display:inline-flex;align-items:center;gap:8px;border:1.5px solid ${t.color.ink};
+    border-radius:999px;padding:8px 14px;font-size:12.5px;color:${t.color.ink};background:#FFFFFF;
+    transition:transform .25s}
+  .al-chip:hover{transform:translateY(-3px)}
+  .al-chip img{width:16px;height:16px;display:block}
+  .al-chip.al-any{border-style:dashed;color:${t.color.dim}}
+  .mega{font-family:'Meso','Anton',sans-serif;font-weight:400;font-size:min(7.1vw,96px);
+    line-height:1.02;text-transform:uppercase;color:${t.color.ink};margin:6px 0 0;letter-spacing:.005em}
+  .mega .l2{-webkit-text-stroke:2.5px ${t.color.ink};color:transparent}
+  .mega .pencil{-webkit-text-stroke:0;color:${t.color.ink};font-family:'Apple Color Emoji','Segoe UI Emoji',sans-serif}
+  .mega .e-mark{height:.78em;width:auto;vertical-align:-6%;display:inline-block}
+  @media(max-width:640px){.mega{font-size:11.4vw;line-height:1.06}
+    .mega .l2{-webkit-text-stroke:1.5px ${t.color.ink}}
+    .agent-logos .al-label{width:100%}.al-chip{padding:6px 11px;font-size:11px}}
+
   /* ---- display treatments ---- */
   #human-surface h1,#human-surface h2{text-transform:uppercase}
   #h1-stroke h2{-webkit-text-stroke:2.5px ${t.color.ink};color:transparent !important}

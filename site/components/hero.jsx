@@ -19,14 +19,19 @@ export const Hero = ({ theme: t }) => (
     <text size={13} font={t.font.mono} color={t.color.go} sx={{ letterSpacing: '.16em' }}>
       THE AGENT-NATIVE BUILD STACK FOR ELEMENTOR · OPEN SOURCE · MIT
     </text>
-    <heading tag="h1" w="100%" size={126} weight={400} font={t.font.display} color={t.color.ink} lh={0.96} mobile={{ size: 50 }}>
-      One prompt in.
-    </heading>
-    <box id="h1-stroke" tw="flex w-full" pad={0} sx={{ marginTop: '-14px' }}>
-      <heading tag="h2" w="100%" size={126} weight={400} font={t.font.display} color={t.color.ink} lh={0.96} mobile={{ size: 50 }}>
-        A site out.
-      </heading>
-    </box>
+    <html>{`
+<div class="agent-logos" aria-label="Works with">
+  <span class="al-label">WORKS WITH</span>
+  <span class="al-chip"><img src="/wp-content/uploads/logos/claude.svg" alt="" />Claude Code</span>
+  <span class="al-chip"><img src="/wp-content/uploads/logos/cursor.svg" alt="" />Cursor</span>
+  <span class="al-chip"><img src="/wp-content/uploads/logos/windsurf.svg" alt="" />Windsurf</span>
+  <span class="al-chip"><img src="/wp-content/uploads/logos/githubcopilot.svg" alt="" />Copilot</span>
+  <span class="al-chip al-any">any MCP agent</span>
+</div>
+<h1 class="mega">
+  <span class="l1">Build <img class="e-mark" src="/wp-content/uploads/logos/elementor.svg" alt="Elementor" /> Elementor sites</span><br />
+  <span class="l2">with your own AI agents <span class="pencil">✏️</span></span>
+</h1>`}</html>
     <text size={19} font={t.font.body} color={t.color.dim} lh={1.65} maxw={680} mobile={{ size: 16 }}>
       Elementor pages are JSON documents in a database — your agent could always write them,
       blind, a thousand untyped lines at a time. That's why agent-built pages looked agent-built.
