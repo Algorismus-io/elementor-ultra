@@ -44,6 +44,13 @@ export const Loop = ({ theme: t }) => (
   var strip=document.getElementById('loop-strip');
   var logEl=document.getElementById('loop-log');
   if(!strip||!logEl)return;
+  logEl.setAttribute('aria-hidden','true');
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    ['[dev] full deploy (kit changed) \u00b7 1 page(s) \u00b7 6468ms','[dev] gates PASS (/)',
+     '[dev] full deploy (kit changed) \u00b7 1 page(s) \u00b7 8075ms','[dev] gates PASS (/)'].forEach(function(l){
+      var d=document.createElement('span');d.className='ll-line in';d.textContent=l;logEl.appendChild(d)});
+    return;
+  }
   var cells=strip.children;
   var DEPLOYS=['6468ms','8075ms','7324ms','12386ms','9861ms'];
   var running=false,timers=[],di=0,cycle=0;

@@ -14,7 +14,7 @@ export const Seam = ({ theme: t }) => (
       <box id="seam-blob" tw="flex flex-col gap-2" bg="#F1EDE3" pad={[18, 20]} sx={{ borderRadius: '14px', border: `1px solid ${t.color.line}`, flexGrow: '1', flexShrink: '1', flexBasis: '0', minWidth: '0' }}>
         <text size={12} font={t.font.mono} color={t.color.dim} sx={{ letterSpacing: '.12em' }}>WHAT YOUR AGENT WRITES TODAY — BLIND</text>
         <html>{`
-<div id="seam-blob-pre"><pre style="margin:0;white-space:pre-wrap;word-break:break-word;font-family:'GeistM',ui-monospace,monospace;font-size:11px;line-height:1.6;color:#8A857A">[{ "id": "e00000", "elType": "e-flexbox",
+<div id="seam-blob-pre" aria-hidden="true"><pre style="margin:0;white-space:pre-wrap;word-break:break-word;font-family:'GeistM',ui-monospace,monospace;font-size:11px;line-height:1.6;color:#63604F">[{ "id": "e00000", "elType": "e-flexbox",
   "settings": { "classes": { "$$type": "classes",
     "value": ["g-c-12f5qe"] },
    "tag": { "$$type": "string", "value": "div" } },
@@ -43,7 +43,7 @@ export const Seam = ({ theme: t }) => (
       <box id="seam-jsx" tw="flex flex-col gap-2" bg={t.color.stage} pad={[18, 20]} sx={{ borderRadius: '14px', flexGrow: '1', flexShrink: '1', flexBasis: '0', minWidth: '0' }}>
         <text size={12} font={t.font.mono} color={t.color.goBright} sx={{ letterSpacing: '.12em' }}>THE SAME SECTION, WITH ULTRA</text>
         <html>{`
-<div id="seam-jsx-pre"><pre style="margin:0;white-space:pre-wrap;word-break:break-word;font-family:'GeistM',ui-monospace,monospace;font-size:13px;line-height:1.65;color:#ECECF1">&lt;section id="hero" tw="flex flex-col
+<div id="seam-jsx-pre" aria-hidden="true"><pre style="margin:0;white-space:pre-wrap;word-break:break-word;font-family:'GeistM',ui-monospace,monospace;font-size:13px;line-height:1.65;color:#ECECF1">&lt;section id="hero" tw="flex flex-col
   items-center gap-6" bg={t.color.paper}&gt;
   &lt;h1 size={<span id="jsx-size">72</span>} font="Recoleta"
       color={t.color.ink}&gt;
@@ -57,7 +57,7 @@ export const Seam = ({ theme: t }) => (
     <html>{`
 <div class="mp-cursor" id="mp-claude"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M4.5 2.5 L20 12.2 L12.6 13.6 L9.2 21 Z" fill="#D97757" stroke="#FFFFFF" stroke-width="1.4"/></svg><span class="mp-pill" style="background:#D97757"><img src="/wp-content/uploads/logos/claude.svg" onerror="this.style.display='none'" style="filter:brightness(0) invert(1)"/>Claude Code</span></div>
 <div class="mp-cursor mp-you" id="mp-you"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M4.5 2.5 L20 12.2 L12.6 13.6 L9.2 21 Z" fill="#2F6BFF" stroke="#FFFFFF" stroke-width="1.4"/></svg><span class="mp-pill" style="background:#2F6BFF">You</span></div>
-<div class="mp-cursor" id="mp-ultra"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M4.5 2.5 L20 12.2 L12.6 13.6 L9.2 21 Z" fill="#1F9D44" stroke="#FFFFFF" stroke-width="1.4"/></svg><span class="mp-pill" style="background:#1F9D44"><img src="/wp-content/uploads/logos/elementor.svg" onerror="this.style.display='none'" style="filter:brightness(0) invert(1)"/>Elementor Ultra<span id="mp-status" class="mp-status">· watching</span></span></div>
+<div class="mp-cursor" id="mp-ultra"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M4.5 2.5 L20 12.2 L12.6 13.6 L9.2 21 Z" fill="#1F9D44" stroke="#FFFFFF" stroke-width="1.4"/></svg><span class="mp-pill" style="background:#147434"><img src="/wp-content/uploads/logos/elementor.svg" onerror="this.style.display='none'" style="filter:brightness(0) invert(1)"/>Elementor Ultra<span id="mp-status" class="mp-status">· watching</span></span></div>
 <script>
 (function(){
   if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
@@ -69,10 +69,13 @@ export const Seam = ({ theme: t }) => (
   var jsxSize=document.getElementById('jsx-size'), blobHash=document.getElementById('blob-hash');
   if(!seam||!blobPane||!jsxPane||!blobCopy||!jsxCopy)return;
   seam.appendChild(cl); seam.appendChild(eu);
+  [cl,eu].forEach(function(c){c.setAttribute('aria-hidden','true')});
+  ['seam-blob','seam-jsx'].forEach(function(id){var e=document.getElementById(id);if(e)e.setAttribute('aria-hidden','true')});
   function status(t){if(stEl)stEl.textContent='\u00b7 '+t}
 
   // the visitor is the third player
   var you=document.getElementById('mp-you');
+  if(you)you.setAttribute('aria-hidden','true');
   if(you&&window.matchMedia('(pointer:fine)').matches){
     seam.appendChild(you);
     seam.classList.add('mp-zone');
@@ -141,8 +144,8 @@ export const Seam = ({ theme: t }) => (
       },1200);
     },500);
   }
-  var pinA=document.createElement('div');pinA.className='mp-pin';seam.appendChild(pinA);
-  var pinB=document.createElement('div');pinB.className='mp-pin';seam.appendChild(pinB);
+  var pinA=document.createElement('div');pinA.className='mp-pin';pinA.setAttribute('aria-hidden','true');seam.appendChild(pinA);
+  var pinB=document.createElement('div');pinB.className='mp-pin';pinB.setAttribute('aria-hidden','true');seam.appendChild(pinB);
   function caretPos(node,i){
     var r=document.createRange();r.setStart(node,Math.min(i,node.textContent.length));r.collapse(true);
     var rect=r.getBoundingClientRect(),sr=seam.getBoundingClientRect();

@@ -6,7 +6,7 @@ export default defineTheme({
     ink: '#191914',     // print black, slightly warm
     dim: '#6E6B62',     // annotations, body on paper
     line: '#DAD5C8',    // hairlines on paper
-    go: '#1F9D44',      // gate green, deep enough for paper
+    go: '#147434',      // gate green, AA on paper
     goBright: '#28C840',// gate green on dark (agent surface, terminal card)
     stage: '#0A0A0E',   // agent ground — the films' studio dark
     stagePanel: '#121218',
@@ -15,7 +15,7 @@ export default defineTheme({
     // the eight shipped-site palettes — the only "decoration" on the page
     housemait: '#6B3FA0', housemaitInk: '#FBF7EF',
     canopy: '#323A2C',  canopyInk: '#F6F4EC',
-    alike: '#FFFEEA',   alikeInk: '#EC2F0D',
+    alike: '#FFFEEA',   alikeInk: '#C62508',
     triple: '#0A2E0A',  tripleInk: '#F5F5F4',
     billow: '#04192B',  billowInk: '#F6F8F9',
     pumo: '#FFFFFF',    pumoInk: '#0A0A0A',

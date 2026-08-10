@@ -66,7 +66,7 @@ HUMAN? ...... there is a prettier version of this page.
 export const AgentSurface = ({ theme: t }) => (
   <box id="agent-surface" tw="flex flex-col items-center w-full" bg={t.color.stage} pad={[64, 24, 90, 24]} mobile={{ pad: [40, 14, 60, 14] }}>
     <box tw="flex flex-col w-full max-w-[880px]">
-      <html>{`<pre style="margin:0;white-space:pre-wrap;word-break:break-word;
+      <html>{`<h1 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap">Elementor Ultra — machine surface</h1><pre style="margin:0;white-space:pre-wrap;word-break:break-word;
         font-family:'IBM Plex Mono',ui-monospace,SFMono-Regular,monospace;
         font-size:13.5px;line-height:1.75;color:#28C840;">${surface
         .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')}</pre>`}</html>

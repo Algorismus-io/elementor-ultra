@@ -24,6 +24,7 @@ export const Chrome = ({ theme: t }) => (
     padding:9px 16px;cursor:pointer;font:inherit;letter-spacing:inherit}
   .ultra-switch button.on{background:${t.color.ink};color:${t.color.paper}}
   body.agent-mode .ultra-switch{border-color:${t.color.goBright};background:${t.color.stage}}
+  .ultra-switch button:focus-visible,.chrig-tick:focus-visible,.chrig-card:focus-visible,#chip-row>div:focus-visible,.ultra-rail a:focus-visible,.cmd-copy:focus-visible{outline:2.5px solid #2F6BFF;outline-offset:2px}
   body.agent-mode .ultra-switch button{color:${t.color.termDim}}
   body.agent-mode .ultra-switch button.on{background:${t.color.goBright};color:${t.color.stage}}
   #human-surface,#agent-surface{animation:ultra-fade .45s ease}
@@ -125,14 +126,14 @@ export const Chrome = ({ theme: t }) => (
     border-radius:999px;padding:7px 14px;font-family:'GeistM',monospace;font-size:11.5px;letter-spacing:.1em;cursor:pointer;white-space:nowrap}
   #chrig-full:hover{background:${t.color.goBright};color:${t.color.stage}}
   .chrig-chapters{display:flex;flex-direction:column;gap:3.5vh;padding:22vh 12px 30vh 3px;transition:transform .6s cubic-bezier(.22,1,.36,1);will-change:transform}
-  .chrig-card{border:1.5px solid ${t.color.line};border-radius:14px;padding:18px 20px;background:#FFFFFF;
-    cursor:pointer;opacity:.45;transform:translateY(6px);transition:opacity .4s,transform .4s,border-color .4s}
-  .chrig-card.on{opacity:1;transform:none;border-color:${t.color.ink};box-shadow:6px 6px 0 ${t.color.ink}}
+  .chrig-card{border:1.5px solid ${t.color.line};border-radius:14px;padding:18px 20px;background:#FBFAF5;
+    cursor:pointer;transform:translateY(6px);transition:background .4s,transform .4s,border-color .4s,box-shadow .4s}
+  .chrig-card.on{background:#FFFFFF;transform:none;border-color:${t.color.ink};box-shadow:6px 6px 0 ${t.color.ink}}
   .cc-top{display:flex;justify-content:space-between;gap:10px;font-family:'GeistM',monospace;font-size:11px;letter-spacing:.12em}
   .cc-n{color:${t.color.go}} .cc-at{color:${t.color.dim}}
   .cc-t{font-family:'Meso','Anton',sans-serif;font-size:27px;text-transform:uppercase;color:${t.color.ink};margin:8px 0 6px;line-height:1.05}
   .cc-note{font-family:'Lay',sans-serif;font-size:14px;line-height:1.6;color:${t.color.dim};margin:0 0 10px}
-  .cc-log{display:block;font-family:'GeistM',monospace;font-size:11.5px;color:${t.color.go};
+  .cc-log{display:block;font-family:'GeistM',monospace;font-size:11.5px;color:${t.color.goBright};
     background:${t.color.stage};border-radius:8px;padding:8px 12px;white-space:pre-wrap;word-break:break-word}
   @media(max-width:899px){
     .chrig-outer{height:auto}
@@ -145,8 +146,8 @@ export const Chrome = ({ theme: t }) => (
     /* the clip strip — horizontal video-editor timeline */
     .chrig-chapters{flex-direction:row;overflow-x:auto;gap:10px;padding:4px 2px 12px;transition:none;
       scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;transform:none !important;max-width:100%;position:relative}
-    .chrig-card{flex:0 0 205px;scroll-snap-align:start;padding:12px 14px;opacity:.55;transform:none}
-    .chrig-card.on{opacity:1;box-shadow:3px 3px 0 ${t.color.ink}}
+    .chrig-card{flex:0 0 205px;scroll-snap-align:start;padding:12px 14px;transform:none}
+    .chrig-card.on{box-shadow:3px 3px 0 ${t.color.ink}}
     .cc-t{font-size:18px;margin:6px 0 0}
     .cc-note,.cc-log{display:none}
     .cc-top{font-size:10px}
@@ -178,7 +179,7 @@ export const Chrome = ({ theme: t }) => (
     color:#fff;font-family:'GeistM',monospace;font-size:11px;letter-spacing:.05em;
     padding:4px 10px;border-radius:999px;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,.25)}
   .mp-pill img{width:12px;height:12px;display:block}
-  .mp-status{opacity:.85;font-weight:400;margin-left:2px}
+  .mp-status{opacity:1;font-weight:400;margin-left:2px}
   @media(pointer:fine){.mp-zone,.mp-zone *{cursor:none !important}}
   .mp-you{transition:none;opacity:0;z-index:8}
   #seam-blob{position:relative;overflow:hidden}
@@ -216,7 +217,7 @@ export const Chrome = ({ theme: t }) => (
     body:not(.agent-mode) #human-surface .rv.rv-in{opacity:1;transform:none}
   }
 </style>
-<div class="ultra-switch" role="group" aria-label="Reader mode">
+<div class="ultra-switch" role="region" aria-label="Reader mode">
   <button type="button" id="us-human" class="on">HUMAN</button>
   <button type="button" id="us-agent">AGENT</button>
 </div>
@@ -238,6 +239,13 @@ export const Chrome = ({ theme: t }) => (
   var q=new URLSearchParams(location.search).get('mode');
   var saved=null; try{saved=localStorage.getItem(KEY)}catch(e){}
   apply(!inEditor&&(q||saved||(navigator.webdriver?'agent':'human'))==='agent'?'agent':'human');
+  function setRoles(){
+    var hs=document.getElementById('human-surface'),as=document.getElementById('agent-surface');
+    if(hs)hs.setAttribute('role','main');
+    if(as)as.setAttribute('role','main');
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',setRoles);
+  else setRoles();
   if(inEditor){var sw=document.querySelector('.ultra-switch');if(sw)sw.style.display='none'}
   document.getElementById('us-human').addEventListener('click',function(){apply('human')});
   document.getElementById('us-agent').addEventListener('click',function(){apply('agent')});
