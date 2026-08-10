@@ -30,13 +30,12 @@ export const Loop = ({ theme: t }) => (
     <box tw="flex flex-col gap-2" bg={t.color.stage} pad={[18, 22]} sx={{ borderRadius: '14px' }}>
       <text size={12} font={t.font.mono} color={t.color.termDim} sx={{ letterSpacing: '.12em' }}>LIVE — THE LOOP, AS IT RUNS (REAL HOUSEMAIT LOG LINES)</text>
       <html>{`
-<div id="loop-log" style="min-height:196px;font-family:'GeistM',ui-monospace,monospace;font-size:12.5px;line-height:1.75;color:#28C840"></div>
+<div id="loop-log" style="min-height:160px;font-family:'GeistM',ui-monospace,monospace;font-size:12.5px;line-height:1.75;color:#28C840"></div>
 <style>
-  .ls-on{background:#191914 !important}
-  .ls-on *{color:#FAF8F3 !important}
-  .ls-go{box-shadow:inset 0 0 0 3px #0E6B2E, 0 0 0 3px rgba(40,200,64,.35)}
-  .ll-line{opacity:0;transform:translateY(4px);transition:opacity .3s,transform .3s;display:block}
-  .ll-line.in{opacity:1;transform:none}
+  .ls-on{box-shadow:inset 0 -3px 0 #1F9D44}
+  .ls-go{filter:brightness(1.07)}
+  .ll-line{opacity:0;transition:opacity .5s;display:block}
+  .ll-line.in{opacity:1}
   .ll-fail{color:#FFB224}
   .ll-dim{color:#7ED99B}
 </style>
@@ -58,25 +57,24 @@ export const Loop = ({ theme: t }) => (
     var d=document.createElement('span');d.className='ll-line'+(cls?' '+cls:'');d.textContent=txt;
     logEl.appendChild(d);
     requestAnimationFrame(function(){requestAnimationFrame(function(){d.classList.add('in')})});
-    while(logEl.children.length>8)logEl.removeChild(logEl.firstChild);
+    while(logEl.children.length>6)logEl.removeChild(logEl.firstChild);
   }
   function run(){
     if(!running)return;
     cycle++;
     var fail=(cycle%4===3);
-    setStep(0); addLine('[dev] change detected \\u00b7 components/hero.jsx','ll-dim');
-    later(function(){ if(!running)return; setStep(1); addLine('[dev] rebuilt \\u00b7 38ms','ll-dim');
+    setStep(0);
+    later(function(){ if(!running)return; setStep(1);
     later(function(){ if(!running)return; setStep(2);
       di=(di+1)%DEPLOYS.length;
       addLine('[dev] full deploy (kit changed) \\u00b7 1 page(s) \\u00b7 '+DEPLOYS[di]);
-    later(function(){ if(!running)return; setStep(3); addLine('[dev] preview reloaded','ll-dim');
+    later(function(){ if(!running)return; setStep(3);
     later(function(){ if(!running)return; setStep(4);
       if(fail){ addLine('[dev] gates FAIL (/) \\u2014 /@1200 overflow','ll-fail'); }
       else { addLine('[dev] gates PASS (/)'); }
     later(function(){ if(!running)return; setStep(-1);
-      if(fail)addLine('[dev] fix queued \\u2014 next save','ll-dim');
-    later(run,1100);
-    },1300);},800);},1400);},650);},800);
+    later(run,2400);
+    },1700);},900);},1900);},900);},1200);
   }
   function start(){if(running)return;running=true;logEl.innerHTML='';cycle=0;run()}
   function stop(){running=false;clearTimers();setStep(-1)}
