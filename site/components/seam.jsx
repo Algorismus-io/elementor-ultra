@@ -107,7 +107,10 @@ export const Seam = ({ theme: t }) => (
   }
   function rel(el){var s=seam.getBoundingClientRect(),r=el.getBoundingClientRect();
     return {x:r.left-s.left,y:r.top-s.top,w:r.width,h:r.height};}
-  function aim(a,x,y){a.tx=x;a.ty=y}
+  function aim(a,x,y){
+    var sw=seam.getBoundingClientRect().width;
+    a.tx=Math.max(4,Math.min(sw-150,x)); a.ty=Math.max(4,y);
+  }
   function drift(a,pane){var p=rel(pane);aim(a,p.x+p.w*(0.2+Math.random()*0.6),p.y+p.h*(0.12+Math.random()*0.65))}
 
   // scanline for the "watching" sweeps
