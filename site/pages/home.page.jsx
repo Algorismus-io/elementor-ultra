@@ -12,7 +12,7 @@ export const meta = {
   seo: {
     title: 'Elementor Ultra — one prompt in, a site out',
     description: 'The agent-native build stack for Elementor. AI agents write typed JSX, ship native editable V4 pages over REST, and verify every save. Open source, MIT.',
-    ogImage: 'https://docs.wpos.ai/images/ultra/examples/housemait-thumb.jpg',
+    ogImage: 'https://exjsx.dev/exjsx-og.png',
   },
 };
 

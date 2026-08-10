@@ -5,7 +5,10 @@ import { Ticker } from './chrome.jsx';
 
 export const Nav = ({ theme: t }) => (
   <row id="topnav" tw="flex items-center w-full max-w-[1180px] px-6" pad={[22, 24]} sx={{ justifyContent: 'space-between' }}>
-    <text size={20} font={t.font.display} color={t.color.ink} sx={{ letterSpacing: '.04em' }}>ELEMENTOR—ULTRA</text>
+    <row tw="flex items-center gap-3">
+      <html>{`<img src="/wp-content/uploads/logos/exjsx-mark.svg" alt="" style="width:30px;height:30px;display:block">`}</html>
+      <text size={22} font={t.font.display} color={t.color.ink} sx={{ letterSpacing: '.03em' }}>exjsx</text>
+    </row>
     <row tw="flex items-center gap-6 max-md:hidden" sx={{ flexGrow: '1', justifyContent: 'flex-end' }}>
       <text href="https://docs.wpos.ai/ultra" size={14} font={t.font.body} color={t.color.dim}>Docs</text>
       <text href="https://docs.wpos.ai/ultra/examples/overview" size={14} font={t.font.body} color={t.color.dim}>Examples</text>
