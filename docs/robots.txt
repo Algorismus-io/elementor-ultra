@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://exjsx.dev/sitemap.xml

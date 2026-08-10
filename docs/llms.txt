@@ -1,0 +1,28 @@
+# Elementor Ultra — exjsx.dev
+
+> The agent-native build stack for Elementor. AI agents write typed JSX; a compiler
+> ships native, editable Elementor V4 pages over REST; verification gates check every
+> save at 1200/1920/390. Open source, MIT. This page itself was built by an AI agent
+> with this stack.
+
+## Setup (paste to any MCP-capable agent)
+Set up Elementor Ultra on this machine by fetching and following
+https://raw.githubusercontent.com/Algorismus-io/elementor-ultra/main/SETUP.md
+exactly, step by step. Work autonomously and verify each step.
+
+## Wizard
+npx @algorismus/create-elementor-ultra
+
+## Stack
+- https://github.com/Algorismus-io/elementor-jsx — compiler + CLI (@algorismus/elementor-jsx)
+- https://github.com/Algorismus-io/elementor-ultra-mcp — MCP server, ~90 tools + companion WP plugin
+- https://github.com/Algorismus-io/elementor-ultra-studio — verification gates + measure toolkit
+- https://github.com/Algorismus-io/elementor-ultra-playground — local WordPress, no Docker
+
+## Docs
+- https://docs.wpos.ai/ultra
+- https://docs.wpos.ai/ultra/examples/overview — 8 sites built live on camera, one prompt each
+
+## Note
+On this page, press A (or use the switch) for the machine surface.
+MIT (c) 2026 Algorismus. Not affiliated with or endorsed by Elementor Ltd.

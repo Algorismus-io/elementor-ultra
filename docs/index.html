@@ -1,253 +1,1416 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+			<title>Elementor Ultra — one prompt in, a site out</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name='robots' content='max-image-preview:large' />
 <title>Elementor Ultra — one prompt in, a site out</title>
-<meta name="description" content="The agent-native build stack for Elementor. AI agents write JSX, ship native Elementor V4 pages over REST, and verify every save. Open source, MIT.">
+<link rel='dns-prefetch' href='//127.0.0.1' />
+<link rel="alternate" type="application/rss+xml" title="Elementor Ultra Dev &raquo; Feed" href="/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Elementor Ultra Dev &raquo; Comments Feed" href="/comments/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F127.0.0.1%3A8947%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F127.0.0.1%3A8947%2F&#038;format=xml" />
+<link rel="canonical" href="https://exjsx.dev/">
+<meta property="og:url" content="https://exjsx.dev/">
+<meta name="description" content="The agent-native build stack for Elementor. AI agents write typed JSX, ship native editable V4 pages over REST, and verify every save. Open source, MIT.">
 <meta property="og:title" content="Elementor Ultra — one prompt in, a site out">
-<meta property="og:description" content="The agent-native build stack for Elementor. Eight real sites rebuilt live on camera by an AI agent, 17–31 minutes each, zero human edits.">
-<meta property="og:image" content="https://algorismus-io.github.io/elementor-ultra/assets/housemait-thumb.jpg">
+<meta property="og:description" content="The agent-native build stack for Elementor. AI agents write typed JSX, ship native editable V4 pages over REST, and verify every save. Open source, MIT.">
+<meta property="og:image" content="https://docs.wpos.ai/images/ultra/examples/housemait-thumb.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-color]){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--base: #FFFFFF;--wp--preset--color--contrast: #111111;--wp--preset--color--accent-1: #FFEE58;--wp--preset--color--accent-2: #F6CFF4;--wp--preset--color--accent-3: #503AA8;--wp--preset--color--accent-4: #686868;--wp--preset--color--accent-5: #FBFAF3;--wp--preset--color--accent-6: color-mix(in srgb, currentColor 20%, transparent);--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 0.875rem;--wp--preset--font-size--medium: clamp(1rem, 1rem + ((1vw - 0.2rem) * 0.196), 1.125rem);--wp--preset--font-size--large: clamp(1.125rem, 1.125rem + ((1vw - 0.2rem) * 0.392), 1.375rem);--wp--preset--font-size--x-large: clamp(1.75rem, 1.75rem + ((1vw - 0.2rem) * 0.392), 2rem);--wp--preset--font-size--xx-large: clamp(2.15rem, 2.15rem + ((1vw - 0.2rem) * 1.333), 3rem);--wp--preset--font-family--manrope: Manrope, sans-serif;--wp--preset--font-family--fira-code: "Fira Code", monospace;--wp--preset--spacing--20: 10px;--wp--preset--spacing--30: 20px;--wp--preset--spacing--40: 30px;--wp--preset--spacing--50: clamp(30px, 5vw, 50px);--wp--preset--spacing--60: clamp(30px, 7vw, 70px);--wp--preset--spacing--70: clamp(50px, 7vw, 90px);--wp--preset--spacing--80: clamp(70px, 10vw, 140px);--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:root { --wp--style--global--content-size: 645px;--wp--style--global--wide-size: 1340px; }:where(body) { margin: 0; }.wp-site-blocks { padding-top: var(--wp--style--root--padding-top); padding-bottom: var(--wp--style--root--padding-bottom); }.has-global-padding { padding-right: var(--wp--style--root--padding-right); padding-left: var(--wp--style--root--padding-left); }.has-global-padding > .alignfull { margin-right: calc(var(--wp--style--root--padding-right) * -1); margin-left: calc(var(--wp--style--root--padding-left) * -1); }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) { padding-right: 0; padding-left: 0; }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) > .alignfull { margin-left: 0; margin-right: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 1.2rem; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 1.2rem; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 1.2rem;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 1.2rem;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 1.2rem;}:root :where(.is-layout-grid){gap: 1.2rem;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{background-color: var(--wp--preset--color--base);color: var(--wp--preset--color--contrast);font-family: var(--wp--preset--font-family--manrope);font-size: var(--wp--preset--font-size--large);font-weight: 300;letter-spacing: -0.1px;line-height: 1.4;--wp--style--root--padding-top: 0px;--wp--style--root--padding-right: var(--wp--preset--spacing--50);--wp--style--root--padding-bottom: 0px;--wp--style--root--padding-left: var(--wp--preset--spacing--50);}a:where(:not(.wp-element-button)){color: currentColor;}:root :where(a:where(:not(.wp-element-button)):hover){text-decoration: none;}h1, h2, h3, h4, h5, h6{font-weight: 400;letter-spacing: -0.1px;line-height: 1.125;}h1{font-size: var(--wp--preset--font-size--xx-large);}h2{font-size: var(--wp--preset--font-size--x-large);}h3{font-size: var(--wp--preset--font-size--large);}h4{font-size: var(--wp--preset--font-size--medium);}h5{font-size: var(--wp--preset--font-size--small);letter-spacing: 0.5px;}h6{font-size: var(--wp--preset--font-size--small);font-weight: 700;letter-spacing: 1.4px;text-transform: uppercase;}:root :where(.wp-element-button, .wp-block-button__link){background-color: var(--wp--preset--color--contrast);border-width: 0;color: var(--wp--preset--color--base);font-family: inherit;font-size: var(--wp--preset--font-size--medium);font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: 1rem;padding-right: 2.25rem;padding-bottom: 1rem;padding-left: 2.25rem;text-decoration: none;text-transform: inherit;}:root :where(.wp-element-button:hover, .wp-block-button__link:hover){background-color: color-mix(in srgb, var(--wp--preset--color--contrast) 85%, transparent);border-color: transparent;color: var(--wp--preset--color--base);}:root :where(.wp-element-button:focus, .wp-block-button__link:focus){outline-color: var(--wp--preset--color--accent-4);outline-offset: 2px;}:root :where(.wp-element-caption, .wp-block-audio figcaption, .wp-block-embed figcaption, .wp-block-gallery figcaption, .wp-block-image figcaption, .wp-block-table figcaption, .wp-block-video figcaption){font-size: var(--wp--preset--font-size--small);line-height: 1.4;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-base-color{color: var(--wp--preset--color--base) !important;}.has-contrast-color{color: var(--wp--preset--color--contrast) !important;}.has-accent-1-color{color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-color{color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-color{color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-color{color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-color{color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-color{color: var(--wp--preset--color--accent-6) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-base-background-color{background-color: var(--wp--preset--color--base) !important;}.has-contrast-background-color{background-color: var(--wp--preset--color--contrast) !important;}.has-accent-1-background-color{background-color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-background-color{background-color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-background-color{background-color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-background-color{background-color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-background-color{background-color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-background-color{background-color: var(--wp--preset--color--accent-6) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-base-border-color{border-color: var(--wp--preset--color--base) !important;}.has-contrast-border-color{border-color: var(--wp--preset--color--contrast) !important;}.has-accent-1-border-color{border-color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-border-color{border-color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-border-color{border-color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-border-color{border-color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-border-color{border-color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-border-color{border-color: var(--wp--preset--color--accent-6) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-xx-large-font-size{font-size: var(--wp--preset--font-size--xx-large) !important;}.has-manrope-font-family{font-family: var(--wp--preset--font-family--manrope) !important;}.has-fira-code-font-family{font-family: var(--wp--preset--font-family--fira-code) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<style id="wp-block-template-skip-link-inline-css">
+/*! This file is auto-generated */
+.skip-link.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute!important;width:1px;word-wrap:normal!important;word-break:normal!important}.skip-link.screen-reader-text:focus{background-color:#eee;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}
+/*# sourceURL=/wp-includes/css/wp-block-template-skip-link.min.css */
+</style>
+<style id="twentytwentyfive-style-inline-css">
+a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-site-blocks :focus){outline-width:2px;outline-style:solid}.wp-block-navigation .wp-block-navigation-submenu .wp-block-navigation-item:not(:last-child){margin-bottom:3px}.wp-block-navigation .wp-block-navigation-item .wp-block-navigation-item__content{outline-offset:4px}.wp-block-navigation .wp-block-navigation-item ul.wp-block-navigation__submenu-container .wp-block-navigation-item__content{outline-offset:0}blockquote,caption,figcaption,h1,h2,h3,h4,h5,h6,p{text-wrap:pretty}.more-link{display:block}:where(pre){overflow-x:auto}
+/*# sourceURL=/wp-content/themes/twentytwentyfive/style.min.css */
+</style>
+<link rel='stylesheet' id='elementor-frontend-css' href='/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=4.2.1' media='all' />
+<style id="elementor-frontend-inline-css">
+.e-heading-base a, .e-paragraph-base a { all: unset; cursor: pointer; }form[data-element_type="e-form"].form-state-success [data-element_type="e-form-success-message"],form[data-element_type="e-form"].form-state-error [data-element_type="e-form-error-message"]{ display: block; }
+.e-form-textarea-base:not([data-resizable]) { resize: none; } .e-form-submit-button-base { cursor: pointer; box-sizing: border-box; }
+/*# sourceURL=elementor-frontend-inline-css */
+</style>
+<link rel='stylesheet' id='elementor-post-4-css' href='/wp-content/uploads/elementor/css/post-4.css?ver=1786372442' media='all' />
+<link rel='stylesheet' id='base-desktop-css' href='/wp-content/uploads/elementor/css/base-desktop.css?ver=6a7a21a84b708' media='all' />
+<link rel='stylesheet' id='global-7-frontend-desktop-css' href='/wp-content/uploads/elementor/css/global-7-frontend-desktop.css?ver=6a7a21a84c2c0' media='all' />
+<link rel='stylesheet' id='base-mobile-css' href='/wp-content/uploads/elementor/css/base-mobile.css?ver=6a7a21a84b708' media='(max-width:767px)' />
+<link rel='stylesheet' id='global-7-frontend-mobile-css' href='/wp-content/uploads/elementor/css/global-7-frontend-mobile.css?ver=6a7a21a84c2c0' media='(max-width:767px)' />
+<link rel='stylesheet' id='elementor-gf-roboto-css' href='https://fonts.googleapis.com/css?family=Roboto:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&#038;display=swap' media='all' />
+<link rel='stylesheet' id='elementor-gf-robotoslab-css' href='https://fonts.googleapis.com/css?family=Roboto+Slab:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&#038;display=swap' media='all' />
+<script id="jquery-core-js" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<link rel="https://api.w.org/" href="/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/pages/7" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 7.0.3" />
+<link rel="canonical" href="/" />
+<link rel='shortlink' href='/' />
+<meta name="generator" content="Elementor 4.2.1; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<style class="wp-fonts-local">
+@font-face{font-family:Manrope;font-style:normal;font-weight:200 800;font-display:fallback;src:url('/wp-content/themes/twentytwentyfive/assets/fonts/manrope/Manrope-VariableFont_wght.woff2') format('woff2');}
+@font-face{font-family:"Fira Code";font-style:normal;font-weight:300 700;font-display:fallback;src:url('/wp-content/themes/twentytwentyfive/assets/fonts/fira-code/FiraCode-VariableFont_wght.woff2') format('woff2');}
+</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /></head>
+<body class="home wp-singular page-template page-template-elementor_canvas page page-id-7 wp-embed-responsive wp-theme-twentytwentyfive elementor-default elementor-template-canvas elementor-kit-4 elementor-page elementor-page-7">
+			<div data-elementor-type="wp-page" data-elementor-id="7" class="elementor elementor-7" data-elementor-post-type="page">
+				<div class="elementor-element elementor-element-e00000 e-con e-atomic-element e-flexbox-base c-ux4596 " data-id="e00000" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00000" data-e-type="e-flexbox" data-id="e00000">
+    		<div class="elementor-element elementor-element-e00001 elementor-widget elementor-widget-html" data-id="e00001" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					
 <style>
-  :root{
-    --bg:#0B0B10; --panel:#121218; --line:#ffffff1c; --ink:#ECECF1; --dim:#9A9AA5;
-    --go:#28C840; --mono:ui-monospace,SFMono-Regular,Menlo,monospace;
+  @font-face{font-family:'Meso';src:url('/wp-content/uploads/fonts/MesoTRIAL-Regular.otf');font-weight:400;font-display:swap}
+  @font-face{font-family:'Meso';src:url('/wp-content/uploads/fonts/MesoTRIAL-Book.otf');font-weight:350;font-display:swap}
+  @font-face{font-family:'Lay';src:url('/wp-content/uploads/fonts/LayGrotesk-Regular.otf');font-weight:400;font-display:swap}
+  @font-face{font-family:'Lay';src:url('/wp-content/uploads/fonts/LayGrotesk-Medium.otf');font-weight:500;font-display:swap}
+  @font-face{font-family:'Lay';src:url('/wp-content/uploads/fonts/LayGrotesk-Bold.otf');font-weight:700;font-display:swap}
+  @font-face{font-family:'GeistM';src:url('/wp-content/uploads/fonts/GeistMono-Regular.ttf');font-weight:400;font-display:swap}
+  @font-face{font-family:'GeistM';src:url('/wp-content/uploads/fonts/GeistMono-Medium.ttf');font-weight:500;font-display:swap}
+
+  /* ---- the switch ---- */
+  #agent-surface{display:none}
+  body.agent-mode #agent-surface{display:flex}
+  body.agent-mode #human-surface{display:none}
+  body.agent-mode{background:#0A0A0E !important}
+  .ultra-switch{position:fixed;top:18px;right:20px;z-index:9999;display:flex;align-items:center;
+    border:2px solid #191914;border-radius:999px;overflow:hidden;background:#FAF8F3;
+    font-family:'GeistM',ui-monospace,monospace;font-size:12px;letter-spacing:.08em}
+  .ultra-switch button{appearance:none;border:0;background:transparent;color:#6E6B62;
+    padding:9px 16px;cursor:pointer;font:inherit;letter-spacing:inherit}
+  .ultra-switch button.on{background:#191914;color:#FAF8F3}
+  body.agent-mode .ultra-switch{border-color:#28C840;background:#0A0A0E}
+  .ultra-switch button:focus-visible,.chrig-tick:focus-visible,.chrig-card:focus-visible,#chip-row>div:focus-visible,.ultra-rail a:focus-visible,.cmd-copy:focus-visible{outline:2.5px solid #2F6BFF;outline-offset:2px}
+  body.agent-mode .ultra-switch button{color:#7ED99B}
+  body.agent-mode .ultra-switch button.on{background:#28C840;color:#0A0A0E}
+  #human-surface,#agent-surface{animation:ultra-fade .45s ease}
+  @keyframes ultra-fade{from{opacity:0}to{opacity:1}}
+
+  /* ---- hero: logo strip + mega heading ---- */
+  .agent-logos{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:4px 0 10px;
+    font-family:'GeistM',ui-monospace,monospace}
+  .agent-logos .al-label{font-size:11px;letter-spacing:.16em;color:#6E6B62;margin-right:6px}
+  .al-chip{display:inline-flex;align-items:center;gap:8px;border:1.5px solid #191914;
+    border-radius:999px;padding:8px 14px;font-size:12.5px;color:#191914;background:#FFFFFF;
+    transition:transform .25s}
+  .al-chip:hover{transform:translateY(-3px)}
+  .al-chip img{width:16px;height:16px;display:block}
+  .al-chip.al-any{border-style:dashed;color:#6E6B62}
+  .mega{font-family:'Meso','Anton',sans-serif;font-weight:400;font-size:min(6.8vw,92px);
+    line-height:1.02;text-transform:uppercase;color:#191914;margin:6px 0 0;letter-spacing:.005em}
+  .mega .l2{-webkit-text-stroke:2.5px #191914;color:transparent}
+  .mega .pencil{-webkit-text-stroke:0;color:#191914;font-family:'Apple Color Emoji','Segoe UI Emoji',sans-serif}
+  .mega .e-mark{height:.78em;width:auto;vertical-align:-6%;display:inline-block}
+  @media(max-width:640px){.mega{font-size:11.4vw;line-height:1.06}
+    .mega .l2{-webkit-text-stroke:1.5px #191914}
+    .agent-logos .al-label{width:100%}.al-chip{padding:6px 11px;font-size:11px}}
+
+  /* ---- CTA buttons: whole box clickable (stretched link) ---- */
+  #cta-row>div{position:relative;cursor:pointer}
+  #cta-row>div a::after{content:'';position:absolute;inset:0}
+
+  /* ---- display treatments ---- */
+  #human-surface h1,#human-surface h2{text-transform:uppercase}
+  #h1-stroke h2{-webkit-text-stroke:2.5px #191914;color:transparent !important}
+  @media(max-width:640px){#h1-stroke h2{-webkit-text-stroke:1.5px #191914}}
+
+  /* ---- fixed header bar ---- */
+  #topnav{position:fixed !important;top:0;left:0;right:0;z-index:9990;max-width:none !important;
+    width:100% !important;background:#FAF8F3;border-bottom:2px solid #191914;
+    padding:16px 200px 16px 28px !important}
+  #human-surface{padding-top:74px}
+  .ultra-switch{top:13px}
+  body.agent-mode #agent-surface{padding-top:64px}
+  @media(max-width:640px){
+    #topnav{padding:13px 150px 13px 16px !important}
+    #topnav p,#topnav div.elementor-widget-container p{font-size:15px !important}
+    .ultra-switch{top:10px;right:10px}
+    .ultra-switch button{padding:7px 11px;font-size:10.5px}
+    #human-surface{padding-top:60px}
   }
-  *{margin:0;box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
-  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
-  a{color:inherit}
-  /* label device carried from the films: accent tick + uppercase chip */
-  .lt{display:inline-flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
-  .lt::before{content:"";width:5px;height:20px;background:var(--go);border-radius:1px}
-  nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
-  .brand{font-weight:700;letter-spacing:-.02em;font-size:17px}.brand span{color:var(--dim);font-weight:400}
-  .navlinks{display:flex;gap:22px;font-size:14.5px;color:var(--dim)}
-  .navlinks a{text-decoration:none}.navlinks a:hover{color:var(--ink)}
-  .hero{padding:64px 0 30px;text-align:left}
-  h1{font-size:clamp(40px,7vw,76px);line-height:1.02;letter-spacing:-.035em;font-weight:750;text-wrap:balance}
-  h1 .go{color:var(--go)}
-  .sub{margin-top:20px;font-size:19px;color:var(--dim);max-width:640px}
-  .sub b{color:var(--ink);font-weight:600}
-  .ctas{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}
-  .btn{display:inline-block;padding:12px 22px;border-radius:10px;font-size:15px;font-weight:600;text-decoration:none;border:1px solid var(--line)}
-  .btn.primary{background:var(--ink);color:#0B0B10;border-color:var(--ink)}
-  .btn.primary:hover{background:#fff}
-  .btn.ghost:hover{border-color:#ffffff44}
-  .prompt{margin-top:44px;background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden}
-  .prompt .bar{display:flex;align-items:center;gap:8px;padding:11px 16px;border-bottom:1px solid var(--line);font-size:13px;color:var(--dim)}
-  .dot{width:11px;height:11px;border-radius:50%}
-  .prompt pre{padding:18px 20px;font-family:var(--mono);font-size:14.5px;line-height:1.7;color:var(--ink);white-space:pre-wrap;word-break:break-word}
-  .prompt pre .c{color:var(--dim)}
-  .copybtn{margin-left:auto;background:none;border:1px solid var(--line);border-radius:7px;color:var(--dim);font-size:12px;padding:4px 10px;cursor:pointer}
-  .copybtn:hover{color:var(--ink);border-color:#ffffff44}
-  section{padding:72px 0 8px}
-  h2{font-size:clamp(26px,4vw,38px);letter-spacing:-.025em;line-height:1.15;margin:14px 0 10px;text-wrap:balance}
-  .lead{color:var(--dim);max-width:640px;font-size:16.5px}
-  .lead b{color:var(--ink);font-weight:600}
-  video{width:100%;border-radius:14px;border:1px solid var(--line);display:block;background:#000}
-  .filmnote{font-size:13.5px;color:var(--dim);margin-top:10px}
-  .films{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:26px}
-  .films .cell:first-child{grid-column:1/-1}
-  @media(max-width:760px){.films{grid-template-columns:1fr}}
-  .chips{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:26px}
-  @media(max-width:900px){.chips{grid-template-columns:repeat(2,1fr)}}
-  .chip{border-radius:12px;padding:14px 16px;text-decoration:none;border:1px solid var(--line);display:block}
-  .chip:hover{filter:brightness(1.12)}
-  .chip .n{font-weight:700;font-size:15.5px;letter-spacing:-.01em}
-  .chip .d{font-size:12.5px;opacity:.82;margin-top:2px}
-  .chip .m{font-family:var(--mono);font-size:11.5px;opacity:.72;margin-top:8px}
-  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
-  @media(max-width:760px){.steps{grid-template-columns:1fr}}
-  .step{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px}
-  .step .k{font-family:var(--mono);font-size:12px;color:var(--go)}
-  .step h3{font-size:18px;margin:10px 0 8px;letter-spacing:-.01em}
-  .step p{font-size:14.5px;color:var(--dim)}
-  .step code{font-family:var(--mono);font-size:13px;color:var(--ink);background:#ffffff10;padding:1px 6px;border-radius:5px}
-  .stats{display:flex;gap:36px;flex-wrap:wrap;margin-top:34px;padding:22px 26px;background:var(--panel);border:1px solid var(--line);border-radius:14px}
-  .stat .v{font-size:30px;font-weight:750;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
-  .stat .l{font-size:13px;color:var(--dim);letter-spacing:.06em;text-transform:uppercase}
-  table{width:100%;border-collapse:collapse;margin-top:26px;font-size:15px}
-  th{text-align:left;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);font-weight:600;padding:10px 14px;border-bottom:1px solid var(--line)}
-  td{padding:13px 14px;border-bottom:1px solid #ffffff0e;vertical-align:top}
-  td code{font-family:var(--mono);font-size:13.5px;white-space:nowrap}
-  td:first-child{white-space:nowrap}
-  .tblwrap{overflow-x:auto}
-  footer{margin-top:80px;padding:34px 0 46px;border-top:1px solid var(--line);color:var(--dim);font-size:13.5px}
-  footer .row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-  footer a{color:var(--dim)}footer a:hover{color:var(--ink)}
-  .disclaimer{margin-top:14px;max-width:760px}
+  /* ---- ticker ---- */
+  .ultra-ticker{width:100%;overflow:hidden;border-top:2px solid #191914;border-bottom:2px solid #191914;
+    background:#FAF8F3;padding:12px 0}
+  .ultra-ticker .track{display:inline-flex;white-space:nowrap;animation:tick 26s linear infinite;will-change:transform}
+  .ultra-ticker span{font-family:'Meso','Anton',sans-serif;font-size:26px;letter-spacing:.04em;
+    color:#191914;text-transform:uppercase;padding-right:38px}
+  .ultra-ticker span em{font-style:normal;color:#147434}
+  @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  #proof,#seam,#loop,#stack,#start{position:relative}
+  /* ---- index rail ---- */
+  .ultra-rail{position:fixed;left:22px;top:50%;transform:translateY(-50%);z-index:9998;
+    display:flex;flex-direction:column;gap:14px;font-family:'GeistM',monospace;font-size:11px;letter-spacing:.12em}
+  .ultra-rail a{color:#6E6B62;text-decoration:none;display:flex;gap:8px;align-items:center;transition:color .25s}
+  .ultra-rail a::before{content:'';width:18px;height:2px;background:#DAD5C8;transition:all .25s}
+  .ultra-rail a.on{color:#191914}
+  .ultra-rail a.on::before{background:#147434;width:30px}
+  @media(max-width:1280px){.ultra-rail{display:none}}
+  body.agent-mode .ultra-rail{display:none}
+
+  /* ---- loop strip corners ---- */
+  #loop-strip{overflow:hidden !important;border-radius:14px !important}
+  #loop-strip>div:first-child{border-radius:12px 0 0 12px}
+  #loop-strip>div:last-child{border-radius:0 12px 12px 0}
+  @media(max-width:899px){#loop-strip>div:first-child{border-radius:12px 12px 0 0}
+    #loop-strip>div:last-child{border-radius:0 0 12px 12px}}
+
+  /* ---- chapter rig ---- */
+  .chrig-outer{height:485vh;width:100%}
+  .chrig{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:26px;width:100%;
+    position:sticky;top:86px;align-items:start}
+  .chrig-stage{}
+  .chrig{transition:grid-template-columns .7s cubic-bezier(.22,1,.36,1)}
+  .chrig.finale{grid-template-columns:minmax(0,1fr) minmax(0,0.001fr);gap:0}
+  .chrig.finale .chrig-chapters-vp{opacity:0;pointer-events:none;transition:opacity .45s ease}
+  .chrig.finale .chrig-frame{transform:none}
+  .chrig-chapters-vp{transition:opacity .45s ease}
+  .chrig-chapters-vp{height:calc(100vh - 140px);overflow:hidden;position:relative;
+    -webkit-mask-image:linear-gradient(to bottom,transparent,black 7%,black 89%,transparent);
+    mask-image:linear-gradient(to bottom,transparent,black 7%,black 89%,transparent)}
+  .chrig-frame{background:#191914;border-radius:18px;padding:10px;position:relative;transform:rotate(-.4deg)}
+  .chrig-frame video{width:100%;display:block;border-radius:10px;background:#000}
+  .chrig-rail{position:relative;height:8px;margin:14px 6px 4px;background:#26262E;border-radius:4px;cursor:pointer}
+  .chrig-progress{position:absolute;left:0;top:0;bottom:0;background:#28C840;border-radius:4px;width:0;opacity:.85}
+  .chrig-tick{position:absolute;top:-4px;width:2.5px;height:16px;background:#FAF8F3;border:0;padding:0;
+    cursor:pointer;opacity:.55;transition:opacity .2s,transform .2s}
+  .chrig-tick:hover{opacity:1;transform:scaleY(1.15)}
+  .chrig-tick.on{opacity:1;background:#28C840;box-shadow:0 0 0 2px rgba(40,200,64,.35)}
+  .chrig-under{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 8px 4px}
+  .chrig-cap{font-family:'GeistM',monospace;font-size:11.5px;letter-spacing:.06em;color:#FAF8F3}
+  #chrig-full{appearance:none;border:1.5px solid #28C840;background:transparent;color:#28C840;
+    border-radius:999px;padding:7px 14px;font-family:'GeistM',monospace;font-size:11.5px;letter-spacing:.1em;cursor:pointer;white-space:nowrap}
+  #chrig-full:hover{background:#28C840;color:#0A0A0E}
+  .chrig-chapters{display:flex;flex-direction:column;gap:3.5vh;padding:22vh 12px 30vh 3px;transition:transform .6s cubic-bezier(.22,1,.36,1);will-change:transform}
+  .chrig-card{border:1.5px solid #DAD5C8;border-radius:14px;padding:18px 20px;background:#FBFAF5;
+    cursor:pointer;transform:translateY(6px);transition:background .4s,transform .4s,border-color .4s,box-shadow .4s}
+  .chrig-card.on{background:#FFFFFF;transform:none;border-color:#191914;box-shadow:6px 6px 0 #191914}
+  .cc-top{display:flex;justify-content:space-between;gap:10px;font-family:'GeistM',monospace;font-size:11px;letter-spacing:.12em}
+  .cc-n{color:#147434} .cc-at{color:#6E6B62}
+  .cc-t{font-family:'Meso','Anton',sans-serif;font-size:27px;text-transform:uppercase;color:#191914;margin:8px 0 6px;line-height:1.05}
+  .cc-note{font-family:'Lay',sans-serif;font-size:14px;line-height:1.6;color:#6E6B62;margin:0 0 10px}
+  .cc-log{display:block;font-family:'GeistM',monospace;font-size:11.5px;color:#28C840;
+    background:#0A0A0E;border-radius:8px;padding:8px 12px;white-space:pre-wrap;word-break:break-word}
+  @media(max-width:899px){
+    .chrig-outer{height:auto}
+    .chrig{display:flex;flex-direction:column;gap:14px;position:static}
+    .chrig-chapters-vp{height:auto;overflow:visible;-webkit-mask-image:none;mask-image:none;min-width:0;max-width:100%;width:100%}
+    .chrig-stage{position:static}
+    .chrig-frame{transform:none}
+    .chrig.finale{gap:14px}
+    .chrig.finale .chrig-chapters-vp{opacity:1;pointer-events:auto}
+    /* the clip strip — horizontal video-editor timeline */
+    .chrig-chapters{flex-direction:row;overflow-x:auto;gap:10px;padding:4px 2px 12px;transition:none;
+      scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;transform:none !important;max-width:100%;position:relative}
+    .chrig-card{flex:0 0 205px;scroll-snap-align:start;padding:12px 14px;transform:none}
+    .chrig-card.on{box-shadow:3px 3px 0 #191914}
+    .cc-t{font-size:18px;margin:6px 0 0}
+    .cc-note,.cc-log{display:none}
+    .cc-top{font-size:10px}
+    .chrig-cap{font-size:10px}
+  }
+
+  #chip-row>div{position:relative;transition:transform .25s,box-shadow .25s}
+  #chip-row>div.film-on{box-shadow:5px 5px 0 #191914;transform:translateY(-3px)}
+  #chip-row>div.film-on::after{content:'\25b6  IN PLAYER';position:absolute;right:10px;bottom:8px;
+    font-family:'GeistM',monospace;font-size:9px;letter-spacing:.1em;opacity:.85}
+  .chip-go{position:absolute;top:8px;right:10px;font-size:13px;text-decoration:none;opacity:.7;color:inherit}
+  .chip-go:hover{opacity:1}
+  /* ---- exhibits: rotation + stamp ---- */
+  #film-frame{transform:rotate(-.6deg);position:relative}
+  #seam-blob{transform:rotate(-.8deg)}
+  #seam-jsx{transform:rotate(.7deg)}
+  .ultra-stamp{position:absolute;right:26px;top:-26px;z-index:5;transform:rotate(7deg);
+    border:2.5px solid #147434;color:#147434;border-radius:999px;padding:10px 18px;
+    font-family:'GeistM',monospace;font-size:12px;letter-spacing:.14em;background:#FAF8F3}
+
+  #chip-row>div{flex:1 1 240px !important;min-width:230px}
+  #chip-row>div:hover{transform:translateY(-4px);transition:transform .3s}
+  @media(max-width:640px){#chip-row>div{flex:1 1 calc(50% - 6px) !important;min-width:0}}
+  /* ---- seam multiplayer ---- */
+  .mp-cursor{position:absolute;left:0;top:0;z-index:7;pointer-events:none;
+    will-change:transform;transform:translate(40px,40px)}
+  .mp-cursor svg{display:block;filter:drop-shadow(0 2px 5px rgba(0,0,0,.3))}
+  .mp-pill{display:inline-flex;align-items:center;gap:6px;margin-left:14px;margin-top:-4px;
+    color:#fff;font-family:'GeistM',monospace;font-size:11px;letter-spacing:.05em;
+    padding:4px 10px;border-radius:999px;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+  .mp-pill img{width:12px;height:12px;display:block}
+  .mp-status{opacity:1;font-weight:400;margin-left:2px}
+  @media(pointer:fine){.mp-zone,.mp-zone *{cursor:none !important}}
+  .mp-you{transition:none;opacity:0;z-index:8}
+  #seam-blob{position:relative;overflow:hidden}
+  .mp-scanline{position:absolute;left:0;right:0;top:-24px;height:20px;pointer-events:none;
+    background:linear-gradient(to bottom,transparent,rgba(31,157,68,.14),transparent);opacity:0}
+  .mp-scanline.run{animation:mp-scan 1.6s ease-in-out}
+  @keyframes mp-scan{0%{top:0;opacity:1}100%{top:96%;opacity:0}}
+  .mp-sel{background:rgba(47,107,255,.35);border-radius:3px}
+  .mp-pin{position:absolute;left:0;top:0;width:2.5px;height:16px;background:#D97757;z-index:7;
+    pointer-events:none;opacity:0;transition:opacity .15s}
+  .mp-pin::after{content:'';position:absolute;top:-5px;left:-2.2px;width:7px;height:7px;
+    border-radius:2px;background:#D97757}
+  .mp-pin.show{opacity:1}
+  #seam-jsx-pre ::selection{background:rgba(217,119,87,.6);color:#FFFFFF}
+  #seam-jsx-pre pre::selection{background:rgba(217,119,87,.6);color:#FFFFFF}
+  .mp-you.show{opacity:1}
+  #jsx-caret.on::after{content:'▍';color:#28C840;animation:mp-blink .8s step-end infinite}
+  @keyframes mp-blink{50%{opacity:0}}
+  .mp-hl{background:rgba(217,119,87,.35);border-radius:3px}
+  .mp-flash-green{box-shadow:0 0 0 2.5px #28C840 !important;transition:box-shadow .3s}
+  .mp-flash-amber{box-shadow:0 0 0 2.5px #D97757 !important;transition:box-shadow .3s}
+  @media(max-width:899px){
+    #seam{overflow:hidden}
+    #seam-blob,#seam-jsx{flex-basis:auto !important}
+    .mp-cursor svg{width:15px;height:15px}
+    .mp-pill{font-size:9.5px;padding:3px 8px;margin-left:9px;gap:4px}
+    .mp-pill img{width:10px;height:10px}
+    .mp-you{display:none !important}
+  }
+
+  /* ---- scroll reveals ---- */
   @media (prefers-reduced-motion: no-preference){
-    .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
-    .reveal.in{opacity:1;transform:none}
+    body:not(.agent-mode) #human-surface .rv{opacity:.001;transform:translateY(30px);
+      transition:opacity .7s ease,transform .7s cubic-bezier(.22,1,.36,1)}
+    body:not(.agent-mode) #human-surface .rv.rv-in{opacity:1;transform:none}
   }
 </style>
-</head>
-<body>
-<div class="wrap">
-  <nav>
-    <div class="brand">elementor<span>-</span>ultra</div>
-    <div class="navlinks">
-      <a href="#proof">Proof</a><a href="#how">How</a><a href="#stack">Stack</a>
-      <a href="https://docs.wpos.ai/ultra">Docs</a>
-      <a href="https://github.com/Algorismus-io/elementor-ultra">GitHub</a>
-    </div>
-  </nav>
+<div class="ultra-switch" role="region" aria-label="Reader mode">
+  <button type="button" id="us-human" class="on">HUMAN</button>
+  <button type="button" id="us-agent">AGENT</button>
+</div>
+<nav class="ultra-rail" aria-label="Sections">
+  <a href="#hero" data-s="hero">00</a><a href="#proof" data-s="proof">01</a>
+  <a href="#seam" data-s="seam">02</a><a href="#loop" data-s="loop">03</a>
+  <a href="#stack" data-s="stack">04</a><a href="#start" data-s="start">05</a>
+</nav>
+<script>
+(function(){
+  var KEY='ultra-mode';
+  function apply(m){
+    document.body.classList.toggle('agent-mode', m==='agent');
+    var as0=document.getElementById('agent-surface');
+    var ah=document.getElementById('agent-h1');
+    if(m==='agent'&&as0&&!ah){
+      ah=document.createElement('h1');ah.id='agent-h1';
+      ah.style.cssText='position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap';
+      ah.textContent='Elementor Ultra — machine surface';
+      as0.insertBefore(ah,as0.firstChild);
+    } else if(m!=='agent'&&ah){ ah.remove(); }
+    document.getElementById('us-human').classList.toggle('on', m!=='agent');
+    document.getElementById('us-agent').classList.toggle('on', m==='agent');
+    try{localStorage.setItem(KEY,m)}catch(e){}
+  }
+  var inEditor=document.body.classList.contains('elementor-editor-active');
+  var q=new URLSearchParams(location.search).get('mode');
+  var saved=null; try{saved=localStorage.getItem(KEY)}catch(e){}
+  apply(!inEditor&&(q||saved||(navigator.webdriver?'agent':'human'))==='agent'?'agent':'human');
+  function setRoles(){
+    var hs=document.getElementById('human-surface'),as=document.getElementById('agent-surface');
+    if(hs)hs.setAttribute('role','main');
+    if(as)as.setAttribute('role','main');
+    apply(document.body.classList.contains('agent-mode')?'agent':'human');
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',setRoles);
+  else setRoles();
+  if(inEditor){var sw=document.querySelector('.ultra-switch');if(sw)sw.style.display='none'}
+  document.getElementById('us-human').addEventListener('click',function(){apply('human')});
+  document.getElementById('us-agent').addEventListener('click',function(){apply('agent')});
+  document.addEventListener('keydown',function(e){
+    if(e.target && /input|textarea|select/i.test(e.target.tagName))return;
+    if(e.key==='a'||e.key==='A')apply('agent');
+    if(e.key==='h'||e.key==='H')apply('human');
+  });
+  // reveals: only direct section children, with a settle fallback
+  var secs=['hero','proof','seam','loop','stack','start','colophon'];
+  var kids=[];
+  secs.forEach(function(id){var s=document.getElementById(id);if(!s)return;
+    Array.prototype.forEach.call(s.children,function(c){if(c.tagName==='DIV'){c.classList.add('rv');kids.push(c)}});});
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('rv-in');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+    kids.forEach(function(k){io.observe(k)});
+    setTimeout(function(){kids.forEach(function(k){k.classList.add('rv-in')})},6000);
+  } else { kids.forEach(function(k){k.classList.add('rv-in')}); }
+  // rail active state
+  var links=document.querySelectorAll('.ultra-rail a');
+  var so=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(e.isIntersecting){links.forEach(function(l){l.classList.toggle('on',l.dataset.s===e.target.id)})}})},{threshold:.25});
+  secs.slice(0,6).forEach(function(id){var s=document.getElementById(id);if(s)so.observe(s)});
+})();
+</script>
+				</div>
+		<div class="elementor-element elementor-element-e00002 e-con e-atomic-element e-flexbox-base c-1s1iao " data-id="e00002" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00002" id="human-surface" data-e-type="e-flexbox" data-id="e00002">
+    <div class="elementor-element elementor-element-e00003 e-con e-atomic-element e-flexbox-base c-upaffr " data-id="e00003" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00003" id="topnav" data-e-type="e-flexbox" data-id="e00003">
+    			<p class="c-1brzdd e-paragraph-base" data-interaction-id="e00004" data-e-type="widget" data-id="e00004">ELEMENTOR—ULTRA</p>
+		<div class="elementor-element elementor-element-e00005 e-con e-atomic-element e-flexbox-base c-17d3pu " data-id="e00005" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00005" data-e-type="e-flexbox" data-id="e00005">
+    			<p class="c-94cvnd e-paragraph-base" data-interaction-id="e00006" data-e-type="widget" data-id="e00006"><a href="https://docs.wpos.ai/ultra" target="_self" class="e-paragraph-link-base">
+		Docs
+	</a></p>
+					<p class="c-94cvnd e-paragraph-base" data-interaction-id="e00007" data-e-type="widget" data-id="e00007"><a href="https://docs.wpos.ai/ultra/examples/overview" target="_self" class="e-paragraph-link-base">
+		Examples
+	</a></p>
+					<p class="c-94cvnd e-paragraph-base" data-interaction-id="e00008" data-e-type="widget" data-id="e00008"><a href="https://github.com/Algorismus-io/elementor-ultra" target="_self" class="e-paragraph-link-base">
+		GitHub
+	</a></p>
+		
+</div>
 
-  <header class="hero">
-    <span class="lt">The agent-native build stack for Elementor · MIT</span>
-    <h1>One prompt in.<br>A <span class="go">site</span> out.</h1>
-    <p class="sub">AI agents write small typed <b>JSX components</b>. A compiler turns them into
-      <b>native Elementor V4 pages</b>, a deployer ships them over REST, and verification gates
-      check every save at three breakpoints. The result opens in the normal Elementor editor —
-      no lock-in, no proprietary runtime.</p>
-    <div class="ctas">
-      <a class="btn primary" href="https://github.com/Algorismus-io/elementor-ultra">Set it up — GitHub</a>
-      <a class="btn ghost" href="https://docs.wpos.ai/ultra/examples/overview">Watch the builds</a>
-    </div>
-    <div class="prompt">
-      <div class="bar">
-        <div class="dot" style="background:#ff5f57"></div><div class="dot" style="background:#febc2e"></div><div class="dot" style="background:#28c840"></div>
-        paste this to your AI agent
-        <button class="copybtn" data-copy="Set up Elementor Ultra on this machine by fetching and following https://raw.githubusercontent.com/Algorismus-io/elementor-ultra/main/SETUP.md exactly, step by step. Work autonomously and verify each step.">copy</button>
-      </div>
-      <pre>Set up Elementor Ultra on this machine by fetching and following
-https://raw.githubusercontent.com/Algorismus-io/elementor-ultra/main/SETUP.md
-exactly, step by step. Work autonomously and verify each step.
+</div>
+<section class="elementor-element elementor-element-e00009 e-con e-atomic-element e-flexbox-base c-il6gqi " data-id="e00009" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00009" id="hero" data-e-type="e-flexbox" data-id="e00009">
+    			<p class="c-211zq7 e-paragraph-base" data-interaction-id="e0000a" data-e-type="widget" data-id="e0000a">THE AGENT-NATIVE BUILD STACK FOR ELEMENTOR · OPEN SOURCE · MIT</p>
+				<div class="elementor-element elementor-element-e0000b elementor-widget elementor-widget-html" data-id="e0000b" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					
+<div class="agent-logos" aria-label="Works with">
+  <span class="al-label">WORKS WITH</span>
+  <span class="al-chip"><img decoding="async" src="/wp-content/uploads/logos/claude.svg" alt="" />Claude Code</span>
+  <span class="al-chip"><img decoding="async" src="/wp-content/uploads/logos/cursor.svg" alt="" />Cursor</span>
+  <span class="al-chip"><img decoding="async" src="/wp-content/uploads/logos/codex.svg" alt="" />Codex</span>
+  <span class="al-chip"><img decoding="async" src="/wp-content/uploads/logos/githubcopilot.svg" alt="" />Copilot</span>
+  <span class="al-chip al-any">any MCP agent</span>
+</div>
+<h1 class="mega">
+  <span class="l1">One prompt in.</span><br />
+  <span class="l2"><img decoding="async" class="e-mark" src="/wp-content/uploads/logos/elementor.svg" alt="Elementor" /> Elementor site out.</span>
+</h1>				</div>
+					<p class="c-1uv5ie e-paragraph-base" data-interaction-id="e0000c" data-e-type="widget" data-id="e0000c"><strong>Build Elementor sites with your own AI agents.</strong> Elementor pages are JSON documents in a database — your agent could always write them, blind, a thousand untyped lines at a time. That's why agent-built pages looked agent-built. Ultra gives agents what developers have: components, types, hot reload, and proof. Beautiful pages are what happens when agents can see what they're doing.</p>
+		<div class="elementor-element elementor-element-e0000d e-con e-atomic-element e-flexbox-base c-1y9sgi " data-id="e0000d" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000d" id="cta-row" data-e-type="e-flexbox" data-id="e0000d">
+    <div class="elementor-element elementor-element-e0000e e-con e-atomic-element e-flexbox-base c-aq0e13 " data-id="e0000e" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000e" data-e-type="e-flexbox" data-id="e0000e">
+    			<p class="c-7215m7 e-paragraph-base" data-interaction-id="e0000f" data-e-type="widget" data-id="e0000f"><a href="#proof" target="_self" class="e-paragraph-link-base">
+		Watch an agent build — 1:38
+	</a></p>
+		
+</div>
+<div class="elementor-element elementor-element-e0000g e-con e-atomic-element e-flexbox-base c-1nc2by " data-id="e0000g" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000g" data-e-type="e-flexbox" data-id="e0000g">
+    			<p class="c-194b22 e-paragraph-base" data-interaction-id="e0000h" data-e-type="widget" data-id="e0000h"><a href="#start" target="_self" class="e-paragraph-link-base">
+		Set up in one paste
+	</a></p>
+		
+</div>
 
-<span class="c"># That's the whole setup. Local WordPress included — no Docker needed.
-# Prefer a wizard?  npx @algorismus/create-elementor-ultra</span></pre>
-    </div>
-  </header>
-
-  <section id="proof" class="reveal">
-    <span class="lt">Proof, on camera</span>
-    <h2>Eight real sites, rebuilt live by an agent.</h2>
-    <p class="lead">Each film is one take: a human types <b>one prompt</b>, the agent builds the
-      page section by section through the live dev loop, every save hot-reloads a real WordPress
-      site and re-runs the gates — then the film ends inside the native Elementor editor.
-      The AGENT TIME chip burns true elapsed time; nothing is hidden.</p>
-    <div class="films">
-      <div class="cell">
-        <video controls muted playsinline preload="none" poster="assets/housemait-thumb.jpg" src="assets/housemait.mp4"></video>
-        <p class="filmnote">Housemait — 9 sections, 31 minutes of agent time, zero human edits.</p>
+</div>
+			<p class="c-1mpv4o e-paragraph-base" data-interaction-id="e0000i" data-e-type="widget" data-id="e0000i">You're in human mode. Press <strong>A</strong> — or flip the switch — to read this page the way an agent does.</p>
+		
+</section>
+		<div class="elementor-element elementor-element-e0000j elementor-widget elementor-widget-html" data-id="e0000j" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					
+<div class="ultra-ticker" aria-hidden="true"><div class="track">
+  <span>One prompt in <em>·</em> a site out <em>·</em> gates 1200 / 1920 / 390 <em>·</em> zero human edits <em>·</em> native Elementor V4 <em>·</em> open source MIT <em>·</em></span>
+  <span>One prompt in <em>·</em> a site out <em>·</em> gates 1200 / 1920 / 390 <em>·</em> zero human edits <em>·</em> native Elementor V4 <em>·</em> open source MIT <em>·</em></span>
+</div></div>				</div>
+		<section class="elementor-element elementor-element-e0000k e-con e-atomic-element e-flexbox-base c-kpsy5x " data-id="e0000k" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000k" id="proof" data-e-type="e-flexbox" data-id="e0000k">
+    <div class="elementor-element elementor-element-e0000l e-con e-atomic-element e-flexbox-base c-nokn4c " data-id="e0000l" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000l" data-e-type="e-flexbox" data-id="e0000l">
+    			<p class="c-lwsecb e-paragraph-base" data-interaction-id="e0000m" data-e-type="widget" data-id="e0000m">01</p>
+					<p class="c-10rae1 e-paragraph-base" data-interaction-id="e0000n" data-e-type="widget" data-id="e0000n">Proof, on camera</p>
+		
+</div>
+			<h2 data-interaction-id="e0000o" class="c-pfkm0a e-heading-base" data-e-type="widget" data-id="e0000o">Eight real sites, rebuilt live by an agent.</h2>
+					<p class="c-1tjsdz e-paragraph-base" data-interaction-id="e0000p" data-e-type="widget" data-id="e0000p">Each film is one take: a human types one prompt, the agent builds the page section by section through the live dev loop, every save hot-reloads a real WordPress site and re-runs the gates — then the film ends inside the native Elementor editor. The AGENT TIME chip burns true elapsed time. Nothing is hidden.</p>
+				<div class="elementor-element elementor-element-e0000q elementor-widget elementor-widget-html" data-id="e0000q" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					
+<div class="chrig-outer" id="chrig-outer">
+<div class="chrig" id="chrig">
+  <div class="chrig-stage">
+    <div class="chrig-frame">
+      <video id="chrig-video" muted playsinline preload="metadata" aria-label="Silent screen recording of an AI agent building this site"
+        poster="https://docs.wpos.ai/images/ultra/examples/housemait-thumb.jpg"
+        src="https://docs.wpos.ai/videos/ultra/examples/housemait.mp4?v=3"></video>
+      <div class="chrig-rail" id="chrig-rail" aria-label="Film timeline">
+        <div class="chrig-progress" id="chrig-progress"></div>
       </div>
-      <div class="cell">
-        <video controls muted playsinline preload="none" poster="assets/canopy-thumb.jpg" src="assets/canopy.mp4"></video>
-        <p class="filmnote">Canopy — 10 sections, 17 minutes.</p>
-      </div>
-      <div class="cell">
-        <video controls muted playsinline preload="none" poster="assets/alike-thumb.jpg" src="assets/alike.mp4"></video>
-        <p class="filmnote">Alike.page — 8 sections, 22 minutes.</p>
-      </div>
-    </div>
-    <div class="chips">
-      <a class="chip" style="background:#6B3FA0;color:#FBF7EF" href="https://docs.wpos.ai/ultra/examples/housemait"><div class="n">Housemait</div><div class="d">the fridge door</div><div class="m">9 sections · 31 min</div></a>
-      <a class="chip" style="background:#323A2C;color:#F6F4EC" href="https://docs.wpos.ai/ultra/examples/canopy"><div class="n">Canopy</div><div class="d">the greenhouse ledger</div><div class="m">10 sections · 17 min</div></a>
-      <a class="chip" style="background:#FFFEEA;color:#EC2F0D" href="https://docs.wpos.ai/ultra/examples/alike"><div class="n">Alike.page</div><div class="d">the magazine cover</div><div class="m">8 sections · 22 min</div></a>
-      <a class="chip" style="background:#0A2E0A;color:#F5F5F4" href="https://docs.wpos.ai/ultra/examples/triple"><div class="n">Triple Kingdom</div><div class="d">the board box</div><div class="m">8 sections · 25 min</div></a>
-      <a class="chip" style="background:#04192B;color:#F6F8F9" href="https://docs.wpos.ai/ultra/examples/billow"><div class="n">Billow</div><div class="d">the flight ledger</div><div class="m">9 sections · 25 min</div></a>
-      <a class="chip" style="background:#FFFFFF;color:#0A0A0A;border-color:#ffffff55" href="https://docs.wpos.ai/ultra/examples/pumo"><div class="n">Michael Pumo</div><div class="d">the specification</div><div class="m">8 sections · 30 min</div></a>
-      <a class="chip" style="background:#0C3128;color:#F4F1E8" href="https://docs.wpos.ai/ultra/examples/mat"><div class="n">Mat.</div><div class="d">the desk</div><div class="m">6 sections · 21 min</div></a>
-      <a class="chip" style="background:#141414;color:#C8F31D" href="https://docs.wpos.ai/ultra/examples/bt26"><div class="n">BT—26</div><div class="d">the sprint sheet</div><div class="m">8 parts · 24 min</div></a>
-    </div>
-  </section>
-
-  <section id="how" class="reveal">
-    <span class="lt">How it works</span>
-    <h2>Save a file. The site updates. The gates run.</h2>
-    <p class="lead">Elementor pages are JSON documents in the WordPress database — so agents could
-      always <b>technically</b> build them: by authoring thousand-line untyped blobs, blind. That's
-      why agent-built pages looked the way they did. Ultra gives agents what human developers have —
-      <b>components, types, hot reload, and verification</b> — and that's where the quality comes from.</p>
-    <div class="steps">
-      <div class="step">
-        <div class="k">01 · WRITE</div>
-        <h3>JSX components</h3>
-        <p>Pages are small typed components — <code>pages/*.page.jsx</code>, shared
-        <code>components/</code>, tokens in <code>theme.mjs</code>. Tailwind-style
-        <code>tw=""</code> shorthand, real units, <code>useTheme()</code>. Typed props fail
-        at build time, not in front of a client.</p>
-      </div>
-      <div class="step">
-        <div class="k">02 · LOOP</div>
-        <h3>exjsx dev --gates</h3>
-        <p>Watch → millisecond rebuild → diff-driven deploy over REST → hot reload in the
-        preview → verification gates re-check changed pages at 1200, 1920 and 390&nbsp;px.
-        A save lands on the live site in seconds.</p>
-      </div>
-      <div class="step">
-        <div class="k">03 · OWN</div>
-        <h3>Native Elementor</h3>
-        <p>The output is standard Elementor V4 atomic JSON via an authoritative server-side
-        validator — backups and rollback included. Open the page in the editor, hand it to a
-        client, walk away. No runtime, no lock-in.</p>
+      <div class="chrig-under">
+        <span class="chrig-cap">HOUSEMAIT — 9 SECTIONS · 31 MIN OF AGENT TIME · 0 HUMAN EDITS</span>
+        <button type="button" id="chrig-full">▶ WATCH FULL FILM</button>
       </div>
     </div>
-    <div class="stats">
-      <div class="stat"><div class="v">8</div><div class="l">sites shipped on camera</div></div>
-      <div class="stat"><div class="v">17–31</div><div class="l">minutes per site</div></div>
-      <div class="stat"><div class="v">0</div><div class="l">human edits</div></div>
-      <div class="stat"><div class="v">~90</div><div class="l">MCP tools</div></div>
-      <div class="stat"><div class="v">400+</div><div class="l">compiler tests, certified 4.1.4 / 4.2.0</div></div>
-    </div>
-  </section>
-
-  <section id="stack" class="reveal">
-    <span class="lt">The stack</span>
-    <h2>Five pieces. Use all of them, or just one.</h2>
-    <div class="tblwrap"><table>
-      <tr><th>Piece</th><th>Package</th><th>What it does</th></tr>
-      <tr><td><b>Compiler + CLI</b></td><td><code>@algorismus/elementor-jsx</code></td><td>JSX → native Elementor V4 JSON; build, deploy, lint, media, import, and the <code>exjsx dev</code> live loop.</td></tr>
-      <tr><td><b>MCP server</b></td><td><code>@algorismus/elementor-ultra-mcp</code></td><td>~90 tools for any MCP-capable agent: build, refactor, govern pages, design system, HTML→Elementor convert.</td></tr>
-      <tr><td><b>Companion plugin</b></td><td>WordPress plugin (GPL)</td><td>The authoritative REST write path on the site: validation, backups, rollback, capability probes.</td></tr>
-      <tr><td><b>Verify studio</b></td><td><code>@algorismus/elementor-ultra-studio</code></td><td>Post-deploy gates, health doctor, and a measure toolkit — Playwright-driven, no hand-written scripts.</td></tr>
-      <tr><td><b>Local WordPress</b></td><td><code>@algorismus/elementor-ultra-playground</code></td><td>Real WordPress + Elementor from a pre-baked snapshot in seconds. Pure Node — no Docker.</td></tr>
-    </table></div>
-  </section>
-
-  <section class="reveal">
-    <span class="lt">Start</span>
-    <h2>Up and running in one paste.</h2>
-    <p class="lead">Works with Claude Code, Cursor, Windsurf — anything that speaks MCP.
-      Node 18+. Docker optional (the default local path is pure Node).</p>
-    <div class="prompt" style="margin-top:26px">
-      <div class="bar">
-        <div class="dot" style="background:#ff5f57"></div><div class="dot" style="background:#febc2e"></div><div class="dot" style="background:#28c840"></div>
-        terminal
-        <button class="copybtn" data-copy="npx @algorismus/create-elementor-ultra">copy</button>
-      </div>
-      <pre>npx @algorismus/create-elementor-ultra</pre>
-    </div>
-    <div class="ctas" style="margin-top:26px">
-      <a class="btn primary" href="https://github.com/Algorismus-io/elementor-ultra">GitHub — Algorismus-io/elementor-ultra</a>
-      <a class="btn ghost" href="https://docs.wpos.ai/ultra">Read the docs</a>
-    </div>
-  </section>
-
-  <footer>
-    <div class="row">
-      <div>MIT © 2026 <a href="https://algorismus.io">Algorismus</a></div>
-      <div>
-        <a href="https://github.com/Algorismus-io/elementor-ultra">GitHub</a> ·
-        <a href="https://www.npmjs.com/package/@algorismus/elementor-jsx">npm</a> ·
-        <a href="https://docs.wpos.ai/ultra">Docs</a> ·
-        <a href="https://docs.wpos.ai/ultra/examples/overview">Examples</a>
-      </div>
-    </div>
-    <p class="disclaimer">Not affiliated with or endorsed by Elementor Ltd — "Elementor" is their
-      trademark; Elementor Ultra is an independent open-source stack that targets their page
-      format. The films show design studies of real sites, rebuilt with their public copy and
-      assets to test the toolchain; all trademarks and artwork belong to their owners.</p>
-  </footer>
+  </div>
+  <div class="chrig-chapters-vp"><div class="chrig-chapters" id="chrig-chapters"></div></div>
+</div>
 </div>
 <script>
-  document.querySelectorAll('.copybtn').forEach(b=>b.addEventListener('click',()=>{
-    navigator.clipboard.writeText(b.dataset.copy).then(()=>{b.textContent='copied';setTimeout(()=>b.textContent='copy',1600)});
-  }));
-  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.08});
-  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+(function(){
+  var FILMS=[{"slug": "housemait", "name": "Housemait", "cap": "HOUSEMAIT — 9 SECTIONS · 31 MIN OF AGENT TIME · 0 HUMAN EDITS", "total": 98.1, "end": 94.5, "ch": [{"n": "CH.01", "t": "THE PROMPT", "at": "AGENT TIME 00:20", "s": 2.75, "note": "One human sentence. That is the entire human contribution to this film.", "log": "> prompt sent — agent takes over"}, {"n": "CH.02", "t": "THE BUILD OPENS", "at": "00:50 → 14:27 · 51×", "s": 14.22, "note": "Compressed build. Every save: millisecond rebuild, diff-driven deploy, hot reload, gates at three widths.", "log": "[dev] full deploy (kit changed) · gates PASS (/)"}, {"n": "CH.03", "t": "FIRST SECTION LANDS", "at": "AGENT TIME 14:31", "s": 29.77, "note": "The first section — hero — lands as one save. The camera catches the reload as it happens.", "log": "[dev] gates PASS (/)"}, {"n": "CH.04", "t": "SECTION BY SECTION", "at": "14:40 → 31:24 · 63×", "s": 38.92, "note": "Whatsapp 19:48 · OS section 23:39 · stars 25:43 · meals 27:20.", "log": "[dev] full deploy (kit changed) · 1 page(s)"}, {"n": "CH.05", "t": "SHIPPED", "at": "AGENT TIME 31:36", "s": 55.35, "note": "The ship signal only fires when every section needle is live. All gates green.", "log": "[dev] gates PASS (/) · 9/9 sections live"}, {"n": "CH.06", "t": "NATIVE ELEMENTOR", "at": "THE EDITOR PROOF", "s": 66.1, "note": "The finished page opens in the real editor — heading selected, navigator showing the tree. Fully editable.", "log": "post.php?action=elementor → loaded"}, {"n": "CH.07", "t": "THE RESULT", "at": "FULL SCROLL", "s": 75.22, "note": "9 sections, 31 minutes of agent time, zero human edits.", "log": "eu-studio check — pass:true"}]}, {"slug": "canopy", "name": "Canopy", "cap": "CANOPY — 10 SECTIONS · 17 MIN OF AGENT TIME · 0 HUMAN EDITS", "total": 97.8, "end": 94.2, "ch": [{"n": "CH.01", "t": "THE PROMPT", "at": "AGENT TIME 00:20", "s": 2.75, "note": "One human sentence. That is the entire human contribution to this film.", "log": "> prompt sent — agent takes over"}, {"n": "CH.02", "t": "THE BUILD OPENS", "at": "00:50 → 08:49 · 30×", "s": 14.25, "note": "Compressed build. Every save: millisecond rebuild, diff-driven deploy, hot reload, gates at three widths.", "log": "[dev] full deploy (kit changed) · gates PASS (/)"}, {"n": "CH.03", "t": "FIRST SECTION LANDS", "at": "AGENT TIME 08:53", "s": 29.73, "note": "The first section — hero — lands as one save. The camera catches the reload as it happens.", "log": "[dev] gates PASS (/)"}, {"n": "CH.04", "t": "SECTION BY SECTION", "at": "09:02 → 16:52 · 30×", "s": 38.88, "note": "New-search 09:57 · tree 11:45 · toolkit 12:30.", "log": "[dev] full deploy (kit changed) · 1 page(s)"}, {"n": "CH.05", "t": "SHIPPED", "at": "AGENT TIME 17:04", "s": 54.98, "note": "The ship signal only fires when every section needle is live. All gates green.", "log": "[dev] gates PASS (/) · 10/10 sections live"}, {"n": "CH.06", "t": "NATIVE ELEMENTOR", "at": "THE EDITOR PROOF", "s": 65.73, "note": "The finished page opens in the real editor — heading selected, navigator showing the tree. Fully editable.", "log": "post.php?action=elementor → loaded"}, {"n": "CH.07", "t": "THE RESULT", "at": "FULL SCROLL", "s": 74.88, "note": "10 sections, 17 minutes of agent time, zero human edits.", "log": "eu-studio check — pass:true"}]}, {"slug": "alike", "name": "Alike.page", "cap": "ALIKE.PAGE — 8 SECTIONS · 22 MIN OF AGENT TIME · 0 HUMAN EDITS", "total": 98.1, "end": 94.5, "ch": [{"n": "CH.01", "t": "THE PROMPT", "at": "AGENT TIME 00:24", "s": 2.75, "note": "One human sentence. That is the entire human contribution to this film.", "log": "> prompt sent — agent takes over"}, {"n": "CH.02", "t": "THE BUILD OPENS", "at": "00:54 → 12:05 · 42×", "s": 14.22, "note": "Compressed build. Every save: millisecond rebuild, diff-driven deploy, hot reload, gates at three widths.", "log": "[dev] full deploy (kit changed) · gates PASS (/)"}, {"n": "CH.03", "t": "FIRST SECTION LANDS", "at": "AGENT TIME 12:09", "s": 29.77, "note": "The first section — cover — lands as one save. The camera catches the reload as it happens.", "log": "[dev] gates PASS (/)"}, {"n": "CH.04", "t": "SECTION BY SECTION", "at": "12:18 → 21:53 · 36×", "s": 38.92, "note": "Store spread 15:30 · essay 18:26 · blow-in 18:26.", "log": "[dev] full deploy (kit changed) · 1 page(s)"}, {"n": "CH.05", "t": "SHIPPED", "at": "AGENT TIME 22:05", "s": 55.35, "note": "The ship signal only fires when every section needle is live. All gates green.", "log": "[dev] gates PASS (/) · 8/8 sections live"}, {"n": "CH.06", "t": "NATIVE ELEMENTOR", "at": "THE EDITOR PROOF", "s": 66.1, "note": "The finished page opens in the real editor — heading selected, navigator showing the tree. Fully editable.", "log": "post.php?action=elementor → loaded"}, {"n": "CH.07", "t": "THE RESULT", "at": "FULL SCROLL", "s": 75.25, "note": "8 sections, 22 minutes of agent time, zero human edits.", "log": "eu-studio check — pass:true"}]}, {"slug": "triple", "name": "Triple Kingdom", "cap": "TRIPLE KINGDOM — 8 SECTIONS · 25 MIN OF AGENT TIME · 0 HUMAN EDITS", "total": 94.9, "end": 91.3, "ch": [{"n": "CH.01", "t": "THE PROMPT", "at": "AGENT TIME 00:20", "s": 2.75, "note": "One human sentence. That is the entire human contribution to this film.", "log": "> prompt sent — agent takes over"}, {"n": "CH.02", "t": "THE BUILD OPENS", "at": "00:50 → 10:11 · 35×", "s": 14.25, "note": "Compressed build. Every save: millisecond rebuild, diff-driven deploy, hot reload, gates at three widths.", "log": "[dev] full deploy (kit changed) · gates PASS (/)"}, {"n": "CH.03", "t": "FIRST SECTION LANDS", "at": "AGENT TIME 10:15", "s": 29.8, "note": "The first section — hero — lands as one save. The camera catches the reload as it happens.", "log": "[dev] gates PASS (/)"}, {"n": "CH.04", "t": "SECTION BY SECTION", "at": "10:24 → 24:58 · 55×", "s": 38.95, "note": "No-ads panel 17:28 · game panels 19:19 · reviews 21:06.", "log": "[dev] full deploy (kit changed) · 1 page(s)"}, {"n": "CH.05", "t": "SHIPPED", "at": "AGENT TIME 25:10", "s": 55.38, "note": "The ship signal only fires when every section needle is live. All gates green.", "log": "[dev] gates PASS (/) · 8/8 sections live"}, {"n": "CH.06", "t": "NATIVE ELEMENTOR", "at": "THE EDITOR PROOF", "s": 66.13, "note": "The finished page opens in the real editor — heading selected, navigator showing the tree. Fully editable.", "log": "post.php?action=elementor → loaded"}, {"n": "CH.07", "t": "THE RESULT", "at": "FULL SCROLL", "s": 75.28, "note": "8 sections, 25 minutes of agent time, zero human edits.", "log": "eu-studio check — pass:true"}]}, {"slug": "billow", "name": "Billow", "cap": "BILLOW — 9 SECTIONS · 25 MIN OF AGENT TIME · 0 HUMAN EDITS", "total": 98.13, "end": 94.53, "ch": [{"n": "CH.01", "t": "THE PROMPT", "at": "AGENT TIME 00:22", "s": 2.75, "note": "One human sentence. That is the entire human contribution to this film.", "log": "> prompt sent — agent takes over"}, {"n": "CH.02", "t": "THE BUILD OPENS", "at": "00:52 → 09:37 · 33×", "s": 14.25, "note": "Compressed build. Every save: millisecond rebuild, diff-driven deploy, hot reload, gates at three widths.", "log": "[dev] full deploy (kit changed) · gates PASS (/)"}, {"n": "CH.03", "t": "FIRST SECTION LANDS", "at": "AGENT TIME 09:41", "s": 29.8, "note": "The first section — hero — lands as one save. The camera catches the reload as it happens.", "log": "[dev] gates PASS (/)"}, {"n": "CH.04", "t": "SECTION BY SECTION", "at": "09:50 → 25:36 · 59×", "s": 38.95, "note": "Five-minutes 16:11 · invoice 17:28 · cockpit 23:11.", "log": "[dev] full deploy (kit changed) · 1 page(s)"}, {"n": "CH.05", "t": "SHIPPED", "at": "AGENT TIME 25:48", "s": 55.38, "note": "The ship signal only fires when every section needle is live. All gates green.", "log": "[dev] gates PASS (/) · 9/9 sections live"}, {"n": "CH.06", "t": "NATIVE ELEMENTOR", "at": "THE EDITOR PROOF", "s": 66.13, "note": "The finished page opens in the real editor — heading selected, navigator showing the tree. Fully editable.", "log": "post.php?action=elementor → loaded"}, {"n": "CH.07", "t": "THE RESULT", "at": "FULL SCROLL", "s": 75.25, "note": "9 sections, 25 minutes of agent time, zero human edits.", "log": "eu-studio check — pass:true"}]}, {"slug": "pumo", "name": "Michael Pumo", "cap": "MICHAEL PUMO — 8 SECTIONS · 30 MIN OF AGENT TIME · 0 HUMAN EDITS", "total": 97.2, "end": 93.6, "ch": [{"n": "CH.01", "t": "THE PROMPT", "at": "AGENT TIME 00:22", "s": 2.75, "note": "One human sentence. That is the entire human contribution to this film.", "log": "> prompt sent — agent takes over"}, {"n": "CH.02", "t": "THE BUILD OPENS", "at": "00:52 → 13:31 · 47×", "s": 14.22, "note": "Compressed build. Every save: millisecond rebuild, diff-driven deploy, hot reload, gates at three widths.", "log": "[dev] full deploy (kit changed) · gates PASS (/)"}, {"n": "CH.03", "t": "FIRST SECTION LANDS", "at": "AGENT TIME 13:35", "s": 29.77, "note": "The first section — hero — lands as one save. The camera catches the reload as it happens.", "log": "[dev] gates PASS (/)"}, {"n": "CH.04", "t": "SECTION BY SECTION", "at": "13:44 → 29:46 · 60×", "s": 38.92, "note": "Capability 20:46 · project index 23:47 · citations 25:07.", "log": "[dev] full deploy (kit changed) · 1 page(s)"}, {"n": "CH.05", "t": "SHIPPED", "at": "AGENT TIME 29:58", "s": 55.35, "note": "The ship signal only fires when every section needle is live. All gates green.", "log": "[dev] gates PASS (/) · 8/8 sections live"}, {"n": "CH.06", "t": "NATIVE ELEMENTOR", "at": "THE EDITOR PROOF", "s": 66.1, "note": "The finished page opens in the real editor — heading selected, navigator showing the tree. Fully editable.", "log": "post.php?action=elementor → loaded"}, {"n": "CH.07", "t": "THE RESULT", "at": "FULL SCROLL", "s": 75.25, "note": "8 sections, 30 minutes of agent time, zero human edits.", "log": "eu-studio check — pass:true"}]}, {"slug": "mat", "name": "Mat.", "cap": "MAT. — 6 SECTIONS · 21 MIN OF AGENT TIME · 0 HUMAN EDITS", "total": 91.63, "end": 88.03, "ch": [{"n": "CH.01", "t": "THE PROMPT", "at": "AGENT TIME 00:22", "s": 2.75, "note": "One human sentence. That is the entire human contribution to this film.", "log": "> prompt sent — agent takes over"}, {"n": "CH.02", "t": "THE BUILD OPENS", "at": "00:52 → 09:30 · 32×", "s": 14.22, "note": "Compressed build. Every save: millisecond rebuild, diff-driven deploy, hot reload, gates at three widths.", "log": "[dev] full deploy (kit changed) · gates PASS (/)"}, {"n": "CH.03", "t": "FIRST SECTION LANDS", "at": "AGENT TIME 09:34", "s": 29.77, "note": "The first section — cta — lands as one save. The camera catches the reload as it happens.", "log": "[dev] gates PASS (/)"}, {"n": "CH.04", "t": "SECTION BY SECTION", "at": "09:43 → 20:56 · 42×", "s": 38.92, "note": "Hero 09:34 · features 15:48 · letter 20:05.", "log": "[dev] full deploy (kit changed) · 1 page(s)"}, {"n": "CH.05", "t": "SHIPPED", "at": "AGENT TIME 21:08", "s": 55.35, "note": "The ship signal only fires when every section needle is live. All gates green.", "log": "[dev] gates PASS (/) · 6/6 sections live"}, {"n": "CH.06", "t": "NATIVE ELEMENTOR", "at": "THE EDITOR PROOF", "s": 66.1, "note": "The finished page opens in the real editor — heading selected, navigator showing the tree. Fully editable.", "log": "post.php?action=elementor → loaded"}, {"n": "CH.07", "t": "THE RESULT", "at": "FULL SCROLL", "s": 75.22, "note": "6 sections, 21 minutes of agent time, zero human edits.", "log": "eu-studio check — pass:true"}]}, {"slug": "bt26", "name": "BT—26", "cap": "BT—26 — 8 PARTS · 24 MIN OF AGENT TIME · 0 HUMAN EDITS", "total": 101.72, "end": 98.12, "ch": [{"n": "CH.01", "t": "THE PROMPT", "at": "AGENT TIME 00:20", "s": 2.75, "note": "One human sentence. That is the entire human contribution to this film.", "log": "> prompt sent — agent takes over"}, {"n": "CH.02", "t": "THE BUILD OPENS", "at": "00:50 → 07:15 · 30×", "s": 14.25, "note": "Compressed build. Every save: millisecond rebuild, diff-driven deploy, hot reload, gates at three widths.", "log": "[dev] full deploy (kit changed) · gates PASS (/)"}, {"n": "CH.03", "t": "FIRST SECTION LANDS", "at": "AGENT TIME 07:19", "s": 26.63, "note": "The first section — PT.01 arrival — lands as one save. The camera catches the reload as it happens.", "log": "[dev] gates PASS (/)"}, {"n": "CH.04", "t": "SECTION BY SECTION", "at": "07:28 → 24:25 · 64×", "s": 35.78, "note": "PT.02 sprint 14:57 · PT.03 table 14:57 · PT.04 clock 17:11 · PT.05 numbers 18:12.", "log": "[dev] full deploy (kit changed) · 1 page(s)"}, {"n": "CH.05", "t": "SHIPPED", "at": "AGENT TIME 24:37", "s": 52.22, "note": "The ship signal only fires when every section needle is live. All gates green.", "log": "[dev] gates PASS (/) · 8/8 parts live"}, {"n": "CH.06", "t": "NATIVE ELEMENTOR", "at": "THE EDITOR PROOF", "s": 62.97, "note": "Filmed after the build: the finished page opens in the real editor — heading selected, navigator showing the tree. Fully editable.", "log": "post.php?action=elementor → loaded"}, {"n": "CH.07", "t": "A LIVE TWEAK", "at": "AGENT TIME 28:04", "s": 72.02, "note": "After shipping, a second prompt changes the page live — the loop never closed.", "log": "> tweak prompt sent"}, {"n": "CH.08", "t": "THE RESULT", "at": "FULL SCROLL", "s": 86.57, "note": "8 parts, 24 minutes of agent time, zero human edits.", "log": "8/8 parts detected"}]}];
+  var v=document.getElementById('chrig-video');
+  var wrap=document.getElementById('chrig-chapters');
+  wrap.setAttribute('tabindex','0'); wrap.setAttribute('aria-label','Film chapters timeline');
+  var rail=document.getElementById('chrig-rail');
+  var prog=document.getElementById('chrig-progress');
+  var fullBtn=document.getElementById('chrig-full');
+  var cap=document.querySelector('.chrig-cap');
+  var full=false, active=-1, F=FILMS[0], cards=[], pendingSeek=null;
+  var BASE='https://docs.wpos.ai', VQ='?v=3';
+  function endT(i){return i<F.ch.length-1?F.ch[i+1].s:F.end}
+  function go(i,seek){
+    if(i===active&&!seek)return;
+    active=i;
+    document.getElementById('chrig').classList.toggle('finale', i===F.ch.length-1);
+    cards.forEach(function(c,j){c.classList.toggle('on',j===i)});
+    rail.querySelectorAll('.chrig-tick').forEach(function(k,j){k.classList.toggle('on',j===i)});
+    if(!full){
+      if(v.readyState>=1){
+        try{
+          if(seek||Math.abs(v.currentTime-F.ch[i].s)>2){v.currentTime=F.ch[i].s}
+          var p=v.play();if(p&&p.catch)p.catch(function(){})
+        }catch(e){}
+      }
+      else pendingSeek=F.ch[i].s;
+    }
+  }
+  // ---- auto-continue: chapter ends -> glide to the next card and keep playing,
+  // unless a human touched the scroll in the last 2.5s or the rig left the viewport
+  var lastHuman=0;
+  ['wheel','touchmove'].forEach(function(ev){
+    window.addEventListener(ev,function(){lastHuman=Date.now()},{passive:true});
+  });
+  window.addEventListener('keydown',function(e){
+    if(['ArrowDown','ArrowUp','PageDown','PageUp',' ','Home','End'].indexOf(e.key)>=0)lastHuman=Date.now();
+  });
+  function rigVisible(){
+    var r=outer.getBoundingClientRect();
+    return r.bottom>window.innerHeight*0.5&&r.top<window.innerHeight*0.5;
+  }
+  function canAuto(){
+    if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return false;
+    return window.matchMedia('(min-width:900px)').matches&&
+      Date.now()-lastHuman>2500&&rigVisible()&&active<F.ch.length-1;
+  }
+  v.addEventListener('loadedmetadata',function(){
+    if(pendingSeek!=null){ try{v.currentTime=pendingSeek;var p=v.play();if(p&&p.catch)p.catch(function(){})}catch(e){} pendingSeek=null; }
+  });
+  function buildFilm(){
+    wrap.innerHTML=''; rail.querySelectorAll('.chrig-tick').forEach(function(k){k.remove()});
+    cards=[];
+    F.ch.forEach(function(c,i){
+      var d=document.createElement('div'); d.className='chrig-card'; d.dataset.i=i;
+      d.setAttribute('role','button'); d.setAttribute('tabindex','0');
+      d.setAttribute('aria-label','Play chapter '+c.n+' '+c.t);
+      d.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();d.click()}});
+      d.innerHTML='<div class="cc-top"><span class="cc-n">'+c.n+'</span><span class="cc-at">'+c.at+'</span></div>'+
+        '<div class="cc-t">'+c.t+'</div><p class="cc-note">'+c.note+'</p><code class="cc-log">'+c.log+'</code>';
+      d.addEventListener('click',function(){
+        if(isDesk())window.scrollTo({top:runwayY(i)});
+        go(i,true);centerCard(i);
+      });
+      wrap.appendChild(d); cards.push(d);
+      var tick=document.createElement('button'); tick.type='button'; tick.className='chrig-tick';
+      tick.style.left=(c.s/F.total*100)+'%'; tick.title=c.n+' '+c.t;
+      tick.addEventListener('click',function(e){e.stopPropagation();
+        if(isDesk())window.scrollTo({top:runwayY(i)});
+        go(i,true);centerCard(i);
+      });
+      rail.appendChild(tick);
+    });
+    cap.textContent=F.cap;
+    observe();
+  }
+  // ---- scroll gearing: the pinned runway drives the chapter index ----
+  var outer=document.getElementById('chrig-outer');
+  function isDesk(){return window.matchMedia('(min-width:900px)').matches}
+  function outerTop(){return outer.getBoundingClientRect().top+window.scrollY}
+  function runwayY(i){
+    var span=outer.offsetHeight-window.innerHeight;
+    return outerTop()+((i+0.12)/F.ch.length)*span;
+  }
+  function centerCard(i){
+    if(!isDesk())return;
+    var vp=document.querySelector('.chrig-chapters-vp');
+    var c=cards[i]; if(!c||!vp)return;
+    var y=c.offsetTop + c.offsetHeight/2 - vp.clientHeight/2;
+    wrap.style.transform='translateY('+(-Math.max(0,y))+'px)';
+  }
+  var ticking=false;
+  function onScroll(){
+    if(!isDesk()||full)return;
+    if(ticking)return; ticking=true;
+    requestAnimationFrame(function(){
+      ticking=false;
+      var span=outer.offsetHeight-window.innerHeight;
+      var p=(window.scrollY-outerTop())/span;
+      if(p<-0.15||p>1.15)return;
+      p=Math.max(0,Math.min(0.999,p));
+      var i=Math.min(F.ch.length-1,Math.floor(p*F.ch.length));
+      if(i!==active){go(i,true);centerCard(i);}
+    });
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  function observe(){
+    if(isDesk()){ go(0,false); centerCard(0); if(!rigVisible())v.pause(); }
+    else { wrap.style.transform='none'; go(0,false); v.pause(); }
+  }
+  var advancing=false;
+  function chapterAt(t){
+    for(var i=F.ch.length-1;i>=0;i--){if(t>=F.ch[i].s-0.1)return i}
+    return 0;
+  }
+  v.addEventListener('timeupdate',function(){
+    prog.style.width=(v.currentTime/F.total*100)+'%';
+    if(!isDesk()){
+      var i=chapterAt(v.currentTime);
+      if(i!==active){
+        active=i;
+        cards.forEach(function(c,j){c.classList.toggle('on',j===i)});
+        rail.querySelectorAll('.chrig-tick').forEach(function(k,j){k.classList.toggle('on',j===i)});
+        if(cards[i])wrap.scrollTo({left:Math.max(0,cards[i].offsetLeft-16),behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+      }
+      return;
+    }
+    if(full){
+      var fi=chapterAt(v.currentTime);
+      if(fi!==active){
+        active=fi;
+        cards.forEach(function(c,j){c.classList.toggle('on',j===fi)});
+        rail.querySelectorAll('.chrig-tick').forEach(function(k,j){k.classList.toggle('on',j===fi)});
+        centerCard(fi);
+      }
+      return;
+    }
+    if(active<0)return;
+    if(v.currentTime>=endT(active)-.05){
+      if(canAuto()&&!advancing){
+        advancing=true;
+        var next=active+1;
+        window.scrollTo({top:runwayY(next),behavior:'smooth'});
+        go(next,false);centerCard(next);
+        setTimeout(function(){advancing=false},1100);
+      } else if(!advancing){
+        if(active===F.ch.length-1){ v.currentTime=F.ch[active].s; var p=v.play(); if(p&&p.catch)p.catch(function(){}); }
+        else v.pause();
+      }
+    }
+  });
+  fullBtn.addEventListener('click',function(){
+    full=!full;
+    fullBtn.textContent=full?'■ EXIT FULL PLAY':'▶ WATCH FULL FILM';
+    v.controls=full;
+    if(full){ try{v.currentTime=0;var p=v.play();if(p&&p.catch)p.catch(function(){})}catch(e){} }
+    else { v.pause(); if(active>=0){ v.currentTime=F.ch[active].s; } }
+  });
+  function switchFilm(i){
+    if(FILMS[i]===F)return;
+    F=FILMS[i]; active=-1; full=false; v.controls=false;
+    fullBtn.textContent='▶ WATCH FULL FILM';
+    v.pause();
+    v.poster=BASE+'/images/ultra/examples/'+F.slug+'-thumb.jpg';
+    v.src=BASE+'/videos/ultra/examples/'+F.slug+'.mp4'+VQ;
+    buildFilm();
+    var chips=document.querySelectorAll('#chip-row>div');
+    chips.forEach(function(c,j){c.classList.toggle('film-on',j===i)});
+    pendingSeek=F.ch[0].s;
+    if(isDesk())window.scrollTo({top:runwayY(0)});
+    go(0,true);centerCard(0);
+  }
+  // chips → film switcher (docs link preserved as a small corner arrow)
+  function wireChips(){
+  var chips=document.querySelectorAll('#chip-row>div');
+  chips.forEach(function(c,i){
+    if(i>=FILMS.length)return;
+    var a=c.querySelector('a[href]');
+    if(a){
+      var href=a.getAttribute('href');
+      var span=document.createElement('span'); span.innerHTML=a.innerHTML;
+      span.className=a.className; a.parentNode.replaceChild(span,a);
+      var link=document.createElement('a'); link.href=href; link.className='chip-go'; link.textContent='↗';
+      link.title='Full breakdown'; link.addEventListener('click',function(e){e.stopPropagation()});
+      c.appendChild(link);
+    }
+    c.style.cursor='pointer';
+    c.addEventListener('click',function(){switchFilm(i)});
+    var nameEl=c.querySelector('span.e-paragraph-link-base')||c.querySelector('span')||c;
+    if(nameEl!==c){
+      nameEl.setAttribute('role','button'); nameEl.setAttribute('tabindex','0');
+      nameEl.setAttribute('aria-label','Load the '+FILMS[i].name+' film');
+      nameEl.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();switchFilm(i)}});
+    }
+    if(i===0)c.classList.add('film-on');
+  });
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',wireChips);
+  else wireChips();
+  buildFilm();
+})();
+</script>				</div>
+					<p class="c-13g8rm e-paragraph-base" data-interaction-id="e0000r" data-e-type="widget" data-id="e0000r">THE OTHER SEVEN — CLICK A CARD TO LOAD ITS FILM INTO THE PLAYER</p>
+		<div class="elementor-element elementor-element-e0000s e-con e-atomic-element e-flexbox-base c-b8wldp " data-id="e0000s" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000s" id="chip-row" data-e-type="e-flexbox" data-id="e0000s">
+    <div class="elementor-element elementor-element-e0000t e-con e-atomic-element e-flexbox-base c-1bn00d " data-id="e0000t" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000t" data-e-type="e-flexbox" data-id="e0000t">
+    			<p class="c-id48hx e-paragraph-base" data-interaction-id="e0000u" data-e-type="widget" data-id="e0000u"><a href="https://docs.wpos.ai/ultra/examples/housemait" target="_self" class="e-paragraph-link-base">
+		Housemait
+	</a></p>
+					<p class="c-wzwdpr e-paragraph-base" data-interaction-id="e0000v" data-e-type="widget" data-id="e0000v">the fridge door</p>
+					<p class="c-17kmn8 e-paragraph-base" data-interaction-id="e0000w" data-e-type="widget" data-id="e0000w">9 sections · 31 min</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0000x e-con e-atomic-element e-flexbox-base c-1kdkji " data-id="e0000x" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000x" data-e-type="e-flexbox" data-id="e0000x">
+    			<p class="c-vdpalv e-paragraph-base" data-interaction-id="e0000y" data-e-type="widget" data-id="e0000y"><a href="https://docs.wpos.ai/ultra/examples/canopy" target="_self" class="e-paragraph-link-base">
+		Canopy
+	</a></p>
+					<p class="c-8l0bbx e-paragraph-base" data-interaction-id="e0000z" data-e-type="widget" data-id="e0000z">the greenhouse ledger</p>
+					<p class="c-19k3ao e-paragraph-base" data-interaction-id="e00010" data-e-type="widget" data-id="e00010">10 sections · 17 min</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00011 e-con e-atomic-element e-flexbox-base c-vuadha " data-id="e00011" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00011" data-e-type="e-flexbox" data-id="e00011">
+    			<p class="c-vjhsfx e-paragraph-base" data-interaction-id="e00012" data-e-type="widget" data-id="e00012"><a href="https://docs.wpos.ai/ultra/examples/alike" target="_self" class="e-paragraph-link-base">
+		Alike.page
+	</a></p>
+					<p class="c-16s236 e-paragraph-base" data-interaction-id="e00013" data-e-type="widget" data-id="e00013">the magazine cover</p>
+					<p class="c-1q474g e-paragraph-base" data-interaction-id="e00014" data-e-type="widget" data-id="e00014">8 sections · 22 min</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00015 e-con e-atomic-element e-flexbox-base c-fv74t6 " data-id="e00015" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00015" data-e-type="e-flexbox" data-id="e00015">
+    			<p class="c-1ake2v e-paragraph-base" data-interaction-id="e00016" data-e-type="widget" data-id="e00016"><a href="https://docs.wpos.ai/ultra/examples/triple" target="_self" class="e-paragraph-link-base">
+		Triple Kingdom
+	</a></p>
+					<p class="c-17srqz e-paragraph-base" data-interaction-id="e00017" data-e-type="widget" data-id="e00017">the board box</p>
+					<p class="c-1pawsu e-paragraph-base" data-interaction-id="e00018" data-e-type="widget" data-id="e00018">8 sections · 25 min</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00019 e-con e-atomic-element e-flexbox-base c-1t11li " data-id="e00019" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00019" data-e-type="e-flexbox" data-id="e00019">
+    			<p class="c-1feaeb e-paragraph-base" data-interaction-id="e0001a" data-e-type="widget" data-id="e0001a"><a href="https://docs.wpos.ai/ultra/examples/billow" target="_self" class="e-paragraph-link-base">
+		Billow
+	</a></p>
+					<p class="c-1txeds e-paragraph-base" data-interaction-id="e0001b" data-e-type="widget" data-id="e0001b">the flight ledger</p>
+					<p class="c-4oji8w e-paragraph-base" data-interaction-id="e0001c" data-e-type="widget" data-id="e0001c">9 sections · 25 min</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0001d e-con e-atomic-element e-flexbox-base c-wq74v9 " data-id="e0001d" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001d" data-e-type="e-flexbox" data-id="e0001d">
+    			<p class="c-12jq4g e-paragraph-base" data-interaction-id="e0001e" data-e-type="widget" data-id="e0001e"><a href="https://docs.wpos.ai/ultra/examples/pumo" target="_self" class="e-paragraph-link-base">
+		Michael Pumo
+	</a></p>
+					<p class="c-hbcm0i e-paragraph-base" data-interaction-id="e0001f" data-e-type="widget" data-id="e0001f">the specification</p>
+					<p class="c-txe8hm e-paragraph-base" data-interaction-id="e0001g" data-e-type="widget" data-id="e0001g">8 sections · 30 min</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0001h e-con e-atomic-element e-flexbox-base c-2pxoyq " data-id="e0001h" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001h" data-e-type="e-flexbox" data-id="e0001h">
+    			<p class="c-dmtcz e-paragraph-base" data-interaction-id="e0001i" data-e-type="widget" data-id="e0001i"><a href="https://docs.wpos.ai/ultra/examples/mat" target="_self" class="e-paragraph-link-base">
+		Mat.
+	</a></p>
+					<p class="c-1mik4n e-paragraph-base" data-interaction-id="e0001j" data-e-type="widget" data-id="e0001j">the desk</p>
+					<p class="c-e7sxdh e-paragraph-base" data-interaction-id="e0001k" data-e-type="widget" data-id="e0001k">6 sections · 21 min</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0001l e-con e-atomic-element e-flexbox-base c-1vvjl7 " data-id="e0001l" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001l" data-e-type="e-flexbox" data-id="e0001l">
+    			<p class="c-35mpzy e-paragraph-base" data-interaction-id="e0001m" data-e-type="widget" data-id="e0001m"><a href="https://docs.wpos.ai/ultra/examples/bt26" target="_self" class="e-paragraph-link-base">
+		BT—26
+	</a></p>
+					<p class="c-brcfbc e-paragraph-base" data-interaction-id="e0001n" data-e-type="widget" data-id="e0001n">the sprint sheet</p>
+					<p class="c-1rj9x0 e-paragraph-base" data-interaction-id="e0001o" data-e-type="widget" data-id="e0001o">8 parts · 24 min</p>
+		
+</div>
+
+</div>
+
+</section>
+<section class="elementor-element elementor-element-e0001p e-con e-atomic-element e-flexbox-base c-kpsy5x " data-id="e0001p" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001p" id="seam" data-e-type="e-flexbox" data-id="e0001p">
+    <div class="elementor-element elementor-element-e0001q e-con e-atomic-element e-flexbox-base c-nokn4c " data-id="e0001q" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001q" data-e-type="e-flexbox" data-id="e0001q">
+    			<p class="c-lwsecb e-paragraph-base" data-interaction-id="e0001r" data-e-type="widget" data-id="e0001r">02</p>
+					<p class="c-10rae1 e-paragraph-base" data-interaction-id="e0001s" data-e-type="widget" data-id="e0001s">The seam</p>
+		
+</div>
+			<h2 data-interaction-id="e0001t" class="c-pfkm0a e-heading-base" data-e-type="widget" data-id="e0001t">Same page. One is a blob.<br>One is a language.</h2>
+		<div class="elementor-element elementor-element-e0001u e-con e-atomic-element e-flexbox-base c-154w1x " data-id="e0001u" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001u" data-e-type="e-flexbox" data-id="e0001u">
+    <div class="elementor-element elementor-element-e0001v e-con e-atomic-element e-flexbox-base c-12lm6a " data-id="e0001v" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001v" id="seam-blob" data-e-type="e-flexbox" data-id="e0001v">
+    			<p class="c-1de3yx e-paragraph-base" data-interaction-id="e0001w" data-e-type="widget" data-id="e0001w">WHAT YOUR AGENT WRITES TODAY — BLIND</p>
+				<div class="elementor-element elementor-element-e0001x elementor-widget elementor-widget-html" data-id="e0001x" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					
+<div id="seam-blob-pre" aria-hidden="true"><pre style="margin:0;white-space:pre-wrap;word-break:break-word;font-family:'GeistM',ui-monospace,monospace;font-size:11px;line-height:1.6;color:#63604F">[{ "id": "e00000", "elType": "e-flexbox",
+  "settings": { "classes": { "$$type": "classes",
+    "value": ["g-c-12f5qe"] },
+   "tag": { "$$type": "string", "value": "div" } },
+  "elements": [
+   { "id": "e00001", "elType": "e-flexbox",
+    "settings": { "classes": { "$$type": "classes",
+      "value": ["g-c-hw3p4m"] },
+     "tag": { "$$type": "string", "value": "section" },
+     "_cssid": { "$$type": "string", "value": "hero" } },
+    "elements": [
+     { "id": "e00002", "elType": "e-flexbox",
+      "settings": { "classes": { "$$type": "classes",
+        "value": ["g-c-1ra9hy"] } },
+      "elements": [
+       { "id": "e00003", "elType": "widget",
+        "settings": { "classes": { "$$type":
+          "classes", "value": ["g-c-<span id="blob-hash">1e5m6x</span>"] },
+         "tag": { "$$type": "string", "value": "h1" },
+         "title": { "$$type": "html-v3", "value": {
+          "content": { "$$type": "string", "value":
+           "<span id="blob-copy">Family life, organised with AI.</span>" },
+          "children": [] } } },
+        "widgetType": "e-heading" },
+       ...and 3,400 more lines like these</pre></div>				</div>
+		
+</div>
+<div class="elementor-element elementor-element-e0001y e-con e-atomic-element e-flexbox-base c-1vva0t " data-id="e0001y" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001y" id="seam-jsx" data-e-type="e-flexbox" data-id="e0001y">
+    			<p class="c-1uboct e-paragraph-base" data-interaction-id="e0001z" data-e-type="widget" data-id="e0001z">THE SAME SECTION, WITH ULTRA</p>
+				<div class="elementor-element elementor-element-e00020 elementor-widget elementor-widget-html" data-id="e00020" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					
+<div id="seam-jsx-pre" aria-hidden="true"><pre style="margin:0;white-space:pre-wrap;word-break:break-word;font-family:'GeistM',ui-monospace,monospace;font-size:13px;line-height:1.65;color:#ECECF1">&lt;section id="hero" tw="flex flex-col
+  items-center gap-6" bg={t.color.paper}&gt;
+  &lt;h1 size={<span id="jsx-size">72</span>} font="Recoleta"
+      color={t.color.ink}&gt;
+    <span id="jsx-copy">Family life, organised with AI.</span><span id="jsx-caret"></span>
+  &lt;/h1&gt;
+  &lt;Bubbles items={fridge.magnets} /&gt;
+  &lt;Btn href="#app"&gt;Get the app&lt;/Btn&gt;
+&lt;/section&gt;</pre></div>				</div>
+		
+</div>
+
+</div>
+		<div class="elementor-element elementor-element-e00021 elementor-widget elementor-widget-html" data-id="e00021" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					
+<div class="mp-cursor" id="mp-claude"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M4.5 2.5 L20 12.2 L12.6 13.6 L9.2 21 Z" fill="#D97757" stroke="#FFFFFF" stroke-width="1.4"/></svg><span class="mp-pill" style="background:#D97757"><img decoding="async" src="/wp-content/uploads/logos/claude.svg" onerror="this.style.display='none'" style="filter:brightness(0) invert(1)"/>Claude Code</span></div>
+<div class="mp-cursor mp-you" id="mp-you"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M4.5 2.5 L20 12.2 L12.6 13.6 L9.2 21 Z" fill="#2F6BFF" stroke="#FFFFFF" stroke-width="1.4"/></svg><span class="mp-pill" style="background:#2F6BFF">You</span></div>
+<div class="mp-cursor" id="mp-ultra"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M4.5 2.5 L20 12.2 L12.6 13.6 L9.2 21 Z" fill="#1F9D44" stroke="#FFFFFF" stroke-width="1.4"/></svg><span class="mp-pill" style="background:#147434"><img decoding="async" src="/wp-content/uploads/logos/elementor.svg" onerror="this.style.display='none'" style="filter:brightness(0) invert(1)"/>Elementor Ultra<span id="mp-status" class="mp-status">· watching</span></span></div>
+<script>
+(function(){
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var seam=document.getElementById('seam');
+  var cl=document.getElementById('mp-claude'), eu=document.getElementById('mp-ultra');
+  var stEl=document.getElementById('mp-status');
+  var blobPane=document.getElementById('seam-blob'), jsxPane=document.getElementById('seam-jsx');
+  var blobCopy=document.getElementById('blob-copy'), jsxCopy=document.getElementById('jsx-copy');
+  var jsxSize=document.getElementById('jsx-size'), blobHash=document.getElementById('blob-hash');
+  if(!seam||!blobPane||!jsxPane||!blobCopy||!jsxCopy)return;
+  seam.appendChild(cl); seam.appendChild(eu);
+  [cl,eu].forEach(function(c){c.setAttribute('aria-hidden','true')});
+  ['seam-blob','seam-jsx'].forEach(function(id){var e=document.getElementById(id);if(e)e.setAttribute('aria-hidden','true')});
+  function status(t){if(stEl)stEl.textContent='· '+t}
+
+  // the visitor is the third player
+  var you=document.getElementById('mp-you');
+  if(you)you.setAttribute('aria-hidden','true');
+  if(you&&window.matchMedia('(pointer:fine)').matches){
+    seam.appendChild(you);
+    seam.classList.add('mp-zone');
+    var px=-1,py=-1,yraf=null;
+    function youSync(){
+      yraf=null;
+      if(px<0)return;
+      var r=seam.getBoundingClientRect();
+      var inside=px>=r.left&&px<=r.right&&py>=r.top&&py<=r.bottom;
+      you.classList.toggle('show',inside);
+      if(inside)you.style.transform='translate('+Math.round(px-r.left-4)+'px,'+Math.round(py-r.top-2)+'px)';
+    }
+    function queueSync(){if(!yraf)yraf=requestAnimationFrame(youSync)}
+    window.addEventListener('mousemove',function(e){px=e.clientX;py=e.clientY;queueSync()},{passive:true});
+    window.addEventListener('scroll',queueSync,{passive:true});
+  }
+
+  // ---- organic motion engine: spring + wander + velocity tilt ----
+  var A={cl:{el:cl,x:120,y:80,tx:300,ty:120,ph:1.7,sp:0.055},
+         eu:{el:eu,x:60,y:200,tx:160,ty:260,ph:4.2,sp:0.05}};
+  var running=false, engineOn=false;
+  function engine(t){
+    if(!engineOn)return;
+    for(var k in A){var a=A[k];
+      a.x+=(a.tx-a.x)*a.sp; a.y+=(a.ty-a.y)*a.sp;
+      var wx=Math.sin(t/1100+a.ph*7)*3+Math.sin(t/430+a.ph*3)*1.2;
+      var wy=Math.cos(t/900+a.ph*5)*2.6+Math.cos(t/370+a.ph*2)*1.1;
+      var rot=Math.max(-13,Math.min(13,(a.tx-a.x)*0.045));
+      a.el.style.transform='translate('+(a.x+wx).toFixed(1)+'px,'+(a.y+wy).toFixed(1)+'px) rotate('+rot.toFixed(1)+'deg)';
+    }
+    requestAnimationFrame(engine);
+  }
+  function rel(el){var s=seam.getBoundingClientRect(),r=el.getBoundingClientRect();
+    return {x:r.left-s.left,y:r.top-s.top,w:r.width,h:r.height};}
+  function aim(a,x,y){
+    var sw=seam.getBoundingClientRect().width;
+    a.tx=Math.max(4,Math.min(sw-150,x)); a.ty=Math.max(4,y);
+  }
+  function drift(a,pane){var p=rel(pane);aim(a,p.x+p.w*(0.2+Math.random()*0.6),p.y+p.h*(0.12+Math.random()*0.65))}
+
+  // scanline for the "watching" sweeps
+  var scan=document.createElement('div'); scan.className='mp-scanline'; blobPane.appendChild(scan);
+  function sweep(){
+    scan.classList.remove('run'); void scan.offsetWidth; scan.classList.add('run');
+  }
+
+  var COPIES=['Family life, organised with AI.','One tile at a time.','Blog on autopilot.','Run on facts, not guesswork.'];
+  var SIZES=['64','72','80','96'];
+  var ci=0, si=1, timers=[];
+  function later(fn,ms){timers.push(setTimeout(fn,ms))}
+  function clearTimers(){timers.forEach(clearTimeout);timers=[]}
+  function newHash(){var c='abcdefghjkmnpqrstuvwxyz23456789',h='';for(var i=0;i<6;i++)h+=c[Math.floor(Math.random()*c.length)];return h}
+  function recompile(target,fn){
+    status('compiling…');
+    later(function(){ if(!running)return;
+      status('deploying…');
+      var bc=rel(target); aim(A.eu,bc.x+bc.w*0.5,bc.y-6);
+      later(function(){ if(!running)return;
+        fn();
+        if(blobHash){blobHash.classList.add('mp-hl');blobHash.textContent=newHash();
+          later(function(){blobHash.classList.remove('mp-hl')},800)}
+        blobPane.classList.add('mp-flash-amber');
+        status('deployed ✓');
+        later(function(){blobPane.classList.remove('mp-flash-amber')},800);
+        later(function(){if(running)status('watching')},1400);
+      },1200);
+    },500);
+  }
+  var pinA=document.createElement('div');pinA.className='mp-pin';pinA.setAttribute('aria-hidden','true');seam.appendChild(pinA);
+  var pinB=document.createElement('div');pinB.className='mp-pin';pinB.setAttribute('aria-hidden','true');seam.appendChild(pinB);
+  function caretPos(node,i){
+    var r=document.createRange();r.setStart(node,Math.min(i,node.textContent.length));r.collapse(true);
+    var rect=r.getBoundingClientRect(),sr=seam.getBoundingClientRect();
+    return {x:rect.left-sr.left,y:rect.top-sr.top,h:rect.height||16};
+  }
+  function setPin(p,c){p.style.transform='translate('+c.x.toFixed(1)+'px,'+c.y.toFixed(1)+'px)';p.style.height=c.h+'px'}
+  function hidePins(){pinA.classList.remove('show');pinB.classList.remove('show')}
+  function dragSelect(el,done){
+    var sel=window.getSelection();
+    if(sel.rangeCount&&!sel.isCollapsed&&!seam.contains(sel.anchorNode)){done();return}
+    var node=el.firstChild;
+    if(!node||node.nodeType!==3){done();return}
+    var len=node.textContent.length,i=0;
+    // click down at the start of the text first
+    var c0=caretPos(node,0);
+    aim(A.cl,c0.x+2,c0.y-4);
+    setPin(pinA,c0);pinA.classList.add('show');
+    later(function(){
+      if(!running){hidePins();done();return}
+      (function step(){
+        if(!running){try{sel.removeAllRanges()}catch(e){}hidePins();done();return}
+        i=Math.min(len,i+Math.max(1,Math.round(len/26)));
+        try{var r=document.createRange();r.setStart(node,0);r.setEnd(node,i);
+          sel.removeAllRanges();sel.addRange(r);}catch(e){hidePins();done();return}
+        var ce=caretPos(node,i);
+        setPin(pinB,ce);pinB.classList.add('show');
+        aim(A.cl,ce.x+3,ce.y-3);   // the cursor IS the drag
+        if(i<len)later(step,24);
+        else later(function(){try{sel.removeAllRanges()}catch(e){}hidePins();done()},460);
+      })();
+    },520);
+  }
+  function typeInto(el,txt,done){
+    var j=0;(function ty(){ if(!running)return;
+      if(j<txt.length){j++;el.textContent=txt.slice(0,j);later(ty,32);} else done();})();
+  }
+  function act(){
+    if(!running)return;
+    // beat 1: Ultra sweeps the blob, watching
+    drift(A.eu,blobPane); sweep();
+    // beat 2: Claude Code edits the size token
+    later(function(){ if(!running)return;
+      var st=rel(jsxSize); aim(A.cl,st.x+st.w*0.5,st.y-8);
+      later(function(){ if(!running)return;
+        si=(si+1)%SIZES.length;
+        dragSelect(jsxSize,function(){ if(!running)return;
+          jsxSize.textContent=SIZES[si];
+          jsxPane.classList.add('mp-flash-green');
+          later(function(){jsxPane.classList.remove('mp-flash-green')},500);
+          recompile(blobHash||blobCopy,function(){});
+        });
+      },1100);
+    },1700);
+    // beat 3: Claude Code rewrites the headline
+    later(function(){ if(!running)return;
+      var jc=rel(jsxCopy); aim(A.cl,jc.x+Math.min(jc.w*0.7,260),jc.y-8);
+      later(function(){ if(!running)return;
+        ci=(ci+1)%COPIES.length;
+        dragSelect(jsxCopy,function(){ if(!running)return;
+        jsxCopy.textContent='';
+        document.getElementById('jsx-caret').classList.add('on');
+        typeInto(jsxCopy,COPIES[ci],function(){
+          document.getElementById('jsx-caret').classList.remove('on');
+          jsxPane.classList.add('mp-flash-green');
+          later(function(){jsxPane.classList.remove('mp-flash-green')},600);
+          recompile(blobCopy,function(){
+            blobCopy.classList.add('mp-hl'); blobCopy.textContent=COPIES[ci];
+            later(function(){blobCopy.classList.remove('mp-hl')},800);
+          });
+          later(function(){ if(!running)return; drift(A.cl,jsxPane); },2400);
+          later(act,4600);
+        });
+        });
+      },1300);
+    },6200);
+  }
+  function start(){
+    if(running)return; running=true;
+    if(!engineOn){engineOn=true;requestAnimationFrame(engine)}
+    var bp=rel(blobPane), jp=rel(jsxPane);
+    A.eu.x=bp.x+bp.w*0.4;A.eu.y=bp.y+bp.h*0.3;
+    A.cl.x=jp.x+jp.w*0.4;A.cl.y=jp.y+jp.h*0.3;
+    drift(A.cl,jsxPane); drift(A.eu,blobPane);
+    status('watching');
+    later(act,1200);
+  }
+  function stop(){running=false;engineOn=false;clearTimers()}
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){es.forEach(function(e){e.isIntersecting?start():stop()})},{threshold:.25}).observe(seam);
+  } else start();
+})();
+</script>				</div>
+					<p class="c-14v4v5 e-paragraph-base" data-interaction-id="e00022" data-e-type="widget" data-id="e00022">The left side is the real stored JSON of the hero in film #2 — this is the surface agents have been authoring. On the right, the component that generates it. Typed props fail at build time. An authoritative server-side validator rejects bad trees before they save. Backups first, rollback always. A hallucinating agent can't corrupt a site through this seam.</p>
+		
+</section>
+<section class="elementor-element elementor-element-e00023 e-con e-atomic-element e-flexbox-base c-kpsy5x " data-id="e00023" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00023" id="loop" data-e-type="e-flexbox" data-id="e00023">
+    <div class="elementor-element elementor-element-e00024 e-con e-atomic-element e-flexbox-base c-nokn4c " data-id="e00024" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00024" data-e-type="e-flexbox" data-id="e00024">
+    			<p class="c-lwsecb e-paragraph-base" data-interaction-id="e00025" data-e-type="widget" data-id="e00025">03</p>
+					<p class="c-10rae1 e-paragraph-base" data-interaction-id="e00026" data-e-type="widget" data-id="e00026">The loop</p>
+		
+</div>
+			<h2 data-interaction-id="e00027" class="c-pfkm0a e-heading-base" data-e-type="widget" data-id="e00027">Save a file. The site updates. The gates run.</h2>
+		<div class="elementor-element elementor-element-e00028 e-con e-atomic-element e-flexbox-base c-1p1yrm " data-id="e00028" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00028" id="loop-strip" data-e-type="e-flexbox" data-id="e00028">
+    <div class="elementor-element elementor-element-e00029 e-con e-atomic-element e-flexbox-base c-1jg85f " data-id="e00029" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00029" data-e-type="e-flexbox" data-id="e00029">
+    			<p class="c-16t1rq e-paragraph-base" data-interaction-id="e0002a" data-e-type="widget" data-id="e0002a">SAVE</p>
+					<p class="c-pxefru e-paragraph-base" data-interaction-id="e0002b" data-e-type="widget" data-id="e0002b">a component file</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0002c e-con e-atomic-element e-flexbox-base c-1jg85f " data-id="e0002c" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002c" data-e-type="e-flexbox" data-id="e0002c">
+    			<p class="c-16t1rq e-paragraph-base" data-interaction-id="e0002d" data-e-type="widget" data-id="e0002d">BUILD</p>
+					<p class="c-pxefru e-paragraph-base" data-interaction-id="e0002e" data-e-type="widget" data-id="e0002e">rebuild in ms</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0002f e-con e-atomic-element e-flexbox-base c-1jg85f " data-id="e0002f" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002f" data-e-type="e-flexbox" data-id="e0002f">
+    			<p class="c-16t1rq e-paragraph-base" data-interaction-id="e0002g" data-e-type="widget" data-id="e0002g">DEPLOY</p>
+					<p class="c-pxefru e-paragraph-base" data-interaction-id="e0002h" data-e-type="widget" data-id="e0002h">diff-driven, ~3 s</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0002i e-con e-atomic-element e-flexbox-base c-1jg85f " data-id="e0002i" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002i" data-e-type="e-flexbox" data-id="e0002i">
+    			<p class="c-16t1rq e-paragraph-base" data-interaction-id="e0002j" data-e-type="widget" data-id="e0002j">RELOAD</p>
+					<p class="c-pxefru e-paragraph-base" data-interaction-id="e0002k" data-e-type="widget" data-id="e0002k">live preview</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0002l e-con e-atomic-element e-flexbox-base c-141xqx " data-id="e0002l" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002l" data-e-type="e-flexbox" data-id="e0002l">
+    			<p class="c-1msjys e-paragraph-base" data-interaction-id="e0002m" data-e-type="widget" data-id="e0002m">GATES</p>
+					<p class="c-p1bzq5 e-paragraph-base" data-interaction-id="e0002n" data-e-type="widget" data-id="e0002n">1200 · 1920 · 390</p>
+		
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0002o e-con e-atomic-element e-flexbox-base c-163jk7 " data-id="e0002o" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002o" data-e-type="e-flexbox" data-id="e0002o">
+    			<p class="c-v8ntp3 e-paragraph-base" data-interaction-id="e0002p" data-e-type="widget" data-id="e0002p">LIVE — THE LOOP, AS IT RUNS (REAL HOUSEMAIT LOG LINES)</p>
+				<div class="elementor-element elementor-element-e0002q elementor-widget elementor-widget-html" data-id="e0002q" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					
+<div id="loop-log" style="min-height:88px;font-family:'GeistM',ui-monospace,monospace;font-size:12.5px;line-height:1.75;color:#28C840"></div>
+<style>
+  .ls-on{box-shadow:inset 0 -3px 0 #1F9D44}
+  .ls-go{filter:brightness(1.07)}
+  .ll-line{opacity:0;transition:opacity .5s;display:block}
+  .ll-line.in{opacity:1}
+  .ll-fail{color:#FFB224}
+  .ll-dim{color:#7ED99B}
+</style>
+<script>
+(function(){
+  var strip=document.getElementById('loop-strip');
+  var logEl=document.getElementById('loop-log');
+  if(!strip||!logEl)return;
+  logEl.setAttribute('aria-hidden','true');
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    ['[dev] full deploy (kit changed) · 1 page(s) · 6468ms','[dev] gates PASS (/)',
+     '[dev] full deploy (kit changed) · 1 page(s) · 8075ms','[dev] gates PASS (/)'].forEach(function(l){
+      var d=document.createElement('span');d.className='ll-line in';d.textContent=l;logEl.appendChild(d)});
+    return;
+  }
+  var cells=strip.children;
+  var DEPLOYS=['6468ms','8075ms','7324ms','12386ms','9861ms'];
+  var running=false,timers=[],di=0,cycle=0;
+  function later(fn,ms){timers.push(setTimeout(fn,ms))}
+  function clearTimers(){timers.forEach(clearTimeout);timers=[]}
+  function setStep(i){
+    for(var j=0;j<cells.length;j++){cells[j].classList.toggle('ls-on',j===i&&i<4);
+      cells[j].classList.toggle('ls-go',j===i&&i===4);}
+  }
+  function addLine(txt,cls){
+    var d=document.createElement('span');d.className='ll-line'+(cls?' '+cls:'');d.textContent=txt;
+    logEl.appendChild(d);
+    requestAnimationFrame(function(){requestAnimationFrame(function(){d.classList.add('in')})});
+    while(logEl.children.length>4)logEl.removeChild(logEl.firstChild);
+  }
+  function run(){
+    if(!running)return;
+    cycle++;
+    var fail=(cycle%4===3);
+    setStep(0);
+    later(function(){ if(!running)return; setStep(1);
+    later(function(){ if(!running)return; setStep(2);
+      di=(di+1)%DEPLOYS.length;
+      addLine('[dev] full deploy (kit changed) \u00b7 1 page(s) \u00b7 '+DEPLOYS[di]);
+    later(function(){ if(!running)return; setStep(3);
+    later(function(){ if(!running)return; setStep(4);
+      if(fail){ addLine('[dev] gates FAIL (/) \u2014 /@1200 overflow','ll-fail'); }
+      else { addLine('[dev] gates PASS (/)'); }
+    later(function(){ if(!running)return; setStep(-1);
+    later(run,2400);
+    },1700);},900);},1900);},900);},1200);
+  }
+  function start(){if(running)return;running=true;logEl.innerHTML='';cycle=0;run()}
+  function stop(){running=false;clearTimers();setStep(-1)}
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){es.forEach(function(e){e.isIntersecting?start():stop()})},{threshold:.3}).observe(document.getElementById('loop'));
+  } else start();
+})();
+</script>				</div>
+		
+</div>
+			<p class="c-14v4v5 e-paragraph-base" data-interaction-id="e0002r" data-e-type="widget" data-id="e0002r">That FAIL line is the point. The agent sees pass/fail per save — at desktop, wide, and mobile — so it corrects itself in the next save instead of shipping blind. Verification is a first-class primitive, not an afterthought script.</p>
+		
+</section>
+<section class="elementor-element elementor-element-e0002s e-con e-atomic-element e-flexbox-base c-kpsy5x " data-id="e0002s" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002s" id="stack" data-e-type="e-flexbox" data-id="e0002s">
+    <div class="elementor-element elementor-element-e0002t e-con e-atomic-element e-flexbox-base c-nokn4c " data-id="e0002t" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002t" data-e-type="e-flexbox" data-id="e0002t">
+    			<p class="c-lwsecb e-paragraph-base" data-interaction-id="e0002u" data-e-type="widget" data-id="e0002u">04</p>
+					<p class="c-10rae1 e-paragraph-base" data-interaction-id="e0002v" data-e-type="widget" data-id="e0002v">The stack</p>
+		
+</div>
+			<h2 data-interaction-id="e0002w" class="c-pfkm0a e-heading-base" data-e-type="widget" data-id="e0002w">Five pieces. Use all of them, or one.</h2>
+		<div class="elementor-element elementor-element-e0002x e-con e-atomic-element e-flexbox-base c-1bj3gs " data-id="e0002x" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002x" data-e-type="e-flexbox" data-id="e0002x">
+    <div class="elementor-element elementor-element-e0002y e-con e-atomic-element e-flexbox-base c-v9vh1x " data-id="e0002y" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002y" data-e-type="e-flexbox" data-id="e0002y">
+    <div class="elementor-element elementor-element-e0002z e-con e-atomic-element e-flexbox-base c-t5ltjh " data-id="e0002z" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002z" data-e-type="e-flexbox" data-id="e0002z">
+    			<p class="c-mqpbg7 e-paragraph-base" data-interaction-id="e00030" data-e-type="widget" data-id="e00030">01</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00031 e-con e-atomic-element e-flexbox-base c-l1llb1 " data-id="e00031" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00031" data-e-type="e-flexbox" data-id="e00031">
+    			<p class="c-1v1fb1 e-paragraph-base" data-interaction-id="e00032" data-e-type="widget" data-id="e00032">COMPILER + CLI</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00033 e-con e-atomic-element e-flexbox-base c-gnkm40 " data-id="e00033" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00033" data-e-type="e-flexbox" data-id="e00033">
+    			<p class="c-mqpbg7 e-paragraph-base" data-interaction-id="e00034" data-e-type="widget" data-id="e00034">@algorismus/elementor-jsx</p>
+					<p class="c-6uwuyc e-paragraph-base" data-interaction-id="e00035" data-e-type="widget" data-id="e00035">Typed JSX → native Elementor V4 JSON. Build, deploy, lint, media, import — and the exjsx dev live loop.</p>
+		
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e00036 e-con e-atomic-element e-flexbox-base c-v9vh1x " data-id="e00036" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00036" data-e-type="e-flexbox" data-id="e00036">
+    <div class="elementor-element elementor-element-e00037 e-con e-atomic-element e-flexbox-base c-t5ltjh " data-id="e00037" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00037" data-e-type="e-flexbox" data-id="e00037">
+    			<p class="c-mqpbg7 e-paragraph-base" data-interaction-id="e00038" data-e-type="widget" data-id="e00038">02</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00039 e-con e-atomic-element e-flexbox-base c-l1llb1 " data-id="e00039" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00039" data-e-type="e-flexbox" data-id="e00039">
+    			<p class="c-1v1fb1 e-paragraph-base" data-interaction-id="e0003a" data-e-type="widget" data-id="e0003a">MCP SERVER</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0003b e-con e-atomic-element e-flexbox-base c-gnkm40 " data-id="e0003b" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003b" data-e-type="e-flexbox" data-id="e0003b">
+    			<p class="c-mqpbg7 e-paragraph-base" data-interaction-id="e0003c" data-e-type="widget" data-id="e0003c">@algorismus/elementor-ultra-mcp</p>
+					<p class="c-6uwuyc e-paragraph-base" data-interaction-id="e0003d" data-e-type="widget" data-id="e0003d">~90 tools for any MCP-capable agent: build, refactor, govern pages, design system, HTML→Elementor.</p>
+		
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0003e e-con e-atomic-element e-flexbox-base c-v9vh1x " data-id="e0003e" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003e" data-e-type="e-flexbox" data-id="e0003e">
+    <div class="elementor-element elementor-element-e0003f e-con e-atomic-element e-flexbox-base c-t5ltjh " data-id="e0003f" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003f" data-e-type="e-flexbox" data-id="e0003f">
+    			<p class="c-mqpbg7 e-paragraph-base" data-interaction-id="e0003g" data-e-type="widget" data-id="e0003g">03</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0003h e-con e-atomic-element e-flexbox-base c-l1llb1 " data-id="e0003h" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003h" data-e-type="e-flexbox" data-id="e0003h">
+    			<p class="c-1v1fb1 e-paragraph-base" data-interaction-id="e0003i" data-e-type="widget" data-id="e0003i">COMPANION PLUGIN</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0003j e-con e-atomic-element e-flexbox-base c-gnkm40 " data-id="e0003j" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003j" data-e-type="e-flexbox" data-id="e0003j">
+    			<p class="c-mqpbg7 e-paragraph-base" data-interaction-id="e0003k" data-e-type="widget" data-id="e0003k">WordPress plugin · GPL</p>
+					<p class="c-6uwuyc e-paragraph-base" data-interaction-id="e0003l" data-e-type="widget" data-id="e0003l">The authoritative REST write path on the site: server-side validation, backups, rollback, capability probes.</p>
+		
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0003m e-con e-atomic-element e-flexbox-base c-v9vh1x " data-id="e0003m" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003m" data-e-type="e-flexbox" data-id="e0003m">
+    <div class="elementor-element elementor-element-e0003n e-con e-atomic-element e-flexbox-base c-t5ltjh " data-id="e0003n" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003n" data-e-type="e-flexbox" data-id="e0003n">
+    			<p class="c-mqpbg7 e-paragraph-base" data-interaction-id="e0003o" data-e-type="widget" data-id="e0003o">04</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0003p e-con e-atomic-element e-flexbox-base c-l1llb1 " data-id="e0003p" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003p" data-e-type="e-flexbox" data-id="e0003p">
+    			<p class="c-1v1fb1 e-paragraph-base" data-interaction-id="e0003q" data-e-type="widget" data-id="e0003q">VERIFY STUDIO</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0003r e-con e-atomic-element e-flexbox-base c-gnkm40 " data-id="e0003r" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003r" data-e-type="e-flexbox" data-id="e0003r">
+    			<p class="c-mqpbg7 e-paragraph-base" data-interaction-id="e0003s" data-e-type="widget" data-id="e0003s">@algorismus/elementor-ultra-studio</p>
+					<p class="c-6uwuyc e-paragraph-base" data-interaction-id="e0003t" data-e-type="widget" data-id="e0003t">Post-deploy gates, health doctor, measure toolkit — Playwright-driven, no hand-written scripts.</p>
+		
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0003u e-con e-atomic-element e-flexbox-base c-v9vh1x " data-id="e0003u" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003u" data-e-type="e-flexbox" data-id="e0003u">
+    <div class="elementor-element elementor-element-e0003v e-con e-atomic-element e-flexbox-base c-t5ltjh " data-id="e0003v" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003v" data-e-type="e-flexbox" data-id="e0003v">
+    			<p class="c-mqpbg7 e-paragraph-base" data-interaction-id="e0003w" data-e-type="widget" data-id="e0003w">05</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0003x e-con e-atomic-element e-flexbox-base c-l1llb1 " data-id="e0003x" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003x" data-e-type="e-flexbox" data-id="e0003x">
+    			<p class="c-1v1fb1 e-paragraph-base" data-interaction-id="e0003y" data-e-type="widget" data-id="e0003y">LOCAL WORDPRESS</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0003z e-con e-atomic-element e-flexbox-base c-gnkm40 " data-id="e0003z" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003z" data-e-type="e-flexbox" data-id="e0003z">
+    			<p class="c-mqpbg7 e-paragraph-base" data-interaction-id="e00040" data-e-type="widget" data-id="e00040">@algorismus/elementor-ultra-playground</p>
+					<p class="c-6uwuyc e-paragraph-base" data-interaction-id="e00041" data-e-type="widget" data-id="e00041">Real WordPress + Elementor from a pre-baked snapshot, in seconds. Pure Node — no Docker.</p>
+		
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e00042 e-con e-atomic-element e-flexbox-base c-ruooh6 " data-id="e00042" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00042" data-e-type="e-flexbox" data-id="e00042">
+    			<p class="c-kygu4b e-paragraph-base" data-interaction-id="e00043" data-e-type="widget" data-id="e00043">8 SITES SHIPPED ON CAMERA</p>
+					<p class="c-kygu4b e-paragraph-base" data-interaction-id="e00044" data-e-type="widget" data-id="e00044">17–31 MIN PER SITE</p>
+					<p class="c-kygu4b e-paragraph-base" data-interaction-id="e00045" data-e-type="widget" data-id="e00045">0 HUMAN EDITS</p>
+					<p class="c-kygu4b e-paragraph-base" data-interaction-id="e00046" data-e-type="widget" data-id="e00046">400+ COMPILER TESTS · CERTIFIED 4.1.4 / 4.2.0</p>
+		
+</div>
+
+</section>
+<section class="elementor-element elementor-element-e00047 e-con e-atomic-element e-flexbox-base c-kpsy5x " data-id="e00047" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00047" id="start" data-e-type="e-flexbox" data-id="e00047">
+    <div class="elementor-element elementor-element-e00048 e-con e-atomic-element e-flexbox-base c-nokn4c " data-id="e00048" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00048" data-e-type="e-flexbox" data-id="e00048">
+    			<p class="c-lwsecb e-paragraph-base" data-interaction-id="e00049" data-e-type="widget" data-id="e00049">05</p>
+					<p class="c-10rae1 e-paragraph-base" data-interaction-id="e0004a" data-e-type="widget" data-id="e0004a">Start</p>
+		
+</div>
+			<h2 data-interaction-id="e0004b" class="c-pfkm0a e-heading-base" data-e-type="widget" data-id="e0004b">Up and running in one paste.</h2>
+		<div class="elementor-element elementor-element-e0004c e-con e-atomic-element e-flexbox-base c-9yapx6 " data-id="e0004c" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004c" data-e-type="e-flexbox" data-id="e0004c">
+    <div class="elementor-element elementor-element-e0004d e-con e-atomic-element e-flexbox-base c-1ea8tz " data-id="e0004d" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004d" data-e-type="e-flexbox" data-id="e0004d">
+    <div class="elementor-element elementor-element-e0004e e-con e-atomic-element e-flexbox-base c-xhm2aw " data-id="e0004e" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004e" data-e-type="e-flexbox" data-id="e0004e">
+    
+</div>
+<div class="elementor-element elementor-element-e0004f e-con e-atomic-element e-flexbox-base c-16eyyd " data-id="e0004f" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004f" data-e-type="e-flexbox" data-id="e0004f">
+    
+</div>
+<div class="elementor-element elementor-element-e0004g e-con e-atomic-element e-flexbox-base c-jzkpq " data-id="e0004g" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004g" data-e-type="e-flexbox" data-id="e0004g">
+    
+</div>
+			<p class="c-r6rjx9 e-paragraph-base" data-interaction-id="e0004h" data-e-type="widget" data-id="e0004h">paste this to your AI agent — Claude Code, Cursor, Windsurf, anything MCP</p>
+		
+</div>
+		<div class="elementor-element elementor-element-e0004i elementor-widget elementor-widget-html" data-id="e0004i" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					
+<div class="cmd-wrap">
+  <pre id="cmd-prompt" style="margin:0;padding:18px 110px 14px 22px;white-space:pre-wrap;word-break:break-word;font-family:'GeistM',ui-monospace,monospace;font-size:13.5px;line-height:1.75;color:#ECECF1">Set up Elementor Ultra on this machine by fetching and following
+https://raw.githubusercontent.com/Algorismus-io/elementor-ultra/main/SETUP.md
+exactly, step by step. Work autonomously and verify each step.</pre>
+  <button type="button" class="cmd-copy" data-copy="cmd-prompt" aria-label="Copy the setup prompt">COPY</button>
+</div>
+<div class="cmd-wiz">
+  <span># Prefer a wizard?&nbsp;</span><code id="cmd-npx">npx @algorismus/create-elementor-ultra</code>
+  <button type="button" class="cmd-copy cmd-inline" data-copy="cmd-npx" aria-label="Copy the npx command">COPY</button>
+</div>
+<style>
+  .cmd-wrap{position:relative}
+  .cmd-copy{appearance:none;border:1.5px solid #28C840;background:transparent;color:#28C840;
+    border-radius:999px;padding:5px 12px;font-family:'GeistM',ui-monospace,monospace;font-size:11px;
+    letter-spacing:.1em;cursor:pointer}
+  .cmd-copy:hover,.cmd-copy:focus-visible{background:#28C840;color:#0A0A0E;outline:none}
+  .cmd-copy.done{background:#28C840;color:#0A0A0E}
+  .cmd-wrap .cmd-copy{position:absolute;top:14px;right:16px}
+  .cmd-wiz{display:flex;align-items:center;flex-wrap:wrap;gap:8px;padding:0 22px 18px;
+    font-family:'GeistM',ui-monospace,monospace;font-size:13px;color:#7ED99B}
+  .cmd-wiz code{color:#ECECF1}
+  @media(max-width:640px){.cmd-wrap .cmd-copy{position:static;margin:0 22px 10px}
+    #cmd-prompt{padding-right:22px}}
+</style>
+<script>
+(function(){
+  document.querySelectorAll('.cmd-copy').forEach(function(b){
+    b.addEventListener('click',function(){
+      var el=document.getElementById(b.dataset.copy);
+      var txt=el?el.textContent:'';
+      function done(){b.classList.add('done');b.textContent='COPIED ✓';
+        setTimeout(function(){b.classList.remove('done');b.textContent='COPY'},1800)}
+      if(navigator.clipboard&&navigator.clipboard.writeText){
+        navigator.clipboard.writeText(txt).then(done,function(){fallback()})
+      } else fallback();
+      function fallback(){
+        var ta=document.createElement('textarea');ta.value=txt;ta.style.position='fixed';ta.style.opacity='0';
+        document.body.appendChild(ta);ta.select();try{document.execCommand('copy');done()}catch(e){}
+        document.body.removeChild(ta);
+      }
+    });
+  });
+})();
+</script>				</div>
+		
+</div>
+			<p class="c-1mpv4o e-paragraph-base" data-interaction-id="e0004j" data-e-type="widget" data-id="e0004j">NODE 18+ · DOCKER OPTIONAL · ELEMENTOR FREE IS ENOUGH</p>
+		<div class="elementor-element elementor-element-e0004k e-con e-atomic-element e-flexbox-base c-duhrx7 " data-id="e0004k" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004k" data-e-type="e-flexbox" data-id="e0004k">
+    			<p class="c-194b22 e-paragraph-base" data-interaction-id="e0004l" data-e-type="widget" data-id="e0004l"><a href="https://github.com/Algorismus-io/elementor-ultra" target="_self" class="e-paragraph-link-base">
+		GitHub — Algorismus-io/elementor-ultra ↗
+	</a></p>
+					<p class="c-194b22 e-paragraph-base" data-interaction-id="e0004m" data-e-type="widget" data-id="e0004m"><a href="https://docs.wpos.ai/ultra" target="_self" class="e-paragraph-link-base">
+		Docs ↗
+	</a></p>
+					<p class="c-194b22 e-paragraph-base" data-interaction-id="e0004n" data-e-type="widget" data-id="e0004n"><a href="https://docs.wpos.ai/ultra/examples/overview" target="_self" class="e-paragraph-link-base">
+		All eight films ↗
+	</a></p>
+		
+</div>
+
+</section>
+<section class="elementor-element elementor-element-e0004o e-con e-atomic-element e-flexbox-base c-tcyaew " data-id="e0004o" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004o" id="colophon" data-e-type="e-flexbox" data-id="e0004o">
+    			<p class="c-88oasf e-paragraph-base" data-interaction-id="e0004p" data-e-type="widget" data-id="e0004p">COLOPHON — this page practices what it preaches: 10 elementor-jsx components written by an AI agent, 158 local styles deduped to 93 shared classes, deployed through the same loop it describes, gates green at 1200 / 1920 / 390. Zero human edits. Flip the switch to read its source.</p>
+					<p class="c-u7kiut e-paragraph-base" data-interaction-id="e0004q" data-e-type="widget" data-id="e0004q">MIT © 2026 Algorismus. Not affiliated with or endorsed by Elementor Ltd — "Elementor" is their trademark; this is an independent, interoperating stack. The films show design studies of real sites, rebuilt with their public copy and assets to test the toolchain.</p>
+		
+</section>
+
+</div>
+<div class="elementor-element elementor-element-e0004r e-con e-atomic-element e-flexbox-base c-kxngei " data-id="e0004r" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004r" id="agent-surface" data-e-type="e-flexbox" data-id="e0004r">
+    <div class="elementor-element elementor-element-e0004s e-con e-atomic-element e-flexbox-base c-1xeih6 " data-id="e0004s" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004s" data-e-type="e-flexbox" data-id="e0004s">
+    		<div class="elementor-element elementor-element-e0004t elementor-widget elementor-widget-html" data-id="e0004t" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					<pre style="margin:0;white-space:pre-wrap;word-break:break-word;
+        font-family:'IBM Plex Mono',ui-monospace,SFMono-Regular,monospace;
+        font-size:13.5px;line-height:1.75;color:#28C840;"># ELEMENTOR ULTRA :: MACHINE SURFACE
+# for agents, crawlers, and humans who prefer it raw
+# ────────────────────────────────────────────────────────────
+
+WHAT ........ agent-native build stack for Elementor. JSX in,
+              native editable V4 pages out over REST. MIT.
+
+SETUP ....... paste to any MCP-capable agent and stand back:
+
+              Set up Elementor Ultra on this machine by fetching
+              and following https://raw.githubusercontent.com/
+              Algorismus-io/elementor-ultra/main/SETUP.md
+              exactly, step by step. Work autonomously and
+              verify each step.
+
+WIZARD ...... npx @algorismus/create-elementor-ultra
+
+STACK ....... @algorismus/elementor-jsx ........ compiler + CLI
+              @algorismus/elementor-ultra-mcp .. ~90 MCP tools
+              @algorismus/elementor-ultra-studio  gates + doctor
+              @algorismus/elementor-ultra-playground  local WP
+              companion WordPress plugin ....... REST seam (GPL)
+
+LOOP ........ npx exjsx dev &lt;site&gt; --gates
+              save -&gt; ms rebuild -&gt; diff deploy -&gt; hot reload
+              -&gt; verify @ 1200 / 1920 / 390
+
+VALIDATION .. server-side authoritative validator; writes are
+              backup-first with per-page rollback. base_hash
+              optimistic concurrency. op_id idempotency.
+
+DOCS ........ https://docs.wpos.ai/ultra
+REPO ........ https://github.com/Algorismus-io/elementor-ultra
+
+PROOF ....... 8 production-shaped sites, built live on camera,
+              one prompt each, zero human edits:
+              housemait  9 sections  31 min
+              canopy    10 sections  17 min
+              alike      8 sections  22 min
+              triple     8 sections  25 min
+              billow     9 sections  25 min
+              pumo       8 sections  30 min
+              mat        6 sections  21 min
+              bt26       8 parts     24 min
+              films + scrollable results:
+              https://docs.wpos.ai/ultra/examples/overview
+
+SOURCE ...... this very page is elementor-jsx output. excerpt
+              of the hero you just flipped from:
+
+              &lt;heading tag="h1" size={132}
+                font={t.font.display} color={t.color.ink}
+                sx={{ textTransform: 'uppercase' }}&gt;
+                One prompt in.&lt;br /&gt;A site out.
+              &lt;/heading&gt;
+
+LICENSE ..... MIT (c) 2026 Algorismus. not affiliated with or
+              endorsed by Elementor Ltd; "Elementor" is their
+              trademark. independent, interoperating stack.
+
+HUMAN? ...... there is a prettier version of this page.
+              press H, or use the switch, top right.</pre>				</div>
+		
+</div>
+
+</div>
+
+</div>
+		</div>
+		<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/twentytwentyfive/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
 </script>
-</body>
+			<script>
+				( () => {
+					const lazyloadRunObserver = () => {
+						const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+						const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+							entries.forEach( ( entry ) => {
+								if ( entry.isIntersecting ) {
+									let lazyloadBackground = entry.target;
+									if( lazyloadBackground ) {
+										lazyloadBackground.classList.add( 'e-lazyloaded' );
+									}
+									lazyloadBackgroundObserver.unobserve( entry.target );
+								}
+							});
+						}, { rootMargin: '200px 0px 200px 0px' } );
+						lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+							lazyloadBackgroundObserver.observe( lazyloadBackground );
+						} );
+					};
+					const events = [
+						'DOMContentLoaded',
+						'elementor/lazyload/observe',
+					];
+					events.forEach( ( event ) => {
+						document.addEventListener( event, lazyloadRunObserver );
+					} );
+				} )();
+			</script>
+			<script id="elementor-webpack-runtime-js" src="/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=4.2.1"></script>
+<script id="elementor-frontend-modules-js" src="/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=4.2.1"></script>
+<script id="jquery-ui-core-js" src="/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnX":"Share on X","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"4.2.1","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_optimized_markup":true,"e_panel_promotions":true,"theme_builder_v2":true,"e_pro_free_trial_popup":true,"nested-elements":true,"e_atomic_elements":true,"atomic_widgets_should_enforce_capabilities":true,"editor_mcp":true,"e_bc_migrations":true,"e_classes":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"e_variables_manager":true,"e_opt_in_v4_page":true,"e_opt_in_v4":true,"e_components":true,"e_interactions":true,"e_widget_creation":true,"import-export-customization":true,"e_pro_atomic_form":true,"mega-menu":true,"e_pro_variables":true,"e_pro_interactions":true},"urls":{"assets":"http:\/\/127.0.0.1:8947\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"http:\/\/127.0.0.1:8947\/wp-admin\/admin-ajax.php","uploadUrl":"http:\/\/127.0.0.1:8947\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"994e2e0529","atomicFormsSendForm":"c835929e7b"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":7,"title":"Elementor%20Ultra%20%E2%80%94%20one%20prompt%20in%2C%20a%20site%20out","excerpt":"","featuredImage":false}};
+//# sourceURL=elementor-frontend-js-before
+</script>
+<script id="elementor-frontend-js" src="/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=4.2.1"></script>
+<script id="elementor-pro-webpack-runtime-js" src="/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=4.1.0"></script>
+<script id="wp-hooks-js" src="/wp-includes/js/dist/hooks.min.js?ver=7496969728ca0f95732d"></script>
+<script id="wp-i18n-js" src="/wp-includes/js/dist/i18n.min.js?ver=781d11515ad3d91786ec"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"http:\/\/127.0.0.1:8947\/wp-admin\/admin-ajax.php","nonce":"9afd8ce2a9","urls":{"assets":"http:\/\/127.0.0.1:8947\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"http:\/\/127.0.0.1:8947\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":false},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"http:\/\/127.0.0.1:8947\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+//# sourceURL=elementor-pro-frontend-js-before
+</script>
+<script id="elementor-pro-frontend-js" src="/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=4.1.0"></script>
+<script id="pro-elements-handlers-js" src="/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=4.1.0"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"/wp-includes/js/wp-emoji-release.min.js?ver=7.0.3"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=/wp-includes/js/wp-emoji-loader.min.js
+</script>
+	</body>
 </html>
