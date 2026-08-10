@@ -29,14 +29,15 @@ export const Hero = ({ theme: t }) => (
   <span class="al-chip al-any">any MCP agent</span>
 </div>
 <h1 class="mega">
-  <span class="l1">Build <img class="e-mark" src="/wp-content/uploads/logos/elementor.svg" alt="Elementor" /> Elementor sites</span><br />
-  <span class="l2">with your own AI agents <span class="pencil">✏️</span></span>
+  <span class="l1">One prompt in. <span class="pencil">✏️</span></span><br />
+  <span class="l2"><img class="e-mark" src="/wp-content/uploads/logos/elementor.svg" alt="Elementor" /> Elementor site out.</span>
 </h1>`}</html>
     <text size={19} font={t.font.body} color={t.color.dim} lh={1.65} maxw={680} mobile={{ size: 16 }}>
-      Elementor pages are JSON documents in a database — your agent could always write them,
-      blind, a thousand untyped lines at a time. That's why agent-built pages looked agent-built.
-      Ultra gives agents what developers have: components, types, hot reload, and proof.
-      Beautiful pages are what happens when agents can see what they're doing.
+      <strong>Build Elementor sites with your own AI agents.</strong> Elementor pages are JSON
+      documents in a database — your agent could always write them, blind, a thousand untyped
+      lines at a time. That's why agent-built pages looked agent-built. Ultra gives agents what
+      developers have: components, types, hot reload, and proof. Beautiful pages are what
+      happens when agents can see what they're doing.
     </text>
     <row tw="flex gap-4 items-center max-md:flex-col max-md:items-start">
       <Btn theme={t} href="#proof" label="Watch an agent build — 1:38" />

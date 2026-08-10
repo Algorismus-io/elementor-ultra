@@ -39,7 +39,7 @@ export const Chrome = ({ theme: t }) => (
   .al-chip:hover{transform:translateY(-3px)}
   .al-chip img{width:16px;height:16px;display:block}
   .al-chip.al-any{border-style:dashed;color:${t.color.dim}}
-  .mega{font-family:'Meso','Anton',sans-serif;font-weight:400;font-size:min(7.1vw,96px);
+  .mega{font-family:'Meso','Anton',sans-serif;font-weight:400;font-size:min(6.8vw,92px);
     line-height:1.02;text-transform:uppercase;color:${t.color.ink};margin:6px 0 0;letter-spacing:.005em}
   .mega .l2{-webkit-text-stroke:2.5px ${t.color.ink};color:transparent}
   .mega .pencil{-webkit-text-stroke:0;color:${t.color.ink};font-family:'Apple Color Emoji','Segoe UI Emoji',sans-serif}
