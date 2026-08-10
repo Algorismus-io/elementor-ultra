@@ -20,10 +20,49 @@ export const Start = ({ theme: t }) => (
         <box bg="#28C840" sx={{ width: '11px', height: '11px', borderRadius: '50%' }} />
         <text size={12.5} font={t.font.mono} color={t.color.termDim} pad={[0, 0, 0, 8]}>paste this to your AI agent — Claude Code, Cursor, Windsurf, anything MCP</text>
       </row>
-      <html>{`<pre style="margin:0;padding:18px 22px;white-space:pre-wrap;word-break:break-word;font-family:'GeistM',ui-monospace,monospace;font-size:13.5px;line-height:1.75;color:#ECECF1">${prompt}</pre>`}</html>
-      <text size={13} font={t.font.mono} color={t.color.termDim} pad={[0, 22, 18, 22]}>
-        # Prefer a wizard?  npx @algorismus/create-elementor-ultra
-      </text>
+      <html>{`
+<div class="cmd-wrap">
+  <pre id="cmd-prompt" style="margin:0;padding:18px 110px 14px 22px;white-space:pre-wrap;word-break:break-word;font-family:'GeistM',ui-monospace,monospace;font-size:13.5px;line-height:1.75;color:#ECECF1">${prompt}</pre>
+  <button type="button" class="cmd-copy" data-copy="cmd-prompt" aria-label="Copy the setup prompt">COPY</button>
+</div>
+<div class="cmd-wiz">
+  <span># Prefer a wizard?&nbsp;</span><code id="cmd-npx">npx @algorismus/create-elementor-ultra</code>
+  <button type="button" class="cmd-copy cmd-inline" data-copy="cmd-npx" aria-label="Copy the npx command">COPY</button>
+</div>
+<style>
+  .cmd-wrap{position:relative}
+  .cmd-copy{appearance:none;border:1.5px solid #28C840;background:transparent;color:#28C840;
+    border-radius:999px;padding:5px 12px;font-family:'GeistM',ui-monospace,monospace;font-size:11px;
+    letter-spacing:.1em;cursor:pointer}
+  .cmd-copy:hover,.cmd-copy:focus-visible{background:#28C840;color:#0A0A0E;outline:none}
+  .cmd-copy.done{background:#28C840;color:#0A0A0E}
+  .cmd-wrap .cmd-copy{position:absolute;top:14px;right:16px}
+  .cmd-wiz{display:flex;align-items:center;flex-wrap:wrap;gap:8px;padding:0 22px 18px;
+    font-family:'GeistM',ui-monospace,monospace;font-size:13px;color:#7ED99B}
+  .cmd-wiz code{color:#ECECF1}
+  @media(max-width:640px){.cmd-wrap .cmd-copy{position:static;margin:0 22px 10px}
+    #cmd-prompt{padding-right:22px}}
+</style>
+<script>
+(function(){
+  document.querySelectorAll('.cmd-copy').forEach(function(b){
+    b.addEventListener('click',function(){
+      var el=document.getElementById(b.dataset.copy);
+      var txt=el?el.textContent:'';
+      function done(){b.classList.add('done');b.textContent='COPIED \u2713';
+        setTimeout(function(){b.classList.remove('done');b.textContent='COPY'},1800)}
+      if(navigator.clipboard&&navigator.clipboard.writeText){
+        navigator.clipboard.writeText(txt).then(done,function(){fallback()})
+      } else fallback();
+      function fallback(){
+        var ta=document.createElement('textarea');ta.value=txt;ta.style.position='fixed';ta.style.opacity='0';
+        document.body.appendChild(ta);ta.select();try{document.execCommand('copy');done()}catch(e){}
+        document.body.removeChild(ta);
+      }
+    });
+  });
+})();
+</script>`}</html>
     </box>
     <text size={13} font={t.font.mono} color={t.color.dim} sx={{ letterSpacing: '.04em' }}>
       NODE 18+ · DOCKER OPTIONAL · ELEMENTOR FREE IS ENOUGH
