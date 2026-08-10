@@ -231,6 +231,14 @@ export const Chrome = ({ theme: t }) => (
   var KEY='ultra-mode';
   function apply(m){
     document.body.classList.toggle('agent-mode', m==='agent');
+    var as0=document.getElementById('agent-surface');
+    var ah=document.getElementById('agent-h1');
+    if(m==='agent'&&as0&&!ah){
+      ah=document.createElement('h1');ah.id='agent-h1';
+      ah.style.cssText='position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap';
+      ah.textContent='Elementor Ultra \u2014 machine surface';
+      as0.insertBefore(ah,as0.firstChild);
+    } else if(m!=='agent'&&ah){ ah.remove(); }
     document.getElementById('us-human').classList.toggle('on', m!=='agent');
     document.getElementById('us-agent').classList.toggle('on', m==='agent');
     try{localStorage.setItem(KEY,m)}catch(e){}
@@ -243,6 +251,7 @@ export const Chrome = ({ theme: t }) => (
     var hs=document.getElementById('human-surface'),as=document.getElementById('agent-surface');
     if(hs)hs.setAttribute('role','main');
     if(as)as.setAttribute('role','main');
+    apply(document.body.classList.contains('agent-mode')?'agent':'human');
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',setRoles);
   else setRoles();
