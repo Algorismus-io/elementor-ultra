@@ -163,6 +163,22 @@ export const Chrome = ({ theme: t }) => (
   #chip-row>div{flex:1 1 240px !important;min-width:230px}
   #chip-row>div:hover{transform:translateY(-4px);transition:transform .3s}
   @media(max-width:640px){#chip-row>div{flex-basis:100% !important;min-width:0}}
+  /* ---- seam multiplayer ---- */
+  .mp-cursor{position:absolute;left:0;top:0;z-index:7;pointer-events:none;
+    transition:transform 1.5s cubic-bezier(.3,.9,.35,1);will-change:transform;
+    transform:translate(40px,40px)}
+  .mp-cursor svg{display:block;filter:drop-shadow(0 2px 5px rgba(0,0,0,.3))}
+  .mp-pill{display:inline-flex;align-items:center;gap:6px;margin-left:14px;margin-top:-4px;
+    color:#fff;font-family:'GeistM',monospace;font-size:11px;letter-spacing:.05em;
+    padding:4px 10px;border-radius:999px;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+  .mp-pill img{width:12px;height:12px;display:block}
+  #jsx-caret.on::after{content:'▍';color:#28C840;animation:mp-blink .8s step-end infinite}
+  @keyframes mp-blink{50%{opacity:0}}
+  .mp-hl{background:rgba(217,119,87,.35);border-radius:3px}
+  .mp-flash-green{box-shadow:0 0 0 2.5px #28C840 !important;transition:box-shadow .3s}
+  .mp-flash-amber{box-shadow:0 0 0 2.5px #D97757 !important;transition:box-shadow .3s}
+  @media(max-width:899px){.mp-cursor{display:none}}
+
   /* ---- scroll reveals ---- */
   @media (prefers-reduced-motion: no-preference){
     body:not(.agent-mode) #human-surface .rv{opacity:.001;transform:translateY(30px);
