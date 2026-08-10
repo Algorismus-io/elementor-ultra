@@ -29,7 +29,7 @@ export const Hero = ({ theme: t }) => (
   <span class="al-chip al-any">any MCP agent</span>
 </div>
 <h1 class="mega">
-  <span class="l1">One prompt in. <span class="pencil">✏️</span></span><br />
+  <span class="l1">One prompt in. <span class="pencil">🪄</span></span><br />
   <span class="l2"><img class="e-mark" src="/wp-content/uploads/logos/elementor.svg" alt="Elementor" /> Elementor site out.</span>
 </h1>`}</html>
     <text size={19} font={t.font.body} color={t.color.dim} lh={1.65} maxw={680} mobile={{ size: 16 }}>
