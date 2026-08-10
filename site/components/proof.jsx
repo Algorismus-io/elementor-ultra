@@ -27,6 +27,7 @@ export const Proof = ({ theme: t }) => (
       TIME chip burns true elapsed time. Nothing is hidden.
     </text>
     <html>{`
+<div class="chrig-outer" id="chrig-outer">
 <div class="chrig" id="chrig">
   <div class="chrig-stage">
     <div class="chrig-frame">
@@ -43,7 +44,8 @@ export const Proof = ({ theme: t }) => (
       </div>
     </div>
   </div>
-  <div class="chrig-chapters" id="chrig-chapters"></div>
+  <div class="chrig-chapters-vp"><div class="chrig-chapters" id="chrig-chapters"></div></div>
+</div>
 </div>
 <script>
 (function(){
@@ -82,8 +84,8 @@ export const Proof = ({ theme: t }) => (
     if(['ArrowDown','ArrowUp','PageDown','PageUp',' ','Home','End'].indexOf(e.key)>=0)lastHuman=Date.now();
   });
   function rigVisible(){
-    var r=document.getElementById('chrig').getBoundingClientRect();
-    return r.bottom>120&&r.top<window.innerHeight-60;
+    var r=outer.getBoundingClientRect();
+    return r.bottom>window.innerHeight*0.5&&r.top<window.innerHeight*0.5;
   }
   function canAuto(){
     return window.matchMedia('(min-width:900px)').matches&&
@@ -99,26 +101,55 @@ export const Proof = ({ theme: t }) => (
       var d=document.createElement('div'); d.className='chrig-card'; d.dataset.i=i;
       d.innerHTML='<div class="cc-top"><span class="cc-n">'+c.n+'</span><span class="cc-at">'+c.at+'</span></div>'+
         '<div class="cc-t">'+c.t+'</div><p class="cc-note">'+c.note+'</p><code class="cc-log">'+c.log+'</code>';
-      d.addEventListener('click',function(){go(i,true)});
+      d.addEventListener('click',function(){
+        if(isDesk())window.scrollTo({top:runwayY(i)});
+        go(i,true);centerCard(i);
+      });
       wrap.appendChild(d); cards.push(d);
       var tick=document.createElement('button'); tick.type='button'; tick.className='chrig-tick';
       tick.style.left=(c.s/F.total*100)+'%'; tick.title=c.n+' '+c.t;
-      tick.addEventListener('click',function(e){e.stopPropagation();go(i,true)});
+      tick.addEventListener('click',function(e){e.stopPropagation();
+        if(isDesk())window.scrollTo({top:runwayY(i)});
+        go(i,true);centerCard(i);
+      });
       rail.appendChild(tick);
     });
     cap.textContent=F.cap;
     observe();
   }
-  var io=null;
+  // ---- scroll gearing: the pinned runway drives the chapter index ----
+  var outer=document.getElementById('chrig-outer');
+  function isDesk(){return window.matchMedia('(min-width:900px)').matches}
+  function outerTop(){return outer.getBoundingClientRect().top+window.scrollY}
+  function runwayY(i){
+    var span=outer.offsetHeight-window.innerHeight;
+    return outerTop()+((i+0.12)/F.ch.length)*span;
+  }
+  function centerCard(i){
+    if(!isDesk())return;
+    var vp=document.querySelector('.chrig-chapters-vp');
+    var c=cards[i]; if(!c||!vp)return;
+    var y=c.offsetTop + c.offsetHeight/2 - vp.clientHeight/2;
+    wrap.style.transform='translateY('+(-Math.max(0,y))+'px)';
+  }
+  var ticking=false;
+  function onScroll(){
+    if(!isDesk()||full)return;
+    if(ticking)return; ticking=true;
+    requestAnimationFrame(function(){
+      ticking=false;
+      var span=outer.offsetHeight-window.innerHeight;
+      var p=(window.scrollY-outerTop())/span;
+      if(p<-0.15||p>1.15)return;
+      p=Math.max(0,Math.min(0.999,p));
+      var i=Math.min(F.ch.length-1,Math.floor(p*F.ch.length));
+      if(i!==active){go(i,true);centerCard(i);}
+    });
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
   function observe(){
-    if(io)io.disconnect();
-    var desktop=window.matchMedia('(min-width:900px)').matches;
-    if(desktop&&'IntersectionObserver' in window){
-      io=new IntersectionObserver(function(es){
-        es.forEach(function(e){ if(e.isIntersecting&&!full){ go(Number(e.target.dataset.i),false) } });
-      },{rootMargin:'-42% 0px -42% 0px',threshold:0});
-      cards.forEach(function(c){io.observe(c)});
-    } else { go(0,false); v.pause(); }
+    if(isDesk()){ go(0,false); centerCard(0); if(!rigVisible())v.pause(); }
+    else { wrap.style.transform='none'; go(0,false); v.pause(); }
   }
   var advancing=false;
   v.addEventListener('timeupdate',function(){
@@ -128,9 +159,9 @@ export const Proof = ({ theme: t }) => (
       if(canAuto()&&!advancing){
         advancing=true;
         var next=active+1;
-        cards[next].scrollIntoView({behavior:'smooth',block:'center'});
-        go(next,false);
-        setTimeout(function(){advancing=false},900);
+        window.scrollTo({top:runwayY(next),behavior:'smooth'});
+        go(next,false);centerCard(next);
+        setTimeout(function(){advancing=false},1100);
       } else if(!advancing){ v.pause(); }
     }
   });
@@ -152,8 +183,8 @@ export const Proof = ({ theme: t }) => (
     var chips=document.querySelectorAll('#chip-row>div');
     chips.forEach(function(c,j){c.classList.toggle('film-on',j===i)});
     pendingSeek=F.ch[0].s;
-    go(0,true);
-    document.getElementById('chrig').scrollIntoView({behavior:'smooth',block:'start'});
+    if(isDesk())window.scrollTo({top:runwayY(0)});
+    go(0,true);centerCard(0);
   }
   // chips → film switcher (docs link preserved as a small corner arrow)
   function wireChips(){

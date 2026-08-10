@@ -96,8 +96,13 @@ export const Chrome = ({ theme: t }) => (
   body.agent-mode .ultra-rail{display:none}
 
   /* ---- chapter rig ---- */
-  .chrig{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:26px;width:100%;align-items:start}
-  .chrig-stage{position:sticky;top:86px}
+  .chrig-outer{height:485vh;width:100%}
+  .chrig{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:26px;width:100%;
+    position:sticky;top:86px;align-items:start}
+  .chrig-stage{}
+  .chrig-chapters-vp{height:calc(100vh - 140px);overflow:hidden;position:relative;
+    -webkit-mask-image:linear-gradient(to bottom,transparent,black 7%,black 89%,transparent);
+    mask-image:linear-gradient(to bottom,transparent,black 7%,black 89%,transparent)}
   .chrig-frame{background:${t.color.ink};border-radius:18px;padding:10px;position:relative;transform:rotate(-.4deg)}
   .chrig-frame video{width:100%;display:block;border-radius:10px;background:#000}
   .chrig-rail{position:relative;height:22px;margin:12px 6px 2px;background:#26262E;border-radius:6px;cursor:pointer}
@@ -111,7 +116,7 @@ export const Chrome = ({ theme: t }) => (
   #chrig-full{appearance:none;border:1.5px solid ${t.color.goBright};background:transparent;color:${t.color.goBright};
     border-radius:999px;padding:7px 14px;font-family:'GeistM',monospace;font-size:11.5px;letter-spacing:.1em;cursor:pointer;white-space:nowrap}
   #chrig-full:hover{background:${t.color.goBright};color:${t.color.stage}}
-  .chrig-chapters{display:flex;flex-direction:column;gap:4.5vh;padding:1vh 0 4vh}
+  .chrig-chapters{display:flex;flex-direction:column;gap:3.5vh;padding:22vh 0 30vh;transition:transform .6s cubic-bezier(.22,1,.36,1);will-change:transform}
   .chrig-card{border:1.5px solid ${t.color.line};border-radius:14px;padding:18px 20px;background:#FFFFFF;
     cursor:pointer;opacity:.45;transform:translateY(6px);transition:opacity .4s,transform .4s,border-color .4s}
   .chrig-card.on{opacity:1;transform:none;border-color:${t.color.ink};box-shadow:6px 6px 0 ${t.color.ink}}
@@ -122,7 +127,10 @@ export const Chrome = ({ theme: t }) => (
   .cc-log{display:block;font-family:'GeistM',monospace;font-size:11.5px;color:${t.color.go};
     background:${t.color.stage};border-radius:8px;padding:8px 12px;white-space:pre-wrap;word-break:break-word}
   @media(max-width:899px){
-    .chrig{display:flex;flex-direction:column;gap:16px}
+    .chrig-outer{height:auto}
+    .chrig{display:flex;flex-direction:column;gap:16px;position:static}
+    .chrig-chapters-vp{height:auto;overflow:visible;-webkit-mask-image:none;mask-image:none}
+    .chrig-chapters{padding:0;transition:none}
     .chrig-stage{position:static}
     .chrig-frame{transform:none}
     .chrig-chapters{gap:12px;padding:0}
