@@ -25,7 +25,7 @@ export const Loop = ({ theme: t }) => (
       sx={{ textTransform: 'uppercase', letterSpacing: '.01em' }} mobile={{ size: 36 }}>
       Save a file. The site updates. The gates run.
     </heading>
-    <row tw="flex w-full items-stretch" tw="max-md:flex-col" sx={{ border: `2px solid ${t.color.ink}`, borderRadius: '14px', overflow: 'hidden' }}>
+    <row id="loop-strip" tw="flex w-full items-stretch max-md:flex-col" sx={{ border: `2px solid ${t.color.ink}`, borderRadius: '14px', overflow: 'hidden' }}>
       {steps.map(([k, d], i) => (
         <box tw="flex flex-col gap-1" pad={[16, 18]} bg={i === 4 ? t.color.go : t.color.paper}
           sx={{ flexGrow: '1', flexShrink: '1', flexBasis: '0', borderRight: i < 4 ? `1px solid ${t.color.line}` : 'none' }}

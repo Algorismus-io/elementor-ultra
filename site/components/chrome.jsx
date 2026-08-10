@@ -95,6 +95,13 @@ export const Chrome = ({ theme: t }) => (
   @media(max-width:1280px){.ultra-rail{display:none}}
   body.agent-mode .ultra-rail{display:none}
 
+  /* ---- loop strip corners ---- */
+  #loop-strip{overflow:hidden !important;border-radius:14px !important}
+  #loop-strip>div:first-child{border-radius:12px 0 0 12px}
+  #loop-strip>div:last-child{border-radius:0 12px 12px 0}
+  @media(max-width:899px){#loop-strip>div:first-child{border-radius:12px 12px 0 0}
+    #loop-strip>div:last-child{border-radius:0 0 12px 12px}}
+
   /* ---- chapter rig ---- */
   .chrig-outer{height:485vh;width:100%}
   .chrig{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:26px;width:100%;
@@ -121,7 +128,7 @@ export const Chrome = ({ theme: t }) => (
   #chrig-full{appearance:none;border:1.5px solid ${t.color.goBright};background:transparent;color:${t.color.goBright};
     border-radius:999px;padding:7px 14px;font-family:'GeistM',monospace;font-size:11.5px;letter-spacing:.1em;cursor:pointer;white-space:nowrap}
   #chrig-full:hover{background:${t.color.goBright};color:${t.color.stage}}
-  .chrig-chapters{display:flex;flex-direction:column;gap:3.5vh;padding:22vh 0 30vh;transition:transform .6s cubic-bezier(.22,1,.36,1);will-change:transform}
+  .chrig-chapters{display:flex;flex-direction:column;gap:3.5vh;padding:22vh 12px 30vh 3px;transition:transform .6s cubic-bezier(.22,1,.36,1);will-change:transform}
   .chrig-card{border:1.5px solid ${t.color.line};border-radius:14px;padding:18px 20px;background:#FFFFFF;
     cursor:pointer;opacity:.45;transform:translateY(6px);transition:opacity .4s,transform .4s,border-color .4s}
   .chrig-card.on{opacity:1;transform:none;border-color:${t.color.ink};box-shadow:6px 6px 0 ${t.color.ink}}
@@ -180,6 +187,11 @@ export const Chrome = ({ theme: t }) => (
   .mp-scanline.run{animation:mp-scan 1.6s ease-in-out}
   @keyframes mp-scan{0%{top:0;opacity:1}100%{top:96%;opacity:0}}
   .mp-sel{background:rgba(47,107,255,.35);border-radius:3px}
+  .mp-pin{position:absolute;left:0;top:0;width:2.5px;height:16px;background:#D97757;z-index:7;
+    pointer-events:none;opacity:0;transition:opacity .15s}
+  .mp-pin::after{content:'';position:absolute;top:-5px;left:-2.2px;width:7px;height:7px;
+    border-radius:2px;background:#D97757}
+  .mp-pin.show{opacity:1}
   #seam-jsx-pre ::selection{background:rgba(217,119,87,.6);color:#FFFFFF}
   #seam-jsx-pre pre::selection{background:rgba(217,119,87,.6);color:#FFFFFF}
   .mp-you.show{opacity:1}

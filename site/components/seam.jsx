@@ -76,17 +76,18 @@ export const Seam = ({ theme: t }) => (
   if(you&&window.matchMedia('(pointer:fine)').matches){
     seam.appendChild(you);
     seam.classList.add('mp-zone');
-    var raf=null;
-    seam.addEventListener('mousemove',function(e){
-      if(raf)return;
-      raf=requestAnimationFrame(function(){
-        raf=null;
-        var r=seam.getBoundingClientRect();
-        you.style.transform='translate('+Math.round(e.clientX-r.left-4)+'px,'+Math.round(e.clientY-r.top-2)+'px)';
-      });
-    });
-    seam.addEventListener('mouseenter',function(){you.classList.add('show')});
-    seam.addEventListener('mouseleave',function(){you.classList.remove('show')});
+    var px=-1,py=-1,yraf=null;
+    function youSync(){
+      yraf=null;
+      if(px<0)return;
+      var r=seam.getBoundingClientRect();
+      var inside=px>=r.left&&px<=r.right&&py>=r.top&&py<=r.bottom;
+      you.classList.toggle('show',inside);
+      if(inside)you.style.transform='translate('+Math.round(px-r.left-4)+'px,'+Math.round(py-r.top-2)+'px)';
+    }
+    function queueSync(){if(!yraf)yraf=requestAnimationFrame(youSync)}
+    window.addEventListener('mousemove',function(e){px=e.clientX;py=e.clientY;queueSync()},{passive:true});
+    window.addEventListener('scroll',queueSync,{passive:true});
   }
 
   // ---- organic motion engine: spring + wander + velocity tilt ----
@@ -137,20 +138,39 @@ export const Seam = ({ theme: t }) => (
       },1200);
     },500);
   }
+  var pinA=document.createElement('div');pinA.className='mp-pin';seam.appendChild(pinA);
+  var pinB=document.createElement('div');pinB.className='mp-pin';seam.appendChild(pinB);
+  function caretPos(node,i){
+    var r=document.createRange();r.setStart(node,Math.min(i,node.textContent.length));r.collapse(true);
+    var rect=r.getBoundingClientRect(),sr=seam.getBoundingClientRect();
+    return {x:rect.left-sr.left,y:rect.top-sr.top,h:rect.height||16};
+  }
+  function setPin(p,c){p.style.transform='translate('+c.x.toFixed(1)+'px,'+c.y.toFixed(1)+'px)';p.style.height=c.h+'px'}
+  function hidePins(){pinA.classList.remove('show');pinB.classList.remove('show')}
   function dragSelect(el,done){
     var sel=window.getSelection();
     if(sel.rangeCount&&!sel.isCollapsed&&!seam.contains(sel.anchorNode)){done();return}
     var node=el.firstChild;
     if(!node||node.nodeType!==3){done();return}
     var len=node.textContent.length,i=0;
-    (function step(){
-      if(!running){try{sel.removeAllRanges()}catch(e){}done();return}
-      i=Math.min(len,i+Math.max(1,Math.round(len/22)));
-      try{var r=document.createRange();r.setStart(node,0);r.setEnd(node,i);
-        sel.removeAllRanges();sel.addRange(r);}catch(e){done();return}
-      if(i<len)later(step,16);
-      else later(function(){try{sel.removeAllRanges()}catch(e){}done()},420);
-    })();
+    // click down at the start of the text first
+    var c0=caretPos(node,0);
+    aim(A.cl,c0.x+2,c0.y-4);
+    setPin(pinA,c0);pinA.classList.add('show');
+    later(function(){
+      if(!running){hidePins();done();return}
+      (function step(){
+        if(!running){try{sel.removeAllRanges()}catch(e){}hidePins();done();return}
+        i=Math.min(len,i+Math.max(1,Math.round(len/26)));
+        try{var r=document.createRange();r.setStart(node,0);r.setEnd(node,i);
+          sel.removeAllRanges();sel.addRange(r);}catch(e){hidePins();done();return}
+        var ce=caretPos(node,i);
+        setPin(pinB,ce);pinB.classList.add('show');
+        aim(A.cl,ce.x+3,ce.y-3);   // the cursor IS the drag
+        if(i<len)later(step,24);
+        else later(function(){try{sel.removeAllRanges()}catch(e){}hidePins();done()},460);
+      })();
+    },520);
   }
   function typeInto(el,txt,done){
     var j=0;(function ty(){ if(!running)return;
