@@ -56,16 +56,36 @@ export const Seam = ({ theme: t }) => (
     </row>
     <html>{`
 <div class="mp-cursor" id="mp-claude"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M4.5 2.5 L20 12.2 L12.6 13.6 L9.2 21 Z" fill="#D97757" stroke="#FFFFFF" stroke-width="1.4"/></svg><span class="mp-pill" style="background:#D97757"><img src="/wp-content/uploads/logos/claude.svg" onerror="this.style.display='none'" style="filter:brightness(0) invert(1)"/>Claude Code</span></div>
-<div class="mp-cursor" id="mp-fable"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M4.5 2.5 L20 12.2 L12.6 13.6 L9.2 21 Z" fill="#1F9D44" stroke="#FFFFFF" stroke-width="1.4"/></svg><span class="mp-pill" style="background:#1F9D44"><img src="/wp-content/uploads/logos/claude-green.svg" onerror="this.style.display='none'" style="filter:brightness(0) invert(1)"/>Fable 5</span></div>
+<div class="mp-cursor mp-you" id="mp-you"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M4.5 2.5 L20 12.2 L12.6 13.6 L9.2 21 Z" fill="#191914" stroke="#FFFFFF" stroke-width="1.4"/></svg><span class="mp-pill" style="background:#191914">You</span></div>
+<div class="mp-cursor" id="mp-ultra"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M4.5 2.5 L20 12.2 L12.6 13.6 L9.2 21 Z" fill="#1F9D44" stroke="#FFFFFF" stroke-width="1.4"/></svg><span class="mp-pill" style="background:#1F9D44"><img src="/wp-content/uploads/logos/elementor.svg" onerror="this.style.display='none'" style="filter:brightness(0) invert(1)"/>Elementor Ultra<span id="mp-status" class="mp-status">· watching</span></span></div>
 <script>
 (function(){
   if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
   var seam=document.getElementById('seam');
-  var cl=document.getElementById('mp-claude'), fa=document.getElementById('mp-fable');
+  var cl=document.getElementById('mp-claude'), eu=document.getElementById('mp-ultra');
+  var stEl=document.getElementById('mp-status');
+  function status(t){if(stEl)stEl.textContent='\u00b7 '+t}
   var blobPane=document.getElementById('seam-blob'), jsxPane=document.getElementById('seam-jsx');
   var blobCopy=document.getElementById('blob-copy'), jsxCopy=document.getElementById('jsx-copy');
   if(!seam||!blobPane||!jsxPane||!blobCopy||!jsxCopy)return;
-  seam.appendChild(cl); seam.appendChild(fa);
+  seam.appendChild(cl); seam.appendChild(eu);
+  // the visitor is the third player
+  var you=document.getElementById('mp-you');
+  if(you&&window.matchMedia('(pointer:fine)').matches){
+    seam.appendChild(you);
+    seam.classList.add('mp-zone');
+    var raf=null;
+    seam.addEventListener('mousemove',function(e){
+      if(raf)return;
+      raf=requestAnimationFrame(function(){
+        raf=null;
+        var r=seam.getBoundingClientRect();
+        you.style.transform='translate('+Math.round(e.clientX-r.left-4)+'px,'+Math.round(e.clientY-r.top-2)+'px)';
+      });
+    });
+    seam.addEventListener('mouseenter',function(){you.classList.add('show')});
+    seam.addEventListener('mouseleave',function(){you.classList.remove('show')});
+  }
   var COPIES=['Family life, organised with AI.','One tile at a time.','Blog on autopilot.','Run on facts, not guesswork.'];
   var ci=0, running=false, timers=[];
   function later(fn,ms){timers.push(setTimeout(fn,ms))}
@@ -88,9 +108,9 @@ export const Seam = ({ theme: t }) => (
     if(!running)return;
     ci=(ci+1)%COPIES.length;
     var next=COPIES[ci];
-    // Fable flies to the JSX line
+    // Claude Code flies to the JSX line
     var jc=rel(jsxCopy);
-    put(fa, jc.x+jc.w*0.6, jc.y-8);
+    put(cl, jc.x+jc.w*0.6, jc.y-8);
     later(function(){
       if(!running)return;
       document.getElementById('jsx-caret').classList.add('on');
@@ -98,31 +118,37 @@ export const Seam = ({ theme: t }) => (
         document.getElementById('jsx-caret').classList.remove('on');
         jsxPane.classList.add('mp-flash-green');
         later(function(){jsxPane.classList.remove('mp-flash-green')},700);
-        // Claude Code sweeps the blob; the compiled value follows
+        // Elementor Ultra compiles and deploys; the blob follows
+        status('compiling\u2026');
         var bc=rel(blobCopy);
-        put(cl, bc.x+bc.w*0.55, bc.y-6);
         later(function(){
           if(!running)return;
-          blobCopy.classList.add('mp-hl');
-          blobCopy.textContent=next;
-          blobPane.classList.add('mp-flash-amber');
-          later(function(){blobCopy.classList.remove('mp-hl');blobPane.classList.remove('mp-flash-amber')},900);
-          later(function(){ if(!running)return; drift(cl,blobPane); drift(fa,jsxPane); },1400);
-          later(cycle,4200);
-        },1500);
+          status('deploying\u2026');
+          put(eu, bc.x+bc.w*0.55, bc.y-6);
+          later(function(){
+            if(!running)return;
+            blobCopy.classList.add('mp-hl');
+            blobCopy.textContent=next;
+            blobPane.classList.add('mp-flash-amber');
+            status('deployed \u2713');
+            later(function(){blobCopy.classList.remove('mp-hl');blobPane.classList.remove('mp-flash-amber')},900);
+            later(function(){ if(!running)return; status('watching'); drift(eu,blobPane); drift(cl,jsxPane); },1500);
+            later(cycle,4200);
+          },1550);
+        },650);
       });
     },1600);
   }
   function start(){
     if(running)return; running=true;
-    drift(cl,blobPane); drift(fa,jsxPane);
+    drift(cl,jsxPane); drift(eu,blobPane);
     later(cycle,2200);
   }
   function stop(){running=false;clearTimers()}
   if('IntersectionObserver' in window){
     new IntersectionObserver(function(es){es.forEach(function(e){e.isIntersecting?start():stop()})},{threshold:.25}).observe(seam);
   } else start();
-  window.addEventListener('resize',function(){if(running){drift(cl,blobPane);drift(fa,jsxPane)}});
+  window.addEventListener('resize',function(){if(running){drift(cl,jsxPane);drift(eu,blobPane)}});
 })();
 </script>`}</html>
     <text size={16.5} font={t.font.body} color={t.color.dim} lh={1.65} maxw={720}>

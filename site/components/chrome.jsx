@@ -172,6 +172,10 @@ export const Chrome = ({ theme: t }) => (
     color:#fff;font-family:'GeistM',monospace;font-size:11px;letter-spacing:.05em;
     padding:4px 10px;border-radius:999px;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,.25)}
   .mp-pill img{width:12px;height:12px;display:block}
+  .mp-status{opacity:.85;font-weight:400;margin-left:2px}
+  @media(pointer:fine){.mp-zone,.mp-zone *{cursor:none !important}}
+  .mp-you{transition:none;opacity:0;z-index:8}
+  .mp-you.show{opacity:1}
   #jsx-caret.on::after{content:'▍';color:#28C840;animation:mp-blink .8s step-end infinite}
   @keyframes mp-blink{50%{opacity:0}}
   .mp-hl{background:rgba(217,119,87,.35);border-radius:3px}
