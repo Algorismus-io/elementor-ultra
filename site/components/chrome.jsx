@@ -34,8 +34,20 @@ export const Chrome = ({ theme: t }) => (
   #h1-stroke h2{-webkit-text-stroke:2.5px ${t.color.ink};color:transparent !important}
   @media(max-width:640px){#h1-stroke h2{-webkit-text-stroke:1.5px ${t.color.ink}}}
 
-  #topnav{padding-right:220px !important}
-  @media(max-width:640px){#topnav{padding-right:24px !important}}
+  /* ---- fixed header bar ---- */
+  #topnav{position:fixed !important;top:0;left:0;right:0;z-index:9990;max-width:none !important;
+    width:100% !important;background:${t.color.paper};border-bottom:2px solid ${t.color.ink};
+    padding:16px 200px 16px 28px !important}
+  #human-surface{padding-top:74px}
+  .ultra-switch{top:13px}
+  body.agent-mode #agent-surface{padding-top:64px}
+  @media(max-width:640px){
+    #topnav{padding:13px 150px 13px 16px !important}
+    #topnav p,#topnav div.elementor-widget-container p{font-size:15px !important}
+    .ultra-switch{top:10px;right:10px}
+    .ultra-switch button{padding:7px 11px;font-size:10.5px}
+    #human-surface{padding-top:60px}
+  }
   /* ---- ticker ---- */
   .ultra-ticker{width:100%;overflow:hidden;border-top:2px solid ${t.color.ink};border-bottom:2px solid ${t.color.ink};
     background:${t.color.paper};padding:12px 0}
