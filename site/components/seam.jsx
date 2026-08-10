@@ -137,12 +137,24 @@ export const Seam = ({ theme: t }) => (
       },1200);
     },500);
   }
+  function dragSelect(el,done){
+    var sel=window.getSelection();
+    if(sel.rangeCount&&!sel.isCollapsed&&!seam.contains(sel.anchorNode)){done();return}
+    var node=el.firstChild;
+    if(!node||node.nodeType!==3){done();return}
+    var len=node.textContent.length,i=0;
+    (function step(){
+      if(!running){try{sel.removeAllRanges()}catch(e){}done();return}
+      i=Math.min(len,i+Math.max(1,Math.round(len/22)));
+      try{var r=document.createRange();r.setStart(node,0);r.setEnd(node,i);
+        sel.removeAllRanges();sel.addRange(r);}catch(e){done();return}
+      if(i<len)later(step,16);
+      else later(function(){try{sel.removeAllRanges()}catch(e){}done()},420);
+    })();
+  }
   function typeInto(el,txt,done){
-    var cur=el.textContent,i=cur.length;
-    (function del(){ if(!running)return;
-      if(i>0){i--;el.textContent=cur.slice(0,i);later(del,15);}
-      else {var j=0;(function ty(){ if(!running)return;
-        if(j<txt.length){j++;el.textContent=txt.slice(0,j);later(ty,32);} else done();})();}})();
+    var j=0;(function ty(){ if(!running)return;
+      if(j<txt.length){j++;el.textContent=txt.slice(0,j);later(ty,32);} else done();})();
   }
   function act(){
     if(!running)return;
@@ -153,13 +165,12 @@ export const Seam = ({ theme: t }) => (
       var st=rel(jsxSize); aim(A.cl,st.x+st.w*0.5,st.y-8);
       later(function(){ if(!running)return;
         si=(si+1)%SIZES.length;
-        jsxSize.classList.add('mp-sel');
-        later(function(){ if(!running)return;
-          jsxSize.textContent=SIZES[si]; jsxSize.classList.remove('mp-sel');
+        dragSelect(jsxSize,function(){ if(!running)return;
+          jsxSize.textContent=SIZES[si];
           jsxPane.classList.add('mp-flash-green');
           later(function(){jsxPane.classList.remove('mp-flash-green')},500);
           recompile(blobHash||blobCopy,function(){});
-        },420);
+        });
       },1100);
     },1700);
     // beat 3: Claude Code rewrites the headline
@@ -167,6 +178,8 @@ export const Seam = ({ theme: t }) => (
       var jc=rel(jsxCopy); aim(A.cl,jc.x+Math.min(jc.w*0.7,260),jc.y-8);
       later(function(){ if(!running)return;
         ci=(ci+1)%COPIES.length;
+        dragSelect(jsxCopy,function(){ if(!running)return;
+        jsxCopy.textContent='';
         document.getElementById('jsx-caret').classList.add('on');
         typeInto(jsxCopy,COPIES[ci],function(){
           document.getElementById('jsx-caret').classList.remove('on');
@@ -178,6 +191,7 @@ export const Seam = ({ theme: t }) => (
           });
           later(function(){ if(!running)return; drift(A.cl,jsxPane); },2400);
           later(act,4600);
+        });
         });
       },1300);
     },6200);

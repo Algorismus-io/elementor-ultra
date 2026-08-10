@@ -180,6 +180,8 @@ export const Chrome = ({ theme: t }) => (
   .mp-scanline.run{animation:mp-scan 1.6s ease-in-out}
   @keyframes mp-scan{0%{top:0;opacity:1}100%{top:96%;opacity:0}}
   .mp-sel{background:rgba(47,107,255,.35);border-radius:3px}
+  #seam-jsx-pre ::selection{background:rgba(217,119,87,.6);color:#FFFFFF}
+  #seam-jsx-pre pre::selection{background:rgba(217,119,87,.6);color:#FFFFFF}
   .mp-you.show{opacity:1}
   #jsx-caret.on::after{content:'▍';color:#28C840;animation:mp-blink .8s step-end infinite}
   @keyframes mp-blink{50%{opacity:0}}
