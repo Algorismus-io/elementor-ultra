@@ -76,15 +76,7 @@ export const Chrome = ({ theme: t }) => (
   .ultra-ticker span em{font-style:normal;color:${t.color.go}}
   @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
-  /* ---- ghost numerals ---- */
-  #proof,#seam,#loop,#stack,#start{position:relative;overflow:visible}
-  #proof::before,#seam::before,#loop::before,#stack::before,#start::before{
-    position:absolute;right:-6px;top:-30px;font-family:'Meso','Anton',sans-serif;font-size:300px;
-    line-height:1;color:${t.color.ink};opacity:.05;pointer-events:none;z-index:0}
-  #proof::before{content:'01'} #seam::before{content:'02'} #loop::before{content:'03'}
-  #stack::before{content:'04'} #start::before{content:'05'}
-  @media(max-width:900px){#proof::before,#seam::before,#loop::before,#stack::before,#start::before{font-size:140px;top:-14px}}
-
+  #proof,#seam,#loop,#stack,#start{position:relative}
   /* ---- index rail ---- */
   .ultra-rail{position:fixed;left:22px;top:50%;transform:translateY(-50%);z-index:9998;
     display:flex;flex-direction:column;gap:14px;font-family:'GeistM',monospace;font-size:11px;letter-spacing:.12em}
