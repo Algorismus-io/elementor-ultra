@@ -136,16 +136,20 @@ export const Chrome = ({ theme: t }) => (
     background:${t.color.stage};border-radius:8px;padding:8px 12px;white-space:pre-wrap;word-break:break-word}
   @media(max-width:899px){
     .chrig-outer{height:auto}
-    .chrig{display:flex;flex-direction:column;gap:16px;position:static}
-    .chrig-chapters-vp{height:auto;overflow:visible;-webkit-mask-image:none;mask-image:none}
-    .chrig-chapters{padding:0;transition:none}
-    .chrig.finale{grid-template-columns:none;gap:16px}
-    .chrig.finale .chrig-chapters-vp{opacity:1;pointer-events:auto}
+    .chrig{display:flex;flex-direction:column;gap:14px;position:static}
+    .chrig-chapters-vp{height:auto;overflow:visible;-webkit-mask-image:none;mask-image:none;min-width:0;max-width:100%;width:100%}
     .chrig-stage{position:static}
     .chrig-frame{transform:none}
-    .chrig-chapters{gap:12px;padding:0}
-    .chrig-card{opacity:1;transform:none}
-    .chrig-card.on{box-shadow:4px 4px 0 ${t.color.ink}}
+    .chrig.finale{gap:14px}
+    .chrig.finale .chrig-chapters-vp{opacity:1;pointer-events:auto}
+    /* the clip strip — horizontal video-editor timeline */
+    .chrig-chapters{flex-direction:row;overflow-x:auto;gap:10px;padding:4px 2px 12px;transition:none;
+      scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;transform:none !important;max-width:100%}
+    .chrig-card{flex:0 0 205px;scroll-snap-align:start;padding:12px 14px;opacity:.55;transform:none}
+    .chrig-card.on{opacity:1;box-shadow:3px 3px 0 ${t.color.ink}}
+    .cc-t{font-size:18px;margin:6px 0 0}
+    .cc-note,.cc-log{display:none}
+    .cc-top{font-size:10px}
     .chrig-cap{font-size:10px}
   }
 
@@ -165,7 +169,7 @@ export const Chrome = ({ theme: t }) => (
 
   #chip-row>div{flex:1 1 240px !important;min-width:230px}
   #chip-row>div:hover{transform:translateY(-4px);transition:transform .3s}
-  @media(max-width:640px){#chip-row>div{flex-basis:100% !important;min-width:0}}
+  @media(max-width:640px){#chip-row>div{flex:1 1 calc(50% - 6px) !important;min-width:0}}
   /* ---- seam multiplayer ---- */
   .mp-cursor{position:absolute;left:0;top:0;z-index:7;pointer-events:none;
     will-change:transform;transform:translate(40px,40px)}
@@ -196,7 +200,12 @@ export const Chrome = ({ theme: t }) => (
   .mp-hl{background:rgba(217,119,87,.35);border-radius:3px}
   .mp-flash-green{box-shadow:0 0 0 2.5px #28C840 !important;transition:box-shadow .3s}
   .mp-flash-amber{box-shadow:0 0 0 2.5px #D97757 !important;transition:box-shadow .3s}
-  @media(max-width:899px){.mp-cursor{display:none}}
+  @media(max-width:899px){
+    .mp-cursor svg{width:15px;height:15px}
+    .mp-pill{font-size:9.5px;padding:3px 8px;margin-left:9px;gap:4px}
+    .mp-pill img{width:10px;height:10px}
+    .mp-you{display:none !important}
+  }
 
   /* ---- scroll reveals ---- */
   @media (prefers-reduced-motion: no-preference){

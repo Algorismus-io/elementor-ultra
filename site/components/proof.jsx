@@ -31,7 +31,6 @@ export const Proof = ({ theme: t }) => (
 <div class="chrig" id="chrig">
   <div class="chrig-stage">
     <div class="chrig-frame">
-      <div class="ultra-stamp">CERTIFIED 4.1.4 / 4.2.0</div>
       <video id="chrig-video" muted playsinline preload="metadata"
         poster="https://docs.wpos.ai/images/ultra/examples/housemait-thumb.jpg"
         src="https://docs.wpos.ai/videos/ultra/examples/housemait.mp4?v=3"></video>
@@ -153,8 +152,22 @@ export const Proof = ({ theme: t }) => (
     else { wrap.style.transform='none'; go(0,false); v.pause(); }
   }
   var advancing=false;
+  function chapterAt(t){
+    for(var i=F.ch.length-1;i>=0;i--){if(t>=F.ch[i].s-0.1)return i}
+    return 0;
+  }
   v.addEventListener('timeupdate',function(){
     prog.style.width=(v.currentTime/F.total*100)+'%';
+    if(!isDesk()){
+      var i=chapterAt(v.currentTime);
+      if(i!==active){
+        active=i;
+        cards.forEach(function(c,j){c.classList.toggle('on',j===i)});
+        rail.querySelectorAll('.chrig-tick').forEach(function(k,j){k.classList.toggle('on',j===i)});
+        if(cards[i])wrap.scrollTo({left:Math.max(0,cards[i].offsetLeft-16),behavior:'smooth'});
+      }
+      return;
+    }
     if(full||active<0)return;
     if(v.currentTime>=endT(active)-.05){
       if(canAuto()&&!advancing){
