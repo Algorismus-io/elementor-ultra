@@ -201,6 +201,7 @@ export const Chrome = ({ theme: t }) => (
   .mp-flash-green{box-shadow:0 0 0 2.5px #28C840 !important;transition:box-shadow .3s}
   .mp-flash-amber{box-shadow:0 0 0 2.5px #D97757 !important;transition:box-shadow .3s}
   @media(max-width:899px){
+    #seam-blob,#seam-jsx{flex-basis:auto !important}
     .mp-cursor svg{width:15px;height:15px}
     .mp-pill{font-size:9.5px;padding:3px 8px;margin-left:9px;gap:4px}
     .mp-pill img{width:10px;height:10px}
