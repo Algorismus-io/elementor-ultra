@@ -165,8 +165,7 @@ export const Chrome = ({ theme: t }) => (
   @media(max-width:640px){#chip-row>div{flex-basis:100% !important;min-width:0}}
   /* ---- seam multiplayer ---- */
   .mp-cursor{position:absolute;left:0;top:0;z-index:7;pointer-events:none;
-    transition:transform 1.5s cubic-bezier(.3,.9,.35,1);will-change:transform;
-    transform:translate(40px,40px)}
+    will-change:transform;transform:translate(40px,40px)}
   .mp-cursor svg{display:block;filter:drop-shadow(0 2px 5px rgba(0,0,0,.3))}
   .mp-pill{display:inline-flex;align-items:center;gap:6px;margin-left:14px;margin-top:-4px;
     color:#fff;font-family:'GeistM',monospace;font-size:11px;letter-spacing:.05em;
@@ -175,6 +174,12 @@ export const Chrome = ({ theme: t }) => (
   .mp-status{opacity:.85;font-weight:400;margin-left:2px}
   @media(pointer:fine){.mp-zone,.mp-zone *{cursor:none !important}}
   .mp-you{transition:none;opacity:0;z-index:8}
+  #seam-blob{position:relative;overflow:hidden}
+  .mp-scanline{position:absolute;left:0;right:0;top:-24px;height:20px;pointer-events:none;
+    background:linear-gradient(to bottom,transparent,rgba(31,157,68,.14),transparent);opacity:0}
+  .mp-scanline.run{animation:mp-scan 1.6s ease-in-out}
+  @keyframes mp-scan{0%{top:0;opacity:1}100%{top:96%;opacity:0}}
+  .mp-sel{background:rgba(47,107,255,.35);border-radius:3px}
   .mp-you.show{opacity:1}
   #jsx-caret.on::after{content:'▍';color:#28C840;animation:mp-blink .8s step-end infinite}
   @keyframes mp-blink{50%{opacity:0}}
