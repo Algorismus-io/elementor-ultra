@@ -96,6 +96,11 @@ export const Colophon = ({ theme: t }) => (
         <text href="https://github.com/Algorismus-io/elementor-jsx" size={15} weight={600} font={t.font.body} color={t.color.ink}>★ Star it on GitHub</text>
       </box>
     </row>
+    <row tw="flex flex-wrap gap-6" pad={[4, 0, 10, 0]}>
+      <text href="https://github.com/Algorismus-io/elementor-jsx/discussions" size={14.5} weight={600} font={t.font.body} color={t.color.ink}>Questions? GitHub Discussions ↗</text>
+      <text href="https://github.com/Algorismus-io/elementor-jsx/blob/main/CONTRIBUTING.md" size={14.5} weight={600} font={t.font.body} color={t.color.ink}>Contribute ↗</text>
+      <text href="https://docs.wpos.ai/ultra" size={14.5} weight={600} font={t.font.body} color={t.color.ink}>Docs ↗</text>
+    </row>
     <text size={13.5} font={t.font.mono} color={t.color.go} lh={1.7}>
       COLOPHON — this page practices what it preaches: an AI agent built it with elementor-jsx,
       deployed it through the loop it describes, and passed the same gates. Zero human edits.
