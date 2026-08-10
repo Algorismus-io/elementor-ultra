@@ -30,7 +30,7 @@ export const Loop = ({ theme: t }) => (
     <box tw="flex flex-col gap-2" bg={t.color.stage} pad={[18, 22]} sx={{ borderRadius: '14px' }}>
       <text size={12} font={t.font.mono} color={t.color.termDim} sx={{ letterSpacing: '.12em' }}>LIVE — THE LOOP, AS IT RUNS (REAL HOUSEMAIT LOG LINES)</text>
       <html>{`
-<div id="loop-log" style="min-height:160px;font-family:'GeistM',ui-monospace,monospace;font-size:12.5px;line-height:1.75;color:#28C840"></div>
+<div id="loop-log" style="min-height:88px;font-family:'GeistM',ui-monospace,monospace;font-size:12.5px;line-height:1.75;color:#28C840"></div>
 <style>
   .ls-on{box-shadow:inset 0 -3px 0 #1F9D44}
   .ls-go{filter:brightness(1.07)}
@@ -57,7 +57,7 @@ export const Loop = ({ theme: t }) => (
     var d=document.createElement('span');d.className='ll-line'+(cls?' '+cls:'');d.textContent=txt;
     logEl.appendChild(d);
     requestAnimationFrame(function(){requestAnimationFrame(function(){d.classList.add('in')})});
-    while(logEl.children.length>6)logEl.removeChild(logEl.firstChild);
+    while(logEl.children.length>4)logEl.removeChild(logEl.firstChild);
   }
   function run(){
     if(!running)return;
