@@ -219,9 +219,11 @@ export const Chrome = ({ theme: t }) => (
     document.getElementById('us-agent').classList.toggle('on', m==='agent');
     try{localStorage.setItem(KEY,m)}catch(e){}
   }
+  var inEditor=document.body.classList.contains('elementor-editor-active');
   var q=new URLSearchParams(location.search).get('mode');
   var saved=null; try{saved=localStorage.getItem(KEY)}catch(e){}
-  apply((q||saved||(navigator.webdriver?'agent':'human'))==='agent'?'agent':'human');
+  apply(!inEditor&&(q||saved||(navigator.webdriver?'agent':'human'))==='agent'?'agent':'human');
+  if(inEditor){var sw=document.querySelector('.ultra-switch');if(sw)sw.style.display='none'}
   document.getElementById('us-human').addEventListener('click',function(){apply('human')});
   document.getElementById('us-agent').addEventListener('click',function(){apply('agent')});
   document.addEventListener('keydown',function(e){
