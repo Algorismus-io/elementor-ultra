@@ -95,6 +95,42 @@ export const Chrome = ({ theme: t }) => (
   @media(max-width:1280px){.ultra-rail{display:none}}
   body.agent-mode .ultra-rail{display:none}
 
+  /* ---- chapter rig ---- */
+  .chrig{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:26px;width:100%;align-items:start}
+  .chrig-stage{position:sticky;top:86px}
+  .chrig-frame{background:${t.color.ink};border-radius:18px;padding:10px;position:relative;transform:rotate(-.4deg)}
+  .chrig-frame video{width:100%;display:block;border-radius:10px;background:#000}
+  .chrig-rail{position:relative;height:22px;margin:12px 6px 2px;background:#26262E;border-radius:6px;cursor:pointer}
+  .chrig-progress{position:absolute;left:0;top:0;bottom:0;background:${t.color.goBright};border-radius:6px;width:0;opacity:.85}
+  .chrig-tick{position:absolute;top:-4px;width:3px;height:30px;background:${t.color.paper};border:0;padding:0;
+    cursor:pointer;opacity:.55;transition:opacity .2s,transform .2s}
+  .chrig-tick:hover{opacity:1;transform:scaleY(1.15)}
+  .chrig-tick.on{opacity:1;background:${t.color.goBright};box-shadow:0 0 0 2px rgba(40,200,64,.35)}
+  .chrig-under{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 8px 4px}
+  .chrig-cap{font-family:'GeistM',monospace;font-size:11.5px;letter-spacing:.06em;color:${t.color.paper}}
+  #chrig-full{appearance:none;border:1.5px solid ${t.color.goBright};background:transparent;color:${t.color.goBright};
+    border-radius:999px;padding:7px 14px;font-family:'GeistM',monospace;font-size:11.5px;letter-spacing:.1em;cursor:pointer;white-space:nowrap}
+  #chrig-full:hover{background:${t.color.goBright};color:${t.color.stage}}
+  .chrig-chapters{display:flex;flex-direction:column;gap:14vh;padding:6vh 0 10vh}
+  .chrig-card{border:1.5px solid ${t.color.line};border-radius:14px;padding:18px 20px;background:#FFFFFF;
+    cursor:pointer;opacity:.45;transform:translateY(6px);transition:opacity .4s,transform .4s,border-color .4s}
+  .chrig-card.on{opacity:1;transform:none;border-color:${t.color.ink};box-shadow:6px 6px 0 ${t.color.ink}}
+  .cc-top{display:flex;justify-content:space-between;gap:10px;font-family:'GeistM',monospace;font-size:11px;letter-spacing:.12em}
+  .cc-n{color:${t.color.go}} .cc-at{color:${t.color.dim}}
+  .cc-t{font-family:'Meso','Anton',sans-serif;font-size:27px;text-transform:uppercase;color:${t.color.ink};margin:8px 0 6px;line-height:1.05}
+  .cc-note{font-family:'Lay',sans-serif;font-size:14px;line-height:1.6;color:${t.color.dim};margin:0 0 10px}
+  .cc-log{display:block;font-family:'GeistM',monospace;font-size:11.5px;color:${t.color.go};
+    background:${t.color.stage};border-radius:8px;padding:8px 12px;white-space:pre-wrap;word-break:break-word}
+  @media(max-width:899px){
+    .chrig{display:flex;flex-direction:column;gap:16px}
+    .chrig-stage{position:static}
+    .chrig-frame{transform:none}
+    .chrig-chapters{gap:12px;padding:0}
+    .chrig-card{opacity:1;transform:none}
+    .chrig-card.on{box-shadow:4px 4px 0 ${t.color.ink}}
+    .chrig-cap{font-size:10px}
+  }
+
   /* ---- exhibits: rotation + stamp ---- */
   #film-frame{transform:rotate(-.6deg);position:relative}
   #seam-blob{transform:rotate(-.8deg)}
