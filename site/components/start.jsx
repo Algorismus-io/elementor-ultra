@@ -65,7 +65,14 @@ export const Start = ({ theme: t }) => (
 </script>`}</html>
     </box>
     <text size={13} font={t.font.mono} color={t.color.dim} sx={{ letterSpacing: '.04em' }}>
-      NODE 18+ · DOCKER OPTIONAL · ELEMENTOR FREE IS ENOUGH
+      FREE & MIT · NODE 18+ · NO DOCKER NEEDED · ELEMENTOR FREE IS ENOUGH
+    </text>
+    <text size={14.5} font={t.font.body} color={t.color.dim} lh={1.6} maxw={680}>
+      Prefer to read before you run an agent on your machine? SETUP.md is the exact file your
+      agent follows.
+    </text>
+    <text href="https://github.com/Algorismus-io/elementor-ultra/blob/main/SETUP.md" size={15} weight={600} font={t.font.body} color={t.color.ink}>
+      Read SETUP.md first ↗
     </text>
     <row tw="flex flex-wrap gap-6">
       <text href="https://github.com/Algorismus-io/elementor-ultra" size={15} weight={600} font={t.font.body} color={t.color.ink}>GitHub — Algorismus-io/elementor-ultra ↗</text>
@@ -77,10 +84,21 @@ export const Start = ({ theme: t }) => (
 
 export const Colophon = ({ theme: t }) => (
   <section id="colophon" tw="flex flex-col items-start w-full max-w-[1180px] px-6 gap-4" pad={[40, 24, 72, 24]} sx={{ borderTop: `2px solid ${t.color.ink}`, marginTop: '24px' }}>
+    <heading tag="h2" w="100%" size={44} weight={400} font={t.font.display} color={t.color.ink} lh={1.05} mobile={{ size: 30 }}>
+      Your agent can build the next one.
+    </heading>
+    <row id="cta-close" tw="flex gap-4 items-center max-md:flex-col max-md:items-start">
+      <box tw="flex items-center justify-center" bg={t.color.ink} pad={[13, 26]} sx={{ borderRadius: '10px', border: `2px solid ${t.color.ink}` }}>
+        <text href="#start" size={15} weight={600} font={t.font.body} color={t.color.paper}>Install in one paste — free</text>
+      </box>
+      <box tw="flex items-center justify-center" bg="transparent" pad={[13, 26]} sx={{ borderRadius: '10px', border: `2px solid ${t.color.ink}` }}>
+        <text href="https://github.com/Algorismus-io/elementor-ultra" size={15} weight={600} font={t.font.body} color={t.color.ink}>★ Star it on GitHub</text>
+      </box>
+    </row>
     <text size={13.5} font={t.font.mono} color={t.color.go} lh={1.7}>
-      COLOPHON — this page practices what it preaches: 10 elementor-jsx components written by an AI
-      agent, 158 local styles deduped to 93 shared classes, deployed through the same loop it
-      describes, gates green at 1200 / 1920 / 390. Zero human edits. Flip the switch to read its source.
+      COLOPHON — this page practices what it preaches: an AI agent built it with elementor-jsx,
+      deployed it through the loop it describes, and passed the same gates. Zero human edits.
+      Flip the switch to read its source.
     </text>
     <text size={13} font={t.font.body} color={t.color.dim} lh={1.65} maxw={820}>
       MIT © 2026 Algorismus. Not affiliated with or endorsed by Elementor Ltd — "Elementor" is

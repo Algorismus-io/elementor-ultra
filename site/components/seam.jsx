@@ -5,10 +5,10 @@ import { SectionHead } from './lib.jsx';
 
 export const Seam = ({ theme: t }) => (
   <section id="seam" tw="flex flex-col items-start w-full max-w-[1180px] px-6 gap-7" pad={[72, 24]} mobile={{ pad: [32, 18] }}>
-    <SectionHead theme={t} no="02" label="The seam" />
+    <SectionHead theme={t} no="02" label="Before / after" />
     <heading tag="h2" w="100%" size={64} weight={400} font={t.font.display} color={t.color.ink} lh={1.02}
       sx={{ textTransform: 'uppercase', letterSpacing: '.01em' }} mobile={{ size: 36 }}>
-      Same page. One is a blob.<br />One is a language.
+      Same hero. 3,400 lines of blind JSON —<br />or nine lines of typed JSX.
     </heading>
     <row tw="flex gap-5 w-full items-stretch max-md:flex-col">
       <box id="seam-blob" tw="flex flex-col gap-2" bg="#F1EDE3" pad={[18, 20]} sx={{ borderRadius: '14px', border: `1px solid ${t.color.line}`, flexGrow: '1', flexShrink: '1', flexBasis: '0', minWidth: '0' }}>
@@ -239,10 +239,13 @@ export const Seam = ({ theme: t }) => (
 })();
 </script>`}</html>
     <text size={16.5} font={t.font.body} color={t.color.dim} lh={1.65} maxw={720}>
-      The left side is the real stored JSON of the hero in film #2 — this is the surface agents
-      have been authoring. On the right, the component that generates it. Typed props fail at
-      build time. An authoritative server-side validator rejects bad trees before they save.
-      Backups first, rollback always. A hallucinating agent can't corrupt a site through this seam.
+      The left side is the real stored JSON of the hero in film #2 — the surface agents have
+      been hand-writing until now. On the right, the typed component that generates it, where
+      mistakes fail at build time instead of on your client's site.
+    </text>
+    <text size={16.5} font={t.font.body} color={t.color.ink} weight={600} lh={1.6} maxw={760}>
+      Backups before every write. A server-side validator rejects bad pages before they save.
+      Rollback, always. A hallucinating agent cannot corrupt your site.
     </text>
   </section>
 );

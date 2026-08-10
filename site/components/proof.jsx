@@ -3,14 +3,14 @@ import { SectionHead } from './lib.jsx';
 /** 01 / PROOF — the films inside a framed exhibit + the eight palette chips. */
 
 const chips = [
-  ['housemait', 'Housemait', 'the fridge door', '9 sections · 31 min'],
-  ['canopy', 'Canopy', 'the greenhouse ledger', '10 sections · 17 min'],
-  ['alike', 'Alike.page', 'the magazine cover', '8 sections · 22 min'],
-  ['triple', 'Triple Kingdom', 'the board box', '8 sections · 25 min'],
-  ['billow', 'Billow', 'the flight ledger', '9 sections · 25 min'],
-  ['pumo', 'Michael Pumo', 'the specification', '8 sections · 30 min'],
-  ['mat', 'Mat.', 'the desk', '6 sections · 21 min'],
-  ['bt26', 'BT—26', 'the sprint sheet', '8 parts · 24 min'],
+  ['housemait', 'Housemait', 'family-app SaaS', '9 sections · 31 min'],
+  ['canopy', 'Canopy', 'SaaS marketing site', '10 sections · 17 min'],
+  ['alike', 'Alike.page', 'creator storefront', '8 sections · 22 min'],
+  ['triple', 'Triple Kingdom', 'indie game site', '8 sections · 25 min'],
+  ['billow', 'Billow', 'finance SaaS', '9 sections · 25 min'],
+  ['pumo', 'Michael Pumo', 'developer portfolio', '8 sections · 30 min'],
+  ['mat', 'Mat.', 'iOS app site', '6 sections · 21 min'],
+  ['bt26', 'BT—26', 'event site', '8 parts · 24 min'],
 ];
 
 export const Proof = ({ theme: t }) => (
@@ -18,13 +18,14 @@ export const Proof = ({ theme: t }) => (
     <SectionHead theme={t} no="01" label="Proof, on camera" />
     <heading tag="h2" w="100%" size={64} weight={400} font={t.font.display} color={t.color.ink} lh={1.02}
       sx={{ textTransform: 'uppercase', letterSpacing: '.01em' }} mobile={{ size: 36 }}>
-      Eight real sites, rebuilt live by an agent.
+      Eight real sites from the web, rebuilt live by an agent.
     </heading>
     <text size={16.5} font={t.font.body} color={t.color.dim} lh={1.65} maxw={680}>
-      Each film is one take: a human types one prompt, the agent builds the page section by
-      section through the live dev loop, every save hot-reloads a real WordPress site and
-      re-runs the gates — then the film ends inside the native Elementor editor. The AGENT
-      TIME chip burns true elapsed time. Nothing is hidden.
+      Each film is one unedited take — same public copy, same assets as the original site.
+      One prompt from a human, then the agent builds section by section against a live
+      WordPress site, with a pass/fail check on every save — and the film ends inside the
+      real Elementor editor. The timer on screen is real elapsed time: no cuts, no speed-ups
+      hiding anything.
     </text>
     <html>{`
 <div class="chrig-outer" id="chrig-outer">

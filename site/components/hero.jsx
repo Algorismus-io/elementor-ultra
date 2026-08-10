@@ -17,7 +17,7 @@ export const Nav = ({ theme: t }) => (
 export const Hero = ({ theme: t }) => (
   <section id="hero" tw="flex flex-col items-start w-full max-w-[1180px] px-6 gap-8" pad={[88, 24, 72, 24]} mobile={{ pad: [40, 18, 36, 18] }}>
     <text size={13} font={t.font.mono} color={t.color.go} sx={{ letterSpacing: '.16em' }}>
-      THE AGENT-NATIVE BUILD STACK FOR ELEMENTOR · OPEN SOURCE · MIT
+      OPEN-SOURCE TOOLCHAIN FOR ELEMENTOR + AI AGENTS · FREE · MIT · INDEPENDENT — NOT AN ELEMENTOR LTD PRODUCT
     </text>
     <html>{`
 <div class="agent-logos" aria-label="Works with">
@@ -33,19 +33,22 @@ export const Hero = ({ theme: t }) => (
   <span class="l2"><img class="e-mark" src="/wp-content/uploads/logos/elementor.svg" alt="Elementor" /> Elementor site out.</span>
 </h1>`}</html>
     <text size={19} font={t.font.body} color={t.color.dim} lh={1.65} maxw={680} mobile={{ size: 16 }}>
-      <strong>Build Elementor sites with your own AI agents.</strong> Elementor pages are JSON
-      documents in a database — your agent could always write them, blind, a thousand untyped
-      lines at a time. That's why agent-built pages looked agent-built. Ultra gives agents what
-      developers have: components, types, hot reload, and proof. Beautiful pages are what
-      happens when agents can see what they're doing.
+      <strong>Build Elementor sites with your own AI agents.</strong> Your agent can already
+      write Elementor pages — blind, in thousands of lines of raw JSON. That's why they look
+      agent-built. Ultra gives agents typed components, hot reload, and automatic pass/fail
+      checks on every save. Beautiful pages are what happens when agents can see what
+      they're doing.
     </text>
     <row id="cta-row" tw="flex gap-4 items-center max-md:flex-col max-md:items-start">
       <Btn theme={t} href="#proof" label="Watch an agent build — 1:38" />
       <Btn theme={t} href="#start" label="Set up in one paste" ghost />
     </row>
+    <text size={14.5} font={t.font.body} color={t.color.dim} lh={1.5} maxw={620}>
+      For developers and agencies who ship client sites on Elementor and build with
+      Claude Code, Cursor, Codex or any MCP agent.
+    </text>
     <text size={13} font={t.font.mono} color={t.color.dim} sx={{ letterSpacing: '.04em' }}>
-      You're in human mode. Press <strong>A</strong> — or flip the
-      switch — to read this page the way an agent does.
+      Agents welcome — press <strong>A</strong> for the machine-readable version of this page.
     </text>
   </section>
 );

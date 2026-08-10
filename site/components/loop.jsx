@@ -92,9 +92,10 @@ export const Loop = ({ theme: t }) => (
 </script>`}</html>
     </box>
     <text size={16.5} font={t.font.body} color={t.color.dim} lh={1.65} maxw={720}>
-      That FAIL line is the point. The agent sees pass/fail per save — at desktop, wide, and
-      mobile — so it corrects itself in the next save instead of shipping blind. Verification
-      is a first-class primitive, not an afterthought script.
+      That FAIL line is the point. Gates are automated pass/fail checks at 1200, 1920 and
+      390 px — desktop, wide and mobile. The agent sees the verdict on every save and corrects
+      itself in the next one. Checking the result is built into the loop, not a script you
+      remember to run at the end.
     </text>
   </section>
 );

@@ -4,9 +4,9 @@ import { SectionHead } from './lib.jsx';
 
 const rows = [
   ['01', 'COMPILER + CLI', '@algorismus/elementor-jsx', 'Typed JSX → native Elementor V4 JSON. Build, deploy, lint, media, import — and the exjsx dev live loop.'],
-  ['02', 'MCP SERVER', '@algorismus/elementor-ultra-mcp', '~90 tools for any MCP-capable agent: build, refactor, govern pages, design system, HTML→Elementor.'],
+  ['02', 'MCP SERVER', '@algorismus/elementor-ultra-mcp', '90+ tools for any MCP agent: build pages, refactor, manage the design system, convert HTML to Elementor.'],
   ['03', 'COMPANION PLUGIN', 'WordPress plugin · GPL', 'The authoritative REST write path on the site: server-side validation, backups, rollback, capability probes.'],
-  ['04', 'VERIFY STUDIO', '@algorismus/elementor-ultra-studio', 'Post-deploy gates, health doctor, measure toolkit — Playwright-driven, no hand-written scripts.'],
+  ['04', 'VERIFY STUDIO', '@algorismus/elementor-ultra-studio', 'After every deploy: pass/fail checks at three widths, a site health check, and layout measurements — automated via Playwright.'],
   ['05', 'LOCAL WORDPRESS', '@algorismus/elementor-ultra-playground', 'Real WordPress + Elementor from a pre-baked snapshot, in seconds. Pure Node — no Docker.'],
 ];
 
@@ -33,11 +33,15 @@ export const Stack = ({ theme: t }) => (
         </row>
       ))}
     </box>
+    <text size={14.5} font={t.font.body} color={t.color.dim} lh={1.6} maxw={680}>
+      Not sure where to start? The compiler alone is enough — <strong>npm i -D
+      @algorismus/elementor-jsx</strong>. The other pieces join when you need them.
+    </text>
     <row tw="flex flex-wrap gap-8" pad={[8, 0]}>
       <text size={13} font={t.font.mono} color={t.color.dim}>8 SITES SHIPPED ON CAMERA</text>
       <text size={13} font={t.font.mono} color={t.color.dim}>17–31 MIN PER SITE</text>
       <text size={13} font={t.font.mono} color={t.color.dim}>0 HUMAN EDITS</text>
-      <text size={13} font={t.font.mono} color={t.color.dim}>400+ COMPILER TESTS · CERTIFIED 4.1.4 / 4.2.0</text>
+      <text size={13} font={t.font.mono} color={t.color.dim}>400+ COMPILER TESTS · VERIFIED AGAINST ELEMENTOR 4.1.4 / 4.2.0</text>
     </row>
   </section>
 );

@@ -2,34 +2,58 @@
 
 const surface = `# ELEMENTOR ULTRA :: MACHINE SURFACE
 # for agents, crawlers, and humans who prefer it raw
+# canonical for machines: https://exjsx.dev/llms.txt
 # ────────────────────────────────────────────────────────────
 
-WHAT ........ agent-native build stack for Elementor. JSX in,
-              native editable V4 pages out over REST. MIT.
+WHAT ........ open-source toolchain: AI agents build native, editable
+              Elementor pages. JSX in, Elementor V4 out over REST. MIT.
 
-SETUP ....... paste to any MCP-capable agent and stand back:
+PREREQS ..... node >= 18; macOS / Linux / WSL2; no Docker; no existing
+              WordPress needed (playground provides one); network:
+              registry.npmjs.org + raw.githubusercontent.com
 
-              Set up Elementor Ultra on this machine by fetching
-              and following https://raw.githubusercontent.com/
-              Algorismus-io/elementor-ultra/main/SETUP.md
-              exactly, step by step. Work autonomously and
-              verify each step.
+SETUP ....... paste to any MCP-capable agent:
+              "Set up Elementor Ultra on this machine by fetching and following https://raw.githubusercontent.com/Algorismus-io/elementor-ultra/4b28b0c1ac863a27f9f1433fd4239054a0dffee6/SETUP.md step by step. Verify each step before the next."
+              sha256(SETUP.md) = 67fc2699df8e42f56cb011096106cbc407199bb5
+              065c55f2ea3b27a2de04f0a6
+              latest (unpinned): .../main/SETUP.md
 
-WIZARD ...... npx @algorismus/create-elementor-ultra
+WIZARD ...... npx @algorismus/create-elementor-ultra@1.0.0
+              interactive alternative to SETUP; both produce the same
+              install. run one, not both.
 
-STACK ....... @algorismus/elementor-jsx ........ compiler + CLI
-              @algorismus/elementor-ultra-mcp .. ~90 MCP tools
-              @algorismus/elementor-ultra-studio  gates + doctor
-              @algorismus/elementor-ultra-playground  local WP
-              companion WordPress plugin ....... REST seam (GPL)
+CLI ......... exjsx = the CLI of @algorismus/elementor-jsx (npx exjsx)
 
-LOOP ........ npx exjsx dev <site> --gates
+STACK ....... @algorismus/elementor-jsx@1.6.0 ........ compiler + CLI
+              @algorismus/elementor-ultra-mcp@1.0.0 .. 90+ MCP tools
+              @algorismus/elementor-ultra-studio@0.5.0  gates + doctor
+              @algorismus/elementor-ultra-playground@1.2.0  local WP
+              elementor-ultra-mcp WP plugin@1.2.3 (GPL)  REST seam
+              tested against: Elementor 4.1.4 / 4.2.0, free is enough
+
+AUTH ........ MCP server -> WordPress REST via a WP Application
+              Password (core mechanism, no custom tokens). created
+              during setup; stored in your MCP client config for the
+              server entry; revoke any time in WP Admin -> Users ->
+              Profile -> Application Passwords.
+
+LOOP ........ npx exjsx dev <site-dir> --gates
+              <site-dir> = project folder from setup (exjsx init)
               save -> ms rebuild -> diff deploy -> hot reload
-              -> verify @ 1200 / 1920 / 390
+              -> pass/fail verify at 1200 / 1920 / 390 px viewports
 
-VALIDATION .. server-side authoritative validator; writes are
-              backup-first with per-page rollback. base_hash
-              optimistic concurrency. op_id idempotency.
+VERIFY ...... after setup: npx eu-studio check --pages /
+              expect: pass:true, gates green at all three widths
+
+ON FAILURE .. every write is backed up first; per-page rollback via
+              the elementor_page_rollback MCP tool (backups listed by
+              elementor_page_list_backups). base_hash optimistic
+              concurrency; op_id idempotency.
+
+LIFECYCLE ... update: npm i -D @algorismus/elementor-jsx@latest, then
+              rebuild + redeploy (see repo UPDATE.md). uninstall:
+              remove the npm packages, the MCP server entry, the WP
+              plugin, and the playground folder.
 
 DOCS ........ https://docs.wpos.ai/ultra
 REPO ........ https://github.com/Algorismus-io/elementor-ultra
@@ -50,15 +74,15 @@ PROOF ....... 8 production-shaped sites, built live on camera,
 SOURCE ...... this very page is elementor-jsx output. excerpt
               of the hero you just flipped from:
 
-              <heading tag="h1" size={132}
-                font={t.font.display} color={t.color.ink}
-                sx={{ textTransform: 'uppercase' }}>
-                One prompt in.<br />A site out.
+              <heading tag="h1" size={126}
+                font={t.font.display} color={t.color.ink}>
+                One prompt in. Elementor site out.
               </heading>
 
-LICENSE ..... MIT (c) 2026 Algorismus. not affiliated with or
-              endorsed by Elementor Ltd; "Elementor" is their
-              trademark. independent, interoperating stack.
+LICENSE ..... MIT (c) 2026 Algorismus (also operates wpos.ai; docs
+              live there). independent, interoperating project — not
+              affiliated with or endorsed by Elementor Ltd; "Elementor"
+              is their trademark.
 
 HUMAN? ...... there is a prettier version of this page.
               press H, or use the switch, top right.`;

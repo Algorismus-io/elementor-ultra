@@ -50,8 +50,8 @@ export const Chrome = ({ theme: t }) => (
     .agent-logos .al-label{width:100%}.al-chip{padding:6px 11px;font-size:11px}}
 
   /* ---- CTA buttons: whole box clickable (stretched link) ---- */
-  #cta-row>div{position:relative;cursor:pointer}
-  #cta-row>div a::after{content:'';position:absolute;inset:0}
+  #cta-row>div,#cta-close>div{position:relative;cursor:pointer}
+  #cta-row>div a::after,#cta-close>div a::after{content:'';position:absolute;inset:0}
 
   /* ---- display treatments ---- */
   #human-surface h1,#human-surface h2{text-transform:uppercase}
@@ -287,7 +287,7 @@ export const Chrome = ({ theme: t }) => (
 export const Ticker = () => (
   <html>{`
 <div class="ultra-ticker" aria-hidden="true"><div class="track">
-  <span>One prompt in <em>·</em> a site out <em>·</em> gates 1200 / 1920 / 390 <em>·</em> zero human edits <em>·</em> native Elementor V4 <em>·</em> open source MIT <em>·</em></span>
-  <span>One prompt in <em>·</em> a site out <em>·</em> gates 1200 / 1920 / 390 <em>·</em> zero human edits <em>·</em> native Elementor V4 <em>·</em> open source MIT <em>·</em></span>
+  <span>One prompt in <em>·</em> Elementor site out <em>·</em> typed components <em>·</em> live reload <em>·</em> verified at desktop, wide &amp; mobile <em>·</em> zero human edits <em>·</em> free &amp; MIT <em>·</em></span>
+  <span>One prompt in <em>·</em> Elementor site out <em>·</em> typed components <em>·</em> live reload <em>·</em> verified at desktop, wide &amp; mobile <em>·</em> zero human edits <em>·</em> free &amp; MIT <em>·</em></span>
 </div></div>`}</html>
 );
