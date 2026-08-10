@@ -39,7 +39,7 @@ export const Hero = ({ theme: t }) => (
       developers have: components, types, hot reload, and proof. Beautiful pages are what
       happens when agents can see what they're doing.
     </text>
-    <row tw="flex gap-4 items-center max-md:flex-col max-md:items-start">
+    <row id="cta-row" tw="flex gap-4 items-center max-md:flex-col max-md:items-start">
       <Btn theme={t} href="#proof" label="Watch an agent build — 1:38" />
       <Btn theme={t} href="#start" label="Set up in one paste" ghost />
     </row>

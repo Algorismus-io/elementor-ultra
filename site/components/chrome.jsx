@@ -48,6 +48,10 @@ export const Chrome = ({ theme: t }) => (
     .mega .l2{-webkit-text-stroke:1.5px ${t.color.ink}}
     .agent-logos .al-label{width:100%}.al-chip{padding:6px 11px;font-size:11px}}
 
+  /* ---- CTA buttons: whole box clickable (stretched link) ---- */
+  #cta-row>div{position:relative;cursor:pointer}
+  #cta-row>div a::after{content:'';position:absolute;inset:0}
+
   /* ---- display treatments ---- */
   #human-surface h1,#human-surface h2{text-transform:uppercase}
   #h1-stroke h2{-webkit-text-stroke:2.5px ${t.color.ink};color:transparent !important}
