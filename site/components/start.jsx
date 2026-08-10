@@ -75,7 +75,7 @@ export const Start = ({ theme: t }) => (
       Read SETUP.md first ↗
     </text>
     <row tw="flex flex-wrap gap-6">
-      <text href="https://github.com/Algorismus-io/elementor-ultra" size={15} weight={600} font={t.font.body} color={t.color.ink}>GitHub — Algorismus-io/elementor-ultra ↗</text>
+      <text href="https://github.com/Algorismus-io/elementor-jsx" size={15} weight={600} font={t.font.body} color={t.color.ink}>GitHub — Algorismus-io/elementor-jsx ↗</text>
       <text href="https://docs.wpos.ai/ultra" size={15} weight={600} font={t.font.body} color={t.color.ink}>Docs ↗</text>
       <text href="https://docs.wpos.ai/ultra/examples/overview" size={15} weight={600} font={t.font.body} color={t.color.ink}>All eight films ↗</text>
     </row>
@@ -92,7 +92,7 @@ export const Colophon = ({ theme: t }) => (
         <text href="#start" size={15} weight={600} font={t.font.body} color={t.color.paper}>Install in one paste — free</text>
       </box>
       <box tw="flex items-center justify-center" bg="transparent" pad={[13, 26]} sx={{ borderRadius: '10px', border: `2px solid ${t.color.ink}` }}>
-        <text href="https://github.com/Algorismus-io/elementor-ultra" size={15} weight={600} font={t.font.body} color={t.color.ink}>★ Star it on GitHub</text>
+        <text href="https://github.com/Algorismus-io/elementor-jsx" size={15} weight={600} font={t.font.body} color={t.color.ink}>★ Star it on GitHub</text>
       </box>
     </row>
     <text size={13.5} font={t.font.mono} color={t.color.go} lh={1.7}>

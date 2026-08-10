@@ -9,7 +9,7 @@ export const Nav = ({ theme: t }) => (
     <row tw="flex items-center gap-6 max-md:hidden" sx={{ flexGrow: '1', justifyContent: 'flex-end' }}>
       <text href="https://docs.wpos.ai/ultra" size={14} font={t.font.body} color={t.color.dim}>Docs</text>
       <text href="https://docs.wpos.ai/ultra/examples/overview" size={14} font={t.font.body} color={t.color.dim}>Examples</text>
-      <text href="https://github.com/Algorismus-io/elementor-ultra" size={14} font={t.font.body} color={t.color.dim}>GitHub</text>
+      <text href="https://github.com/Algorismus-io/elementor-jsx" size={14} font={t.font.body} color={t.color.dim}>GitHub</text>
     </row>
   </row>
 );

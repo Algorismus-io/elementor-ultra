@@ -56,7 +56,8 @@ LIFECYCLE ... update: npm i -D @algorismus/elementor-jsx@latest, then
               plugin, and the playground folder.
 
 DOCS ........ https://docs.wpos.ai/ultra
-REPO ........ https://github.com/Algorismus-io/elementor-ultra
+REPO ........ https://github.com/Algorismus-io/elementor-jsx
+SETUP REPO .. https://github.com/Algorismus-io/elementor-ultra
 
 PROOF ....... 8 production-shaped sites, built live on camera,
               one prompt each, zero human edits:
