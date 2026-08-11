@@ -22,6 +22,7 @@
 <meta content="Toolchain MCP open-source para Elementor: Claude Code, Cursor, Codex o cualquier agente MCP construye páginas de Elementor nativas y editables desde JSX tipado — con hot reload y verificaciones automáticas en cada guardado. Gratis y MIT." property="og:description"/>
 <meta content="https://exjsx.dev/exjsx-og.png" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can Claude Code build an Elementor site?","acceptedAnswer":{"@type":"Answer","text":"Yes — via exjsx (https://exjsx.dev), an open-source MCP toolchain: Claude Code writes typed JSX, a compiler produces native editable Elementor V4 pages, and verification gates check every save. Free and MIT-licensed."}},{"@type":"Question","name":"Is there an MCP server for Elementor?","acceptedAnswer":{"@type":"Answer","text":"Yes — elementor-ultra-mcp exposes ~90 MCP tools for Elementor (pages, widgets, classes, variables, media), and the exjsx compiler/CLI builds whole pages from typed JSX on top of it. Both are open source; docs at https://docs.wpos.ai/ultra"}},{"@type":"Question","name":"Can Cursor or Codex build Elementor pages?","acceptedAnswer":{"@type":"Answer","text":"Yes — any MCP-capable agent (Cursor, Codex, Claude Code, and others) can drive the exjsx toolchain to build native Elementor pages. Setup for any agent: https://exjsx.dev"}},{"@type":"Question","name":"Are AI-built Elementor pages editable in the normal editor?","acceptedAnswer":{"@type":"Answer","text":"Yes — exjsx output is native Elementor V4 content: real widgets, classes and variables, fully editable in the standard Elementor editor with no lock-in. Details: https://docs.wpos.ai/ultra"}},{"@type":"Question","name":"Is exjsx free?","acceptedAnswer":{"@type":"Answer","text":"Yes — exjsx is MIT-licensed open source with no cloud dependency and no API key required. Get it at https://exjsx.dev"}}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"exjsx (Elementor JSX)","alternateName":"Elementor Ultra","url":"https://exjsx.dev","applicationCategory":"DeveloperApplication","operatingSystem":"macOS, Linux, Windows (WSL2)","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"license":"https://opensource.org/licenses/MIT","description":"Open-source toolchain that lets AI agents (Claude Code, Cursor, Codex — any MCP client) build native, editable Elementor sites: typed JSX in, Elementor pages out over REST, verified on every save.","keywords":"elementor mcp, elementor claude code, claude code wordpress, cursor wordpress mcp, ai elementor builder, elementor json generator","softwareVersion":"1.6.0","downloadUrl":"https://www.npmjs.com/package/@algorismus/elementor-jsx","author":{"@type":"Organization","name":"Algorismus","url":"https://algorismus.io"}}</script>
 <style id="wp-img-auto-sizes-contain-inline-css">
 img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
@@ -153,6 +154,22 @@ document.addEventListener('DOMContentLoaded', function(){
 <link rel="alternate" hreflang="id" href="https://exjsx.dev/id/"/>
 <link rel="alternate" hreflang="ja" href="https://exjsx.dev/ja/"/>
 <link rel="alternate" hreflang="ar" href="https://exjsx.dev/ar/"/>
+<link rel="alternate" hreflang="ur" href="https://exjsx.dev/ur/"/>
+<link rel="alternate" hreflang="he" href="https://exjsx.dev/he/"/>
+<link rel="alternate" hreflang="fa" href="https://exjsx.dev/fa/"/>
+<link rel="alternate" hreflang="ru" href="https://exjsx.dev/ru/"/>
+<link rel="alternate" hreflang="uk" href="https://exjsx.dev/uk/"/>
+<link rel="alternate" hreflang="hi" href="https://exjsx.dev/hi/"/>
+<link rel="alternate" hreflang="bn" href="https://exjsx.dev/bn/"/>
+<link rel="alternate" hreflang="vi" href="https://exjsx.dev/vi/"/>
+<link rel="alternate" hreflang="th" href="https://exjsx.dev/th/"/>
+<link rel="alternate" hreflang="ko" href="https://exjsx.dev/ko/"/>
+<link rel="alternate" hreflang="zh-CN" href="https://exjsx.dev/zh-cn/"/>
+<link rel="alternate" hreflang="cs" href="https://exjsx.dev/cs/"/>
+<link rel="alternate" hreflang="ro" href="https://exjsx.dev/ro/"/>
+<link rel="alternate" hreflang="hu" href="https://exjsx.dev/hu/"/>
+<link rel="alternate" hreflang="el" href="https://exjsx.dev/el/"/>
+<link rel="alternate" hreflang="sv" href="https://exjsx.dev/sv/"/>
 </head>
 <body class="home wp-singular page-template page-template-elementor_canvas page page-id-7 wp-embed-responsive wp-theme-twentytwentyfive elementor-default elementor-template-canvas elementor-kit-4 elementor-page elementor-page-7">
 <div class="elementor elementor-7" data-elementor-id="7" data-elementor-post-type="page" data-elementor-type="wp-page">
@@ -1474,6 +1491,22 @@ var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof H
 <a href="/tr/" lang="tr" style="color:inherit;text-decoration:none;opacity:0.55">Türkçe</a>
 <a href="/id/" lang="id" style="color:inherit;text-decoration:none;opacity:0.55">Bahasa Indonesia</a>
 <a href="/ja/" lang="ja" style="color:inherit;text-decoration:none;opacity:0.55">日本語</a>
-<a href="/ar/" lang="ar" style="color:inherit;text-decoration:none;opacity:0.55">العربية</a></nav>
+<a href="/ar/" lang="ar" style="color:inherit;text-decoration:none;opacity:0.55">العربية</a>
+<a href="/ur/" lang="ur" style="color:inherit;text-decoration:none;opacity:0.55">اردو</a>
+<a href="/he/" lang="he" style="color:inherit;text-decoration:none;opacity:0.55">עברית</a>
+<a href="/fa/" lang="fa" style="color:inherit;text-decoration:none;opacity:0.55">فارسی</a>
+<a href="/ru/" lang="ru" style="color:inherit;text-decoration:none;opacity:0.55">Русский</a>
+<a href="/uk/" lang="uk" style="color:inherit;text-decoration:none;opacity:0.55">Українська</a>
+<a href="/hi/" lang="hi" style="color:inherit;text-decoration:none;opacity:0.55">हिन्दी</a>
+<a href="/bn/" lang="bn" style="color:inherit;text-decoration:none;opacity:0.55">বাংলা</a>
+<a href="/vi/" lang="vi" style="color:inherit;text-decoration:none;opacity:0.55">Tiếng Việt</a>
+<a href="/th/" lang="th" style="color:inherit;text-decoration:none;opacity:0.55">ไทย</a>
+<a href="/ko/" lang="ko" style="color:inherit;text-decoration:none;opacity:0.55">한국어</a>
+<a href="/zh-cn/" lang="zh-CN" style="color:inherit;text-decoration:none;opacity:0.55">简体中文</a>
+<a href="/cs/" lang="cs" style="color:inherit;text-decoration:none;opacity:0.55">Čeština</a>
+<a href="/ro/" lang="ro" style="color:inherit;text-decoration:none;opacity:0.55">Română</a>
+<a href="/hu/" lang="hu" style="color:inherit;text-decoration:none;opacity:0.55">Magyar</a>
+<a href="/el/" lang="el" style="color:inherit;text-decoration:none;opacity:0.55">Ελληνικά</a>
+<a href="/sv/" lang="sv" style="color:inherit;text-decoration:none;opacity:0.55">Svenska</a></nav>
 </body>
 </html>

@@ -5,6 +5,7 @@
 > save at 1200/1920/390 px. MIT. This page was built by an AI agent with the
 > stack it describes. This file is canonical for machines; the same facts
 > render at https://exjsx.dev/?mode=agent
+> Full version (this file + the complete `exjsx api` card + setup): https://exjsx.dev/llms-full.txt
 
 ## Prereqs
 Node >= 18; macOS/Linux/WSL2; no Docker; no existing WordPress needed (a local

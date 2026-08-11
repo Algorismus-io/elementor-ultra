@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html lang="pl">
+<html dir="rtl" lang="ur">
 <head>
 <meta charset="utf-8"/>
-<title>exjsx — Buduj strony Elementor z agentami AI (Claude Code, Cursor, MCP)</title>
+<title>exjsx — AI ایجنٹس کے ساتھ Elementor سائٹس بنائیں (Claude Code, Cursor, MCP)</title>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="max-image-preview:large" name="robots"/>
-<title>exjsx — Buduj strony Elementor z agentami AI (Claude Code, Cursor, MCP)</title>
+<title>exjsx — AI ایجنٹس کے ساتھ Elementor سائٹس بنائیں (Claude Code, Cursor, MCP)</title>
 <link href="//127.0.0.1" rel="dns-prefetch"/>
 <link href="/feed/" rel="alternate" title="Elementor Ultra Dev » Feed" type="application/rss+xml"/>
 <link href="/comments/feed/" rel="alternate" title="Elementor Ultra Dev » Comments Feed" type="application/rss+xml"/>
@@ -15,11 +15,11 @@
 <link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="/favicon-32.png" rel="icon" sizes="32x32"/>
 <link href="/apple-touch-icon.png" rel="apple-touch-icon"/>
-<link href="https://exjsx.dev/pl/" rel="canonical"/>
-<meta content="https://exjsx.dev/pl/" property="og:url"/>
-<meta content="Open-source'owy toolchain MCP dla Elementora: Claude Code, Cursor, Codex lub dowolny agent MCP buduje natywne, edytowalne strony Elementora z typowanego JSX — z hot reload i automatycznymi testami przy każdym zapisie. Za darmo i na MIT." name="description"/>
-<meta content="exjsx — Buduj strony Elementor z agentami AI (Claude Code, Cursor, MCP)" property="og:title"/>
-<meta content="Open-source'owy toolchain MCP dla Elementora: Claude Code, Cursor, Codex lub dowolny agent MCP buduje natywne, edytowalne strony Elementora z typowanego JSX — z hot reload i automatycznymi testami przy każdym zapisie. Za darmo i na MIT." property="og:description"/>
+<link href="https://exjsx.dev/ur/" rel="canonical"/>
+<meta content="https://exjsx.dev/ur/" property="og:url"/>
+<meta content="اوپن سورس Elementor MCP ٹول چین: Claude Code، Cursor، Codex یا کوئی بھی MCP ایجنٹ ٹائپڈ JSX سے نیٹو، ایڈٹ کے قابل Elementor پیجز بناتا ہے — ہاٹ ری لوڈ اور ہر سیو پر خودکار چیکس کے ساتھ۔ مفت اور MIT۔" name="description"/>
+<meta content="exjsx — AI ایجنٹس کے ساتھ Elementor سائٹس بنائیں (Claude Code, Cursor, MCP)" property="og:title"/>
+<meta content="اوپن سورس Elementor MCP ٹول چین: Claude Code، Cursor، Codex یا کوئی بھی MCP ایجنٹ ٹائپڈ JSX سے نیٹو، ایڈٹ کے قابل Elementor پیجز بناتا ہے — ہاٹ ری لوڈ اور ہر سیو پر خودکار چیکس کے ساتھ۔ مفت اور MIT۔" property="og:description"/>
 <meta content="https://exjsx.dev/exjsx-og.png" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can Claude Code build an Elementor site?","acceptedAnswer":{"@type":"Answer","text":"Yes — via exjsx (https://exjsx.dev), an open-source MCP toolchain: Claude Code writes typed JSX, a compiler produces native editable Elementor V4 pages, and verification gates check every save. Free and MIT-licensed."}},{"@type":"Question","name":"Is there an MCP server for Elementor?","acceptedAnswer":{"@type":"Answer","text":"Yes — elementor-ultra-mcp exposes ~90 MCP tools for Elementor (pages, widgets, classes, variables, media), and the exjsx compiler/CLI builds whole pages from typed JSX on top of it. Both are open source; docs at https://docs.wpos.ai/ultra"}},{"@type":"Question","name":"Can Cursor or Codex build Elementor pages?","acceptedAnswer":{"@type":"Answer","text":"Yes — any MCP-capable agent (Cursor, Codex, Claude Code, and others) can drive the exjsx toolchain to build native Elementor pages. Setup for any agent: https://exjsx.dev"}},{"@type":"Question","name":"Are AI-built Elementor pages editable in the normal editor?","acceptedAnswer":{"@type":"Answer","text":"Yes — exjsx output is native Elementor V4 content: real widgets, classes and variables, fully editable in the standard Elementor editor with no lock-in. Details: https://docs.wpos.ai/ultra"}},{"@type":"Question","name":"Is exjsx free?","acceptedAnswer":{"@type":"Answer","text":"Yes — exjsx is MIT-licensed open source with no cloud dependency and no API key required. Get it at https://exjsx.dev"}}]}</script>
@@ -170,6 +170,7 @@ document.addEventListener('DOMContentLoaded', function(){
 <link rel="alternate" hreflang="hu" href="https://exjsx.dev/hu/"/>
 <link rel="alternate" hreflang="el" href="https://exjsx.dev/el/"/>
 <link rel="alternate" hreflang="sv" href="https://exjsx.dev/sv/"/>
+<style id="rtl-fix">pre,code,kbd,samp{direction:ltr;unicode-bidi:isolate;text-align:left}*{letter-spacing:normal!important}</style>
 </head>
 <body class="home wp-singular page-template page-template-elementor_canvas page page-id-7 wp-embed-responsive wp-theme-twentytwentyfive elementor-default elementor-template-canvas elementor-kit-4 elementor-page elementor-page-7">
 <div class="elementor elementor-7" data-elementor-id="7" data-elementor-post-type="page" data-elementor-type="wp-page">
@@ -389,11 +390,11 @@ document.addEventListener('DOMContentLoaded', function(){
     body:not(.agent-mode) #human-surface .rv.rv-in{opacity:1;transform:none}
   }
 </style>
-<div aria-label="Tryb czytelnika" class="ultra-switch" role="region">
-<button class="on" id="us-human" type="button">CZŁOWIEK</button>
-<button id="us-agent" type="button">AGENT</button>
+<div aria-label="ریڈر موڈ" class="ultra-switch" role="region">
+<button class="on" id="us-human" type="button">انسان</button>
+<button id="us-agent" type="button">ایجنٹ</button>
 </div>
-<nav aria-label="Sekcje" class="ultra-rail">
+<nav aria-label="سیکشنز" class="ultra-rail">
 <a data-s="hero" href="#hero">00</a><a data-s="proof" href="#proof">01</a>
 <a data-s="seam" href="#seam">02</a><a data-s="loop" href="#loop">03</a>
 <a data-s="stack" href="#stack">04</a><a data-s="start" href="#start">05</a>
@@ -463,10 +464,10 @@ document.addEventListener('DOMContentLoaded', function(){
 </div>
 <div class="elementor-element elementor-element-e00007 e-con e-atomic-element e-flexbox-base c-17d3pu" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00007" data-interaction-id="e00007">
 <p class="c-94cvnd e-paragraph-base" data-e-type="widget" data-id="e00008" data-interaction-id="e00008"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra" target="_self">
-		Dokumentacja
+		دستاویزات
 	</a></p>
 <p class="c-94cvnd e-paragraph-base" data-e-type="widget" data-id="e00009" data-interaction-id="e00009"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra/examples/overview" target="_self">
-		Przykłady
+		مثالیں
 	</a></p>
 <p class="c-94cvnd e-paragraph-base" data-e-type="widget" data-id="e0000a" data-interaction-id="e0000a"><a class="e-paragraph-link-base" href="https://github.com/Algorismus-io/elementor-jsx" target="_self">
 		GitHub
@@ -477,60 +478,60 @@ document.addEventListener('DOMContentLoaded', function(){
 </div>
 </div>
 <section class="elementor-element elementor-element-e0000c e-con e-atomic-element e-flexbox-base c-il6gqi" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000c" data-interaction-id="e0000c" id="hero">
-<p class="c-211zq7 e-paragraph-base" data-e-type="widget" data-id="e0000d" data-interaction-id="e0000d">OPEN-SOURCE'OWY TOOLCHAIN DLA ELEMENTORA + AGENTÓW AI · ZA DARMO · MIT · NIEZALEŻNY — TO NIE JEST PRODUKT ELEMENTOR LTD</p>
+<p class="c-211zq7 e-paragraph-base" data-e-type="widget" data-id="e0000d" data-interaction-id="e0000d">ELEMENTOR + AI ایجنٹس کے لیے اوپن سورس ٹول چین · مفت · MIT · خودمختار — یہ Elementor Ltd کی پروڈکٹ نہیں</p>
 <div class="elementor-element elementor-element-e0000e elementor-widget elementor-widget-html" data-e-type="widget" data-element_type="widget" data-id="e0000e" data-widget_type="html.default">
-<div aria-label="Działa z" class="agent-logos">
-<span class="al-label">DZIAŁA Z</span>
+<div aria-label="ان کے ساتھ چلتا ہے" class="agent-logos">
+<span class="al-label">ان کے ساتھ چلتا ہے</span>
 <span class="al-chip"><img alt="" decoding="async" src="/wp-content/uploads/logos/claude.svg"/>Claude Code</span>
 <span class="al-chip"><img alt="" decoding="async" src="/wp-content/uploads/logos/cursor.svg"/>Cursor</span>
 <span class="al-chip"><img alt="" decoding="async" src="/wp-content/uploads/logos/codex.svg"/>Codex</span>
 <span class="al-chip"><img alt="" decoding="async" src="/wp-content/uploads/logos/githubcopilot.svg"/>Copilot</span>
-<span class="al-chip al-any">dowolny agent MCP</span>
+<span class="al-chip al-any">کوئی بھی MCP ایجنٹ</span>
 </div>
 <h1 class="mega">
-<span class="l1">Jeden prompt na wejściu.</span><br/>
-<span class="l2"><img alt="Elementor" class="e-mark" decoding="async" src="/wp-content/uploads/logos/elementor.svg"/> Strona Elementor na wyjściu.</span>
+<span class="l1">ایک پرامپٹ اندر۔</span><br/>
+<span class="l2"><img alt="Elementor" class="e-mark" decoding="async" src="/wp-content/uploads/logos/elementor.svg"/> Elementor سائٹ باہر۔</span>
 </h1> </div>
-<p class="c-1uv5ie e-paragraph-base" data-e-type="widget" data-id="e0000f" data-interaction-id="e0000f"><strong>Buduj strony Elementor własnymi agentami AI.</strong> Twój agent już dziś potrafi pisać strony w Elementorze — na ślepo, w tysiącach linii surowego JSON-a. Dlatego widać po nich, że robił je agent. Ultra daje agentom typowane komponenty, hot reload i automatyczne testy pass/fail przy każdym zapisie. Piękne strony powstają wtedy, gdy agent widzi, co robi.</p>
+<p class="c-1uv5ie e-paragraph-base" data-e-type="widget" data-id="e0000f" data-interaction-id="e0000f"><strong>اپنے AI ایجنٹس سے Elementor سائٹس بنوائیں۔</strong> آپ کا ایجنٹ Elementor پیجز پہلے ہی لکھ سکتا ہے — مگر اندھا ہو کر، ہزاروں لائنوں کے خام JSON میں۔ اسی لیے وہ پیجز ایجنٹ کے بنائے ہوئے لگتے ہیں۔ Ultra ایجنٹس کو ٹائپڈ کمپونینٹس، ہاٹ ری لوڈ، اور ہر سیو پر خودکار pass/fail چیکس دیتا ہے۔ خوبصورت پیجز تب بنتے ہیں جب ایجنٹ دیکھ سکے کہ وہ کیا کر رہا ہے۔</p>
 <div class="elementor-element elementor-element-e0000g e-con e-atomic-element e-flexbox-base c-1y9sgi" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000g" data-interaction-id="e0000g" id="cta-row">
 <div class="elementor-element elementor-element-e0000h e-con e-atomic-element e-flexbox-base c-14izo5" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000h" data-interaction-id="e0000h">
 <p class="c-7215m7 e-paragraph-base" data-e-type="widget" data-id="e0000i" data-interaction-id="e0000i"><a class="e-paragraph-link-base" href="#proof" target="_self">
-		Zobacz, jak agent buduje — 1:38
+		ایجنٹ کو سائٹ بناتے دیکھیں — 1:38
 	</a></p>
 </div>
 <div class="elementor-element elementor-element-e0000j e-con e-atomic-element e-flexbox-base c-1csgw5" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000j" data-interaction-id="e0000j">
 <p class="c-194b22 e-paragraph-base" data-e-type="widget" data-id="e0000k" data-interaction-id="e0000k"><a class="e-paragraph-link-base" href="#start" target="_self">
-		Konfiguracja jednym wklejeniem
+		ایک پیسٹ میں سیٹ اپ
 	</a></p>
 </div>
 </div>
-<p class="c-98ibsx e-paragraph-base" data-e-type="widget" data-id="e0000l" data-interaction-id="e0000l">Dla developerów i agencji, którzy robią strony klientów na Elementorze i pracują z Claude Code, Cursorem, Codexem lub dowolnym agentem MCP.</p>
-<p class="c-1mpv4o e-paragraph-base" data-e-type="widget" data-id="e0000m" data-interaction-id="e0000m">Agenci mile widziani — wciśnij <strong>A</strong> aby zobaczyć wersję tej strony czytelną dla maszyn.</p>
+<p class="c-98ibsx e-paragraph-base" data-e-type="widget" data-id="e0000l" data-interaction-id="e0000l">ان ڈویلپرز اور ایجنسیوں کے لیے جو Elementor پر کلائنٹ سائٹس شپ کرتے ہیں اور Claude Code، Cursor، Codex یا کسی بھی MCP ایجنٹ کے ساتھ کام کرتے ہیں۔</p>
+<p class="c-1mpv4o e-paragraph-base" data-e-type="widget" data-id="e0000m" data-interaction-id="e0000m">ایجنٹس کو خوش آمدید — دبائیں <strong>A</strong> اور اس پیج کا مشین ریڈایبل ورژن پائیں۔</p>
 </section>
 <div class="elementor-element elementor-element-e0000n elementor-widget elementor-widget-html" data-e-type="widget" data-element_type="widget" data-id="e0000n" data-widget_type="html.default">
 <div aria-hidden="true" class="ultra-ticker"><div class="track">
-<span>Jeden prompt na wejściu <em>·</em> Strona Elementor na wyjściu <em>·</em> typowane komponenty <em>·</em> live reload <em>·</em> weryfikacja na desktopie, szerokim ekranie i mobile <em>·</em> zero ludzkich poprawek <em>·</em> za darmo i na MIT <em>·</em></span>
-<span>Jeden prompt na wejściu <em>·</em> Strona Elementor na wyjściu <em>·</em> typowane komponenty <em>·</em> live reload <em>·</em> weryfikacja na desktopie, szerokim ekranie i mobile <em>·</em> zero ludzkich poprawek <em>·</em> za darmo i na MIT <em>·</em></span>
+<span>ایک پرامپٹ اندر <em>·</em> Elementor سائٹ باہر <em>·</em> ٹائپڈ کمپونینٹس <em>·</em> لائیو ری لوڈ <em>·</em> ڈیسک ٹاپ، وائیڈ اور موبائل پر ویریفائیڈ <em>·</em> صفر انسانی ایڈٹس <em>·</em> مفت اور MIT <em>·</em></span>
+<span>ایک پرامپٹ اندر <em>·</em> Elementor سائٹ باہر <em>·</em> ٹائپڈ کمپونینٹس <em>·</em> لائیو ری لوڈ <em>·</em> ڈیسک ٹاپ، وائیڈ اور موبائل پر ویریفائیڈ <em>·</em> صفر انسانی ایڈٹس <em>·</em> مفت اور MIT <em>·</em></span>
 </div></div> </div>
 <section class="elementor-element elementor-element-e0000o e-con e-atomic-element e-flexbox-base c-kpsy5x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000o" data-interaction-id="e0000o" id="proof">
 <div class="elementor-element elementor-element-e0000p e-con e-atomic-element e-flexbox-base c-nokn4c" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000p" data-interaction-id="e0000p">
 <p class="c-lwsecb e-paragraph-base" data-e-type="widget" data-id="e0000q" data-interaction-id="e0000q">01</p>
-<p class="c-10rae1 e-paragraph-base" data-e-type="widget" data-id="e0000r" data-interaction-id="e0000r">Dowód, przed kamerą</p>
+<p class="c-10rae1 e-paragraph-base" data-e-type="widget" data-id="e0000r" data-interaction-id="e0000r">ثبوت، کیمرے پر</p>
 </div>
-<h2 class="c-pfkm0a e-heading-base" data-e-type="widget" data-id="e0000s" data-interaction-id="e0000s">Osiem prawdziwych stron z sieci, przebudowanych na żywo przez agenta.</h2>
-<p class="c-1tjsdz e-paragraph-base" data-e-type="widget" data-id="e0000t" data-interaction-id="e0000t">Każdy film to jedno niemontowane ujęcie — te same publiczne teksty i te same zasoby co na oryginalnej stronie. Jeden prompt od człowieka, potem agent buduje sekcja po sekcji na żywej instalacji WordPressa, z testem pass/fail przy każdym zapisie — a film kończy się w prawdziwym edytorze Elementora. Licznik na ekranie to rzeczywisty czas: bez cięć, bez przyspieszeń, które coś ukrywają.</p>
+<h2 class="c-pfkm0a e-heading-base" data-e-type="widget" data-id="e0000s" data-interaction-id="e0000s">ویب کی آٹھ اصل سائٹس، ایجنٹ نے لائیو دوبارہ بنائیں۔</h2>
+<p class="c-1tjsdz e-paragraph-base" data-e-type="widget" data-id="e0000t" data-interaction-id="e0000t">ہر فلم ایک ہی بغیر ایڈٹ ٹیک ہے — وہی پبلک کاپی، وہی اثاثے جو اصل سائٹ کے تھے۔ انسان کی طرف سے ایک پرامپٹ، پھر ایجنٹ ایک لائیو WordPress سائٹ پر سیکشن بہ سیکشن تعمیر کرتا ہے، ہر سیو پر pass/fail چیک کے ساتھ — اور فلم کا اختتام اصل Elementor ایڈیٹر کے اندر ہوتا ہے۔ اسکرین پر ٹائمر حقیقی گزرا ہوا وقت ہے: نہ کوئی کٹ، نہ کوئی تیز رفتاری جس کے پیچھے کچھ چھپا ہو۔</p>
 <div class="elementor-element elementor-element-e0000u elementor-widget elementor-widget-html" data-e-type="widget" data-element_type="widget" data-id="e0000u" data-widget_type="html.default">
 <div class="chrig-outer" id="chrig-outer">
 <div class="chrig" id="chrig">
 <div class="chrig-stage">
 <div class="chrig-frame">
-<video aria-label="Nieme nagranie ekranu, na którym agent AI buduje tę stronę" id="chrig-video" muted="" playsinline="" poster="https://docs.wpos.ai/images/ultra/examples/housemait-thumb.jpg" preload="metadata" src="https://docs.wpos.ai/videos/ultra/examples/housemait.mp4?v=3"></video>
-<div aria-label="Oś czasu filmu" class="chrig-rail" id="chrig-rail">
+<video aria-label="اس سائٹ کو بناتے AI ایجنٹ کی خاموش اسکرین ریکارڈنگ" id="chrig-video" muted="" playsinline="" poster="https://docs.wpos.ai/images/ultra/examples/housemait-thumb.jpg" preload="metadata" src="https://docs.wpos.ai/videos/ultra/examples/housemait.mp4?v=3"></video>
+<div aria-label="فلم ٹائم لائن" class="chrig-rail" id="chrig-rail">
 <div class="chrig-progress" id="chrig-progress"></div>
 </div>
 <div class="chrig-under">
-<span class="chrig-cap">HOUSEMAIT — 9 SEKCJI · 31 MIN PRACY AGENTA · 0 LUDZKICH POPRAWEK</span>
-<button id="chrig-full" type="button">▶ OBEJRZYJ CAŁY FILM</button>
+<span class="chrig-cap">HOUSEMAIT — 9 سیکشنز · 31 منٹ ایجنٹ ٹائم · 0 انسانی ایڈٹس</span>
+<button id="chrig-full" type="button">▶ پوری فلم دیکھیں</button>
 </div>
 </div>
 </div>
@@ -739,77 +740,77 @@ document.addEventListener('DOMContentLoaded', function(){
   buildFilm();
 })();
 </script> </div>
-<p class="c-13g8rm e-paragraph-base" data-e-type="widget" data-id="e0000v" data-interaction-id="e0000v">POZOSTAŁE SIEDEM — KLIKNIJ KARTĘ, ABY ZAŁADOWAĆ FILM DO ODTWARZACZA</p>
+<p class="c-13g8rm e-paragraph-base" data-e-type="widget" data-id="e0000v" data-interaction-id="e0000v">باقی سات — کسی کارڈ پر کلک کریں، اس کی فلم پلیئر میں لوڈ ہو جائے گی</p>
 <div class="elementor-element elementor-element-e0000w e-con e-atomic-element e-flexbox-base c-b8wldp" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000w" data-interaction-id="e0000w" id="chip-row">
 <div class="elementor-element elementor-element-e0000x e-con e-atomic-element e-flexbox-base c-1bn00d" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000x" data-interaction-id="e0000x">
 <p class="c-id48hx e-paragraph-base" data-e-type="widget" data-id="e0000y" data-interaction-id="e0000y"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra/examples/housemait" target="_self">
 		Housemait
 	</a></p>
-<p class="c-wzwdpr e-paragraph-base" data-e-type="widget" data-id="e0000z" data-interaction-id="e0000z">SaaS z aplikacją dla rodzin</p>
-<p class="c-17kmn8 e-paragraph-base" data-e-type="widget" data-id="e00010" data-interaction-id="e00010">9 sekcji · 31 min</p>
+<p class="c-wzwdpr e-paragraph-base" data-e-type="widget" data-id="e0000z" data-interaction-id="e0000z">فیملی ایپ SaaS</p>
+<p class="c-17kmn8 e-paragraph-base" data-e-type="widget" data-id="e00010" data-interaction-id="e00010">9 سیکشنز · 31 منٹ</p>
 </div>
 <div class="elementor-element elementor-element-e00011 e-con e-atomic-element e-flexbox-base c-1kdkji" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00011" data-interaction-id="e00011">
 <p class="c-vdpalv e-paragraph-base" data-e-type="widget" data-id="e00012" data-interaction-id="e00012"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra/examples/canopy" target="_self">
 		Canopy
 	</a></p>
-<p class="c-8l0bbx e-paragraph-base" data-e-type="widget" data-id="e00013" data-interaction-id="e00013">strona marketingowa SaaS</p>
-<p class="c-19k3ao e-paragraph-base" data-e-type="widget" data-id="e00014" data-interaction-id="e00014">10 sekcji · 17 min</p>
+<p class="c-8l0bbx e-paragraph-base" data-e-type="widget" data-id="e00013" data-interaction-id="e00013">SaaS مارکیٹنگ سائٹ</p>
+<p class="c-19k3ao e-paragraph-base" data-e-type="widget" data-id="e00014" data-interaction-id="e00014">10 سیکشنز · 17 منٹ</p>
 </div>
 <div class="elementor-element elementor-element-e00015 e-con e-atomic-element e-flexbox-base c-vuadha" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00015" data-interaction-id="e00015">
 <p class="c-vjhsfx e-paragraph-base" data-e-type="widget" data-id="e00016" data-interaction-id="e00016"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra/examples/alike" target="_self">
 		Alike.page
 	</a></p>
-<p class="c-16s236 e-paragraph-base" data-e-type="widget" data-id="e00017" data-interaction-id="e00017">sklep twórcy</p>
-<p class="c-1q474g e-paragraph-base" data-e-type="widget" data-id="e00018" data-interaction-id="e00018">8 sekcji · 22 min</p>
+<p class="c-16s236 e-paragraph-base" data-e-type="widget" data-id="e00017" data-interaction-id="e00017">کری ایٹر اسٹور فرنٹ</p>
+<p class="c-1q474g e-paragraph-base" data-e-type="widget" data-id="e00018" data-interaction-id="e00018">8 سیکشنز · 22 منٹ</p>
 </div>
 <div class="elementor-element elementor-element-e00019 e-con e-atomic-element e-flexbox-base c-fv74t6" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00019" data-interaction-id="e00019">
 <p class="c-1ake2v e-paragraph-base" data-e-type="widget" data-id="e0001a" data-interaction-id="e0001a"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra/examples/triple" target="_self">
 		Triple Kingdom
 	</a></p>
-<p class="c-17srqz e-paragraph-base" data-e-type="widget" data-id="e0001b" data-interaction-id="e0001b">strona gry indie</p>
-<p class="c-1pawsu e-paragraph-base" data-e-type="widget" data-id="e0001c" data-interaction-id="e0001c">8 sekcji · 25 min</p>
+<p class="c-17srqz e-paragraph-base" data-e-type="widget" data-id="e0001b" data-interaction-id="e0001b">انڈی گیم سائٹ</p>
+<p class="c-1pawsu e-paragraph-base" data-e-type="widget" data-id="e0001c" data-interaction-id="e0001c">8 سیکشنز · 25 منٹ</p>
 </div>
 <div class="elementor-element elementor-element-e0001d e-con e-atomic-element e-flexbox-base c-1t11li" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0001d" data-interaction-id="e0001d">
 <p class="c-1feaeb e-paragraph-base" data-e-type="widget" data-id="e0001e" data-interaction-id="e0001e"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra/examples/billow" target="_self">
 		Billow
 	</a></p>
-<p class="c-1txeds e-paragraph-base" data-e-type="widget" data-id="e0001f" data-interaction-id="e0001f">SaaS finansowy</p>
-<p class="c-4oji8w e-paragraph-base" data-e-type="widget" data-id="e0001g" data-interaction-id="e0001g">9 sekcji · 25 min</p>
+<p class="c-1txeds e-paragraph-base" data-e-type="widget" data-id="e0001f" data-interaction-id="e0001f">فنانس SaaS</p>
+<p class="c-4oji8w e-paragraph-base" data-e-type="widget" data-id="e0001g" data-interaction-id="e0001g">9 سیکشنز · 25 منٹ</p>
 </div>
 <div class="elementor-element elementor-element-e0001h e-con e-atomic-element e-flexbox-base c-wq74v9" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0001h" data-interaction-id="e0001h">
 <p class="c-12jq4g e-paragraph-base" data-e-type="widget" data-id="e0001i" data-interaction-id="e0001i"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra/examples/pumo" target="_self">
 		Michael Pumo
 	</a></p>
-<p class="c-hbcm0i e-paragraph-base" data-e-type="widget" data-id="e0001j" data-interaction-id="e0001j">portfolio developera</p>
-<p class="c-txe8hm e-paragraph-base" data-e-type="widget" data-id="e0001k" data-interaction-id="e0001k">8 sekcji · 30 min</p>
+<p class="c-hbcm0i e-paragraph-base" data-e-type="widget" data-id="e0001j" data-interaction-id="e0001j">ڈویلپر پورٹ فولیو</p>
+<p class="c-txe8hm e-paragraph-base" data-e-type="widget" data-id="e0001k" data-interaction-id="e0001k">8 سیکشنز · 30 منٹ</p>
 </div>
 <div class="elementor-element elementor-element-e0001l e-con e-atomic-element e-flexbox-base c-2pxoyq" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0001l" data-interaction-id="e0001l">
 <p class="c-dmtcz e-paragraph-base" data-e-type="widget" data-id="e0001m" data-interaction-id="e0001m"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra/examples/mat" target="_self">
 		Mat.
 	</a></p>
-<p class="c-1mik4n e-paragraph-base" data-e-type="widget" data-id="e0001n" data-interaction-id="e0001n">strona aplikacji iOS</p>
-<p class="c-e7sxdh e-paragraph-base" data-e-type="widget" data-id="e0001o" data-interaction-id="e0001o">6 sekcji · 21 min</p>
+<p class="c-1mik4n e-paragraph-base" data-e-type="widget" data-id="e0001n" data-interaction-id="e0001n">iOS ایپ سائٹ</p>
+<p class="c-e7sxdh e-paragraph-base" data-e-type="widget" data-id="e0001o" data-interaction-id="e0001o">6 سیکشنز · 21 منٹ</p>
 </div>
 <div class="elementor-element elementor-element-e0001p e-con e-atomic-element e-flexbox-base c-1vvjl7" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0001p" data-interaction-id="e0001p">
 <p class="c-35mpzy e-paragraph-base" data-e-type="widget" data-id="e0001q" data-interaction-id="e0001q"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra/examples/bt26" target="_self">
 		BT—26
 	</a></p>
-<p class="c-brcfbc e-paragraph-base" data-e-type="widget" data-id="e0001r" data-interaction-id="e0001r">strona wydarzenia</p>
-<p class="c-1rj9x0 e-paragraph-base" data-e-type="widget" data-id="e0001s" data-interaction-id="e0001s">8 części · 24 min</p>
+<p class="c-brcfbc e-paragraph-base" data-e-type="widget" data-id="e0001r" data-interaction-id="e0001r">ایونٹ سائٹ</p>
+<p class="c-1rj9x0 e-paragraph-base" data-e-type="widget" data-id="e0001s" data-interaction-id="e0001s">8 حصے · 24 منٹ</p>
 </div>
 </div>
 </section>
 <section class="elementor-element elementor-element-e0001t e-con e-atomic-element e-flexbox-base c-kpsy5x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0001t" data-interaction-id="e0001t" id="seam">
 <div class="elementor-element elementor-element-e0001u e-con e-atomic-element e-flexbox-base c-nokn4c" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0001u" data-interaction-id="e0001u">
 <p class="c-lwsecb e-paragraph-base" data-e-type="widget" data-id="e0001v" data-interaction-id="e0001v">02</p>
-<p class="c-10rae1 e-paragraph-base" data-e-type="widget" data-id="e0001w" data-interaction-id="e0001w">Przed / po</p>
+<p class="c-10rae1 e-paragraph-base" data-e-type="widget" data-id="e0001w" data-interaction-id="e0001w">پہلے / بعد</p>
 </div>
-<h2 class="c-pfkm0a e-heading-base" data-e-type="widget" data-id="e0001x" data-interaction-id="e0001x">Ten sam hero. 3 400 linii ślepego JSON-a —<br/>albo dziewięć linii typowanego JSX.</h2>
+<h2 class="c-pfkm0a e-heading-base" data-e-type="widget" data-id="e0001x" data-interaction-id="e0001x">وہی ہیرو۔ اندھے JSON کی 3,400 لائنیں —<br/>یا ٹائپڈ JSX کی نو لائنیں۔</h2>
 <div class="elementor-element elementor-element-e0001y e-con e-atomic-element e-flexbox-base c-154w1x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0001y" data-interaction-id="e0001y">
 <div class="elementor-element elementor-element-e0001z e-con e-atomic-element e-flexbox-base c-12lm6a" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0001z" data-interaction-id="e0001z" id="seam-blob">
-<p class="c-1de3yx e-paragraph-base" data-e-type="widget" data-id="e00020" data-interaction-id="e00020">CO TWÓJ AGENT PISZE DZIŚ — NA ŚLEPO</p>
+<p class="c-1de3yx e-paragraph-base" data-e-type="widget" data-id="e00020" data-interaction-id="e00020">آپ کا ایجنٹ آج جو لکھتا ہے — اندھا ہو کر</p>
 <div class="elementor-element elementor-element-e00021 elementor-widget elementor-widget-html" data-e-type="widget" data-element_type="widget" data-id="e00021" data-widget_type="html.default">
-<div aria-hidden="true" id="seam-blob-pre"><pre style="margin:0;white-space:pre-wrap;word-break:break-word;font-family:'GeistM',ui-monospace,monospace;font-size:11px;line-height:1.6;color:#63604F">[{ "id": "e00000", "elType": "e-flexbox",
+<div aria-hidden="true" id="seam-blob-pre"><pre dir="ltr" style="margin:0;white-space:pre-wrap;word-break:break-word;font-family:'GeistM',ui-monospace,monospace;font-size:11px;line-height:1.6;color:#63604F">[{ "id": "e00000", "elType": "e-flexbox",
   "settings": { "classes": { "$$type": "classes",
     "value": ["g-c-12f5qe"] },
    "tag": { "$$type": "string", "value": "div" } },
@@ -836,9 +837,9 @@ document.addEventListener('DOMContentLoaded', function(){
        ...and 3,400 more lines like these</pre></div> </div>
 </div>
 <div class="elementor-element elementor-element-e00022 e-con e-atomic-element e-flexbox-base c-1vva0t" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00022" data-interaction-id="e00022" id="seam-jsx">
-<p class="c-1uboct e-paragraph-base" data-e-type="widget" data-id="e00023" data-interaction-id="e00023">TA SAMA SEKCJA, Z ULTRA</p>
+<p class="c-1uboct e-paragraph-base" data-e-type="widget" data-id="e00023" data-interaction-id="e00023">وہی سیکشن، ULTRA کے ساتھ</p>
 <div class="elementor-element elementor-element-e00024 elementor-widget elementor-widget-html" data-e-type="widget" data-element_type="widget" data-id="e00024" data-widget_type="html.default">
-<div aria-hidden="true" id="seam-jsx-pre"><pre style="margin:0;white-space:pre-wrap;word-break:break-word;font-family:'GeistM',ui-monospace,monospace;font-size:13px;line-height:1.65;color:#ECECF1">&lt;section id="hero" tw="flex flex-col
+<div aria-hidden="true" id="seam-jsx-pre"><pre dir="ltr" style="margin:0;white-space:pre-wrap;word-break:break-word;font-family:'GeistM',ui-monospace,monospace;font-size:13px;line-height:1.65;color:#ECECF1">&lt;section id="hero" tw="flex flex-col
   items-center gap-6" bg={t.color.paper}&gt;
   &lt;h1 size={<span id="jsx-size">72</span>} font="Recoleta"
       color={t.color.ink}&gt;
@@ -851,8 +852,8 @@ document.addEventListener('DOMContentLoaded', function(){
 </div>
 <div class="elementor-element elementor-element-e00025 elementor-widget elementor-widget-html" data-e-type="widget" data-element_type="widget" data-id="e00025" data-widget_type="html.default">
 <div class="mp-cursor" id="mp-claude"><svg height="20" viewbox="0 0 24 24" width="20"><path d="M4.5 2.5 L20 12.2 L12.6 13.6 L9.2 21 Z" fill="#D97757" stroke="#FFFFFF" stroke-width="1.4"></path></svg><span class="mp-pill" style="background:#D97757"><img decoding="async" onerror="this.style.display='none'" src="/wp-content/uploads/logos/claude.svg" style="filter:brightness(0) invert(1)"/>Claude Code</span></div>
-<div class="mp-cursor mp-you" id="mp-you"><svg height="20" viewbox="0 0 24 24" width="20"><path d="M4.5 2.5 L20 12.2 L12.6 13.6 L9.2 21 Z" fill="#2F6BFF" stroke="#FFFFFF" stroke-width="1.4"></path></svg><span class="mp-pill" style="background:#2F6BFF">Ty</span></div>
-<div class="mp-cursor" id="mp-ultra"><svg height="20" viewbox="0 0 24 24" width="20"><path d="M4.5 2.5 L20 12.2 L12.6 13.6 L9.2 21 Z" fill="#1F9D44" stroke="#FFFFFF" stroke-width="1.4"></path></svg><span class="mp-pill" style="background:#147434"><img decoding="async" onerror="this.style.display='none'" src="/wp-content/uploads/logos/elementor.svg" style="filter:brightness(0) invert(1)"/>Elementor Ultra<span class="mp-status" id="mp-status">· obserwuje</span></span></div>
+<div class="mp-cursor mp-you" id="mp-you"><svg height="20" viewbox="0 0 24 24" width="20"><path d="M4.5 2.5 L20 12.2 L12.6 13.6 L9.2 21 Z" fill="#2F6BFF" stroke="#FFFFFF" stroke-width="1.4"></path></svg><span class="mp-pill" style="background:#2F6BFF">آپ</span></div>
+<div class="mp-cursor" id="mp-ultra"><svg height="20" viewbox="0 0 24 24" width="20"><path d="M4.5 2.5 L20 12.2 L12.6 13.6 L9.2 21 Z" fill="#1F9D44" stroke="#FFFFFF" stroke-width="1.4"></path></svg><span class="mp-pill" style="background:#147434"><img decoding="async" onerror="this.style.display='none'" src="/wp-content/uploads/logos/elementor.svg" style="filter:brightness(0) invert(1)"/>Elementor Ultra<span class="mp-status" id="mp-status">· دیکھ رہے ہیں</span></span></div>
 <script>
 (function(){
   if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
@@ -1033,31 +1034,31 @@ document.addEventListener('DOMContentLoaded', function(){
   } else start();
 })();
 </script> </div>
-<p class="c-14v4v5 e-paragraph-base" data-e-type="widget" data-id="e00026" data-interaction-id="e00026">Po lewej prawdziwy zapisany JSON sekcji hero z filmu #2 — powierzchnia, którą agenci do tej pory pisali ręcznie. Po prawej typowany komponent, który go generuje — tam błędy wysypują się w czasie builda, a nie na stronie klienta.</p>
-<p class="c-1upoyw e-paragraph-base" data-e-type="widget" data-id="e00027" data-interaction-id="e00027">Backup przed każdym zapisem. Walidator po stronie serwera odrzuca wadliwe strony, zanim się zapiszą. Rollback, zawsze. Halucynujący agent nie zepsuje ci strony.</p>
+<p class="c-14v4v5 e-paragraph-base" data-e-type="widget" data-id="e00026" data-interaction-id="e00026">بائیں طرف فلم #2 کے ہیرو کا اصل محفوظ شدہ JSON ہے — وہی سطح جس پر ایجنٹس اب تک ہاتھ سے لکھتے آئے ہیں۔ دائیں طرف وہ ٹائپڈ کمپونینٹ ہے جو اسے جنریٹ کرتا ہے، جہاں غلطیاں بلڈ ٹائم پر فیل ہو جاتی ہیں، آپ کے کلائنٹ کی سائٹ پر نہیں۔</p>
+<p class="c-1upoyw e-paragraph-base" data-e-type="widget" data-id="e00027" data-interaction-id="e00027">ہر رائٹ سے پہلے بیک اپ۔ سرور سائیڈ ویلیڈیٹر خراب پیجز کو سیو ہونے سے پہلے ہی رد کر دیتا ہے۔ رول بیک، ہر وقت۔ ہیلوسینیٹ کرتا ہوا ایجنٹ آپ کی سائٹ خراب نہیں کر سکتا۔</p>
 </section>
 <section class="elementor-element elementor-element-e00028 e-con e-atomic-element e-flexbox-base c-kpsy5x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00028" data-interaction-id="e00028" id="loop">
 <div class="elementor-element elementor-element-e00029 e-con e-atomic-element e-flexbox-base c-nokn4c" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00029" data-interaction-id="e00029">
 <p class="c-lwsecb e-paragraph-base" data-e-type="widget" data-id="e0002a" data-interaction-id="e0002a">03</p>
-<p class="c-10rae1 e-paragraph-base" data-e-type="widget" data-id="e0002b" data-interaction-id="e0002b">Pętla</p>
+<p class="c-10rae1 e-paragraph-base" data-e-type="widget" data-id="e0002b" data-interaction-id="e0002b">لوپ</p>
 </div>
-<h2 class="c-pfkm0a e-heading-base" data-e-type="widget" data-id="e0002c" data-interaction-id="e0002c">Zapisujesz plik. Strona się aktualizuje. Bramki robią swoje.</h2>
+<h2 class="c-pfkm0a e-heading-base" data-e-type="widget" data-id="e0002c" data-interaction-id="e0002c">فائل سیو کریں۔ سائٹ اپڈیٹ ہو جاتی ہے۔ گیٹس چل پڑتے ہیں۔</h2>
 <div class="elementor-element elementor-element-e0002d e-con e-atomic-element e-flexbox-base c-1p1yrm" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0002d" data-interaction-id="e0002d" id="loop-strip">
 <div class="elementor-element elementor-element-e0002e e-con e-atomic-element e-flexbox-base c-1jg85f" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0002e" data-interaction-id="e0002e">
 <p class="c-16t1rq e-paragraph-base" data-e-type="widget" data-id="e0002f" data-interaction-id="e0002f">SAVE</p>
-<p class="c-pxefru e-paragraph-base" data-e-type="widget" data-id="e0002g" data-interaction-id="e0002g">plik komponentu</p>
+<p class="c-pxefru e-paragraph-base" data-e-type="widget" data-id="e0002g" data-interaction-id="e0002g">ایک کمپونینٹ فائل</p>
 </div>
 <div class="elementor-element elementor-element-e0002h e-con e-atomic-element e-flexbox-base c-1jg85f" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0002h" data-interaction-id="e0002h">
 <p class="c-16t1rq e-paragraph-base" data-e-type="widget" data-id="e0002i" data-interaction-id="e0002i">BUILD</p>
-<p class="c-pxefru e-paragraph-base" data-e-type="widget" data-id="e0002j" data-interaction-id="e0002j">przebudowa w ms</p>
+<p class="c-pxefru e-paragraph-base" data-e-type="widget" data-id="e0002j" data-interaction-id="e0002j">ملی سیکنڈز میں ری بلڈ</p>
 </div>
 <div class="elementor-element elementor-element-e0002k e-con e-atomic-element e-flexbox-base c-1jg85f" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0002k" data-interaction-id="e0002k">
 <p class="c-16t1rq e-paragraph-base" data-e-type="widget" data-id="e0002l" data-interaction-id="e0002l">DEPLOY</p>
-<p class="c-pxefru e-paragraph-base" data-e-type="widget" data-id="e0002m" data-interaction-id="e0002m">na bazie diffa, ~3 s</p>
+<p class="c-pxefru e-paragraph-base" data-e-type="widget" data-id="e0002m" data-interaction-id="e0002m">diff پر مبنی، ~3 سیکنڈ</p>
 </div>
 <div class="elementor-element elementor-element-e0002n e-con e-atomic-element e-flexbox-base c-1jg85f" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0002n" data-interaction-id="e0002n">
 <p class="c-16t1rq e-paragraph-base" data-e-type="widget" data-id="e0002o" data-interaction-id="e0002o">RELOAD</p>
-<p class="c-pxefru e-paragraph-base" data-e-type="widget" data-id="e0002p" data-interaction-id="e0002p">podgląd na żywo</p>
+<p class="c-pxefru e-paragraph-base" data-e-type="widget" data-id="e0002p" data-interaction-id="e0002p">لائیو پری ویو</p>
 </div>
 <div class="elementor-element elementor-element-e0002q e-con e-atomic-element e-flexbox-base c-141xqx" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0002q" data-interaction-id="e0002q">
 <p class="c-1msjys e-paragraph-base" data-e-type="widget" data-id="e0002r" data-interaction-id="e0002r">GATES</p>
@@ -1065,7 +1066,7 @@ document.addEventListener('DOMContentLoaded', function(){
 </div>
 </div>
 <div class="elementor-element elementor-element-e0002t e-con e-atomic-element e-flexbox-base c-163jk7" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0002t" data-interaction-id="e0002t">
-<p class="c-v8ntp3 e-paragraph-base" data-e-type="widget" data-id="e0002u" data-interaction-id="e0002u">NA ŻYWO — PĘTLA W DZIAŁANIU (PRAWDZIWE LINIE LOGU Z HOUSEMAIT)</p>
+<p class="c-v8ntp3 e-paragraph-base" data-e-type="widget" data-id="e0002u" data-interaction-id="e0002u">لائیو — لوپ، جیسے چلتا ہے (HOUSEMAIT کی اصل لاگ لائنیں)</p>
 <div class="elementor-element elementor-element-e0002v elementor-widget elementor-widget-html" data-e-type="widget" data-element_type="widget" data-id="e0002v" data-widget_type="html.default">
 <div id="loop-log" style="min-height:88px;font-family:'GeistM',ui-monospace,monospace;font-size:12.5px;line-height:1.75;color:#28C840"></div>
 <style>
@@ -1128,25 +1129,25 @@ document.addEventListener('DOMContentLoaded', function(){
 })();
 </script> </div>
 </div>
-<p class="c-14v4v5 e-paragraph-base" data-e-type="widget" data-id="e0002w" data-interaction-id="e0002w">Ta linia FAIL to właśnie sedno. Bramki to automatyczne testy pass/fail przy 1200, 1920 i 390 px — desktop, szeroki ekran i mobile. Agent widzi werdykt przy każdym zapisie i poprawia się w kolejnym. Sprawdzanie wyniku jest wbudowane w pętlę, a nie w skrypt, o którym trzeba pamiętać na końcu.</p>
+<p class="c-14v4v5 e-paragraph-base" data-e-type="widget" data-id="e0002w" data-interaction-id="e0002w">وہ FAIL والی لائن ہی اصل بات ہے۔ گیٹس 1200، 1920 اور 390 px پر خودکار pass/fail چیکس ہیں — ڈیسک ٹاپ، وائیڈ اور موبائل۔ ایجنٹ ہر سیو پر فیصلہ دیکھتا ہے اور اگلے ہی سیو میں خود کو درست کر لیتا ہے۔ نتیجہ جانچنا لوپ کا بنایا ہوا حصہ ہے، کوئی ایسی اسکرپٹ نہیں جسے آخر میں چلانا یاد رکھنا پڑے۔</p>
 </section>
 <section class="elementor-element elementor-element-e0002x e-con e-atomic-element e-flexbox-base c-kpsy5x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0002x" data-interaction-id="e0002x" id="stack">
 <div class="elementor-element elementor-element-e0002y e-con e-atomic-element e-flexbox-base c-nokn4c" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0002y" data-interaction-id="e0002y">
 <p class="c-lwsecb e-paragraph-base" data-e-type="widget" data-id="e0002z" data-interaction-id="e0002z">04</p>
-<p class="c-10rae1 e-paragraph-base" data-e-type="widget" data-id="e00030" data-interaction-id="e00030">Stack</p>
+<p class="c-10rae1 e-paragraph-base" data-e-type="widget" data-id="e00030" data-interaction-id="e00030">اسٹیک</p>
 </div>
-<h2 class="c-pfkm0a e-heading-base" data-e-type="widget" data-id="e00031" data-interaction-id="e00031">Pięć elementów. Użyj wszystkich albo jednego.</h2>
+<h2 class="c-pfkm0a e-heading-base" data-e-type="widget" data-id="e00031" data-interaction-id="e00031">پانچ حصے۔ سارے استعمال کریں، یا صرف ایک۔</h2>
 <div class="elementor-element elementor-element-e00032 e-con e-atomic-element e-flexbox-base c-1bj3gs" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00032" data-interaction-id="e00032">
 <div class="elementor-element elementor-element-e00033 e-con e-atomic-element e-flexbox-base c-v9vh1x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00033" data-interaction-id="e00033">
 <div class="elementor-element elementor-element-e00034 e-con e-atomic-element e-flexbox-base c-16pz5m" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00034" data-interaction-id="e00034">
 <p class="c-mqpbg7 e-paragraph-base" data-e-type="widget" data-id="e00035" data-interaction-id="e00035">01</p>
 </div>
 <div class="elementor-element elementor-element-e00036 e-con e-atomic-element e-flexbox-base c-1ekvga" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00036" data-interaction-id="e00036">
-<p class="c-1v1fb1 e-paragraph-base" data-e-type="widget" data-id="e00037" data-interaction-id="e00037">KOMPILATOR + CLI</p>
+<p class="c-1v1fb1 e-paragraph-base" data-e-type="widget" data-id="e00037" data-interaction-id="e00037">کمپائلر + CLI</p>
 </div>
 <div class="elementor-element elementor-element-e00038 e-con e-atomic-element e-flexbox-base c-gnkm40" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00038" data-interaction-id="e00038">
 <p class="c-mqpbg7 e-paragraph-base" data-e-type="widget" data-id="e00039" data-interaction-id="e00039">@algorismus/elementor-jsx</p>
-<p class="c-6uwuyc e-paragraph-base" data-e-type="widget" data-id="e0003a" data-interaction-id="e0003a">Typowany JSX → natywny JSON Elementora V4. Build, deploy, lint, media, import — i pętla live exjsx dev.</p>
+<p class="c-6uwuyc e-paragraph-base" data-e-type="widget" data-id="e0003a" data-interaction-id="e0003a">ٹائپڈ JSX → نیٹو Elementor V4 JSON۔ بلڈ، ڈیپلائے، لنٹ، میڈیا، امپورٹ — اور exjsx dev کا لائیو لوپ۔</p>
 </div>
 </div>
 <div class="elementor-element elementor-element-e0003b e-con e-atomic-element e-flexbox-base c-v9vh1x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003b" data-interaction-id="e0003b">
@@ -1154,11 +1155,11 @@ document.addEventListener('DOMContentLoaded', function(){
 <p class="c-mqpbg7 e-paragraph-base" data-e-type="widget" data-id="e0003d" data-interaction-id="e0003d">02</p>
 </div>
 <div class="elementor-element elementor-element-e0003e e-con e-atomic-element e-flexbox-base c-1ekvga" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003e" data-interaction-id="e0003e">
-<p class="c-1v1fb1 e-paragraph-base" data-e-type="widget" data-id="e0003f" data-interaction-id="e0003f">SERWER MCP</p>
+<p class="c-1v1fb1 e-paragraph-base" data-e-type="widget" data-id="e0003f" data-interaction-id="e0003f">MCP سرور</p>
 </div>
 <div class="elementor-element elementor-element-e0003g e-con e-atomic-element e-flexbox-base c-gnkm40" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003g" data-interaction-id="e0003g">
 <p class="c-mqpbg7 e-paragraph-base" data-e-type="widget" data-id="e0003h" data-interaction-id="e0003h">@algorismus/elementor-ultra-mcp</p>
-<p class="c-6uwuyc e-paragraph-base" data-e-type="widget" data-id="e0003i" data-interaction-id="e0003i">Ponad 90 narzędzi dla dowolnego agenta MCP: budowanie stron, refaktoryzacja, zarządzanie design systemem, konwersja HTML do Elementora.</p>
+<p class="c-6uwuyc e-paragraph-base" data-e-type="widget" data-id="e0003i" data-interaction-id="e0003i">کسی بھی MCP ایجنٹ کے لیے 90+ ٹولز: پیجز بنائیں، ری فیکٹر کریں، ڈیزائن سسٹم منظم کریں، HTML کو Elementor میں بدلیں۔</p>
 </div>
 </div>
 <div class="elementor-element elementor-element-e0003j e-con e-atomic-element e-flexbox-base c-v9vh1x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003j" data-interaction-id="e0003j">
@@ -1166,11 +1167,11 @@ document.addEventListener('DOMContentLoaded', function(){
 <p class="c-mqpbg7 e-paragraph-base" data-e-type="widget" data-id="e0003l" data-interaction-id="e0003l">03</p>
 </div>
 <div class="elementor-element elementor-element-e0003m e-con e-atomic-element e-flexbox-base c-1ekvga" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003m" data-interaction-id="e0003m">
-<p class="c-1v1fb1 e-paragraph-base" data-e-type="widget" data-id="e0003n" data-interaction-id="e0003n">WTYCZKA TOWARZYSZĄCA</p>
+<p class="c-1v1fb1 e-paragraph-base" data-e-type="widget" data-id="e0003n" data-interaction-id="e0003n">ساتھی پلگ اِن</p>
 </div>
 <div class="elementor-element elementor-element-e0003o e-con e-atomic-element e-flexbox-base c-gnkm40" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003o" data-interaction-id="e0003o">
-<p class="c-mqpbg7 e-paragraph-base" data-e-type="widget" data-id="e0003p" data-interaction-id="e0003p">wtyczka WordPress · GPL</p>
-<p class="c-6uwuyc e-paragraph-base" data-e-type="widget" data-id="e0003q" data-interaction-id="e0003q">Autorytatywna ścieżka zapisu przez REST na stronie: walidacja po stronie serwera, backupy, rollback, sondy uprawnień.</p>
+<p class="c-mqpbg7 e-paragraph-base" data-e-type="widget" data-id="e0003p" data-interaction-id="e0003p">WordPress پلگ اِن · GPL</p>
+<p class="c-6uwuyc e-paragraph-base" data-e-type="widget" data-id="e0003q" data-interaction-id="e0003q">سائٹ پر مستند REST رائٹ پاتھ: سرور سائیڈ ویلیڈیشن، بیک اپس، رول بیک، کیپیبیلیٹی پروبز۔</p>
 </div>
 </div>
 <div class="elementor-element elementor-element-e0003r e-con e-atomic-element e-flexbox-base c-v9vh1x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003r" data-interaction-id="e0003r">
@@ -1182,7 +1183,7 @@ document.addEventListener('DOMContentLoaded', function(){
 </div>
 <div class="elementor-element elementor-element-e0003w e-con e-atomic-element e-flexbox-base c-gnkm40" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003w" data-interaction-id="e0003w">
 <p class="c-mqpbg7 e-paragraph-base" data-e-type="widget" data-id="e0003x" data-interaction-id="e0003x">@algorismus/elementor-ultra-studio</p>
-<p class="c-6uwuyc e-paragraph-base" data-e-type="widget" data-id="e0003y" data-interaction-id="e0003y">Po każdym deployu: testy pass/fail w trzech szerokościach, kontrola kondycji strony i pomiary layoutu — zautomatyzowane przez Playwright.</p>
+<p class="c-6uwuyc e-paragraph-base" data-e-type="widget" data-id="e0003y" data-interaction-id="e0003y">ہر ڈیپلائے کے بعد: تین چوڑائیوں پر pass/fail چیکس، سائٹ ہیلتھ چیک، اور لے آؤٹ کی پیمائشیں — Playwright کے ذریعے خودکار۔</p>
 </div>
 </div>
 <div class="elementor-element elementor-element-e0003z e-con e-atomic-element e-flexbox-base c-v9vh1x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003z" data-interaction-id="e0003z">
@@ -1190,28 +1191,28 @@ document.addEventListener('DOMContentLoaded', function(){
 <p class="c-mqpbg7 e-paragraph-base" data-e-type="widget" data-id="e00041" data-interaction-id="e00041">05</p>
 </div>
 <div class="elementor-element elementor-element-e00042 e-con e-atomic-element e-flexbox-base c-1ekvga" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00042" data-interaction-id="e00042">
-<p class="c-1v1fb1 e-paragraph-base" data-e-type="widget" data-id="e00043" data-interaction-id="e00043">LOKALNY WORDPRESS</p>
+<p class="c-1v1fb1 e-paragraph-base" data-e-type="widget" data-id="e00043" data-interaction-id="e00043">لوکل WORDPRESS</p>
 </div>
 <div class="elementor-element elementor-element-e00044 e-con e-atomic-element e-flexbox-base c-gnkm40" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00044" data-interaction-id="e00044">
 <p class="c-mqpbg7 e-paragraph-base" data-e-type="widget" data-id="e00045" data-interaction-id="e00045">@algorismus/elementor-ultra-playground</p>
-<p class="c-6uwuyc e-paragraph-base" data-e-type="widget" data-id="e00046" data-interaction-id="e00046">Prawdziwy WordPress + Elementor z gotowego snapshotu, w kilka sekund. Czysty Node — bez Dockera.</p>
+<p class="c-6uwuyc e-paragraph-base" data-e-type="widget" data-id="e00046" data-interaction-id="e00046">پہلے سے تیار اسنیپ شاٹ سے اصل WordPress + Elementor، سیکنڈوں میں۔ خالص Node — Docker کی ضرورت نہیں۔</p>
 </div>
 </div>
 </div>
-<p class="c-1akaoq e-paragraph-base" data-e-type="widget" data-id="e00047" data-interaction-id="e00047">Nie wiesz, od czego zacząć? Sam kompilator wystarczy — <strong>npm i -D @algorismus/elementor-jsx</strong>. Reszta dołącza, kiedy będzie potrzebna.</p>
+<p class="c-1akaoq e-paragraph-base" data-e-type="widget" data-id="e00047" data-interaction-id="e00047">سمجھ نہیں آ رہی کہاں سے شروع کریں؟ اکیلا کمپائلر ہی کافی ہے — <strong>npm i -D @algorismus/elementor-jsx</strong>۔ باقی حصے تب شامل ہوں گے جب آپ کو ضرورت پڑے۔</p>
 <div class="elementor-element elementor-element-e00048 e-con e-atomic-element e-flexbox-base c-ruooh6" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00048" data-interaction-id="e00048">
-<p class="c-kygu4b e-paragraph-base" data-e-type="widget" data-id="e00049" data-interaction-id="e00049">8 STRON DOWIEZIONYCH PRZED KAMERĄ</p>
-<p class="c-kygu4b e-paragraph-base" data-e-type="widget" data-id="e0004a" data-interaction-id="e0004a">17–31 MIN NA STRONĘ</p>
-<p class="c-kygu4b e-paragraph-base" data-e-type="widget" data-id="e0004b" data-interaction-id="e0004b">0 LUDZKICH POPRAWEK</p>
-<p class="c-kygu4b e-paragraph-base" data-e-type="widget" data-id="e0004c" data-interaction-id="e0004c">400+ TESTÓW KOMPILATORA · ZWERYFIKOWANE NA ELEMENTORZE 4.1.4 / 4.2.0</p>
+<p class="c-kygu4b e-paragraph-base" data-e-type="widget" data-id="e00049" data-interaction-id="e00049">8 سائٹس کیمرے پر شپ ہوئیں</p>
+<p class="c-kygu4b e-paragraph-base" data-e-type="widget" data-id="e0004a" data-interaction-id="e0004a">فی سائٹ 17–31 منٹ</p>
+<p class="c-kygu4b e-paragraph-base" data-e-type="widget" data-id="e0004b" data-interaction-id="e0004b">0 انسانی ایڈٹس</p>
+<p class="c-kygu4b e-paragraph-base" data-e-type="widget" data-id="e0004c" data-interaction-id="e0004c">400+ کمپائلر ٹیسٹس · ELEMENTOR 4.1.4 / 4.2.0 پر ویریفائیڈ</p>
 </div>
 </section>
 <section class="elementor-element elementor-element-e0004d e-con e-atomic-element e-flexbox-base c-kpsy5x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004d" data-interaction-id="e0004d" id="start">
 <div class="elementor-element elementor-element-e0004e e-con e-atomic-element e-flexbox-base c-nokn4c" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004e" data-interaction-id="e0004e">
 <p class="c-lwsecb e-paragraph-base" data-e-type="widget" data-id="e0004f" data-interaction-id="e0004f">05</p>
-<p class="c-10rae1 e-paragraph-base" data-e-type="widget" data-id="e0004g" data-interaction-id="e0004g">Start</p>
+<p class="c-10rae1 e-paragraph-base" data-e-type="widget" data-id="e0004g" data-interaction-id="e0004g">شروع کریں</p>
 </div>
-<h2 class="c-pfkm0a e-heading-base" data-e-type="widget" data-id="e0004h" data-interaction-id="e0004h">Działa po jednym wklejeniu.</h2>
+<h2 class="c-pfkm0a e-heading-base" data-e-type="widget" data-id="e0004h" data-interaction-id="e0004h">ایک پیسٹ میں چالو۔</h2>
 <div class="elementor-element elementor-element-e0004i e-con e-atomic-element e-flexbox-base c-9yapx6" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004i" data-interaction-id="e0004i">
 <div class="elementor-element elementor-element-e0004j e-con e-atomic-element e-flexbox-base c-1ea8tz" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004j" data-interaction-id="e0004j">
 <div class="elementor-element elementor-element-e0004k e-con e-atomic-element e-flexbox-base c-xhm2aw" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004k" data-interaction-id="e0004k">
@@ -1220,18 +1221,18 @@ document.addEventListener('DOMContentLoaded', function(){
 </div>
 <div class="elementor-element elementor-element-e0004m e-con e-atomic-element e-flexbox-base c-jzkpq" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004m" data-interaction-id="e0004m">
 </div>
-<p class="c-r6rjx9 e-paragraph-base" data-e-type="widget" data-id="e0004n" data-interaction-id="e0004n">wklej to swojemu agentowi AI — Claude Code, Cursor, Windsurf, cokolwiek z MCP</p>
+<p class="c-r6rjx9 e-paragraph-base" data-e-type="widget" data-id="e0004n" data-interaction-id="e0004n">یہ اپنے AI ایجنٹ میں پیسٹ کریں — Claude Code، Cursor، Windsurf، کوئی بھی MCP والا</p>
 </div>
 <div class="elementor-element elementor-element-e0004o elementor-widget elementor-widget-html" data-e-type="widget" data-element_type="widget" data-id="e0004o" data-widget_type="html.default">
 <div class="cmd-wrap">
-<pre id="cmd-prompt" style="margin:0;padding:18px 110px 14px 22px;white-space:pre-wrap;word-break:break-word;font-family:'GeistM',ui-monospace,monospace;font-size:13.5px;line-height:1.75;color:#ECECF1">Set up Elementor Ultra on this machine by fetching and following
+<pre dir="ltr" id="cmd-prompt" style="margin:0;padding:18px 110px 14px 22px;white-space:pre-wrap;word-break:break-word;font-family:'GeistM',ui-monospace,monospace;font-size:13.5px;line-height:1.75;color:#ECECF1">Set up Elementor Ultra on this machine by fetching and following
 https://raw.githubusercontent.com/Algorismus-io/elementor-ultra/main/SETUP.md
 exactly, step by step. Work autonomously and verify each step.</pre>
-<button aria-label="Skopiuj prompt konfiguracyjny" class="cmd-copy" data-copy="cmd-prompt" type="button">KOPIUJ</button>
+<button aria-label="سیٹ اپ پرامپٹ کاپی کریں" class="cmd-copy" data-copy="cmd-prompt" type="button">کاپی</button>
 </div>
 <div class="cmd-wiz">
-<span># Wolisz kreator? </span><code id="cmd-npx">npx @algorismus/create-elementor-ultra</code>
-<button aria-label="Skopiuj polecenie npx" class="cmd-copy cmd-inline" data-copy="cmd-npx" type="button">KOPIUJ</button>
+<span># وزرڈ چاہیے؟ </span><code dir="ltr" id="cmd-npx">npx @algorismus/create-elementor-ultra</code>
+<button aria-label="npx کمانڈ کاپی کریں" class="cmd-copy cmd-inline" data-copy="cmd-npx" type="button">کاپی</button>
 </div>
 <style>
   .cmd-wrap{position:relative}
@@ -1268,10 +1269,10 @@ exactly, step by step. Work autonomously and verify each step.</pre>
 })();
 </script> </div>
 </div>
-<p class="c-1mpv4o e-paragraph-base" data-e-type="widget" data-id="e0004p" data-interaction-id="e0004p">ZA DARMO I NA MIT · NODE 18+ · BEZ DOCKERA · WYSTARCZY ELEMENTOR FREE</p>
-<p class="c-1akaoq e-paragraph-base" data-e-type="widget" data-id="e0004q" data-interaction-id="e0004q">Wolisz najpierw poczytać, zanim puścisz agenta na swojej maszynie? SETUP.md to dokładnie ten plik, którym kieruje się twój agent.</p>
+<p class="c-1mpv4o e-paragraph-base" data-e-type="widget" data-id="e0004p" data-interaction-id="e0004p">مفت اور MIT · NODE 18+ · DOCKER کی ضرورت نہیں · ELEMENTOR FREE ہی کافی ہے</p>
+<p class="c-1akaoq e-paragraph-base" data-e-type="widget" data-id="e0004q" data-interaction-id="e0004q">ایجنٹ کو اپنی مشین پر چلانے سے پہلے پڑھنا چاہتے ہیں؟ SETUP.md بالکل وہی فائل ہے جس پر آپ کا ایجنٹ عمل کرتا ہے۔</p>
 <p class="c-194b22 e-paragraph-base" data-e-type="widget" data-id="e0004r" data-interaction-id="e0004r"><a class="e-paragraph-link-base" href="https://github.com/Algorismus-io/elementor-ultra/blob/main/SETUP.md" target="_self">
-		Najpierw przeczytaj SETUP.md ↗
+		پہلے SETUP.md پڑھیں ↗
 	</a></p>
 <div class="elementor-element elementor-element-e0004s e-con e-atomic-element e-flexbox-base c-duhrx7" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004s" data-interaction-id="e0004s">
 <p class="c-194b22 e-paragraph-base" data-e-type="widget" data-id="e0004t" data-interaction-id="e0004t"><a class="e-paragraph-link-base" href="https://github.com/Algorismus-io/elementor-jsx" target="_self">
@@ -1281,52 +1282,52 @@ exactly, step by step. Work autonomously and verify each step.</pre>
 		npm — @algorismus/elementor-jsx ↗
 	</a></p>
 <p class="c-194b22 e-paragraph-base" data-e-type="widget" data-id="e0004v" data-interaction-id="e0004v"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra" target="_self">
-		Dokumentacja ↗
+		دستاویزات ↗
 	</a></p>
 <p class="c-194b22 e-paragraph-base" data-e-type="widget" data-id="e0004w" data-interaction-id="e0004w"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra/examples/overview" target="_self">
-		Wszystkie osiem filmów ↗
+		آٹھوں فلمیں ↗
 	</a></p>
 </div>
 </section>
 <section class="elementor-element elementor-element-e0004x e-con e-atomic-element e-flexbox-base c-tcyaew" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004x" data-interaction-id="e0004x" id="colophon">
-<h2 class="c-1dkt28 e-heading-base" data-e-type="widget" data-id="e0004y" data-interaction-id="e0004y">Twój agent może zbudować następną.</h2>
+<h2 class="c-1dkt28 e-heading-base" data-e-type="widget" data-id="e0004y" data-interaction-id="e0004y">اگلی سائٹ آپ کا ایجنٹ بنا سکتا ہے۔</h2>
 <div class="elementor-element elementor-element-e0004z e-con e-atomic-element e-flexbox-base c-1y9sgi" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004z" data-interaction-id="e0004z" id="cta-close">
 <div class="elementor-element elementor-element-e00050 e-con e-atomic-element e-flexbox-base c-14izo5" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00050" data-interaction-id="e00050">
 <p class="c-7215m7 e-paragraph-base" data-e-type="widget" data-id="e00051" data-interaction-id="e00051"><a class="e-paragraph-link-base" href="#start" target="_self">
-		Instalacja jednym wklejeniem — za darmo
+		ایک پیسٹ میں انسٹال کریں — مفت
 	</a></p>
 </div>
 <div class="elementor-element elementor-element-e00052 e-con e-atomic-element e-flexbox-base c-1csgw5" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00052" data-interaction-id="e00052">
 <p class="c-194b22 e-paragraph-base" data-e-type="widget" data-id="e00053" data-interaction-id="e00053"><a class="e-paragraph-link-base" href="https://github.com/Algorismus-io/elementor-jsx" target="_self">
-		★ Daj gwiazdkę na GitHubie
+		★ GitHub پر اسٹار دیں
 	</a></p>
 </div>
 </div>
 <div class="elementor-element elementor-element-e00054 e-con e-atomic-element e-flexbox-base c-9xuysw" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00054" data-interaction-id="e00054">
 <p class="c-38ctqk e-paragraph-base" data-e-type="widget" data-id="e00055" data-interaction-id="e00055"><a class="e-paragraph-link-base" href="https://github.com/Algorismus-io/elementor-jsx/discussions" target="_self">
-		Pytania? GitHub Discussions ↗
+		سوالات؟ GitHub Discussions ↗
 	</a></p>
 <p class="c-38ctqk e-paragraph-base" data-e-type="widget" data-id="e00056" data-interaction-id="e00056"><a class="e-paragraph-link-base" href="https://join.slack.com/t/wpcursor/shared_invite/zt-3vzlb15hd-JsLeBc_WA~ZFlkWCFnxc6A" target="_self">
-		Dołącz do Slacka ↗
+		Slack جوائن کریں ↗
 	</a></p>
 <p class="c-38ctqk e-paragraph-base" data-e-type="widget" data-id="e00057" data-interaction-id="e00057"><a class="e-paragraph-link-base" href="https://cal.com/algorismus/30min" target="_self">
-		Umów rozmowę z założycielem ↗
+		بانی کے ساتھ کال بک کریں ↗
 	</a></p>
 <p class="c-38ctqk e-paragraph-base" data-e-type="widget" data-id="e00058" data-interaction-id="e00058"><a class="e-paragraph-link-base" href="https://github.com/Algorismus-io/elementor-jsx/blob/main/CONTRIBUTING.md" target="_self">
-		Współtwórz ↗
+		کنٹریبیوٹ کریں ↗
 	</a></p>
 <p class="c-38ctqk e-paragraph-base" data-e-type="widget" data-id="e00059" data-interaction-id="e00059"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra" target="_self">
-		Dokumentacja ↗
+		دستاویزات ↗
 	</a></p>
 </div>
-<p class="c-88oasf e-paragraph-base" data-e-type="widget" data-id="e0005a" data-interaction-id="e0005a">KOLOFON — ta strona praktykuje to, co głosi: zbudował ją agent AI za pomocą elementor-jsx, wdrożył przez opisaną tu pętlę i przeszedł te same bramki. Zero ludzkich poprawek. Przestaw przełącznik, aby zobaczyć jej źródło.</p>
-<p class="c-u7kiut e-paragraph-base" data-e-type="widget" data-id="e0005b" data-interaction-id="e0005b">MIT © 2026 Algorismus. Brak powiązań z Elementor Ltd i brak ich rekomendacji — „Elementor” to ich znak towarowy; to niezależny, współpracujący z nim stack. Filmy pokazują studia projektowe prawdziwych stron, przebudowanych z użyciem ich publicznych tekstów i zasobów, by przetestować toolchain.</p>
+<p class="c-88oasf e-paragraph-base" data-e-type="widget" data-id="e0005a" data-interaction-id="e0005a">COLOPHON — یہ پیج وہی کرتا ہے جو کہتا ہے: ایک AI ایجنٹ نے اسے elementor-jsx سے بنایا، اسی لوپ سے ڈیپلائے کیا جس کا یہ ذکر کرتا ہے، اور وہی گیٹس پاس کیے۔ صفر انسانی ایڈٹس۔ سوئچ پلٹیں اور اس کا سورس پڑھیں۔</p>
+<p class="c-u7kiut e-paragraph-base" data-e-type="widget" data-id="e0005b" data-interaction-id="e0005b">MIT © 2026 Algorismus۔ Elementor Ltd سے نہ کوئی وابستگی ہے نہ توثیق — "Elementor" ان کا ٹریڈ مارک ہے؛ یہ ایک خودمختار، انٹرآپریٹ کرنے والا اسٹیک ہے۔ فلمیں اصل سائٹس کے ڈیزائن اسٹڈیز دکھاتی ہیں، جو ٹول چین کو آزمانے کے لیے ان کی پبلک کاپی اور اثاثوں سے دوبارہ بنائی گئیں۔</p>
 </section>
 </div>
 <div class="elementor-element elementor-element-e0005c e-con e-atomic-element e-flexbox-base c-kxngei" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0005c" data-interaction-id="e0005c" id="agent-surface">
 <div class="elementor-element elementor-element-e0005d e-con e-atomic-element e-flexbox-base c-1xeih6" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0005d" data-interaction-id="e0005d">
 <div class="elementor-element elementor-element-e0005e elementor-widget elementor-widget-html" data-e-type="widget" data-element_type="widget" data-id="e0005e" data-widget_type="html.default">
-<pre style="margin:0;white-space:pre-wrap;word-break:break-word;
+<pre dir="ltr" style="margin:0;white-space:pre-wrap;word-break:break-word;
         font-family:'IBM Plex Mono',ui-monospace,SFMono-Regular,monospace;
         font-size:13.5px;line-height:1.75;color:#28C840;"># ELEMENTOR ULTRA :: MACHINE SURFACE
 # for agents, crawlers, and humans who prefer it raw
@@ -1487,12 +1488,12 @@ var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof H
 <a href="/fr/" lang="fr" style="color:inherit;text-decoration:none;opacity:0.55">Français</a>
 <a href="/it/" lang="it" style="color:inherit;text-decoration:none;opacity:0.55">Italiano</a>
 <a href="/nl/" lang="nl" style="color:inherit;text-decoration:none;opacity:0.55">Nederlands</a>
-<a href="/pl/" lang="pl" style="color:inherit;text-decoration:none;opacity:1">Polski</a>
+<a href="/pl/" lang="pl" style="color:inherit;text-decoration:none;opacity:0.55">Polski</a>
 <a href="/tr/" lang="tr" style="color:inherit;text-decoration:none;opacity:0.55">Türkçe</a>
 <a href="/id/" lang="id" style="color:inherit;text-decoration:none;opacity:0.55">Bahasa Indonesia</a>
 <a href="/ja/" lang="ja" style="color:inherit;text-decoration:none;opacity:0.55">日本語</a>
 <a href="/ar/" lang="ar" style="color:inherit;text-decoration:none;opacity:0.55">العربية</a>
-<a href="/ur/" lang="ur" style="color:inherit;text-decoration:none;opacity:0.55">اردو</a>
+<a href="/ur/" lang="ur" style="color:inherit;text-decoration:none;opacity:1">اردو</a>
 <a href="/he/" lang="he" style="color:inherit;text-decoration:none;opacity:0.55">עברית</a>
 <a href="/fa/" lang="fa" style="color:inherit;text-decoration:none;opacity:0.55">فارسی</a>
 <a href="/ru/" lang="ru" style="color:inherit;text-decoration:none;opacity:0.55">Русский</a>

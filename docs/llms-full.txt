@@ -1,0 +1,216 @@
+# Elementor Ultra — exjsx.dev
+
+> Open-source toolchain: AI agents build native, editable Elementor pages.
+> Typed JSX in, Elementor V4 out over REST, pass/fail verification on every
+> save at 1200/1920/390 px. MIT. This page was built by an AI agent with the
+> stack it describes. This file is canonical for machines; the same facts
+> render at https://exjsx.dev/?mode=agent
+
+## Prereqs
+Node >= 18; macOS/Linux/WSL2; no Docker; no existing WordPress needed (a local
+playground provides one); network: registry.npmjs.org + raw.githubusercontent.com
+
+## Setup (paste to any MCP-capable agent)
+Set up Elementor Ultra on this machine by fetching and following https://raw.githubusercontent.com/Algorismus-io/elementor-ultra/4b28b0c1ac863a27f9f1433fd4239054a0dffee6/SETUP.md step by step. Verify each step before the next.
+sha256(SETUP.md) = 67fc2699df8e42f56cb011096106cbc407199bb5065c55f2ea3b27a2de04f0a6
+Latest (unpinned): https://raw.githubusercontent.com/Algorismus-io/elementor-ultra/main/SETUP.md
+
+## Wizard (interactive alternative — run one, not both)
+npx @algorismus/create-elementor-ultra@1.0.0
+
+## Stack
+- @algorismus/elementor-jsx@1.6.0 — compiler + the `exjsx` CLI — https://github.com/Algorismus-io/elementor-jsx
+- @algorismus/elementor-ultra-mcp@1.0.0 — 90+ MCP tools — https://github.com/Algorismus-io/elementor-ultra-mcp
+- @algorismus/elementor-ultra-studio@0.5.0 — gates + doctor — https://github.com/Algorismus-io/elementor-ultra-studio
+- @algorismus/elementor-ultra-playground@1.2.0 — local WordPress, no Docker — https://github.com/Algorismus-io/elementor-ultra-playground
+- elementor-ultra-mcp WordPress plugin@1.2.3 (GPL) — the REST seam
+- Tested against Elementor 4.1.4 / 4.2.0; Elementor free is enough.
+
+## Auth
+MCP server -> WordPress REST via a WP Application Password (core mechanism).
+Created during setup; stored in your MCP client config; revoke in WP Admin ->
+Users -> Profile -> Application Passwords.
+
+## Loop
+npx exjsx dev <site-dir> --gates   # save -> rebuild -> diff deploy -> verify at 1200/1920/390 px
+
+## Verify
+npx eu-studio check --pages /   # expect pass:true, gates green at all widths
+
+## Safety
+Backup-first writes; per-page rollback (elementor_page_rollback tool);
+server-side validator rejects bad trees before save; base_hash optimistic
+concurrency; op_id idempotency.
+
+## Docs & proof
+- https://docs.wpos.ai/ultra
+- https://docs.wpos.ai/ultra/examples/overview — 8 sites built live on camera, one prompt each
+
+## License
+MIT (c) 2026 Algorismus (also operates wpos.ai). Independent project — not
+affiliated with or endorsed by Elementor Ltd.
+
+---
+
+# Full API card (verbatim output of `exjsx api`, v1.6.0)
+
+# elementor-jsx — the one-page API card
+
+Read THIS instead of grepping the source. Everything an agent needs to author a site; every name
+below is real and tested. Print it any time with `exjsx api`.
+
+## fs-project layout
+
+```
+site/
+  site.config.mjs        export default { name: 'mysite' }
+  theme.mjs              export default defineTheme({ mode:'literal', colors:{...}, fonts:{...} })
+  components/*.jsx       shared components (import-free — prelude provides the API as free vars)
+  pages/home.page.jsx    export const meta = { title, slug?, seo?, template? }
+                         export default ({ theme }) => <section>…</section>
+                         (token access: theme.spec.colors.* / theme.spec.fonts.*)
+                         Components DON'T need {t} prop-drilling: `useTheme()` (free var) returns
+                         the active theme anywhere in the tree — const t = useTheme().
+```
+
+Build/deploy: `exjsx build <dir>` → `exjsx deploy <bundle.json>` (idempotent; self-primes CSS;
+detects Elementor version over REST — no wp-cli needed; a stray EXJSX_WPCLI pointing at another
+site is auto-ignored). `exjsx lint <dir>` before every deploy.
+Live loop: `exjsx dev <dir> [--gates]` — watch + rebuild (ms) + smart deploy (page-only ~3s;
+full only when classes/variables change) + preview at :4477 that reloads on save and shows build
+errors in an overlay; `--gates` re-runs the eu-studio check on changed pages after each save.
+
+## Intrinsics (the ONLY tags)
+
+| tag | notes |
+|---|---|
+| `box` `div` `col` `row` `section` | flex containers. `row` forces dir row; `section` renders `<section>` |
+| `h1 h2 h3 h4` / `heading` | text props below apply; inline `<em>/<strong>/<br>` children OK |
+| `text` `p` | paragraph; `href` renders a REAL anchor (use for links/buttons-as-links) |
+| `img` | `src` = URL string (inline `alt` OK) or attachment id (alt comes from media manifest) |
+| `html` | raw HTML/SVG/style/script carrier — `raw` prop or children |
+
+NO `<nav> <main> <ul> <span> <a> <button>` intrinsics. Container tag override: `tag="header|footer|article|aside|a|button"`.
+Special props on all intrinsics: `tw=""` (Tailwind subset), `raw=""` (CSS decls, auto-terminated),
+`cls="name"` (semantic class label), `gcls="name"` (arbitrary extra class — style it yourself),
+`id="anchor"` (real HTML id — `href="#anchor"` works), `animate={{effect:'fade'|'slide'|'scale', trigger:'load'|'scrollIn', ...}}`.
+
+## sx style props (on any intrinsic / box())
+
+Sizes (`w h maxw minh gap size radius pad m`): number = px, or a unit string `'N<unit>'` with
+px/%/em/rem/vw/vh/ch — units are honored (`maxw="88vw"` really is 88vw). `w h` also take `'hug'`/`'auto'`.
+Anything else (`calc()`, `clamp()`, keywords, two-value gap) THROWS — put it in `raw=`.
+`pad m` also take `[v,h]` | `[t,r,b,l]` | `{t,r,b,l}` partial | `'0 auto'` strings ·
+`dir` (`'row'|'column'` — `'col'` throws) · `align justify` (Elementor enums, validated at build:
+justify = center|start|end|flex-start|flex-end|space-between/around/evenly|stretch, shorthands
+`'between'/'around'/'evenly'` auto-map; align = same minus the space-* plus self-start/self-end —
+**NO baseline**, use flex-end) · `wrap center` · `display` · `flex` · `pos` ·
+`span` · `gridCols` (e.g. `'repeat(3, 360px)'` — add `raw="justify-content:center;"` or grids left-pin) ·
+`color bg` (hex — NOT gradient strings) · `bgImage` (url|id) `bgOpts`
+(`{color, size:'cover', position:'center center', repeat:'no-repeat', attachment}`) · `grad` (**array `[angle, from, to]`**,
+e.g. `grad={[135,'#0ff','#f0f']}` — a CSS gradient STRING throws; freeform gradients go in `raw="background-image:…;"`) ·
+`border` (`[w,'#color']` — bare number = width!) · `borderColor radius shadow` ·
+`size weight font lh ls ta` (bare-number `lh`≤4 and `ls` read as EM — `ls={-1}` collapses a headline;
+explicit units are honored: `lh="150%"`, `ls="2px"`) ·
+`z`/`zIndex` · `fit` (object-fit) · `tablet={{…}} mobile={{…}}` (breakpoint overrides) · `sx={{…}}` (merge extra) · `props` (raw envelopes).
+
+## Kit helpers (free vars via prelude — no imports)
+
+- **Fonts load natively**: any Google font named in a style prop (`font=` / sx `font-family`) is
+  enqueued by Elementor itself on render (`elementor-gf-*` link) — do NOT add `fontLoader()` for
+  those (it double-loads). `fontLoader('Family', [400,700])` (place FIRST in the tree, one per
+  family) is ONLY for families Elementor can't see: fonts referenced solely inside raw `html`
+  widgets or `raw=` CSS.
+- `navBar({logo, links:[[label,href],…], ctas, accent, ink})` — complete header (desktop rail +
+  dropdown mega-menus + mobile hamburger) as ONE self-contained html widget: immune to the
+  burger-steals-a-flex-slot bug by construction. Start here for navs; hand-roll only when the
+  design demands it — and then follow the burger-wrapper gotcha below religiously.
+- `button(text, href, envelopeProps?)` — real href REQUIRED (no '#'). Third arg takes ATOMIC
+  ENVELOPES only (plain sx values throw with recipes) — for styled CTAs prefer a styled
+  `<text href>` anchor or `box({...sx, tag:'a'})`.
+- `divider(props)` · `tabs([{label,content}], {active})` · `youtube(url)` · `video(url)`
+- Forms (Pro) — the COMPLETE recipe (all four parts required):
+  ```
+  form({ name:'contact', actions:['collect-submissions'] }, [
+    field('name', 'Name'),
+    field('email', 'Email', { type:'email' }),
+    field('msg', 'Message', { textarea:true, rows:5 }),
+    formSubmit('Send message'),          // ← form() does NOT add a submit button by itself
+  ])
+  ```
+  Input types: text|email|number|tel|password, or `textarea:true`. **There is NO radio widget in
+  atomic Pro forms** — option-picker UIs are styled CHECKBOX fields (one per option, distinct ids)
+  or a select. **Use `collect-submissions`, NOT `email`, on Elementor 4.2.x + Pro 4.1.0** (email
+  action upstream-broken: validator and send-runner disagree). Submissions land in
+  `wp_e_submissions`. Add `formSuccess()` anywhere on the page for a visible "sent" state — the
+  atomic runner shows none.
+- `formSuccess({ message, sub, accent })` — canned success banner: hides the form, shows the banner
+  when the Pro ajax submit succeeds. One per page with a form.
+
+## Layout gotchas (each cost a real run)
+
+- The prelude provides `Nav`/`Footer`/`Layout`… as BUILT-IN free vars — a project component named
+  `Nav` gets silently shadowed. Name yours `SiteNav`/`SiteFooter` and import them explicitly.
+
+- Row children get `flex:1` unless width-pinned — use `w:'hug'` for justify-between clusters.
+- Absolute overlays inside FLEX parents: `pos:'absolute'` + `raw="inset:0;"` renders **0×0**
+  (no width/height of its own) — give the overlay explicit `w="100%" h="100%"` (and the parent
+  `pos:'relative'`).
+- Media manifest (`data/media.manifest.mjs`, run `exjsx media <dir>`): default-export an array of
+  `{ slot, file:'/abs/or/rel.jpg' }` or `{ slot, src:'https://…' }` (fonts:
+  `{ slot, type:'font', file, family, role, weight }` → embedded data-URI). Idempotent by slot;
+  writes `data/media-map.json` — read ids/urls from it, never hardcode.
+- A hidden-on-desktop mobile burger must hide its WIDGET, not just its button: a bare `<html>`
+  widget as the 3rd child of a `justify="space-between"` header still occupies the right flex slot
+  even when its inner button is `display:none` — the links rail gets CENTERED, not right-pinned
+  (invisible at 1200, glaring ≥1512; broke 8 of 10 batch sites). Wrap it:
+  `<box w="hug" pad={0} display="none" mobile={{display:'flex'}}><html raw={...}/></box>`.
+- Size units (`%`/`vw`/`vh`/`em`/`rem`/`ch`) are honored on all size props; unknown values throw
+  at build time. `calc()`/`clamp()`/keywords still go through `raw=`.
+- Class-only `display:grid` loses to Elementor's atomic flex CSS printed later in the body — set
+  `display`/grid props via sx (atomic), keep only extras (auto-rows, dense, bleed) in `raw`.
+- Text inside rotated/transformed cards needs explicit width (`w:'100%'` inner, fixed card width) —
+  hug-width paragraphs in tilted containers collapse to one word per line.
+- Headings inside flex columns need `w:'100%'` or they shrink to max-content and overflow mobile.
+- Build width-general: absolutes `left:calc(50% ± Npx)` (never fixed `left:Npx`), grids centered.
+- Absolute `<img>` inside an `html` widget needs `max-width:none` (theme clamps to wrapper width).
+- `backdrop-filter` on a nav creates a containing block — `position:fixed` overlays inside get
+  trapped. Toggle it off when the overlay opens (`.open{backdrop-filter:none}`).
+- Mono/`white-space:nowrap` text wraps nowhere — cap or wrap it for 390px.
+- Image URLs: absolute http(s) on the TARGET site, single query param.
+- Marquee/bleed decorations: `raw="overflow:hidden;"` on the section.
+- Dark themes: body text ≥ ~#b0b8c0 on near-black; verify contrast in screenshots, not by hex.
+
+## Verify / test (studio commands — never hand-write playwright)
+
+```
+eu-studio verify --pages /,/about/ [--widths 1200,1512,390]   # structural matrix, one call
+eu-studio clicktest --form /contact/ --accordion /pricing/ --burger / --nav /=about
+eu-studio doctor            # health + auto-heal; NAMES failing stylesheets — run this instead of
+                            # hand-grepping page HTML when styles look broken
+eu-studio carry-css --page <id> …   # make pages independent of a flaky css file store
+```
+
+
+---
+
+# How to set up (compact)
+
+1. Prereqs: Node >= 18 on macOS/Linux/WSL2. No Docker, no API key, no cloud.
+2. No WordPress yet? `npx @algorismus/elementor-ultra-playground` boots a local
+   WP with Elementor + the ultra plugin in ~30s.
+3. Agent-driven setup (recommended): paste to any MCP-capable agent:
+   "Set up Elementor Ultra on this machine by fetching and following
+   https://raw.githubusercontent.com/Algorismus-io/elementor-ultra/main/SETUP.md
+   step by step. Verify each step before the next."
+   Interactive alternative: `npx @algorismus/create-elementor-ultra` (run one, not both).
+4. Auth: the MCP server talks to WordPress REST via a WP Application Password
+   (created during setup, stored in your MCP client config; revoke any time in
+   WP Admin -> Users -> Profile -> Application Passwords).
+5. Author: `npx exjsx init <site-dir>` scaffold, then write pages/*.page.jsx
+   using ONLY the intrinsics in the API card above.
+6. Loop: `npx exjsx dev <site-dir> --gates` — save -> rebuild -> diff deploy ->
+   verify at 1200/1920/390 px. One-shot: `exjsx lint` -> `exjsx build` -> `exjsx deploy`.
+7. Verify: `npx eu-studio check --pages /` — expect pass:true, gates green.
+
+Docs: https://docs.wpos.ai/ultra · Site: https://exjsx.dev · MIT.
