@@ -98,6 +98,8 @@ export const Colophon = ({ theme: t }) => (
     </row>
     <row tw="flex flex-wrap gap-6" pad={[4, 0, 10, 0]}>
       <text href="https://github.com/Algorismus-io/elementor-jsx/discussions" size={14.5} weight={600} font={t.font.body} color={t.color.ink}>Questions? GitHub Discussions ↗</text>
+      <text href="https://join.slack.com/t/wpcursor/shared_invite/zt-3vzlb15hd-JsLeBc_WA~ZFlkWCFnxc6A" size={14.5} weight={600} font={t.font.body} color={t.color.ink}>Join the Slack ↗</text>
+      <text href="https://cal.com/algorismus/30min" size={14.5} weight={600} font={t.font.body} color={t.color.ink}>Book a call with the founder ↗</text>
       <text href="https://github.com/Algorismus-io/elementor-jsx/blob/main/CONTRIBUTING.md" size={14.5} weight={600} font={t.font.body} color={t.color.ink}>Contribute ↗</text>
       <text href="https://docs.wpos.ai/ultra" size={14.5} weight={600} font={t.font.body} color={t.color.ink}>Docs ↗</text>
     </row>
