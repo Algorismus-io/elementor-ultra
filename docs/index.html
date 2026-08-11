@@ -95,33 +95,45 @@ a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-
 				}
 			</style>
 			<script>
-(function(){
-  var s=document.createElement('script');
-  s.src='https://us-assets.i.posthog.com/static/array.js';
-  s.async=true;
-  s.crossOrigin='anonymous';
-  s.onload=function(){
-    try{
-      posthog.init('phc_WpD8BFKAYUNIpEUU7ggxUue33nwbYg36d2Qyx0AlmqD',
-        {api_host:'https://us.i.posthog.com',person_profiles:'identified_only'});
-      var on=function(sel,name,props){
-        document.querySelectorAll(sel).forEach(function(el){
-          el.addEventListener('click',function(){try{posthog.capture(name,props||{})}catch(e){}});
-        });
-      };
-      on('#us-agent','mode_switch',{to:'agent'});
-      on('#us-human','mode_switch',{to:'human'});
-      on('.cmd-copy','copy_command');
-      on('#chrig-full','watch_full_film');
-      on('#cta-row a','cta_click');
-      on('#cta-close a','cta_close_click');
-      document.querySelectorAll('#chip-row>div').forEach(function(c,i){
-        c.addEventListener('click',function(){try{posthog.capture('film_switch',{index:i})}catch(e){}});
-      });
-    }catch(e){}
+(function(d, w){
+  if (w.posthog && w.posthog.__SV) { return; }
+  var ph = w.posthog = w.posthog || [];
+  ph._i = [];
+  ph.init = function(key, config, name){
+    function stubFor(obj, method){
+      obj[method] = function(){ obj.push([method].concat(Array.prototype.slice.call(arguments, 0))); };
+    }
+    var inst = ph;
+    if (typeof name !== 'undefined') { inst = ph[name] = []; } else { name = 'posthog'; }
+    inst.people = inst.people || [];
+    var methods = 'init capture register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload group identify setPersonProperties debug'.split(' ');
+    for (var i = 0; i < methods.length; i++) { stubFor(inst, methods[i]); }
+    ph._i.push([key, config, name]);
+    var sc = d.createElement('script');
+    sc.async = true;
+    sc.crossOrigin = 'anonymous';
+    sc.src = 'https://us-assets.i.posthog.com/static/array.js';
+    d.head.appendChild(sc);
   };
-  document.head.appendChild(s);
-})();
+  ph.__SV = 1;
+})(document, window);
+posthog.init('phc_WpD8BFKAYUNIpEUU7ggxUue33nwbYg36d2Qyx0AlmqD', {api_host:'https://us.i.posthog.com', person_profiles:'identified_only'});
+document.addEventListener('DOMContentLoaded', function(){
+  var on = function(sel, name, props){
+    document.querySelectorAll(sel).forEach(function(el){
+      el.addEventListener('click', function(){ try{ posthog.capture(name, props||{}) }catch(e){} });
+    });
+  };
+  on('#us-agent','mode_switch',{to:'agent'});
+  on('#us-human','mode_switch',{to:'human'});
+  on('.cmd-copy','copy_command');
+  on('#chrig-full','watch_full_film');
+  on('#cta-row a','cta_click');
+  on('#cta-close a','cta_close_click');
+  document.querySelectorAll('#chip-row>div').forEach(function(c,i){
+    c.addEventListener('click', function(){ try{ posthog.capture('film_switch',{index:i}) }catch(e){} });
+  });
+});
 </script>
   <style class="wp-fonts-local">
 @font-face{font-family:Manrope;font-style:normal;font-weight:200 800;font-display:fallback;src:url('/wp-content/themes/twentytwentyfive/assets/fonts/manrope/Manrope-VariableFont_wght.woff2') format('woff2');}
