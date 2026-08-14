@@ -8,7 +8,7 @@ exactly, step by step. Work autonomously and verify each step.`;
 
 export const Start = ({ theme: t }) => (
   <section id="start" tw="flex flex-col items-start w-full max-w-[1180px] px-6 gap-7" pad={[72, 24]} mobile={{ pad: [32, 18] }}>
-    <SectionHead theme={t} no="05" label="Start" />
+    <SectionHead theme={t} no="06" label="Start" />
     <heading tag="h2" w="100%" size={64} weight={400} font={t.font.display} color={t.color.ink} lh={1.02}
       sx={{ textTransform: 'uppercase', letterSpacing: '.01em' }} mobile={{ size: 36 }}>
       Up and running in one paste.

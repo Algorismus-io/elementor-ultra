@@ -2,16 +2,10 @@
 
 <html lang="ko">
 <head>
-<meta charset="utf-8"/>
 <title>exjsx — AI 에이전트로 Elementor 사이트 만들기 (Claude Code, Cursor, MCP)</title>
+<meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="max-image-preview:large" name="robots"/>
-<title>exjsx — AI 에이전트로 Elementor 사이트 만들기 (Claude Code, Cursor, MCP)</title>
-<link href="//127.0.0.1" rel="dns-prefetch"/>
-<link href="/feed/" rel="alternate" title="Elementor Ultra Dev » Feed" type="application/rss+xml"/>
-<link href="/comments/feed/" rel="alternate" title="Elementor Ultra Dev » Comments Feed" type="application/rss+xml"/>
-<link href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F127.0.0.1%3A8947%2F" rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"/>
-<link href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F127.0.0.1%3A8947%2F&amp;format=xml" rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"/>
 <link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="/favicon-32.png" rel="icon" sizes="32x32"/>
 <link href="/apple-touch-icon.png" rel="apple-touch-icon"/>
@@ -66,18 +60,15 @@ a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-
 .e-form-textarea-base:not([data-resizable]) { resize: none; } .e-form-submit-button-base { cursor: pointer; box-sizing: border-box; }
 /*# sourceURL=elementor-frontend-inline-css */
 </style>
-<link href="/wp-content/uploads/elementor/css/post-4.css?ver=1786372442" id="elementor-post-4-css" media="all" rel="stylesheet"/>
-<link href="/wp-content/uploads/elementor/css/base-desktop.css?ver=6a7a717c971f8" id="base-desktop-css" media="all" rel="stylesheet"/>
-<link href="/wp-content/uploads/elementor/css/global-7-frontend-desktop.css?ver=6a7a717c97db0" id="global-7-frontend-desktop-css" media="all" rel="stylesheet"/>
-<link href="/wp-content/uploads/elementor/css/base-mobile.css?ver=6a7a717c971f8" id="base-mobile-css" media="(max-width:767px)" rel="stylesheet"/>
-<link href="/wp-content/uploads/elementor/css/global-7-frontend-mobile.css?ver=6a7a717c97db0" id="global-7-frontend-mobile-css" media="(max-width:767px)" rel="stylesheet"/>
+<link href="/wp-content/uploads/elementor/css/post-4.css?ver=1786622852" id="elementor-post-4-css" media="all" rel="stylesheet"/>
+<link href="/wp-content/uploads/elementor/css/base-desktop.css?ver=6a7e4bb5a0668" id="base-desktop-css" media="all" rel="stylesheet"/>
+<link href="/wp-content/uploads/elementor/css/global-7-frontend-desktop.css?ver=6a7e4bb5a0e38" id="global-7-frontend-desktop-css" media="all" rel="stylesheet"/>
+<link href="/wp-content/uploads/elementor/css/base-mobile.css?ver=6a7e4bb5a0668" id="base-mobile-css" media="(max-width:767px)" rel="stylesheet"/>
+<link href="/wp-content/uploads/elementor/css/global-7-frontend-mobile.css?ver=6a7e4bb5a0e38" id="global-7-frontend-mobile-css" media="(max-width:767px)" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=swap" id="elementor-gf-roboto-css" media="all" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=swap" id="elementor-gf-robotoslab-css" media="all" rel="stylesheet"/>
 <script id="jquery-core-js" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
 <script id="jquery-migrate-js" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
-<link href="/wp-json/" rel="https://api.w.org/"/><link href="/wp-json/wp/v2/pages/7" rel="alternate" title="JSON" type="application/json"/><link href="/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
-<meta content="WordPress 7.0.3" name="generator"/>
-<meta content="Elementor 4.2.1; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap" name="generator"/>
 <style>
 				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
 				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
@@ -119,7 +110,11 @@ a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-
   };
   ph.__SV = 1;
 })(document, window);
-posthog.init('phc_WpD8BFKAYUNIpEUU7ggxUue33nwbYg36d2Qyx0AlmqD', {api_host:'https://us.i.posthog.com', person_profiles:'identified_only'});
+/* persistence:'memory' keeps analytics state in the JS heap only: no cookie and no
+   localStorage, so PECR reg.6 / ePrivacy Art 5(3) consent is not engaged (there is no
+   "strictly necessary" exemption for analytics). ip:false stops IP being stored.
+   Cost: a returning visitor counts as new. See agents/legal/FIXES.md F-14. */
+posthog.init('phc_WpD8BFKAYUNIpEUU7ggxUue33nwbYg36d2Qyx0AlmqD', {api_host:'https://us.i.posthog.com', person_profiles:'identified_only', persistence:'memory', ip:false});
 document.addEventListener('DOMContentLoaded', function(){
   var on = function(sel, name, props){
     document.querySelectorAll(sel).forEach(function(el){
@@ -222,8 +217,8 @@ document.addEventListener('DOMContentLoaded', function(){
     .agent-logos .al-label{width:100%}.al-chip{padding:6px 11px;font-size:11px}}
 
   /* ---- CTA buttons: whole box clickable (stretched link) ---- */
-  #cta-row>div,#cta-close>div{position:relative;cursor:pointer}
-  #cta-row>div a::after,#cta-close>div a::after{content:'';position:absolute;inset:0}
+  #cta-row>div,#cta-close>div,#cta-fifty>div{position:relative;cursor:pointer}
+  #cta-row>div a::after,#cta-close>div a::after,#cta-fifty>div a::after{content:'';position:absolute;inset:0}
 
   /* ---- display treatments ---- */
   #human-surface h1,#human-surface h2{text-transform:uppercase}
@@ -253,7 +248,7 @@ document.addEventListener('DOMContentLoaded', function(){
   .ultra-ticker span em{font-style:normal;color:#147434}
   @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
-  #proof,#seam,#loop,#stack,#start{position:relative}
+  #proof,#fifty,#seam,#loop,#stack,#start{position:relative}
   /* ---- index rail ---- */
   .ultra-rail{position:fixed;left:22px;top:50%;transform:translateY(-50%);z-index:9998;
     display:flex;flex-direction:column;gap:14px;font-family:'GeistM',monospace;font-size:11px;letter-spacing:.12em}
@@ -271,19 +266,18 @@ document.addEventListener('DOMContentLoaded', function(){
   @media(max-width:899px){#loop-strip>div:first-child{border-radius:12px 12px 0 0}
     #loop-strip>div:last-child{border-radius:0 0 12px 12px}}
 
-  /* ---- chapter rig ---- */
-  .chrig-outer{height:485vh;width:100%}
+  /* ---- chapter rig ----
+     The chapters are an ordinary vertical list at their natural height, in normal
+     document flow. The film pins beside them with position:sticky and travels its
+     own grid area — no runway, no transform track, no masked window, no scroll-jack.
+     Every chapter is reachable by plain scrolling, and by clicking a card or a tick. */
+  .chrig-outer{width:100%}
   .chrig{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:26px;width:100%;
-    position:sticky;top:86px;align-items:start}
-  .chrig-stage{}
-  .chrig{transition:grid-template-columns .7s cubic-bezier(.22,1,.36,1)}
-  .chrig.finale{grid-template-columns:minmax(0,1fr) minmax(0,0.001fr);gap:0}
-  .chrig.finale .chrig-chapters-vp{opacity:0;pointer-events:none;transition:opacity .45s ease}
-  .chrig.finale .chrig-frame{transform:none}
-  .chrig-chapters-vp{transition:opacity .45s ease}
-  .chrig-chapters-vp{height:calc(100vh - 140px);overflow:hidden;position:relative;
-    -webkit-mask-image:linear-gradient(to bottom,transparent,black 7%,black 89%,transparent);
-    mask-image:linear-gradient(to bottom,transparent,black 7%,black 89%,transparent)}
+    align-items:start}
+  /* align-self:start (inherited from align-items) keeps the stage content-height, so it
+     has its whole grid area — the height of the chapter column — to stick through. */
+  .chrig-stage{position:sticky;top:max(86px,calc(50vh - 250px))}
+  .chrig-chapters-vp{position:relative}
   .chrig-frame{background:#191914;border-radius:18px;padding:10px;position:relative;transform:rotate(-.4deg)}
   .chrig-frame video{width:100%;display:block;border-radius:10px;background:#000}
   .chrig-rail{position:relative;height:8px;margin:14px 6px 4px;background:#26262E;border-radius:4px;cursor:pointer}
@@ -297,10 +291,14 @@ document.addEventListener('DOMContentLoaded', function(){
   #chrig-full{appearance:none;border:1.5px solid #28C840;background:transparent;color:#28C840;
     border-radius:999px;padding:7px 14px;font-family:'GeistM',monospace;font-size:11.5px;letter-spacing:.1em;cursor:pointer;white-space:nowrap}
   #chrig-full:hover{background:#28C840;color:#0A0A0E}
-  .chrig-chapters{display:flex;flex-direction:column;gap:3.5vh;padding:22vh 12px 30vh 3px;transition:transform .6s cubic-bezier(.22,1,.36,1);will-change:transform}
+  .chrig-chapters{display:flex;flex-direction:column;gap:16px;padding:0}
   .chrig-card{border:1.5px solid #DAD5C8;border-radius:14px;padding:18px 20px;background:#FBFAF5;
-    cursor:pointer;transform:translateY(6px);transition:background .4s,transform .4s,border-color .4s,box-shadow .4s}
-  .chrig-card.on{background:#FFFFFF;transform:none;border-color:#191914;box-shadow:6px 6px 0 #191914}
+    cursor:pointer;transition:background .4s,border-color .4s,box-shadow .4s}
+  .chrig-card.on{background:#FFFFFF;border-color:#191914;box-shadow:6px 6px 0 #191914}
+  /* STREAM mode (the film's origin refuses Range, so the chapters cannot seek it):
+     drop the affordance rather than offer a click that does nothing. */
+  .chrig-stream .chrig-card{cursor:default}
+  .chrig-tick[disabled]{cursor:default;pointer-events:none}
   .cc-top{display:flex;justify-content:space-between;gap:10px;font-family:'GeistM',monospace;font-size:11px;letter-spacing:.12em}
   .cc-n{color:#147434} .cc-at{color:#6E6B62}
   .cc-t{font-family:'Meso','Anton',sans-serif;font-size:27px;text-transform:uppercase;color:#191914;margin:8px 0 6px;line-height:1.05}
@@ -308,20 +306,17 @@ document.addEventListener('DOMContentLoaded', function(){
   .cc-log{display:block;font-family:'GeistM',monospace;font-size:11.5px;color:#28C840;
     background:#0A0A0E;border-radius:8px;padding:8px 12px;white-space:pre-wrap;word-break:break-word}
   @media(max-width:899px){
-    .chrig-outer{height:auto}
-    .chrig{display:flex;flex-direction:column;gap:14px;position:static}
-    .chrig-chapters-vp{height:auto;overflow:visible;-webkit-mask-image:none;mask-image:none;min-width:0;max-width:100%;width:100%}
-    .chrig-stage{position:static}
+    /* same list, stacked: the film pins under the masthead, the chapters read below it */
+    .chrig{display:flex;flex-direction:column;gap:14px}
+    .chrig-chapters-vp{min-width:0;max-width:100%;width:100%}
+    .chrig-stage{position:sticky;top:58px;z-index:3;background:#FAF8F3;padding-bottom:8px}
     .chrig-frame{transform:none}
-    .chrig.finale{gap:14px}
-    .chrig.finale .chrig-chapters-vp{opacity:1;pointer-events:auto}
-    /* the clip strip — horizontal video-editor timeline */
-    .chrig-chapters{flex-direction:row;overflow-x:auto;gap:10px;padding:4px 2px 12px;transition:none;
-      scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;transform:none !important;max-width:100%;position:relative}
-    .chrig-card{flex:0 0 205px;scroll-snap-align:start;padding:12px 14px;transform:none}
+    .chrig-chapters{gap:12px;max-width:100%}
+    .chrig-card{padding:14px 16px}
     .chrig-card.on{box-shadow:3px 3px 0 #191914}
-    .cc-t{font-size:18px;margin:6px 0 0}
-    .cc-note,.cc-log{display:none}
+    .cc-t{font-size:21px;margin:7px 0 6px}
+    .cc-note{font-size:13.5px}
+    .cc-log{font-size:11px}
     .cc-top{font-size:10px}
     .chrig-cap{font-size:10px}
   }
@@ -343,6 +338,26 @@ document.addEventListener('DOMContentLoaded', function(){
   #chip-row>div{flex:1 1 240px !important;min-width:230px}
   #chip-row>div:hover{transform:translateY(-4px);transition:transform .3s}
   @media(max-width:640px){#chip-row>div{flex:1 1 calc(50% - 6px) !important;min-width:0}}
+
+  /* ---- 02 / the fifty: same frame as the film rig, same chip language as #chip-row ---- */
+  .fifty-film{background:#191914;border-radius:18px;padding:10px;width:100%;
+    position:relative;transform:rotate(-.4deg)}
+  .fifty-film video{width:100%;display:block;border-radius:10px;background:#000;aspect-ratio:16/9}
+  .fifty-under{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 8px 4px;flex-wrap:wrap}
+  .fifty-cap{font-family:'GeistM',monospace;font-size:11.5px;letter-spacing:.06em;color:#FAF8F3}
+  #fifty-play{appearance:none;border:1.5px solid #28C840;background:transparent;color:#28C840;
+    border-radius:999px;padding:7px 14px;font-family:'GeistM',monospace;font-size:11.5px;letter-spacing:.1em;
+    cursor:pointer;white-space:nowrap}
+  #fifty-play:hover{background:#28C840;color:#0A0A0E}
+  #fifty-play:focus-visible,#fifty-row>div:focus-visible{outline:2.5px solid #2F6BFF;outline-offset:2px}
+  #fifty-row>div{position:relative;flex:1 1 205px !important;min-width:190px;
+    transition:transform .25s,box-shadow .25s}
+  #fifty-row>div:hover{transform:translateY(-4px);box-shadow:5px 5px 0 #191914}
+  #fifty-row>div a::after{content:'';position:absolute;inset:0}
+  @media(max-width:640px){
+    .fifty-film{transform:none}
+    #fifty-row>div{flex:1 1 calc(50% - 6px) !important;min-width:0}
+  }
   /* ---- seam multiplayer ---- */
   .mp-cursor{position:absolute;left:0;top:0;z-index:7;pointer-events:none;
     will-change:transform;transform:translate(40px,40px)}
@@ -395,8 +410,9 @@ document.addEventListener('DOMContentLoaded', function(){
 </div>
 <nav aria-label="섹션" class="ultra-rail">
 <a data-s="hero" href="#hero">00</a><a data-s="proof" href="#proof">01</a>
-<a data-s="seam" href="#seam">02</a><a data-s="loop" href="#loop">03</a>
-<a data-s="stack" href="#stack">04</a><a data-s="start" href="#start">05</a>
+<a data-s="fifty" href="#fifty">02</a><a data-s="seam" href="#seam">03</a>
+<a data-s="loop" href="#loop">04</a><a data-s="stack" href="#stack">05</a>
+<a data-s="start" href="#start">06</a>
 </nav>
 <script>
 (function(){
@@ -436,7 +452,7 @@ document.addEventListener('DOMContentLoaded', function(){
     if(e.key==='h'||e.key==='H')apply('human');
   });
   // reveals: only direct section children, with a settle fallback
-  var secs=['hero','proof','seam','loop','stack','start','colophon'];
+  var secs=['hero','proof','fifty','seam','loop','stack','start','colophon'];
   var kids=[];
   secs.forEach(function(id){var s=document.getElementById(id);if(!s)return;
     Array.prototype.forEach.call(s.children,function(c){if(c.tagName==='DIV'){c.classList.add('rv');kids.push(c)}});});
@@ -450,7 +466,7 @@ document.addEventListener('DOMContentLoaded', function(){
   var links=document.querySelectorAll('.ultra-rail a');
   var so=new IntersectionObserver(function(es){es.forEach(function(e){
     if(e.isIntersecting){links.forEach(function(l){l.classList.toggle('on',l.dataset.s===e.target.id)})}})},{threshold:.25});
-  secs.slice(0,6).forEach(function(id){var s=document.getElementById(id);if(s)so.observe(s)});
+  secs.slice(0,7).forEach(function(id){var s=document.getElementById(id);if(s)so.observe(s)});
 })();
 </script>
 </div>
@@ -462,23 +478,26 @@ document.addEventListener('DOMContentLoaded', function(){
 <p class="c-1bd07v e-paragraph-base" data-e-type="widget" data-id="e00006" data-interaction-id="e00006">exjsx</p>
 </div>
 <div class="elementor-element elementor-element-e00007 e-con e-atomic-element e-flexbox-base c-17d3pu" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00007" data-interaction-id="e00007">
-<p class="c-94cvnd e-paragraph-base" data-e-type="widget" data-id="e00008" data-interaction-id="e00008"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra" target="_self">
+<p class="c-94cvnd e-paragraph-base" data-e-type="widget" data-id="e00008" data-interaction-id="e00008"><a class="e-paragraph-link-base" href="/showcase/" target="_self">
+		쇼케이스
+	</a></p>
+<p class="c-94cvnd e-paragraph-base" data-e-type="widget" data-id="e00009" data-interaction-id="e00009"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra" target="_self">
 		문서
 	</a></p>
-<p class="c-94cvnd e-paragraph-base" data-e-type="widget" data-id="e00009" data-interaction-id="e00009"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra/examples/overview" target="_self">
+<p class="c-94cvnd e-paragraph-base" data-e-type="widget" data-id="e0000a" data-interaction-id="e0000a"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra/examples/overview" target="_self">
 		예제
 	</a></p>
-<p class="c-94cvnd e-paragraph-base" data-e-type="widget" data-id="e0000a" data-interaction-id="e0000a"><a class="e-paragraph-link-base" href="https://github.com/Algorismus-io/elementor-jsx" target="_self">
+<p class="c-94cvnd e-paragraph-base" data-e-type="widget" data-id="e0000b" data-interaction-id="e0000b"><a class="e-paragraph-link-base" href="https://github.com/Algorismus-io/elementor-jsx" target="_self">
 		GitHub
 	</a></p>
-<p class="c-94cvnd e-paragraph-base" data-e-type="widget" data-id="e0000b" data-interaction-id="e0000b"><a class="e-paragraph-link-base" href="https://www.npmjs.com/package/@algorismus/elementor-jsx" target="_self">
+<p class="c-94cvnd e-paragraph-base" data-e-type="widget" data-id="e0000c" data-interaction-id="e0000c"><a class="e-paragraph-link-base" href="https://www.npmjs.com/package/@algorismus/elementor-jsx" target="_self">
 		npm
 	</a></p>
 </div>
 </div>
-<section class="elementor-element elementor-element-e0000c e-con e-atomic-element e-flexbox-base c-il6gqi" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000c" data-interaction-id="e0000c" id="hero">
-<p class="c-211zq7 e-paragraph-base" data-e-type="widget" data-id="e0000d" data-interaction-id="e0000d">ELEMENTOR + AI 에이전트를 위한 오픈소스 툴체인 · 무료 · MIT · 독립 프로젝트 — ELEMENTOR LTD 제품이 아닙니다</p>
-<div class="elementor-element elementor-element-e0000e elementor-widget elementor-widget-html" data-e-type="widget" data-element_type="widget" data-id="e0000e" data-widget_type="html.default">
+<section class="elementor-element elementor-element-e0000d e-con e-atomic-element e-flexbox-base c-il6gqi" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000d" data-interaction-id="e0000d" id="hero">
+<p class="c-211zq7 e-paragraph-base" data-e-type="widget" data-id="e0000e" data-interaction-id="e0000e">ELEMENTOR + AI 에이전트를 위한 오픈소스 툴체인 · 무료 · MIT · 독립 프로젝트 — ELEMENTOR LTD 제품이 아닙니다</p>
+<div class="elementor-element elementor-element-e0000f elementor-widget elementor-widget-html" data-e-type="widget" data-element_type="widget" data-id="e0000f" data-widget_type="html.default">
 <div aria-label="지원 에이전트" class="agent-logos">
 <span class="al-label">지원 에이전트</span>
 <span class="al-chip"><img alt="" decoding="async" src="/wp-content/uploads/logos/claude.svg"/>Claude Code</span>
@@ -491,35 +510,36 @@ document.addEventListener('DOMContentLoaded', function(){
 <span class="l1">프롬프트 하나 넣으면.</span><br/>
 <span class="l2"><img alt="Elementor" class="e-mark" decoding="async" src="/wp-content/uploads/logos/elementor.svg"/> Elementor 사이트가 나온다.</span>
 </h1> </div>
-<p class="c-1uv5ie e-paragraph-base" data-e-type="widget" data-id="e0000f" data-interaction-id="e0000f"><strong>내 AI 에이전트로 Elementor 사이트를 만드세요.</strong> 에이전트는 이미 Elementor 페이지를 쓸 수 있습니다 — 다만 수천 줄의 생 JSON 속에서, 아무것도 보지 못한 채로요. 결과물이 '에이전트가 만든 티'가 나는 이유입니다. Ultra는 에이전트에게 타입이 있는 컴포넌트, 핫 리로드, 그리고 저장할 때마다 자동으로 도는 pass/fail 검사를 줍니다. 에이전트가 자기가 뭘 만들고 있는지 볼 수 있게 되면, 아름다운 페이지는 자연히 따라옵니다.</p>
-<div class="elementor-element elementor-element-e0000g e-con e-atomic-element e-flexbox-base c-1y9sgi" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000g" data-interaction-id="e0000g" id="cta-row">
-<div class="elementor-element elementor-element-e0000h e-con e-atomic-element e-flexbox-base c-14izo5" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000h" data-interaction-id="e0000h">
-<p class="c-7215m7 e-paragraph-base" data-e-type="widget" data-id="e0000i" data-interaction-id="e0000i"><a class="e-paragraph-link-base" href="#proof" target="_self">
+<p class="c-1uv5ie e-paragraph-base" data-e-type="widget" data-id="e0000g" data-interaction-id="e0000g"><strong>내 AI 에이전트로 Elementor 사이트를 만드세요.</strong> 에이전트는 이미 Elementor 페이지를 쓸 수 있습니다 — 다만 수천 줄의 생 JSON 속에서, 아무것도 보지 못한 채로요. 결과물이 '에이전트가 만든 티'가 나는 이유입니다. Ultra는 에이전트에게 타입이 있는 컴포넌트, 핫 리로드, 그리고 저장할 때마다 자동으로 도는 pass/fail 검사를 줍니다. 에이전트가 자기가 뭘 만들고 있는지 볼 수 있게 되면, 아름다운 페이지는 자연히 따라옵니다.</p>
+<div class="elementor-element elementor-element-e0000h e-con e-atomic-element e-flexbox-base c-1y9sgi" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000h" data-interaction-id="e0000h" id="cta-row">
+<div class="elementor-element elementor-element-e0000i e-con e-atomic-element e-flexbox-base c-aq0e13" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000i" data-interaction-id="e0000i">
+<p class="c-7215m7 e-paragraph-base" data-e-type="widget" data-id="e0000j" data-interaction-id="e0000j"><a class="e-paragraph-link-base" href="#proof" target="_self">
 		에이전트가 빌드하는 영상 보기 — 1:38
 	</a></p>
 </div>
-<div class="elementor-element elementor-element-e0000j e-con e-atomic-element e-flexbox-base c-1csgw5" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000j" data-interaction-id="e0000j">
-<p class="c-194b22 e-paragraph-base" data-e-type="widget" data-id="e0000k" data-interaction-id="e0000k"><a class="e-paragraph-link-base" href="#start" target="_self">
+<div class="elementor-element elementor-element-e0000k e-con e-atomic-element e-flexbox-base c-1nc2by" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000k" data-interaction-id="e0000k">
+<p class="c-194b22 e-paragraph-base" data-e-type="widget" data-id="e0000l" data-interaction-id="e0000l"><a class="e-paragraph-link-base" href="#start" target="_self">
 		붙여넣기 한 번이면 설정 끝
 	</a></p>
 </div>
 </div>
-<p class="c-98ibsx e-paragraph-base" data-e-type="widget" data-id="e0000l" data-interaction-id="e0000l">Elementor로 클라이언트 사이트를 납품하고 Claude Code, Cursor, Codex 또는 MCP 에이전트로 개발하는 개발자와 에이전시를 위한 도구입니다.</p>
-<p class="c-1mpv4o e-paragraph-base" data-e-type="widget" data-id="e0000m" data-interaction-id="e0000m">에이전트도 환영합니다 — <strong>A</strong> 를 누르면 이 페이지의 기계 판독용 버전이 열립니다.</p>
+<p class="c-98ibsx e-paragraph-base" data-e-type="widget" data-id="e0000m" data-interaction-id="e0000m">Elementor로 클라이언트 사이트를 납품하고 Claude Code, Cursor, Codex 또는 MCP 에이전트로 개발하는 개발자와 에이전시를 위한 도구입니다.</p>
+<p class="c-1mpv4o e-paragraph-base" data-e-type="widget" data-id="e0000n" data-interaction-id="e0000n">에이전트도 환영합니다 — <strong>A</strong> 를 누르면 이 페이지의 기계 판독용 버전이 열립니다.</p>
 </section>
-<div class="elementor-element elementor-element-e0000n elementor-widget elementor-widget-html" data-e-type="widget" data-element_type="widget" data-id="e0000n" data-widget_type="html.default">
+<div class="elementor-element elementor-element-e0000o elementor-widget elementor-widget-html" data-e-type="widget" data-element_type="widget" data-id="e0000o" data-widget_type="html.default">
 <div aria-hidden="true" class="ultra-ticker"><div class="track">
 <span>프롬프트 하나 넣으면 <em>·</em> Elementor 사이트가 나온다 <em>·</em> 타입이 있는 컴포넌트 <em>·</em> 라이브 리로드 <em>·</em> 데스크톱·와이드·모바일에서 검증 <em>·</em> 사람 손 안 댐 <em>·</em> 무료 &amp; MIT <em>·</em></span>
 <span>프롬프트 하나 넣으면 <em>·</em> Elementor 사이트가 나온다 <em>·</em> 타입이 있는 컴포넌트 <em>·</em> 라이브 리로드 <em>·</em> 데스크톱·와이드·모바일에서 검증 <em>·</em> 사람 손 안 댐 <em>·</em> 무료 &amp; MIT <em>·</em></span>
 </div></div> </div>
-<section class="elementor-element elementor-element-e0000o e-con e-atomic-element e-flexbox-base c-kpsy5x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000o" data-interaction-id="e0000o" id="proof">
-<div class="elementor-element elementor-element-e0000p e-con e-atomic-element e-flexbox-base c-nokn4c" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000p" data-interaction-id="e0000p">
-<p class="c-lwsecb e-paragraph-base" data-e-type="widget" data-id="e0000q" data-interaction-id="e0000q">01</p>
-<p class="c-10rae1 e-paragraph-base" data-e-type="widget" data-id="e0000r" data-interaction-id="e0000r">증거는 영상으로</p>
+<section class="elementor-element elementor-element-e0000p e-con e-atomic-element e-flexbox-base c-kpsy5x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000p" data-interaction-id="e0000p" id="proof">
+<div class="elementor-element elementor-element-e0000q e-con e-atomic-element e-flexbox-base c-nokn4c" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000q" data-interaction-id="e0000q">
+<p class="c-lwsecb e-paragraph-base" data-e-type="widget" data-id="e0000r" data-interaction-id="e0000r">01</p>
+<p class="c-10rae1 e-paragraph-base" data-e-type="widget" data-id="e0000s" data-interaction-id="e0000s">증거는 영상으로</p>
 </div>
-<h2 class="c-pfkm0a e-heading-base" data-e-type="widget" data-id="e0000s" data-interaction-id="e0000s">실제 웹사이트 여덟 개를 에이전트가 라이브로 다시 만들었습니다.</h2>
-<p class="c-1tjsdz e-paragraph-base" data-e-type="widget" data-id="e0000t" data-interaction-id="e0000t">각 영상은 편집 없는 원테이크입니다 — 원본 사이트와 동일한 공개 카피, 동일한 에셋을 사용했습니다. 사람이 프롬프트 하나를 넣으면, 에이전트가 실제 WordPress 사이트를 상대로 섹션 하나씩 빌드하고, 저장할 때마다 pass/fail 검사가 돌아갑니다 — 그리고 영상은 실제 Elementor 에디터 안에서 끝납니다. 화면의 타이머는 실제 경과 시간입니다: 컷도, 배속으로 감추는 것도 없습니다.</p>
-<div class="elementor-element elementor-element-e0000u elementor-widget elementor-widget-html" data-e-type="widget" data-element_type="widget" data-id="e0000u" data-widget_type="html.default">
+<h2 class="c-pfkm0a e-heading-base" data-e-type="widget" data-id="e0000t" data-interaction-id="e0000t">실제 웹사이트 여덟 개를 에이전트가 라이브로 다시 만들었습니다.</h2>
+<p class="c-1tjsdz e-paragraph-base" data-e-type="widget" data-id="e0000u" data-interaction-id="e0000u">각 영상은 편집 없는 원테이크입니다 — 원본 사이트와 동일한 공개 카피, 동일한 에셋을 사용했습니다. 사람이 프롬프트 하나를 넣으면, 에이전트가 실제 WordPress 사이트를 상대로 섹션 하나씩 빌드하고, 저장할 때마다 pass/fail 검사가 돌아갑니다 — 그리고 영상은 실제 Elementor 에디터 안에서 끝납니다. 화면의 타이머는 실제 경과 시간입니다: 컷도, 배속으로 감추는 것도 없습니다.</p>
+<p class="c-13g8rm e-paragraph-base" data-e-type="widget" data-id="e0000v" data-interaction-id="e0000v">전체 7개 챕터 — 지금 보고 있는 챕터가 켜져 있습니다</p>
+<div class="elementor-element elementor-element-e0000w elementor-widget elementor-widget-html" data-e-type="widget" data-element_type="widget" data-id="e0000w" data-widget_type="html.default">
 <div class="chrig-outer" id="chrig-outer">
 <div class="chrig" id="chrig">
 <div class="chrig-stage">
@@ -542,53 +562,78 @@ document.addEventListener('DOMContentLoaded', function(){
   var FILMS=[{"slug": "housemait", "name": "Housemait", "cap": "HOUSEMAIT — 9 SECTIONS · 31 MIN OF AGENT TIME · 0 HUMAN EDITS", "total": 98.1, "end": 94.5, "ch": [{"n": "CH.01", "t": "THE PROMPT", "at": "AGENT TIME 00:20", "s": 2.75, "note": "One human sentence. That is the entire human contribution to this film.", "log": "> prompt sent — agent takes over"}, {"n": "CH.02", "t": "THE BUILD OPENS", "at": "00:50 → 14:27 · 51×", "s": 14.22, "note": "Compressed build. Every save: millisecond rebuild, diff-driven deploy, hot reload, gates at three widths.", "log": "[dev] full deploy (kit changed) · gates PASS (/)"}, {"n": "CH.03", "t": "FIRST SECTION LANDS", "at": "AGENT TIME 14:31", "s": 29.77, "note": "The first section — hero — lands as one save. The camera catches the reload as it happens.", "log": "[dev] gates PASS (/)"}, {"n": "CH.04", "t": "SECTION BY SECTION", "at": "14:40 → 31:24 · 63×", "s": 38.92, "note": "Whatsapp 19:48 · OS section 23:39 · stars 25:43 · meals 27:20.", "log": "[dev] full deploy (kit changed) · 1 page(s)"}, {"n": "CH.05", "t": "SHIPPED", "at": "AGENT TIME 31:36", "s": 55.35, "note": "The ship signal only fires when every section needle is live. All gates green.", "log": "[dev] gates PASS (/) · 9/9 sections live"}, {"n": "CH.06", "t": "NATIVE ELEMENTOR", "at": "THE EDITOR PROOF", "s": 66.1, "note": "The finished page opens in the real editor — heading selected, navigator showing the tree. Fully editable.", "log": "post.php?action=elementor → loaded"}, {"n": "CH.07", "t": "THE RESULT", "at": "FULL SCROLL", "s": 75.22, "note": "9 sections, 31 minutes of agent time, zero human edits.", "log": "eu-studio check — pass:true"}]}, {"slug": "canopy", "name": "Canopy", "cap": "CANOPY — 10 SECTIONS · 17 MIN OF AGENT TIME · 0 HUMAN EDITS", "total": 97.8, "end": 94.2, "ch": [{"n": "CH.01", "t": "THE PROMPT", "at": "AGENT TIME 00:20", "s": 2.75, "note": "One human sentence. That is the entire human contribution to this film.", "log": "> prompt sent — agent takes over"}, {"n": "CH.02", "t": "THE BUILD OPENS", "at": "00:50 → 08:49 · 30×", "s": 14.25, "note": "Compressed build. Every save: millisecond rebuild, diff-driven deploy, hot reload, gates at three widths.", "log": "[dev] full deploy (kit changed) · gates PASS (/)"}, {"n": "CH.03", "t": "FIRST SECTION LANDS", "at": "AGENT TIME 08:53", "s": 29.73, "note": "The first section — hero — lands as one save. The camera catches the reload as it happens.", "log": "[dev] gates PASS (/)"}, {"n": "CH.04", "t": "SECTION BY SECTION", "at": "09:02 → 16:52 · 30×", "s": 38.88, "note": "New-search 09:57 · tree 11:45 · toolkit 12:30.", "log": "[dev] full deploy (kit changed) · 1 page(s)"}, {"n": "CH.05", "t": "SHIPPED", "at": "AGENT TIME 17:04", "s": 54.98, "note": "The ship signal only fires when every section needle is live. All gates green.", "log": "[dev] gates PASS (/) · 10/10 sections live"}, {"n": "CH.06", "t": "NATIVE ELEMENTOR", "at": "THE EDITOR PROOF", "s": 65.73, "note": "The finished page opens in the real editor — heading selected, navigator showing the tree. Fully editable.", "log": "post.php?action=elementor → loaded"}, {"n": "CH.07", "t": "THE RESULT", "at": "FULL SCROLL", "s": 74.88, "note": "10 sections, 17 minutes of agent time, zero human edits.", "log": "eu-studio check — pass:true"}]}, {"slug": "alike", "name": "Alike.page", "cap": "ALIKE.PAGE — 8 SECTIONS · 22 MIN OF AGENT TIME · 0 HUMAN EDITS", "total": 98.1, "end": 94.5, "ch": [{"n": "CH.01", "t": "THE PROMPT", "at": "AGENT TIME 00:24", "s": 2.75, "note": "One human sentence. That is the entire human contribution to this film.", "log": "> prompt sent — agent takes over"}, {"n": "CH.02", "t": "THE BUILD OPENS", "at": "00:54 → 12:05 · 42×", "s": 14.22, "note": "Compressed build. Every save: millisecond rebuild, diff-driven deploy, hot reload, gates at three widths.", "log": "[dev] full deploy (kit changed) · gates PASS (/)"}, {"n": "CH.03", "t": "FIRST SECTION LANDS", "at": "AGENT TIME 12:09", "s": 29.77, "note": "The first section — cover — lands as one save. The camera catches the reload as it happens.", "log": "[dev] gates PASS (/)"}, {"n": "CH.04", "t": "SECTION BY SECTION", "at": "12:18 → 21:53 · 36×", "s": 38.92, "note": "Store spread 15:30 · essay 18:26 · blow-in 18:26.", "log": "[dev] full deploy (kit changed) · 1 page(s)"}, {"n": "CH.05", "t": "SHIPPED", "at": "AGENT TIME 22:05", "s": 55.35, "note": "The ship signal only fires when every section needle is live. All gates green.", "log": "[dev] gates PASS (/) · 8/8 sections live"}, {"n": "CH.06", "t": "NATIVE ELEMENTOR", "at": "THE EDITOR PROOF", "s": 66.1, "note": "The finished page opens in the real editor — heading selected, navigator showing the tree. Fully editable.", "log": "post.php?action=elementor → loaded"}, {"n": "CH.07", "t": "THE RESULT", "at": "FULL SCROLL", "s": 75.25, "note": "8 sections, 22 minutes of agent time, zero human edits.", "log": "eu-studio check — pass:true"}]}, {"slug": "triple", "name": "Triple Kingdom", "cap": "TRIPLE KINGDOM — 8 SECTIONS · 25 MIN OF AGENT TIME · 0 HUMAN EDITS", "total": 94.9, "end": 91.3, "ch": [{"n": "CH.01", "t": "THE PROMPT", "at": "AGENT TIME 00:20", "s": 2.75, "note": "One human sentence. That is the entire human contribution to this film.", "log": "> prompt sent — agent takes over"}, {"n": "CH.02", "t": "THE BUILD OPENS", "at": "00:50 → 10:11 · 35×", "s": 14.25, "note": "Compressed build. Every save: millisecond rebuild, diff-driven deploy, hot reload, gates at three widths.", "log": "[dev] full deploy (kit changed) · gates PASS (/)"}, {"n": "CH.03", "t": "FIRST SECTION LANDS", "at": "AGENT TIME 10:15", "s": 29.8, "note": "The first section — hero — lands as one save. The camera catches the reload as it happens.", "log": "[dev] gates PASS (/)"}, {"n": "CH.04", "t": "SECTION BY SECTION", "at": "10:24 → 24:58 · 55×", "s": 38.95, "note": "No-ads panel 17:28 · game panels 19:19 · reviews 21:06.", "log": "[dev] full deploy (kit changed) · 1 page(s)"}, {"n": "CH.05", "t": "SHIPPED", "at": "AGENT TIME 25:10", "s": 55.38, "note": "The ship signal only fires when every section needle is live. All gates green.", "log": "[dev] gates PASS (/) · 8/8 sections live"}, {"n": "CH.06", "t": "NATIVE ELEMENTOR", "at": "THE EDITOR PROOF", "s": 66.13, "note": "The finished page opens in the real editor — heading selected, navigator showing the tree. Fully editable.", "log": "post.php?action=elementor → loaded"}, {"n": "CH.07", "t": "THE RESULT", "at": "FULL SCROLL", "s": 75.28, "note": "8 sections, 25 minutes of agent time, zero human edits.", "log": "eu-studio check — pass:true"}]}, {"slug": "billow", "name": "Billow", "cap": "BILLOW — 9 SECTIONS · 25 MIN OF AGENT TIME · 0 HUMAN EDITS", "total": 98.13, "end": 94.53, "ch": [{"n": "CH.01", "t": "THE PROMPT", "at": "AGENT TIME 00:22", "s": 2.75, "note": "One human sentence. That is the entire human contribution to this film.", "log": "> prompt sent — agent takes over"}, {"n": "CH.02", "t": "THE BUILD OPENS", "at": "00:52 → 09:37 · 33×", "s": 14.25, "note": "Compressed build. Every save: millisecond rebuild, diff-driven deploy, hot reload, gates at three widths.", "log": "[dev] full deploy (kit changed) · gates PASS (/)"}, {"n": "CH.03", "t": "FIRST SECTION LANDS", "at": "AGENT TIME 09:41", "s": 29.8, "note": "The first section — hero — lands as one save. The camera catches the reload as it happens.", "log": "[dev] gates PASS (/)"}, {"n": "CH.04", "t": "SECTION BY SECTION", "at": "09:50 → 25:36 · 59×", "s": 38.95, "note": "Five-minutes 16:11 · invoice 17:28 · cockpit 23:11.", "log": "[dev] full deploy (kit changed) · 1 page(s)"}, {"n": "CH.05", "t": "SHIPPED", "at": "AGENT TIME 25:48", "s": 55.38, "note": "The ship signal only fires when every section needle is live. All gates green.", "log": "[dev] gates PASS (/) · 9/9 sections live"}, {"n": "CH.06", "t": "NATIVE ELEMENTOR", "at": "THE EDITOR PROOF", "s": 66.13, "note": "The finished page opens in the real editor — heading selected, navigator showing the tree. Fully editable.", "log": "post.php?action=elementor → loaded"}, {"n": "CH.07", "t": "THE RESULT", "at": "FULL SCROLL", "s": 75.25, "note": "9 sections, 25 minutes of agent time, zero human edits.", "log": "eu-studio check — pass:true"}]}, {"slug": "pumo", "name": "Michael Pumo", "cap": "MICHAEL PUMO — 8 SECTIONS · 30 MIN OF AGENT TIME · 0 HUMAN EDITS", "total": 97.2, "end": 93.6, "ch": [{"n": "CH.01", "t": "THE PROMPT", "at": "AGENT TIME 00:22", "s": 2.75, "note": "One human sentence. That is the entire human contribution to this film.", "log": "> prompt sent — agent takes over"}, {"n": "CH.02", "t": "THE BUILD OPENS", "at": "00:52 → 13:31 · 47×", "s": 14.22, "note": "Compressed build. Every save: millisecond rebuild, diff-driven deploy, hot reload, gates at three widths.", "log": "[dev] full deploy (kit changed) · gates PASS (/)"}, {"n": "CH.03", "t": "FIRST SECTION LANDS", "at": "AGENT TIME 13:35", "s": 29.77, "note": "The first section — hero — lands as one save. The camera catches the reload as it happens.", "log": "[dev] gates PASS (/)"}, {"n": "CH.04", "t": "SECTION BY SECTION", "at": "13:44 → 29:46 · 60×", "s": 38.92, "note": "Capability 20:46 · project index 23:47 · citations 25:07.", "log": "[dev] full deploy (kit changed) · 1 page(s)"}, {"n": "CH.05", "t": "SHIPPED", "at": "AGENT TIME 29:58", "s": 55.35, "note": "The ship signal only fires when every section needle is live. All gates green.", "log": "[dev] gates PASS (/) · 8/8 sections live"}, {"n": "CH.06", "t": "NATIVE ELEMENTOR", "at": "THE EDITOR PROOF", "s": 66.1, "note": "The finished page opens in the real editor — heading selected, navigator showing the tree. Fully editable.", "log": "post.php?action=elementor → loaded"}, {"n": "CH.07", "t": "THE RESULT", "at": "FULL SCROLL", "s": 75.25, "note": "8 sections, 30 minutes of agent time, zero human edits.", "log": "eu-studio check — pass:true"}]}, {"slug": "mat", "name": "Mat.", "cap": "MAT. — 6 SECTIONS · 21 MIN OF AGENT TIME · 0 HUMAN EDITS", "total": 91.63, "end": 88.03, "ch": [{"n": "CH.01", "t": "THE PROMPT", "at": "AGENT TIME 00:22", "s": 2.75, "note": "One human sentence. That is the entire human contribution to this film.", "log": "> prompt sent — agent takes over"}, {"n": "CH.02", "t": "THE BUILD OPENS", "at": "00:52 → 09:30 · 32×", "s": 14.22, "note": "Compressed build. Every save: millisecond rebuild, diff-driven deploy, hot reload, gates at three widths.", "log": "[dev] full deploy (kit changed) · gates PASS (/)"}, {"n": "CH.03", "t": "FIRST SECTION LANDS", "at": "AGENT TIME 09:34", "s": 29.77, "note": "The first section — cta — lands as one save. The camera catches the reload as it happens.", "log": "[dev] gates PASS (/)"}, {"n": "CH.04", "t": "SECTION BY SECTION", "at": "09:43 → 20:56 · 42×", "s": 38.92, "note": "Hero 09:34 · features 15:48 · letter 20:05.", "log": "[dev] full deploy (kit changed) · 1 page(s)"}, {"n": "CH.05", "t": "SHIPPED", "at": "AGENT TIME 21:08", "s": 55.35, "note": "The ship signal only fires when every section needle is live. All gates green.", "log": "[dev] gates PASS (/) · 6/6 sections live"}, {"n": "CH.06", "t": "NATIVE ELEMENTOR", "at": "THE EDITOR PROOF", "s": 66.1, "note": "The finished page opens in the real editor — heading selected, navigator showing the tree. Fully editable.", "log": "post.php?action=elementor → loaded"}, {"n": "CH.07", "t": "THE RESULT", "at": "FULL SCROLL", "s": 75.22, "note": "6 sections, 21 minutes of agent time, zero human edits.", "log": "eu-studio check — pass:true"}]}, {"slug": "bt26", "name": "BT—26", "cap": "BT—26 — 8 PARTS · 24 MIN OF AGENT TIME · 0 HUMAN EDITS", "total": 101.72, "end": 98.12, "ch": [{"n": "CH.01", "t": "THE PROMPT", "at": "AGENT TIME 00:20", "s": 2.75, "note": "One human sentence. That is the entire human contribution to this film.", "log": "> prompt sent — agent takes over"}, {"n": "CH.02", "t": "THE BUILD OPENS", "at": "00:50 → 07:15 · 30×", "s": 14.25, "note": "Compressed build. Every save: millisecond rebuild, diff-driven deploy, hot reload, gates at three widths.", "log": "[dev] full deploy (kit changed) · gates PASS (/)"}, {"n": "CH.03", "t": "FIRST SECTION LANDS", "at": "AGENT TIME 07:19", "s": 26.63, "note": "The first section — PT.01 arrival — lands as one save. The camera catches the reload as it happens.", "log": "[dev] gates PASS (/)"}, {"n": "CH.04", "t": "SECTION BY SECTION", "at": "07:28 → 24:25 · 64×", "s": 35.78, "note": "PT.02 sprint 14:57 · PT.03 table 14:57 · PT.04 clock 17:11 · PT.05 numbers 18:12.", "log": "[dev] full deploy (kit changed) · 1 page(s)"}, {"n": "CH.05", "t": "SHIPPED", "at": "AGENT TIME 24:37", "s": 52.22, "note": "The ship signal only fires when every section needle is live. All gates green.", "log": "[dev] gates PASS (/) · 8/8 parts live"}, {"n": "CH.06", "t": "NATIVE ELEMENTOR", "at": "THE EDITOR PROOF", "s": 62.97, "note": "Filmed after the build: the finished page opens in the real editor — heading selected, navigator showing the tree. Fully editable.", "log": "post.php?action=elementor → loaded"}, {"n": "CH.07", "t": "A LIVE TWEAK", "at": "AGENT TIME 28:04", "s": 72.02, "note": "After shipping, a second prompt changes the page live — the loop never closed.", "log": "> tweak prompt sent"}, {"n": "CH.08", "t": "THE RESULT", "at": "FULL SCROLL", "s": 86.57, "note": "8 parts, 24 minutes of agent time, zero human edits.", "log": "8/8 parts detected"}]}];
   var v=document.getElementById('chrig-video');
   var wrap=document.getElementById('chrig-chapters');
-  wrap.setAttribute('tabindex','0'); wrap.setAttribute('aria-label','Film chapters timeline');
+  wrap.setAttribute('aria-label','Film chapters');
   var rail=document.getElementById('chrig-rail');
   var prog=document.getElementById('chrig-progress');
   var fullBtn=document.getElementById('chrig-full');
   var cap=document.querySelector('.chrig-cap');
+  var outer=document.getElementById('chrig-outer');
   var full=false, active=-1, F=FILMS[0], cards=[], pendingSeek=null;
   var BASE='https://docs.wpos.ai', VQ='?v=3';
+  var calm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var onScreen=true;   // is the pinned film actually in front of the reader
   function endT(i){return i<F.ch.length-1?F.ch[i+1].s:F.end}
-  function go(i,seek){
-    if(i===active&&!seek)return;
+  // ---- can this film be seeked at all?
+  // docs.wpos.ai answers a Range request with 200 and the whole body, so the browser
+  // marks the media unseekable: v.seekable stays empty however much is buffered, and
+  // any v.currentTime = 38.9 is silently clamped. Measured 2026-08-14. Two modes:
+  //   SEEK   (seekable) — the chapter the reader scrolls to drives the film.
+  //   STREAM (not)      — the film plays straight through and drives the chapter list.
+  // Whichever it is, the seven chapters are readable; the mode only decides who leads.
+  // If the origin ever starts honouring Range, SEEK turns itself back on.
+  var seekOK=null;
+  function probeSeek(force){
+    var was=seekOK;
+    try{var s=v.seekable; seekOK=!!(s&&s.length&&s.end(s.length-1)>1.5)}catch(e){seekOK=false}
+    if(seekOK===was&&!force)return seekOK;
+    var rig=document.getElementById('chrig');
+    if(rig)rig.classList.toggle('chrig-stream',seekOK===false);
+    cards.forEach(function(c,i){
+      if(seekOK===false){
+        // a div with an aria-label and no role hides its own text from screen
+        // readers, so the label goes with the button role it belonged to
+        c.removeAttribute('role');c.removeAttribute('tabindex');c.removeAttribute('aria-label');
+      } else {
+        c.setAttribute('role','button');c.setAttribute('tabindex','0');
+        c.setAttribute('aria-label','Play chapter '+F.ch[i].n+' '+F.ch[i].t);
+      }
+    });
+    rail.querySelectorAll('.chrig-tick').forEach(function(k){
+      if(seekOK===false)k.setAttribute('disabled','');else k.removeAttribute('disabled');
+    });
+    return seekOK;
+  }
+  ['loadedmetadata','loadeddata','canplay','progress','durationchange'].forEach(function(ev){
+    v.addEventListener(ev,probeSeek);
+  });
+  function mark(i){
+    if(i===active)return;
     active=i;
-    document.getElementById('chrig').classList.toggle('finale', i===F.ch.length-1);
     cards.forEach(function(c,j){c.classList.toggle('on',j===i)});
     rail.querySelectorAll('.chrig-tick').forEach(function(k,j){k.classList.toggle('on',j===i)});
-    if(!full){
-      if(v.readyState>=1){
-        try{
-          if(seek||Math.abs(v.currentTime-F.ch[i].s)>2){v.currentTime=F.ch[i].s}
-          var p=v.play();if(p&&p.catch)p.catch(function(){})
-        }catch(e){}
-      }
-      else pendingSeek=F.ch[i].s;
-    }
   }
-  // ---- auto-continue: chapter ends -> glide to the next card and keep playing,
-  // unless a human touched the scroll in the last 2.5s or the rig left the viewport
-  var lastHuman=0;
-  ['wheel','touchmove'].forEach(function(ev){
-    window.addEventListener(ev,function(){lastHuman=Date.now()},{passive:true});
-  });
-  window.addEventListener('keydown',function(e){
-    if(['ArrowDown','ArrowUp','PageDown','PageUp',' ','Home','End'].indexOf(e.key)>=0)lastHuman=Date.now();
-  });
-  function rigVisible(){
-    var r=outer.getBoundingClientRect();
-    return r.bottom>window.innerHeight*0.5&&r.top<window.innerHeight*0.5;
+  // go(i, seek, play): light the card + tick, seek the film. play=false only marks.
+  function go(i,seek,play){
+    if(i===active&&!seek)return;
+    mark(i);
+    if(full||seekOK===false)return;
+    if(v.readyState>=1){
+      try{
+        if(seek||Math.abs(v.currentTime-F.ch[i].s)>2)v.currentTime=F.ch[i].s;
+        if(play!==false){var p=v.play();if(p&&p.catch)p.catch(function(){})}
+      }catch(e){}
+    } else { pendingSeek=F.ch[i].s; wantPlay=(play!==false); }
   }
-  function canAuto(){
-    if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return false;
-    return window.matchMedia('(min-width:900px)').matches&&
-      Date.now()-lastHuman>2500&&rigVisible()&&active<F.ch.length-1;
-  }
+  var wantPlay=false;
   v.addEventListener('loadedmetadata',function(){
-    if(pendingSeek!=null){ try{v.currentTime=pendingSeek;var p=v.play();if(p&&p.catch)p.catch(function(){})}catch(e){} pendingSeek=null; }
+    if(pendingSeek!=null){
+      try{if(seekOK)v.currentTime=pendingSeek;if(wantPlay){var p=v.play();if(p&&p.catch)p.catch(function(){})}}catch(e){}
+      pendingSeek=null;
+    }
   });
   function buildFilm(){
     wrap.innerHTML=''; rail.querySelectorAll('.chrig-tick').forEach(function(k){k.remove()});
+    if(cardObs)cardObs.disconnect();
     cards=[];
     F.ch.forEach(function(c,i){
       var d=document.createElement('div'); d.className='chrig-card'; d.dataset.i=i;
@@ -597,103 +642,73 @@ document.addEventListener('DOMContentLoaded', function(){
       d.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();d.click()}});
       d.innerHTML='<div class="cc-top"><span class="cc-n">'+c.n+'</span><span class="cc-at">'+c.at+'</span></div>'+
         '<div class="cc-t">'+c.t+'</div><p class="cc-note">'+c.note+'</p><code class="cc-log">'+c.log+'</code>';
-      d.addEventListener('click',function(){
-        if(isDesk())window.scrollTo({top:runwayY(i)});
-        go(i,true);centerCard(i);
-      });
+      d.addEventListener('click',function(){ go(i,true,true) });
       wrap.appendChild(d); cards.push(d);
       var tick=document.createElement('button'); tick.type='button'; tick.className='chrig-tick';
       tick.style.left=(c.s/F.total*100)+'%'; tick.title=c.n+' '+c.t;
+      tick.setAttribute('aria-label','Play chapter '+c.n+' '+c.t);
       tick.addEventListener('click',function(e){e.stopPropagation();
-        if(isDesk())window.scrollTo({top:runwayY(i)});
-        go(i,true);centerCard(i);
+        go(i,true,true);
+        if(cards[i])cards[i].scrollIntoView({behavior:calm?'auto':'smooth',block:'center'});
       });
       rail.appendChild(tick);
     });
     cap.textContent=F.cap;
-    observe();
+    watchCards();
+    probeSeek(true);   // cards were just re-created — re-apply the mode to them
+    go(0,true,false);
   }
-  // ---- scroll gearing: the pinned runway drives the chapter index ----
-  var outer=document.getElementById('chrig-outer');
-  function isDesk(){return window.matchMedia('(min-width:900px)').matches}
-  function outerTop(){return outer.getBoundingClientRect().top+window.scrollY}
-  function runwayY(i){
-    var span=outer.offsetHeight-window.innerHeight;
-    return outerTop()+((i+0.12)/F.ch.length)*span;
+  // ---- the chapters are in normal flow; the card crossing the middle of the
+  // viewport is the live one. No scroll listener, no runway maths, no scroll-jack.
+  var cardObs=null;
+  function watchCards(){
+    if(!('IntersectionObserver' in window))return;
+    cardObs=new IntersectionObserver(function(es){
+      // pick the entry nearest the viewport middle among those intersecting
+      var best=null,bestD=1e9,mid=window.innerHeight/2;
+      es.forEach(function(e){if(e.isIntersecting)e.target.dataset.vis='1';else e.target.dataset.vis=''});
+      cards.forEach(function(c,i){
+        if(!c.dataset.vis)return;
+        var r=c.getBoundingClientRect(), d=Math.abs(r.top+r.height/2-mid);
+        if(d<bestD){bestD=d;best=i}
+      });
+      if(best!=null&&best!==active)go(best,true,!calm&&onScreen);
+    },{rootMargin:'-42% 0px -42% 0px',threshold:0});
+    cards.forEach(function(c){cardObs.observe(c)});
   }
-  function centerCard(i){
-    if(!isDesk())return;
-    var vp=document.querySelector('.chrig-chapters-vp');
-    var c=cards[i]; if(!c||!vp)return;
-    var y=c.offsetTop + c.offsetHeight/2 - vp.clientHeight/2;
-    wrap.style.transform='translateY('+(-Math.max(0,y))+'px)';
+  // nothing plays off-screen. On screen: play — in STREAM mode that is the whole
+  // point (the film runs and lights the chapter it is on), in SEEK mode go() has
+  // already put it on the right chapter.
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){
+      onScreen=es[0].isIntersecting;
+      if(!onScreen){ if(!full)v.pause(); return; }
+      probeSeek();
+      if(seekOK===false&&!calm){var p=v.play();if(p&&p.catch)p.catch(function(){})}
+    },{threshold:0}).observe(document.querySelector('.chrig-stage'));
   }
-  var ticking=false;
-  function onScroll(){
-    if(!isDesk()||full)return;
-    if(ticking)return; ticking=true;
-    requestAnimationFrame(function(){
-      ticking=false;
-      var span=outer.offsetHeight-window.innerHeight;
-      var p=(window.scrollY-outerTop())/span;
-      if(p<-0.15||p>1.15)return;
-      p=Math.max(0,Math.min(0.999,p));
-      var i=Math.min(F.ch.length-1,Math.floor(p*F.ch.length));
-      if(i!==active){go(i,true);centerCard(i);}
-    });
-  }
-  window.addEventListener('scroll',onScroll,{passive:true});
-  function observe(){
-    if(isDesk()){ go(0,false); centerCard(0); if(!rigVisible())v.pause(); }
-    else { wrap.style.transform='none'; go(0,false); v.pause(); }
-  }
-  var advancing=false;
   function chapterAt(t){
     for(var i=F.ch.length-1;i>=0;i--){if(t>=F.ch[i].s-0.1)return i}
     return 0;
   }
   v.addEventListener('timeupdate',function(){
     prog.style.width=(v.currentTime/F.total*100)+'%';
-    if(!isDesk()){
-      var i=chapterAt(v.currentTime);
-      if(i!==active){
-        active=i;
-        cards.forEach(function(c,j){c.classList.toggle('on',j===i)});
-        rail.querySelectorAll('.chrig-tick').forEach(function(k,j){k.classList.toggle('on',j===i)});
-        if(cards[i])wrap.scrollTo({left:Math.max(0,cards[i].offsetLeft-16),behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
-      }
-      return;
-    }
-    if(full){
-      var fi=chapterAt(v.currentTime);
-      if(fi!==active){
-        active=fi;
-        cards.forEach(function(c,j){c.classList.toggle('on',j===fi)});
-        rail.querySelectorAll('.chrig-tick').forEach(function(k,j){k.classList.toggle('on',j===fi)});
-        centerCard(fi);
-      }
-      return;
-    }
+    // full play: the native controls are the authority, so follow the playhead.
+    if(full){ mark(chapterAt(v.currentTime)); return; }
+    // STREAM mode: the film cannot be steered, so it simply runs; the lit card keeps
+    // meaning "the chapter you are reading", which is what the reader can act on.
+    if(seekOK===false)return;
     if(active<0)return;
-    if(v.currentTime>=endT(active)-.05){
-      if(canAuto()&&!advancing){
-        advancing=true;
-        var next=active+1;
-        window.scrollTo({top:runwayY(next),behavior:'smooth'});
-        go(next,false);centerCard(next);
-        setTimeout(function(){advancing=false},1100);
-      } else if(!advancing){
-        if(active===F.ch.length-1){ v.currentTime=F.ch[active].s; var p=v.play(); if(p&&p.catch)p.catch(function(){}); }
-        else v.pause();
-      }
-    }
+    // SEEK mode: a chapter plays its own segment and stops there. Scrolling on is
+    // what advances the film — the page never moves itself.
+    if(v.currentTime>=endT(active)-.05)v.pause();
   });
   fullBtn.addEventListener('click',function(){
     full=!full;
     fullBtn.textContent=full?'■ EXIT FULL PLAY':'▶ WATCH FULL FILM';
     v.controls=full;
-    if(full){ try{v.currentTime=0;var p=v.play();if(p&&p.catch)p.catch(function(){})}catch(e){} }
-    else { v.pause(); if(active>=0){ v.currentTime=F.ch[active].s; } }
+    if(full){ try{if(seekOK)v.currentTime=0;var p=v.play();if(p&&p.catch)p.catch(function(){})}catch(e){} }
+    else { v.pause(); if(active>=0&&seekOK){ v.currentTime=F.ch[active].s; } }
   });
   function switchFilm(i){
     if(FILMS[i]===F)return;
@@ -705,9 +720,9 @@ document.addEventListener('DOMContentLoaded', function(){
     buildFilm();
     var chips=document.querySelectorAll('#chip-row>div');
     chips.forEach(function(c,j){c.classList.toggle('film-on',j===i)});
-    pendingSeek=F.ch[0].s;
-    if(isDesk())window.scrollTo({top:runwayY(0)});
-    go(0,true);centerCard(0);
+    pendingSeek=F.ch[0].s; wantPlay=!calm;
+    // the chips sit below the rig — bring the film back into view, once, on request
+    outer.scrollIntoView({behavior:calm?'auto':'smooth',block:'start'});
   }
   // chips → film switcher (docs link preserved as a small corner arrow)
   function wireChips(){
@@ -739,76 +754,199 @@ document.addEventListener('DOMContentLoaded', function(){
   buildFilm();
 })();
 </script> </div>
-<p class="c-13g8rm e-paragraph-base" data-e-type="widget" data-id="e0000v" data-interaction-id="e0000v">나머지 일곱 개 — 카드를 클릭하면 해당 영상이 플레이어에 로드됩니다</p>
-<div class="elementor-element elementor-element-e0000w e-con e-atomic-element e-flexbox-base c-b8wldp" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000w" data-interaction-id="e0000w" id="chip-row">
-<div class="elementor-element elementor-element-e0000x e-con e-atomic-element e-flexbox-base c-1bn00d" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000x" data-interaction-id="e0000x">
-<p class="c-id48hx e-paragraph-base" data-e-type="widget" data-id="e0000y" data-interaction-id="e0000y"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra/examples/housemait" target="_self">
+<p class="c-13g8rm e-paragraph-base" data-e-type="widget" data-id="e0000x" data-interaction-id="e0000x">나머지 일곱 개 — 카드를 클릭하면 해당 영상이 플레이어에 로드됩니다</p>
+<div class="elementor-element elementor-element-e0000y e-con e-atomic-element e-flexbox-base c-b8wldp" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000y" data-interaction-id="e0000y" id="chip-row">
+<div class="elementor-element elementor-element-e0000z e-con e-atomic-element e-flexbox-base c-1bn00d" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000z" data-interaction-id="e0000z">
+<p class="c-id48hx e-paragraph-base" data-e-type="widget" data-id="e00010" data-interaction-id="e00010"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra/examples/housemait" target="_self">
 		Housemait
 	</a></p>
-<p class="c-wzwdpr e-paragraph-base" data-e-type="widget" data-id="e0000z" data-interaction-id="e0000z">가족 앱 SaaS</p>
-<p class="c-17kmn8 e-paragraph-base" data-e-type="widget" data-id="e00010" data-interaction-id="e00010">섹션 9개 · 31분</p>
+<p class="c-wzwdpr e-paragraph-base" data-e-type="widget" data-id="e00011" data-interaction-id="e00011">가족 앱 SaaS</p>
+<p class="c-17kmn8 e-paragraph-base" data-e-type="widget" data-id="e00012" data-interaction-id="e00012">섹션 9개 · 31분</p>
 </div>
-<div class="elementor-element elementor-element-e00011 e-con e-atomic-element e-flexbox-base c-1kdkji" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00011" data-interaction-id="e00011">
-<p class="c-vdpalv e-paragraph-base" data-e-type="widget" data-id="e00012" data-interaction-id="e00012"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra/examples/canopy" target="_self">
+<div class="elementor-element elementor-element-e00013 e-con e-atomic-element e-flexbox-base c-1kdkji" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00013" data-interaction-id="e00013">
+<p class="c-vdpalv e-paragraph-base" data-e-type="widget" data-id="e00014" data-interaction-id="e00014"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra/examples/canopy" target="_self">
 		Canopy
 	</a></p>
-<p class="c-8l0bbx e-paragraph-base" data-e-type="widget" data-id="e00013" data-interaction-id="e00013">SaaS 마케팅 사이트</p>
-<p class="c-19k3ao e-paragraph-base" data-e-type="widget" data-id="e00014" data-interaction-id="e00014">섹션 10개 · 17분</p>
+<p class="c-8l0bbx e-paragraph-base" data-e-type="widget" data-id="e00015" data-interaction-id="e00015">SaaS 마케팅 사이트</p>
+<p class="c-19k3ao e-paragraph-base" data-e-type="widget" data-id="e00016" data-interaction-id="e00016">섹션 10개 · 17분</p>
 </div>
-<div class="elementor-element elementor-element-e00015 e-con e-atomic-element e-flexbox-base c-vuadha" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00015" data-interaction-id="e00015">
-<p class="c-vjhsfx e-paragraph-base" data-e-type="widget" data-id="e00016" data-interaction-id="e00016"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra/examples/alike" target="_self">
+<div class="elementor-element elementor-element-e00017 e-con e-atomic-element e-flexbox-base c-vuadha" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00017" data-interaction-id="e00017">
+<p class="c-vjhsfx e-paragraph-base" data-e-type="widget" data-id="e00018" data-interaction-id="e00018"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra/examples/alike" target="_self">
 		Alike.page
 	</a></p>
-<p class="c-16s236 e-paragraph-base" data-e-type="widget" data-id="e00017" data-interaction-id="e00017">크리에이터 스토어프런트</p>
-<p class="c-1q474g e-paragraph-base" data-e-type="widget" data-id="e00018" data-interaction-id="e00018">섹션 8개 · 22분</p>
+<p class="c-16s236 e-paragraph-base" data-e-type="widget" data-id="e00019" data-interaction-id="e00019">크리에이터 스토어프런트</p>
+<p class="c-1q474g e-paragraph-base" data-e-type="widget" data-id="e0001a" data-interaction-id="e0001a">섹션 8개 · 22분</p>
 </div>
-<div class="elementor-element elementor-element-e00019 e-con e-atomic-element e-flexbox-base c-fv74t6" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00019" data-interaction-id="e00019">
-<p class="c-1ake2v e-paragraph-base" data-e-type="widget" data-id="e0001a" data-interaction-id="e0001a"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra/examples/triple" target="_self">
+<div class="elementor-element elementor-element-e0001b e-con e-atomic-element e-flexbox-base c-fv74t6" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0001b" data-interaction-id="e0001b">
+<p class="c-1ake2v e-paragraph-base" data-e-type="widget" data-id="e0001c" data-interaction-id="e0001c"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra/examples/triple" target="_self">
 		Triple Kingdom
 	</a></p>
-<p class="c-17srqz e-paragraph-base" data-e-type="widget" data-id="e0001b" data-interaction-id="e0001b">인디 게임 사이트</p>
-<p class="c-1pawsu e-paragraph-base" data-e-type="widget" data-id="e0001c" data-interaction-id="e0001c">섹션 8개 · 25분</p>
+<p class="c-17srqz e-paragraph-base" data-e-type="widget" data-id="e0001d" data-interaction-id="e0001d">인디 게임 사이트</p>
+<p class="c-1pawsu e-paragraph-base" data-e-type="widget" data-id="e0001e" data-interaction-id="e0001e">섹션 8개 · 25분</p>
 </div>
-<div class="elementor-element elementor-element-e0001d e-con e-atomic-element e-flexbox-base c-1t11li" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0001d" data-interaction-id="e0001d">
-<p class="c-1feaeb e-paragraph-base" data-e-type="widget" data-id="e0001e" data-interaction-id="e0001e"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra/examples/billow" target="_self">
+<div class="elementor-element elementor-element-e0001f e-con e-atomic-element e-flexbox-base c-1t11li" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0001f" data-interaction-id="e0001f">
+<p class="c-1feaeb e-paragraph-base" data-e-type="widget" data-id="e0001g" data-interaction-id="e0001g"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra/examples/billow" target="_self">
 		Billow
 	</a></p>
-<p class="c-1txeds e-paragraph-base" data-e-type="widget" data-id="e0001f" data-interaction-id="e0001f">금융 SaaS</p>
-<p class="c-4oji8w e-paragraph-base" data-e-type="widget" data-id="e0001g" data-interaction-id="e0001g">섹션 9개 · 25분</p>
+<p class="c-1txeds e-paragraph-base" data-e-type="widget" data-id="e0001h" data-interaction-id="e0001h">금융 SaaS</p>
+<p class="c-4oji8w e-paragraph-base" data-e-type="widget" data-id="e0001i" data-interaction-id="e0001i">섹션 9개 · 25분</p>
 </div>
-<div class="elementor-element elementor-element-e0001h e-con e-atomic-element e-flexbox-base c-wq74v9" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0001h" data-interaction-id="e0001h">
-<p class="c-12jq4g e-paragraph-base" data-e-type="widget" data-id="e0001i" data-interaction-id="e0001i"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra/examples/pumo" target="_self">
+<div class="elementor-element elementor-element-e0001j e-con e-atomic-element e-flexbox-base c-wq74v9" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0001j" data-interaction-id="e0001j">
+<p class="c-12jq4g e-paragraph-base" data-e-type="widget" data-id="e0001k" data-interaction-id="e0001k"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra/examples/pumo" target="_self">
 		Michael Pumo
 	</a></p>
-<p class="c-hbcm0i e-paragraph-base" data-e-type="widget" data-id="e0001j" data-interaction-id="e0001j">개발자 포트폴리오</p>
-<p class="c-txe8hm e-paragraph-base" data-e-type="widget" data-id="e0001k" data-interaction-id="e0001k">섹션 8개 · 30분</p>
+<p class="c-hbcm0i e-paragraph-base" data-e-type="widget" data-id="e0001l" data-interaction-id="e0001l">개발자 포트폴리오</p>
+<p class="c-txe8hm e-paragraph-base" data-e-type="widget" data-id="e0001m" data-interaction-id="e0001m">섹션 8개 · 30분</p>
 </div>
-<div class="elementor-element elementor-element-e0001l e-con e-atomic-element e-flexbox-base c-2pxoyq" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0001l" data-interaction-id="e0001l">
-<p class="c-dmtcz e-paragraph-base" data-e-type="widget" data-id="e0001m" data-interaction-id="e0001m"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra/examples/mat" target="_self">
+<div class="elementor-element elementor-element-e0001n e-con e-atomic-element e-flexbox-base c-2pxoyq" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0001n" data-interaction-id="e0001n">
+<p class="c-dmtcz e-paragraph-base" data-e-type="widget" data-id="e0001o" data-interaction-id="e0001o"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra/examples/mat" target="_self">
 		Mat.
 	</a></p>
-<p class="c-1mik4n e-paragraph-base" data-e-type="widget" data-id="e0001n" data-interaction-id="e0001n">iOS 앱 사이트</p>
-<p class="c-e7sxdh e-paragraph-base" data-e-type="widget" data-id="e0001o" data-interaction-id="e0001o">섹션 6개 · 21분</p>
+<p class="c-1mik4n e-paragraph-base" data-e-type="widget" data-id="e0001p" data-interaction-id="e0001p">iOS 앱 사이트</p>
+<p class="c-e7sxdh e-paragraph-base" data-e-type="widget" data-id="e0001q" data-interaction-id="e0001q">섹션 6개 · 21분</p>
 </div>
-<div class="elementor-element elementor-element-e0001p e-con e-atomic-element e-flexbox-base c-1vvjl7" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0001p" data-interaction-id="e0001p">
-<p class="c-35mpzy e-paragraph-base" data-e-type="widget" data-id="e0001q" data-interaction-id="e0001q"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra/examples/bt26" target="_self">
+<div class="elementor-element elementor-element-e0001r e-con e-atomic-element e-flexbox-base c-1vvjl7" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0001r" data-interaction-id="e0001r">
+<p class="c-35mpzy e-paragraph-base" data-e-type="widget" data-id="e0001s" data-interaction-id="e0001s"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra/examples/bt26" target="_self">
 		BT—26
 	</a></p>
-<p class="c-brcfbc e-paragraph-base" data-e-type="widget" data-id="e0001r" data-interaction-id="e0001r">이벤트 사이트</p>
-<p class="c-1rj9x0 e-paragraph-base" data-e-type="widget" data-id="e0001s" data-interaction-id="e0001s">파트 8개 · 24분</p>
+<p class="c-brcfbc e-paragraph-base" data-e-type="widget" data-id="e0001t" data-interaction-id="e0001t">이벤트 사이트</p>
+<p class="c-1rj9x0 e-paragraph-base" data-e-type="widget" data-id="e0001u" data-interaction-id="e0001u">파트 8개 · 24분</p>
 </div>
 </div>
 </section>
-<section class="elementor-element elementor-element-e0001t e-con e-atomic-element e-flexbox-base c-kpsy5x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0001t" data-interaction-id="e0001t" id="seam">
-<div class="elementor-element elementor-element-e0001u e-con e-atomic-element e-flexbox-base c-nokn4c" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0001u" data-interaction-id="e0001u">
-<p class="c-lwsecb e-paragraph-base" data-e-type="widget" data-id="e0001v" data-interaction-id="e0001v">02</p>
-<p class="c-10rae1 e-paragraph-base" data-e-type="widget" data-id="e0001w" data-interaction-id="e0001w">Before / After</p>
+<section class="elementor-element elementor-element-e0001v e-con e-atomic-element e-flexbox-base c-kpsy5x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0001v" data-interaction-id="e0001v" id="fifty">
+<div class="elementor-element elementor-element-e0001w e-con e-atomic-element e-flexbox-base c-nokn4c" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0001w" data-interaction-id="e0001w">
+<p class="c-lwsecb e-paragraph-base" data-e-type="widget" data-id="e0001x" data-interaction-id="e0001x">02</p>
+<p class="c-10rae1 e-paragraph-base" data-e-type="widget" data-id="e0001y" data-interaction-id="e0001y">하루에 50개</p>
 </div>
-<h2 class="c-pfkm0a e-heading-base" data-e-type="widget" data-id="e0001x" data-interaction-id="e0001x">같은 히어로 섹션. 앞이 안 보이는 JSON 3,400줄 —<br/>아니면 타입이 있는 JSX 아홉 줄.</h2>
-<div class="elementor-element elementor-element-e0001y e-con e-atomic-element e-flexbox-base c-154w1x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0001y" data-interaction-id="e0001y">
-<div class="elementor-element elementor-element-e0001z e-con e-atomic-element e-flexbox-base c-12lm6a" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0001z" data-interaction-id="e0001z" id="seam-blob">
-<p class="c-1de3yx e-paragraph-base" data-e-type="widget" data-id="e00020" data-interaction-id="e00020">지금 에이전트가 쓰고 있는 것 — 앞이 안 보이는 상태로</p>
+<h2 class="c-zdftbc e-heading-base" data-e-type="widget" data-id="e0001z" data-interaction-id="e0001z">가상의 브랜드 50개. 실제 Elementor 페이지 50개.</h2>
+<p class="c-1tjsdz e-paragraph-base" data-e-type="widget" data-id="e00020" data-interaction-id="e00020">한 번의 실행, 50개의 브리프, 개발자 하루 남짓. 각 브리프에는 가상의 비즈니스명, 타깃 오디언스, 비주얼 아키타입만 적혀 있었고 — 나머지는 에이전트가 처리했습니다. 아트 디렉션, 팔레트, 타이포, 카피, 이미지, 그리고 exjsx를 통한 네이티브 Elementor 빌드까지. 레이아웃을 작성한 사람은 없습니다. 사람은 깨진 것을 디버깅하고 50개를 눈으로 보며 좋은 순서대로 줄 세웠을 뿐입니다. 별로인 것들도 목록에 그대로 있습니다.</p>
 <div class="elementor-element elementor-element-e00021 elementor-widget elementor-widget-html" data-e-type="widget" data-element_type="widget" data-id="e00021" data-widget_type="html.default">
+<div class="fifty-film">
+<video aria-label="무음 6초 루프: 50개 페이지가 하나의 그리드로 조립되는 과정" id="fifty-loop" loop="" muted="" playsinline="" poster="/wp-content/uploads/film/loop-poster.jpg" preload="none" src="/wp-content/uploads/film/loop-16x9.mp4"></video>
+<div class="fifty-under">
+<span class="fifty-cap">50개 페이지 · 50가지 아트 디렉션 · 한 번의 실행 · 무음 6초 루프</span>
+<button aria-label="루프 재생 또는 일시정지" id="fifty-play" type="button">▶ 재생</button>
+</div>
+</div>
+<script>
+(function(){
+  var v=document.getElementById('fifty-loop');
+  var b=document.getElementById('fifty-play');
+  if(!v||!b)return;
+  var calm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function sync(){b.textContent=v.paused?'▶ PLAY':'❚❚ PAUSE'}
+  b.addEventListener('click',function(){
+    if(v.paused){var p=v.play();if(p&&p.catch)p.catch(function(){})}else v.pause();
+  });
+  v.addEventListener('play',sync); v.addEventListener('pause',sync); sync();
+  // preload="none" + play only while on screen: the loop costs nothing until it is read,
+  // and nothing at all if the reader asked for reduced motion.
+  if(!calm&&'IntersectionObserver' in window){
+    new IntersectionObserver(function(es){
+      if(es[0].isIntersecting){var p=v.play();if(p&&p.catch)p.catch(function(){})}
+      else v.pause();
+    },{threshold:.25}).observe(v);
+  }
+})();
+</script> </div>
+<p class="c-13g8rm e-paragraph-base" data-e-type="widget" data-id="e00022" data-interaction-id="e00022">50개 중 상위 10개 — 사람이 직접 디자인 리뷰로 매긴 순위</p>
+<div class="elementor-element elementor-element-e00023 e-con e-atomic-element e-flexbox-base c-b8wldp" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00023" data-interaction-id="e00023" id="fifty-row">
+<div class="elementor-element elementor-element-e00024 e-con e-atomic-element e-flexbox-base c-wq74v9" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00024" data-interaction-id="e00024">
+<p class="c-1nextt e-paragraph-base" data-e-type="widget" data-id="e00025" data-interaction-id="e00025"><a class="e-paragraph-link-base" href="/showcase/runtime-conf/" target="_self">
+		RUNTIME
+	</a></p>
+<p class="c-trrvdr e-paragraph-base" data-e-type="widget" data-id="e00026" data-interaction-id="e00026">개발자 컨퍼런스</p>
+<p class="c-5vxtj8 e-paragraph-base" data-e-type="widget" data-id="e00027" data-interaction-id="e00027">레이아웃이 된 초대형 타이포</p>
+</div>
+<div class="elementor-element elementor-element-e00028 e-con e-atomic-element e-flexbox-base c-14u03v" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00028" data-interaction-id="e00028">
+<p class="c-1snzja e-paragraph-base" data-e-type="widget" data-id="e00029" data-interaction-id="e00029"><a class="e-paragraph-link-base" href="/showcase/blunt-instrument/" target="_self">
+		Blunt Instrument
+	</a></p>
+<p class="c-1dy0uz e-paragraph-base" data-e-type="widget" data-id="e0002a" data-interaction-id="e0002a">퍼포먼스 마케팅 에이전시</p>
+<p class="c-12001a e-paragraph-base" data-e-type="widget" data-id="e0002b" data-interaction-id="e0002b">레이아웃이 된 초대형 타이포</p>
+</div>
+<div class="elementor-element elementor-element-e0002c e-con e-atomic-element e-flexbox-base c-1osevp" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0002c" data-interaction-id="e0002c">
+<p class="c-qhaje1 e-paragraph-base" data-e-type="widget" data-id="e0002d" data-interaction-id="e0002d"><a class="e-paragraph-link-base" href="/showcase/loud-quarry/" target="_self">
+		Loud Quarry
+	</a></p>
+<p class="c-b43wur e-paragraph-base" data-e-type="widget" data-id="e0002e" data-interaction-id="e0002e">음악 페스티벌</p>
+<p class="c-3lza2g e-paragraph-base" data-e-type="widget" data-id="e0002f" data-interaction-id="e0002f">포스터 월 / 진 스프레드</p>
+</div>
+<div class="elementor-element elementor-element-e0002g e-con e-atomic-element e-flexbox-base c-1hi9b0" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0002g" data-interaction-id="e0002g">
+<p class="c-n8odty e-paragraph-base" data-e-type="widget" data-id="e0002h" data-interaction-id="e0002h"><a class="e-paragraph-link-base" href="/showcase/fourth-hand/" target="_self">
+		Fourth Hand
+	</a></p>
+<p class="c-pvgl0w e-paragraph-base" data-e-type="widget" data-id="e0002i" data-interaction-id="e0002i">빈티지 시계 마켓플레이스</p>
+<p class="c-13a99x e-paragraph-base" data-e-type="widget" data-id="e0002j" data-interaction-id="e0002j">카탈로그 그리드</p>
+</div>
+<div class="elementor-element elementor-element-e0002k e-con e-atomic-element e-flexbox-base c-395av1" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0002k" data-interaction-id="e0002k">
+<p class="c-12jq4g e-paragraph-base" data-e-type="widget" data-id="e0002l" data-interaction-id="e0002l"><a class="e-paragraph-link-base" href="/showcase/hard-turn/" target="_self">
+		Hard Turn
+	</a></p>
+<p class="c-hbcm0i e-paragraph-base" data-e-type="widget" data-id="e0002m" data-interaction-id="e0002m">브랜드 아이덴티티 에이전시</p>
+<p class="c-jj55iv e-paragraph-base" data-e-type="widget" data-id="e0002n" data-interaction-id="e0002n">비대칭 대각선 콜라주</p>
+</div>
+<div class="elementor-element elementor-element-e0002o e-con e-atomic-element e-flexbox-base c-vvpz0c" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0002o" data-interaction-id="e0002o">
+<p class="c-10phmo e-paragraph-base" data-e-type="widget" data-id="e0002p" data-interaction-id="e0002p"><a class="e-paragraph-link-base" href="/showcase/casa-ocotillo/" target="_self">
+		Casa Ocotillo
+	</a></p>
+<p class="c-1gifm2 e-paragraph-base" data-e-type="widget" data-id="e0002q" data-interaction-id="e0002q">부티크 호텔</p>
+<p class="c-1v6g6w e-paragraph-base" data-e-type="widget" data-id="e0002r" data-interaction-id="e0002r">분할 화면 스크롤러</p>
+</div>
+<div class="elementor-element elementor-element-e0002s e-con e-atomic-element e-flexbox-base c-13fis8" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0002s" data-interaction-id="e0002s">
+<p class="c-shh0is e-paragraph-base" data-e-type="widget" data-id="e0002t" data-interaction-id="e0002t"><a class="e-paragraph-link-base" href="/showcase/onsen-mirador/" target="_self">
+		Onsen Mirador
+	</a></p>
+<p class="c-actjda e-paragraph-base" data-e-type="widget" data-id="e0002u" data-interaction-id="e0002u">온천과 스파</p>
+<p class="c-oj1zf7 e-paragraph-base" data-e-type="widget" data-id="e0002v" data-interaction-id="e0002v">분할 화면 스크롤러</p>
+</div>
+<div class="elementor-element elementor-element-e0002w e-con e-atomic-element e-flexbox-base c-1kmzv1" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0002w" data-interaction-id="e0002w">
+<p class="c-hoif2z e-paragraph-base" data-e-type="widget" data-id="e0002x" data-interaction-id="e0002x"><a class="e-paragraph-link-base" href="/showcase/the-undertow/" target="_self">
+		The Undertow
+	</a></p>
+<p class="c-4uxcn9 e-paragraph-base" data-e-type="widget" data-id="e0002y" data-interaction-id="e0002y">탐사보도 매거진</p>
+<p class="c-x6chii e-paragraph-base" data-e-type="widget" data-id="e0002z" data-interaction-id="e0002z">에디토리얼 인덱스 레일</p>
+</div>
+<div class="elementor-element elementor-element-e00030 e-con e-atomic-element e-flexbox-base c-1vfuen" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00030" data-interaction-id="e00030">
+<p class="c-qj76pw e-paragraph-base" data-e-type="widget" data-id="e00031" data-interaction-id="e00031"><a class="e-paragraph-link-base" href="/showcase/the-ward-paper/" target="_self">
+		The Ward
+	</a></p>
+<p class="c-1cme81 e-paragraph-base" data-e-type="widget" data-id="e00032" data-interaction-id="e00032">지역 뉴스 협동조합</p>
+<p class="c-6c3n1v e-paragraph-base" data-e-type="widget" data-id="e00033" data-interaction-id="e00033">싱글 컬럼 롱폼</p>
+</div>
+<div class="elementor-element elementor-element-e00034 e-con e-atomic-element e-flexbox-base c-196f7i" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00034" data-interaction-id="e00034">
+<p class="c-178g02 e-paragraph-base" data-e-type="widget" data-id="e00035" data-interaction-id="e00035"><a class="e-paragraph-link-base" href="/showcase/kilnhouse/" target="_self">
+		Kilnhouse
+	</a></p>
+<p class="c-1e86fg e-paragraph-base" data-e-type="widget" data-id="e00036" data-interaction-id="e00036">DTC 주방용품</p>
+<p class="c-1dfe7q e-paragraph-base" data-e-type="widget" data-id="e00037" data-interaction-id="e00037">카탈로그 그리드</p>
+</div>
+</div>
+<div class="elementor-element elementor-element-e00038 e-con e-atomic-element e-flexbox-base c-1y9sgi" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00038" data-interaction-id="e00038" id="cta-fifty">
+<div class="elementor-element elementor-element-e00039 e-con e-atomic-element e-flexbox-base c-aq0e13" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00039" data-interaction-id="e00039">
+<p class="c-7215m7 e-paragraph-base" data-e-type="widget" data-id="e0003a" data-interaction-id="e0003a"><a class="e-paragraph-link-base" href="/showcase/" target="_self">
+		쇼케이스 열기 — 50개 전체
+	</a></p>
+</div>
+<div class="elementor-element elementor-element-e0003b e-con e-atomic-element e-flexbox-base c-1nc2by" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003b" data-interaction-id="e0003b">
+<p class="c-194b22 e-paragraph-base" data-e-type="widget" data-id="e0003c" data-interaction-id="e0003c"><a class="e-paragraph-link-base" href="/showcase/runtime-conf/" target="_self">
+		1위 페이지 보기
+	</a></p>
+</div>
+</div>
+<p class="c-7dvijo e-paragraph-base" data-e-type="widget" data-id="e0003d" data-interaction-id="e0003d">이 50개 비즈니스는 모두 가상입니다. 페이지에 담긴 텍스트, 통계, 가격, 후기, 인물, 이미지는 디자인 시연을 위해 생성된 것으로 — 실제 판매 제안이나 실제 추천이 아닙니다. 각 케이스 스터디에 이 고지가 붙어 있으며, 페이지 자체를 라이브 샌드박스로 임베드해 실물을 직접 스크롤해 볼 수 있습니다.</p>
+</section>
+<section class="elementor-element elementor-element-e0003e e-con e-atomic-element e-flexbox-base c-kpsy5x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003e" data-interaction-id="e0003e" id="seam">
+<div class="elementor-element elementor-element-e0003f e-con e-atomic-element e-flexbox-base c-nokn4c" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003f" data-interaction-id="e0003f">
+<p class="c-lwsecb e-paragraph-base" data-e-type="widget" data-id="e0003g" data-interaction-id="e0003g">03</p>
+<p class="c-10rae1 e-paragraph-base" data-e-type="widget" data-id="e0003h" data-interaction-id="e0003h">Before / After</p>
+</div>
+<h2 class="c-pfkm0a e-heading-base" data-e-type="widget" data-id="e0003i" data-interaction-id="e0003i">같은 히어로 섹션. 앞이 안 보이는 JSON 3,400줄 —<br/>아니면 타입이 있는 JSX 아홉 줄.</h2>
+<div class="elementor-element elementor-element-e0003j e-con e-atomic-element e-flexbox-base c-154w1x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003j" data-interaction-id="e0003j">
+<div class="elementor-element elementor-element-e0003k e-con e-atomic-element e-flexbox-base c-12lm6a" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003k" data-interaction-id="e0003k" id="seam-blob">
+<p class="c-1de3yx e-paragraph-base" data-e-type="widget" data-id="e0003l" data-interaction-id="e0003l">지금 에이전트가 쓰고 있는 것 — 앞이 안 보이는 상태로</p>
+<div class="elementor-element elementor-element-e0003m elementor-widget elementor-widget-html" data-e-type="widget" data-element_type="widget" data-id="e0003m" data-widget_type="html.default">
 <div aria-hidden="true" id="seam-blob-pre"><pre style="margin:0;white-space:pre-wrap;word-break:break-word;font-family:'GeistM',ui-monospace,monospace;font-size:11px;line-height:1.6;color:#63604F">[{ "id": "e00000", "elType": "e-flexbox",
   "settings": { "classes": { "$$type": "classes",
     "value": ["g-c-12f5qe"] },
@@ -835,9 +973,9 @@ document.addEventListener('DOMContentLoaded', function(){
         "widgetType": "e-heading" },
        ...and 3,400 more lines like these</pre></div> </div>
 </div>
-<div class="elementor-element elementor-element-e00022 e-con e-atomic-element e-flexbox-base c-1vva0t" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00022" data-interaction-id="e00022" id="seam-jsx">
-<p class="c-1uboct e-paragraph-base" data-e-type="widget" data-id="e00023" data-interaction-id="e00023">같은 섹션, ULTRA와 함께라면</p>
-<div class="elementor-element elementor-element-e00024 elementor-widget elementor-widget-html" data-e-type="widget" data-element_type="widget" data-id="e00024" data-widget_type="html.default">
+<div class="elementor-element elementor-element-e0003n e-con e-atomic-element e-flexbox-base c-1vva0t" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003n" data-interaction-id="e0003n" id="seam-jsx">
+<p class="c-1uboct e-paragraph-base" data-e-type="widget" data-id="e0003o" data-interaction-id="e0003o">같은 섹션, ULTRA와 함께라면</p>
+<div class="elementor-element elementor-element-e0003p elementor-widget elementor-widget-html" data-e-type="widget" data-element_type="widget" data-id="e0003p" data-widget_type="html.default">
 <div aria-hidden="true" id="seam-jsx-pre"><pre style="margin:0;white-space:pre-wrap;word-break:break-word;font-family:'GeistM',ui-monospace,monospace;font-size:13px;line-height:1.65;color:#ECECF1">&lt;section id="hero" tw="flex flex-col
   items-center gap-6" bg={t.color.paper}&gt;
   &lt;h1 size={<span id="jsx-size">72</span>} font="Recoleta"
@@ -849,7 +987,7 @@ document.addEventListener('DOMContentLoaded', function(){
 &lt;/section&gt;</pre></div> </div>
 </div>
 </div>
-<div class="elementor-element elementor-element-e00025 elementor-widget elementor-widget-html" data-e-type="widget" data-element_type="widget" data-id="e00025" data-widget_type="html.default">
+<div class="elementor-element elementor-element-e0003q elementor-widget elementor-widget-html" data-e-type="widget" data-element_type="widget" data-id="e0003q" data-widget_type="html.default">
 <div class="mp-cursor" id="mp-claude"><svg height="20" viewbox="0 0 24 24" width="20"><path d="M4.5 2.5 L20 12.2 L12.6 13.6 L9.2 21 Z" fill="#D97757" stroke="#FFFFFF" stroke-width="1.4"></path></svg><span class="mp-pill" style="background:#D97757"><img decoding="async" onerror="this.style.display='none'" src="/wp-content/uploads/logos/claude.svg" style="filter:brightness(0) invert(1)"/>Claude Code</span></div>
 <div class="mp-cursor mp-you" id="mp-you"><svg height="20" viewbox="0 0 24 24" width="20"><path d="M4.5 2.5 L20 12.2 L12.6 13.6 L9.2 21 Z" fill="#2F6BFF" stroke="#FFFFFF" stroke-width="1.4"></path></svg><span class="mp-pill" style="background:#2F6BFF">나</span></div>
 <div class="mp-cursor" id="mp-ultra"><svg height="20" viewbox="0 0 24 24" width="20"><path d="M4.5 2.5 L20 12.2 L12.6 13.6 L9.2 21 Z" fill="#1F9D44" stroke="#FFFFFF" stroke-width="1.4"></path></svg><span class="mp-pill" style="background:#147434"><img decoding="async" onerror="this.style.display='none'" src="/wp-content/uploads/logos/elementor.svg" style="filter:brightness(0) invert(1)"/>Elementor Ultra<span class="mp-status" id="mp-status">· 지켜보는 중</span></span></div>
@@ -1033,40 +1171,40 @@ document.addEventListener('DOMContentLoaded', function(){
   } else start();
 })();
 </script> </div>
-<p class="c-14v4v5 e-paragraph-base" data-e-type="widget" data-id="e00026" data-interaction-id="e00026">왼쪽은 영상 #2의 히어로 섹션이 실제로 저장된 JSON입니다 — 지금까지 에이전트가 손으로 써 온 바로 그 표면이죠. 오른쪽은 그것을 생성하는 타입이 있는 컴포넌트로, 실수가 클라이언트 사이트에서 터지는 대신 빌드 타임에 잡힙니다.</p>
-<p class="c-1upoyw e-paragraph-base" data-e-type="widget" data-id="e00027" data-interaction-id="e00027">쓰기 전마다 백업. 서버 사이드 밸리데이터가 잘못된 페이지를 저장 전에 거부합니다. 롤백은 언제든지. 할루시네이션을 일으킨 에이전트가 사이트를 망가뜨릴 수 없습니다.</p>
+<p class="c-14v4v5 e-paragraph-base" data-e-type="widget" data-id="e0003r" data-interaction-id="e0003r">왼쪽은 영상 #2의 히어로 섹션이 실제로 저장된 JSON입니다 — 지금까지 에이전트가 손으로 써 온 바로 그 표면이죠. 오른쪽은 그것을 생성하는 타입이 있는 컴포넌트로, 실수가 클라이언트 사이트에서 터지는 대신 빌드 타임에 잡힙니다.</p>
+<p class="c-1upoyw e-paragraph-base" data-e-type="widget" data-id="e0003s" data-interaction-id="e0003s">쓰기 전마다 백업. 서버 사이드 밸리데이터가 잘못된 페이지를 저장 전에 거부합니다. 롤백은 언제든지. 할루시네이션을 일으킨 에이전트가 사이트를 망가뜨릴 수 없습니다.</p>
 </section>
-<section class="elementor-element elementor-element-e00028 e-con e-atomic-element e-flexbox-base c-kpsy5x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00028" data-interaction-id="e00028" id="loop">
-<div class="elementor-element elementor-element-e00029 e-con e-atomic-element e-flexbox-base c-nokn4c" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00029" data-interaction-id="e00029">
-<p class="c-lwsecb e-paragraph-base" data-e-type="widget" data-id="e0002a" data-interaction-id="e0002a">03</p>
-<p class="c-10rae1 e-paragraph-base" data-e-type="widget" data-id="e0002b" data-interaction-id="e0002b">루프</p>
+<section class="elementor-element elementor-element-e0003t e-con e-atomic-element e-flexbox-base c-kpsy5x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003t" data-interaction-id="e0003t" id="loop">
+<div class="elementor-element elementor-element-e0003u e-con e-atomic-element e-flexbox-base c-nokn4c" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003u" data-interaction-id="e0003u">
+<p class="c-lwsecb e-paragraph-base" data-e-type="widget" data-id="e0003v" data-interaction-id="e0003v">04</p>
+<p class="c-10rae1 e-paragraph-base" data-e-type="widget" data-id="e0003w" data-interaction-id="e0003w">루프</p>
 </div>
-<h2 class="c-pfkm0a e-heading-base" data-e-type="widget" data-id="e0002c" data-interaction-id="e0002c">파일을 저장하면, 사이트가 갱신되고, 게이트가 돕니다.</h2>
-<div class="elementor-element elementor-element-e0002d e-con e-atomic-element e-flexbox-base c-1p1yrm" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0002d" data-interaction-id="e0002d" id="loop-strip">
-<div class="elementor-element elementor-element-e0002e e-con e-atomic-element e-flexbox-base c-1jg85f" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0002e" data-interaction-id="e0002e">
-<p class="c-16t1rq e-paragraph-base" data-e-type="widget" data-id="e0002f" data-interaction-id="e0002f">SAVE</p>
-<p class="c-pxefru e-paragraph-base" data-e-type="widget" data-id="e0002g" data-interaction-id="e0002g">컴포넌트 파일 저장</p>
+<h2 class="c-pfkm0a e-heading-base" data-e-type="widget" data-id="e0003x" data-interaction-id="e0003x">파일을 저장하면, 사이트가 갱신되고, 게이트가 돕니다.</h2>
+<div class="elementor-element elementor-element-e0003y e-con e-atomic-element e-flexbox-base c-1p1yrm" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003y" data-interaction-id="e0003y" id="loop-strip">
+<div class="elementor-element elementor-element-e0003z e-con e-atomic-element e-flexbox-base c-1jg85f" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003z" data-interaction-id="e0003z">
+<p class="c-16t1rq e-paragraph-base" data-e-type="widget" data-id="e00040" data-interaction-id="e00040">SAVE</p>
+<p class="c-pxefru e-paragraph-base" data-e-type="widget" data-id="e00041" data-interaction-id="e00041">컴포넌트 파일 저장</p>
 </div>
-<div class="elementor-element elementor-element-e0002h e-con e-atomic-element e-flexbox-base c-1jg85f" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0002h" data-interaction-id="e0002h">
-<p class="c-16t1rq e-paragraph-base" data-e-type="widget" data-id="e0002i" data-interaction-id="e0002i">BUILD</p>
-<p class="c-pxefru e-paragraph-base" data-e-type="widget" data-id="e0002j" data-interaction-id="e0002j">ms 단위 리빌드</p>
+<div class="elementor-element elementor-element-e00042 e-con e-atomic-element e-flexbox-base c-1jg85f" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00042" data-interaction-id="e00042">
+<p class="c-16t1rq e-paragraph-base" data-e-type="widget" data-id="e00043" data-interaction-id="e00043">BUILD</p>
+<p class="c-pxefru e-paragraph-base" data-e-type="widget" data-id="e00044" data-interaction-id="e00044">ms 단위 리빌드</p>
 </div>
-<div class="elementor-element elementor-element-e0002k e-con e-atomic-element e-flexbox-base c-1jg85f" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0002k" data-interaction-id="e0002k">
-<p class="c-16t1rq e-paragraph-base" data-e-type="widget" data-id="e0002l" data-interaction-id="e0002l">DEPLOY</p>
-<p class="c-pxefru e-paragraph-base" data-e-type="widget" data-id="e0002m" data-interaction-id="e0002m">diff 기반, 약 3초</p>
+<div class="elementor-element elementor-element-e00045 e-con e-atomic-element e-flexbox-base c-1jg85f" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00045" data-interaction-id="e00045">
+<p class="c-16t1rq e-paragraph-base" data-e-type="widget" data-id="e00046" data-interaction-id="e00046">DEPLOY</p>
+<p class="c-pxefru e-paragraph-base" data-e-type="widget" data-id="e00047" data-interaction-id="e00047">diff 기반, 약 3초</p>
 </div>
-<div class="elementor-element elementor-element-e0002n e-con e-atomic-element e-flexbox-base c-1jg85f" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0002n" data-interaction-id="e0002n">
-<p class="c-16t1rq e-paragraph-base" data-e-type="widget" data-id="e0002o" data-interaction-id="e0002o">RELOAD</p>
-<p class="c-pxefru e-paragraph-base" data-e-type="widget" data-id="e0002p" data-interaction-id="e0002p">라이브 프리뷰</p>
+<div class="elementor-element elementor-element-e00048 e-con e-atomic-element e-flexbox-base c-1jg85f" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00048" data-interaction-id="e00048">
+<p class="c-16t1rq e-paragraph-base" data-e-type="widget" data-id="e00049" data-interaction-id="e00049">RELOAD</p>
+<p class="c-pxefru e-paragraph-base" data-e-type="widget" data-id="e0004a" data-interaction-id="e0004a">라이브 프리뷰</p>
 </div>
-<div class="elementor-element elementor-element-e0002q e-con e-atomic-element e-flexbox-base c-141xqx" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0002q" data-interaction-id="e0002q">
-<p class="c-1msjys e-paragraph-base" data-e-type="widget" data-id="e0002r" data-interaction-id="e0002r">GATES</p>
-<p class="c-p1bzq5 e-paragraph-base" data-e-type="widget" data-id="e0002s" data-interaction-id="e0002s">1200 · 1920 · 390</p>
+<div class="elementor-element elementor-element-e0004b e-con e-atomic-element e-flexbox-base c-141xqx" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004b" data-interaction-id="e0004b">
+<p class="c-1msjys e-paragraph-base" data-e-type="widget" data-id="e0004c" data-interaction-id="e0004c">GATES</p>
+<p class="c-p1bzq5 e-paragraph-base" data-e-type="widget" data-id="e0004d" data-interaction-id="e0004d">1200 · 1920 · 390</p>
 </div>
 </div>
-<div class="elementor-element elementor-element-e0002t e-con e-atomic-element e-flexbox-base c-163jk7" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0002t" data-interaction-id="e0002t">
-<p class="c-v8ntp3 e-paragraph-base" data-e-type="widget" data-id="e0002u" data-interaction-id="e0002u">LIVE — 실제로 돌아가는 루프 (HOUSEMAIT의 진짜 로그 라인)</p>
-<div class="elementor-element elementor-element-e0002v elementor-widget elementor-widget-html" data-e-type="widget" data-element_type="widget" data-id="e0002v" data-widget_type="html.default">
+<div class="elementor-element elementor-element-e0004e e-con e-atomic-element e-flexbox-base c-163jk7" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004e" data-interaction-id="e0004e">
+<p class="c-v8ntp3 e-paragraph-base" data-e-type="widget" data-id="e0004f" data-interaction-id="e0004f">LIVE — 실제로 돌아가는 루프 (HOUSEMAIT의 진짜 로그 라인)</p>
+<div class="elementor-element elementor-element-e0004g elementor-widget elementor-widget-html" data-e-type="widget" data-element_type="widget" data-id="e0004g" data-widget_type="html.default">
 <div id="loop-log" style="min-height:88px;font-family:'GeistM',ui-monospace,monospace;font-size:12.5px;line-height:1.75;color:#28C840"></div>
 <style>
   .ls-on{box-shadow:inset 0 -3px 0 #1F9D44}
@@ -1128,101 +1266,101 @@ document.addEventListener('DOMContentLoaded', function(){
 })();
 </script> </div>
 </div>
-<p class="c-14v4v5 e-paragraph-base" data-e-type="widget" data-id="e0002w" data-interaction-id="e0002w">저 FAIL 라인이 핵심입니다. 게이트는 1200, 1920, 390px — 데스크톱, 와이드, 모바일에서 도는 자동 pass/fail 검사입니다. 에이전트는 저장할 때마다 판정을 확인하고 다음 저장에서 스스로 고칩니다. 결과 검증이 루프에 내장되어 있어, 마지막에 기억해내서 돌리는 스크립트가 아닙니다.</p>
+<p class="c-14v4v5 e-paragraph-base" data-e-type="widget" data-id="e0004h" data-interaction-id="e0004h">저 FAIL 라인이 핵심입니다. 게이트는 1200, 1920, 390px — 데스크톱, 와이드, 모바일에서 도는 자동 pass/fail 검사입니다. 에이전트는 저장할 때마다 판정을 확인하고 다음 저장에서 스스로 고칩니다. 결과 검증이 루프에 내장되어 있어, 마지막에 기억해내서 돌리는 스크립트가 아닙니다.</p>
 </section>
-<section class="elementor-element elementor-element-e0002x e-con e-atomic-element e-flexbox-base c-kpsy5x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0002x" data-interaction-id="e0002x" id="stack">
-<div class="elementor-element elementor-element-e0002y e-con e-atomic-element e-flexbox-base c-nokn4c" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0002y" data-interaction-id="e0002y">
-<p class="c-lwsecb e-paragraph-base" data-e-type="widget" data-id="e0002z" data-interaction-id="e0002z">04</p>
-<p class="c-10rae1 e-paragraph-base" data-e-type="widget" data-id="e00030" data-interaction-id="e00030">스택</p>
+<section class="elementor-element elementor-element-e0004i e-con e-atomic-element e-flexbox-base c-kpsy5x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004i" data-interaction-id="e0004i" id="stack">
+<div class="elementor-element elementor-element-e0004j e-con e-atomic-element e-flexbox-base c-nokn4c" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004j" data-interaction-id="e0004j">
+<p class="c-lwsecb e-paragraph-base" data-e-type="widget" data-id="e0004k" data-interaction-id="e0004k">05</p>
+<p class="c-10rae1 e-paragraph-base" data-e-type="widget" data-id="e0004l" data-interaction-id="e0004l">스택</p>
 </div>
-<h2 class="c-pfkm0a e-heading-base" data-e-type="widget" data-id="e00031" data-interaction-id="e00031">다섯 조각. 전부 써도 되고, 하나만 써도 됩니다.</h2>
-<div class="elementor-element elementor-element-e00032 e-con e-atomic-element e-flexbox-base c-1bj3gs" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00032" data-interaction-id="e00032">
-<div class="elementor-element elementor-element-e00033 e-con e-atomic-element e-flexbox-base c-v9vh1x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00033" data-interaction-id="e00033">
-<div class="elementor-element elementor-element-e00034 e-con e-atomic-element e-flexbox-base c-16pz5m" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00034" data-interaction-id="e00034">
-<p class="c-mqpbg7 e-paragraph-base" data-e-type="widget" data-id="e00035" data-interaction-id="e00035">01</p>
+<h2 class="c-pfkm0a e-heading-base" data-e-type="widget" data-id="e0004m" data-interaction-id="e0004m">다섯 조각. 전부 써도 되고, 하나만 써도 됩니다.</h2>
+<div class="elementor-element elementor-element-e0004n e-con e-atomic-element e-flexbox-base c-1bj3gs" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004n" data-interaction-id="e0004n">
+<div class="elementor-element elementor-element-e0004o e-con e-atomic-element e-flexbox-base c-v9vh1x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004o" data-interaction-id="e0004o">
+<div class="elementor-element elementor-element-e0004p e-con e-atomic-element e-flexbox-base c-t5ltjh" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004p" data-interaction-id="e0004p">
+<p class="c-mqpbg7 e-paragraph-base" data-e-type="widget" data-id="e0004q" data-interaction-id="e0004q">01</p>
 </div>
-<div class="elementor-element elementor-element-e00036 e-con e-atomic-element e-flexbox-base c-1ekvga" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00036" data-interaction-id="e00036">
-<p class="c-1v1fb1 e-paragraph-base" data-e-type="widget" data-id="e00037" data-interaction-id="e00037">컴파일러 + CLI</p>
+<div class="elementor-element elementor-element-e0004r e-con e-atomic-element e-flexbox-base c-l1llb1" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004r" data-interaction-id="e0004r">
+<p class="c-1v1fb1 e-paragraph-base" data-e-type="widget" data-id="e0004s" data-interaction-id="e0004s">컴파일러 + CLI</p>
 </div>
-<div class="elementor-element elementor-element-e00038 e-con e-atomic-element e-flexbox-base c-gnkm40" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00038" data-interaction-id="e00038">
-<p class="c-mqpbg7 e-paragraph-base" data-e-type="widget" data-id="e00039" data-interaction-id="e00039">@algorismus/elementor-jsx</p>
-<p class="c-6uwuyc e-paragraph-base" data-e-type="widget" data-id="e0003a" data-interaction-id="e0003a">타입이 있는 JSX → 네이티브 Elementor V4 JSON. 빌드, 배포, 린트, 미디어, 임포트 — 그리고 exjsx dev 라이브 루프까지.</p>
-</div>
-</div>
-<div class="elementor-element elementor-element-e0003b e-con e-atomic-element e-flexbox-base c-v9vh1x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003b" data-interaction-id="e0003b">
-<div class="elementor-element elementor-element-e0003c e-con e-atomic-element e-flexbox-base c-16pz5m" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003c" data-interaction-id="e0003c">
-<p class="c-mqpbg7 e-paragraph-base" data-e-type="widget" data-id="e0003d" data-interaction-id="e0003d">02</p>
-</div>
-<div class="elementor-element elementor-element-e0003e e-con e-atomic-element e-flexbox-base c-1ekvga" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003e" data-interaction-id="e0003e">
-<p class="c-1v1fb1 e-paragraph-base" data-e-type="widget" data-id="e0003f" data-interaction-id="e0003f">MCP 서버</p>
-</div>
-<div class="elementor-element elementor-element-e0003g e-con e-atomic-element e-flexbox-base c-gnkm40" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003g" data-interaction-id="e0003g">
-<p class="c-mqpbg7 e-paragraph-base" data-e-type="widget" data-id="e0003h" data-interaction-id="e0003h">@algorismus/elementor-ultra-mcp</p>
-<p class="c-6uwuyc e-paragraph-base" data-e-type="widget" data-id="e0003i" data-interaction-id="e0003i">모든 MCP 에이전트를 위한 90개 이상의 도구: 페이지 빌드, 리팩터링, 디자인 시스템 관리, HTML → Elementor 변환.</p>
+<div class="elementor-element elementor-element-e0004t e-con e-atomic-element e-flexbox-base c-gnkm40" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004t" data-interaction-id="e0004t">
+<p class="c-mqpbg7 e-paragraph-base" data-e-type="widget" data-id="e0004u" data-interaction-id="e0004u">@algorismus/elementor-jsx</p>
+<p class="c-6uwuyc e-paragraph-base" data-e-type="widget" data-id="e0004v" data-interaction-id="e0004v">타입이 있는 JSX → 네이티브 Elementor V4 JSON. 빌드, 배포, 린트, 미디어, 임포트 — 그리고 exjsx dev 라이브 루프까지.</p>
 </div>
 </div>
-<div class="elementor-element elementor-element-e0003j e-con e-atomic-element e-flexbox-base c-v9vh1x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003j" data-interaction-id="e0003j">
-<div class="elementor-element elementor-element-e0003k e-con e-atomic-element e-flexbox-base c-16pz5m" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003k" data-interaction-id="e0003k">
-<p class="c-mqpbg7 e-paragraph-base" data-e-type="widget" data-id="e0003l" data-interaction-id="e0003l">03</p>
+<div class="elementor-element elementor-element-e0004w e-con e-atomic-element e-flexbox-base c-v9vh1x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004w" data-interaction-id="e0004w">
+<div class="elementor-element elementor-element-e0004x e-con e-atomic-element e-flexbox-base c-t5ltjh" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004x" data-interaction-id="e0004x">
+<p class="c-mqpbg7 e-paragraph-base" data-e-type="widget" data-id="e0004y" data-interaction-id="e0004y">02</p>
 </div>
-<div class="elementor-element elementor-element-e0003m e-con e-atomic-element e-flexbox-base c-1ekvga" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003m" data-interaction-id="e0003m">
-<p class="c-1v1fb1 e-paragraph-base" data-e-type="widget" data-id="e0003n" data-interaction-id="e0003n">컴패니언 플러그인</p>
+<div class="elementor-element elementor-element-e0004z e-con e-atomic-element e-flexbox-base c-l1llb1" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004z" data-interaction-id="e0004z">
+<p class="c-1v1fb1 e-paragraph-base" data-e-type="widget" data-id="e00050" data-interaction-id="e00050">MCP 서버</p>
 </div>
-<div class="elementor-element elementor-element-e0003o e-con e-atomic-element e-flexbox-base c-gnkm40" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003o" data-interaction-id="e0003o">
-<p class="c-mqpbg7 e-paragraph-base" data-e-type="widget" data-id="e0003p" data-interaction-id="e0003p">WordPress 플러그인 · GPL</p>
-<p class="c-6uwuyc e-paragraph-base" data-e-type="widget" data-id="e0003q" data-interaction-id="e0003q">사이트의 공식 REST 쓰기 경로: 서버 사이드 검증, 백업, 롤백, 권한 프로브.</p>
-</div>
-</div>
-<div class="elementor-element elementor-element-e0003r e-con e-atomic-element e-flexbox-base c-v9vh1x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003r" data-interaction-id="e0003r">
-<div class="elementor-element elementor-element-e0003s e-con e-atomic-element e-flexbox-base c-16pz5m" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003s" data-interaction-id="e0003s">
-<p class="c-mqpbg7 e-paragraph-base" data-e-type="widget" data-id="e0003t" data-interaction-id="e0003t">04</p>
-</div>
-<div class="elementor-element elementor-element-e0003u e-con e-atomic-element e-flexbox-base c-1ekvga" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003u" data-interaction-id="e0003u">
-<p class="c-1v1fb1 e-paragraph-base" data-e-type="widget" data-id="e0003v" data-interaction-id="e0003v">VERIFY STUDIO</p>
-</div>
-<div class="elementor-element elementor-element-e0003w e-con e-atomic-element e-flexbox-base c-gnkm40" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003w" data-interaction-id="e0003w">
-<p class="c-mqpbg7 e-paragraph-base" data-e-type="widget" data-id="e0003x" data-interaction-id="e0003x">@algorismus/elementor-ultra-studio</p>
-<p class="c-6uwuyc e-paragraph-base" data-e-type="widget" data-id="e0003y" data-interaction-id="e0003y">배포할 때마다: 세 가지 너비에서의 pass/fail 검사, 사이트 헬스 체크, 레이아웃 측정 — Playwright로 자동화.</p>
+<div class="elementor-element elementor-element-e00051 e-con e-atomic-element e-flexbox-base c-gnkm40" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00051" data-interaction-id="e00051">
+<p class="c-mqpbg7 e-paragraph-base" data-e-type="widget" data-id="e00052" data-interaction-id="e00052">@algorismus/elementor-ultra-mcp</p>
+<p class="c-6uwuyc e-paragraph-base" data-e-type="widget" data-id="e00053" data-interaction-id="e00053">모든 MCP 에이전트를 위한 90개 이상의 도구: 페이지 빌드, 리팩터링, 디자인 시스템 관리, HTML → Elementor 변환.</p>
 </div>
 </div>
-<div class="elementor-element elementor-element-e0003z e-con e-atomic-element e-flexbox-base c-v9vh1x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003z" data-interaction-id="e0003z">
-<div class="elementor-element elementor-element-e00040 e-con e-atomic-element e-flexbox-base c-16pz5m" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00040" data-interaction-id="e00040">
-<p class="c-mqpbg7 e-paragraph-base" data-e-type="widget" data-id="e00041" data-interaction-id="e00041">05</p>
+<div class="elementor-element elementor-element-e00054 e-con e-atomic-element e-flexbox-base c-v9vh1x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00054" data-interaction-id="e00054">
+<div class="elementor-element elementor-element-e00055 e-con e-atomic-element e-flexbox-base c-t5ltjh" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00055" data-interaction-id="e00055">
+<p class="c-mqpbg7 e-paragraph-base" data-e-type="widget" data-id="e00056" data-interaction-id="e00056">03</p>
 </div>
-<div class="elementor-element elementor-element-e00042 e-con e-atomic-element e-flexbox-base c-1ekvga" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00042" data-interaction-id="e00042">
-<p class="c-1v1fb1 e-paragraph-base" data-e-type="widget" data-id="e00043" data-interaction-id="e00043">로컬 WORDPRESS</p>
+<div class="elementor-element elementor-element-e00057 e-con e-atomic-element e-flexbox-base c-l1llb1" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00057" data-interaction-id="e00057">
+<p class="c-1v1fb1 e-paragraph-base" data-e-type="widget" data-id="e00058" data-interaction-id="e00058">컴패니언 플러그인</p>
 </div>
-<div class="elementor-element elementor-element-e00044 e-con e-atomic-element e-flexbox-base c-gnkm40" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00044" data-interaction-id="e00044">
-<p class="c-mqpbg7 e-paragraph-base" data-e-type="widget" data-id="e00045" data-interaction-id="e00045">@algorismus/elementor-ultra-playground</p>
-<p class="c-6uwuyc e-paragraph-base" data-e-type="widget" data-id="e00046" data-interaction-id="e00046">미리 구운 스냅샷에서 진짜 WordPress + Elementor를 몇 초 만에. 순수 Node — Docker 불필요.</p>
+<div class="elementor-element elementor-element-e00059 e-con e-atomic-element e-flexbox-base c-gnkm40" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00059" data-interaction-id="e00059">
+<p class="c-mqpbg7 e-paragraph-base" data-e-type="widget" data-id="e0005a" data-interaction-id="e0005a">WordPress 플러그인 · GPL</p>
+<p class="c-6uwuyc e-paragraph-base" data-e-type="widget" data-id="e0005b" data-interaction-id="e0005b">사이트의 공식 REST 쓰기 경로: 서버 사이드 검증, 백업, 롤백, 권한 프로브.</p>
+</div>
+</div>
+<div class="elementor-element elementor-element-e0005c e-con e-atomic-element e-flexbox-base c-v9vh1x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0005c" data-interaction-id="e0005c">
+<div class="elementor-element elementor-element-e0005d e-con e-atomic-element e-flexbox-base c-t5ltjh" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0005d" data-interaction-id="e0005d">
+<p class="c-mqpbg7 e-paragraph-base" data-e-type="widget" data-id="e0005e" data-interaction-id="e0005e">04</p>
+</div>
+<div class="elementor-element elementor-element-e0005f e-con e-atomic-element e-flexbox-base c-l1llb1" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0005f" data-interaction-id="e0005f">
+<p class="c-1v1fb1 e-paragraph-base" data-e-type="widget" data-id="e0005g" data-interaction-id="e0005g">VERIFY STUDIO</p>
+</div>
+<div class="elementor-element elementor-element-e0005h e-con e-atomic-element e-flexbox-base c-gnkm40" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0005h" data-interaction-id="e0005h">
+<p class="c-mqpbg7 e-paragraph-base" data-e-type="widget" data-id="e0005i" data-interaction-id="e0005i">@algorismus/elementor-ultra-studio</p>
+<p class="c-6uwuyc e-paragraph-base" data-e-type="widget" data-id="e0005j" data-interaction-id="e0005j">배포할 때마다: 세 가지 너비에서의 pass/fail 검사, 사이트 헬스 체크, 레이아웃 측정 — Playwright로 자동화.</p>
+</div>
+</div>
+<div class="elementor-element elementor-element-e0005k e-con e-atomic-element e-flexbox-base c-v9vh1x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0005k" data-interaction-id="e0005k">
+<div class="elementor-element elementor-element-e0005l e-con e-atomic-element e-flexbox-base c-t5ltjh" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0005l" data-interaction-id="e0005l">
+<p class="c-mqpbg7 e-paragraph-base" data-e-type="widget" data-id="e0005m" data-interaction-id="e0005m">05</p>
+</div>
+<div class="elementor-element elementor-element-e0005n e-con e-atomic-element e-flexbox-base c-l1llb1" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0005n" data-interaction-id="e0005n">
+<p class="c-1v1fb1 e-paragraph-base" data-e-type="widget" data-id="e0005o" data-interaction-id="e0005o">로컬 WORDPRESS</p>
+</div>
+<div class="elementor-element elementor-element-e0005p e-con e-atomic-element e-flexbox-base c-gnkm40" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0005p" data-interaction-id="e0005p">
+<p class="c-mqpbg7 e-paragraph-base" data-e-type="widget" data-id="e0005q" data-interaction-id="e0005q">@algorismus/elementor-ultra-playground</p>
+<p class="c-6uwuyc e-paragraph-base" data-e-type="widget" data-id="e0005r" data-interaction-id="e0005r">미리 구운 스냅샷에서 진짜 WordPress + Elementor를 몇 초 만에. 순수 Node — Docker 불필요.</p>
 </div>
 </div>
 </div>
-<p class="c-1akaoq e-paragraph-base" data-e-type="widget" data-id="e00047" data-interaction-id="e00047">어디서 시작할지 모르겠다면? 컴파일러 하나면 충분합니다 — <strong>npm i -D @algorismus/elementor-jsx</strong>. 나머지 조각은 필요할 때 붙이면 됩니다.</p>
-<div class="elementor-element elementor-element-e00048 e-con e-atomic-element e-flexbox-base c-ruooh6" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00048" data-interaction-id="e00048">
-<p class="c-kygu4b e-paragraph-base" data-e-type="widget" data-id="e00049" data-interaction-id="e00049">카메라 앞에서 완성한 사이트 8개</p>
-<p class="c-kygu4b e-paragraph-base" data-e-type="widget" data-id="e0004a" data-interaction-id="e0004a">사이트당 17–31분</p>
-<p class="c-kygu4b e-paragraph-base" data-e-type="widget" data-id="e0004b" data-interaction-id="e0004b">사람 수정 0회</p>
-<p class="c-kygu4b e-paragraph-base" data-e-type="widget" data-id="e0004c" data-interaction-id="e0004c">컴파일러 테스트 400개+ · ELEMENTOR 4.1.4 / 4.2.0 대상 검증</p>
+<p class="c-1akaoq e-paragraph-base" data-e-type="widget" data-id="e0005s" data-interaction-id="e0005s">어디서 시작할지 모르겠다면? 컴파일러 하나면 충분합니다 — <strong>npm i -D @algorismus/elementor-jsx</strong>. 나머지 조각은 필요할 때 붙이면 됩니다.</p>
+<div class="elementor-element elementor-element-e0005t e-con e-atomic-element e-flexbox-base c-ruooh6" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0005t" data-interaction-id="e0005t">
+<p class="c-kygu4b e-paragraph-base" data-e-type="widget" data-id="e0005u" data-interaction-id="e0005u">카메라 앞에서 완성한 사이트 8개</p>
+<p class="c-kygu4b e-paragraph-base" data-e-type="widget" data-id="e0005v" data-interaction-id="e0005v">사이트당 17–31분</p>
+<p class="c-kygu4b e-paragraph-base" data-e-type="widget" data-id="e0005w" data-interaction-id="e0005w">사람 수정 0회</p>
+<p class="c-kygu4b e-paragraph-base" data-e-type="widget" data-id="e0005x" data-interaction-id="e0005x">컴파일러 테스트 400개+ · ELEMENTOR 4.1.4 / 4.2.0 대상 검증</p>
 </div>
 </section>
-<section class="elementor-element elementor-element-e0004d e-con e-atomic-element e-flexbox-base c-kpsy5x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004d" data-interaction-id="e0004d" id="start">
-<div class="elementor-element elementor-element-e0004e e-con e-atomic-element e-flexbox-base c-nokn4c" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004e" data-interaction-id="e0004e">
-<p class="c-lwsecb e-paragraph-base" data-e-type="widget" data-id="e0004f" data-interaction-id="e0004f">05</p>
-<p class="c-10rae1 e-paragraph-base" data-e-type="widget" data-id="e0004g" data-interaction-id="e0004g">시작하기</p>
+<section class="elementor-element elementor-element-e0005y e-con e-atomic-element e-flexbox-base c-kpsy5x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0005y" data-interaction-id="e0005y" id="start">
+<div class="elementor-element elementor-element-e0005z e-con e-atomic-element e-flexbox-base c-nokn4c" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0005z" data-interaction-id="e0005z">
+<p class="c-lwsecb e-paragraph-base" data-e-type="widget" data-id="e00060" data-interaction-id="e00060">06</p>
+<p class="c-10rae1 e-paragraph-base" data-e-type="widget" data-id="e00061" data-interaction-id="e00061">시작하기</p>
 </div>
-<h2 class="c-pfkm0a e-heading-base" data-e-type="widget" data-id="e0004h" data-interaction-id="e0004h">붙여넣기 한 번이면 바로 시작.</h2>
-<div class="elementor-element elementor-element-e0004i e-con e-atomic-element e-flexbox-base c-9yapx6" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004i" data-interaction-id="e0004i">
-<div class="elementor-element elementor-element-e0004j e-con e-atomic-element e-flexbox-base c-1ea8tz" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004j" data-interaction-id="e0004j">
-<div class="elementor-element elementor-element-e0004k e-con e-atomic-element e-flexbox-base c-xhm2aw" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004k" data-interaction-id="e0004k">
+<h2 class="c-pfkm0a e-heading-base" data-e-type="widget" data-id="e00062" data-interaction-id="e00062">붙여넣기 한 번이면 바로 시작.</h2>
+<div class="elementor-element elementor-element-e00063 e-con e-atomic-element e-flexbox-base c-9yapx6" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00063" data-interaction-id="e00063">
+<div class="elementor-element elementor-element-e00064 e-con e-atomic-element e-flexbox-base c-1ea8tz" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00064" data-interaction-id="e00064">
+<div class="elementor-element elementor-element-e00065 e-con e-atomic-element e-flexbox-base c-xhm2aw" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00065" data-interaction-id="e00065">
 </div>
-<div class="elementor-element elementor-element-e0004l e-con e-atomic-element e-flexbox-base c-16eyyd" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004l" data-interaction-id="e0004l">
+<div class="elementor-element elementor-element-e00066 e-con e-atomic-element e-flexbox-base c-16eyyd" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00066" data-interaction-id="e00066">
 </div>
-<div class="elementor-element elementor-element-e0004m e-con e-atomic-element e-flexbox-base c-jzkpq" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004m" data-interaction-id="e0004m">
+<div class="elementor-element elementor-element-e00067 e-con e-atomic-element e-flexbox-base c-jzkpq" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00067" data-interaction-id="e00067">
 </div>
-<p class="c-r6rjx9 e-paragraph-base" data-e-type="widget" data-id="e0004n" data-interaction-id="e0004n">이걸 AI 에이전트에 붙여넣으세요 — Claude Code, Cursor, Windsurf, MCP면 뭐든</p>
+<p class="c-r6rjx9 e-paragraph-base" data-e-type="widget" data-id="e00068" data-interaction-id="e00068">이걸 AI 에이전트에 붙여넣으세요 — Claude Code, Cursor, Windsurf, MCP면 뭐든</p>
 </div>
-<div class="elementor-element elementor-element-e0004o elementor-widget elementor-widget-html" data-e-type="widget" data-element_type="widget" data-id="e0004o" data-widget_type="html.default">
+<div class="elementor-element elementor-element-e00069 elementor-widget elementor-widget-html" data-e-type="widget" data-element_type="widget" data-id="e00069" data-widget_type="html.default">
 <div class="cmd-wrap">
 <pre id="cmd-prompt" style="margin:0;padding:18px 110px 14px 22px;white-space:pre-wrap;word-break:break-word;font-family:'GeistM',ui-monospace,monospace;font-size:13.5px;line-height:1.75;color:#ECECF1">Set up Elementor Ultra on this machine by fetching and following
 https://raw.githubusercontent.com/Algorismus-io/elementor-ultra/main/SETUP.md
@@ -1268,64 +1406,64 @@ exactly, step by step. Work autonomously and verify each step.</pre>
 })();
 </script> </div>
 </div>
-<p class="c-1mpv4o e-paragraph-base" data-e-type="widget" data-id="e0004p" data-interaction-id="e0004p">무료 &amp; MIT · NODE 18+ · DOCKER 불필요 · ELEMENTOR 무료 버전이면 충분</p>
-<p class="c-1akaoq e-paragraph-base" data-e-type="widget" data-id="e0004q" data-interaction-id="e0004q">에이전트를 돌리기 전에 먼저 읽어보고 싶다면? SETUP.md가 에이전트가 그대로 따르는 바로 그 파일입니다.</p>
-<p class="c-194b22 e-paragraph-base" data-e-type="widget" data-id="e0004r" data-interaction-id="e0004r"><a class="e-paragraph-link-base" href="https://github.com/Algorismus-io/elementor-ultra/blob/main/SETUP.md" target="_self">
+<p class="c-1mpv4o e-paragraph-base" data-e-type="widget" data-id="e0006a" data-interaction-id="e0006a">무료 &amp; MIT · NODE 18+ · DOCKER 불필요 · ELEMENTOR 무료 버전이면 충분</p>
+<p class="c-1akaoq e-paragraph-base" data-e-type="widget" data-id="e0006b" data-interaction-id="e0006b">에이전트를 돌리기 전에 먼저 읽어보고 싶다면? SETUP.md가 에이전트가 그대로 따르는 바로 그 파일입니다.</p>
+<p class="c-194b22 e-paragraph-base" data-e-type="widget" data-id="e0006c" data-interaction-id="e0006c"><a class="e-paragraph-link-base" href="https://github.com/Algorismus-io/elementor-ultra/blob/main/SETUP.md" target="_self">
 		먼저 SETUP.md 읽기 ↗
 	</a></p>
-<div class="elementor-element elementor-element-e0004s e-con e-atomic-element e-flexbox-base c-duhrx7" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004s" data-interaction-id="e0004s">
-<p class="c-194b22 e-paragraph-base" data-e-type="widget" data-id="e0004t" data-interaction-id="e0004t"><a class="e-paragraph-link-base" href="https://github.com/Algorismus-io/elementor-jsx" target="_self">
+<div class="elementor-element elementor-element-e0006d e-con e-atomic-element e-flexbox-base c-duhrx7" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0006d" data-interaction-id="e0006d">
+<p class="c-194b22 e-paragraph-base" data-e-type="widget" data-id="e0006e" data-interaction-id="e0006e"><a class="e-paragraph-link-base" href="https://github.com/Algorismus-io/elementor-jsx" target="_self">
 		GitHub — Algorismus-io/elementor-jsx ↗
 	</a></p>
-<p class="c-194b22 e-paragraph-base" data-e-type="widget" data-id="e0004u" data-interaction-id="e0004u"><a class="e-paragraph-link-base" href="https://www.npmjs.com/package/@algorismus/elementor-jsx" target="_self">
+<p class="c-194b22 e-paragraph-base" data-e-type="widget" data-id="e0006f" data-interaction-id="e0006f"><a class="e-paragraph-link-base" href="https://www.npmjs.com/package/@algorismus/elementor-jsx" target="_self">
 		npm — @algorismus/elementor-jsx ↗
 	</a></p>
-<p class="c-194b22 e-paragraph-base" data-e-type="widget" data-id="e0004v" data-interaction-id="e0004v"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra" target="_self">
+<p class="c-194b22 e-paragraph-base" data-e-type="widget" data-id="e0006g" data-interaction-id="e0006g"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra" target="_self">
 		문서 ↗
 	</a></p>
-<p class="c-194b22 e-paragraph-base" data-e-type="widget" data-id="e0004w" data-interaction-id="e0004w"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra/examples/overview" target="_self">
+<p class="c-194b22 e-paragraph-base" data-e-type="widget" data-id="e0006h" data-interaction-id="e0006h"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra/examples/overview" target="_self">
 		영상 여덟 편 전체 ↗
 	</a></p>
 </div>
 </section>
-<section class="elementor-element elementor-element-e0004x e-con e-atomic-element e-flexbox-base c-tcyaew" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004x" data-interaction-id="e0004x" id="colophon">
-<h2 class="c-1dkt28 e-heading-base" data-e-type="widget" data-id="e0004y" data-interaction-id="e0004y">다음 사이트는 당신의 에이전트가 만들 수 있습니다.</h2>
-<div class="elementor-element elementor-element-e0004z e-con e-atomic-element e-flexbox-base c-1y9sgi" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004z" data-interaction-id="e0004z" id="cta-close">
-<div class="elementor-element elementor-element-e00050 e-con e-atomic-element e-flexbox-base c-14izo5" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00050" data-interaction-id="e00050">
-<p class="c-7215m7 e-paragraph-base" data-e-type="widget" data-id="e00051" data-interaction-id="e00051"><a class="e-paragraph-link-base" href="#start" target="_self">
+<section class="elementor-element elementor-element-e0006i e-con e-atomic-element e-flexbox-base c-tcyaew" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0006i" data-interaction-id="e0006i" id="colophon">
+<h2 class="c-1dkt28 e-heading-base" data-e-type="widget" data-id="e0006j" data-interaction-id="e0006j">다음 사이트는 당신의 에이전트가 만들 수 있습니다.</h2>
+<div class="elementor-element elementor-element-e0006k e-con e-atomic-element e-flexbox-base c-1y9sgi" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0006k" data-interaction-id="e0006k" id="cta-close">
+<div class="elementor-element elementor-element-e0006l e-con e-atomic-element e-flexbox-base c-aq0e13" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0006l" data-interaction-id="e0006l">
+<p class="c-7215m7 e-paragraph-base" data-e-type="widget" data-id="e0006m" data-interaction-id="e0006m"><a class="e-paragraph-link-base" href="#start" target="_self">
 		붙여넣기 한 번으로 설치 — 무료
 	</a></p>
 </div>
-<div class="elementor-element elementor-element-e00052 e-con e-atomic-element e-flexbox-base c-1csgw5" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00052" data-interaction-id="e00052">
-<p class="c-194b22 e-paragraph-base" data-e-type="widget" data-id="e00053" data-interaction-id="e00053"><a class="e-paragraph-link-base" href="https://github.com/Algorismus-io/elementor-jsx" target="_self">
+<div class="elementor-element elementor-element-e0006n e-con e-atomic-element e-flexbox-base c-1nc2by" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0006n" data-interaction-id="e0006n">
+<p class="c-194b22 e-paragraph-base" data-e-type="widget" data-id="e0006o" data-interaction-id="e0006o"><a class="e-paragraph-link-base" href="https://github.com/Algorismus-io/elementor-jsx" target="_self">
 		★ GitHub에서 스타 누르기
 	</a></p>
 </div>
 </div>
-<div class="elementor-element elementor-element-e00054 e-con e-atomic-element e-flexbox-base c-9xuysw" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00054" data-interaction-id="e00054">
-<p class="c-38ctqk e-paragraph-base" data-e-type="widget" data-id="e00055" data-interaction-id="e00055"><a class="e-paragraph-link-base" href="https://github.com/Algorismus-io/elementor-jsx/discussions" target="_self">
+<div class="elementor-element elementor-element-e0006p e-con e-atomic-element e-flexbox-base c-9xuysw" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0006p" data-interaction-id="e0006p">
+<p class="c-38ctqk e-paragraph-base" data-e-type="widget" data-id="e0006q" data-interaction-id="e0006q"><a class="e-paragraph-link-base" href="https://github.com/Algorismus-io/elementor-jsx/discussions" target="_self">
 		질문이 있다면? GitHub Discussions ↗
 	</a></p>
-<p class="c-38ctqk e-paragraph-base" data-e-type="widget" data-id="e00056" data-interaction-id="e00056"><a class="e-paragraph-link-base" href="https://join.slack.com/t/wpcursor/shared_invite/zt-3vzlb15hd-JsLeBc_WA~ZFlkWCFnxc6A" target="_self">
+<p class="c-38ctqk e-paragraph-base" data-e-type="widget" data-id="e0006r" data-interaction-id="e0006r"><a class="e-paragraph-link-base" href="https://join.slack.com/t/wpcursor/shared_invite/zt-3vzlb15hd-JsLeBc_WA~ZFlkWCFnxc6A" target="_self">
 		Slack 참여하기 ↗
 	</a></p>
-<p class="c-38ctqk e-paragraph-base" data-e-type="widget" data-id="e00057" data-interaction-id="e00057"><a class="e-paragraph-link-base" href="https://cal.com/algorismus/30min" target="_self">
+<p class="c-38ctqk e-paragraph-base" data-e-type="widget" data-id="e0006s" data-interaction-id="e0006s"><a class="e-paragraph-link-base" href="https://cal.com/algorismus/30min" target="_self">
 		창업자와 통화 예약하기 ↗
 	</a></p>
-<p class="c-38ctqk e-paragraph-base" data-e-type="widget" data-id="e00058" data-interaction-id="e00058"><a class="e-paragraph-link-base" href="https://github.com/Algorismus-io/elementor-jsx/blob/main/CONTRIBUTING.md" target="_self">
+<p class="c-38ctqk e-paragraph-base" data-e-type="widget" data-id="e0006t" data-interaction-id="e0006t"><a class="e-paragraph-link-base" href="https://github.com/Algorismus-io/elementor-jsx/blob/main/CONTRIBUTING.md" target="_self">
 		기여하기 ↗
 	</a></p>
-<p class="c-38ctqk e-paragraph-base" data-e-type="widget" data-id="e00059" data-interaction-id="e00059"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra" target="_self">
+<p class="c-38ctqk e-paragraph-base" data-e-type="widget" data-id="e0006u" data-interaction-id="e0006u"><a class="e-paragraph-link-base" href="https://docs.wpos.ai/ultra" target="_self">
 		문서 ↗
 	</a></p>
 </div>
-<p class="c-88oasf e-paragraph-base" data-e-type="widget" data-id="e0005a" data-interaction-id="e0005a">콜로폰 — 이 페이지는 자기가 설파하는 것을 그대로 실천합니다: AI 에이전트가 elementor-jsx로 만들었고, 페이지가 설명하는 그 루프로 배포했으며, 같은 게이트를 통과했습니다. 사람 수정 0회. 스위치를 켜면 소스를 볼 수 있습니다.</p>
-<p class="c-u7kiut e-paragraph-base" data-e-type="widget" data-id="e0005b" data-interaction-id="e0005b">MIT © 2026 Algorismus. Elementor Ltd와 제휴하거나 보증받은 바 없습니다 — "Elementor"는 해당 회사의 상표이며, 이 프로젝트는 독립적으로 상호 운용되는 스택입니다. 영상은 실제 사이트의 디자인 스터디로, 툴체인 테스트를 위해 공개 카피와 에셋을 사용해 재현한 것입니다.</p>
+<p class="c-88oasf e-paragraph-base" data-e-type="widget" data-id="e0006v" data-interaction-id="e0006v">콜로폰 — 이 페이지는 자기가 설파하는 것을 그대로 실천합니다: AI 에이전트가 elementor-jsx로 만들었고, 페이지가 설명하는 그 루프로 배포했으며, 같은 게이트를 통과했습니다. 사람 수정 0회. 스위치를 켜면 소스를 볼 수 있습니다.</p>
+<p class="c-u7kiut e-paragraph-base" data-e-type="widget" data-id="e0006w" data-interaction-id="e0006w">MIT © 2026 Algorismus. Elementor Ltd와 제휴하거나 보증받은 바 없습니다 — "Elementor"는 해당 회사의 상표이며, 이 프로젝트는 독립적으로 상호 운용되는 스택입니다. 영상은 실제 사이트의 디자인 스터디로, 툴체인 테스트를 위해 공개 카피와 에셋을 사용해 재현한 것입니다.</p>
 </section>
 </div>
-<div class="elementor-element elementor-element-e0005c e-con e-atomic-element e-flexbox-base c-kxngei" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0005c" data-interaction-id="e0005c" id="agent-surface">
-<div class="elementor-element elementor-element-e0005d e-con e-atomic-element e-flexbox-base c-1xeih6" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0005d" data-interaction-id="e0005d">
-<div class="elementor-element elementor-element-e0005e elementor-widget elementor-widget-html" data-e-type="widget" data-element_type="widget" data-id="e0005e" data-widget_type="html.default">
+<div class="elementor-element elementor-element-e0006x e-con e-atomic-element e-flexbox-base c-kxngei" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0006x" data-interaction-id="e0006x" id="agent-surface">
+<div class="elementor-element elementor-element-e0006y e-con e-atomic-element e-flexbox-base c-1xeih6" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0006y" data-interaction-id="e0006y">
+<div class="elementor-element elementor-element-e0006z elementor-widget elementor-widget-html" data-e-type="widget" data-element_type="widget" data-id="e0006z" data-widget_type="html.default">
 <pre style="margin:0;white-space:pre-wrap;word-break:break-word;
         font-family:'IBM Plex Mono',ui-monospace,SFMono-Regular,monospace;
         font-size:13.5px;line-height:1.75;color:#28C840;"># ELEMENTOR ULTRA :: MACHINE SURFACE
@@ -1401,6 +1539,18 @@ PROOF ....... 8 production-shaped sites, built live on camera,
               films + scrollable results:
               https://docs.wpos.ai/ultra/examples/overview
 
+SHOWCASE .... 50 more pages, one run, ~1 developer day. fifty invented
+              brands, fifty real Elementor pages; each brief named a
+              fictional business, an audience and a visual archetype,
+              the agent did art direction, copy, imagery and the build.
+              humans debugged and ranked them best-first; the weak ones
+              were kept. every case study embeds the live page,
+              sandboxed. all fifty are fictional demonstrations — no
+              real offers, endorsements, or advice.
+              archive ..... https://exjsx.dev/showcase/
+              machine idx . https://exjsx.dev/showcase/index.json
+              how it was made https://exjsx.dev/showcase/ai-content/
+
 SOURCE ...... this very page is elementor-jsx output. excerpt
               of the hero you just flipped from:
 
@@ -1455,7 +1605,7 @@ HUMAN? ...... there is a prettier version of this page.
 <script id="elementor-frontend-modules-js" src="/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=4.2.1"></script>
 <script id="jquery-ui-core-js" src="/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3"></script>
 <script id="elementor-frontend-js-before">
-var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnX":"Share on X","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"4.2.1","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_optimized_markup":true,"e_panel_promotions":true,"theme_builder_v2":true,"e_pro_free_trial_popup":true,"nested-elements":true,"e_atomic_elements":true,"atomic_widgets_should_enforce_capabilities":true,"editor_mcp":true,"e_bc_migrations":true,"e_classes":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"e_variables_manager":true,"e_opt_in_v4_page":true,"e_opt_in_v4":true,"e_components":true,"e_interactions":true,"e_widget_creation":true,"import-export-customization":true,"e_pro_atomic_form":true,"mega-menu":true,"e_pro_variables":true,"e_pro_interactions":true},"urls":{"assets":"http:\/\/127.0.0.1:8947\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"http:\/\/127.0.0.1:8947\/wp-admin\/admin-ajax.php","uploadUrl":"http:\/\/127.0.0.1:8947\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"fdcf0a30a9","atomicFormsSendForm":"13a4053591"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":7,"title":"exjsx%20%E2%80%94%20Build%20Elementor%20sites%20with%20AI%20agents%20%28Claude%20Code%2C%20Cursor%2C%20MCP%29","excerpt":"","featuredImage":false}};
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnX":"Share on X","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"4.2.1","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_optimized_markup":true,"e_panel_promotions":true,"theme_builder_v2":true,"e_pro_free_trial_popup":true,"nested-elements":true,"e_atomic_elements":true,"atomic_widgets_should_enforce_capabilities":true,"editor_mcp":true,"e_bc_migrations":true,"e_classes":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"e_variables_manager":true,"e_opt_in_v4_page":true,"e_opt_in_v4":true,"e_components":true,"e_interactions":true,"e_widget_creation":true,"import-export-customization":true,"e_pro_atomic_form":true,"mega-menu":true,"e_pro_variables":true,"e_pro_interactions":true},"urls":{"assets":"http:\/\/127.0.0.1:8947\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"http:\/\/127.0.0.1:8947\/wp-admin\/admin-ajax.php","uploadUrl":"http:\/\/127.0.0.1:8947\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"a7b0c492e3","atomicFormsSendForm":"0045d5964e"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":7,"title":"exjsx%20%E2%80%94%20Build%20Elementor%20sites%20with%20AI%20agents%20%28Claude%20Code%2C%20Cursor%2C%20MCP%29","excerpt":"","featuredImage":false}};
 //# sourceURL=elementor-frontend-js-before
 </script>
 <script id="elementor-frontend-js" src="/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=4.2.1"></script>
@@ -1467,13 +1617,13 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 //# sourceURL=wp-i18n-js-after
 </script>
 <script id="elementor-pro-frontend-js-before">
-var ElementorProFrontendConfig = {"ajaxurl":"http:\/\/127.0.0.1:8947\/wp-admin\/admin-ajax.php","nonce":"17c745581c","urls":{"assets":"http:\/\/127.0.0.1:8947\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"http:\/\/127.0.0.1:8947\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":false},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"http:\/\/127.0.0.1:8947\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+var ElementorProFrontendConfig = {"ajaxurl":"http:\/\/127.0.0.1:8947\/wp-admin\/admin-ajax.php","nonce":"04df921d30","urls":{"assets":"http:\/\/127.0.0.1:8947\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"http:\/\/127.0.0.1:8947\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":false},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"http:\/\/127.0.0.1:8947\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
 //# sourceURL=elementor-pro-frontend-js-before
 </script>
 <script id="elementor-pro-frontend-js" src="/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=4.1.0"></script>
 <script id="pro-elements-handlers-js" src="/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=4.1.0"></script>
 <script id="wp-emoji-settings" type="application/json">
-{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"/wp-includes/js/wp-emoji-release.min.js?ver=7.0.3"}}
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"/wp-includes/js/wp-emoji-release.min.js?ver=7.0.4"}}
 </script>
 <script type="module">
 /*! This file is auto-generated */

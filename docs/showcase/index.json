@@ -1,0 +1,884 @@
+{
+ "generated": true,
+ "count": 50,
+ "items": [
+  {
+   "r": 1,
+   "s": "runtime-conf",
+   "n": "COLDSTART",
+   "a": "oversized type as layout",
+   "i": "Developer conference",
+   "p": [
+    "#FFFFFF",
+    "#000000",
+    "#FF4A00",
+    "#EAEAEA",
+    "#12121A"
+   ],
+   "f": "Anton / Space Grotesk",
+   "note": "Poster-grade. Black slab type at display scale with one orange cut \u2014 reads at 3 metres.",
+   "tone": "#a69a96"
+  },
+  {
+   "r": 2,
+   "s": "blunt-instrument",
+   "n": "Blunt Instrument",
+   "a": "oversized type as layout",
+   "i": "Performance marketing agency",
+   "p": [
+    "#000000",
+    "#FFFFFF",
+    "#FFE600",
+    "#FF2D2D",
+    "#666666"
+   ],
+   "f": "Unbounded / Plus Jakarta Sans",
+   "note": "Fearless. NOT / PERCENTAGE stacked to the edges, red-yellow-black, zero decoration.",
+   "tone": "#665730"
+  },
+  {
+   "r": 3,
+   "s": "loud-quarry",
+   "n": "Loud Quarry",
+   "a": "poster wall / zine spread",
+   "i": "Music festival",
+   "p": [
+    "#101014",
+    "#F2F0EA",
+    "#D9FF00",
+    "#FF1F5A",
+    "#00B7FF"
+   ],
+   "f": "Bungee / Space Grotesk",
+   "note": "A real poster wall. Lime and hot pink on black, line-up grids that feel printed.",
+   "tone": "#413524"
+  },
+  {
+   "r": 4,
+   "s": "fourth-hand",
+   "n": "Fourth Hand",
+   "a": "catalogue grid",
+   "i": "Vintage watch marketplace",
+   "p": [
+    "#131417",
+    "#E9E7E2",
+    "#C9A227",
+    "#8E959C",
+    "#1C1E22"
+   ],
+   "f": "Bodoni Moda / Lora",
+   "note": "Gold on near-black, dense catalogue rows \u2014 restraint that reads as expensive.",
+   "tone": "#232425"
+  },
+  {
+   "r": 5,
+   "s": "hard-turn",
+   "n": "Hard Turn",
+   "a": "asymmetric diagonal collage",
+   "i": "Brand identity agency",
+   "p": [
+    "#EFEFEA",
+    "#0A0A0A",
+    "#FF3B00",
+    "#2B00FF",
+    "#FFFFFF"
+   ],
+   "f": "Syne / DM Sans",
+   "note": "Diagonal collage with genuine energy; the rotated marquee band is the hook.",
+   "tone": "#ae9db3"
+  },
+  {
+   "r": 6,
+   "s": "casa-ocotillo",
+   "n": "Casa Ocotillo",
+   "a": "split-screen scroller",
+   "i": "Boutique hotel",
+   "p": [
+    "#EDE3D6",
+    "#332A22",
+    "#C0764A",
+    "#5B6E52",
+    "#1E1A17"
+   ],
+   "f": "Marcellus / Mulish",
+   "note": "Adobe and terracotta, photography given room. The quietest page here and the most confident.",
+   "tone": "#bfa891"
+  },
+  {
+   "r": 7,
+   "s": "onsen-mirador",
+   "n": "Onsen Mirador",
+   "a": "split-screen scroller",
+   "i": "Bathhouse and spa",
+   "p": [
+    "#0E1416",
+    "#E8EEEC",
+    "#9FBDBD",
+    "#A0714B",
+    "#3A4448"
+   ],
+   "f": "Cinzel / Cormorant Garamond",
+   "note": "Steam, dark water, a serif that whispers. Best mood on the sheet.",
+   "tone": "#212d36"
+  },
+  {
+   "r": 8,
+   "s": "the-undertow",
+   "n": "The Undertow",
+   "a": "editorial index rail",
+   "i": "Investigative magazine",
+   "p": [
+    "#F7F5F0",
+    "#111111",
+    "#B3121D",
+    "#6F6C66",
+    "#D8D4CC"
+   ],
+   "f": "Playfair Display / Spectral",
+   "note": "Austere editorial index. Hairlines, a numbered contents rail, nothing wasted.",
+   "tone": "#d6d4cf"
+  },
+  {
+   "r": 9,
+   "s": "the-ward-paper",
+   "n": "The Ward",
+   "a": "single-column long-form",
+   "i": "Local news cooperative",
+   "p": [
+    "#FFFDFA",
+    "#141414",
+    "#8C2B2B",
+    "#2A4E7A",
+    "#DEDAD3",
+    "#6B6B67"
+   ],
+   "f": "Playfair Display / Source Serif 4",
+   "note": "Genuine newspaper craft \u2014 masthead, rules, column rhythm, reporter beats.",
+   "tone": "#f6f3f0"
+  },
+  {
+   "r": 10,
+   "s": "kilnhouse",
+   "n": "Kilnhouse",
+   "a": "catalogue grid",
+   "i": "DTC cookware",
+   "p": [
+    "#F4EFE6",
+    "#221D18",
+    "#B4572F",
+    "#2F4A46",
+    "#FFFFFF",
+    "#CDC3B4"
+   ],
+   "f": "Fraunces / Karla",
+   "note": "Warm clay palette and beautiful still lifes; the glaze swatches are a real designer's move.",
+   "tone": "#cbc2b9"
+  },
+  {
+   "r": 11,
+   "s": "avers-frame",
+   "n": "Avers Frame",
+   "a": "editorial index rail",
+   "i": "Architectural photography portfolio",
+   "p": [
+    "#FFFFFF",
+    "#101010",
+    "#8A8A8A",
+    "#E4E4E4",
+    "#1F3BFF"
+   ],
+   "f": "Cormorant Garamond / Jost",
+   "note": "Almost all white space. An index rail and photographs that carry the whole page.",
+   "tone": "#fafafa"
+  },
+  {
+   "r": 12,
+   "s": "24hr-drain",
+   "n": "Hardin Drains",
+   "a": "full-bleed colour blocks with hard seams",
+   "i": "Emergency plumbing",
+   "p": [
+    "#FFDD00",
+    "#000000",
+    "#D40000",
+    "#111111",
+    "#FFFFFF"
+   ],
+   "f": "Archivo Black / Roboto Mono",
+   "note": "Yellow-black emergency scream with the phone number as the headline. Perfectly on-brief.",
+   "tone": "#9d460d"
+  },
+  {
+   "r": 13,
+   "s": "kinetic-hana",
+   "n": "Hana Sekigawa",
+   "a": "horizontal filmstrip band",
+   "i": "Motion design portfolio",
+   "p": [
+    "#0A0A0C",
+    "#F4F4F6",
+    "#FF4D6D",
+    "#B9BCC7",
+    "#15151B"
+   ],
+   "f": "Syncopate / Sen",
+   "note": "Motion-studio dark with magenta light trails \u2014 looks like a real reel site.",
+   "tone": "#1c1a1e"
+  },
+  {
+   "r": 14,
+   "s": "ledgerless",
+   "n": "Ledgerless",
+   "a": "oversized type as layout",
+   "i": "Fintech for freelancers",
+   "p": [
+    "#0D0C0F",
+    "#FAF7F2",
+    "#B6FF6B",
+    "#FF8A3D",
+    "#6A6772"
+   ],
+   "f": "Bricolage Grotesque / Public Sans",
+   "note": "Acid green on black, balance as the hero number. Fintech without the gradient clich\u00e9.",
+   "tone": "#212022"
+  },
+  {
+   "r": 15,
+   "s": "sediment-wine",
+   "n": "Sediment",
+   "a": "overlapping stacked cards",
+   "i": "Natural wine club",
+   "p": [
+    "#FDF6EF",
+    "#2A1A1F",
+    "#7B1E3A",
+    "#D97A34",
+    "#5C7A4A",
+    "#F5E6D6"
+   ],
+   "f": "Petrona / Lora",
+   "note": "Deep burgundy, tilted labels, an editorial hand throughout.",
+   "tone": "#625250"
+  },
+  {
+   "r": 16,
+   "s": "long-barn-weddings",
+   "n": "Halcyon Barn",
+   "a": "timeline spine",
+   "i": "Wedding venue",
+   "p": [
+    "#F8F4ED",
+    "#2E2A24",
+    "#9E9585",
+    "#7B8F5A",
+    "#C08B8B",
+    "#E0D8CB"
+   ],
+   "f": "Amatic SC / Crimson Pro",
+   "note": "Warm barn light, a script that earns its place, an honest timeline.",
+   "tone": "#dbd5cf"
+  },
+  {
+   "r": 17,
+   "s": "twelve-harvests",
+   "n": "Twelve Harvests",
+   "a": "timeline spine",
+   "i": "Specialty coffee subscription",
+   "p": [
+    "#FCF8F2",
+    "#2B1D14",
+    "#9E2B2B",
+    "#4C6B3C",
+    "#EFE1CE",
+    "#D9C9B4"
+   ],
+   "f": "Abril Fatface / Work Sans",
+   "note": "A calendar as the spine \u2014 the most original structural idea in the set.",
+   "tone": "#e1d4c7"
+  },
+  {
+   "r": 18,
+   "s": "iron-ledger",
+   "n": "Iron Ledger",
+   "a": "full-bleed colour blocks with hard seams",
+   "i": "Indie video game",
+   "p": [
+    "#12100E",
+    "#F0E6D2",
+    "#A63A22",
+    "#D8A64A",
+    "#3E5240",
+    "#E8DCC4"
+   ],
+   "f": "Chakra Petch / Rubik",
+   "note": "Ochre and oxblood war-game ledger; the parchment panels sell it.",
+   "tone": "#4f2b21"
+  },
+  {
+   "r": 19,
+   "s": "voltcraft-modular",
+   "n": "Voltmoor VX",
+   "a": "catalogue grid",
+   "i": "Modular synthesizer hardware",
+   "p": [
+    "#0B0B0D",
+    "#17171B",
+    "#E7E4DC",
+    "#D8452F",
+    "#C9A227",
+    "#2A6B5F"
+   ],
+   "f": "Orbitron / Space Mono",
+   "note": "Orange mono on black, module catalogue as a spec grid. Very cohesive.",
+   "tone": "#181516"
+  },
+  {
+   "r": 20,
+   "s": "wren-and-ash",
+   "n": "Wren & Ash",
+   "a": "catalogue grid",
+   "i": "Maker portfolio",
+   "p": [
+    "#F6F2EA",
+    "#241F1A",
+    "#A97B4F",
+    "#6B6155",
+    "#3F5347"
+   ],
+   "f": "EB Garamond / Karla",
+   "note": "Furniture catalogue in warm neutrals; the joint detail plates are a lovely touch.",
+   "tone": "#dcd5c9"
+  },
+  {
+   "r": 21,
+   "s": "second-spring",
+   "n": "Kindling Health",
+   "a": "single-column long-form",
+   "i": "Menopause telehealth",
+   "p": [
+    "#FBF6F1",
+    "#2A2320",
+    "#C36A63",
+    "#7C9382",
+    "#4A3A38"
+   ],
+   "f": "Instrument Serif / Figtree",
+   "note": "Serif long-form that treats the reader as an adult; portraits used well.",
+   "tone": "#e6e0db"
+  },
+  {
+   "r": 22,
+   "s": "commonground-trust",
+   "n": "Common Ground Trust",
+   "a": "map-first geographic",
+   "i": "Land conservation nonprofit",
+   "p": [
+    "#F3F5EF",
+    "#1B2A20",
+    "#2C6E8F",
+    "#6E8B3D",
+    "#C4913C",
+    "#C9D1C2"
+   ],
+   "f": "Newsreader / Source Sans 3",
+   "note": "Deep green, a real map, a curlew. Nonprofit work that isn't generic.",
+   "tone": "#949c92"
+  },
+  {
+   "r": 23,
+   "s": "editionable",
+   "n": "Editionable",
+   "a": "asymmetric diagonal collage",
+   "i": "Art platform",
+   "p": [
+    "#FAF7F4",
+    "#161412",
+    "#7B3FE4",
+    "#E8B04B",
+    "#DDD6CF"
+   ],
+   "f": "Italiana / Jost",
+   "note": "White-cube gallery calm; edition numbers as the structure.",
+   "tone": "#d5ccca"
+  },
+  {
+   "r": 24,
+   "s": "quarter-inserted",
+   "n": "Quarter Inserted",
+   "a": "full-bleed colour blocks with hard seams",
+   "i": "Arcade bar",
+   "p": [
+    "#12061F",
+    "#F5F0FF",
+    "#FF00A8",
+    "#00E5FF",
+    "#FFC400",
+    "#2A0B45"
+   ],
+   "f": "Monoton / Chivo",
+   "note": "Cyan-magenta-amber arcade neon, unapologetically loud.",
+   "tone": "#5f0c54"
+  },
+  {
+   "r": 25,
+   "s": "tracewell",
+   "n": "Tracewell",
+   "a": "terminal/console log",
+   "i": "AI observability / dev tooling",
+   "p": [
+    "#07090A",
+    "#0E1315",
+    "#C8D6D2",
+    "#4CFFB0",
+    "#FF5C4D",
+    "#4A5A57"
+   ],
+   "f": "JetBrains Mono / Inter",
+   "note": "Terminal-native. The trace stream as hero is exactly right for the audience.",
+   "tone": "#0f1314"
+  },
+  {
+   "r": 26,
+   "s": "anvil-field-t9",
+   "n": "Anvil Field T9",
+   "a": "spec-sheet table as hero",
+   "i": "Rugged computing hardware",
+   "p": [
+    "#101314",
+    "#191D1F",
+    "#DDE3E4",
+    "#FFB000",
+    "#2C3335",
+    "#5FD08A"
+   ],
+   "f": "Saira Condensed / IBM Plex Sans",
+   "note": "Dense spec sheet done properly \u2014 the table IS the design.",
+   "tone": "#212322"
+  },
+  {
+   "r": 27,
+   "s": "basis-tax",
+   "n": "Basis",
+   "a": "numbered manifesto list",
+   "i": "Crypto tax software",
+   "p": [
+    "#0C0D12",
+    "#E6E7F0",
+    "#7A5CFF",
+    "#3ED598",
+    "#FF5C5C",
+    "#1E2029"
+   ],
+   "f": "Major Mono Display / Sora",
+   "note": "Numbered failures in mono; cold and deliberate.",
+   "tone": "#111218"
+  },
+  {
+   "r": 28,
+   "s": "sinkstone",
+   "n": "Sinkstone",
+   "a": "numbered manifesto list",
+   "i": "Carbon removal registry",
+   "p": [
+    "#0B0F0D",
+    "#E4EDE7",
+    "#8FD6B4",
+    "#E0C060",
+    "#1E2724"
+   ],
+   "f": "Space Mono / IBM Plex Mono",
+   "note": "Mineral green mono ledger, eleven falsifiable claims. Severe in a good way.",
+   "tone": "#131916"
+  },
+  {
+   "r": 29,
+   "s": "moss-hollow-game",
+   "n": "Moss Hollow",
+   "a": "bento grid",
+   "i": "Mobile game",
+   "p": [
+    "#F3F7EC",
+    "#E4EEDA",
+    "#26331F",
+    "#6E9152",
+    "#A8446B",
+    "#E4A93C"
+   ],
+   "f": "Pacifico / Nunito",
+   "note": "Hand-illustrated warmth, seasons panel, genuinely charming.",
+   "tone": "#d6dcc9"
+  },
+  {
+   "r": 30,
+   "s": "byte-cubs",
+   "n": "Byte Cubs",
+   "a": "overlapping stacked cards",
+   "i": "Children's coding education",
+   "p": [
+    "#FFF9E8",
+    "#20223A",
+    "#FF5D8F",
+    "#3AA7FF",
+    "#8BE04E",
+    "#FFC93C"
+   ],
+   "f": "Fredoka / Nunito",
+   "note": "Primary blocks and rounded cards \u2014 reads instantly as for-kids without being childish.",
+   "tone": "#958e8c"
+  },
+  {
+   "r": 31,
+   "s": "housecell-home",
+   "n": "Housecell",
+   "a": "bento grid",
+   "i": "Home energy hardware",
+   "p": [
+    "#0E1712",
+    "#152119",
+    "#E9F2EC",
+    "#5BE38A",
+    "#F2B138",
+    "#24352B"
+   ],
+   "f": "Big Shoulders Display / Archivo",
+   "note": "Dark green energy dashboard with honest payback maths.",
+   "tone": "#2a342d"
+  },
+  {
+   "r": 32,
+   "s": "toolbelt-academy",
+   "n": "Toolbelt",
+   "a": "sidebar dossier with sticky nav",
+   "i": "Trades apprenticeship platform",
+   "p": [
+    "#16181C",
+    "#F1F2F4",
+    "#8B939C",
+    "#FFB020",
+    "#41C97D",
+    "#1F2229"
+   ],
+   "f": "Teko / Barlow",
+   "note": "Trades-yellow on black, earnings ladder as the centrepiece.",
+   "tone": "#3c3a36"
+  },
+  {
+   "r": 33,
+   "s": "spoke-and-van",
+   "n": "Spoke & Van",
+   "a": "map-first geographic",
+   "i": "Mobile bicycle repair",
+   "p": [
+    "#111811",
+    "#F2F7EF",
+    "#C6FF3D",
+    "#F26B21",
+    "#1C2620"
+   ],
+   "f": "Bebas Neue / Cabin",
+   "note": "Lime on charcoal, van-workshop map, tight service grid.",
+   "tone": "#20271e"
+  },
+  {
+   "r": 34,
+   "s": "carrow-valve",
+   "n": "Carrow Valve Works",
+   "a": "spec-sheet table as hero",
+   "i": "B2B industrial manufacturing",
+   "p": [
+    "#F2F3F4",
+    "#1A1D20",
+    "#5B676E",
+    "#C8102E",
+    "#DDE1E4"
+   ],
+   "f": "Oswald / Roboto Mono",
+   "note": "Industrial catalogue; the valve tables and forge photography work hard.",
+   "tone": "#adacad"
+  },
+  {
+   "r": 35,
+   "s": "storyboard-ai",
+   "n": "Boardsmith",
+   "a": "split-screen scroller",
+   "i": "AI tool for filmmakers",
+   "p": [
+    "#141414",
+    "#F0EFEC",
+    "#E8E2D6",
+    "#E2483C",
+    "#57565A"
+   ],
+   "f": "Bricolage Grotesque / Onest",
+   "note": "Panel grid used as layout \u2014 on-theme and well built.",
+   "tone": "#5c534a"
+  },
+  {
+   "r": 36,
+   "s": "gainstage",
+   "n": "Gainstage",
+   "a": "bento grid",
+   "i": "Creator tool for podcasters",
+   "p": [
+    "#0F1116",
+    "#181B22",
+    "#EDEEF2",
+    "#7C5CFF",
+    "#FF6B6B",
+    "#48E0A0"
+   ],
+   "f": "Outfit / Manrope",
+   "note": "Bento done tastefully, waveform accents, clean dark UI.",
+   "tone": "#1c1d25"
+  },
+  {
+   "r": 37,
+   "s": "tideline-collect",
+   "n": "Saltmarrow",
+   "a": "single-column long-form",
+   "i": "Marine conservation nonprofit",
+   "p": [
+    "#F2F7F8",
+    "#132226",
+    "#1E6B7A",
+    "#4A7A4E",
+    "#E2653A",
+    "#D4E0E2"
+   ],
+   "f": "Fraunces / Nunito Sans",
+   "note": "Cool marine palette, device tables, credible data storytelling.",
+   "tone": "#c4c8c9"
+  },
+  {
+   "r": 38,
+   "s": "field-to-pass",
+   "n": "Field to Pass",
+   "a": "horizontal filmstrip band",
+   "i": "Wholesale food marketplace",
+   "p": [
+    "#F5F7F0",
+    "#1C2418",
+    "#4E7B3A",
+    "#7A5230",
+    "#E5A83B",
+    "#D2D9C7"
+   ],
+   "f": "Alfa Slab One / Vollkorn",
+   "note": "Produce warmth, grower list, good rhythm \u2014 slightly safe.",
+   "tone": "#a5a89a"
+  },
+  {
+   "r": 39,
+   "s": "hutbook-alpine",
+   "n": "Hutbook",
+   "a": "overlapping stacked cards",
+   "i": "Alpine travel booking",
+   "p": [
+    "#F0F3F6",
+    "#1A2430",
+    "#5E6D7A",
+    "#FFFFFF",
+    "#2F7DA8",
+    "#E07B39"
+   ],
+   "f": "Rokkitt / Merriweather Sans",
+   "note": "Clean alpine booking with strong photography; layout plays it straight.",
+   "tone": "#626a72"
+  },
+  {
+   "r": 40,
+   "s": "backhaul-freight",
+   "n": "Backhaul",
+   "a": "bento grid",
+   "i": "Freight marketplace",
+   "p": [
+    "#101418",
+    "#182029",
+    "#E8EDF2",
+    "#F5A623",
+    "#38C172",
+    "#26313C"
+   ],
+   "f": "Antonio / Manrope",
+   "note": "Freight numbers presented clearly; competent rather than distinctive.",
+   "tone": "#232c34"
+  },
+  {
+   "r": 41,
+   "s": "palletmind",
+   "n": "Palletmind",
+   "a": "sidebar dossier with sticky nav",
+   "i": "Warehouse robotics",
+   "p": [
+    "#F1F3F5",
+    "#0F1519",
+    "#2E3F4C",
+    "#FFD400",
+    "#2F9E6B",
+    "#D5DBE0"
+   ],
+   "f": "Michroma / IBM Plex Sans",
+   "note": "Crisp industrial B2B; correct, a little corporate.",
+   "tone": "#d1d1cd"
+  },
+  {
+   "r": 42,
+   "s": "verbo-immersion",
+   "n": "Verbo",
+   "a": "timeline spine",
+   "i": "Language school",
+   "p": [
+    "#FFF8F0",
+    "#22201E",
+    "#C25E3A",
+    "#31456B",
+    "#7C8C4E",
+    "#E4D8C9"
+   ],
+   "f": "Zilla Slab / Epilogue",
+   "note": "Warm language-school editorial; pleasant, less daring.",
+   "tone": "#f3f0ed"
+  },
+  {
+   "r": 43,
+   "s": "dispatchbox",
+   "n": "Dispatchbox",
+   "a": "editorial index rail",
+   "i": "Newsletter publishing platform",
+   "p": [
+    "#FBFBF9",
+    "#191919",
+    "#3B4A9E",
+    "#FFE96B",
+    "#E0E0DA",
+    "#71716B"
+   ],
+   "f": "Literata / Public Sans",
+   "note": "Roman-numeral promises are a nice device; otherwise restrained.",
+   "tone": "#f1f1ee"
+  },
+  {
+   "r": 44,
+   "s": "safe-passage-law",
+   "n": "Firstlight Legal",
+   "a": "single-column long-form",
+   "i": "Refugee legal aid nonprofit",
+   "p": [
+    "#FFFFFF",
+    "#1A1A1A",
+    "#153A5B",
+    "#D98324",
+    "#DCDCDC"
+   ],
+   "f": "Libre Baskerville / Assistant",
+   "note": "Institutional blue, strong stats \u2014 deliberately sober.",
+   "tone": "#e9ebee"
+  },
+  {
+   "r": 45,
+   "s": "clause-radar",
+   "n": "Clause Radar",
+   "a": "spec-sheet table as hero",
+   "i": "Legal technology",
+   "p": [
+    "#FFFFFF",
+    "#101418",
+    "#1F3A5F",
+    "#B3341E",
+    "#2E7D5B",
+    "#E1E5E9"
+   ],
+   "f": "IBM Plex Serif / IBM Plex Mono",
+   "note": "Spec-table hero, precise, visually quiet.",
+   "tone": "#f3f4f5"
+  },
+  {
+   "r": 46,
+   "s": "little-molar",
+   "n": "Little Molar",
+   "a": "centred hero, three feature cards, testimonial, CTA",
+   "i": "Pediatric dentistry",
+   "p": [
+    "#FFFDF7",
+    "#243043",
+    "#4EC3E0",
+    "#FF8A7A",
+    "#8ED9B4",
+    "#FFD25E"
+   ],
+   "f": "Baloo 2 / Quicksand",
+   "note": "Friendly pastel pediatric; safe by design for anxious parents.",
+   "tone": "#ecf3f3"
+  },
+  {
+   "r": 47,
+   "s": "quiet-night-cpap",
+   "n": "Quiet Night A2",
+   "a": "spec-sheet table as hero",
+   "i": "Medical device hardware",
+   "p": [
+    "#F4F7FA",
+    "#16212B",
+    "#3E7CB1",
+    "#1B2A38",
+    "#DCE7EF",
+    "#3FA37E"
+   ],
+   "f": "Lexend / Figtree",
+   "note": "Clinical comparison page; clear, unadventurous.",
+   "tone": "#9ea5ab"
+  },
+  {
+   "r": 48,
+   "s": "paystack-plain",
+   "n": "Plainroll",
+   "a": "comparison ledger two-column",
+   "i": "SMB payroll fintech",
+   "p": [
+    "#FAFAF8",
+    "#121212",
+    "#0F6E5A",
+    "#9A9A9A",
+    "#D64545",
+    "#E2E2DE"
+   ],
+   "f": "Familjen Grotesk / Inter",
+   "note": "Plain by name and nature \u2014 a payroll ledger, legible and flat.",
+   "tone": "#ecedeb"
+  },
+  {
+   "r": 49,
+   "s": "ridgeline-roofing",
+   "n": "Ridgeline Roof & Gutter",
+   "a": "comparison ledger two-column",
+   "i": "Local home service",
+   "p": [
+    "#FBFAF7",
+    "#151719",
+    "#37474F",
+    "#E8501B",
+    "#D6D2CB"
+   ],
+   "f": "Archivo Black / Barlow",
+   "note": "Clean two-column ledger; trustworthy, not memorable.",
+   "tone": "#8f8f8c"
+  },
+  {
+   "r": 50,
+   "s": "clinic-line-ai",
+   "n": "Clinic Line",
+   "a": "centred hero, three feature cards, testimonial, CTA",
+   "i": "AI voice agents for healthcare",
+   "p": [
+    "#FFFFFF",
+    "#16202B",
+    "#2563C9",
+    "#DDF0EA",
+    "#5D6B7A"
+   ],
+   "f": "Sora / Hanken Grotesk",
+   "note": "The most conventional SaaS layout here \u2014 tidy, but the least distinctive.",
+   "tone": "#e7eaeb"
+  }
+ ]
+}

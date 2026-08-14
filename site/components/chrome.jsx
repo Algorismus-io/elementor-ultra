@@ -50,8 +50,8 @@ export const Chrome = ({ theme: t }) => (
     .agent-logos .al-label{width:100%}.al-chip{padding:6px 11px;font-size:11px}}
 
   /* ---- CTA buttons: whole box clickable (stretched link) ---- */
-  #cta-row>div,#cta-close>div{position:relative;cursor:pointer}
-  #cta-row>div a::after,#cta-close>div a::after{content:'';position:absolute;inset:0}
+  #cta-row>div,#cta-close>div,#cta-fifty>div{position:relative;cursor:pointer}
+  #cta-row>div a::after,#cta-close>div a::after,#cta-fifty>div a::after{content:'';position:absolute;inset:0}
 
   /* ---- display treatments ---- */
   #human-surface h1,#human-surface h2{text-transform:uppercase}
@@ -81,7 +81,7 @@ export const Chrome = ({ theme: t }) => (
   .ultra-ticker span em{font-style:normal;color:${t.color.go}}
   @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
-  #proof,#seam,#loop,#stack,#start{position:relative}
+  #proof,#fifty,#seam,#loop,#stack,#start{position:relative}
   /* ---- index rail ---- */
   .ultra-rail{position:fixed;left:22px;top:50%;transform:translateY(-50%);z-index:9998;
     display:flex;flex-direction:column;gap:14px;font-family:'GeistM',monospace;font-size:11px;letter-spacing:.12em}
@@ -99,19 +99,18 @@ export const Chrome = ({ theme: t }) => (
   @media(max-width:899px){#loop-strip>div:first-child{border-radius:12px 12px 0 0}
     #loop-strip>div:last-child{border-radius:0 0 12px 12px}}
 
-  /* ---- chapter rig ---- */
-  .chrig-outer{height:485vh;width:100%}
+  /* ---- chapter rig ----
+     The chapters are an ordinary vertical list at their natural height, in normal
+     document flow. The film pins beside them with position:sticky and travels its
+     own grid area — no runway, no transform track, no masked window, no scroll-jack.
+     Every chapter is reachable by plain scrolling, and by clicking a card or a tick. */
+  .chrig-outer{width:100%}
   .chrig{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:26px;width:100%;
-    position:sticky;top:86px;align-items:start}
-  .chrig-stage{}
-  .chrig{transition:grid-template-columns .7s cubic-bezier(.22,1,.36,1)}
-  .chrig.finale{grid-template-columns:minmax(0,1fr) minmax(0,0.001fr);gap:0}
-  .chrig.finale .chrig-chapters-vp{opacity:0;pointer-events:none;transition:opacity .45s ease}
-  .chrig.finale .chrig-frame{transform:none}
-  .chrig-chapters-vp{transition:opacity .45s ease}
-  .chrig-chapters-vp{height:calc(100vh - 140px);overflow:hidden;position:relative;
-    -webkit-mask-image:linear-gradient(to bottom,transparent,black 7%,black 89%,transparent);
-    mask-image:linear-gradient(to bottom,transparent,black 7%,black 89%,transparent)}
+    align-items:start}
+  /* align-self:start (inherited from align-items) keeps the stage content-height, so it
+     has its whole grid area — the height of the chapter column — to stick through. */
+  .chrig-stage{position:sticky;top:max(86px,calc(50vh - 250px))}
+  .chrig-chapters-vp{position:relative}
   .chrig-frame{background:${t.color.ink};border-radius:18px;padding:10px;position:relative;transform:rotate(-.4deg)}
   .chrig-frame video{width:100%;display:block;border-radius:10px;background:#000}
   .chrig-rail{position:relative;height:8px;margin:14px 6px 4px;background:#26262E;border-radius:4px;cursor:pointer}
@@ -125,10 +124,14 @@ export const Chrome = ({ theme: t }) => (
   #chrig-full{appearance:none;border:1.5px solid ${t.color.goBright};background:transparent;color:${t.color.goBright};
     border-radius:999px;padding:7px 14px;font-family:'GeistM',monospace;font-size:11.5px;letter-spacing:.1em;cursor:pointer;white-space:nowrap}
   #chrig-full:hover{background:${t.color.goBright};color:${t.color.stage}}
-  .chrig-chapters{display:flex;flex-direction:column;gap:3.5vh;padding:22vh 12px 30vh 3px;transition:transform .6s cubic-bezier(.22,1,.36,1);will-change:transform}
+  .chrig-chapters{display:flex;flex-direction:column;gap:16px;padding:0}
   .chrig-card{border:1.5px solid ${t.color.line};border-radius:14px;padding:18px 20px;background:#FBFAF5;
-    cursor:pointer;transform:translateY(6px);transition:background .4s,transform .4s,border-color .4s,box-shadow .4s}
-  .chrig-card.on{background:#FFFFFF;transform:none;border-color:${t.color.ink};box-shadow:6px 6px 0 ${t.color.ink}}
+    cursor:pointer;transition:background .4s,border-color .4s,box-shadow .4s}
+  .chrig-card.on{background:#FFFFFF;border-color:${t.color.ink};box-shadow:6px 6px 0 ${t.color.ink}}
+  /* STREAM mode (the film's origin refuses Range, so the chapters cannot seek it):
+     drop the affordance rather than offer a click that does nothing. */
+  .chrig-stream .chrig-card{cursor:default}
+  .chrig-tick[disabled]{cursor:default;pointer-events:none}
   .cc-top{display:flex;justify-content:space-between;gap:10px;font-family:'GeistM',monospace;font-size:11px;letter-spacing:.12em}
   .cc-n{color:${t.color.go}} .cc-at{color:${t.color.dim}}
   .cc-t{font-family:'Meso','Anton',sans-serif;font-size:27px;text-transform:uppercase;color:${t.color.ink};margin:8px 0 6px;line-height:1.05}
@@ -136,20 +139,17 @@ export const Chrome = ({ theme: t }) => (
   .cc-log{display:block;font-family:'GeistM',monospace;font-size:11.5px;color:${t.color.goBright};
     background:${t.color.stage};border-radius:8px;padding:8px 12px;white-space:pre-wrap;word-break:break-word}
   @media(max-width:899px){
-    .chrig-outer{height:auto}
-    .chrig{display:flex;flex-direction:column;gap:14px;position:static}
-    .chrig-chapters-vp{height:auto;overflow:visible;-webkit-mask-image:none;mask-image:none;min-width:0;max-width:100%;width:100%}
-    .chrig-stage{position:static}
+    /* same list, stacked: the film pins under the masthead, the chapters read below it */
+    .chrig{display:flex;flex-direction:column;gap:14px}
+    .chrig-chapters-vp{min-width:0;max-width:100%;width:100%}
+    .chrig-stage{position:sticky;top:58px;z-index:3;background:${t.color.paper};padding-bottom:8px}
     .chrig-frame{transform:none}
-    .chrig.finale{gap:14px}
-    .chrig.finale .chrig-chapters-vp{opacity:1;pointer-events:auto}
-    /* the clip strip — horizontal video-editor timeline */
-    .chrig-chapters{flex-direction:row;overflow-x:auto;gap:10px;padding:4px 2px 12px;transition:none;
-      scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;transform:none !important;max-width:100%;position:relative}
-    .chrig-card{flex:0 0 205px;scroll-snap-align:start;padding:12px 14px;transform:none}
+    .chrig-chapters{gap:12px;max-width:100%}
+    .chrig-card{padding:14px 16px}
     .chrig-card.on{box-shadow:3px 3px 0 ${t.color.ink}}
-    .cc-t{font-size:18px;margin:6px 0 0}
-    .cc-note,.cc-log{display:none}
+    .cc-t{font-size:21px;margin:7px 0 6px}
+    .cc-note{font-size:13.5px}
+    .cc-log{font-size:11px}
     .cc-top{font-size:10px}
     .chrig-cap{font-size:10px}
   }
@@ -171,6 +171,26 @@ export const Chrome = ({ theme: t }) => (
   #chip-row>div{flex:1 1 240px !important;min-width:230px}
   #chip-row>div:hover{transform:translateY(-4px);transition:transform .3s}
   @media(max-width:640px){#chip-row>div{flex:1 1 calc(50% - 6px) !important;min-width:0}}
+
+  /* ---- 02 / the fifty: same frame as the film rig, same chip language as #chip-row ---- */
+  .fifty-film{background:${t.color.ink};border-radius:18px;padding:10px;width:100%;
+    position:relative;transform:rotate(-.4deg)}
+  .fifty-film video{width:100%;display:block;border-radius:10px;background:#000;aspect-ratio:16/9}
+  .fifty-under{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 8px 4px;flex-wrap:wrap}
+  .fifty-cap{font-family:'GeistM',monospace;font-size:11.5px;letter-spacing:.06em;color:${t.color.paper}}
+  #fifty-play{appearance:none;border:1.5px solid ${t.color.goBright};background:transparent;color:${t.color.goBright};
+    border-radius:999px;padding:7px 14px;font-family:'GeistM',monospace;font-size:11.5px;letter-spacing:.1em;
+    cursor:pointer;white-space:nowrap}
+  #fifty-play:hover{background:${t.color.goBright};color:${t.color.stage}}
+  #fifty-play:focus-visible,#fifty-row>div:focus-visible{outline:2.5px solid #2F6BFF;outline-offset:2px}
+  #fifty-row>div{position:relative;flex:1 1 205px !important;min-width:190px;
+    transition:transform .25s,box-shadow .25s}
+  #fifty-row>div:hover{transform:translateY(-4px);box-shadow:5px 5px 0 ${t.color.ink}}
+  #fifty-row>div a::after{content:'';position:absolute;inset:0}
+  @media(max-width:640px){
+    .fifty-film{transform:none}
+    #fifty-row>div{flex:1 1 calc(50% - 6px) !important;min-width:0}
+  }
   /* ---- seam multiplayer ---- */
   .mp-cursor{position:absolute;left:0;top:0;z-index:7;pointer-events:none;
     will-change:transform;transform:translate(40px,40px)}
@@ -223,8 +243,9 @@ export const Chrome = ({ theme: t }) => (
 </div>
 <nav class="ultra-rail" aria-label="Sections">
   <a href="#hero" data-s="hero">00</a><a href="#proof" data-s="proof">01</a>
-  <a href="#seam" data-s="seam">02</a><a href="#loop" data-s="loop">03</a>
-  <a href="#stack" data-s="stack">04</a><a href="#start" data-s="start">05</a>
+  <a href="#fifty" data-s="fifty">02</a><a href="#seam" data-s="seam">03</a>
+  <a href="#loop" data-s="loop">04</a><a href="#stack" data-s="stack">05</a>
+  <a href="#start" data-s="start">06</a>
 </nav>
 <script>
 (function(){
@@ -264,7 +285,7 @@ export const Chrome = ({ theme: t }) => (
     if(e.key==='h'||e.key==='H')apply('human');
   });
   // reveals: only direct section children, with a settle fallback
-  var secs=['hero','proof','seam','loop','stack','start','colophon'];
+  var secs=['hero','proof','fifty','seam','loop','stack','start','colophon'];
   var kids=[];
   secs.forEach(function(id){var s=document.getElementById(id);if(!s)return;
     Array.prototype.forEach.call(s.children,function(c){if(c.tagName==='DIV'){c.classList.add('rv');kids.push(c)}});});
@@ -278,7 +299,7 @@ export const Chrome = ({ theme: t }) => (
   var links=document.querySelectorAll('.ultra-rail a');
   var so=new IntersectionObserver(function(es){es.forEach(function(e){
     if(e.isIntersecting){links.forEach(function(l){l.classList.toggle('on',l.dataset.s===e.target.id)})}})},{threshold:.25});
-  secs.slice(0,6).forEach(function(id){var s=document.getElementById(id);if(s)so.observe(s)});
+  secs.slice(0,7).forEach(function(id){var s=document.getElementById(id);if(s)so.observe(s)});
 })();
 </script>
 `}</html>

@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+			<title>Tracewell — Replay the agent run that broke &#8211; Elementor Ultra Dev</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name='robots' content='max-image-preview:large' />
+<title>Tracewell — Replay the agent run that broke &#8211; Elementor Ultra Dev</title>
+<link rel='dns-prefetch' href='//127.0.0.1' />
+<link rel="alternate" type="application/rss+xml" title="Elementor Ultra Dev &raquo; Feed" href="http://127.0.0.1:8950/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Elementor Ultra Dev &raquo; Comments Feed" href="http://127.0.0.1:8950/comments/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="http://127.0.0.1:8950/wp-json/oembed/1.0/embed?url=http%3A%2F%2F127.0.0.1%3A8950%2Ftracewell%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="http://127.0.0.1:8950/wp-json/oembed/1.0/embed?url=http%3A%2F%2F127.0.0.1%3A8950%2Ftracewell%2F&#038;format=xml" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-color]){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--base: #FFFFFF;--wp--preset--color--contrast: #111111;--wp--preset--color--accent-1: #FFEE58;--wp--preset--color--accent-2: #F6CFF4;--wp--preset--color--accent-3: #503AA8;--wp--preset--color--accent-4: #686868;--wp--preset--color--accent-5: #FBFAF3;--wp--preset--color--accent-6: color-mix(in srgb, currentColor 20%, transparent);--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 0.875rem;--wp--preset--font-size--medium: clamp(1rem, 1rem + ((1vw - 0.2rem) * 0.196), 1.125rem);--wp--preset--font-size--large: clamp(1.125rem, 1.125rem + ((1vw - 0.2rem) * 0.392), 1.375rem);--wp--preset--font-size--x-large: clamp(1.75rem, 1.75rem + ((1vw - 0.2rem) * 0.392), 2rem);--wp--preset--font-size--xx-large: clamp(2.15rem, 2.15rem + ((1vw - 0.2rem) * 1.333), 3rem);--wp--preset--font-family--manrope: Manrope, sans-serif;--wp--preset--font-family--fira-code: "Fira Code", monospace;--wp--preset--spacing--20: 10px;--wp--preset--spacing--30: 20px;--wp--preset--spacing--40: 30px;--wp--preset--spacing--50: clamp(30px, 5vw, 50px);--wp--preset--spacing--60: clamp(30px, 7vw, 70px);--wp--preset--spacing--70: clamp(50px, 7vw, 90px);--wp--preset--spacing--80: clamp(70px, 10vw, 140px);--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:root { --wp--style--global--content-size: 645px;--wp--style--global--wide-size: 1340px; }:where(body) { margin: 0; }.wp-site-blocks { padding-top: var(--wp--style--root--padding-top); padding-bottom: var(--wp--style--root--padding-bottom); }.has-global-padding { padding-right: var(--wp--style--root--padding-right); padding-left: var(--wp--style--root--padding-left); }.has-global-padding > .alignfull { margin-right: calc(var(--wp--style--root--padding-right) * -1); margin-left: calc(var(--wp--style--root--padding-left) * -1); }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) { padding-right: 0; padding-left: 0; }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) > .alignfull { margin-left: 0; margin-right: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 1.2rem; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 1.2rem; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 1.2rem;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 1.2rem;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 1.2rem;}:root :where(.is-layout-grid){gap: 1.2rem;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{background-color: var(--wp--preset--color--base);color: var(--wp--preset--color--contrast);font-family: var(--wp--preset--font-family--manrope);font-size: var(--wp--preset--font-size--large);font-weight: 300;letter-spacing: -0.1px;line-height: 1.4;--wp--style--root--padding-top: 0px;--wp--style--root--padding-right: var(--wp--preset--spacing--50);--wp--style--root--padding-bottom: 0px;--wp--style--root--padding-left: var(--wp--preset--spacing--50);}a:where(:not(.wp-element-button)){color: currentColor;}:root :where(a:where(:not(.wp-element-button)):hover){text-decoration: none;}h1, h2, h3, h4, h5, h6{font-weight: 400;letter-spacing: -0.1px;line-height: 1.125;}h1{font-size: var(--wp--preset--font-size--xx-large);}h2{font-size: var(--wp--preset--font-size--x-large);}h3{font-size: var(--wp--preset--font-size--large);}h4{font-size: var(--wp--preset--font-size--medium);}h5{font-size: var(--wp--preset--font-size--small);letter-spacing: 0.5px;}h6{font-size: var(--wp--preset--font-size--small);font-weight: 700;letter-spacing: 1.4px;text-transform: uppercase;}:root :where(.wp-element-button, .wp-block-button__link){background-color: var(--wp--preset--color--contrast);border-width: 0;color: var(--wp--preset--color--base);font-family: inherit;font-size: var(--wp--preset--font-size--medium);font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: 1rem;padding-right: 2.25rem;padding-bottom: 1rem;padding-left: 2.25rem;text-decoration: none;text-transform: inherit;}:root :where(.wp-element-button:hover, .wp-block-button__link:hover){background-color: color-mix(in srgb, var(--wp--preset--color--contrast) 85%, transparent);border-color: transparent;color: var(--wp--preset--color--base);}:root :where(.wp-element-button:focus, .wp-block-button__link:focus){outline-color: var(--wp--preset--color--accent-4);outline-offset: 2px;}:root :where(.wp-element-caption, .wp-block-audio figcaption, .wp-block-embed figcaption, .wp-block-gallery figcaption, .wp-block-image figcaption, .wp-block-table figcaption, .wp-block-video figcaption){font-size: var(--wp--preset--font-size--small);line-height: 1.4;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-base-color{color: var(--wp--preset--color--base) !important;}.has-contrast-color{color: var(--wp--preset--color--contrast) !important;}.has-accent-1-color{color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-color{color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-color{color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-color{color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-color{color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-color{color: var(--wp--preset--color--accent-6) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-base-background-color{background-color: var(--wp--preset--color--base) !important;}.has-contrast-background-color{background-color: var(--wp--preset--color--contrast) !important;}.has-accent-1-background-color{background-color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-background-color{background-color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-background-color{background-color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-background-color{background-color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-background-color{background-color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-background-color{background-color: var(--wp--preset--color--accent-6) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-base-border-color{border-color: var(--wp--preset--color--base) !important;}.has-contrast-border-color{border-color: var(--wp--preset--color--contrast) !important;}.has-accent-1-border-color{border-color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-border-color{border-color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-border-color{border-color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-border-color{border-color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-border-color{border-color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-border-color{border-color: var(--wp--preset--color--accent-6) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-xx-large-font-size{font-size: var(--wp--preset--font-size--xx-large) !important;}.has-manrope-font-family{font-family: var(--wp--preset--font-family--manrope) !important;}.has-fira-code-font-family{font-family: var(--wp--preset--font-family--fira-code) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<style id="wp-block-template-skip-link-inline-css">
+/*! This file is auto-generated */
+.skip-link.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute!important;width:1px;word-wrap:normal!important;word-break:normal!important}.skip-link.screen-reader-text:focus{background-color:#eee;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}
+/*# sourceURL=/wp-includes/css/wp-block-template-skip-link.min.css */
+</style>
+<style id="twentytwentyfive-style-inline-css">
+a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-site-blocks :focus){outline-width:2px;outline-style:solid}.wp-block-navigation .wp-block-navigation-submenu .wp-block-navigation-item:not(:last-child){margin-bottom:3px}.wp-block-navigation .wp-block-navigation-item .wp-block-navigation-item__content{outline-offset:4px}.wp-block-navigation .wp-block-navigation-item ul.wp-block-navigation__submenu-container .wp-block-navigation-item__content{outline-offset:0}blockquote,caption,figcaption,h1,h2,h3,h4,h5,h6,p{text-wrap:pretty}.more-link{display:block}:where(pre){overflow-x:auto}
+/*# sourceURL=http://127.0.0.1:8950/wp-content/themes/twentytwentyfive/style.min.css */
+</style>
+<link rel='stylesheet' id='elementor-frontend-css' href='http://127.0.0.1:8950/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=4.2.1' media='all' />
+<style id="elementor-frontend-inline-css">
+.e-heading-base a, .e-paragraph-base a { all: unset; cursor: pointer; }form[data-element_type="e-form"].form-state-success [data-element_type="e-form-success-message"],form[data-element_type="e-form"].form-state-error [data-element_type="e-form-error-message"]{ display: block; }
+/*# sourceURL=elementor-frontend-inline-css */
+</style>
+<link rel='stylesheet' id='elementor-post-4-css' href='http://127.0.0.1:8950/wp-content/uploads/elementor/css/post-4.css?ver=1786663961' media='all' />
+<link rel='stylesheet' id='base-desktop-css' href='http://127.0.0.1:8950/wp-content/uploads/elementor/css/base-desktop.css?ver=6a7e586c631f0' media='all' />
+<link rel='stylesheet' id='local-247-frontend-desktop-css' href='http://127.0.0.1:8950/wp-content/uploads/elementor/css/local-247-frontend-desktop.css?ver=6a7e5762ce8b0' media='all' />
+<link rel='stylesheet' id='local-247-frontend-tablet-css' href='http://127.0.0.1:8950/wp-content/uploads/elementor/css/local-247-frontend-tablet.css?ver=6a7e5762ce8b0' media='(max-width:1024px)' />
+<link rel='stylesheet' id='base-mobile-css' href='http://127.0.0.1:8950/wp-content/uploads/elementor/css/base-mobile.css?ver=6a7e586c631f0' media='(max-width:767px)' />
+<link rel='stylesheet' id='local-247-frontend-mobile-css' href='http://127.0.0.1:8950/wp-content/uploads/elementor/css/local-247-frontend-mobile.css?ver=6a7e5762ce8b0' media='(max-width:767px)' />
+<link rel='stylesheet' id='elementor-gf-roboto-css' href='https://fonts.googleapis.com/css?family=Roboto:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&#038;display=swap' media='all' />
+<link rel='stylesheet' id='elementor-gf-robotoslab-css' href='https://fonts.googleapis.com/css?family=Roboto+Slab:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&#038;display=swap' media='all' />
+<link rel='stylesheet' id='elementor-gf-jetbrainsmono-css' href='https://fonts.googleapis.com/css?family=JetBrains+Mono:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&#038;display=swap' media='all' />
+<link rel='stylesheet' id='elementor-gf-inter-css' href='https://fonts.googleapis.com/css?family=Inter:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&#038;display=swap' media='all' />
+<script id="jquery-core-js" src="http://127.0.0.1:8950/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="http://127.0.0.1:8950/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<link rel="https://api.w.org/" href="http://127.0.0.1:8950/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="http://127.0.0.1:8950/wp-json/wp/v2/pages/247" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://127.0.0.1:8950/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 7.0.4" />
+<link rel="canonical" href="http://127.0.0.1:8950/tracewell/" />
+<link rel='shortlink' href='http://127.0.0.1:8950/?p=247' />
+<meta name="generator" content="Elementor 4.2.1; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<style class="wp-fonts-local">
+@font-face{font-family:Manrope;font-style:normal;font-weight:200 800;font-display:fallback;src:url('http://127.0.0.1:8950/wp-content/themes/twentytwentyfive/assets/fonts/manrope/Manrope-VariableFont_wght.woff2') format('woff2');}
+@font-face{font-family:"Fira Code";font-style:normal;font-weight:300 700;font-display:fallback;src:url('http://127.0.0.1:8950/wp-content/themes/twentytwentyfive/assets/fonts/fira-code/FiraCode-VariableFont_wght.woff2') format('woff2');}
+</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /></head>
+<body class="wp-singular page-template page-template-elementor_canvas page page-id-247 wp-embed-responsive wp-theme-twentytwentyfive elementor-default elementor-template-canvas elementor-kit-4 elementor-page elementor-page-247">
+			<div data-elementor-type="wp-page" data-elementor-id="247" class="elementor elementor-247">
+						<div class="elementor-element elementor-element-e00000 elementor-widget elementor-widget-html" data-id="e00000" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					<style id="exjsx-raw-2hjlwo-0">.elementor-element-e00000{margin:0 !important;height:0;line-height:0;}.elementor .e-2hjlwo-e00062-s.e-2hjlwo-e00062-s{& .e-tab p { color: #7B8B88; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.04em; margin: 0; } & .e-tab { border-bottom: 1px solid #161E20; padding: 10px 14px; } & .e-tab.e--selected p { color: #4CFFB0; } & .e-tab.e--selected { border-bottom: 1px solid #4CFFB0; }}</style>				</div>
+		<div class="elementor-element elementor-element-e00001 e-con e-atomic-element e-flexbox-base e-2hjlwo-e00001-s " data-id="e00001" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00001">
+    <div class="elementor-element elementor-element-e00002 e-con e-atomic-element e-flexbox-base e-2hjlwo-e00002-s " data-id="e00002" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00002">
+    <div class="elementor-element elementor-element-e00003 e-con e-atomic-element e-flexbox-base e-2hjlwo-e00003-s " data-id="e00003" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00003">
+    <div class="elementor-element elementor-element-e00004 e-con e-atomic-element e-flexbox-base e-2hjlwo-e00004-s " data-id="e00004" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00004">
+    <div class="elementor-element elementor-element-e00005 e-con e-atomic-element e-flexbox-base e-2hjlwo-e00005-s " data-id="e00005" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00005">
+    
+</div>
+			<p class="e-2hjlwo-e00006-s e-paragraph-base" data-interaction-id="e00006">tracewell</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00007 e-con e-atomic-element e-flexbox-base e-2hjlwo-e00007-s " data-id="e00007" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00007">
+    			<p class="e-2hjlwo-e00008-s e-paragraph-base" data-interaction-id="e00008">status: capturing</p>
+					<p class="e-2hjlwo-e00009-s e-paragraph-base" data-interaction-id="e00009">region: eu-west-1</p>
+					<p class="e-2hjlwo-e0000a-s e-paragraph-base" data-interaction-id="e0000a"><a href="#install" target="_self" class="e-paragraph-link-base">
+		docs
+	</a></p>
+		
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0000b e-con e-atomic-element e-flexbox-base e-2hjlwo-e0000b-s " data-id="e0000b" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000b" id="top">
+    <div class="elementor-element elementor-element-e0000c e-con e-atomic-element e-grid-base e-2hjlwo-e0000c-s " data-id="e0000c" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0000c">
+    <div class="elementor-element elementor-element-e0000d e-con e-atomic-element e-flexbox-base e-2hjlwo-e0000d-s " data-id="e0000d" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000d">
+    <div class="elementor-element elementor-element-e0000e e-con e-atomic-element e-flexbox-base e-2hjlwo-e0000e-s " data-id="e0000e" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000e">
+    			<p class="e-2hjlwo-e0000f-s e-paragraph-base" data-interaction-id="e0000f">●</p>
+					<p class="e-2hjlwo-e0000g-s e-paragraph-base" data-interaction-id="e0000g">run 8f2a1c · 12 spans · exit 1</p>
+		
+</div>
+			<h1 data-interaction-id="e0000h" class="e-2hjlwo-e0000h-s e-heading-base">Replay the agent run that broke.</h1>
+					<p class="e-2hjlwo-e0000i-s e-paragraph-base" data-interaction-id="e0000i">Tracewell captures every span, tool call and token of your agent in production, then lets you re-run the exact failure against a different prompt or model. <strong>Fix it before you ship it.</strong></p>
+		<div class="elementor-element elementor-element-e0000j e-con e-atomic-element e-flexbox-base e-2hjlwo-e0000j-s " data-id="e0000j" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000j">
+    			<p class="e-2hjlwo-e0000k-s e-paragraph-base" data-interaction-id="e0000k"><a href="#install" target="_self" class="e-paragraph-link-base">
+		Start capturing traces
+	</a></p>
+					<p class="e-2hjlwo-e0000l-s e-paragraph-base" data-interaction-id="e0000l"><a href="#anatomy" target="_self" class="e-paragraph-link-base">
+		Read the trace format spec
+	</a></p>
+		
+</div>
+<div class="elementor-element elementor-element-e0000m e-con e-atomic-element e-flexbox-base e-2hjlwo-e0000m-s " data-id="e0000m" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000m">
+    <div class="elementor-element elementor-element-e0000n e-con e-atomic-element e-flexbox-base e-2hjlwo-e0000n-s " data-id="e0000n" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000n">
+    			<p class="e-2hjlwo-e0000o-s e-paragraph-base" data-interaction-id="e0000o">3.4ms</p>
+					<p class="e-2hjlwo-e0000p-s e-paragraph-base" data-interaction-id="e0000p">median overhead per span</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0000q e-con e-atomic-element e-flexbox-base e-2hjlwo-e0000q-s " data-id="e0000q" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000q">
+    			<p class="e-2hjlwo-e0000r-s e-paragraph-base" data-interaction-id="e0000r">90 days</p>
+					<p class="e-2hjlwo-e0000s-s e-paragraph-base" data-interaction-id="e0000s">traces retained on the free tier</p>
+		
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0000t e-con e-atomic-element e-flexbox-base e-2hjlwo-e0000t-s " data-id="e0000t" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000t">
+    <div class="elementor-element elementor-element-e0000u e-con e-atomic-element e-flexbox-base e-2hjlwo-e0000u-s " data-id="e0000u" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000u">
+    <div class="elementor-element elementor-element-e0000v e-con e-atomic-element e-flexbox-base e-2hjlwo-e0000v-s " data-id="e0000v" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000v">
+    <div class="elementor-element elementor-element-e0000w e-con e-atomic-element e-flexbox-base e-2hjlwo-e0000w-s " data-id="e0000w" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000w">
+    
+</div>
+<div class="elementor-element elementor-element-e0000x e-con e-atomic-element e-flexbox-base e-2hjlwo-e0000x-s " data-id="e0000x" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000x">
+    
+</div>
+<div class="elementor-element elementor-element-e0000y e-con e-atomic-element e-flexbox-base e-2hjlwo-e0000y-s " data-id="e0000y" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000y">
+    
+</div>
+			<p class="e-2hjlwo-e0000z-s e-paragraph-base" data-interaction-id="e0000z">tracewell stream — checkout-agent</p>
+		
+</div>
+			<p class="e-2hjlwo-e00010-s e-paragraph-base" data-interaction-id="e00010">LIVE</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00011 e-con e-atomic-element e-flexbox-base e-2hjlwo-e00011-s " data-id="e00011" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00011">
+    <div class="elementor-element elementor-element-e00012 e-con e-atomic-element e-flexbox-base e-2hjlwo-e00012-s " data-id="e00012" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00012">
+    			<p class="e-2hjlwo-e00013-s e-paragraph-base" data-interaction-id="e00013">12:04:07.118</p>
+					<p class="e-2hjlwo-e00014-s e-paragraph-base" data-interaction-id="e00014">span</p>
+					<p class="e-2hjlwo-e00015-s e-paragraph-base" data-interaction-id="e00015">agent.plan  · 4 msgs → 1,204 tok</p>
+					<p class="e-2hjlwo-e00016-s e-paragraph-base" data-interaction-id="e00016">812ms</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00017 e-con e-atomic-element e-flexbox-base e-2hjlwo-e00017-s " data-id="e00017" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00017">
+    			<p class="e-2hjlwo-e00018-s e-paragraph-base" data-interaction-id="e00018">12:04:07.930</p>
+					<p class="e-2hjlwo-e00019-s e-paragraph-base" data-interaction-id="e00019">tool</p>
+					<p class="e-2hjlwo-e0001a-s e-paragraph-base" data-interaction-id="e0001a">search_inventory(sku=A-771)</p>
+					<p class="e-2hjlwo-e0001b-s e-paragraph-base" data-interaction-id="e0001b">61ms</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0001c e-con e-atomic-element e-flexbox-base e-2hjlwo-e0001c-s " data-id="e0001c" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001c">
+    			<p class="e-2hjlwo-e0001d-s e-paragraph-base" data-interaction-id="e0001d">12:04:08.001</p>
+					<p class="e-2hjlwo-e0001e-s e-paragraph-base" data-interaction-id="e0001e">tool</p>
+					<p class="e-2hjlwo-e0001f-s e-paragraph-base" data-interaction-id="e0001f">search_inventory(sku=A-771)</p>
+					<p class="e-2hjlwo-e0001g-s e-paragraph-base" data-interaction-id="e0001g">58ms</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0001h e-con e-atomic-element e-flexbox-base e-2hjlwo-e0001h-s " data-id="e0001h" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001h">
+    			<p class="e-2hjlwo-e0001i-s e-paragraph-base" data-interaction-id="e0001i">12:04:08.070</p>
+					<p class="e-2hjlwo-e0001j-s e-paragraph-base" data-interaction-id="e0001j">tool</p>
+					<p class="e-2hjlwo-e0001k-s e-paragraph-base" data-interaction-id="e0001k">search_inventory(sku=A-771)</p>
+					<p class="e-2hjlwo-e0001l-s e-paragraph-base" data-interaction-id="e0001l">63ms</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0001m e-con e-atomic-element e-flexbox-base e-2hjlwo-e0001m-s " data-id="e0001m" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001m">
+    			<p class="e-2hjlwo-e0001n-s e-paragraph-base" data-interaction-id="e0001n">12:04:08.140</p>
+					<p class="e-2hjlwo-e0001o-s e-paragraph-base" data-interaction-id="e0001o">warn</p>
+					<p class="e-2hjlwo-e0001p-s e-paragraph-base" data-interaction-id="e0001p">repeat tool call ×3 — no state change</p>
+					<p class="e-2hjlwo-e0001q-s e-paragraph-base" data-interaction-id="e0001q">—</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0001r e-con e-atomic-element e-flexbox-base e-2hjlwo-e0001r-s " data-id="e0001r" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001r">
+    			<p class="e-2hjlwo-e0001s-s e-paragraph-base" data-interaction-id="e0001s">12:04:08.220</p>
+					<p class="e-2hjlwo-e0001t-s e-paragraph-base" data-interaction-id="e0001t">span</p>
+					<p class="e-2hjlwo-e0001u-s e-paragraph-base" data-interaction-id="e0001u">agent.act   · 9,881 tok · $0.0412</p>
+					<p class="e-2hjlwo-e0001v-s e-paragraph-base" data-interaction-id="e0001v">2.10s</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0001w e-con e-atomic-element e-flexbox-base e-2hjlwo-e0001w-s " data-id="e0001w" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001w">
+    			<p class="e-2hjlwo-e0001x-s e-paragraph-base" data-interaction-id="e0001x">12:04:10.330</p>
+					<p class="e-2hjlwo-e0001y-s e-paragraph-base" data-interaction-id="e0001y">fail</p>
+					<p class="e-2hjlwo-e0001z-s e-paragraph-base" data-interaction-id="e0001z">max_iterations exceeded · exit 1</p>
+					<p class="e-2hjlwo-e00020-s e-paragraph-base" data-interaction-id="e00020">—</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00021 e-con e-atomic-element e-flexbox-base e-2hjlwo-e00021-s " data-id="e00021" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00021">
+    			<p class="e-2hjlwo-e00022-s e-paragraph-base" data-interaction-id="e00022">12:04:10.331</p>
+					<p class="e-2hjlwo-e00023-s e-paragraph-base" data-interaction-id="e00023">save</p>
+					<p class="e-2hjlwo-e00024-s e-paragraph-base" data-interaction-id="e00024">trace persisted · replayable</p>
+					<p class="e-2hjlwo-e00025-s e-paragraph-base" data-interaction-id="e00025">3.4ms</p>
+		
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e00026 e-con e-atomic-element e-flexbox-base e-2hjlwo-e00026-s " data-id="e00026" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00026">
+    			<p class="e-2hjlwo-e00027-s e-paragraph-base" data-interaction-id="e00027">12 spans · 11,085 tok · $0.0412</p>
+					<p class="e-2hjlwo-e00028-s e-paragraph-base" data-interaction-id="e00028">REPLAY ⏎</p>
+		
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e00029 e-con e-atomic-element e-flexbox-base e-2hjlwo-e00029-s " data-id="e00029" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00029">
+    
+</div>
+<div class="elementor-element elementor-element-e0002a e-con e-atomic-element e-flexbox-base e-2hjlwo-e0002a-s " data-id="e0002a" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002a">
+    <div class="elementor-element elementor-element-e0002b e-con e-atomic-element e-grid-base e-2hjlwo-e0002b-s " data-id="e0002b" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0002b">
+    <div class="elementor-element elementor-element-e0002c e-con e-atomic-element e-flexbox-base e-2hjlwo-e0002c-s " data-id="e0002c" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002c">
+    			<p class="e-2hjlwo-e0002d-s e-paragraph-base" data-interaction-id="e0002d">// 01 · incident</p>
+					<h2 data-interaction-id="e0002e" class="e-2hjlwo-e0002e-s e-heading-base">The failure that costs you a weekend.</h2>
+					<p class="e-2hjlwo-e0002f-s e-paragraph-base" data-interaction-id="e0002f">The agent answered wrong at 02:41. Your logs have the prompt and the final string, and nothing in between — no tool arguments, no intermediate messages, no token accounting. So you guess, you patch, you deploy, and you wait to see if it happens again.</p>
+		<div class="elementor-element elementor-element-e0002g e-con e-atomic-element e-flexbox-base e-2hjlwo-e0002g-s " data-id="e0002g" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002g">
+    			<p class="e-2hjlwo-e0002h-s e-paragraph-base" data-interaction-id="e0002h">$400 / night · 11 nights</p>
+					<p class="e-2hjlwo-e0002i-s e-paragraph-base" data-interaction-id="e0002i">A tool-call loop nobody could see, billed at full rate until someone read the invoice.</p>
+		
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0002j e-con e-atomic-element e-flexbox-base e-2hjlwo-e0002j-s " data-id="e0002j" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002j">
+    <div class="elementor-element elementor-element-e0002k e-con e-atomic-element e-flexbox-base e-2hjlwo-e0002k-s " data-id="e0002k" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002k">
+    <div class="elementor-element elementor-element-e0002l e-con e-atomic-element e-flexbox-base e-2hjlwo-e0002l-s " data-id="e0002l" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002l">
+    <div class="elementor-element elementor-element-e0002m e-con e-atomic-element e-flexbox-base e-2hjlwo-e0002m-s " data-id="e0002m" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002m">
+    
+</div>
+<div class="elementor-element elementor-element-e0002n e-con e-atomic-element e-flexbox-base e-2hjlwo-e0002n-s " data-id="e0002n" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002n">
+    
+</div>
+<div class="elementor-element elementor-element-e0002o e-con e-atomic-element e-flexbox-base e-2hjlwo-e0002o-s " data-id="e0002o" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002o">
+    
+</div>
+			<p class="e-2hjlwo-e0002p-s e-paragraph-base" data-interaction-id="e0002p">app.log — what you actually have</p>
+		
+</div>
+			<p class="e-2hjlwo-e0002q-s e-paragraph-base" data-interaction-id="e0002q">GREP</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0002r e-con e-atomic-element e-flexbox-base e-2hjlwo-e0002r-s " data-id="e0002r" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002r">
+    <div class="elementor-element elementor-element-e0002s e-con e-atomic-element e-flexbox-base e-2hjlwo-e0002s-s " data-id="e0002s" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002s">
+    			<p class="e-2hjlwo-e0002t-s e-paragraph-base" data-interaction-id="e0002t">02:41:03</p>
+					<p class="e-2hjlwo-e0002u-s e-paragraph-base" data-interaction-id="e0002u">INFO</p>
+					<p class="e-2hjlwo-e0002v-s e-paragraph-base" data-interaction-id="e0002v">request received · user 44120</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0002w e-con e-atomic-element e-flexbox-base e-2hjlwo-e0002w-s " data-id="e0002w" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002w">
+    			<p class="e-2hjlwo-e0002x-s e-paragraph-base" data-interaction-id="e0002x">02:41:09</p>
+					<p class="e-2hjlwo-e0002y-s e-paragraph-base" data-interaction-id="e0002y">INFO</p>
+					<p class="e-2hjlwo-e0002z-s e-paragraph-base" data-interaction-id="e0002z">agent responded (6.2s)</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00030 e-con e-atomic-element e-flexbox-base e-2hjlwo-e00030-s " data-id="e00030" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00030">
+    			<p class="e-2hjlwo-e00031-s e-paragraph-base" data-interaction-id="e00031">02:41:09</p>
+					<p class="e-2hjlwo-e00032-s e-paragraph-base" data-interaction-id="e00032">WARN</p>
+					<p class="e-2hjlwo-e00033-s e-paragraph-base" data-interaction-id="e00033">customer flagged answer as wrong</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00034 e-con e-atomic-element e-flexbox-base e-2hjlwo-e00034-s " data-id="e00034" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00034">
+    
+</div>
+			<p class="e-2hjlwo-e00035-s e-paragraph-base" data-interaction-id="e00035"># which tool ran?          — not logged</p>
+					<p class="e-2hjlwo-e00036-s e-paragraph-base" data-interaction-id="e00036"># what arguments?          — not logged</p>
+					<p class="e-2hjlwo-e00037-s e-paragraph-base" data-interaction-id="e00037"># how many tokens burned?  — not logged</p>
+					<p class="e-2hjlwo-e00038-s e-paragraph-base" data-interaction-id="e00038"># can you run it again?    — no</p>
+		<div class="elementor-element elementor-element-e00039 e-con e-atomic-element e-flexbox-base e-2hjlwo-e00039-s " data-id="e00039" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00039">
+    
+</div>
+			<p class="e-2hjlwo-e0003a-s e-paragraph-base" data-interaction-id="e0003a">tracewell: 12 spans · every argument · replayable ✓</p>
+		
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0003b e-con e-atomic-element e-flexbox-base e-2hjlwo-e0003b-s " data-id="e0003b" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003b">
+    
+</div>
+<div class="elementor-element elementor-element-e0003c e-con e-atomic-element e-flexbox-base e-2hjlwo-e0003c-s " data-id="e0003c" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003c" id="anatomy">
+    <div class="elementor-element elementor-element-e0003d e-con e-atomic-element e-flexbox-base e-2hjlwo-e0003d-s " data-id="e0003d" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003d">
+    <div class="elementor-element elementor-element-e0003e e-con e-atomic-element e-flexbox-base e-2hjlwo-e0003e-s " data-id="e0003e" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003e">
+    <div class="elementor-element elementor-element-e0003f e-con e-atomic-element e-flexbox-base e-2hjlwo-e0003f-s " data-id="e0003f" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003f">
+    			<p class="e-2hjlwo-e0003g-s e-paragraph-base" data-interaction-id="e0003g">// 02 · anatomy</p>
+					<h2 data-interaction-id="e0003h" class="e-2hjlwo-e0003h-s e-heading-base">Anatomy of a trace.</h2>
+					<p class="e-2hjlwo-e0003i-s e-paragraph-base" data-interaction-id="e0003i">Four record types, one append-only stream, open schema. Everything the runtime knew at the moment it decided — kept in the shape you can query, diff and replay.</p>
+		
+</div>
+			<p class="e-2hjlwo-e0003j-s e-paragraph-base" data-interaction-id="e0003j">schema v3 · JSONL · OTel-compatible</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0003k e-con e-atomic-element e-grid-base e-2hjlwo-e0003k-s " data-id="e0003k" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0003k">
+    <div class="elementor-element elementor-element-e0003l e-con e-atomic-element e-flexbox-base e-2hjlwo-e0003l-s " data-id="e0003l" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003l">
+    <div class="elementor-element elementor-element-e0003m e-con e-atomic-element e-flexbox-base e-2hjlwo-e0003m-s " data-id="e0003m" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003m">
+    			<p class="e-2hjlwo-e0003n-s e-paragraph-base" data-interaction-id="e0003n">01</p>
+					<p class="e-2hjlwo-e0003o-s e-paragraph-base" data-interaction-id="e0003o">span_id · parent_id</p>
+		
+</div>
+			<p class="e-2hjlwo-e0003p-s e-paragraph-base" data-interaction-id="e0003p">span</p>
+					<p class="e-2hjlwo-e0003q-s e-paragraph-base" data-interaction-id="e0003q">One unit of agent work — plan, act, reflect — with its start, end and causal parent. Nest them and you get the run's real control flow, not a flat log.</p>
+					<p class="e-2hjlwo-e0003r-s e-paragraph-base" data-interaction-id="e0003r">dur=812ms  depth=2  status=ok</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0003s e-con e-atomic-element e-flexbox-base e-2hjlwo-e0003s-s " data-id="e0003s" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003s">
+    <div class="elementor-element elementor-element-e0003t e-con e-atomic-element e-flexbox-base e-2hjlwo-e0003t-s " data-id="e0003t" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003t">
+    			<p class="e-2hjlwo-e0003u-s e-paragraph-base" data-interaction-id="e0003u">02</p>
+					<p class="e-2hjlwo-e0003v-s e-paragraph-base" data-interaction-id="e0003v">name · args · result</p>
+		
+</div>
+			<p class="e-2hjlwo-e0003w-s e-paragraph-base" data-interaction-id="e0003w">tool call</p>
+					<p class="e-2hjlwo-e0003x-s e-paragraph-base" data-interaction-id="e0003x">Full arguments in, full result out, serialised verbatim. This is the record that shows you the loop: same call, same args, three times, no state change.</p>
+					<p class="e-2hjlwo-e0003y-s e-paragraph-base" data-interaction-id="e0003y">search_inventory(sku="A-771")</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0003z e-con e-atomic-element e-flexbox-base e-2hjlwo-e0003z-s " data-id="e0003z" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003z">
+    <div class="elementor-element elementor-element-e00040 e-con e-atomic-element e-flexbox-base e-2hjlwo-e00040-s " data-id="e00040" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00040">
+    			<p class="e-2hjlwo-e00041-s e-paragraph-base" data-interaction-id="e00041">03</p>
+					<p class="e-2hjlwo-e00042-s e-paragraph-base" data-interaction-id="e00042">prompt · completion</p>
+		
+</div>
+			<p class="e-2hjlwo-e00043-s e-paragraph-base" data-interaction-id="e00043">token</p>
+					<p class="e-2hjlwo-e00044-s e-paragraph-base" data-interaction-id="e00044">Per-span token accounting with the exact message list that produced it. Context-window blowups become a number on a line instead of a hunch.</p>
+					<p class="e-2hjlwo-e00045-s e-paragraph-base" data-interaction-id="e00045">in=9,204  out=677  ctx=61%</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00046 e-con e-atomic-element e-flexbox-base e-2hjlwo-e00046-s " data-id="e00046" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00046">
+    <div class="elementor-element elementor-element-e00047 e-con e-atomic-element e-flexbox-base e-2hjlwo-e00047-s " data-id="e00047" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00047">
+    			<p class="e-2hjlwo-e00048-s e-paragraph-base" data-interaction-id="e00048">04</p>
+					<p class="e-2hjlwo-e00049-s e-paragraph-base" data-interaction-id="e00049">model · rate · usd</p>
+		
+</div>
+			<p class="e-2hjlwo-e0004a-s e-paragraph-base" data-interaction-id="e0004a">cost</p>
+					<p class="e-2hjlwo-e0004b-s e-paragraph-base" data-interaction-id="e0004b">Priced per span at the model's rate, rolled up per run, per route, per customer. The $400 night is visible on the first chart you open.</p>
+					<p class="e-2hjlwo-e0004c-s e-paragraph-base" data-interaction-id="e0004c">gpt-4o  $0.0412  run total</p>
+		
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0004d e-con e-atomic-element e-flexbox-base e-2hjlwo-e0004d-s " data-id="e0004d" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004d">
+    <div class="elementor-element elementor-element-e0004e e-con e-atomic-element e-flexbox-base e-2hjlwo-e0004e-s " data-id="e0004e" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004e">
+    <div class="elementor-element elementor-element-e0004f e-con e-atomic-element e-flexbox-base e-2hjlwo-e0004f-s " data-id="e0004f" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004f">
+    			<p class="e-2hjlwo-e0004g-s e-paragraph-base" data-interaction-id="e0004g">// 03 · replay</p>
+					<h2 data-interaction-id="e0004h" class="e-2hjlwo-e0004h-s e-heading-base">Re-run the exact failure against a different model.</h2>
+					<p class="e-2hjlwo-e0004i-s e-paragraph-base" data-interaction-id="e0004i">Pick a captured run, swap the prompt version or the model, and Tracewell replays it against the recorded tool responses. Same inputs, new brain — a diff you can put in the pull request.</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0004j e-con e-atomic-element e-flexbox-base e-2hjlwo-e0004j-s " data-id="e0004j" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004j">
+    <div class="elementor-element elementor-element-e0004k e-con e-atomic-element e-flexbox-base e-2hjlwo-e0004k-s " data-id="e0004k" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004k">
+    <div class="elementor-element elementor-element-e0004l e-con e-atomic-element e-flexbox-base e-2hjlwo-e0004l-s " data-id="e0004l" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004l">
+    <div class="elementor-element elementor-element-e0004m e-con e-atomic-element e-flexbox-base e-2hjlwo-e0004m-s " data-id="e0004m" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004m">
+    
+</div>
+<div class="elementor-element elementor-element-e0004n e-con e-atomic-element e-flexbox-base e-2hjlwo-e0004n-s " data-id="e0004n" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004n">
+    
+</div>
+<div class="elementor-element elementor-element-e0004o e-con e-atomic-element e-flexbox-base e-2hjlwo-e0004o-s " data-id="e0004o" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004o">
+    
+</div>
+			<p class="e-2hjlwo-e0004p-s e-paragraph-base" data-interaction-id="e0004p">tracewell replay --run 8f2a1c</p>
+		
+</div>
+			<p class="e-2hjlwo-e0004q-s e-paragraph-base" data-interaction-id="e0004q">DIFF</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0004r e-con e-atomic-element e-flexbox-base e-2hjlwo-e0004r-s " data-id="e0004r" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004r">
+    			<p class="e-2hjlwo-e0004s-s e-paragraph-base" data-interaction-id="e0004s">prompt: v3 → v4</p>
+					<p class="e-2hjlwo-e0004t-s e-paragraph-base" data-interaction-id="e0004t">model: gpt-4o → claude-opus</p>
+					<p class="e-2hjlwo-e0004u-s e-paragraph-base" data-interaction-id="e0004u">tools: recorded</p>
+					<p class="e-2hjlwo-e0004v-s e-paragraph-base" data-interaction-id="e0004v">temp: 0.2</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0004w e-con e-atomic-element e-grid-base e-2hjlwo-e0004w-s " data-id="e0004w" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0004w">
+    <div class="elementor-element elementor-element-e0004x e-con e-atomic-element e-flexbox-base e-2hjlwo-e0004x-s " data-id="e0004x" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004x">
+    <div class="elementor-element elementor-element-e0004y e-con e-atomic-element e-flexbox-base e-2hjlwo-e0004y-s " data-id="e0004y" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004y">
+    			<p class="e-2hjlwo-e0004z-s e-paragraph-base" data-interaction-id="e0004z">ORIGINAL · gpt-4o</p>
+					<p class="e-2hjlwo-e00050-s e-paragraph-base" data-interaction-id="e00050">exit 1</p>
+		
+</div>
+			<p class="e-2hjlwo-e00051-s e-paragraph-base" data-interaction-id="e00051">- plan: 4 steps</p>
+					<p class="e-2hjlwo-e00052-s e-paragraph-base" data-interaction-id="e00052">- tool: search_inventory ×7</p>
+					<p class="e-2hjlwo-e00053-s e-paragraph-base" data-interaction-id="e00053">- loop: no state change</p>
+					<p class="e-2hjlwo-e00054-s e-paragraph-base" data-interaction-id="e00054">- tokens: 11,085</p>
+					<p class="e-2hjlwo-e00055-s e-paragraph-base" data-interaction-id="e00055">- cost: $0.0412</p>
+					<p class="e-2hjlwo-e00056-s e-paragraph-base" data-interaction-id="e00056">- result: max_iterations</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00057 e-con e-atomic-element e-flexbox-base e-2hjlwo-e00057-s " data-id="e00057" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00057">
+    <div class="elementor-element elementor-element-e00058 e-con e-atomic-element e-flexbox-base e-2hjlwo-e00058-s " data-id="e00058" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00058">
+    			<p class="e-2hjlwo-e00059-s e-paragraph-base" data-interaction-id="e00059">REPLAY · claude-opus</p>
+					<p class="e-2hjlwo-e0005a-s e-paragraph-base" data-interaction-id="e0005a">exit 0</p>
+		
+</div>
+			<p class="e-2hjlwo-e0005b-s e-paragraph-base" data-interaction-id="e0005b">+ plan: 3 steps</p>
+					<p class="e-2hjlwo-e0005c-s e-paragraph-base" data-interaction-id="e0005c">+ tool: search_inventory ×1</p>
+					<p class="e-2hjlwo-e0005d-s e-paragraph-base" data-interaction-id="e0005d">+ loop: none</p>
+					<p class="e-2hjlwo-e0005e-s e-paragraph-base" data-interaction-id="e0005e">+ tokens: 3,902</p>
+					<p class="e-2hjlwo-e0005f-s e-paragraph-base" data-interaction-id="e0005f">+ cost: $0.0148</p>
+					<p class="e-2hjlwo-e0005g-s e-paragraph-base" data-interaction-id="e0005g">+ result: answered · correct</p>
+		
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0005h e-con e-atomic-element e-flexbox-base e-2hjlwo-e0005h-s " data-id="e0005h" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0005h">
+    			<p class="e-2hjlwo-e0005i-s e-paragraph-base" data-interaction-id="e0005i">64% fewer tokens · loop gone · verdict: ship it</p>
+					<p class="e-2hjlwo-e0005j-s e-paragraph-base" data-interaction-id="e0005j">replayed 1,000 runs in 4m 12s</p>
+		
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0005k e-con e-atomic-element e-flexbox-base e-2hjlwo-e0005k-s " data-id="e0005k" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0005k" id="install">
+    <div class="elementor-element elementor-element-e0005l e-con e-atomic-element e-grid-base e-2hjlwo-e0005l-s " data-id="e0005l" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0005l">
+    <div class="elementor-element elementor-element-e0005m e-con e-atomic-element e-flexbox-base e-2hjlwo-e0005m-s " data-id="e0005m" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0005m">
+    			<p class="e-2hjlwo-e0005n-s e-paragraph-base" data-interaction-id="e0005n">// 04 · install</p>
+					<h2 data-interaction-id="e0005o" class="e-2hjlwo-e0005o-s e-heading-base">Two lines, then it is recording.</h2>
+					<p class="e-2hjlwo-e0005p-s e-paragraph-base" data-interaction-id="e0005p">No sidecar, no collector to run, no agent rewrite. Import it, call <strong>init</strong>, and every span, tool call and token starts landing in the stream — at <strong>3.4ms</strong> median overhead per span.</p>
+		<div class="elementor-element elementor-element-e0005q e-con e-atomic-element e-flexbox-base e-2hjlwo-e0005q-s " data-id="e0005q" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0005q">
+    			<p class="e-2hjlwo-e0005r-s e-paragraph-base" data-interaction-id="e0005r">works with</p>
+					<p class="e-2hjlwo-e0005s-s e-paragraph-base" data-interaction-id="e0005s">LangGraph · LlamaIndex · OpenAI SDK</p>
+					<p class="e-2hjlwo-e0005t-s e-paragraph-base" data-interaction-id="e0005t">Anthropic SDK · CrewAI · bare loops</p>
+		
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0005u e-con e-atomic-element e-flexbox-base e-2hjlwo-e0005u-s " data-id="e0005u" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0005u">
+    <div class="elementor-element elementor-element-e0005v e-con e-atomic-element e-flexbox-base e-2hjlwo-e0005v-s " data-id="e0005v" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0005v">
+    <div class="elementor-element elementor-element-e0005w e-con e-atomic-element e-flexbox-base e-2hjlwo-e0005w-s " data-id="e0005w" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0005w">
+    <div class="elementor-element elementor-element-e0005x e-con e-atomic-element e-flexbox-base e-2hjlwo-e0005x-s " data-id="e0005x" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0005x">
+    
+</div>
+<div class="elementor-element elementor-element-e0005y e-con e-atomic-element e-flexbox-base e-2hjlwo-e0005y-s " data-id="e0005y" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0005y">
+    
+</div>
+<div class="elementor-element elementor-element-e0005z e-con e-atomic-element e-flexbox-base e-2hjlwo-e0005z-s " data-id="e0005z" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0005z">
+    
+</div>
+			<p class="e-2hjlwo-e00060-s e-paragraph-base" data-interaction-id="e00060">quickstart</p>
+		
+</div>
+			<p class="e-2hjlwo-e00061-s e-paragraph-base" data-interaction-id="e00061">SDK</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00062 e-con e-atomic-element e-flexbox-base e-2hjlwo-e00062-s " data-id="e00062" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00062">
+    <div class="e-con e-atomic-element e-tabs-base e-2hjlwo-e00063-s "
+    data-id="e00063"
+    data-element_type="e-tabs"
+    data-e-type="e-tabs"
+    data-interaction-id="e00063"
+    data-interactions="null"
+    x-data="eTabse00063"
+    data-e-settings="&#x7B;&quot;default-active-tab&quot;&#x3A;&quot;e00063-tab-0&quot;&#x7D;"
+            >
+    <div class="e-con e-atomic-element e-tabs-menu-base e-2hjlwo-e00064-s "
+    data-id="e00064"
+    data-element_type="e-tabs-menu"
+    data-e-type="e-tabs-menu"
+    data-interaction-id="e00064"
+    data-interactions="null"
+    role="tablist"
+            ><button class="e-con e-atomic-element e-tab-base  e--selected"
+    data-id="e00065"
+    data-element_type="e-tab"
+    data-e-type="e-tab"
+    data-interaction-id="e00065"
+    data-interactions="null"
+    role="tab"
+    tabindex="0"
+    aria-selected="true"
+    x-bind="tab"
+    x-ref="e00065"
+    id="e00063-tab-0"
+    aria-controls="e00063-tab-content-0"
+        >			<p class="e-paragraph-base" data-interaction-id="e00066">python</p>
+		</button>
+<button class="e-con e-atomic-element e-tab-base "
+    data-id="e00067"
+    data-element_type="e-tab"
+    data-e-type="e-tab"
+    data-interaction-id="e00067"
+    data-interactions="null"
+    role="tab"
+    tabindex="-1"
+    aria-selected="false"
+    x-bind="tab"
+    x-ref="e00067"
+    id="e00063-tab-1"
+    aria-controls="e00063-tab-content-1"
+        >			<p class="e-paragraph-base" data-interaction-id="e00068">typescript</p>
+		</button>
+<button class="e-con e-atomic-element e-tab-base "
+    data-id="e00069"
+    data-element_type="e-tab"
+    data-e-type="e-tab"
+    data-interaction-id="e00069"
+    data-interactions="null"
+    role="tab"
+    tabindex="-1"
+    aria-selected="false"
+    x-bind="tab"
+    x-ref="e00069"
+    id="e00063-tab-2"
+    aria-controls="e00063-tab-content-2"
+        >			<p class="e-paragraph-base" data-interaction-id="e0006a">go</p>
+		</button>
+</div>
+<div class="e-con e-atomic-element e-tabs-content-area-base e-2hjlwo-e0006b-s "
+    data-id="e0006b"
+    data-element_type="e-tabs-content-area"
+    data-e-type="e-tabs-content-area"
+    data-interaction-id="e0006b"
+    data-interactions="null"
+            ><div class="e-con e-atomic-element e-tab-content-base  e--selected"
+    data-id="e0006c"
+    data-element_type="e-tab-content"
+    data-e-type="e-tab-content"
+    data-interaction-id="e0006c"
+    data-interactions="null"
+    role="tabpanel"
+    x-bind="tabContent"
+    id="e00063-tab-content-0"
+    aria-labelledby="e00063-tab-0"
+            ><div class="elementor-element elementor-element-e0006d e-con e-atomic-element e-flexbox-base e-2hjlwo-e0006d-s " data-id="e0006d" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0006d">
+    			<p class="e-2hjlwo-e0006e-s e-paragraph-base" data-interaction-id="e0006e">pip install tracewell</p>
+					<p class="e-2hjlwo-e0006f-s e-paragraph-base" data-interaction-id="e0006f">import tracewell</p>
+					<p class="e-2hjlwo-e0006g-s e-paragraph-base" data-interaction-id="e0006g">tracewell.init("checkout-agent")</p>
+					<p class="e-2hjlwo-e0006h-s e-paragraph-base" data-interaction-id="e0006h"># every span is now captured</p>
+					<p class="e-2hjlwo-e0006i-s e-paragraph-base" data-interaction-id="e0006i">run = agent.invoke(task)</p>
+					<p class="e-2hjlwo-e0006j-s e-paragraph-base" data-interaction-id="e0006j">tracewell.replay(run.id, model="opus")</p>
+		
+</div>
+</div>
+<div class="e-con e-atomic-element e-tab-content-base "
+    data-id="e0006k"
+    data-element_type="e-tab-content"
+    data-e-type="e-tab-content"
+    data-interaction-id="e0006k"
+    data-interactions="null"
+    role="tabpanel"
+    x-bind="tabContent"
+    id="e00063-tab-content-1"
+    aria-labelledby="e00063-tab-1"
+     hidden="true" style="display: none;"        ><div class="elementor-element elementor-element-e0006l e-con e-atomic-element e-flexbox-base e-2hjlwo-e0006l-s " data-id="e0006l" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0006l">
+    			<p class="e-2hjlwo-e0006m-s e-paragraph-base" data-interaction-id="e0006m">npm i tracewell</p>
+					<p class="e-2hjlwo-e0006n-s e-paragraph-base" data-interaction-id="e0006n">import { init, replay } from "tracewell"</p>
+					<p class="e-2hjlwo-e0006o-s e-paragraph-base" data-interaction-id="e0006o">init({ service: "checkout-agent" })</p>
+					<p class="e-2hjlwo-e0006p-s e-paragraph-base" data-interaction-id="e0006p">// every span is now captured</p>
+					<p class="e-2hjlwo-e0006q-s e-paragraph-base" data-interaction-id="e0006q">const run = await agent.invoke(task)</p>
+					<p class="e-2hjlwo-e0006r-s e-paragraph-base" data-interaction-id="e0006r">await replay(run.id, { model: "opus" })</p>
+		
+</div>
+</div>
+<div class="e-con e-atomic-element e-tab-content-base "
+    data-id="e0006s"
+    data-element_type="e-tab-content"
+    data-e-type="e-tab-content"
+    data-interaction-id="e0006s"
+    data-interactions="null"
+    role="tabpanel"
+    x-bind="tabContent"
+    id="e00063-tab-content-2"
+    aria-labelledby="e00063-tab-2"
+     hidden="true" style="display: none;"        ><div class="elementor-element elementor-element-e0006t e-con e-atomic-element e-flexbox-base e-2hjlwo-e0006t-s " data-id="e0006t" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0006t">
+    			<p class="e-2hjlwo-e0006u-s e-paragraph-base" data-interaction-id="e0006u">go get go.tracewell.dev/tw</p>
+					<p class="e-2hjlwo-e0006v-s e-paragraph-base" data-interaction-id="e0006v">import "go.tracewell.dev/tw"</p>
+					<p class="e-2hjlwo-e0006w-s e-paragraph-base" data-interaction-id="e0006w">tw.Init("checkout-agent")</p>
+					<p class="e-2hjlwo-e0006x-s e-paragraph-base" data-interaction-id="e0006x">// every span is now captured</p>
+					<p class="e-2hjlwo-e0006y-s e-paragraph-base" data-interaction-id="e0006y">run, _ := agent.Invoke(ctx, task)</p>
+					<p class="e-2hjlwo-e0006z-s e-paragraph-base" data-interaction-id="e0006z">tw.Replay(run.ID, tw.Model("opus"))</p>
+		
+</div>
+</div>
+</div>
+
+</div>
+		
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e00070 e-con e-atomic-element e-flexbox-base e-2hjlwo-e00070-s " data-id="e00070" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00070">
+    
+</div>
+<div class="elementor-element elementor-element-e00071 e-con e-atomic-element e-flexbox-base e-2hjlwo-e00071-s " data-id="e00071" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00071">
+    <div class="elementor-element elementor-element-e00072 e-con e-atomic-element e-flexbox-base e-2hjlwo-e00072-s " data-id="e00072" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00072">
+    <div class="elementor-element elementor-element-e00073 e-con e-atomic-element e-flexbox-base e-2hjlwo-e00073-s " data-id="e00073" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00073">
+    <div class="elementor-element elementor-element-e00074 e-con e-atomic-element e-flexbox-base e-2hjlwo-e00074-s " data-id="e00074" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00074">
+    			<p class="e-2hjlwo-e00075-s e-paragraph-base" data-interaction-id="e00075">// 05 · deployment</p>
+					<h2 data-interaction-id="e00076" class="e-2hjlwo-e00076-s e-heading-base">Self-host or cloud. Same binary.</h2>
+		
+</div>
+			<p class="e-2hjlwo-e00077-s e-paragraph-base" data-interaction-id="e00077">Yes, it self-hosts. One Postgres, one container, no vendor telemetry leaving your VPC.</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00078 e-con e-atomic-element e-flexbox-base e-2hjlwo-e00078-s " data-id="e00078" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00078">
+    <div class="elementor-element elementor-element-e00079 e-con e-atomic-element e-grid-base e-2hjlwo-e00079-s " data-id="e00079" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e00079">
+    <div class="elementor-element elementor-element-e0007a e-con e-atomic-element e-flexbox-base e-2hjlwo-e0007a-s " data-id="e0007a" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0007a">
+    			<p class="e-2hjlwo-e0007b-s e-paragraph-base" data-interaction-id="e0007b">capability</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0007c e-con e-atomic-element e-flexbox-base e-2hjlwo-e0007c-s " data-id="e0007c" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0007c">
+    			<p class="e-2hjlwo-e0007d-s e-paragraph-base" data-interaction-id="e0007d">SELF-HOSTED</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0007e e-con e-atomic-element e-flexbox-base e-2hjlwo-e0007e-s " data-id="e0007e" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0007e">
+    			<p class="e-2hjlwo-e0007f-s e-paragraph-base" data-interaction-id="e0007f">CLOUD</p>
+		
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0007g e-con e-atomic-element e-grid-base e-2hjlwo-e0007g-s " data-id="e0007g" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0007g">
+    <div class="elementor-element elementor-element-e0007h e-con e-atomic-element e-flexbox-base e-2hjlwo-e0007h-s " data-id="e0007h" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0007h">
+    			<p class="e-2hjlwo-e0007i-s e-paragraph-base" data-interaction-id="e0007i">runtime</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0007j e-con e-atomic-element e-flexbox-base e-2hjlwo-e0007j-s " data-id="e0007j" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0007j">
+    			<p class="e-2hjlwo-e0007k-s e-paragraph-base" data-interaction-id="e0007k">1 container + 1 Postgres</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0007l e-con e-atomic-element e-flexbox-base e-2hjlwo-e0007l-s " data-id="e0007l" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0007l">
+    			<p class="e-2hjlwo-e0007m-s e-paragraph-base" data-interaction-id="e0007m">managed, multi-region</p>
+		
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0007n e-con e-atomic-element e-grid-base e-2hjlwo-e0007n-s " data-id="e0007n" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0007n">
+    <div class="elementor-element elementor-element-e0007o e-con e-atomic-element e-flexbox-base e-2hjlwo-e0007o-s " data-id="e0007o" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0007o">
+    			<p class="e-2hjlwo-e0007p-s e-paragraph-base" data-interaction-id="e0007p">trace data</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0007q e-con e-atomic-element e-flexbox-base e-2hjlwo-e0007q-s " data-id="e0007q" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0007q">
+    			<p class="e-2hjlwo-e0007r-s e-paragraph-base" data-interaction-id="e0007r">never leaves your VPC</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0007s e-con e-atomic-element e-flexbox-base e-2hjlwo-e0007s-s " data-id="e0007s" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0007s">
+    			<p class="e-2hjlwo-e0007t-s e-paragraph-base" data-interaction-id="e0007t">encrypted, EU or US</p>
+		
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0007u e-con e-atomic-element e-grid-base e-2hjlwo-e0007u-s " data-id="e0007u" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0007u">
+    <div class="elementor-element elementor-element-e0007v e-con e-atomic-element e-flexbox-base e-2hjlwo-e0007v-s " data-id="e0007v" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0007v">
+    			<p class="e-2hjlwo-e0007w-s e-paragraph-base" data-interaction-id="e0007w">retention</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0007x e-con e-atomic-element e-flexbox-base e-2hjlwo-e0007x-s " data-id="e0007x" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0007x">
+    			<p class="e-2hjlwo-e0007y-s e-paragraph-base" data-interaction-id="e0007y">your disk, your rules</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0007z e-con e-atomic-element e-flexbox-base e-2hjlwo-e0007z-s " data-id="e0007z" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0007z">
+    			<p class="e-2hjlwo-e00080-s e-paragraph-base" data-interaction-id="e00080">90 days on the free tier</p>
+		
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e00081 e-con e-atomic-element e-grid-base e-2hjlwo-e00081-s " data-id="e00081" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e00081">
+    <div class="elementor-element elementor-element-e00082 e-con e-atomic-element e-flexbox-base e-2hjlwo-e00082-s " data-id="e00082" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00082">
+    			<p class="e-2hjlwo-e00083-s e-paragraph-base" data-interaction-id="e00083">replay engine</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00084 e-con e-atomic-element e-flexbox-base e-2hjlwo-e00084-s " data-id="e00084" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00084">
+    			<p class="e-2hjlwo-e00085-s e-paragraph-base" data-interaction-id="e00085">identical, offline capable</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00086 e-con e-atomic-element e-flexbox-base e-2hjlwo-e00086-s " data-id="e00086" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00086">
+    			<p class="e-2hjlwo-e00087-s e-paragraph-base" data-interaction-id="e00087">identical, autoscaled</p>
+		
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e00088 e-con e-atomic-element e-grid-base e-2hjlwo-e00088-s " data-id="e00088" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e00088">
+    <div class="elementor-element elementor-element-e00089 e-con e-atomic-element e-flexbox-base e-2hjlwo-e00089-s " data-id="e00089" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00089">
+    			<p class="e-2hjlwo-e0008a-s e-paragraph-base" data-interaction-id="e0008a">upgrades</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0008b e-con e-atomic-element e-flexbox-base e-2hjlwo-e0008b-s " data-id="e0008b" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0008b">
+    			<p class="e-2hjlwo-e0008c-s e-paragraph-base" data-interaction-id="e0008c">pinned image tags</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0008d e-con e-atomic-element e-flexbox-base e-2hjlwo-e0008d-s " data-id="e0008d" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0008d">
+    			<p class="e-2hjlwo-e0008e-s e-paragraph-base" data-interaction-id="e0008e">continuous</p>
+		
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0008f e-con e-atomic-element e-grid-base e-2hjlwo-e0008f-s " data-id="e0008f" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0008f">
+    <div class="elementor-element elementor-element-e0008g e-con e-atomic-element e-flexbox-base e-2hjlwo-e0008g-s " data-id="e0008g" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0008g">
+    			<p class="e-2hjlwo-e0008h-s e-paragraph-base" data-interaction-id="e0008h">egress</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0008i e-con e-atomic-element e-flexbox-base e-2hjlwo-e0008i-s " data-id="e0008i" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0008i">
+    			<p class="e-2hjlwo-e0008j-s e-paragraph-base" data-interaction-id="e0008j">zero vendor telemetry</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0008k e-con e-atomic-element e-flexbox-base e-2hjlwo-e0008k-s " data-id="e0008k" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0008k">
+    			<p class="e-2hjlwo-e0008l-s e-paragraph-base" data-interaction-id="e0008l">agent → ingest only</p>
+		
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0008m e-con e-atomic-element e-flexbox-base e-2hjlwo-e0008m-s " data-id="e0008m" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0008m">
+    <div class="elementor-element elementor-element-e0008n e-con e-atomic-element e-flexbox-base e-2hjlwo-e0008n-s " data-id="e0008n" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0008n">
+    <div class="elementor-element elementor-element-e0008o e-con e-atomic-element e-flexbox-base e-2hjlwo-e0008o-s " data-id="e0008o" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0008o">
+    <div class="elementor-element elementor-element-e0008p e-con e-atomic-element e-flexbox-base e-2hjlwo-e0008p-s " data-id="e0008p" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0008p">
+    <div class="elementor-element elementor-element-e0008q e-con e-atomic-element e-flexbox-base e-2hjlwo-e0008q-s " data-id="e0008q" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0008q">
+    <div class="elementor-element elementor-element-e0008r e-con e-atomic-element e-flexbox-base e-2hjlwo-e0008r-s " data-id="e0008r" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0008r">
+    
+</div>
+<div class="elementor-element elementor-element-e0008s e-con e-atomic-element e-flexbox-base e-2hjlwo-e0008s-s " data-id="e0008s" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0008s">
+    
+</div>
+<div class="elementor-element elementor-element-e0008t e-con e-atomic-element e-flexbox-base e-2hjlwo-e0008t-s " data-id="e0008t" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0008t">
+    
+</div>
+			<p class="e-2hjlwo-e0008u-s e-paragraph-base" data-interaction-id="e0008u">postmortem-2026-04-11.md — resolved</p>
+		
+</div>
+			<p class="e-2hjlwo-e0008v-s e-paragraph-base" data-interaction-id="e0008v">P1</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0008w e-con e-atomic-element e-grid-base e-2hjlwo-e0008w-s " data-id="e0008w" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0008w">
+    <div class="elementor-element elementor-element-e0008x e-con e-atomic-element e-flexbox-base e-2hjlwo-e0008x-s " data-id="e0008x" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0008x">
+    			<p class="e-2hjlwo-e0008y-s e-paragraph-base" data-interaction-id="e0008y">## root cause</p>
+					<p class="e-2hjlwo-e0008z-s e-paragraph-base" data-interaction-id="e0008z">We had a tool-call loop burning 400 dollars a night for eleven days. <em>Tracewell found it in one replay.</em></p>
+		<div class="elementor-element elementor-element-e00090 e-con e-atomic-element e-flexbox-base e-2hjlwo-e00090-s " data-id="e00090" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00090">
+    <div class="elementor-element elementor-element-e00091 e-con e-atomic-element e-flexbox-base e-2hjlwo-e00091-s " data-id="e00091" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00091">
+    
+</div>
+			<p class="e-2hjlwo-e00092-s e-paragraph-base" data-interaction-id="e00092">Infrastructure lead, mid-size logistics platform</p>
+		
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e00093 e-con e-atomic-element e-flexbox-base e-2hjlwo-e00093-s " data-id="e00093" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00093">
+    <div class="elementor-element elementor-element-e00094 e-con e-atomic-element e-flexbox-base e-2hjlwo-e00094-s " data-id="e00094" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00094">
+    			<p class="e-2hjlwo-e00095-s e-paragraph-base" data-interaction-id="e00095">$4,400</p>
+					<p class="e-2hjlwo-e00096-s e-paragraph-base" data-interaction-id="e00096">burned before detection</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00097 e-con e-atomic-element e-flexbox-base e-2hjlwo-e00097-s " data-id="e00097" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00097">
+    			<p class="e-2hjlwo-e00098-s e-paragraph-base" data-interaction-id="e00098">1 replay</p>
+					<p class="e-2hjlwo-e00099-s e-paragraph-base" data-interaction-id="e00099">to reproduce the loop</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0009a e-con e-atomic-element e-flexbox-base e-2hjlwo-e0009a-s " data-id="e0009a" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0009a">
+    			<p class="e-2hjlwo-e0009b-s e-paragraph-base" data-interaction-id="e0009b">18 min</p>
+					<p class="e-2hjlwo-e0009c-s e-paragraph-base" data-interaction-id="e0009c">from trace to merged fix</p>
+		
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0009d e-con e-atomic-element e-flexbox-base e-2hjlwo-e0009d-s " data-id="e0009d" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0009d">
+    <div class="elementor-element elementor-element-e0009e e-con e-atomic-element e-flexbox-base e-2hjlwo-e0009e-s " data-id="e0009e" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0009e">
+    <div class="elementor-element elementor-element-e0009f e-con e-atomic-element e-grid-base e-2hjlwo-e0009f-s " data-id="e0009f" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0009f">
+    <div class="elementor-element elementor-element-e0009g e-con e-atomic-element e-flexbox-base e-2hjlwo-e0009g-s " data-id="e0009g" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0009g">
+    			<h3 data-interaction-id="e0009h" class="e-2hjlwo-e0009h-s e-heading-base">Start capturing traces.</h3>
+		<div class="elementor-element elementor-element-e0009i e-con e-atomic-element e-flexbox-base e-2hjlwo-e0009i-s " data-id="e0009i" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0009i">
+    			<p class="e-2hjlwo-e0009j-s e-paragraph-base" data-interaction-id="e0009j">$</p>
+					<p class="e-2hjlwo-e0009k-s e-paragraph-base" data-interaction-id="e0009k">pip install tracewell &amp;&amp; tracewell init</p>
+					<p class="e-2hjlwo-e0009l-s e-paragraph-base" data-interaction-id="e0009l">copy</p>
+		
+</div>
+			<p class="e-2hjlwo-e0009m-s e-paragraph-base" data-interaction-id="e0009m">3.4ms median overhead per span · traces retained for 90 days on the free tier</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0009n e-con e-atomic-element e-flexbox-base e-2hjlwo-e0009n-s " data-id="e0009n" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0009n">
+    			<p class="e-2hjlwo-e0009o-s e-paragraph-base" data-interaction-id="e0009o"><a href="#install" target="_self" class="e-paragraph-link-base">
+		Start capturing traces
+	</a></p>
+					<p class="e-2hjlwo-e0009p-s e-paragraph-base" data-interaction-id="e0009p"><a href="#anatomy" target="_self" class="e-paragraph-link-base">
+		Read the trace format spec
+	</a></p>
+		
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0009q e-con e-atomic-element e-flexbox-base e-2hjlwo-e0009q-s " data-id="e0009q" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0009q">
+    
+</div>
+<div class="elementor-element elementor-element-e0009r e-con e-atomic-element e-flexbox-base e-2hjlwo-e0009r-s " data-id="e0009r" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0009r">
+    <div class="elementor-element elementor-element-e0009s e-con e-atomic-element e-flexbox-base e-2hjlwo-e0009s-s " data-id="e0009s" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0009s">
+    <div class="elementor-element elementor-element-e0009t e-con e-atomic-element e-flexbox-base e-2hjlwo-e0009t-s " data-id="e0009t" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0009t">
+    
+</div>
+			<p class="e-2hjlwo-e0009u-s e-paragraph-base" data-interaction-id="e0009u">tracewell</p>
+					<p class="e-2hjlwo-e0009v-s e-paragraph-base" data-interaction-id="e0009v">· observability for agent runs</p>
+		
+</div>
+			<p class="e-2hjlwo-e0009w-s e-paragraph-base" data-interaction-id="e0009w">docs · trace format spec · status · security</p>
+		
+</div>
+
+</div>
+
+</div>
+
+</div>
+		<div class="elementor-element elementor-element-e0009x elementor-widget elementor-widget-html" data-id="e0009x" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					<script data-exjsx-motion-guard>(function(){if(!matchMedia("(prefers-reduced-motion: reduce)").matches)return;var z=function(){var s=document.getElementById("elementor-interactions-data");return!!(s&&s.textContent!=="[]")&&(s.textContent="[]",!0)};if(!z()){var o=new MutationObserver(function(){z()&&o.disconnect()});o.observe(document.documentElement,{childList:true,subtree:true});addEventListener("DOMContentLoaded",function(){z();o.disconnect()})}})()</script>				</div>
+				</div>
+		<script type="application/json" id="elementor-interactions-data">[{"elementId":"e0003k","dataId":"e0003k","interactions":[{"$$type":"interaction-item","value":{"interaction_id":{"$$type":"string","value":"ix-0"},"trigger":{"$$type":"string","value":"scrollIn"},"animation":{"$$type":"animation-preset-props","value":{"effect":{"$$type":"string","value":"fade"},"type":{"$$type":"string","value":"in"},"direction":{"$$type":"string","value":""},"timing_config":{"$$type":"timing-config","value":{"duration":{"$$type":"size","value":{"unit":"ms","size":500}},"delay":{"$$type":"size","value":{"unit":"ms","size":0}}}}}}}}]},{"elementId":"e0008o","dataId":"e0008o","interactions":[{"$$type":"interaction-item","value":{"interaction_id":{"$$type":"string","value":"ix-1"},"trigger":{"$$type":"string","value":"scrollIn"},"animation":{"$$type":"animation-preset-props","value":{"effect":{"$$type":"string","value":"fade"},"type":{"$$type":"string","value":"in"},"direction":{"$$type":"string","value":""},"timing_config":{"$$type":"timing-config","value":{"duration":{"$$type":"size","value":{"unit":"ms","size":500}},"delay":{"$$type":"size","value":{"unit":"ms","size":0}}}}}}}}]}]</script><script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/twentytwentyfive/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+			<script>
+				( () => {
+					const lazyloadRunObserver = () => {
+						const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+						const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+							entries.forEach( ( entry ) => {
+								if ( entry.isIntersecting ) {
+									let lazyloadBackground = entry.target;
+									if( lazyloadBackground ) {
+										lazyloadBackground.classList.add( 'e-lazyloaded' );
+									}
+									lazyloadBackgroundObserver.unobserve( entry.target );
+								}
+							});
+						}, { rootMargin: '200px 0px 200px 0px' } );
+						lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+							lazyloadBackgroundObserver.observe( lazyloadBackground );
+						} );
+					};
+					const events = [
+						'DOMContentLoaded',
+						'elementor/lazyload/observe',
+					];
+					events.forEach( ( event ) => {
+						document.addEventListener( event, lazyloadRunObserver );
+					} );
+				} )();
+			</script>
+			<script id="elementor-webpack-runtime-js" src="http://127.0.0.1:8950/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=4.2.1"></script>
+<script id="elementor-frontend-modules-js" src="http://127.0.0.1:8950/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=4.2.1"></script>
+<script id="jquery-ui-core-js" src="http://127.0.0.1:8950/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnX":"Share on X","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"4.2.1","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_optimized_markup":true,"e_panel_promotions":true,"e_pro_free_trial_popup":true,"nested-elements":true,"e_atomic_elements":true,"atomic_widgets_should_enforce_capabilities":true,"editor_mcp":true,"e_bc_migrations":true,"e_classes":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"e_variables_manager":true,"e_opt_in_v4_page":true,"e_opt_in_v4":true,"e_components":true,"e_interactions":true,"e_widget_creation":true,"import-export-customization":true},"urls":{"assets":"http:\/\/127.0.0.1:8950\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"http:\/\/127.0.0.1:8950\/wp-admin\/admin-ajax.php","uploadUrl":"http:\/\/127.0.0.1:8950\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"a7b0c492e3","atomicFormsSendForm":"0045d5964e"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":247,"title":"Tracewell%20%E2%80%94%20Replay%20the%20agent%20run%20that%20broke%20%E2%80%93%20Elementor%20Ultra%20Dev","excerpt":"","featuredImage":false}};
+//# sourceURL=elementor-frontend-js-before
+</script>
+<script id="elementor-frontend-js" src="http://127.0.0.1:8950/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=4.2.1"></script>
+<script id="elementor-v2-frontend-handlers-js" src="http://127.0.0.1:8950/wp-content/plugins/elementor/assets/js/packages/frontend-handlers/frontend-handlers.min.js?ver=4.2.1"></script>
+<script id="elementor-v2-alpinejs-js" src="http://127.0.0.1:8950/wp-content/plugins/elementor/assets/js/packages/alpinejs/alpinejs.min.js?ver=4.2.1"></script>
+<script id="elementor-tabs-handler-js" src="http://127.0.0.1:8950/wp-content/plugins/elementor/assets/js/tabs-handler.min.js?ver=4.2.1"></script>
+<script id="motion-js-js" src="http://127.0.0.1:8950/wp-content/plugins/elementor/assets/lib/motion/motion.min.js?ver=11.13.5"></script>
+<script id="elementor-interactions-shared-utils-js" src="http://127.0.0.1:8950/wp-content/plugins/elementor/assets/js/interactions-shared-utils.min.js?ver=1.0.0"></script>
+<script id="elementor-interactions-js-extra">
+var ElementorInteractionsConfig = {"constants":{"defaultDuration":600,"defaultDelay":0,"slideDistance":100,"scaleStart":0,"defaultEasing":"easeIn","relativeTo":"viewport","repeat":"","start":85,"end":15},"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true}}};
+//# sourceURL=elementor-interactions-js-extra
+</script>
+<script id="elementor-interactions-js" src="http://127.0.0.1:8950/wp-content/plugins/elementor/assets/js/interactions.min.js?ver=1.0.0"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"http://127.0.0.1:8950/wp-includes/js/wp-emoji-release.min.js?ver=7.0.4"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=http://127.0.0.1:8950/wp-includes/js/wp-emoji-loader.min.js
+</script>
+	</body>
+</html>

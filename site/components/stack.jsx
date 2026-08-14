@@ -12,7 +12,7 @@ const rows = [
 
 export const Stack = ({ theme: t }) => (
   <section id="stack" tw="flex flex-col items-start w-full max-w-[1180px] px-6 gap-7" pad={[72, 24]} mobile={{ pad: [32, 18] }}>
-    <SectionHead theme={t} no="04" label="The stack" />
+    <SectionHead theme={t} no="05" label="The stack" />
     <heading tag="h2" w="100%" size={64} weight={400} font={t.font.display} color={t.color.ink} lh={1.02}
       sx={{ textTransform: 'uppercase', letterSpacing: '.01em' }} mobile={{ size: 36 }}>
       Five pieces. Use all of them, or one.

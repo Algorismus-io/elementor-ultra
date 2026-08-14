@@ -1,0 +1,502 @@
+{
+ "24hr-drain": {
+  "card_bytes": 22446,
+  "desktop_bytes": 166514,
+  "desktop_h": 4271,
+  "desktop_ratio": 2.966,
+  "mobile_bytes": 179234,
+  "mobile_h": 6297,
+  "mobile_ratio": 16.1462,
+  "tone": "#9d460d"
+ },
+ "anvil-field-t9": {
+  "card_bytes": 26246,
+  "desktop_bytes": 242172,
+  "desktop_h": 6313,
+  "desktop_ratio": 4.384,
+  "mobile_bytes": 284836,
+  "mobile_h": 10143,
+  "mobile_ratio": 26.0077,
+  "tone": "#212322"
+ },
+ "avers-frame": {
+  "card_bytes": 15038,
+  "desktop_bytes": 129980,
+  "desktop_h": 5199,
+  "desktop_ratio": 3.6104,
+  "mobile_bytes": 117512,
+  "mobile_h": 6654,
+  "mobile_ratio": 17.0615,
+  "tone": "#fafafa"
+ },
+ "backhaul-freight": {
+  "card_bytes": 22236,
+  "desktop_bytes": 165138,
+  "desktop_h": 5061,
+  "desktop_ratio": 3.5146,
+  "mobile_bytes": 189840,
+  "mobile_h": 8387,
+  "mobile_ratio": 21.5051,
+  "tone": "#232c34"
+ },
+ "basis-tax": {
+  "card_bytes": 17106,
+  "desktop_bytes": 234500,
+  "desktop_h": 7744,
+  "desktop_ratio": 5.3778,
+  "mobile_bytes": 305976,
+  "mobile_h": 12403,
+  "mobile_ratio": 31.8026,
+  "tone": "#111218"
+ },
+ "blunt-instrument": {
+  "card_bytes": 14670,
+  "desktop_bytes": 273196,
+  "desktop_h": 9172,
+  "desktop_ratio": 6.3694,
+  "mobile_bytes": 224950,
+  "mobile_h": 7025,
+  "mobile_ratio": 18.0128,
+  "tone": "#665730"
+ },
+ "byte-cubs": {
+  "card_bytes": 31220,
+  "desktop_bytes": 258964,
+  "desktop_h": 6664,
+  "desktop_ratio": 4.6278,
+  "mobile_bytes": 301386,
+  "mobile_h": 9251,
+  "mobile_ratio": 23.7205,
+  "tone": "#958e8c"
+ },
+ "carrow-valve": {
+  "card_bytes": 21150,
+  "desktop_bytes": 205776,
+  "desktop_h": 6240,
+  "desktop_ratio": 4.3333,
+  "mobile_bytes": 257292,
+  "mobile_h": 10919,
+  "mobile_ratio": 27.9974,
+  "tone": "#adacad"
+ },
+ "casa-ocotillo": {
+  "card_bytes": 20502,
+  "desktop_bytes": 190834,
+  "desktop_h": 6139,
+  "desktop_ratio": 4.2632,
+  "mobile_bytes": 171500,
+  "mobile_h": 7593,
+  "mobile_ratio": 19.4692,
+  "tone": "#bfa891"
+ },
+ "clause-radar": {
+  "card_bytes": 22352,
+  "desktop_bytes": 194876,
+  "desktop_h": 5877,
+  "desktop_ratio": 4.0812,
+  "mobile_bytes": 263086,
+  "mobile_h": 10434,
+  "mobile_ratio": 26.7538,
+  "tone": "#f3f4f5"
+ },
+ "clinic-line-ai": {
+  "card_bytes": 17838,
+  "desktop_bytes": 145666,
+  "desktop_h": 4454,
+  "desktop_ratio": 3.0931,
+  "mobile_bytes": 179386,
+  "mobile_h": 7316,
+  "mobile_ratio": 18.759,
+  "tone": "#e7eaeb"
+ },
+ "commonground-trust": {
+  "card_bytes": 19566,
+  "desktop_bytes": 225184,
+  "desktop_h": 7030,
+  "desktop_ratio": 4.8819,
+  "mobile_bytes": 249328,
+  "mobile_h": 11918,
+  "mobile_ratio": 30.559,
+  "tone": "#949c92"
+ },
+ "dispatchbox": {
+  "card_bytes": 20904,
+  "desktop_bytes": 206920,
+  "desktop_h": 6296,
+  "desktop_ratio": 4.3722,
+  "mobile_bytes": 246090,
+  "mobile_h": 8647,
+  "mobile_ratio": 22.1718,
+  "tone": "#f1f1ee"
+ },
+ "editionable": {
+  "card_bytes": 21824,
+  "desktop_bytes": 200470,
+  "desktop_h": 7284,
+  "desktop_ratio": 5.0583,
+  "mobile_bytes": 209656,
+  "mobile_h": 10165,
+  "mobile_ratio": 26.0641,
+  "tone": "#d5ccca"
+ },
+ "field-to-pass": {
+  "card_bytes": 25290,
+  "desktop_bytes": 208102,
+  "desktop_h": 5209,
+  "desktop_ratio": 3.6174,
+  "mobile_bytes": 195844,
+  "mobile_h": 7088,
+  "mobile_ratio": 18.1744,
+  "tone": "#a5a89a"
+ },
+ "fourth-hand": {
+  "card_bytes": 32906,
+  "desktop_bytes": 255956,
+  "desktop_h": 6087,
+  "desktop_ratio": 4.2271,
+  "mobile_bytes": 330392,
+  "mobile_h": 12055,
+  "mobile_ratio": 30.9103,
+  "tone": "#232425"
+ },
+ "gainstage": {
+  "card_bytes": 18314,
+  "desktop_bytes": 169746,
+  "desktop_h": 5905,
+  "desktop_ratio": 4.1007,
+  "mobile_bytes": 211478,
+  "mobile_h": 8850,
+  "mobile_ratio": 22.6923,
+  "tone": "#1c1d25"
+ },
+ "hard-turn": {
+  "card_bytes": 40774,
+  "desktop_bytes": 306898,
+  "desktop_h": 7294,
+  "desktop_ratio": 5.0653,
+  "mobile_bytes": 313222,
+  "mobile_h": 10391,
+  "mobile_ratio": 26.6436,
+  "tone": "#ae9db3"
+ },
+ "housecell-home": {
+  "card_bytes": 22536,
+  "desktop_bytes": 177862,
+  "desktop_h": 4782,
+  "desktop_ratio": 3.3208,
+  "mobile_bytes": 203636,
+  "mobile_h": 8089,
+  "mobile_ratio": 20.741,
+  "tone": "#2a342d"
+ },
+ "hutbook-alpine": {
+  "card_bytes": 21252,
+  "desktop_bytes": 244044,
+  "desktop_h": 7748,
+  "desktop_ratio": 5.3806,
+  "mobile_bytes": 269556,
+  "mobile_h": 9956,
+  "mobile_ratio": 25.5282,
+  "tone": "#626a72"
+ },
+ "iron-ledger": {
+  "card_bytes": 20220,
+  "desktop_bytes": 209788,
+  "desktop_h": 6110,
+  "desktop_ratio": 4.2431,
+  "mobile_bytes": 222120,
+  "mobile_h": 8107,
+  "mobile_ratio": 20.7872,
+  "tone": "#4f2b21"
+ },
+ "kilnhouse": {
+  "card_bytes": 25250,
+  "desktop_bytes": 191202,
+  "desktop_h": 5181,
+  "desktop_ratio": 3.5979,
+  "mobile_bytes": 193770,
+  "mobile_h": 8285,
+  "mobile_ratio": 21.2436,
+  "tone": "#cbc2b9"
+ },
+ "kinetic-hana": {
+  "card_bytes": 20692,
+  "desktop_bytes": 149096,
+  "desktop_h": 4842,
+  "desktop_ratio": 3.3625,
+  "mobile_bytes": 162382,
+  "mobile_h": 6498,
+  "mobile_ratio": 16.6615,
+  "tone": "#1c1a1e"
+ },
+ "ledgerless": {
+  "card_bytes": 16446,
+  "desktop_bytes": 119010,
+  "desktop_h": 4960,
+  "desktop_ratio": 3.4444,
+  "mobile_bytes": 111876,
+  "mobile_h": 5142,
+  "mobile_ratio": 13.1846,
+  "tone": "#212022"
+ },
+ "little-molar": {
+  "card_bytes": 18680,
+  "desktop_bytes": 131214,
+  "desktop_h": 4220,
+  "desktop_ratio": 2.9306,
+  "mobile_bytes": 138062,
+  "mobile_h": 5771,
+  "mobile_ratio": 14.7974,
+  "tone": "#ecf3f3"
+ },
+ "long-barn-weddings": {
+  "card_bytes": 30964,
+  "desktop_bytes": 365228,
+  "desktop_h": 9929,
+  "desktop_ratio": 6.8951,
+  "mobile_bytes": 429842,
+  "mobile_h": 15240,
+  "mobile_ratio": 39.0769,
+  "tone": "#dbd5cf"
+ },
+ "loud-quarry": {
+  "card_bytes": 26698,
+  "desktop_bytes": 187570,
+  "desktop_h": 4640,
+  "desktop_ratio": 3.2222,
+  "mobile_bytes": 181408,
+  "mobile_h": 8043,
+  "mobile_ratio": 20.6231,
+  "tone": "#413524"
+ },
+ "moss-hollow-game": {
+  "card_bytes": 27552,
+  "desktop_bytes": 166522,
+  "desktop_h": 4249,
+  "desktop_ratio": 2.9507,
+  "mobile_bytes": 181350,
+  "mobile_h": 6840,
+  "mobile_ratio": 17.5385,
+  "tone": "#d6dcc9"
+ },
+ "onsen-mirador": {
+  "card_bytes": 22110,
+  "desktop_bytes": 176990,
+  "desktop_h": 5951,
+  "desktop_ratio": 4.1326,
+  "mobile_bytes": 195208,
+  "mobile_h": 8271,
+  "mobile_ratio": 21.2077,
+  "tone": "#212d36"
+ },
+ "palletmind": {
+  "card_bytes": 26266,
+  "desktop_bytes": 183156,
+  "desktop_h": 5861,
+  "desktop_ratio": 4.0701,
+  "mobile_bytes": 215106,
+  "mobile_h": 8274,
+  "mobile_ratio": 21.2154,
+  "tone": "#d1d1cd"
+ },
+ "paystack-plain": {
+  "card_bytes": 19944,
+  "desktop_bytes": 176318,
+  "desktop_h": 5174,
+  "desktop_ratio": 3.5931,
+  "mobile_bytes": 228360,
+  "mobile_h": 8926,
+  "mobile_ratio": 22.8872,
+  "tone": "#ecedeb"
+ },
+ "quarter-inserted": {
+  "card_bytes": 28402,
+  "desktop_bytes": 281972,
+  "desktop_h": 6672,
+  "desktop_ratio": 4.6333,
+  "mobile_bytes": 330940,
+  "mobile_h": 10868,
+  "mobile_ratio": 27.8667,
+  "tone": "#5f0c54"
+ },
+ "quiet-night-cpap": {
+  "card_bytes": 19780,
+  "desktop_bytes": 177324,
+  "desktop_h": 5574,
+  "desktop_ratio": 3.8708,
+  "mobile_bytes": 214666,
+  "mobile_h": 8825,
+  "mobile_ratio": 22.6282,
+  "tone": "#9ea5ab"
+ },
+ "ridgeline-roofing": {
+  "card_bytes": 32890,
+  "desktop_bytes": 258614,
+  "desktop_h": 5722,
+  "desktop_ratio": 3.9736,
+  "mobile_bytes": 319982,
+  "mobile_h": 9994,
+  "mobile_ratio": 25.6256,
+  "tone": "#8f8f8c"
+ },
+ "runtime-conf": {
+  "card_bytes": 16538,
+  "desktop_bytes": 181018,
+  "desktop_h": 6084,
+  "desktop_ratio": 4.225,
+  "mobile_bytes": 198044,
+  "mobile_h": 8610,
+  "mobile_ratio": 22.0769,
+  "tone": "#a69a96"
+ },
+ "safe-passage-law": {
+  "card_bytes": 23160,
+  "desktop_bytes": 193914,
+  "desktop_h": 5794,
+  "desktop_ratio": 4.0236,
+  "mobile_bytes": 230958,
+  "mobile_h": 7305,
+  "mobile_ratio": 18.7308,
+  "tone": "#e9ebee"
+ },
+ "second-spring": {
+  "card_bytes": 21966,
+  "desktop_bytes": 252798,
+  "desktop_h": 7904,
+  "desktop_ratio": 5.4889,
+  "mobile_bytes": 318404,
+  "mobile_h": 10491,
+  "mobile_ratio": 26.9,
+  "tone": "#e6e0db"
+ },
+ "sediment-wine": {
+  "card_bytes": 29416,
+  "desktop_bytes": 221326,
+  "desktop_h": 5704,
+  "desktop_ratio": 3.9611,
+  "mobile_bytes": 228240,
+  "mobile_h": 8443,
+  "mobile_ratio": 21.6487,
+  "tone": "#625250"
+ },
+ "sinkstone": {
+  "card_bytes": 18060,
+  "desktop_bytes": 219504,
+  "desktop_h": 7183,
+  "desktop_ratio": 4.9882,
+  "mobile_bytes": 282806,
+  "mobile_h": 13553,
+  "mobile_ratio": 34.7513,
+  "tone": "#131916"
+ },
+ "spoke-and-van": {
+  "card_bytes": 24402,
+  "desktop_bytes": 135180,
+  "desktop_h": 4324,
+  "desktop_ratio": 3.0028,
+  "mobile_bytes": 164616,
+  "mobile_h": 7715,
+  "mobile_ratio": 19.7821,
+  "tone": "#20271e"
+ },
+ "storyboard-ai": {
+  "card_bytes": 32910,
+  "desktop_bytes": 174502,
+  "desktop_h": 5149,
+  "desktop_ratio": 3.5757,
+  "mobile_bytes": 206908,
+  "mobile_h": 8797,
+  "mobile_ratio": 22.5564,
+  "tone": "#5c534a"
+ },
+ "the-undertow": {
+  "card_bytes": 27800,
+  "desktop_bytes": 190510,
+  "desktop_h": 6280,
+  "desktop_ratio": 4.3611,
+  "mobile_bytes": 236302,
+  "mobile_h": 10677,
+  "mobile_ratio": 27.3769,
+  "tone": "#d6d4cf"
+ },
+ "the-ward-paper": {
+  "card_bytes": 23112,
+  "desktop_bytes": 259230,
+  "desktop_h": 6949,
+  "desktop_ratio": 4.8257,
+  "mobile_bytes": 291950,
+  "mobile_h": 8865,
+  "mobile_ratio": 22.7308,
+  "tone": "#f6f3f0"
+ },
+ "tideline-collect": {
+  "card_bytes": 19266,
+  "desktop_bytes": 206512,
+  "desktop_h": 7662,
+  "desktop_ratio": 5.3208,
+  "mobile_bytes": 235768,
+  "mobile_h": 8689,
+  "mobile_ratio": 22.2795,
+  "tone": "#c4c8c9"
+ },
+ "toolbelt-academy": {
+  "card_bytes": 34700,
+  "desktop_bytes": 271290,
+  "desktop_h": 6512,
+  "desktop_ratio": 4.5222,
+  "mobile_bytes": 289636,
+  "mobile_h": 10494,
+  "mobile_ratio": 26.9077,
+  "tone": "#3c3a36"
+ },
+ "tracewell": {
+  "card_bytes": 20626,
+  "desktop_bytes": 131682,
+  "desktop_h": 4935,
+  "desktop_ratio": 3.4271,
+  "mobile_bytes": 160026,
+  "mobile_h": 8080,
+  "mobile_ratio": 20.7179,
+  "tone": "#0f1314"
+ },
+ "twelve-harvests": {
+  "card_bytes": 24666,
+  "desktop_bytes": 263330,
+  "desktop_h": 8177,
+  "desktop_ratio": 5.6785,
+  "mobile_bytes": 305172,
+  "mobile_h": 12689,
+  "mobile_ratio": 32.5359,
+  "tone": "#e1d4c7"
+ },
+ "verbo-immersion": {
+  "card_bytes": 32922,
+  "desktop_bytes": 242970,
+  "desktop_h": 4569,
+  "desktop_ratio": 3.1729,
+  "mobile_bytes": 296882,
+  "mobile_h": 8993,
+  "mobile_ratio": 23.059,
+  "tone": "#f3f0ed"
+ },
+ "voltcraft-modular": {
+  "card_bytes": 20786,
+  "desktop_bytes": 236390,
+  "desktop_h": 7192,
+  "desktop_ratio": 4.9944,
+  "mobile_bytes": 282094,
+  "mobile_h": 13638,
+  "mobile_ratio": 34.9692,
+  "tone": "#181516"
+ },
+ "wren-and-ash": {
+  "card_bytes": 20416,
+  "desktop_bytes": 223280,
+  "desktop_h": 6648,
+  "desktop_ratio": 4.6167,
+  "mobile_bytes": 236018,
+  "mobile_h": 11496,
+  "mobile_ratio": 29.4769,
+  "tone": "#dcd5c9"
+ }
+}

@@ -1,3 +1,29 @@
+# exjsx.dev — static (GitHub Pages)
+# Policy: every AI crawler is welcome. Citation is the goal; blocking the
+# search-side bots (OAI-SearchBot, Claude-SearchBot, PerplexityBot) would
+# remove us from exactly the answers we are trying to win.
+
 User-agent: *
 Allow: /
+# WordPress artefacts leaked by the static mirror — 404s on Pages, no crawl value
+Disallow: /wp-json/
+Disallow: /feed/
+Disallow: /comments/feed/
+Disallow: /xmlrpc.php
+# NOTE: /wp-includes/ and /wp-content/ stay ALLOWED on purpose — the mirrored
+# page loads its jQuery, Elementor CSS and fonts from there. Blocking them
+# would stop Googlebot rendering the page it is trying to index.
+# The archive filters client-side and never mutates the URL, so no query-string
+# surface should exist. Forbid it so a future filter can't create a crawl trap,
+# and so UTM-tagged shares of the 50 don't become duplicate URLs.
+Disallow: /*?
+# ...except the agent view, which llms.txt explicitly advertises. Google and
+# Bing apply the longest-matching rule, so this Allow beats the Disallow above.
+Allow: /?mode=agent
+
+# NOTE: /showcase/*/live/ is deliberately NOT disallowed. Those frozen generated
+# sites carry <meta name="robots" content="noindex,follow"> and a crawler must be
+# able to FETCH them to see that tag. Disallowing them in robots.txt would leave
+# them eligible for URL-only indexing — the exact opposite of the intent.
+
 Sitemap: https://exjsx.dev/sitemap.xml

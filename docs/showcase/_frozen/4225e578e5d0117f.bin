@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+			<title>Hard Turn &#8211; Elementor Ultra Dev</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name='robots' content='max-image-preview:large' />
+<title>Hard Turn &#8211; Elementor Ultra Dev</title>
+<link rel='dns-prefetch' href='//127.0.0.1' />
+<link rel="alternate" type="application/rss+xml" title="Elementor Ultra Dev &raquo; Feed" href="http://127.0.0.1:8950/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Elementor Ultra Dev &raquo; Comments Feed" href="http://127.0.0.1:8950/comments/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="http://127.0.0.1:8950/wp-json/oembed/1.0/embed?url=http%3A%2F%2F127.0.0.1%3A8950%2Fhard-turn%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="http://127.0.0.1:8950/wp-json/oembed/1.0/embed?url=http%3A%2F%2F127.0.0.1%3A8950%2Fhard-turn%2F&#038;format=xml" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-color]){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--base: #FFFFFF;--wp--preset--color--contrast: #111111;--wp--preset--color--accent-1: #FFEE58;--wp--preset--color--accent-2: #F6CFF4;--wp--preset--color--accent-3: #503AA8;--wp--preset--color--accent-4: #686868;--wp--preset--color--accent-5: #FBFAF3;--wp--preset--color--accent-6: color-mix(in srgb, currentColor 20%, transparent);--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 0.875rem;--wp--preset--font-size--medium: clamp(1rem, 1rem + ((1vw - 0.2rem) * 0.196), 1.125rem);--wp--preset--font-size--large: clamp(1.125rem, 1.125rem + ((1vw - 0.2rem) * 0.392), 1.375rem);--wp--preset--font-size--x-large: clamp(1.75rem, 1.75rem + ((1vw - 0.2rem) * 0.392), 2rem);--wp--preset--font-size--xx-large: clamp(2.15rem, 2.15rem + ((1vw - 0.2rem) * 1.333), 3rem);--wp--preset--font-family--manrope: Manrope, sans-serif;--wp--preset--font-family--fira-code: "Fira Code", monospace;--wp--preset--spacing--20: 10px;--wp--preset--spacing--30: 20px;--wp--preset--spacing--40: 30px;--wp--preset--spacing--50: clamp(30px, 5vw, 50px);--wp--preset--spacing--60: clamp(30px, 7vw, 70px);--wp--preset--spacing--70: clamp(50px, 7vw, 90px);--wp--preset--spacing--80: clamp(70px, 10vw, 140px);--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:root { --wp--style--global--content-size: 645px;--wp--style--global--wide-size: 1340px; }:where(body) { margin: 0; }.wp-site-blocks { padding-top: var(--wp--style--root--padding-top); padding-bottom: var(--wp--style--root--padding-bottom); }.has-global-padding { padding-right: var(--wp--style--root--padding-right); padding-left: var(--wp--style--root--padding-left); }.has-global-padding > .alignfull { margin-right: calc(var(--wp--style--root--padding-right) * -1); margin-left: calc(var(--wp--style--root--padding-left) * -1); }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) { padding-right: 0; padding-left: 0; }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) > .alignfull { margin-left: 0; margin-right: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 1.2rem; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 1.2rem; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 1.2rem;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 1.2rem;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 1.2rem;}:root :where(.is-layout-grid){gap: 1.2rem;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{background-color: var(--wp--preset--color--base);color: var(--wp--preset--color--contrast);font-family: var(--wp--preset--font-family--manrope);font-size: var(--wp--preset--font-size--large);font-weight: 300;letter-spacing: -0.1px;line-height: 1.4;--wp--style--root--padding-top: 0px;--wp--style--root--padding-right: var(--wp--preset--spacing--50);--wp--style--root--padding-bottom: 0px;--wp--style--root--padding-left: var(--wp--preset--spacing--50);}a:where(:not(.wp-element-button)){color: currentColor;}:root :where(a:where(:not(.wp-element-button)):hover){text-decoration: none;}h1, h2, h3, h4, h5, h6{font-weight: 400;letter-spacing: -0.1px;line-height: 1.125;}h1{font-size: var(--wp--preset--font-size--xx-large);}h2{font-size: var(--wp--preset--font-size--x-large);}h3{font-size: var(--wp--preset--font-size--large);}h4{font-size: var(--wp--preset--font-size--medium);}h5{font-size: var(--wp--preset--font-size--small);letter-spacing: 0.5px;}h6{font-size: var(--wp--preset--font-size--small);font-weight: 700;letter-spacing: 1.4px;text-transform: uppercase;}:root :where(.wp-element-button, .wp-block-button__link){background-color: var(--wp--preset--color--contrast);border-width: 0;color: var(--wp--preset--color--base);font-family: inherit;font-size: var(--wp--preset--font-size--medium);font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: 1rem;padding-right: 2.25rem;padding-bottom: 1rem;padding-left: 2.25rem;text-decoration: none;text-transform: inherit;}:root :where(.wp-element-button:hover, .wp-block-button__link:hover){background-color: color-mix(in srgb, var(--wp--preset--color--contrast) 85%, transparent);border-color: transparent;color: var(--wp--preset--color--base);}:root :where(.wp-element-button:focus, .wp-block-button__link:focus){outline-color: var(--wp--preset--color--accent-4);outline-offset: 2px;}:root :where(.wp-element-caption, .wp-block-audio figcaption, .wp-block-embed figcaption, .wp-block-gallery figcaption, .wp-block-image figcaption, .wp-block-table figcaption, .wp-block-video figcaption){font-size: var(--wp--preset--font-size--small);line-height: 1.4;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-base-color{color: var(--wp--preset--color--base) !important;}.has-contrast-color{color: var(--wp--preset--color--contrast) !important;}.has-accent-1-color{color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-color{color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-color{color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-color{color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-color{color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-color{color: var(--wp--preset--color--accent-6) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-base-background-color{background-color: var(--wp--preset--color--base) !important;}.has-contrast-background-color{background-color: var(--wp--preset--color--contrast) !important;}.has-accent-1-background-color{background-color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-background-color{background-color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-background-color{background-color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-background-color{background-color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-background-color{background-color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-background-color{background-color: var(--wp--preset--color--accent-6) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-base-border-color{border-color: var(--wp--preset--color--base) !important;}.has-contrast-border-color{border-color: var(--wp--preset--color--contrast) !important;}.has-accent-1-border-color{border-color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-border-color{border-color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-border-color{border-color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-border-color{border-color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-border-color{border-color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-border-color{border-color: var(--wp--preset--color--accent-6) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-xx-large-font-size{font-size: var(--wp--preset--font-size--xx-large) !important;}.has-manrope-font-family{font-family: var(--wp--preset--font-family--manrope) !important;}.has-fira-code-font-family{font-family: var(--wp--preset--font-family--fira-code) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<style id="wp-block-template-skip-link-inline-css">
+/*! This file is auto-generated */
+.skip-link.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute!important;width:1px;word-wrap:normal!important;word-break:normal!important}.skip-link.screen-reader-text:focus{background-color:#eee;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}
+/*# sourceURL=/wp-includes/css/wp-block-template-skip-link.min.css */
+</style>
+<style id="twentytwentyfive-style-inline-css">
+a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-site-blocks :focus){outline-width:2px;outline-style:solid}.wp-block-navigation .wp-block-navigation-submenu .wp-block-navigation-item:not(:last-child){margin-bottom:3px}.wp-block-navigation .wp-block-navigation-item .wp-block-navigation-item__content{outline-offset:4px}.wp-block-navigation .wp-block-navigation-item ul.wp-block-navigation__submenu-container .wp-block-navigation-item__content{outline-offset:0}blockquote,caption,figcaption,h1,h2,h3,h4,h5,h6,p{text-wrap:pretty}.more-link{display:block}:where(pre){overflow-x:auto}
+/*# sourceURL=http://127.0.0.1:8950/wp-content/themes/twentytwentyfive/style.min.css */
+</style>
+<link rel='stylesheet' id='elementor-frontend-css' href='http://127.0.0.1:8950/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=4.2.1' media='all' />
+<style id="elementor-frontend-inline-css">
+.e-heading-base a, .e-paragraph-base a { all: unset; cursor: pointer; }form[data-element_type="e-form"].form-state-success [data-element_type="e-form-success-message"],form[data-element_type="e-form"].form-state-error [data-element_type="e-form-error-message"]{ display: block; }
+/*# sourceURL=elementor-frontend-inline-css */
+</style>
+<link rel='stylesheet' id='elementor-post-4-css' href='http://127.0.0.1:8950/wp-content/uploads/elementor/css/post-4.css?ver=1786663961' media='all' />
+<link rel='stylesheet' id='base-desktop-css' href='http://127.0.0.1:8950/wp-content/uploads/elementor/css/base-desktop.css?ver=6a7e586c631f0' media='all' />
+<link rel='stylesheet' id='local-106-frontend-desktop-css' href='http://127.0.0.1:8950/wp-content/uploads/elementor/css/local-106-frontend-desktop.css?ver=6a7e557871098' media='all' />
+<link rel='stylesheet' id='local-106-frontend-tablet-css' href='http://127.0.0.1:8950/wp-content/uploads/elementor/css/local-106-frontend-tablet.css?ver=6a7e557871098' media='(max-width:1024px)' />
+<link rel='stylesheet' id='base-mobile-css' href='http://127.0.0.1:8950/wp-content/uploads/elementor/css/base-mobile.css?ver=6a7e586c631f0' media='(max-width:767px)' />
+<link rel='stylesheet' id='local-106-frontend-mobile-css' href='http://127.0.0.1:8950/wp-content/uploads/elementor/css/local-106-frontend-mobile.css?ver=6a7e557871098' media='(max-width:767px)' />
+<link rel='stylesheet' id='elementor-gf-roboto-css' href='https://fonts.googleapis.com/css?family=Roboto:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&#038;display=swap' media='all' />
+<link rel='stylesheet' id='elementor-gf-robotoslab-css' href='https://fonts.googleapis.com/css?family=Roboto+Slab:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&#038;display=swap' media='all' />
+<link rel='stylesheet' id='elementor-gf-dmsans-css' href='https://fonts.googleapis.com/css?family=DM+Sans:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&#038;display=swap' media='all' />
+<link rel='stylesheet' id='elementor-gf-syne-css' href='https://fonts.googleapis.com/css?family=Syne:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&#038;display=swap' media='all' />
+<script id="jquery-core-js" src="http://127.0.0.1:8950/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="http://127.0.0.1:8950/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<link rel="https://api.w.org/" href="http://127.0.0.1:8950/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="http://127.0.0.1:8950/wp-json/wp/v2/pages/106" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://127.0.0.1:8950/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 7.0.4" />
+<link rel="canonical" href="http://127.0.0.1:8950/hard-turn/" />
+<link rel='shortlink' href='http://127.0.0.1:8950/?p=106' />
+<meta name="generator" content="Elementor 4.2.1; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<style class="wp-fonts-local">
+@font-face{font-family:Manrope;font-style:normal;font-weight:200 800;font-display:fallback;src:url('http://127.0.0.1:8950/wp-content/themes/twentytwentyfive/assets/fonts/manrope/Manrope-VariableFont_wght.woff2') format('woff2');}
+@font-face{font-family:"Fira Code";font-style:normal;font-weight:300 700;font-display:fallback;src:url('http://127.0.0.1:8950/wp-content/themes/twentytwentyfive/assets/fonts/fira-code/FiraCode-VariableFont_wght.woff2') format('woff2');}
+</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /></head>
+<body class="wp-singular page-template page-template-elementor_canvas page page-id-106 wp-embed-responsive wp-theme-twentytwentyfive elementor-default elementor-template-canvas elementor-kit-4 elementor-page elementor-page-106">
+			<div data-elementor-type="wp-page" data-elementor-id="106" class="elementor elementor-106">
+						<div class="elementor-element elementor-element-erawcssykrhga elementor-widget elementor-widget-html" data-id="erawcssykrhga" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					<style id="exjsx-raw-ykrhga-0">.elementor-element-erawcssykrhga{margin:0 !important;height:0;line-height:0;}.elementor .e-ykrhga-e00001-s.e-ykrhga-e00001-s{overflow: hidden;}.elementor .e-ykrhga-e00003-s.e-ykrhga-e00003-s{text-transform: uppercase;}.elementor .e-ykrhga-e00004-s.e-ykrhga-e00004-s{text-transform: uppercase;}.elementor .e-ykrhga-e00006-s.e-ykrhga-e00006-s{transform: rotate(-3deg);}.elementor .e-ykrhga-e00008-s.e-ykrhga-e00008-s{transform: rotate(2deg);}.elementor .e-ykrhga-e0000a-s.e-ykrhga-e0000a-s{text-transform: uppercase;}.elementor .e-ykrhga-e0000b-s.e-ykrhga-e0000b-s{transform: rotate(-6deg);}.elementor .e-ykrhga-e0000e-s.e-ykrhga-e0000e-s{transform: rotate(4deg);}.elementor .e-ykrhga-e0000g-s.e-ykrhga-e0000g-s{transform: rotate(-2deg);}.elementor .e-ykrhga-e0000i-s.e-ykrhga-e0000i-s{transform: rotate(5deg);}.elementor .e-ykrhga-e0000l-s.e-ykrhga-e0000l-s{z-index: 2; transform: rotate(-4deg);}.elementor .e-ykrhga-e0000m-s.e-ykrhga-e0000m-s{text-transform: uppercase; white-space: nowrap;}.elementor .e-ykrhga-e0000r-s.e-ykrhga-e0000r-s{text-transform: uppercase;}.elementor .e-ykrhga-e0000s-s.e-ykrhga-e0000s-s{border-top-width: 1px; border-top-style: solid; border-color: #0A0A0A;}.elementor .e-ykrhga-e0000t-s.e-ykrhga-e0000t-s{text-transform: uppercase;}.elementor .e-ykrhga-e0000y-s.e-ykrhga-e0000y-s{text-transform: uppercase;}.elementor .e-ykrhga-e0001a-s.e-ykrhga-e0001a-s{border-top-width: 1px; border-top-style: solid; border-color: #0A0A0A;}.elementor .e-ykrhga-e0001c-s.e-ykrhga-e0001c-s{text-transform: uppercase;}.elementor .e-ykrhga-e0001k-s.e-ykrhga-e0001k-s{border-top-width: 1px; border-top-style: solid; border-color: #0A0A0A;}.elementor .e-ykrhga-e0001m-s.e-ykrhga-e0001m-s{text-transform: uppercase;}.elementor .e-ykrhga-e0001u-s.e-ykrhga-e0001u-s{border-top-width: 1px; border-top-style: solid; border-color: #0A0A0A;}.elementor .e-ykrhga-e0001w-s.e-ykrhga-e0001w-s{text-transform: uppercase;}.elementor .e-ykrhga-e00023-s.e-ykrhga-e00023-s{border-top-width: 1px; border-top-style: solid; border-color: #0A0A0A;}.elementor .e-ykrhga-e00024-s.e-ykrhga-e00024-s{text-transform: uppercase;}.elementor .e-ykrhga-e00028-s.e-ykrhga-e00028-s{text-transform: uppercase;}.elementor .e-ykrhga-e0002d-s.e-ykrhga-e0002d-s{text-transform: uppercase;}.elementor .e-ykrhga-e0002g-s.e-ykrhga-e0002g-s{text-transform: uppercase;}.elementor .e-ykrhga-e0002j-s.e-ykrhga-e0002j-s{text-transform: uppercase;}.elementor .e-ykrhga-e0002m-s.e-ykrhga-e0002m-s{text-transform: uppercase;}.elementor .e-ykrhga-e0002r-s.e-ykrhga-e0002r-s{transform: rotate(-2deg);}.elementor .e-ykrhga-e0002u-s.e-ykrhga-e0002u-s{text-transform: uppercase;}.elementor .e-ykrhga-e00031-s.e-ykrhga-e00031-s{text-transform: uppercase;}.elementor .e-ykrhga-e00036-s.e-ykrhga-e00036-s{transform: rotate(3deg);}.elementor .e-ykrhga-e0003e-s.e-ykrhga-e0003e-s{border-top-width: 1px; border-top-style: solid; border-color: #0A0A0A;}.elementor .e-ykrhga-e0003g-s.e-ykrhga-e0003g-s{border-top-width: 1px; border-top-style: solid; border-color: #0A0A0A;}.elementor .e-ykrhga-e0003i-s.e-ykrhga-e0003i-s{border-top-width: 1px; border-top-style: solid; border-color: #0A0A0A;}.elementor .e-ykrhga-e0003k-s.e-ykrhga-e0003k-s{border-top-width: 1px; border-top-style: solid; border-bottom-width: 1px; border-bottom-style: solid; border-color: #0A0A0A;}.elementor .e-ykrhga-e0003p-s.e-ykrhga-e0003p-s{transform: rotate(-2deg);}.elementor .e-ykrhga-e0003r-s.e-ykrhga-e0003r-s{text-transform: uppercase;}.elementor .e-ykrhga-e0003v-s.e-ykrhga-e0003v-s{border-top-width: 1px; border-top-style: solid; border-color: #0A0A0A;}.elementor .e-ykrhga-e0003y-s.e-ykrhga-e0003y-s{text-transform: uppercase;}.elementor .e-ykrhga-e00041-s.e-ykrhga-e00041-s{border-top-width: 1px; border-top-style: solid; border-color: #0A0A0A;}.elementor .e-ykrhga-e00044-s.e-ykrhga-e00044-s{text-transform: uppercase;}.elementor .e-ykrhga-e00047-s.e-ykrhga-e00047-s{border-top-width: 1px; border-top-style: solid; border-color: #0A0A0A;}.elementor .e-ykrhga-e0004a-s.e-ykrhga-e0004a-s{text-transform: uppercase;}.elementor .e-ykrhga-e0004d-s.e-ykrhga-e0004d-s{border-top-width: 1px; border-top-style: solid; border-color: #0A0A0A;}.elementor .e-ykrhga-e0004g-s.e-ykrhga-e0004g-s{text-transform: uppercase;}.elementor .e-ykrhga-e0004o-s.e-ykrhga-e0004o-s{border-top-width: 1px; border-top-style: solid; border-color: #4a4a4a;}.elementor .e-ykrhga-e0004p-s.e-ykrhga-e0004p-s{text-transform: uppercase;}.elementor .e-ykrhga-e0004u-s.e-ykrhga-e0004u-s{border-top-width: 1px; border-top-style: solid; border-color: #4a4a4a;}.elementor .e-ykrhga-e0004v-s.e-ykrhga-e0004v-s{text-transform: uppercase;}.elementor .e-ykrhga-e0004w-s.e-ykrhga-e0004w-s{text-transform: uppercase;}</style>				</div>
+		<div class="elementor-element elementor-element-e00000 e-con e-atomic-element e-flexbox-base e-ykrhga-e00000-s " data-id="e00000" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00000">
+    <div class="elementor-element elementor-element-e00001 e-con e-atomic-element e-flexbox-base e-ykrhga-e00001-s " data-id="e00001" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00001">
+    <div class="elementor-element elementor-element-e00002 e-con e-atomic-element e-flexbox-base e-ykrhga-e00002-s " data-id="e00002" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00002">
+    			<p class="e-ykrhga-e00003-s e-paragraph-base" data-interaction-id="e00003">Hard Turn — identity studio</p>
+					<p class="e-ykrhga-e00004-s e-paragraph-base" data-interaction-id="e00004">Three at a time</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00005 e-con e-atomic-element e-grid-base e-ykrhga-e00005-s " data-id="e00005" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e00005">
+    <div class="elementor-element elementor-element-e00006 e-con e-atomic-element e-flexbox-base e-ykrhga-e00006-s " data-id="e00006" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00006">
+    			<img fetchpriority="high" decoding="async" class="e-image-base e-ykrhga-e00007-s" data-interaction-id="e00007" id="103" src="http://127.0.0.1:8950/wp-content/uploads/2026/08/exjsx-hard-turn-print_detail.jpg" width="512" height="512" srcset="http://127.0.0.1:8950/wp-content/uploads/2026/08/exjsx-hard-turn-print_detail.jpg 512w, http://127.0.0.1:8950/wp-content/uploads/2026/08/exjsx-hard-turn-print_detail-300x300.jpg 300w, http://127.0.0.1:8950/wp-content/uploads/2026/08/exjsx-hard-turn-print_detail-150x150.jpg 150w" alt="Close detail of a printed identity system"/>		
+</div>
+<div class="elementor-element elementor-element-e00008 e-con e-atomic-element e-flexbox-base e-ykrhga-e00008-s " data-id="e00008" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00008">
+    			<p class="e-ykrhga-e00009-s e-paragraph-base" data-interaction-id="e00009">Rebrands only. Never launches.</p>
+					<p class="e-ykrhga-e0000a-s e-paragraph-base" data-interaction-id="e0000a">Fragment 01 — packaging</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0000b e-con e-atomic-element e-flexbox-base e-ykrhga-e0000b-s " data-id="e0000b" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000b">
+    			<p class="e-ykrhga-e0000c-s e-paragraph-base" data-interaction-id="e0000c">8</p>
+					<p class="e-ykrhga-e0000d-s e-paragraph-base" data-interaction-id="e0000d">weeks, start to recorded handover</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0000e e-con e-atomic-element e-flexbox-base e-ykrhga-e0000e-s " data-id="e0000e" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000e">
+    			<img decoding="async" class="e-image-base e-ykrhga-e0000f-s" data-interaction-id="e0000f" id="104" src="http://127.0.0.1:8950/wp-content/uploads/2026/08/exjsx-hard-turn-studio_wall.jpg" width="1024" height="576" srcset="http://127.0.0.1:8950/wp-content/uploads/2026/08/exjsx-hard-turn-studio_wall.jpg 1024w, http://127.0.0.1:8950/wp-content/uploads/2026/08/exjsx-hard-turn-studio_wall-300x169.jpg 300w, http://127.0.0.1:8950/wp-content/uploads/2026/08/exjsx-hard-turn-studio_wall-768x432.jpg 768w" alt="Studio wall pinned with work in progress"/>		
+</div>
+<div class="elementor-element elementor-element-e0000g e-con e-atomic-element e-flexbox-base e-ykrhga-e0000g-s " data-id="e0000g" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000g">
+    			<img decoding="async" class="e-image-base e-ykrhga-e0000h-s" data-interaction-id="e0000h" id="105" src="http://127.0.0.1:8950/wp-content/uploads/2026/08/exjsx-hard-turn-team_working.jpg" width="1024" height="768" srcset="http://127.0.0.1:8950/wp-content/uploads/2026/08/exjsx-hard-turn-team_working.jpg 1024w, http://127.0.0.1:8950/wp-content/uploads/2026/08/exjsx-hard-turn-team_working-300x225.jpg 300w, http://127.0.0.1:8950/wp-content/uploads/2026/08/exjsx-hard-turn-team_working-768x576.jpg 768w" alt="The Hard Turn team working through a rebrand"/>		
+</div>
+<div class="elementor-element elementor-element-e0000i e-con e-atomic-element e-flexbox-base e-ykrhga-e0000i-s " data-id="e0000i" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000i">
+    			<p class="e-ykrhga-e0000j-s e-paragraph-base" data-interaction-id="e0000j">4</p>
+					<p class="e-ykrhga-e0000k-s e-paragraph-base" data-interaction-id="e0000k">people, all of whom you will meet</p>
+		
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0000l e-con e-atomic-element e-flexbox-base e-ykrhga-e0000l-s " data-id="e0000l" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000l">
+    			<p class="e-ykrhga-e0000m-s e-paragraph-base" data-interaction-id="e0000m">Hard Turn · Hard Turn</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0000n e-con e-atomic-element e-grid-base e-ykrhga-e0000n-s " data-id="e0000n" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0000n">
+    <div class="elementor-element elementor-element-e0000o e-con e-atomic-element e-flexbox-base e-ykrhga-e0000o-s " data-id="e0000o" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000o">
+    			<h1 data-interaction-id="e0000p" class="e-ykrhga-e0000p-s e-heading-base">You outgrew the logo you drew in a hurry.</h1>
+					<p class="e-ykrhga-e0000q-s e-paragraph-base" data-interaction-id="e0000q">Hard Turn is four people who only take rebrands. Not launches, not decks, not naming exercises for products that do not exist yet. Three clients at a time, eight weeks each.</p>
+					<p class="e-ykrhga-e0000r-s e-paragraph-base" data-interaction-id="e0000r"><a href="#enquiry" target="_self" class="e-paragraph-link-base">
+		Tell us what broke
+	</a></p>
+		
+</div>
+<div class="elementor-element elementor-element-e0000s e-con e-atomic-element e-flexbox-base e-ykrhga-e0000s-s " data-id="e0000s" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000s">
+    			<p class="e-ykrhga-e0000t-s e-paragraph-base" data-interaction-id="e0000t">Availability</p>
+					<p class="e-ykrhga-e0000u-s e-paragraph-base" data-interaction-id="e0000u">Next opening: late October. We take deposits to hold a slot and we have never moved one.</p>
+		
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0000v e-con e-atomic-element e-flexbox-base e-ykrhga-e0000v-s " data-id="e0000v" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000v">
+    <div class="elementor-element elementor-element-e0000w e-con e-atomic-element e-grid-base e-ykrhga-e0000w-s " data-id="e0000w" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0000w">
+    <div class="elementor-element elementor-element-e0000x e-con e-atomic-element e-flexbox-base e-ykrhga-e0000x-s " data-id="e0000x" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000x">
+    			<p class="e-ykrhga-e0000y-s e-paragraph-base" data-interaction-id="e0000y">02 — What we do</p>
+					<p class="e-ykrhga-e0000z-s e-paragraph-base" data-interaction-id="e0000z">Said flatly, so nobody wastes a call finding out.</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00010 e-con e-atomic-element e-flexbox-base e-ykrhga-e00010-s " data-id="e00010" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00010">
+    			<h2 data-interaction-id="e00011" class="e-ykrhga-e00011-s e-heading-base">We only do rebrands.</h2>
+					<p class="e-ykrhga-e00012-s e-paragraph-base" data-interaction-id="e00012">You already have customers, a category, a sales deck someone hates, and a mark that was drawn in an afternoon four years ago. That is the work. If the company does not exist yet, there is nothing for us to turn, and we will say so in one line rather than three meetings.</p>
+		
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e00013 e-con e-atomic-element e-flexbox-base e-ykrhga-e00013-s " data-id="e00013" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00013">
+    <div class="elementor-element elementor-element-e00014 e-con e-atomic-element e-grid-base e-ykrhga-e00014-s " data-id="e00014" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e00014">
+    <div class="elementor-element elementor-element-e00015 e-con e-atomic-element e-flexbox-base e-ykrhga-e00015-s " data-id="e00015" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00015">
+    			<h2 data-interaction-id="e00016" class="e-ykrhga-e00016-s e-heading-base">Three engagements. Three prices. No packages.</h2>
+		
+</div>
+<div class="elementor-element elementor-element-e00017 e-con e-atomic-element e-flexbox-base e-ykrhga-e00017-s " data-id="e00017" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00017">
+    			<p class="e-ykrhga-e00018-s e-paragraph-base" data-interaction-id="e00018">Identity system, 42,000. Identity plus a website design system, 68,000. Identity plus a full brand operating manual and rollout, 95,000.</p>
+		
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e00019 e-con e-atomic-element e-flexbox-base e-ykrhga-e00019-s " data-id="e00019" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00019">
+    <div class="elementor-element elementor-element-e0001a e-con e-atomic-element e-grid-base e-ykrhga-e0001a-s " data-id="e0001a" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0001a">
+    <div class="elementor-element elementor-element-e0001b e-con e-atomic-element e-flexbox-base e-ykrhga-e0001b-s " data-id="e0001b" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001b">
+    			<p class="e-ykrhga-e0001c-s e-paragraph-base" data-interaction-id="e0001c">01</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0001d e-con e-atomic-element e-flexbox-base e-ykrhga-e0001d-s " data-id="e0001d" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001d">
+    			<h3 data-interaction-id="e0001e" class="e-ykrhga-e0001e-s e-heading-base">42,000</h3>
+		
+</div>
+<div class="elementor-element elementor-element-e0001f e-con e-atomic-element e-flexbox-base e-ykrhga-e0001f-s " data-id="e0001f" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001f">
+    			<p class="e-ykrhga-e0001g-s e-paragraph-base" data-interaction-id="e0001g">Identity system</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0001h e-con e-atomic-element e-flexbox-base e-ykrhga-e0001h-s " data-id="e0001h" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001h">
+    			<p class="e-ykrhga-e0001i-s e-paragraph-base" data-interaction-id="e0001i">Marks, type, colour, motion rules, and the files that make them behave. The core of every engagement.</p>
+		
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0001j e-con e-atomic-element e-flexbox-base e-ykrhga-e0001j-s " data-id="e0001j" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001j">
+    <div class="elementor-element elementor-element-e0001k e-con e-atomic-element e-grid-base e-ykrhga-e0001k-s " data-id="e0001k" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0001k">
+    <div class="elementor-element elementor-element-e0001l e-con e-atomic-element e-flexbox-base e-ykrhga-e0001l-s " data-id="e0001l" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001l">
+    			<p class="e-ykrhga-e0001m-s e-paragraph-base" data-interaction-id="e0001m">02</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0001n e-con e-atomic-element e-flexbox-base e-ykrhga-e0001n-s " data-id="e0001n" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001n">
+    			<h3 data-interaction-id="e0001o" class="e-ykrhga-e0001o-s e-heading-base">68,000</h3>
+		
+</div>
+<div class="elementor-element elementor-element-e0001p e-con e-atomic-element e-flexbox-base e-ykrhga-e0001p-s " data-id="e0001p" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001p">
+    			<p class="e-ykrhga-e0001q-s e-paragraph-base" data-interaction-id="e0001q">Identity plus a website design system</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0001r e-con e-atomic-element e-flexbox-base e-ykrhga-e0001r-s " data-id="e0001r" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001r">
+    			<p class="e-ykrhga-e0001s-s e-paragraph-base" data-interaction-id="e0001s">The above, plus components, states and page shapes built to survive whoever ships the site after us.</p>
+		
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0001t e-con e-atomic-element e-flexbox-base e-ykrhga-e0001t-s " data-id="e0001t" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001t">
+    <div class="elementor-element elementor-element-e0001u e-con e-atomic-element e-grid-base e-ykrhga-e0001u-s " data-id="e0001u" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0001u">
+    <div class="elementor-element elementor-element-e0001v e-con e-atomic-element e-flexbox-base e-ykrhga-e0001v-s " data-id="e0001v" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001v">
+    			<p class="e-ykrhga-e0001w-s e-paragraph-base" data-interaction-id="e0001w">03</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0001x e-con e-atomic-element e-flexbox-base e-ykrhga-e0001x-s " data-id="e0001x" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001x">
+    			<h3 data-interaction-id="e0001y" class="e-ykrhga-e0001y-s e-heading-base">95,000</h3>
+		
+</div>
+<div class="elementor-element elementor-element-e0001z e-con e-atomic-element e-flexbox-base e-ykrhga-e0001z-s " data-id="e0001z" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001z">
+    			<p class="e-ykrhga-e00020-s e-paragraph-base" data-interaction-id="e00020">Identity plus a brand operating manual and rollout</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00021 e-con e-atomic-element e-flexbox-base e-ykrhga-e00021-s " data-id="e00021" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00021">
+    			<p class="e-ykrhga-e00022-s e-paragraph-base" data-interaction-id="e00022">The above, plus the manual, the rollout order, and the recorded handover your next hire will actually watch.</p>
+		
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e00023 e-con e-atomic-element e-flexbox-base e-ykrhga-e00023-s " data-id="e00023" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00023">
+    			<p class="e-ykrhga-e00024-s e-paragraph-base" data-interaction-id="e00024">Those are the three. There is no fourth.</p>
+		
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e00025 e-con e-atomic-element e-flexbox-base e-ykrhga-e00025-s " data-id="e00025" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00025">
+    <div class="elementor-element elementor-element-e00026 e-con e-atomic-element e-grid-base e-ykrhga-e00026-s " data-id="e00026" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e00026">
+    <div class="elementor-element elementor-element-e00027 e-con e-atomic-element e-flexbox-base e-ykrhga-e00027-s " data-id="e00027" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00027">
+    			<p class="e-ykrhga-e00028-s e-paragraph-base" data-interaction-id="e00028">04 — The shape</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00029 e-con e-atomic-element e-flexbox-base e-ykrhga-e00029-s " data-id="e00029" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00029">
+    			<h2 data-interaction-id="e0002a" class="e-ykrhga-e0002a-s e-heading-base">Eight weeks, and you know what happens in each of them.</h2>
+		
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0002b e-con e-atomic-element e-grid-base e-ykrhga-e0002b-s " data-id="e0002b" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0002b">
+    <div class="elementor-element elementor-element-e0002c e-con e-atomic-element e-flexbox-base e-ykrhga-e0002c-s " data-id="e0002c" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002c">
+    			<p class="e-ykrhga-e0002d-s e-paragraph-base" data-interaction-id="e0002d">Week 1 — 2</p>
+					<p class="e-ykrhga-e0002e-s e-paragraph-base" data-interaction-id="e0002e">We interview your customers, not you.</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0002f e-con e-atomic-element e-flexbox-base e-ykrhga-e0002f-s " data-id="e0002f" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002f">
+    			<p class="e-ykrhga-e0002g-s e-paragraph-base" data-interaction-id="e0002g">Week 3</p>
+					<p class="e-ykrhga-e0002h-s e-paragraph-base" data-interaction-id="e0002h">We show one direction, not six.</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0002i e-con e-atomic-element e-flexbox-base e-ykrhga-e0002i-s " data-id="e0002i" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002i">
+    			<p class="e-ykrhga-e0002j-s e-paragraph-base" data-interaction-id="e0002j">Week 4 — 7</p>
+					<p class="e-ykrhga-e0002k-s e-paragraph-base" data-interaction-id="e0002k">We build it out until it survives contact with your worst use case.</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0002l e-con e-atomic-element e-flexbox-base e-ykrhga-e0002l-s " data-id="e0002l" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002l">
+    			<p class="e-ykrhga-e0002m-s e-paragraph-base" data-interaction-id="e0002m">Week 8</p>
+					<p class="e-ykrhga-e0002n-s e-paragraph-base" data-interaction-id="e0002n">Files, fonts, rules and a recorded handover.</p>
+		
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0002o e-con e-atomic-element e-flexbox-base e-ykrhga-e0002o-s " data-id="e0002o" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002o">
+    			<h2 data-interaction-id="e0002p" class="e-ykrhga-e0002p-s e-heading-base">Two fragments. Before, after, and what actually moved.</h2>
+		<div class="elementor-element elementor-element-e0002q e-con e-atomic-element e-grid-base e-ykrhga-e0002q-s " data-id="e0002q" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0002q">
+    <div class="elementor-element elementor-element-e0002r e-con e-atomic-element e-flexbox-base e-ykrhga-e0002r-s " data-id="e0002r" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002r">
+    			<img loading="lazy" decoding="async" class="e-image-base e-ykrhga-e0002s-s" data-interaction-id="e0002s" id="103" src="http://127.0.0.1:8950/wp-content/uploads/2026/08/exjsx-hard-turn-print_detail.jpg" width="512" height="512" srcset="http://127.0.0.1:8950/wp-content/uploads/2026/08/exjsx-hard-turn-print_detail.jpg 512w, http://127.0.0.1:8950/wp-content/uploads/2026/08/exjsx-hard-turn-print_detail-300x300.jpg 300w, http://127.0.0.1:8950/wp-content/uploads/2026/08/exjsx-hard-turn-print_detail-150x150.jpg 150w" alt="Close detail of a printed identity system"/>		
+</div>
+<div class="elementor-element elementor-element-e0002t e-con e-atomic-element e-flexbox-base e-ykrhga-e0002t-s " data-id="e0002t" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002t">
+    			<p class="e-ykrhga-e0002u-s e-paragraph-base" data-interaction-id="e0002u">Fragment A — logistics platform</p>
+		<div class="elementor-element elementor-element-e0002v e-con e-atomic-element e-flexbox-base e-ykrhga-e0002v-s " data-id="e0002v" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002v">
+    			<p class="e-ykrhga-e0002w-s e-paragraph-base" data-interaction-id="e0002w"><strong>Before</strong> — a wordmark stretched across eleven product surfaces, redrawn locally in four countries, and a truck livery nobody could match to the invoice.</p>
+					<p class="e-ykrhga-e0002x-s e-paragraph-base" data-interaction-id="e0002x"><strong>After</strong> — one mark, one grid, one motion rule, and a livery spec a print shop in Rotterdam can hit without calling us.</p>
+		
+</div>
+			<p class="e-ykrhga-e0002y-s e-paragraph-base" data-interaction-id="e0002y">A logistics platform went from 11 percent unaided recall to 34 percent in nine months. The new mark is worse as a drawing and far better as a system, and we will explain why on a call.</p>
+		
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0002z e-con e-atomic-element e-grid-base e-ykrhga-e0002z-s " data-id="e0002z" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0002z">
+    <div class="elementor-element elementor-element-e00030 e-con e-atomic-element e-flexbox-base e-ykrhga-e00030-s " data-id="e00030" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00030">
+    			<p class="e-ykrhga-e00031-s e-paragraph-base" data-interaction-id="e00031">Fragment B — fourteen-year-old accountancy group</p>
+		<div class="elementor-element elementor-element-e00032 e-con e-atomic-element e-flexbox-base e-ykrhga-e00032-s " data-id="e00032" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00032">
+    			<p class="e-ykrhga-e00033-s e-paragraph-base" data-interaction-id="e00033"><strong>Before</strong> — three founders' initials, a serif borrowed from a bank, and a proposal template that made a forty-person firm read as two.</p>
+					<p class="e-ykrhga-e00034-s e-paragraph-base" data-interaction-id="e00034"><strong>After</strong> — a name that survives the founders leaving, and a document system that does most of the selling before anyone speaks.</p>
+		
+</div>
+			<p class="e-ykrhga-e00035-s e-paragraph-base" data-interaction-id="e00035">Referral conversations that reached a proposal went from one in five to one in two within two quarters. Nothing about the accounting changed. The way it arrived did.</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00036 e-con e-atomic-element e-flexbox-base e-ykrhga-e00036-s " data-id="e00036" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00036">
+    			<img loading="lazy" decoding="async" class="e-image-base e-ykrhga-e00037-s" data-interaction-id="e00037" id="104" src="http://127.0.0.1:8950/wp-content/uploads/2026/08/exjsx-hard-turn-studio_wall.jpg" width="1024" height="576" srcset="http://127.0.0.1:8950/wp-content/uploads/2026/08/exjsx-hard-turn-studio_wall.jpg 1024w, http://127.0.0.1:8950/wp-content/uploads/2026/08/exjsx-hard-turn-studio_wall-300x169.jpg 300w, http://127.0.0.1:8950/wp-content/uploads/2026/08/exjsx-hard-turn-studio_wall-768x432.jpg 768w" alt="Studio wall pinned with work in progress"/>		
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e00038 e-con e-atomic-element e-flexbox-base e-ykrhga-e00038-s " data-id="e00038" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00038">
+    <div class="elementor-element elementor-element-e00039 e-con e-atomic-element e-grid-base e-ykrhga-e00039-s " data-id="e00039" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e00039">
+    <div class="elementor-element elementor-element-e0003a e-con e-atomic-element e-flexbox-base e-ykrhga-e0003a-s " data-id="e0003a" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003a">
+    			<h2 data-interaction-id="e0003b" class="e-ykrhga-e0003b-s e-heading-base">Who we say no to.</h2>
+					<p class="e-ykrhga-e0003c-s e-paragraph-base" data-interaction-id="e0003c">Three slots a year means the no is the important half of the job. None of this is personal and all of it is final.</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0003d e-con e-atomic-element e-flexbox-base e-ykrhga-e0003d-s " data-id="e0003d" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003d">
+    <div class="elementor-element elementor-element-e0003e e-con e-atomic-element e-flexbox-base e-ykrhga-e0003e-s " data-id="e0003e" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003e">
+    			<p class="e-ykrhga-e0003f-s e-paragraph-base" data-interaction-id="e0003f">Pre-revenue startups</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0003g e-con e-atomic-element e-flexbox-base e-ykrhga-e0003g-s " data-id="e0003g" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003g">
+    			<p class="e-ykrhga-e0003h-s e-paragraph-base" data-interaction-id="e0003h">Anyone who says make it pop</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0003i e-con e-atomic-element e-flexbox-base e-ykrhga-e0003i-s " data-id="e0003i" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003i">
+    			<p class="e-ykrhga-e0003j-s e-paragraph-base" data-interaction-id="e0003j">Board-by-committee approval</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0003k e-con e-atomic-element e-flexbox-base e-ykrhga-e0003k-s " data-id="e0003k" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003k">
+    			<p class="e-ykrhga-e0003l-s e-paragraph-base" data-interaction-id="e0003l">Any brief with the word disruptive in it</p>
+		
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0003m e-con e-atomic-element e-flexbox-base e-ykrhga-e0003m-s " data-id="e0003m" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003m">
+    <div class="elementor-element elementor-element-e0003n e-con e-atomic-element e-grid-base e-ykrhga-e0003n-s " data-id="e0003n" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0003n">
+    <div class="elementor-element elementor-element-e0003o e-con e-atomic-element e-flexbox-base e-ykrhga-e0003o-s " data-id="e0003o" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003o">
+    <div class="elementor-element elementor-element-e0003p e-con e-atomic-element e-flexbox-base e-ykrhga-e0003p-s " data-id="e0003p" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003p">
+    			<img loading="lazy" decoding="async" class="e-image-base e-ykrhga-e0003q-s" data-interaction-id="e0003q" id="105" src="http://127.0.0.1:8950/wp-content/uploads/2026/08/exjsx-hard-turn-team_working.jpg" width="1024" height="768" srcset="http://127.0.0.1:8950/wp-content/uploads/2026/08/exjsx-hard-turn-team_working.jpg 1024w, http://127.0.0.1:8950/wp-content/uploads/2026/08/exjsx-hard-turn-team_working-300x225.jpg 300w, http://127.0.0.1:8950/wp-content/uploads/2026/08/exjsx-hard-turn-team_working-768x576.jpg 768w" alt="The Hard Turn team working through a rebrand"/>		
+</div>
+			<p class="e-ykrhga-e0003r-s e-paragraph-base" data-interaction-id="e0003r">07 — The four of us</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0003s e-con e-atomic-element e-flexbox-base e-ykrhga-e0003s-s " data-id="e0003s" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003s">
+    			<h2 data-interaction-id="e0003t" class="e-ykrhga-e0003t-s e-heading-base">Four people. No account layer between you and the work.</h2>
+		<div class="elementor-element elementor-element-e0003u e-con e-atomic-element e-flexbox-base e-ykrhga-e0003u-s " data-id="e0003u" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003u">
+    <div class="elementor-element elementor-element-e0003v e-con e-atomic-element e-grid-base e-ykrhga-e0003v-s " data-id="e0003v" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0003v">
+    <div class="elementor-element elementor-element-e0003w e-con e-atomic-element e-flexbox-base e-ykrhga-e0003w-s " data-id="e0003w" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003w">
+    			<h3 data-interaction-id="e0003x" class="e-ykrhga-e0003x-s e-heading-base">Ellis</h3>
+					<p class="e-ykrhga-e0003y-s e-paragraph-base" data-interaction-id="e0003y">Draws</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0003z e-con e-atomic-element e-flexbox-base e-ykrhga-e0003z-s " data-id="e0003z" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003z">
+    			<p class="e-ykrhga-e00040-s e-paragraph-base" data-interaction-id="e00040">Ellis draws. Marks, type, the awkward middle states nobody asks for until launch week.</p>
+		
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e00041 e-con e-atomic-element e-grid-base e-ykrhga-e00041-s " data-id="e00041" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e00041">
+    <div class="elementor-element elementor-element-e00042 e-con e-atomic-element e-flexbox-base e-ykrhga-e00042-s " data-id="e00042" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00042">
+    			<h3 data-interaction-id="e00043" class="e-ykrhga-e00043-s e-heading-base">Priya</h3>
+					<p class="e-ykrhga-e00044-s e-paragraph-base" data-interaction-id="e00044">Strategy</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00045 e-con e-atomic-element e-flexbox-base e-ykrhga-e00045-s " data-id="e00045" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00045">
+    			<p class="e-ykrhga-e00046-s e-paragraph-base" data-interaction-id="e00046">Priya writes and holds the strategy, which mostly means holding it still when the fourth stakeholder arrives late.</p>
+		
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e00047 e-con e-atomic-element e-grid-base e-ykrhga-e00047-s " data-id="e00047" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e00047">
+    <div class="elementor-element elementor-element-e00048 e-con e-atomic-element e-flexbox-base e-ykrhga-e00048-s " data-id="e00048" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00048">
+    			<h3 data-interaction-id="e00049" class="e-ykrhga-e00049-s e-heading-base">Marcus</h3>
+					<p class="e-ykrhga-e0004a-s e-paragraph-base" data-interaction-id="e0004a">Systems</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0004b e-con e-atomic-element e-flexbox-base e-ykrhga-e0004b-s " data-id="e0004b" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004b">
+    			<p class="e-ykrhga-e0004c-s e-paragraph-base" data-interaction-id="e0004c">Marcus builds every system in code so it survives handover, not just the presentation it was born in.</p>
+		
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0004d e-con e-atomic-element e-grid-base e-ykrhga-e0004d-s " data-id="e0004d" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0004d">
+    <div class="elementor-element elementor-element-e0004e e-con e-atomic-element e-flexbox-base e-ykrhga-e0004e-s " data-id="e0004e" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004e">
+    			<h3 data-interaction-id="e0004f" class="e-ykrhga-e0004f-s e-heading-base">Nadia</h3>
+					<p class="e-ykrhga-e0004g-s e-paragraph-base" data-interaction-id="e0004g">Studio</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0004h e-con e-atomic-element e-flexbox-base e-ykrhga-e0004h-s " data-id="e0004h" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004h">
+    			<p class="e-ykrhga-e0004i-s e-paragraph-base" data-interaction-id="e0004i">Nadia runs the studio and tells you the truth about timelines, including the parts you would rather hear in week seven.</p>
+		
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0004j e-con e-atomic-element e-flexbox-base e-ykrhga-e0004j-s " data-id="e0004j" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004j" id="enquiry">
+    <div class="elementor-element elementor-element-e0004k e-con e-atomic-element e-grid-base e-ykrhga-e0004k-s " data-id="e0004k" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0004k">
+    <div class="elementor-element elementor-element-e0004l e-con e-atomic-element e-flexbox-base e-ykrhga-e0004l-s " data-id="e0004l" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004l">
+    			<h2 data-interaction-id="e0004m" class="e-ykrhga-e0004m-s e-heading-base">Tell us what broke.</h2>
+					<p class="e-ykrhga-e0004n-s e-paragraph-base" data-interaction-id="e0004n">Not what you want made. What stopped working. The first two questions on a call are the same two here, so you may as well answer them now and save us both the introductions.</p>
+		<div class="elementor-element elementor-element-e0004o e-con e-atomic-element e-flexbox-base e-ykrhga-e0004o-s " data-id="e0004o" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004o">
+    			<p class="e-ykrhga-e0004p-s e-paragraph-base" data-interaction-id="e0004p">Availability</p>
+					<p class="e-ykrhga-e0004q-s e-paragraph-base" data-interaction-id="e0004q">Next opening: late October. We take deposits to hold a slot and we have never moved one.</p>
+					<p class="e-ykrhga-e0004r-s e-paragraph-base" data-interaction-id="e0004r"><a href="mailto:hello@hardturn.example" target="_self" class="e-paragraph-link-base">
+		hello@hardturn.example
+	</a></p>
+		
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0004s e-con e-atomic-element e-flexbox-base e-ykrhga-e0004s-s " data-id="e0004s" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004s">
+    		<div class="elementor-element elementor-element-e0004t elementor-widget elementor-widget-html" data-id="e0004t" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					
+<style>
+.ht-f{font-family:'DM Sans',system-ui,sans-serif;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.ht-f .ht-wide{grid-column:1 / -1}
+.ht-f label{display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#EFEFEA;margin-bottom:9px}
+.ht-f input,.ht-f select,.ht-f textarea{width:100%;box-sizing:border-box;background:transparent;border:0;border-bottom:1px solid #4a4a4a;color:#FFFFFF;font-family:'DM Sans',system-ui,sans-serif;font-size:16px;padding:10px 0;border-radius:0}
+.ht-f textarea{min-height:120px;resize:vertical}
+.ht-f select{appearance:none;-webkit-appearance:none}
+.ht-f option{color:#0A0A0A}
+.ht-f input:focus,.ht-f select:focus,.ht-f textarea:focus{outline:0;border-bottom-color:#FF3B00}
+.ht-f input::placeholder,.ht-f textarea::placeholder{color:#7a7a7a}
+.ht-f button{grid-column:1 / -1;justify-self:start;background:#FF3B00;color:#FFFFFF;border:0;cursor:pointer;font-family:'Syne',system-ui,sans-serif;font-weight:700;font-size:17px;letter-spacing:.02em;padding:18px 40px;transition:background .15s ease}
+.ht-f button:hover,.ht-f button:focus-visible{background:#2B00FF}
+.ht-note{grid-column:1 / -1;font-family:'DM Sans',system-ui,sans-serif;font-size:13px;color:#8d8d8d;margin:0}
+@media (max-width:767px){.ht-f{grid-template-columns:1fr;gap:18px}.ht-f button{width:100%;text-align:center;justify-self:stretch}}
+</style>
+<form class="ht-f" action="mailto:hello@hardturn.example" method="post" enctype="text/plain" onsubmit="return false">
+  <div class="ht-wide">
+    <label for="ht-broke">What broke?</label>
+    <textarea id="ht-broke" name="What broke" required placeholder="The thing your current identity can no longer carry. Be specific, be unflattering."></textarea>
+  </div>
+  <div>
+    <label for="ht-name">Your name</label>
+    <input id="ht-name" name="Name" type="text" required placeholder="First and last">
+  </div>
+  <div>
+    <label for="ht-company">Company</label>
+    <input id="ht-company" name="Company" type="text" required placeholder="And the URL if it exists">
+  </div>
+  <div>
+    <label for="ht-email">Email</label>
+    <input id="ht-email" name="Email" type="email" required placeholder="you@company.com">
+  </div>
+  <div>
+    <label for="ht-scope">Which of the three</label>
+    <select id="ht-scope" name="Scope">
+      <option>Identity system — 42,000</option>
+      <option>Identity plus website design system — 68,000</option>
+      <option>Identity plus brand operating manual and rollout — 95,000</option>
+      <option>Not sure yet — tell me which one</option>
+    </select>
+  </div>
+  <div class="ht-wide">
+    <label for="ht-revenue">Last twelve months of revenue</label>
+    <input id="ht-revenue" name="Revenue" type="text" required placeholder="A number. We only work with companies past their first shape.">
+  </div>
+  <button type="submit">Send it</button>
+  <p class="ht-note">Nadia reads every one of these and answers within two working days, including the nos.</p>
+</form>				</div>
+		
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0004u e-con e-atomic-element e-flexbox-base e-ykrhga-e0004u-s " data-id="e0004u" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004u">
+    			<p class="e-ykrhga-e0004v-s e-paragraph-base" data-interaction-id="e0004v">Hard Turn — brand identity, rebrands only</p>
+					<p class="e-ykrhga-e0004w-s e-paragraph-base" data-interaction-id="e0004w">Three clients at a time · Eight weeks each</p>
+		
+</div>
+
+</div>
+
+</div>
+		<div class="elementor-element elementor-element-e0004x elementor-widget elementor-widget-html" data-id="e0004x" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					<script data-exjsx-motion-guard>(function(){if(!matchMedia("(prefers-reduced-motion: reduce)").matches)return;var z=function(){var s=document.getElementById("elementor-interactions-data");return!!(s&&s.textContent!=="[]")&&(s.textContent="[]",!0)};if(!z()){var o=new MutationObserver(function(){z()&&o.disconnect()});o.observe(document.documentElement,{childList:true,subtree:true});addEventListener("DOMContentLoaded",function(){z();o.disconnect()})}})()</script>				</div>
+				</div>
+		<script type="application/json" id="elementor-interactions-data">[{"elementId":"e00011","dataId":"e00011","interactions":[{"$$type":"interaction-item","value":{"interaction_id":{"$$type":"string","value":"ix-0"},"trigger":{"$$type":"string","value":"scrollIn"},"animation":{"$$type":"animation-preset-props","value":{"effect":{"$$type":"string","value":"fade"},"type":{"$$type":"string","value":"in"},"direction":{"$$type":"string","value":""},"timing_config":{"$$type":"timing-config","value":{"duration":{"$$type":"size","value":{"unit":"ms","size":600}},"delay":{"$$type":"size","value":{"unit":"ms","size":0}}}}}}}}]},{"elementId":"e0002c","dataId":"e0002c","interactions":[{"$$type":"interaction-item","value":{"interaction_id":{"$$type":"string","value":"ix-1"},"trigger":{"$$type":"string","value":"scrollIn"},"animation":{"$$type":"animation-preset-props","value":{"effect":{"$$type":"string","value":"fade"},"type":{"$$type":"string","value":"in"},"direction":{"$$type":"string","value":""},"timing_config":{"$$type":"timing-config","value":{"duration":{"$$type":"size","value":{"unit":"ms","size":600}},"delay":{"$$type":"size","value":{"unit":"ms","size":0}}}}}}}}]},{"elementId":"e0002f","dataId":"e0002f","interactions":[{"$$type":"interaction-item","value":{"interaction_id":{"$$type":"string","value":"ix-2"},"trigger":{"$$type":"string","value":"scrollIn"},"animation":{"$$type":"animation-preset-props","value":{"effect":{"$$type":"string","value":"fade"},"type":{"$$type":"string","value":"in"},"direction":{"$$type":"string","value":""},"timing_config":{"$$type":"timing-config","value":{"duration":{"$$type":"size","value":{"unit":"ms","size":600}},"delay":{"$$type":"size","value":{"unit":"ms","size":90}}}}}}}}]},{"elementId":"e0002i","dataId":"e0002i","interactions":[{"$$type":"interaction-item","value":{"interaction_id":{"$$type":"string","value":"ix-3"},"trigger":{"$$type":"string","value":"scrollIn"},"animation":{"$$type":"animation-preset-props","value":{"effect":{"$$type":"string","value":"fade"},"type":{"$$type":"string","value":"in"},"direction":{"$$type":"string","value":""},"timing_config":{"$$type":"timing-config","value":{"duration":{"$$type":"size","value":{"unit":"ms","size":600}},"delay":{"$$type":"size","value":{"unit":"ms","size":180}}}}}}}}]},{"elementId":"e0002l","dataId":"e0002l","interactions":[{"$$type":"interaction-item","value":{"interaction_id":{"$$type":"string","value":"ix-4"},"trigger":{"$$type":"string","value":"scrollIn"},"animation":{"$$type":"animation-preset-props","value":{"effect":{"$$type":"string","value":"fade"},"type":{"$$type":"string","value":"in"},"direction":{"$$type":"string","value":""},"timing_config":{"$$type":"timing-config","value":{"duration":{"$$type":"size","value":{"unit":"ms","size":600}},"delay":{"$$type":"size","value":{"unit":"ms","size":270}}}}}}}}]}]</script><script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/twentytwentyfive/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+			<script>
+				( () => {
+					const lazyloadRunObserver = () => {
+						const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+						const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+							entries.forEach( ( entry ) => {
+								if ( entry.isIntersecting ) {
+									let lazyloadBackground = entry.target;
+									if( lazyloadBackground ) {
+										lazyloadBackground.classList.add( 'e-lazyloaded' );
+									}
+									lazyloadBackgroundObserver.unobserve( entry.target );
+								}
+							});
+						}, { rootMargin: '200px 0px 200px 0px' } );
+						lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+							lazyloadBackgroundObserver.observe( lazyloadBackground );
+						} );
+					};
+					const events = [
+						'DOMContentLoaded',
+						'elementor/lazyload/observe',
+					];
+					events.forEach( ( event ) => {
+						document.addEventListener( event, lazyloadRunObserver );
+					} );
+				} )();
+			</script>
+			<script id="elementor-webpack-runtime-js" src="http://127.0.0.1:8950/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=4.2.1"></script>
+<script id="elementor-frontend-modules-js" src="http://127.0.0.1:8950/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=4.2.1"></script>
+<script id="jquery-ui-core-js" src="http://127.0.0.1:8950/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnX":"Share on X","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"4.2.1","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_optimized_markup":true,"e_panel_promotions":true,"e_pro_free_trial_popup":true,"nested-elements":true,"e_atomic_elements":true,"atomic_widgets_should_enforce_capabilities":true,"editor_mcp":true,"e_bc_migrations":true,"e_classes":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"e_variables_manager":true,"e_opt_in_v4_page":true,"e_opt_in_v4":true,"e_components":true,"e_interactions":true,"e_widget_creation":true,"import-export-customization":true},"urls":{"assets":"http:\/\/127.0.0.1:8950\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"http:\/\/127.0.0.1:8950\/wp-admin\/admin-ajax.php","uploadUrl":"http:\/\/127.0.0.1:8950\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"a7b0c492e3","atomicFormsSendForm":"0045d5964e"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":106,"title":"Hard%20Turn%20%E2%80%93%20Elementor%20Ultra%20Dev","excerpt":"","featuredImage":false}};
+//# sourceURL=elementor-frontend-js-before
+</script>
+<script id="elementor-frontend-js" src="http://127.0.0.1:8950/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=4.2.1"></script>
+<script id="motion-js-js" src="http://127.0.0.1:8950/wp-content/plugins/elementor/assets/lib/motion/motion.min.js?ver=11.13.5"></script>
+<script id="elementor-interactions-shared-utils-js" src="http://127.0.0.1:8950/wp-content/plugins/elementor/assets/js/interactions-shared-utils.min.js?ver=1.0.0"></script>
+<script id="elementor-interactions-js-extra">
+var ElementorInteractionsConfig = {"constants":{"defaultDuration":600,"defaultDelay":0,"slideDistance":100,"scaleStart":0,"defaultEasing":"easeIn","relativeTo":"viewport","repeat":"","start":85,"end":15},"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true}}};
+//# sourceURL=elementor-interactions-js-extra
+</script>
+<script id="elementor-interactions-js" src="http://127.0.0.1:8950/wp-content/plugins/elementor/assets/js/interactions.min.js?ver=1.0.0"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"http://127.0.0.1:8950/wp-includes/js/wp-emoji-release.min.js?ver=7.0.4"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=http://127.0.0.1:8950/wp-includes/js/wp-emoji-loader.min.js
+</script>
+	</body>
+</html>

@@ -10,6 +10,7 @@ export const Nav = ({ theme: t }) => (
       <text size={22} font={t.font.display} color={t.color.ink} sx={{ letterSpacing: '.03em' }}>exjsx</text>
     </row>
     <row tw="flex items-center gap-6 max-md:hidden" sx={{ flexGrow: '1', justifyContent: 'flex-end' }}>
+      <text href="/showcase/" size={14} font={t.font.body} color={t.color.dim}>Showcase</text>
       <text href="https://docs.wpos.ai/ultra" size={14} font={t.font.body} color={t.color.dim}>Docs</text>
       <text href="https://docs.wpos.ai/ultra/examples/overview" size={14} font={t.font.body} color={t.color.dim}>Examples</text>
       <text href="https://github.com/Algorismus-io/elementor-jsx" size={14} font={t.font.body} color={t.color.dim}>GitHub</text>

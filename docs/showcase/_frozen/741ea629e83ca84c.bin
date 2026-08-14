@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+			<title>Twelve Harvests &#8211; Elementor Ultra Dev</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name='robots' content='max-image-preview:large' />
+<title>Twelve Harvests &#8211; Elementor Ultra Dev</title>
+<link rel='dns-prefetch' href='//127.0.0.1' />
+<link rel="alternate" type="application/rss+xml" title="Elementor Ultra Dev &raquo; Feed" href="http://127.0.0.1:8950/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Elementor Ultra Dev &raquo; Comments Feed" href="http://127.0.0.1:8950/comments/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="http://127.0.0.1:8950/wp-json/oembed/1.0/embed?url=http%3A%2F%2F127.0.0.1%3A8950%2Ftwelve-harvests%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="http://127.0.0.1:8950/wp-json/oembed/1.0/embed?url=http%3A%2F%2F127.0.0.1%3A8950%2Ftwelve-harvests%2F&#038;format=xml" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-color]){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--base: #FFFFFF;--wp--preset--color--contrast: #111111;--wp--preset--color--accent-1: #FFEE58;--wp--preset--color--accent-2: #F6CFF4;--wp--preset--color--accent-3: #503AA8;--wp--preset--color--accent-4: #686868;--wp--preset--color--accent-5: #FBFAF3;--wp--preset--color--accent-6: color-mix(in srgb, currentColor 20%, transparent);--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 0.875rem;--wp--preset--font-size--medium: clamp(1rem, 1rem + ((1vw - 0.2rem) * 0.196), 1.125rem);--wp--preset--font-size--large: clamp(1.125rem, 1.125rem + ((1vw - 0.2rem) * 0.392), 1.375rem);--wp--preset--font-size--x-large: clamp(1.75rem, 1.75rem + ((1vw - 0.2rem) * 0.392), 2rem);--wp--preset--font-size--xx-large: clamp(2.15rem, 2.15rem + ((1vw - 0.2rem) * 1.333), 3rem);--wp--preset--font-family--manrope: Manrope, sans-serif;--wp--preset--font-family--fira-code: "Fira Code", monospace;--wp--preset--spacing--20: 10px;--wp--preset--spacing--30: 20px;--wp--preset--spacing--40: 30px;--wp--preset--spacing--50: clamp(30px, 5vw, 50px);--wp--preset--spacing--60: clamp(30px, 7vw, 70px);--wp--preset--spacing--70: clamp(50px, 7vw, 90px);--wp--preset--spacing--80: clamp(70px, 10vw, 140px);--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:root { --wp--style--global--content-size: 645px;--wp--style--global--wide-size: 1340px; }:where(body) { margin: 0; }.wp-site-blocks { padding-top: var(--wp--style--root--padding-top); padding-bottom: var(--wp--style--root--padding-bottom); }.has-global-padding { padding-right: var(--wp--style--root--padding-right); padding-left: var(--wp--style--root--padding-left); }.has-global-padding > .alignfull { margin-right: calc(var(--wp--style--root--padding-right) * -1); margin-left: calc(var(--wp--style--root--padding-left) * -1); }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) { padding-right: 0; padding-left: 0; }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) > .alignfull { margin-left: 0; margin-right: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 1.2rem; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 1.2rem; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 1.2rem;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 1.2rem;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 1.2rem;}:root :where(.is-layout-grid){gap: 1.2rem;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{background-color: var(--wp--preset--color--base);color: var(--wp--preset--color--contrast);font-family: var(--wp--preset--font-family--manrope);font-size: var(--wp--preset--font-size--large);font-weight: 300;letter-spacing: -0.1px;line-height: 1.4;--wp--style--root--padding-top: 0px;--wp--style--root--padding-right: var(--wp--preset--spacing--50);--wp--style--root--padding-bottom: 0px;--wp--style--root--padding-left: var(--wp--preset--spacing--50);}a:where(:not(.wp-element-button)){color: currentColor;}:root :where(a:where(:not(.wp-element-button)):hover){text-decoration: none;}h1, h2, h3, h4, h5, h6{font-weight: 400;letter-spacing: -0.1px;line-height: 1.125;}h1{font-size: var(--wp--preset--font-size--xx-large);}h2{font-size: var(--wp--preset--font-size--x-large);}h3{font-size: var(--wp--preset--font-size--large);}h4{font-size: var(--wp--preset--font-size--medium);}h5{font-size: var(--wp--preset--font-size--small);letter-spacing: 0.5px;}h6{font-size: var(--wp--preset--font-size--small);font-weight: 700;letter-spacing: 1.4px;text-transform: uppercase;}:root :where(.wp-element-button, .wp-block-button__link){background-color: var(--wp--preset--color--contrast);border-width: 0;color: var(--wp--preset--color--base);font-family: inherit;font-size: var(--wp--preset--font-size--medium);font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: 1rem;padding-right: 2.25rem;padding-bottom: 1rem;padding-left: 2.25rem;text-decoration: none;text-transform: inherit;}:root :where(.wp-element-button:hover, .wp-block-button__link:hover){background-color: color-mix(in srgb, var(--wp--preset--color--contrast) 85%, transparent);border-color: transparent;color: var(--wp--preset--color--base);}:root :where(.wp-element-button:focus, .wp-block-button__link:focus){outline-color: var(--wp--preset--color--accent-4);outline-offset: 2px;}:root :where(.wp-element-caption, .wp-block-audio figcaption, .wp-block-embed figcaption, .wp-block-gallery figcaption, .wp-block-image figcaption, .wp-block-table figcaption, .wp-block-video figcaption){font-size: var(--wp--preset--font-size--small);line-height: 1.4;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-base-color{color: var(--wp--preset--color--base) !important;}.has-contrast-color{color: var(--wp--preset--color--contrast) !important;}.has-accent-1-color{color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-color{color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-color{color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-color{color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-color{color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-color{color: var(--wp--preset--color--accent-6) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-base-background-color{background-color: var(--wp--preset--color--base) !important;}.has-contrast-background-color{background-color: var(--wp--preset--color--contrast) !important;}.has-accent-1-background-color{background-color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-background-color{background-color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-background-color{background-color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-background-color{background-color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-background-color{background-color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-background-color{background-color: var(--wp--preset--color--accent-6) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-base-border-color{border-color: var(--wp--preset--color--base) !important;}.has-contrast-border-color{border-color: var(--wp--preset--color--contrast) !important;}.has-accent-1-border-color{border-color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-border-color{border-color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-border-color{border-color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-border-color{border-color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-border-color{border-color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-border-color{border-color: var(--wp--preset--color--accent-6) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-xx-large-font-size{font-size: var(--wp--preset--font-size--xx-large) !important;}.has-manrope-font-family{font-family: var(--wp--preset--font-family--manrope) !important;}.has-fira-code-font-family{font-family: var(--wp--preset--font-family--fira-code) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<style id="wp-block-template-skip-link-inline-css">
+/*! This file is auto-generated */
+.skip-link.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute!important;width:1px;word-wrap:normal!important;word-break:normal!important}.skip-link.screen-reader-text:focus{background-color:#eee;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}
+/*# sourceURL=/wp-includes/css/wp-block-template-skip-link.min.css */
+</style>
+<style id="twentytwentyfive-style-inline-css">
+a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-site-blocks :focus){outline-width:2px;outline-style:solid}.wp-block-navigation .wp-block-navigation-submenu .wp-block-navigation-item:not(:last-child){margin-bottom:3px}.wp-block-navigation .wp-block-navigation-item .wp-block-navigation-item__content{outline-offset:4px}.wp-block-navigation .wp-block-navigation-item ul.wp-block-navigation__submenu-container .wp-block-navigation-item__content{outline-offset:0}blockquote,caption,figcaption,h1,h2,h3,h4,h5,h6,p{text-wrap:pretty}.more-link{display:block}:where(pre){overflow-x:auto}
+/*# sourceURL=http://127.0.0.1:8950/wp-content/themes/twentytwentyfive/style.min.css */
+</style>
+<link rel='stylesheet' id='elementor-frontend-css' href='http://127.0.0.1:8950/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=4.2.1' media='all' />
+<style id="elementor-frontend-inline-css">
+.e-heading-base a, .e-paragraph-base a { all: unset; cursor: pointer; }form[data-element_type="e-form"].form-state-success [data-element_type="e-form-success-message"],form[data-element_type="e-form"].form-state-error [data-element_type="e-form-error-message"]{ display: block; }
+/*# sourceURL=elementor-frontend-inline-css */
+</style>
+<link rel='stylesheet' id='elementor-post-4-css' href='http://127.0.0.1:8950/wp-content/uploads/elementor/css/post-4.css?ver=1786663961' media='all' />
+<link rel='stylesheet' id='base-desktop-css' href='http://127.0.0.1:8950/wp-content/uploads/elementor/css/base-desktop.css?ver=6a7e586c631f0' media='all' />
+<link rel='stylesheet' id='local-253-frontend-desktop-css' href='http://127.0.0.1:8950/wp-content/uploads/elementor/css/local-253-frontend-desktop.css?ver=6a7e577abac48' media='all' />
+<link rel='stylesheet' id='local-253-frontend-tablet-css' href='http://127.0.0.1:8950/wp-content/uploads/elementor/css/local-253-frontend-tablet.css?ver=6a7e577abac48' media='(max-width:1024px)' />
+<link rel='stylesheet' id='base-mobile-css' href='http://127.0.0.1:8950/wp-content/uploads/elementor/css/base-mobile.css?ver=6a7e586c631f0' media='(max-width:767px)' />
+<link rel='stylesheet' id='local-253-frontend-mobile-css' href='http://127.0.0.1:8950/wp-content/uploads/elementor/css/local-253-frontend-mobile.css?ver=6a7e577abac48' media='(max-width:767px)' />
+<link rel='stylesheet' id='elementor-gf-roboto-css' href='https://fonts.googleapis.com/css?family=Roboto:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&#038;display=swap' media='all' />
+<link rel='stylesheet' id='elementor-gf-robotoslab-css' href='https://fonts.googleapis.com/css?family=Roboto+Slab:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&#038;display=swap' media='all' />
+<link rel='stylesheet' id='elementor-gf-abrilfatface-css' href='https://fonts.googleapis.com/css?family=Abril+Fatface:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&#038;display=swap' media='all' />
+<link rel='stylesheet' id='elementor-gf-worksans-css' href='https://fonts.googleapis.com/css?family=Work+Sans:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&#038;display=swap' media='all' />
+<script id="jquery-core-js" src="http://127.0.0.1:8950/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="http://127.0.0.1:8950/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<link rel="https://api.w.org/" href="http://127.0.0.1:8950/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="http://127.0.0.1:8950/wp-json/wp/v2/pages/253" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://127.0.0.1:8950/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 7.0.4" />
+<link rel="canonical" href="http://127.0.0.1:8950/twelve-harvests/" />
+<link rel='shortlink' href='http://127.0.0.1:8950/?p=253' />
+<meta name="generator" content="Elementor 4.2.1; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<style class="wp-fonts-local">
+@font-face{font-family:Manrope;font-style:normal;font-weight:200 800;font-display:fallback;src:url('http://127.0.0.1:8950/wp-content/themes/twentytwentyfive/assets/fonts/manrope/Manrope-VariableFont_wght.woff2') format('woff2');}
+@font-face{font-family:"Fira Code";font-style:normal;font-weight:300 700;font-display:fallback;src:url('http://127.0.0.1:8950/wp-content/themes/twentytwentyfive/assets/fonts/fira-code/FiraCode-VariableFont_wght.woff2') format('woff2');}
+</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /></head>
+<body class="wp-singular page-template page-template-elementor_canvas page page-id-253 wp-embed-responsive wp-theme-twentytwentyfive elementor-default elementor-template-canvas elementor-kit-4 elementor-page elementor-page-253">
+			<div data-elementor-type="wp-page" data-elementor-id="253" class="elementor elementor-253">
+						<div class="elementor-element elementor-element-e00000 elementor-widget elementor-widget-html" data-id="e00000" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					<style id="exjsx-raw-1ol2zp5-0">.elementor-element-e00000{margin:0 !important;height:0;line-height:0;}.elementor .e-1ol2zp5-e00004-s.e-1ol2zp5-e00004-s{border-bottom-width: 1px; border-bottom-style: solid; border-color: #D9C9B4;}.elementor .e-1ol2zp5-e0000b-s.e-1ol2zp5-e0000b-s{text-transform: uppercase;}.elementor .e-1ol2zp5-e0000f-s.e-1ol2zp5-e0000f-s{cursor: pointer;}.elementor .e-1ol2zp5-e0000g-s.e-1ol2zp5-e0000g-s{text-decoration: underline; text-underline-offset: 4px; cursor: pointer;}.elementor .e-1ol2zp5-e0000i-s.e-1ol2zp5-e0000i-s{flex-shrink: 0;}.elementor .e-1ol2zp5-e0000r-s.e-1ol2zp5-e0000r-s{text-transform: uppercase;}.elementor .e-1ol2zp5-e0004a-s.e-1ol2zp5-e0004a-s{text-transform: uppercase;}.elementor .e-1ol2zp5-e0004d-s.e-1ol2zp5-e0004d-s{border-width: 1px; border-style: solid; border-color: rgba(239,225,206,0.35);}.elementor .e-1ol2zp5-e0004e-s.e-1ol2zp5-e0004e-s{border-width: 1px; border-style: solid; border-color: rgba(239,225,206,0.35);}.elementor .e-1ol2zp5-e0004f-s.e-1ol2zp5-e0004f-s{border-width: 1px; border-style: solid; border-color: rgba(239,225,206,0.35);}.elementor .e-1ol2zp5-e0004x-s.e-1ol2zp5-e0004x-s{text-transform: uppercase;}.elementor .e-1ol2zp5-e0005p-s.e-1ol2zp5-e0005p-s{border-left-width: 3px; border-left-style: solid; border-color: #4C6B3C;}.elementor .e-1ol2zp5-e0005w-s.e-1ol2zp5-e0005w-s{text-transform: uppercase;}.elementor .e-1ol2zp5-e00072-s.e-1ol2zp5-e00072-s{text-transform: uppercase;}.elementor .e-1ol2zp5-e0007z-s.e-1ol2zp5-e0007z-s{text-transform: uppercase;}.elementor .e-1ol2zp5-e00083-s.e-1ol2zp5-e00083-s{text-transform: uppercase;}.elementor .e-1ol2zp5-e00089-s.e-1ol2zp5-e00089-s{cursor: pointer;}.elementor .e-1ol2zp5-e0008b-s.e-1ol2zp5-e0008b-s{text-transform: uppercase;}.elementor .e-1ol2zp5-e0008h-s.e-1ol2zp5-e0008h-s{cursor: pointer;}.elementor .e-1ol2zp5-e0008q-s.e-1ol2zp5-e0008q-s{text-transform: uppercase;}.elementor .e-1ol2zp5-e0009v-s.e-1ol2zp5-e0009v-s{text-transform: uppercase;}.elementor .e-1ol2zp5-e0009y-s.e-1ol2zp5-e0009y-s{cursor: pointer;}</style>				</div>
+		<div class="elementor-element elementor-element-e00001 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00001-s " data-id="e00001" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00001">
+    <div class="elementor-element elementor-element-e00002 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00002-s " data-id="e00002" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00002">
+    <div class="elementor-element elementor-element-e00003 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00003-s " data-id="e00003" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00003">
+    <div class="elementor-element elementor-element-e00004 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00004-s " data-id="e00004" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00004">
+    			<p class="e-1ol2zp5-e00005-s e-paragraph-base" data-interaction-id="e00005">Twelve Harvests</p>
+					<p class="e-1ol2zp5-e00006-s e-paragraph-base" data-interaction-id="e00006">One single-origin a month · farmgate price on every bag</p>
+		
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e00007 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00007-s " data-id="e00007" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00007">
+    <div class="elementor-element elementor-element-e00008 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00008-s " data-id="e00008" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00008">
+    <div class="elementor-element elementor-element-e00009 e-con e-atomic-element e-grid-base e-1ol2zp5-e00009-s " data-id="e00009" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e00009">
+    <div class="elementor-element elementor-element-e0000a e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0000a-s " data-id="e0000a" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000a">
+    			<p class="e-1ol2zp5-e0000b-s e-paragraph-base" data-interaction-id="e0000b">Harvest calendar, not a release calendar</p>
+					<h1 data-interaction-id="e0000c" class="e-1ol2zp5-e0000c-s e-heading-base">Coffee arrives when it is ripe, not when it is convenient.</h1>
+					<p class="e-1ol2zp5-e0000d-s e-paragraph-base" data-interaction-id="e0000d">One single-origin coffee a month, chosen because it just came off the drying beds somewhere in the world. Roasted the day after we ship, with the price we paid the farmer printed on the bag.</p>
+		<div class="elementor-element elementor-element-e0000e e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0000e-s " data-id="e0000e" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000e">
+    			<p class="e-1ol2zp5-e0000f-s e-paragraph-base" data-interaction-id="e0000f"><a href="#start" target="_self" class="e-paragraph-link-base">
+		Start next month
+	</a></p>
+					<p class="e-1ol2zp5-e0000g-s e-paragraph-base" data-interaction-id="e0000g"><a href="#calendar" target="_self" class="e-paragraph-link-base">
+		See the coffee year
+	</a></p>
+		
+</div>
+<div class="elementor-element elementor-element-e0000h e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0000h-s " data-id="e0000h" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000h">
+    <div class="elementor-element elementor-element-e0000i e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0000i-s " data-id="e0000i" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000i">
+    
+</div>
+			<p class="e-1ol2zp5-e0000j-s e-paragraph-base" data-interaction-id="e0000j">In the box now: August, Gitwe washed Red Bourbon, Rwanda. Ships 22 August.</p>
+		
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0000k e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0000k-s " data-id="e0000k" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000k">
+    			<img fetchpriority="high" decoding="async" class="e-image-base e-1ol2zp5-e0000l-s" data-interaction-id="e0000l" id="251" src="http://127.0.0.1:8950/wp-content/uploads/2026/08/exjsx-twelve-harvests-cherries.jpg" width="512" height="512" srcset="http://127.0.0.1:8950/wp-content/uploads/2026/08/exjsx-twelve-harvests-cherries.jpg 512w, http://127.0.0.1:8950/wp-content/uploads/2026/08/exjsx-twelve-harvests-cherries-300x300.jpg 300w, http://127.0.0.1:8950/wp-content/uploads/2026/08/exjsx-twelve-harvests-cherries-150x150.jpg 150w" alt="Ripe coffee cherries on the branch"/>					<p class="e-1ol2zp5-e0000m-s e-paragraph-base" data-interaction-id="e0000m">Nyamasheke, Rwanda — the last selective pass, late June.</p>
+		
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0000n e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0000n-s " data-id="e0000n" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000n" id="calendar">
+    <div class="elementor-element elementor-element-e0000o e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0000o-s " data-id="e0000o" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000o">
+    <div class="elementor-element elementor-element-e0000p e-con e-atomic-element e-grid-base e-1ol2zp5-e0000p-s " data-id="e0000p" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0000p">
+    <div class="elementor-element elementor-element-e0000q e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0000q-s " data-id="e0000q" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000q">
+    			<p class="e-1ol2zp5-e0000r-s e-paragraph-base" data-interaction-id="e0000r">Section one</p>
+					<h2 data-interaction-id="e0000s" class="e-1ol2zp5-e0000s-s e-heading-base">The coffee year, January to December.</h2>
+		
+</div>
+<div class="elementor-element elementor-element-e0000t e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0000t-s " data-id="e0000t" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000t">
+    			<p class="e-1ol2zp5-e0000u-s e-paragraph-base" data-interaction-id="e0000u">Ethiopia and Rwanda in summer, Colombia in the autumn, Brazil after that, and Indonesia in the strange middle of the year when nothing else is fresh.</p>
+					<p class="e-1ol2zp5-e0000v-s e-paragraph-base" data-interaction-id="e0000v">The spine below is the year. We do not repeat an origin twice in twelve months, and we do not buy anything that has been sitting.</p>
+		
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0000w e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0000w-s " data-id="e0000w" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000w">
+    <div class="elementor-element elementor-element-e0000x e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0000x-s " data-id="e0000x" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000x">
+    <div class="elementor-element elementor-element-e0000y e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0000y-s " data-id="e0000y" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000y">
+    <div class="elementor-element elementor-element-e0000z e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0000z-s " data-id="e0000z" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000z">
+    
+</div>
+<div class="elementor-element elementor-element-e00010 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00010-s " data-id="e00010" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00010">
+    
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e00011 e-con e-atomic-element e-grid-base e-1ol2zp5-e00011-s " data-id="e00011" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e00011">
+    			<h3 data-interaction-id="e00012" class="e-1ol2zp5-e00012-s e-heading-base">January</h3>
+		<div class="elementor-element elementor-element-e00013 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00013-s " data-id="e00013" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00013">
+    			<p class="e-1ol2zp5-e00014-s e-paragraph-base" data-interaction-id="e00014">Guatemala · Huehuetenango</p>
+					<p class="e-1ol2zp5-e00015-s e-paragraph-base" data-interaction-id="e00015">Washed Caturra from the first pass of the Central American picking. Cocoa, dried fig, a long dry finish.</p>
+		
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e00016 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00016-s " data-id="e00016" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00016">
+    <div class="elementor-element elementor-element-e00017 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00017-s " data-id="e00017" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00017">
+    <div class="elementor-element elementor-element-e00018 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00018-s " data-id="e00018" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00018">
+    
+</div>
+<div class="elementor-element elementor-element-e00019 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00019-s " data-id="e00019" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00019">
+    
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0001a e-con e-atomic-element e-grid-base e-1ol2zp5-e0001a-s " data-id="e0001a" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0001a">
+    			<h3 data-interaction-id="e0001b" class="e-1ol2zp5-e0001b-s e-heading-base">February</h3>
+		<div class="elementor-element elementor-element-e0001c e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0001c-s " data-id="e0001c" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001c">
+    			<p class="e-1ol2zp5-e0001d-s e-paragraph-base" data-interaction-id="e0001d">Costa Rica · Tarrazú</p>
+					<p class="e-1ol2zp5-e0001e-s e-paragraph-base" data-interaction-id="e0001e">White honey Catuaí, dried twelve days on the patio. Red apple and cane sugar.</p>
+		
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0001f e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0001f-s " data-id="e0001f" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001f">
+    <div class="elementor-element elementor-element-e0001g e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0001g-s " data-id="e0001g" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001g">
+    <div class="elementor-element elementor-element-e0001h e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0001h-s " data-id="e0001h" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001h">
+    
+</div>
+<div class="elementor-element elementor-element-e0001i e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0001i-s " data-id="e0001i" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001i">
+    
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0001j e-con e-atomic-element e-grid-base e-1ol2zp5-e0001j-s " data-id="e0001j" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0001j">
+    			<h3 data-interaction-id="e0001k" class="e-1ol2zp5-e0001k-s e-heading-base">March</h3>
+		<div class="elementor-element elementor-element-e0001l e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0001l-s " data-id="e0001l" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001l">
+    			<p class="e-1ol2zp5-e0001m-s e-paragraph-base" data-interaction-id="e0001m">Nicaragua · Dipilto</p>
+					<p class="e-1ol2zp5-e0001n-s e-paragraph-base" data-interaction-id="e0001n">Washed Javanica, the last of the northern crop before the rains. Almond and lime blossom.</p>
+		
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0001o e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0001o-s " data-id="e0001o" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001o">
+    <div class="elementor-element elementor-element-e0001p e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0001p-s " data-id="e0001p" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001p">
+    <div class="elementor-element elementor-element-e0001q e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0001q-s " data-id="e0001q" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001q">
+    
+</div>
+<div class="elementor-element elementor-element-e0001r e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0001r-s " data-id="e0001r" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001r">
+    
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0001s e-con e-atomic-element e-grid-base e-1ol2zp5-e0001s-s " data-id="e0001s" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0001s">
+    			<h3 data-interaction-id="e0001t" class="e-1ol2zp5-e0001t-s e-heading-base">April</h3>
+		<div class="elementor-element elementor-element-e0001u e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0001u-s " data-id="e0001u" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001u">
+    			<p class="e-1ol2zp5-e0001v-s e-paragraph-base" data-interaction-id="e0001v">El Salvador · Santa Ana</p>
+					<p class="e-1ol2zp5-e0001w-s e-paragraph-base" data-interaction-id="e0001w">Natural Pacamara, slow-dried in shade. Strawberry, rum-soaked raisin, thick body.</p>
+		
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0001x e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0001x-s " data-id="e0001x" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001x">
+    <div class="elementor-element elementor-element-e0001y e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0001y-s " data-id="e0001y" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001y">
+    <div class="elementor-element elementor-element-e0001z e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0001z-s " data-id="e0001z" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001z">
+    
+</div>
+<div class="elementor-element elementor-element-e00020 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00020-s " data-id="e00020" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00020">
+    
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e00021 e-con e-atomic-element e-grid-base e-1ol2zp5-e00021-s " data-id="e00021" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e00021">
+    			<h3 data-interaction-id="e00022" class="e-1ol2zp5-e00022-s e-heading-base">May</h3>
+		<div class="elementor-element elementor-element-e00023 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00023-s " data-id="e00023" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00023">
+    			<p class="e-1ol2zp5-e00024-s e-paragraph-base" data-interaction-id="e00024">Indonesia · Aceh Gayo</p>
+					<p class="e-1ol2zp5-e00025-s e-paragraph-base" data-interaction-id="e00025">Wet-hulled Ateng, picked while everything else in the world is resting. Cedar, tamarind, green herb.</p>
+		
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e00026 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00026-s " data-id="e00026" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00026">
+    <div class="elementor-element elementor-element-e00027 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00027-s " data-id="e00027" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00027">
+    <div class="elementor-element elementor-element-e00028 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00028-s " data-id="e00028" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00028">
+    
+</div>
+<div class="elementor-element elementor-element-e00029 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00029-s " data-id="e00029" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00029">
+    
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0002a e-con e-atomic-element e-grid-base e-1ol2zp5-e0002a-s " data-id="e0002a" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0002a">
+    			<h3 data-interaction-id="e0002b" class="e-1ol2zp5-e0002b-s e-heading-base">June</h3>
+		<div class="elementor-element elementor-element-e0002c e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0002c-s " data-id="e0002c" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002c">
+    			<p class="e-1ol2zp5-e0002d-s e-paragraph-base" data-interaction-id="e0002d">Indonesia · Toraja</p>
+					<p class="e-1ol2zp5-e0002e-s e-paragraph-base" data-interaction-id="e0002e">Wet-hulled Typica from the highlands. Baker’s chocolate, tobacco leaf, a savoury edge.</p>
+		
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0002f e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0002f-s " data-id="e0002f" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002f">
+    <div class="elementor-element elementor-element-e0002g e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0002g-s " data-id="e0002g" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002g">
+    <div class="elementor-element elementor-element-e0002h e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0002h-s " data-id="e0002h" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002h">
+    
+</div>
+<div class="elementor-element elementor-element-e0002i e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0002i-s " data-id="e0002i" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002i">
+    
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0002j e-con e-atomic-element e-grid-base e-1ol2zp5-e0002j-s " data-id="e0002j" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0002j">
+    			<h3 data-interaction-id="e0002k" class="e-1ol2zp5-e0002k-s e-heading-base">July</h3>
+		<div class="elementor-element elementor-element-e0002l e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0002l-s " data-id="e0002l" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002l">
+    			<p class="e-1ol2zp5-e0002m-s e-paragraph-base" data-interaction-id="e0002m">Ethiopia · Guji</p>
+					<p class="e-1ol2zp5-e0002n-s e-paragraph-base" data-interaction-id="e0002n">Washed heirloom off the first Ethiopian containers of the year. Jasmine, bergamot, white peach.</p>
+		
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0002o e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0002o-s " data-id="e0002o" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002o">
+    <div class="elementor-element elementor-element-e0002p e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0002p-s " data-id="e0002p" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002p">
+    <div class="elementor-element elementor-element-e0002q e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0002q-s " data-id="e0002q" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002q">
+    
+</div>
+<div class="elementor-element elementor-element-e0002r e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0002r-s " data-id="e0002r" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002r">
+    
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0002s e-con e-atomic-element e-grid-base e-1ol2zp5-e0002s-s " data-id="e0002s" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0002s">
+    <div class="elementor-element elementor-element-e0002t e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0002t-s " data-id="e0002t" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002t">
+    			<h3 data-interaction-id="e0002u" class="e-1ol2zp5-e0002u-s e-heading-base">August</h3>
+					<p class="e-1ol2zp5-e0002v-s e-paragraph-base" data-interaction-id="e0002v">in the box</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0002w e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0002w-s " data-id="e0002w" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002w">
+    			<p class="e-1ol2zp5-e0002x-s e-paragraph-base" data-interaction-id="e0002x">Rwanda · Nyamasheke</p>
+					<p class="e-1ol2zp5-e0002y-s e-paragraph-base" data-interaction-id="e0002y">Gitwe washed Red Bourbon. Blackcurrant, black tea, and a finish like a stewed plum.</p>
+		
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0002z e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0002z-s " data-id="e0002z" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002z">
+    <div class="elementor-element elementor-element-e00030 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00030-s " data-id="e00030" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00030">
+    <div class="elementor-element elementor-element-e00031 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00031-s " data-id="e00031" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00031">
+    
+</div>
+<div class="elementor-element elementor-element-e00032 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00032-s " data-id="e00032" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00032">
+    
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e00033 e-con e-atomic-element e-grid-base e-1ol2zp5-e00033-s " data-id="e00033" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e00033">
+    			<h3 data-interaction-id="e00034" class="e-1ol2zp5-e00034-s e-heading-base">September</h3>
+		<div class="elementor-element elementor-element-e00035 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00035-s " data-id="e00035" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00035">
+    			<p class="e-1ol2zp5-e00036-s e-paragraph-base" data-interaction-id="e00036">Ethiopia · Yirgacheffe</p>
+					<p class="e-1ol2zp5-e00037-s e-paragraph-base" data-interaction-id="e00037">Natural heirloom, forty days on raised beds. Blueberry, apricot, a syrupy finish.</p>
+		
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e00038 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00038-s " data-id="e00038" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00038">
+    <div class="elementor-element elementor-element-e00039 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00039-s " data-id="e00039" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00039">
+    <div class="elementor-element elementor-element-e0003a e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0003a-s " data-id="e0003a" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003a">
+    
+</div>
+<div class="elementor-element elementor-element-e0003b e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0003b-s " data-id="e0003b" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003b">
+    
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0003c e-con e-atomic-element e-grid-base e-1ol2zp5-e0003c-s " data-id="e0003c" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0003c">
+    			<h3 data-interaction-id="e0003d" class="e-1ol2zp5-e0003d-s e-heading-base">October</h3>
+		<div class="elementor-element elementor-element-e0003e e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0003e-s " data-id="e0003e" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003e">
+    			<p class="e-1ol2zp5-e0003f-s e-paragraph-base" data-interaction-id="e0003f">Colombia · Huila</p>
+					<p class="e-1ol2zp5-e0003g-s e-paragraph-base" data-interaction-id="e0003g">Washed Pink Bourbon from the main autumn crop. Mandarin, honeysuckle, brown sugar.</p>
+		
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0003h e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0003h-s " data-id="e0003h" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003h">
+    <div class="elementor-element elementor-element-e0003i e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0003i-s " data-id="e0003i" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003i">
+    <div class="elementor-element elementor-element-e0003j e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0003j-s " data-id="e0003j" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003j">
+    
+</div>
+<div class="elementor-element elementor-element-e0003k e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0003k-s " data-id="e0003k" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003k">
+    
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0003l e-con e-atomic-element e-grid-base e-1ol2zp5-e0003l-s " data-id="e0003l" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0003l">
+    			<h3 data-interaction-id="e0003m" class="e-1ol2zp5-e0003m-s e-heading-base">November</h3>
+		<div class="elementor-element elementor-element-e0003n e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0003n-s " data-id="e0003n" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003n">
+    			<p class="e-1ol2zp5-e0003o-s e-paragraph-base" data-interaction-id="e0003o">Colombia · Nariño</p>
+					<p class="e-1ol2zp5-e0003p-s e-paragraph-base" data-interaction-id="e0003p">Washed Caturra grown at 2,050 metres. Lime leaf, caramel, bright and clean.</p>
+		
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0003q e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0003q-s " data-id="e0003q" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003q">
+    <div class="elementor-element elementor-element-e0003r e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0003r-s " data-id="e0003r" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003r">
+    <div class="elementor-element elementor-element-e0003s e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0003s-s " data-id="e0003s" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003s">
+    
+</div>
+<div class="elementor-element elementor-element-e0003t e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0003t-s " data-id="e0003t" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003t">
+    
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0003u e-con e-atomic-element e-grid-base e-1ol2zp5-e0003u-s " data-id="e0003u" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0003u">
+    			<h3 data-interaction-id="e0003v" class="e-1ol2zp5-e0003v-s e-heading-base">December</h3>
+		<div class="elementor-element elementor-element-e0003w e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0003w-s " data-id="e0003w" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003w">
+    			<p class="e-1ol2zp5-e0003x-s e-paragraph-base" data-interaction-id="e0003x">Brazil · Cerrado Mineiro</p>
+					<p class="e-1ol2zp5-e0003y-s e-paragraph-base" data-interaction-id="e0003y">Pulped natural Yellow Catuaí, straight after the Brazilian harvest. Hazelnut, milk chocolate, low acidity.</p>
+		
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0003z e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0003z-s " data-id="e0003z" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003z">
+    <div class="elementor-element elementor-element-e00040 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00040-s " data-id="e00040" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00040">
+    <div class="elementor-element elementor-element-e00041 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00041-s " data-id="e00041" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00041">
+    
+</div>
+
+</div>
+			<p class="e-1ol2zp5-e00042-s e-paragraph-base" data-interaction-id="e00042">Then it starts again in Guatemala, with a crop nobody has tasted yet.</p>
+		
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e00043 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00043-s " data-id="e00043" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00043">
+    <div class="elementor-element elementor-element-e00044 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00044-s " data-id="e00044" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00044">
+    <div class="elementor-element elementor-element-e00045 e-con e-atomic-element e-grid-base e-1ol2zp5-e00045-s " data-id="e00045" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e00045">
+    <div class="elementor-element elementor-element-e00046 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00046-s " data-id="e00046" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00046">
+    			<img decoding="async" class="e-image-base e-1ol2zp5-e00047-s" data-interaction-id="e00047" id="252" src="http://127.0.0.1:8950/wp-content/uploads/2026/08/exjsx-twelve-harvests-drying_beds.jpg" width="1024" height="576" srcset="http://127.0.0.1:8950/wp-content/uploads/2026/08/exjsx-twelve-harvests-drying_beds.jpg 1024w, http://127.0.0.1:8950/wp-content/uploads/2026/08/exjsx-twelve-harvests-drying_beds-300x169.jpg 300w, http://127.0.0.1:8950/wp-content/uploads/2026/08/exjsx-twelve-harvests-drying_beds-768x432.jpg 768w" alt="Parchment coffee drying on raised beds"/>					<p class="e-1ol2zp5-e00048-s e-paragraph-base" data-interaction-id="e00048">Raised beds at Gitwe. Eighteen days, turned by hand every hour of daylight.</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00049 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00049-s " data-id="e00049" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00049">
+    			<p class="e-1ol2zp5-e0004a-s e-paragraph-base" data-interaction-id="e0004a">Section two · in the box now</p>
+					<h2 data-interaction-id="e0004b" class="e-1ol2zp5-e0004b-s e-heading-base">August: Gitwe washed Red Bourbon, Nyamasheke, Rwanda.</h2>
+		<div class="elementor-element elementor-element-e0004c e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0004c-s " data-id="e0004c" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004c">
+    			<p class="e-1ol2zp5-e0004d-s e-paragraph-base" data-interaction-id="e0004d">Blackcurrant</p>
+					<p class="e-1ol2zp5-e0004e-s e-paragraph-base" data-interaction-id="e0004e">Black tea</p>
+					<p class="e-1ol2zp5-e0004f-s e-paragraph-base" data-interaction-id="e0004f">Stewed plum</p>
+		
+</div>
+			<p class="e-1ol2zp5-e0004g-s e-paragraph-base" data-interaction-id="e0004g">Blackcurrant, black tea, and a finish like a stewed plum. Ships 22 August, which is nineteen days after the last cherry came off the bed.</p>
+		<div class="elementor-element elementor-element-e0004h e-con e-atomic-element e-grid-base e-1ol2zp5-e0004h-s " data-id="e0004h" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0004h">
+    <div class="elementor-element elementor-element-e0004i e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0004i-s " data-id="e0004i" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004i">
+    			<p class="e-1ol2zp5-e0004j-s e-paragraph-base" data-interaction-id="e0004j">Producer</p>
+					<p class="e-1ol2zp5-e0004k-s e-paragraph-base" data-interaction-id="e0004k">Gitwe washing station, 219 smallholders</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0004l e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0004l-s " data-id="e0004l" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004l">
+    			<p class="e-1ol2zp5-e0004m-s e-paragraph-base" data-interaction-id="e0004m">Altitude</p>
+					<p class="e-1ol2zp5-e0004n-s e-paragraph-base" data-interaction-id="e0004n">1,780 – 1,940 m</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0004o e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0004o-s " data-id="e0004o" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004o">
+    			<p class="e-1ol2zp5-e0004p-s e-paragraph-base" data-interaction-id="e0004p">Process</p>
+					<p class="e-1ol2zp5-e0004q-s e-paragraph-base" data-interaction-id="e0004q">Fully washed, 18 days on raised beds</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0004r e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0004r-s " data-id="e0004r" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004r">
+    			<p class="e-1ol2zp5-e0004s-s e-paragraph-base" data-interaction-id="e0004s">Ships</p>
+					<p class="e-1ol2zp5-e0004t-s e-paragraph-base" data-interaction-id="e0004t">22 August, roasted the day before</p>
+		
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0004u e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0004u-s " data-id="e0004u" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004u">
+    <div class="elementor-element elementor-element-e0004v e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0004v-s " data-id="e0004v" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004v">
+    <div class="elementor-element elementor-element-e0004w e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0004w-s " data-id="e0004w" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004w">
+    			<p class="e-1ol2zp5-e0004x-s e-paragraph-base" data-interaction-id="e0004x">Section three</p>
+					<h2 data-interaction-id="e0004y" class="e-1ol2zp5-e0004y-s e-heading-base">What we pay, and what everyone pays.</h2>
+					<p class="e-1ol2zp5-e0004z-s e-paragraph-base" data-interaction-id="e0004z">We paid 5.40 a kilo at the farmgate. The Fairtrade floor is 1.80. The New York C price that week was 1.62.</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00050 e-con e-atomic-element e-grid-base e-1ol2zp5-e00050-s " data-id="e00050" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e00050">
+    <div class="elementor-element elementor-element-e00051 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00051-s " data-id="e00051" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00051">
+    			<p class="e-1ol2zp5-e00052-s e-paragraph-base" data-interaction-id="e00052">What we paid</p>
+		<div class="elementor-element elementor-element-e00053 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00053-s " data-id="e00053" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00053">
+    			<h3 data-interaction-id="e00054" class="e-1ol2zp5-e00054-s e-heading-base">5.40</h3>
+					<p class="e-1ol2zp5-e00055-s e-paragraph-base" data-interaction-id="e00055">/ kilo</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00056 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00056-s " data-id="e00056" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00056">
+    <div class="elementor-element elementor-element-e00057 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00057-s " data-id="e00057" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00057">
+    
+</div>
+
+</div>
+			<p class="e-1ol2zp5-e00058-s e-paragraph-base" data-interaction-id="e00058">Per kilo, at the farmgate, to the Gitwe washing station.</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00059 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00059-s " data-id="e00059" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00059">
+    			<p class="e-1ol2zp5-e0005a-s e-paragraph-base" data-interaction-id="e0005a">Fairtrade floor</p>
+		<div class="elementor-element elementor-element-e0005b e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0005b-s " data-id="e0005b" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0005b">
+    			<h3 data-interaction-id="e0005c" class="e-1ol2zp5-e0005c-s e-heading-base">1.80</h3>
+					<p class="e-1ol2zp5-e0005d-s e-paragraph-base" data-interaction-id="e0005d">/ kilo</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0005e e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0005e-s " data-id="e0005e" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0005e">
+    <div class="elementor-element elementor-element-e0005f e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0005f-s " data-id="e0005f" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0005f">
+    
+</div>
+
+</div>
+			<p class="e-1ol2zp5-e0005g-s e-paragraph-base" data-interaction-id="e0005g">The minimum price a certified buyer may pay.</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0005h e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0005h-s " data-id="e0005h" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0005h">
+    			<p class="e-1ol2zp5-e0005i-s e-paragraph-base" data-interaction-id="e0005i">New York C</p>
+		<div class="elementor-element elementor-element-e0005j e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0005j-s " data-id="e0005j" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0005j">
+    			<h3 data-interaction-id="e0005k" class="e-1ol2zp5-e0005k-s e-heading-base">1.62</h3>
+					<p class="e-1ol2zp5-e0005l-s e-paragraph-base" data-interaction-id="e0005l">/ kilo</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0005m e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0005m-s " data-id="e0005m" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0005m">
+    <div class="elementor-element elementor-element-e0005n e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0005n-s " data-id="e0005n" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0005n">
+    
+</div>
+
+</div>
+			<p class="e-1ol2zp5-e0005o-s e-paragraph-base" data-interaction-id="e0005o">The commodity benchmark the week we bought.</p>
+		
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0005p e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0005p-s " data-id="e0005p" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0005p">
+    			<p class="e-1ol2zp5-e0005q-s e-paragraph-base" data-interaction-id="e0005q">The number is printed on the bag next to the roast date. It is the price paid to the washing station for parchment, converted to green, before shipping and duty. Nobody makes you do this, which is exactly why we print it.</p>
+					<p class="e-1ol2zp5-e0005r-s e-paragraph-base" data-interaction-id="e0005r">Three times the commodity price, on a lot that would clear at half of it.</p>
+		
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0005s e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0005s-s " data-id="e0005s" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0005s">
+    <div class="elementor-element elementor-element-e0005t e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0005t-s " data-id="e0005t" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0005t">
+    <div class="elementor-element elementor-element-e0005u e-con e-atomic-element e-grid-base e-1ol2zp5-e0005u-s " data-id="e0005u" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0005u">
+    <div class="elementor-element elementor-element-e0005v e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0005v-s " data-id="e0005v" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0005v">
+    			<p class="e-1ol2zp5-e0005w-s e-paragraph-base" data-interaction-id="e0005w">Section four</p>
+					<h2 data-interaction-id="e0005x" class="e-1ol2zp5-e0005x-s e-heading-base">One roast profile, and a five-day head start.</h2>
+					<p class="e-1ol2zp5-e0005y-s e-paragraph-base" data-interaction-id="e0005y">Roasted Tuesday, shipped Wednesday, on your table Thursday or Friday. Rest it four days before you touch it, then it is good for a month.</p>
+					<p class="e-1ol2zp5-e0005z-s e-paragraph-base" data-interaction-id="e0005z">Filter roast only, dropped light enough to keep the acidity and long enough that nothing tastes green. We do not run a second, darker version for people with espresso machines.</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00060 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00060-s " data-id="e00060" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00060">
+    			<img decoding="async" class="e-image-base e-1ol2zp5-e00061-s" data-interaction-id="e00061" id="250" src="http://127.0.0.1:8950/wp-content/uploads/2026/08/exjsx-twelve-harvests-brew_still.jpg" width="1024" height="768" srcset="http://127.0.0.1:8950/wp-content/uploads/2026/08/exjsx-twelve-harvests-brew_still.jpg 1024w, http://127.0.0.1:8950/wp-content/uploads/2026/08/exjsx-twelve-harvests-brew_still-300x225.jpg 300w, http://127.0.0.1:8950/wp-content/uploads/2026/08/exjsx-twelve-harvests-brew_still-768x576.jpg 768w" alt="A filter brew resting on a wooden counter"/>					<p class="e-1ol2zp5-e00062-s e-paragraph-base" data-interaction-id="e00062">Day five. 18g in, 300g out, four pours.</p>
+		
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e00063 e-con e-atomic-element e-grid-base e-1ol2zp5-e00063-s " data-id="e00063" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e00063">
+    <div class="elementor-element elementor-element-e00064 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00064-s " data-id="e00064" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00064">
+    <div class="elementor-element elementor-element-e00065 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00065-s " data-id="e00065" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00065">
+    
+</div>
+<div class="elementor-element elementor-element-e00066 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00066-s " data-id="e00066" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00066">
+    
+</div>
+			<p class="e-1ol2zp5-e00067-s e-paragraph-base" data-interaction-id="e00067">Tuesday</p>
+					<h3 data-interaction-id="e00068" class="e-1ol2zp5-e00068-s e-heading-base">Roasted</h3>
+					<p class="e-1ol2zp5-e00069-s e-paragraph-base" data-interaction-id="e00069">One profile, one drum, the whole month’s allocation in a morning.</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0006a e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0006a-s " data-id="e0006a" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0006a">
+    <div class="elementor-element elementor-element-e0006b e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0006b-s " data-id="e0006b" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0006b">
+    
+</div>
+<div class="elementor-element elementor-element-e0006c e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0006c-s " data-id="e0006c" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0006c">
+    
+</div>
+			<p class="e-1ol2zp5-e0006d-s e-paragraph-base" data-interaction-id="e0006d">Wednesday</p>
+					<h3 data-interaction-id="e0006e" class="e-1ol2zp5-e0006e-s e-heading-base">Shipped</h3>
+					<p class="e-1ol2zp5-e0006f-s e-paragraph-base" data-interaction-id="e0006f">Bagged with a valve and out the door before the beans are cool.</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0006g e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0006g-s " data-id="e0006g" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0006g">
+    <div class="elementor-element elementor-element-e0006h e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0006h-s " data-id="e0006h" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0006h">
+    
+</div>
+<div class="elementor-element elementor-element-e0006i e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0006i-s " data-id="e0006i" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0006i">
+    
+</div>
+			<p class="e-1ol2zp5-e0006j-s e-paragraph-base" data-interaction-id="e0006j">Thursday</p>
+					<h3 data-interaction-id="e0006k" class="e-1ol2zp5-e0006k-s e-heading-base">On your table</h3>
+					<p class="e-1ol2zp5-e0006l-s e-paragraph-base" data-interaction-id="e0006l">Friday at the latest. The date on the bag is the roast date, not a best-before.</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0006m e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0006m-s " data-id="e0006m" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0006m">
+    <div class="elementor-element elementor-element-e0006n e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0006n-s " data-id="e0006n" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0006n">
+    
+</div>
+<div class="elementor-element elementor-element-e0006o e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0006o-s " data-id="e0006o" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0006o">
+    
+</div>
+			<p class="e-1ol2zp5-e0006p-s e-paragraph-base" data-interaction-id="e0006p">+4 days</p>
+					<h3 data-interaction-id="e0006q" class="e-1ol2zp5-e0006q-s e-heading-base">Rest it</h3>
+					<p class="e-1ol2zp5-e0006r-s e-paragraph-base" data-interaction-id="e0006r">Leave it alone. Degassing coffee brews thin and tastes of nothing much.</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0006s e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0006s-s " data-id="e0006s" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0006s">
+    <div class="elementor-element elementor-element-e0006t e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0006t-s " data-id="e0006t" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0006t">
+    
+</div>
+<div class="elementor-element elementor-element-e0006u e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0006u-s " data-id="e0006u" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0006u">
+    
+</div>
+			<p class="e-1ol2zp5-e0006v-s e-paragraph-base" data-interaction-id="e0006v">+1 month</p>
+					<h3 data-interaction-id="e0006w" class="e-1ol2zp5-e0006w-s e-heading-base">Drink it</h3>
+					<p class="e-1ol2zp5-e0006x-s e-paragraph-base" data-interaction-id="e0006x">Past that it is still fine, just quieter. Nothing here sits in a warehouse.</p>
+		
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0006y e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0006y-s " data-id="e0006y" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0006y">
+    <div class="elementor-element elementor-element-e0006z e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0006z-s " data-id="e0006z" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0006z">
+    <div class="elementor-element elementor-element-e00070 e-con e-atomic-element e-grid-base e-1ol2zp5-e00070-s " data-id="e00070" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e00070">
+    <div class="elementor-element elementor-element-e00071 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00071-s " data-id="e00071" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00071">
+    			<p class="e-1ol2zp5-e00072-s e-paragraph-base" data-interaction-id="e00072">Section five</p>
+					<h2 data-interaction-id="e00073" class="e-1ol2zp5-e00073-s e-heading-base">Three ways in, one starting recipe.</h2>
+		
+</div>
+<div class="elementor-element elementor-element-e00074 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00074-s " data-id="e00074" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00074">
+    			<p class="e-1ol2zp5-e00075-s e-paragraph-base" data-interaction-id="e00075">Filter recipe to start: 18g in, 300g out, 94 degrees, four pours, three and a half minutes total. Adjust the grind, not the ratio.</p>
+					<p class="e-1ol2zp5-e00076-s e-paragraph-base" data-interaction-id="e00076">Every bag ships with the month’s numbers on the back, because a Rwandan washed lot and a wet-hulled Sumatra do not want the same grind.</p>
+		
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e00077 e-con e-atomic-element e-grid-base e-1ol2zp5-e00077-s " data-id="e00077" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e00077">
+    <div class="elementor-element elementor-element-e00078 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00078-s " data-id="e00078" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00078">
+    			<h3 data-interaction-id="e00079" class="e-1ol2zp5-e00079-s e-heading-base">V60</h3>
+		<div class="elementor-element elementor-element-e0007a e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0007a-s " data-id="e0007a" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0007a">
+    
+</div>
+			<p class="e-1ol2zp5-e0007b-s e-paragraph-base" data-interaction-id="e0007b">18g in, 300g out</p>
+		<div class="elementor-element elementor-element-e0007c e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0007c-s " data-id="e0007c" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0007c">
+    			<p class="e-1ol2zp5-e0007d-s e-paragraph-base" data-interaction-id="e0007d">Medium-fine, a little finer than table salt</p>
+					<p class="e-1ol2zp5-e0007e-s e-paragraph-base" data-interaction-id="e0007e">3:30 total, four pours</p>
+		
+</div>
+			<p class="e-1ol2zp5-e0007f-s e-paragraph-base" data-interaction-id="e0007f">Bloom 50g for 40 seconds, then pour to 300 in even stages.</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0007g e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0007g-s " data-id="e0007g" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0007g">
+    			<h3 data-interaction-id="e0007h" class="e-1ol2zp5-e0007h-s e-heading-base">Kalita Wave</h3>
+		<div class="elementor-element elementor-element-e0007i e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0007i-s " data-id="e0007i" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0007i">
+    
+</div>
+			<p class="e-1ol2zp5-e0007j-s e-paragraph-base" data-interaction-id="e0007j">20g in, 320g out</p>
+		<div class="elementor-element elementor-element-e0007k e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0007k-s " data-id="e0007k" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0007k">
+    			<p class="e-1ol2zp5-e0007l-s e-paragraph-base" data-interaction-id="e0007l">Medium, the flat bed is forgiving</p>
+					<p class="e-1ol2zp5-e0007m-s e-paragraph-base" data-interaction-id="e0007m">3:15 total, five pours</p>
+		
+</div>
+			<p class="e-1ol2zp5-e0007n-s e-paragraph-base" data-interaction-id="e0007n">Keep the bed flat and the water level low. It wants patience, not technique.</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0007o e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0007o-s " data-id="e0007o" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0007o">
+    			<h3 data-interaction-id="e0007p" class="e-1ol2zp5-e0007p-s e-heading-base">Chemex</h3>
+		<div class="elementor-element elementor-element-e0007q e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0007q-s " data-id="e0007q" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0007q">
+    
+</div>
+			<p class="e-1ol2zp5-e0007r-s e-paragraph-base" data-interaction-id="e0007r">30g in, 500g out</p>
+		<div class="elementor-element elementor-element-e0007s e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0007s-s " data-id="e0007s" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0007s">
+    			<p class="e-1ol2zp5-e0007t-s e-paragraph-base" data-interaction-id="e0007t">Medium-coarse, the thick filter is slow</p>
+					<p class="e-1ol2zp5-e0007u-s e-paragraph-base" data-interaction-id="e0007u">4:30 total, three pours</p>
+		
+</div>
+			<p class="e-1ol2zp5-e0007v-s e-paragraph-base" data-interaction-id="e0007v">Rinse the filter properly. Anything less and you will taste the paper.</p>
+		
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0007w e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0007w-s " data-id="e0007w" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0007w">
+    <div class="elementor-element elementor-element-e0007x e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0007x-s " data-id="e0007x" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0007x">
+    <div class="elementor-element elementor-element-e0007y e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0007y-s " data-id="e0007y" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0007y">
+    			<p class="e-1ol2zp5-e0007z-s e-paragraph-base" data-interaction-id="e0007z">Section six</p>
+					<h2 data-interaction-id="e00080" class="e-1ol2zp5-e00080-s e-heading-base">Two sizes, and a pause button that actually pauses.</h2>
+		
+</div>
+<div class="elementor-element elementor-element-e00081 e-con e-atomic-element e-grid-base e-1ol2zp5-e00081-s " data-id="e00081" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e00081">
+    <div class="elementor-element elementor-element-e00082 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00082-s " data-id="e00082" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00082">
+    			<p class="e-1ol2zp5-e00083-s e-paragraph-base" data-interaction-id="e00083">most people start here</p>
+		<div class="elementor-element elementor-element-e00084 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00084-s " data-id="e00084" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00084">
+    			<h3 data-interaction-id="e00085" class="e-1ol2zp5-e00085-s e-heading-base">250g</h3>
+					<p class="e-1ol2zp5-e00086-s e-paragraph-base" data-interaction-id="e00086">21</p>
+					<p class="e-1ol2zp5-e00087-s e-paragraph-base" data-interaction-id="e00087">a month</p>
+		
+</div>
+			<p class="e-1ol2zp5-e00088-s e-paragraph-base" data-interaction-id="e00088">One bag a month. About fifteen brews for a single filter drinker, which is most people who own a grinder.</p>
+					<p class="e-1ol2zp5-e00089-s e-paragraph-base" data-interaction-id="e00089"><a href="#start" target="_self" class="e-paragraph-link-base">
+		Start next month
+	</a></p>
+		
+</div>
+<div class="elementor-element elementor-element-e0008a e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0008a-s " data-id="e0008a" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0008a">
+    			<p class="e-1ol2zp5-e0008b-s e-paragraph-base" data-interaction-id="e0008b">for two, or for one who drinks a lot</p>
+		<div class="elementor-element elementor-element-e0008c e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0008c-s " data-id="e0008c" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0008c">
+    			<h3 data-interaction-id="e0008d" class="e-1ol2zp5-e0008d-s e-heading-base">500g</h3>
+					<p class="e-1ol2zp5-e0008e-s e-paragraph-base" data-interaction-id="e0008e">36</p>
+					<p class="e-1ol2zp5-e0008f-s e-paragraph-base" data-interaction-id="e0008f">a month</p>
+		
+</div>
+			<p class="e-1ol2zp5-e0008g-s e-paragraph-base" data-interaction-id="e0008g">Same coffee, twice the bag, one delivery. Cheaper per cup and it still arrives four days off the roaster.</p>
+					<p class="e-1ol2zp5-e0008h-s e-paragraph-base" data-interaction-id="e0008h"><a href="#start" target="_self" class="e-paragraph-link-base">
+		Start next month
+	</a></p>
+		
+</div>
+<div class="elementor-element elementor-element-e0008i e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0008i-s " data-id="e0008i" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0008i">
+    			<p class="e-1ol2zp5-e0008j-s e-paragraph-base" data-interaction-id="e0008j">Pausing</p>
+					<p class="e-1ol2zp5-e0008k-s e-paragraph-base" data-interaction-id="e0008k">250g a month for 21. 500g for 36. Pause any time from the email, no login, no retention offer, no dark pattern.</p>
+					<p class="e-1ol2zp5-e0008l-s e-paragraph-base" data-interaction-id="e0008l">There is a pause link at the bottom of every dispatch note. One click holds the next shipment, two holds it until you say otherwise.</p>
+		
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0008m e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0008m-s " data-id="e0008m" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0008m">
+    <div class="elementor-element elementor-element-e0008n e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0008n-s " data-id="e0008n" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0008n">
+    <div class="elementor-element elementor-element-e0008o e-con e-atomic-element e-grid-base e-1ol2zp5-e0008o-s " data-id="e0008o" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0008o">
+    <div class="elementor-element elementor-element-e0008p e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0008p-s " data-id="e0008p" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0008p">
+    			<p class="e-1ol2zp5-e0008q-s e-paragraph-base" data-interaction-id="e0008q">Section seven</p>
+					<h2 data-interaction-id="e0008r" class="e-1ol2zp5-e0008r-s e-heading-base">Where the last twenty-four coffees came from.</h2>
+		
+</div>
+<div class="elementor-element elementor-element-e0008s e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0008s-s " data-id="e0008s" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0008s">
+    			<p class="e-1ol2zp5-e0008t-s e-paragraph-base" data-interaction-id="e0008t">Two years of boxes, eight countries, twenty-four lots. No origin has appeared twice in the same twelve months, and every farmgate price is still on the archive page.</p>
+		
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0008u e-con e-atomic-element e-grid-base e-1ol2zp5-e0008u-s " data-id="e0008u" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0008u">
+    <div class="elementor-element elementor-element-e0008v e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0008v-s " data-id="e0008v" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0008v">
+    			<p class="e-1ol2zp5-e0008w-s e-paragraph-base" data-interaction-id="e0008w">5 bags</p>
+					<h3 data-interaction-id="e0008x" class="e-1ol2zp5-e0008x-s e-heading-base">Ethiopia</h3>
+					<p class="e-1ol2zp5-e0008y-s e-paragraph-base" data-interaction-id="e0008y">Guji, Yirgacheffe, and one lot from Uraga.</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0008z e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0008z-s " data-id="e0008z" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0008z">
+    			<p class="e-1ol2zp5-e00090-s e-paragraph-base" data-interaction-id="e00090">4 bags</p>
+					<h3 data-interaction-id="e00091" class="e-1ol2zp5-e00091-s e-heading-base">Colombia</h3>
+					<p class="e-1ol2zp5-e00092-s e-paragraph-base" data-interaction-id="e00092">Huila and Nariño, two autumns running.</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00093 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00093-s " data-id="e00093" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00093">
+    			<p class="e-1ol2zp5-e00094-s e-paragraph-base" data-interaction-id="e00094">3 bags</p>
+					<h3 data-interaction-id="e00095" class="e-1ol2zp5-e00095-s e-heading-base">Rwanda</h3>
+					<p class="e-1ol2zp5-e00096-s e-paragraph-base" data-interaction-id="e00096">Nyamasheke and Rulindo, all washed.</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00097 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e00097-s " data-id="e00097" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00097">
+    			<p class="e-1ol2zp5-e00098-s e-paragraph-base" data-interaction-id="e00098">3 bags</p>
+					<h3 data-interaction-id="e00099" class="e-1ol2zp5-e00099-s e-heading-base">Brazil</h3>
+					<p class="e-1ol2zp5-e0009a-s e-paragraph-base" data-interaction-id="e0009a">Cerrado Mineiro, pulped natural, every December.</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0009b e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0009b-s " data-id="e0009b" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0009b">
+    			<p class="e-1ol2zp5-e0009c-s e-paragraph-base" data-interaction-id="e0009c">3 bags</p>
+					<h3 data-interaction-id="e0009d" class="e-1ol2zp5-e0009d-s e-heading-base">Indonesia</h3>
+					<p class="e-1ol2zp5-e0009e-s e-paragraph-base" data-interaction-id="e0009e">Aceh Gayo and Toraja, wet-hulled.</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0009f e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0009f-s " data-id="e0009f" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0009f">
+    			<p class="e-1ol2zp5-e0009g-s e-paragraph-base" data-interaction-id="e0009g">2 bags</p>
+					<h3 data-interaction-id="e0009h" class="e-1ol2zp5-e0009h-s e-heading-base">Guatemala</h3>
+					<p class="e-1ol2zp5-e0009i-s e-paragraph-base" data-interaction-id="e0009i">Huehuetenango, both washed Caturra.</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0009j e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0009j-s " data-id="e0009j" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0009j">
+    			<p class="e-1ol2zp5-e0009k-s e-paragraph-base" data-interaction-id="e0009k">2 bags</p>
+					<h3 data-interaction-id="e0009l" class="e-1ol2zp5-e0009l-s e-heading-base">Costa Rica</h3>
+					<p class="e-1ol2zp5-e0009m-s e-paragraph-base" data-interaction-id="e0009m">Tarrazú honeys from the same mill.</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0009n e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0009n-s " data-id="e0009n" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0009n">
+    			<p class="e-1ol2zp5-e0009o-s e-paragraph-base" data-interaction-id="e0009o">2 bags</p>
+					<h3 data-interaction-id="e0009p" class="e-1ol2zp5-e0009p-s e-heading-base">El Salvador</h3>
+					<p class="e-1ol2zp5-e0009q-s e-paragraph-base" data-interaction-id="e0009q">Santa Ana naturals, one Pacamara, one Bourbon.</p>
+		
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0009r e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0009r-s " data-id="e0009r" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0009r" id="start">
+    <div class="elementor-element elementor-element-e0009s e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0009s-s " data-id="e0009s" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0009s">
+    <div class="elementor-element elementor-element-e0009t e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0009t-s " data-id="e0009t" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0009t">
+    <div class="elementor-element elementor-element-e0009u e-con e-atomic-element e-flexbox-base e-1ol2zp5-e0009u-s " data-id="e0009u" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0009u">
+    
+</div>
+			<p class="e-1ol2zp5-e0009v-s e-paragraph-base" data-interaction-id="e0009v">Section eight</p>
+					<h2 data-interaction-id="e0009w" class="e-1ol2zp5-e0009w-s e-heading-base">Start with next month’s harvest.</h2>
+					<p class="e-1ol2zp5-e0009x-s e-paragraph-base" data-interaction-id="e0009x">Order before the 18th and the September lot is yours: Ethiopian natural heirloom, forty days on raised beds, roasted the day after we ship.</p>
+					<p class="e-1ol2zp5-e0009y-s e-paragraph-base" data-interaction-id="e0009y"><a href="#calendar" target="_self" class="e-paragraph-link-base">
+		Start next month
+	</a></p>
+					<p class="e-1ol2zp5-e0009z-s e-paragraph-base" data-interaction-id="e0009z">21 a month for 250g · pause from any email · farmgate price on every bag</p>
+		
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e000a0 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e000a0-s " data-id="e000a0" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e000a0">
+    <div class="elementor-element elementor-element-e000a1 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e000a1-s " data-id="e000a1" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e000a1">
+    <div class="elementor-element elementor-element-e000a2 e-con e-atomic-element e-flexbox-base e-1ol2zp5-e000a2-s " data-id="e000a2" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e000a2">
+    			<p class="e-1ol2zp5-e000a3-s e-paragraph-base" data-interaction-id="e000a3">Twelve Harvests</p>
+					<p class="e-1ol2zp5-e000a4-s e-paragraph-base" data-interaction-id="e000a4">Roasted in small batches · shipped Wednesdays · farmgate prices published monthly</p>
+		
+</div>
+
+</div>
+
+</div>
+
+</div>
+		<div class="elementor-element elementor-element-e000a5 elementor-widget elementor-widget-html" data-id="e000a5" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					<script data-exjsx-motion-guard>(function(){if(!matchMedia("(prefers-reduced-motion: reduce)").matches)return;var z=function(){var s=document.getElementById("elementor-interactions-data");return!!(s&&s.textContent!=="[]")&&(s.textContent="[]",!0)};if(!z()){var o=new MutationObserver(function(){z()&&o.disconnect()});o.observe(document.documentElement,{childList:true,subtree:true});addEventListener("DOMContentLoaded",function(){z();o.disconnect()})}})()</script>				</div>
+				</div>
+		<script type="application/json" id="elementor-interactions-data">[{"elementId":"e0000s","dataId":"e0000s","interactions":[{"$$type":"interaction-item","value":{"interaction_id":{"$$type":"string","value":"ix-0"},"trigger":{"$$type":"string","value":"scrollIn"},"animation":{"$$type":"animation-preset-props","value":{"effect":{"$$type":"string","value":"fade"},"type":{"$$type":"string","value":"in"},"direction":{"$$type":"string","value":""},"timing_config":{"$$type":"timing-config","value":{"duration":{"$$type":"size","value":{"unit":"ms","size":600}},"delay":{"$$type":"size","value":{"unit":"ms","size":0}}}}}}}}]},{"elementId":"e0004b","dataId":"e0004b","interactions":[{"$$type":"interaction-item","value":{"interaction_id":{"$$type":"string","value":"ix-1"},"trigger":{"$$type":"string","value":"scrollIn"},"animation":{"$$type":"animation-preset-props","value":{"effect":{"$$type":"string","value":"fade"},"type":{"$$type":"string","value":"in"},"direction":{"$$type":"string","value":""},"timing_config":{"$$type":"timing-config","value":{"duration":{"$$type":"size","value":{"unit":"ms","size":600}},"delay":{"$$type":"size","value":{"unit":"ms","size":0}}}}}}}}]},{"elementId":"e0004y","dataId":"e0004y","interactions":[{"$$type":"interaction-item","value":{"interaction_id":{"$$type":"string","value":"ix-2"},"trigger":{"$$type":"string","value":"scrollIn"},"animation":{"$$type":"animation-preset-props","value":{"effect":{"$$type":"string","value":"fade"},"type":{"$$type":"string","value":"in"},"direction":{"$$type":"string","value":""},"timing_config":{"$$type":"timing-config","value":{"duration":{"$$type":"size","value":{"unit":"ms","size":600}},"delay":{"$$type":"size","value":{"unit":"ms","size":0}}}}}}}}]},{"elementId":"e0005x","dataId":"e0005x","interactions":[{"$$type":"interaction-item","value":{"interaction_id":{"$$type":"string","value":"ix-3"},"trigger":{"$$type":"string","value":"scrollIn"},"animation":{"$$type":"animation-preset-props","value":{"effect":{"$$type":"string","value":"fade"},"type":{"$$type":"string","value":"in"},"direction":{"$$type":"string","value":""},"timing_config":{"$$type":"timing-config","value":{"duration":{"$$type":"size","value":{"unit":"ms","size":600}},"delay":{"$$type":"size","value":{"unit":"ms","size":0}}}}}}}}]},{"elementId":"e00073","dataId":"e00073","interactions":[{"$$type":"interaction-item","value":{"interaction_id":{"$$type":"string","value":"ix-4"},"trigger":{"$$type":"string","value":"scrollIn"},"animation":{"$$type":"animation-preset-props","value":{"effect":{"$$type":"string","value":"fade"},"type":{"$$type":"string","value":"in"},"direction":{"$$type":"string","value":""},"timing_config":{"$$type":"timing-config","value":{"duration":{"$$type":"size","value":{"unit":"ms","size":600}},"delay":{"$$type":"size","value":{"unit":"ms","size":0}}}}}}}}]},{"elementId":"e00080","dataId":"e00080","interactions":[{"$$type":"interaction-item","value":{"interaction_id":{"$$type":"string","value":"ix-5"},"trigger":{"$$type":"string","value":"scrollIn"},"animation":{"$$type":"animation-preset-props","value":{"effect":{"$$type":"string","value":"fade"},"type":{"$$type":"string","value":"in"},"direction":{"$$type":"string","value":""},"timing_config":{"$$type":"timing-config","value":{"duration":{"$$type":"size","value":{"unit":"ms","size":600}},"delay":{"$$type":"size","value":{"unit":"ms","size":0}}}}}}}}]},{"elementId":"e0008r","dataId":"e0008r","interactions":[{"$$type":"interaction-item","value":{"interaction_id":{"$$type":"string","value":"ix-6"},"trigger":{"$$type":"string","value":"scrollIn"},"animation":{"$$type":"animation-preset-props","value":{"effect":{"$$type":"string","value":"fade"},"type":{"$$type":"string","value":"in"},"direction":{"$$type":"string","value":""},"timing_config":{"$$type":"timing-config","value":{"duration":{"$$type":"size","value":{"unit":"ms","size":600}},"delay":{"$$type":"size","value":{"unit":"ms","size":0}}}}}}}}]}]</script><script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/twentytwentyfive/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+			<script>
+				( () => {
+					const lazyloadRunObserver = () => {
+						const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+						const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+							entries.forEach( ( entry ) => {
+								if ( entry.isIntersecting ) {
+									let lazyloadBackground = entry.target;
+									if( lazyloadBackground ) {
+										lazyloadBackground.classList.add( 'e-lazyloaded' );
+									}
+									lazyloadBackgroundObserver.unobserve( entry.target );
+								}
+							});
+						}, { rootMargin: '200px 0px 200px 0px' } );
+						lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+							lazyloadBackgroundObserver.observe( lazyloadBackground );
+						} );
+					};
+					const events = [
+						'DOMContentLoaded',
+						'elementor/lazyload/observe',
+					];
+					events.forEach( ( event ) => {
+						document.addEventListener( event, lazyloadRunObserver );
+					} );
+				} )();
+			</script>
+			<script id="elementor-webpack-runtime-js" src="http://127.0.0.1:8950/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=4.2.1"></script>
+<script id="elementor-frontend-modules-js" src="http://127.0.0.1:8950/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=4.2.1"></script>
+<script id="jquery-ui-core-js" src="http://127.0.0.1:8950/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnX":"Share on X","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"4.2.1","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_optimized_markup":true,"e_panel_promotions":true,"e_pro_free_trial_popup":true,"nested-elements":true,"e_atomic_elements":true,"atomic_widgets_should_enforce_capabilities":true,"editor_mcp":true,"e_bc_migrations":true,"e_classes":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"e_variables_manager":true,"e_opt_in_v4_page":true,"e_opt_in_v4":true,"e_components":true,"e_interactions":true,"e_widget_creation":true,"import-export-customization":true},"urls":{"assets":"http:\/\/127.0.0.1:8950\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"http:\/\/127.0.0.1:8950\/wp-admin\/admin-ajax.php","uploadUrl":"http:\/\/127.0.0.1:8950\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"a7b0c492e3","atomicFormsSendForm":"0045d5964e"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":253,"title":"Twelve%20Harvests%20%E2%80%93%20Elementor%20Ultra%20Dev","excerpt":"","featuredImage":false}};
+//# sourceURL=elementor-frontend-js-before
+</script>
+<script id="elementor-frontend-js" src="http://127.0.0.1:8950/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=4.2.1"></script>
+<script id="motion-js-js" src="http://127.0.0.1:8950/wp-content/plugins/elementor/assets/lib/motion/motion.min.js?ver=11.13.5"></script>
+<script id="elementor-interactions-shared-utils-js" src="http://127.0.0.1:8950/wp-content/plugins/elementor/assets/js/interactions-shared-utils.min.js?ver=1.0.0"></script>
+<script id="elementor-interactions-js-extra">
+var ElementorInteractionsConfig = {"constants":{"defaultDuration":600,"defaultDelay":0,"slideDistance":100,"scaleStart":0,"defaultEasing":"easeIn","relativeTo":"viewport","repeat":"","start":85,"end":15},"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true}}};
+//# sourceURL=elementor-interactions-js-extra
+</script>
+<script id="elementor-interactions-js" src="http://127.0.0.1:8950/wp-content/plugins/elementor/assets/js/interactions.min.js?ver=1.0.0"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"http://127.0.0.1:8950/wp-includes/js/wp-emoji-release.min.js?ver=7.0.4"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=http://127.0.0.1:8950/wp-includes/js/wp-emoji-loader.min.js
+</script>
+	</body>
+</html>

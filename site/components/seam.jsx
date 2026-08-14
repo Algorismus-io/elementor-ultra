@@ -5,7 +5,7 @@ import { SectionHead } from './lib.jsx';
 
 export const Seam = ({ theme: t }) => (
   <section id="seam" tw="flex flex-col items-start w-full max-w-[1180px] px-6 gap-7" pad={[72, 24]} mobile={{ pad: [32, 18] }}>
-    <SectionHead theme={t} no="02" label="Before / after" />
+    <SectionHead theme={t} no="03" label="Before / after" />
     <heading tag="h2" w="100%" size={64} weight={400} font={t.font.display} color={t.color.ink} lh={1.02}
       sx={{ textTransform: 'uppercase', letterSpacing: '.01em' }} mobile={{ size: 36 }}>
       Same hero. 3,400 lines of blind JSON —<br />or nine lines of typed JSX.

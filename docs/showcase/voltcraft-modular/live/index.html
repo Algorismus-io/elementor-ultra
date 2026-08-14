@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+<meta name="robots" content="noindex,follow,noarchive,nosnippet,noimageindex">
+<meta name="ai-generated" content="true">
+<link rel="canonical" href="https://exjsx.dev/showcase/voltcraft-modular/">
+
+<title>[Fictional demo] Voltmoor VX — Modular Synthesizer Hardware – Elementor Ultra Dev</title><meta content="default-src 'self'; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'" http-equiv="Content-Security-Policy"/><meta content="voltcraft-modular" name="exjsx:generated"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-color]){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--base: #FFFFFF;--wp--preset--color--contrast: #111111;--wp--preset--color--accent-1: #FFEE58;--wp--preset--color--accent-2: #F6CFF4;--wp--preset--color--accent-3: #503AA8;--wp--preset--color--accent-4: #686868;--wp--preset--color--accent-5: #FBFAF3;--wp--preset--color--accent-6: color-mix(in srgb, currentColor 20%, transparent);--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 0.875rem;--wp--preset--font-size--medium: clamp(1rem, 1rem + ((1vw - 0.2rem) * 0.196), 1.125rem);--wp--preset--font-size--large: clamp(1.125rem, 1.125rem + ((1vw - 0.2rem) * 0.392), 1.375rem);--wp--preset--font-size--x-large: clamp(1.75rem, 1.75rem + ((1vw - 0.2rem) * 0.392), 2rem);--wp--preset--font-size--xx-large: clamp(2.15rem, 2.15rem + ((1vw - 0.2rem) * 1.333), 3rem);--wp--preset--font-family--manrope: Manrope, sans-serif;--wp--preset--font-family--fira-code: "Fira Code", monospace;--wp--preset--spacing--20: 10px;--wp--preset--spacing--30: 20px;--wp--preset--spacing--40: 30px;--wp--preset--spacing--50: clamp(30px, 5vw, 50px);--wp--preset--spacing--60: clamp(30px, 7vw, 70px);--wp--preset--spacing--70: clamp(50px, 7vw, 90px);--wp--preset--spacing--80: clamp(70px, 10vw, 140px);--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:root { --wp--style--global--content-size: 645px;--wp--style--global--wide-size: 1340px; }:where(body) { margin: 0; }.wp-site-blocks { padding-top: var(--wp--style--root--padding-top); padding-bottom: var(--wp--style--root--padding-bottom); }.has-global-padding { padding-right: var(--wp--style--root--padding-right); padding-left: var(--wp--style--root--padding-left); }.has-global-padding > .alignfull { margin-right: calc(var(--wp--style--root--padding-right) * -1); margin-left: calc(var(--wp--style--root--padding-left) * -1); }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) { padding-right: 0; padding-left: 0; }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) > .alignfull { margin-left: 0; margin-right: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 1.2rem; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 1.2rem; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 1.2rem;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 1.2rem;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 1.2rem;}:root :where(.is-layout-grid){gap: 1.2rem;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{background-color: var(--wp--preset--color--base);color: var(--wp--preset--color--contrast);font-family: var(--wp--preset--font-family--manrope);font-size: var(--wp--preset--font-size--large);font-weight: 300;letter-spacing: -0.1px;line-height: 1.4;--wp--style--root--padding-top: 0px;--wp--style--root--padding-right: var(--wp--preset--spacing--50);--wp--style--root--padding-bottom: 0px;--wp--style--root--padding-left: var(--wp--preset--spacing--50);}a:where(:not(.wp-element-button)){color: currentColor;}:root :where(a:where(:not(.wp-element-button)):hover){text-decoration: none;}h1, h2, h3, h4, h5, h6{font-weight: 400;letter-spacing: -0.1px;line-height: 1.125;}h1{font-size: var(--wp--preset--font-size--xx-large);}h2{font-size: var(--wp--preset--font-size--x-large);}h3{font-size: var(--wp--preset--font-size--large);}h4{font-size: var(--wp--preset--font-size--medium);}h5{font-size: var(--wp--preset--font-size--small);letter-spacing: 0.5px;}h6{font-size: var(--wp--preset--font-size--small);font-weight: 700;letter-spacing: 1.4px;text-transform: uppercase;}:root :where(.wp-element-button, .wp-block-button__link){background-color: var(--wp--preset--color--contrast);border-width: 0;color: var(--wp--preset--color--base);font-family: inherit;font-size: var(--wp--preset--font-size--medium);font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: 1rem;padding-right: 2.25rem;padding-bottom: 1rem;padding-left: 2.25rem;text-decoration: none;text-transform: inherit;}:root :where(.wp-element-button:hover, .wp-block-button__link:hover){background-color: color-mix(in srgb, var(--wp--preset--color--contrast) 85%, transparent);border-color: transparent;color: var(--wp--preset--color--base);}:root :where(.wp-element-button:focus, .wp-block-button__link:focus){outline-color: var(--wp--preset--color--accent-4);outline-offset: 2px;}:root :where(.wp-element-caption, .wp-block-audio figcaption, .wp-block-embed figcaption, .wp-block-gallery figcaption, .wp-block-image figcaption, .wp-block-table figcaption, .wp-block-video figcaption){font-size: var(--wp--preset--font-size--small);line-height: 1.4;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-base-color{color: var(--wp--preset--color--base) !important;}.has-contrast-color{color: var(--wp--preset--color--contrast) !important;}.has-accent-1-color{color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-color{color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-color{color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-color{color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-color{color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-color{color: var(--wp--preset--color--accent-6) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-base-background-color{background-color: var(--wp--preset--color--base) !important;}.has-contrast-background-color{background-color: var(--wp--preset--color--contrast) !important;}.has-accent-1-background-color{background-color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-background-color{background-color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-background-color{background-color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-background-color{background-color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-background-color{background-color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-background-color{background-color: var(--wp--preset--color--accent-6) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-base-border-color{border-color: var(--wp--preset--color--base) !important;}.has-contrast-border-color{border-color: var(--wp--preset--color--contrast) !important;}.has-accent-1-border-color{border-color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-border-color{border-color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-border-color{border-color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-border-color{border-color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-border-color{border-color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-border-color{border-color: var(--wp--preset--color--accent-6) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-xx-large-font-size{font-size: var(--wp--preset--font-size--xx-large) !important;}.has-manrope-font-family{font-family: var(--wp--preset--font-family--manrope) !important;}.has-fira-code-font-family{font-family: var(--wp--preset--font-family--fira-code) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<style id="wp-block-template-skip-link-inline-css">
+/*! This file is auto-generated */
+.skip-link.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute!important;width:1px;word-wrap:normal!important;word-break:normal!important}.skip-link.screen-reader-text:focus{background-color:#eee;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}
+/*# sourceURL=/wp-includes/css/wp-block-template-skip-link.min.css */
+</style>
+<style id="twentytwentyfive-style-inline-css">
+a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-site-blocks :focus){outline-width:2px;outline-style:solid}.wp-block-navigation .wp-block-navigation-submenu .wp-block-navigation-item:not(:last-child){margin-bottom:3px}.wp-block-navigation .wp-block-navigation-item .wp-block-navigation-item__content{outline-offset:4px}.wp-block-navigation .wp-block-navigation-item ul.wp-block-navigation__submenu-container .wp-block-navigation-item__content{outline-offset:0}blockquote,caption,figcaption,h1,h2,h3,h4,h5,h6,p{text-wrap:pretty}.more-link{display:block}:where(pre){overflow-x:auto}
+/*# sourceURL=about:blank */
+</style>
+<link href="../../_frozen/33697641c940c681.css" id="elementor-frontend-css" media="all" rel="stylesheet"/>
+<style id="elementor-frontend-inline-css">
+.e-heading-base a, .e-paragraph-base a { all: unset; cursor: pointer; }form[data-element_type="e-form"].form-state-success [data-element_type="e-form-success-message"],form[data-element_type="e-form"].form-state-error [data-element_type="e-form-error-message"]{ display: block; }
+/*# sourceURL=elementor-frontend-inline-css */
+</style>
+<link href="../../_frozen/0a31e89284557af4.css" id="elementor-post-4-css" media="all" rel="stylesheet"/>
+<link href="../../_frozen/a144906c1d58337d.css" id="base-desktop-css" media="all" rel="stylesheet"/>
+<link href="../../_frozen/a9b39196ead682c1.css" id="local-263-frontend-desktop-css" media="all" rel="stylesheet"/>
+<link href="../../_frozen/203c0d17edb42000.css" id="local-263-frontend-tablet-css" media="(max-width:1024px)" rel="stylesheet"/>
+<link href="../../_frozen/1d9c0333b808551f.css" id="base-mobile-css" media="(max-width:767px)" rel="stylesheet"/>
+<link href="../../_frozen/f605296bdf4898dc.css" id="local-263-frontend-mobile-css" media="(max-width:767px)" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=swap" id="elementor-gf-roboto-css" media="all" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=swap" id="elementor-gf-robotoslab-css" media="all" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Orbitron:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=swap" id="elementor-gf-orbitron-css" media="all" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Space+Mono:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=swap" id="elementor-gf-spacemono-css" media="all" rel="stylesheet"/>
+<script id="jquery-core-js" src="../../_frozen/79cd3587d565afe2.js"></script>
+<script id="jquery-migrate-js" src="../../_frozen/3ad0c10e501ac2a9.js"></script>
+
+
+<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+<style class="wp-fonts-local">
+@font-face{font-family:Manrope;font-style:normal;font-weight:200 800;font-display:fallback;src:url(../../_frozen/5b56dbe3d3eabe17.woff2) format('woff2');}
+@font-face{font-family:"Fira Code";font-style:normal;font-weight:300 700;font-display:fallback;src:url(../../_frozen/8861b9f5ea4d8410.woff2) format('woff2');}
+</style>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/><!--exjsx-provenance--><meta name="exjsx:content-provenance" content="ai-generated"><meta name="description" content="Fictional AI-generated demonstration page. Voltmoor VX is not a real business."><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","@id":"https://exjsx.dev/showcase/voltcraft-modular/live/","url":"https://exjsx.dev/showcase/voltcraft-modular/live/","name":"[Fictional demo] Voltmoor VX","inLanguage":"en-GB","isAccessibleForFree":true,"creativeWorkStatus":"Fictional AI-generated demonstration","genre":"Fiction","abstract":"Voltmoor VX is a fictional business that does not exist. This modular synthesizer hardware page and everything on it \u2014 text, statistics, prices, reviews, named people, professional credentials, certifications and images \u2014 was generated by AI as a design demonstration for the exjsx toolchain. Nothing on this page is a real offer, a real endorsement, a real qualification, or professional advice.","disambiguatingDescription":"Fictional demonstration page. Voltmoor VX is not a real business. Any resemblance to a real organisation or person is unintended.","digitalSourceType":"https://schema.org/TrainedAlgorithmicMediaDigitalSource","usageInfo":"https://exjsx.dev/showcase/terms/","license":"https://exjsx.dev/showcase/terms/","creator":{"@type":"SoftwareApplication","name":"exjsx","applicationCategory":"DeveloperApplication","url":"https://exjsx.dev/"},"publisher":{"@type":"Organization","name":"Algorismus LLC","url":"https://exjsx.dev/","email":"legal@wpos.ai","address":{"@type":"PostalAddress","streetAddress":"3001 Hulen Street, Suite 201","addressLocality":"Fort Worth","addressRegion":"TX","postalCode":"76107","addressCountry":"US"}},"about":{"@type":"Thing","name":"Voltmoor VX","description":"Voltmoor VX is a fictional entity invented by AI for this demonstration. It is not a real organisation. It has no premises, staff, products, customers, registrations or accreditations. The people, qualifications, certifications, reviews, prices and statistics shown on this page are fabricated."},"mainContentOfPage":{"@type":"WebPageElement","cssSelector":".exjsx-dsc","description":"Persistent content notice identifying this page as a fictional AI-generated demonstration."}}</script><!--/exjsx-provenance--></head>
+<body class="wp-singular page-template page-template-elementor_canvas page page-id-263 wp-embed-responsive wp-theme-twentytwentyfive elementor-default elementor-template-canvas elementor-kit-4 elementor-page elementor-page-263"><!--exjsx-disclosure--><exjsx-disclosure data-name="Voltmoor VX" data-sector="modular synthesizer hardware" data-href="https://exjsx.dev/showcase/disclosure/" data-label-title="true"></exjsx-disclosure>
+<noscript><style>
+/* ---- exjsx disclosure banner: scoped, self-contained, no dependencies ---- */
+.exjsx-dsc,
+.exjsx-dsc *{box-sizing:border-box!important}
+.exjsx-dsc{
+  all:initial;
+  display:block!important;
+  /* sticky, not fixed, and deliberately so.
+     Sticky keeps the bar in normal flow, so it reserves its own height at every
+     viewport width with no magic offset number and no JS to measure it — it can
+     never sit on top of the page's own header, and it can never leave a gap.
+     It then pins to the top on scroll, so it stays visible for the whole visit.
+     Verified against the live builds: every one of these pages leaves
+     overflow visible on html and body, which is the condition sticky needs.
+     If you ever port this to a theme that sets overflow:hidden on an ancestor,
+     sticky degrades to static (bar scrolls away at the top of the page) — still
+     disclosed, just not pinned. Use exjsx-disclosure.js there instead. */
+  position:sticky!important;
+  top:0!important;left:0!important;right:0!important;bottom:auto!important;
+  z-index:2147483647!important;
+  visibility:visible!important;opacity:1!important;
+  transform:none!important;clip:auto!important;clip-path:none!important;
+  font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;
+  font-size:14px!important;line-height:1.45!important;
+  text-align:left!important;direction:ltr!important;
+  -webkit-font-smoothing:antialiased;
+}
+.exjsx-dsc__bar{
+  display:flex!important;align-items:center!important;flex-wrap:wrap!important;
+  gap:12px!important;padding:9px 14px!important;
+  background:#17161B!important;color:#F4F3F1!important;
+  border-bottom:3px solid transparent!important;
+  border-image:repeating-linear-gradient(135deg,#FFC53D 0 8px,#17161B 8px 16px) 3!important;
+  box-shadow:0 1px 12px rgba(0,0,0,.32)!important;
+}
+.exjsx-dsc__icon{flex:0 0 auto!important;width:18px!important;height:18px!important;display:block!important}
+.exjsx-dsc__tag{
+  flex:0 0 auto!important;
+  font-weight:700!important;font-size:11px!important;letter-spacing:.09em!important;
+  text-transform:uppercase!important;white-space:nowrap!important;
+  color:#17161B!important;background:#FFC53D!important;
+  padding:3px 7px!important;border-radius:3px!important;
+}
+.exjsx-dsc__msg{
+  flex:1 1 320px!important;margin:0!important;padding:0!important;
+  color:#F4F3F1!important;font-size:14px!important;font-weight:400!important;min-width:0!important;
+}
+.exjsx-dsc__msg b{font-weight:700!important;color:#fff!important}
+.exjsx-dsc__msg .exjsx-dsc__dim{color:#B9B6B0!important}
+.exjsx-dsc__msg a{
+  color:#FFC53D!important;text-decoration:underline!important;
+  text-underline-offset:2px!important;white-space:nowrap!important;
+}
+.exjsx-dsc__msg a:focus-visible{outline:3px solid #FFC53D!important;outline-offset:2px!important}
+.exjsx-dsc__sr{
+  position:absolute!important;width:1px!important;height:1px!important;
+  margin:-1px!important;padding:0!important;border:0!important;
+  clip:rect(0 0 0 0)!important;clip-path:inset(50%)!important;
+  overflow:hidden!important;white-space:nowrap!important;
+}
+/* No body padding needed: sticky reserves its own height in flow. */
+@media (max-width:640px){
+  .exjsx-dsc{font-size:13px!important}
+  .exjsx-dsc__bar{padding:8px 10px!important;gap:8px!important}
+  .exjsx-dsc__msg{flex-basis:100%!important;order:3!important;font-size:13px!important}
+  /* Drop the secondary sentence on small screens to keep the bar to ~4 lines.
+     It is only hidden VISUALLY — the .exjsx-dsc__sr block still carries the full
+     statement to assistive tech and to text-only crawlers, so nothing is lost
+     from the disclosure, only from the visual restatement of it. */
+  .exjsx-dsc__msg .exjsx-dsc__dim{display:none!important}
+}
+@media print{
+  .exjsx-dsc{position:static!important}
+  .exjsx-dsc__bar{
+    background:#fff!important;color:#000!important;
+    border:2px solid #000!important;border-image:none!important;box-shadow:none!important;
+  }
+  .exjsx-dsc__msg,.exjsx-dsc__msg b,.exjsx-dsc__msg .exjsx-dsc__dim,.exjsx-dsc__msg a{color:#000!important}
+  .exjsx-dsc__tag{background:#000!important;color:#fff!important}
+  }
+@media (forced-colors:active){
+  .exjsx-dsc__bar{border:2px solid CanvasText!important;border-image:none!important}
+  .exjsx-dsc__tag{background:Highlight!important;color:HighlightText!important;forced-color-adjust:none!important}
+}
+</style>
+
+<div class="exjsx-dsc" role="region" aria-label="Content notice: fictional AI-generated demonstration page">
+  <div class="exjsx-dsc__bar">
+    <svg class="exjsx-dsc__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path fill="#FFC53D" d="M12 2.6 1.7 20.5h20.6L12 2.6Z"/>
+      <path fill="#17161B" d="M11 9.2h2v6h-2zM11 16.4h2v2h-2z"/>
+    </svg>
+    <span class="exjsx-dsc__tag">Fictional demo</span>
+
+    <!-- Full statement, read verbatim by screen readers and by text-only crawlers. -->
+    <span class="exjsx-dsc__sr">Voltmoor VX is a fictional business that does not exist. This page and
+      everything on it — text, statistics, prices, reviews, named people, professional credentials,
+      certifications and images — was generated by AI as a design demonstration for the exjsx
+      toolchain. Nothing on this page is a real offer, a real endorsement, a real qualification, or
+      professional advice. Any resemblance to a real organisation or person is unintended.</span>
+
+    <!-- Visual copy. aria-hidden so assistive tech reads the full version above, not both. -->
+    <p class="exjsx-dsc__msg" aria-hidden="true">
+      <b>Voltmoor VX</b> is a <b>fictional business</b> that does not exist. This modular synthesizer hardware page — its
+      text, statistics, prices, reviews, people and images — was <b>generated by AI</b> as a design
+      demonstration. <span class="exjsx-dsc__dim">Nothing here is a real offer, a real endorsement,
+      or professional advice.</span>
+      <a href="https://exjsx.dev/showcase/disclosure/">Full notice</a>
+    </p>
+  </div>
+</div>
+<!-- ---- end exjsx disclosure banner ---- -->
+</noscript>
+<script src="../../assets/exjsx-disclosure.js" defer></script><!--/exjsx-disclosure-->
+<div class="elementor elementor-263" data-elementor-id="263" data-elementor-type="wp-page">
+<div class="elementor-element elementor-element-e00000 e-con e-atomic-element e-flexbox-base e-ykrhga-e00000-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00000" data-interaction-id="e00000">
+<div class="elementor-element elementor-element-e00001 e-con e-atomic-element e-flexbox-base e-ykrhga-e00001-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00001" data-interaction-id="e00001">
+<p class="e-ykrhga-e00002-s e-paragraph-base" data-interaction-id="e00002">VOLTMOOR VX</p>
+<p class="e-ykrhga-e00003-s e-paragraph-base" data-interaction-id="e00003">TALLINN · EST 2014</p>
+<p class="e-ykrhga-e00004-s e-paragraph-base" data-interaction-id="e00004"><a class="e-paragraph-link-base" href="#range" target="_self">
+		SEE THE RANGE
+	</a></p>
+</div>
+<div class="elementor-element elementor-element-e00005 e-con e-atomic-element e-flexbox-base e-ykrhga-e00005-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00005" data-interaction-id="e00005">
+<div class="elementor-element elementor-element-e00006 e-con e-atomic-element e-flexbox-base e-ykrhga-e00006-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00006" data-interaction-id="e00006">
+<p class="e-ykrhga-e00007-s e-paragraph-base" data-interaction-id="e00007">ANALOGUE EURORACK · TALLINN</p>
+<h1 class="e-ykrhga-e00008-s e-heading-base" data-interaction-id="e00008">Twelve modules. Every schematic published.</h1>
+<p class="e-ykrhga-e00009-s e-paragraph-base" data-interaction-id="e00009">Analogue Eurorack from a workshop in Tallinn. Through-hole where it matters, matched transistor pairs in every VCO, and a full schematic and BOM in the box so you can fix it in twenty years.</p>
+<div class="elementor-element elementor-element-e0000a e-con e-atomic-element e-flexbox-base e-ykrhga-e0000a-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000a" data-interaction-id="e0000a">
+<p class="e-ykrhga-e0000b-s e-paragraph-base" data-interaction-id="e0000b"><a class="e-paragraph-link-base" href="#range" target="_self">
+		See the range
+	</a></p>
+<p class="e-ykrhga-e0000c-s e-paragraph-base" data-interaction-id="e0000c"><a class="e-paragraph-link-base" href="#power" target="_self">
+		Power budget calculator
+	</a></p>
+</div>
+<div class="elementor-element elementor-element-e0000d e-con e-atomic-element e-flexbox-base e-ykrhga-e0000d-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000d" data-interaction-id="e0000d">
+<div class="elementor-element elementor-element-e0000e e-con e-atomic-element e-flexbox-base e-ykrhga-e0000e-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000e" data-interaction-id="e0000e">
+<p class="e-ykrhga-e0000f-s e-paragraph-base" data-interaction-id="e0000f">134HP</p>
+<p class="e-ykrhga-e0000g-s e-paragraph-base" data-interaction-id="e0000g">FULL RANGE WIDTH</p>
+</div>
+<div class="elementor-element elementor-element-e0000h e-con e-atomic-element e-flexbox-base e-ykrhga-e0000h-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000h" data-interaction-id="e0000h">
+<p class="e-ykrhga-e0000i-s e-paragraph-base" data-interaction-id="e0000i">640mA</p>
+<p class="e-ykrhga-e0000j-s e-paragraph-base" data-interaction-id="e0000j">+12V TOTAL DRAW</p>
+</div>
+<div class="elementor-element elementor-element-e0000k e-con e-atomic-element e-flexbox-base e-ykrhga-e0000k-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000k" data-interaction-id="e0000k">
+<p class="e-ykrhga-e0000l-s e-paragraph-base" data-interaction-id="e0000l">2 DAYS</p>
+<p class="e-ykrhga-e0000m-s e-paragraph-base" data-interaction-id="e0000m">SHIPS FROM ESTONIA</p>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-e0000n e-con e-atomic-element e-flexbox-base e-ykrhga-e0000n-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000n" data-interaction-id="e0000n">
+<img alt="Voltmoor VX module front panel with knobs and patch jacks" class="e-image-base e-ykrhga-e0000o-s" data-interaction-id="e0000o" decoding="async" fetchpriority="high" height="512" id="260" src="../../_frozen/00dd226f9255c166.jpg" srcset="../../_frozen/00dd226f9255c166.jpg 512w, ../../_frozen/bd61c300f5ab4c03.jpg 300w, ../../_frozen/ff7df5e215356e79.jpg 150w" width="512"/> <div class="elementor-element elementor-element-e0000p e-con e-atomic-element e-flexbox-base e-ykrhga-e0000p-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000p" data-interaction-id="e0000p">
+<p class="e-ykrhga-e0000q-s e-paragraph-base" data-interaction-id="e0000q">VX-3 DUAL VCO · 14HP</p>
+<p class="e-ykrhga-e0000r-s e-paragraph-base" data-interaction-id="e0000r">Matched transistor pair, through-zero FM, 0.2 cent drift over an hour. Four trimmers on the back, all of them documented.</p>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-e0000s e-con e-atomic-element e-flexbox-base e-ykrhga-e0000s-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000s" data-interaction-id="e0000s" id="range">
+<div class="elementor-element elementor-element-e0000t e-con e-atomic-element e-flexbox-base e-ykrhga-e0000t-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000t" data-interaction-id="e0000t">
+<div class="elementor-element elementor-element-e0000u e-con e-atomic-element e-flexbox-base e-ykrhga-e0000u-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000u" data-interaction-id="e0000u">
+<p class="e-ykrhga-e0000v-s e-paragraph-base" data-interaction-id="e0000v">01 — THE RANGE</p>
+<h2 class="e-ykrhga-e0000w-s e-heading-base" data-interaction-id="e0000w">The catalogue, with the numbers on the tile</h2>
+<p class="e-ykrhga-e0000x-s e-paragraph-base" data-interaction-id="e0000x">HP width, current draw on both rails, and the price. Nothing hidden behind a datasheet link, because you are planning a case and you need all three at once.</p>
+</div>
+<p class="e-ykrhga-e0000y-s e-paragraph-base" data-interaction-id="e0000y">12 MODULES · 134HP · 640mA / 310mA</p>
+</div>
+<div class="elementor-element elementor-element-e0000z e-con e-atomic-element e-flexbox-base e-ykrhga-e0000z-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000z" data-interaction-id="e0000z">
+</div>
+<div class="elementor-element elementor-element-e00010 e-con e-atomic-element e-grid-base e-ykrhga-e00010-s" data-e-type="e-grid" data-element_type="e-grid" data-id="e00010" data-interaction-id="e00010">
+<div class="elementor-element elementor-element-e00011 e-con e-atomic-element e-flexbox-base e-ykrhga-e00011-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00011" data-interaction-id="e00011">
+<div class="elementor-element elementor-element-e00012 e-con e-atomic-element e-flexbox-base e-ykrhga-e00012-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00012" data-interaction-id="e00012">
+<h3 class="e-ykrhga-e00013-s e-heading-base" data-interaction-id="e00013">VX-1</h3>
+<p class="e-ykrhga-e00014-s e-paragraph-base" data-interaction-id="e00014">8HP</p>
+</div>
+<p class="e-ykrhga-e00015-s e-paragraph-base" data-interaction-id="e00015">Quad Attenuverter</p>
+<div class="elementor-element elementor-element-e00016 e-con e-atomic-element e-flexbox-base e-ykrhga-e00016-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00016" data-interaction-id="e00016">
+</div>
+<p class="e-ykrhga-e00017-s e-paragraph-base" data-interaction-id="e00017">22mA +12V / 18mA -12V</p>
+<p class="e-ykrhga-e00018-s e-paragraph-base" data-interaction-id="e00018">DC-coupled, unity gain at centre detent, four channels normalled down</p>
+<div class="elementor-element elementor-element-e00019 e-con e-atomic-element e-flexbox-base e-ykrhga-e00019-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00019" data-interaction-id="e00019">
+<p class="e-ykrhga-e0001a-s e-paragraph-base" data-interaction-id="e0001a">119</p>
+<p class="e-ykrhga-e0001b-s e-paragraph-base" data-interaction-id="e0001b">EUR · IN STOCK</p>
+</div>
+</div>
+<div class="elementor-element elementor-element-e0001c e-con e-atomic-element e-flexbox-base e-ykrhga-e0001c-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0001c" data-interaction-id="e0001c">
+<div class="elementor-element elementor-element-e0001d e-con e-atomic-element e-flexbox-base e-ykrhga-e0001d-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0001d" data-interaction-id="e0001d">
+<h3 class="e-ykrhga-e0001e-s e-heading-base" data-interaction-id="e0001e">VX-2</h3>
+<p class="e-ykrhga-e0001f-s e-paragraph-base" data-interaction-id="e0001f">6HP</p>
+</div>
+<p class="e-ykrhga-e0001g-s e-paragraph-base" data-interaction-id="e0001g">Noise &amp; Sample</p>
+<div class="elementor-element elementor-element-e0001h e-con e-atomic-element e-flexbox-base e-ykrhga-e0001h-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0001h" data-interaction-id="e0001h">
+</div>
+<p class="e-ykrhga-e0001i-s e-paragraph-base" data-interaction-id="e0001i">24mA +12V / 14mA -12V</p>
+<p class="e-ykrhga-e0001j-s e-paragraph-base" data-interaction-id="e0001j">Transistor avalanche noise, white and pink outputs, clocked S&amp;H</p>
+<div class="elementor-element elementor-element-e0001k e-con e-atomic-element e-flexbox-base e-ykrhga-e0001k-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0001k" data-interaction-id="e0001k">
+<p class="e-ykrhga-e0001l-s e-paragraph-base" data-interaction-id="e0001l">129</p>
+<p class="e-ykrhga-e0001m-s e-paragraph-base" data-interaction-id="e0001m">EUR · IN STOCK</p>
+</div>
+</div>
+<div class="elementor-element elementor-element-e0001n e-con e-atomic-element e-flexbox-base e-ykrhga-e0001n-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0001n" data-interaction-id="e0001n">
+<div class="elementor-element elementor-element-e0001o e-con e-atomic-element e-flexbox-base e-ykrhga-e0001o-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0001o" data-interaction-id="e0001o">
+<h3 class="e-ykrhga-e0001p-s e-heading-base" data-interaction-id="e0001p">VX-3</h3>
+<p class="e-ykrhga-e0001q-s e-paragraph-base" data-interaction-id="e0001q">14HP</p>
+</div>
+<p class="e-ykrhga-e0001r-s e-paragraph-base" data-interaction-id="e0001r">Dual VCO</p>
+<div class="elementor-element elementor-element-e0001s e-con e-atomic-element e-flexbox-base e-ykrhga-e0001s-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0001s" data-interaction-id="e0001s">
+</div>
+<p class="e-ykrhga-e0001t-s e-paragraph-base" data-interaction-id="e0001t">78mA +12V / 32mA -12V</p>
+<p class="e-ykrhga-e0001u-s e-paragraph-base" data-interaction-id="e0001u">Through-zero FM, matched pair, 0.2 cent drift over an hour</p>
+<div class="elementor-element elementor-element-e0001v e-con e-atomic-element e-flexbox-base e-ykrhga-e0001v-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0001v" data-interaction-id="e0001v">
+<p class="e-ykrhga-e0001w-s e-paragraph-base" data-interaction-id="e0001w">289</p>
+<p class="e-ykrhga-e0001x-s e-paragraph-base" data-interaction-id="e0001x">EUR · IN STOCK</p>
+</div>
+</div>
+<div class="elementor-element elementor-element-e0001y e-con e-atomic-element e-flexbox-base e-ykrhga-e0001y-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0001y" data-interaction-id="e0001y">
+<div class="elementor-element elementor-element-e0001z e-con e-atomic-element e-flexbox-base e-ykrhga-e0001z-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0001z" data-interaction-id="e0001z">
+<h3 class="e-ykrhga-e00020-s e-heading-base" data-interaction-id="e00020">VX-4</h3>
+<p class="e-ykrhga-e00021-s e-paragraph-base" data-interaction-id="e00021">10HP</p>
+</div>
+<p class="e-ykrhga-e00022-s e-paragraph-base" data-interaction-id="e00022">Ladder VCF</p>
+<div class="elementor-element elementor-element-e00023 e-con e-atomic-element e-flexbox-base e-ykrhga-e00023-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00023" data-interaction-id="e00023">
+</div>
+<p class="e-ykrhga-e00024-s e-paragraph-base" data-interaction-id="e00024">46mA +12V / 40mA -12V</p>
+<p class="e-ykrhga-e00025-s e-paragraph-base" data-interaction-id="e00025">Four-pole transistor ladder, self-oscillating, gain compensation trim</p>
+<div class="elementor-element elementor-element-e00026 e-con e-atomic-element e-flexbox-base e-ykrhga-e00026-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00026" data-interaction-id="e00026">
+<p class="e-ykrhga-e00027-s e-paragraph-base" data-interaction-id="e00027">219</p>
+<p class="e-ykrhga-e00028-s e-paragraph-base" data-interaction-id="e00028">EUR · IN STOCK</p>
+</div>
+</div>
+<div class="elementor-element elementor-element-e00029 e-con e-atomic-element e-flexbox-base e-ykrhga-e00029-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00029" data-interaction-id="e00029">
+<div class="elementor-element elementor-element-e0002a e-con e-atomic-element e-flexbox-base e-ykrhga-e0002a-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0002a" data-interaction-id="e0002a">
+<h3 class="e-ykrhga-e0002b-s e-heading-base" data-interaction-id="e0002b">VX-5</h3>
+<p class="e-ykrhga-e0002c-s e-paragraph-base" data-interaction-id="e0002c">12HP</p>
+</div>
+<p class="e-ykrhga-e0002d-s e-paragraph-base" data-interaction-id="e0002d">State Variable VCF</p>
+<div class="elementor-element elementor-element-e0002e e-con e-atomic-element e-flexbox-base e-ykrhga-e0002e-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0002e" data-interaction-id="e0002e">
+</div>
+<p class="e-ykrhga-e0002f-s e-paragraph-base" data-interaction-id="e0002f">52mA +12V / 44mA -12V</p>
+<p class="e-ykrhga-e0002g-s e-paragraph-base" data-interaction-id="e0002g">Simultaneous LP, HP, BP and notch, 1V/oct tracking to five octaves</p>
+<div class="elementor-element elementor-element-e0002h e-con e-atomic-element e-flexbox-base e-ykrhga-e0002h-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0002h" data-interaction-id="e0002h">
+<p class="e-ykrhga-e0002i-s e-paragraph-base" data-interaction-id="e0002i">239</p>
+<p class="e-ykrhga-e0002j-s e-paragraph-base" data-interaction-id="e0002j">EUR · IN STOCK</p>
+</div>
+</div>
+<div class="elementor-element elementor-element-e0002k e-con e-atomic-element e-flexbox-base e-ykrhga-e0002k-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0002k" data-interaction-id="e0002k">
+<div class="elementor-element elementor-element-e0002l e-con e-atomic-element e-flexbox-base e-ykrhga-e0002l-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0002l" data-interaction-id="e0002l">
+<h3 class="e-ykrhga-e0002m-s e-heading-base" data-interaction-id="e0002m">VX-6</h3>
+<p class="e-ykrhga-e0002n-s e-paragraph-base" data-interaction-id="e0002n">10HP</p>
+</div>
+<p class="e-ykrhga-e0002o-s e-paragraph-base" data-interaction-id="e0002o">Dual ADSR</p>
+<div class="elementor-element elementor-element-e0002p e-con e-atomic-element e-flexbox-base e-ykrhga-e0002p-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0002p" data-interaction-id="e0002p">
+</div>
+<p class="e-ykrhga-e0002q-s e-paragraph-base" data-interaction-id="e0002q">38mA +12V / 20mA -12V</p>
+<p class="e-ykrhga-e0002r-s e-paragraph-base" data-interaction-id="e0002r">Two envelopes, 0.8ms to 24s, end-of-cycle gate on both channels</p>
+<div class="elementor-element elementor-element-e0002s e-con e-atomic-element e-flexbox-base e-ykrhga-e0002s-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0002s" data-interaction-id="e0002s">
+<p class="e-ykrhga-e0002t-s e-paragraph-base" data-interaction-id="e0002t">169</p>
+<p class="e-ykrhga-e0002u-s e-paragraph-base" data-interaction-id="e0002u">EUR · IN STOCK</p>
+</div>
+</div>
+<div class="elementor-element elementor-element-e0002v e-con e-atomic-element e-flexbox-base e-ykrhga-e0002v-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0002v" data-interaction-id="e0002v">
+<div class="elementor-element elementor-element-e0002w e-con e-atomic-element e-flexbox-base e-ykrhga-e0002w-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0002w" data-interaction-id="e0002w">
+<h3 class="e-ykrhga-e0002x-s e-heading-base" data-interaction-id="e0002x">VX-7</h3>
+<p class="e-ykrhga-e0002y-s e-paragraph-base" data-interaction-id="e0002y">8HP</p>
+</div>
+<p class="e-ykrhga-e0002z-s e-paragraph-base" data-interaction-id="e0002z">Function Generator</p>
+<div class="elementor-element elementor-element-e00030 e-con e-atomic-element e-flexbox-base e-ykrhga-e00030-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00030" data-interaction-id="e00030">
+</div>
+<p class="e-ykrhga-e00031-s e-paragraph-base" data-interaction-id="e00031">44mA +12V / 26mA -12V</p>
+<p class="e-ykrhga-e00032-s e-paragraph-base" data-interaction-id="e00032">Slew, LFO and AD in one, cycles into audio at 6kHz, voltage controlled</p>
+<div class="elementor-element elementor-element-e00033 e-con e-atomic-element e-flexbox-base e-ykrhga-e00033-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00033" data-interaction-id="e00033">
+<p class="e-ykrhga-e00034-s e-paragraph-base" data-interaction-id="e00034">189</p>
+<p class="e-ykrhga-e00035-s e-paragraph-base" data-interaction-id="e00035">EUR · IN STOCK</p>
+</div>
+</div>
+<div class="elementor-element elementor-element-e00036 e-con e-atomic-element e-flexbox-base e-ykrhga-e00036-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00036" data-interaction-id="e00036">
+<div class="elementor-element elementor-element-e00037 e-con e-atomic-element e-flexbox-base e-ykrhga-e00037-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00037" data-interaction-id="e00037">
+<h3 class="e-ykrhga-e00038-s e-heading-base" data-interaction-id="e00038">VX-8</h3>
+<p class="e-ykrhga-e00039-s e-paragraph-base" data-interaction-id="e00039">8HP</p>
+</div>
+<p class="e-ykrhga-e0003a-s e-paragraph-base" data-interaction-id="e0003a">Stereo VCA</p>
+<div class="elementor-element elementor-element-e0003b e-con e-atomic-element e-flexbox-base e-ykrhga-e0003b-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003b" data-interaction-id="e0003b">
+</div>
+<p class="e-ykrhga-e0003c-s e-paragraph-base" data-interaction-id="e0003c">40mA +12V / 34mA -12V</p>
+<p class="e-ykrhga-e0003d-s e-paragraph-base" data-interaction-id="e0003d">Linear and exponential response, discrete output stage, 1dB channel match</p>
+<div class="elementor-element elementor-element-e0003e e-con e-atomic-element e-flexbox-base e-ykrhga-e0003e-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003e" data-interaction-id="e0003e">
+<p class="e-ykrhga-e0003f-s e-paragraph-base" data-interaction-id="e0003f">159</p>
+<p class="e-ykrhga-e0003g-s e-paragraph-base" data-interaction-id="e0003g">EUR · IN STOCK</p>
+</div>
+</div>
+<div class="elementor-element elementor-element-e0003h e-con e-atomic-element e-flexbox-base e-ykrhga-e0003h-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003h" data-interaction-id="e0003h">
+<div class="elementor-element elementor-element-e0003i e-con e-atomic-element e-flexbox-base e-ykrhga-e0003i-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003i" data-interaction-id="e0003i">
+<h3 class="e-ykrhga-e0003j-s e-heading-base" data-interaction-id="e0003j">VX-9</h3>
+<p class="e-ykrhga-e0003k-s e-paragraph-base" data-interaction-id="e0003k">16HP</p>
+</div>
+<p class="e-ykrhga-e0003l-s e-paragraph-base" data-interaction-id="e0003l">Analogue Delay</p>
+<div class="elementor-element elementor-element-e0003m e-con e-atomic-element e-flexbox-base e-ykrhga-e0003m-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003m" data-interaction-id="e0003m">
+</div>
+<p class="e-ykrhga-e0003n-s e-paragraph-base" data-interaction-id="e0003n">92mA +12V / 38mA -12V</p>
+<p class="e-ykrhga-e0003o-s e-paragraph-base" data-interaction-id="e0003o">Two BBD lines, 18ms to 640ms, companding with a defeatable clock filter</p>
+<div class="elementor-element elementor-element-e0003p e-con e-atomic-element e-flexbox-base e-ykrhga-e0003p-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003p" data-interaction-id="e0003p">
+<p class="e-ykrhga-e0003q-s e-paragraph-base" data-interaction-id="e0003q">329</p>
+<p class="e-ykrhga-e0003r-s e-paragraph-base" data-interaction-id="e0003r">EUR · IN STOCK</p>
+</div>
+</div>
+<div class="elementor-element elementor-element-e0003s e-con e-atomic-element e-flexbox-base e-ykrhga-e0003s-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003s" data-interaction-id="e0003s">
+<div class="elementor-element elementor-element-e0003t e-con e-atomic-element e-flexbox-base e-ykrhga-e0003t-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003t" data-interaction-id="e0003t">
+<h3 class="e-ykrhga-e0003u-s e-heading-base" data-interaction-id="e0003u">VX-10</h3>
+<p class="e-ykrhga-e0003v-s e-paragraph-base" data-interaction-id="e0003v">12HP</p>
+</div>
+<p class="e-ykrhga-e0003w-s e-paragraph-base" data-interaction-id="e0003w">Spring Reverb</p>
+<div class="elementor-element elementor-element-e0003x e-con e-atomic-element e-flexbox-base e-ykrhga-e0003x-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003x" data-interaction-id="e0003x">
+</div>
+<p class="e-ykrhga-e0003y-s e-paragraph-base" data-interaction-id="e0003y">74mA +12V / 22mA -12V</p>
+<p class="e-ykrhga-e0003z-s e-paragraph-base" data-interaction-id="e0003z">Three-spring tank, dwell and tone controls, tank socket on the rear</p>
+<div class="elementor-element elementor-element-e00040 e-con e-atomic-element e-flexbox-base e-ykrhga-e00040-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00040" data-interaction-id="e00040">
+<p class="e-ykrhga-e00041-s e-paragraph-base" data-interaction-id="e00041">249</p>
+<p class="e-ykrhga-e00042-s e-paragraph-base" data-interaction-id="e00042">EUR · IN STOCK</p>
+</div>
+</div>
+<div class="elementor-element elementor-element-e00043 e-con e-atomic-element e-flexbox-base e-ykrhga-e00043-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00043" data-interaction-id="e00043">
+<div class="elementor-element elementor-element-e00044 e-con e-atomic-element e-flexbox-base e-ykrhga-e00044-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00044" data-interaction-id="e00044">
+<h3 class="e-ykrhga-e00045-s e-heading-base" data-interaction-id="e00045">VX-11</h3>
+<p class="e-ykrhga-e00046-s e-paragraph-base" data-interaction-id="e00046">20HP</p>
+</div>
+<p class="e-ykrhga-e00047-s e-paragraph-base" data-interaction-id="e00047">Sequencer 8</p>
+<div class="elementor-element elementor-element-e00048 e-con e-atomic-element e-flexbox-base e-ykrhga-e00048-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00048" data-interaction-id="e00048">
+</div>
+<p class="e-ykrhga-e00049-s e-paragraph-base" data-interaction-id="e00049">86mA +12V / 12mA -12V</p>
+<p class="e-ykrhga-e0004a-s e-paragraph-base" data-interaction-id="e0004a">Eight steps, two rows, analogue gate bus and a hand-wired step switch</p>
+<div class="elementor-element elementor-element-e0004b e-con e-atomic-element e-flexbox-base e-ykrhga-e0004b-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004b" data-interaction-id="e0004b">
+<p class="e-ykrhga-e0004c-s e-paragraph-base" data-interaction-id="e0004c">279</p>
+<p class="e-ykrhga-e0004d-s e-paragraph-base" data-interaction-id="e0004d">EUR · IN STOCK</p>
+</div>
+</div>
+<div class="elementor-element elementor-element-e0004e e-con e-atomic-element e-flexbox-base e-ykrhga-e0004e-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004e" data-interaction-id="e0004e">
+<div class="elementor-element elementor-element-e0004f e-con e-atomic-element e-flexbox-base e-ykrhga-e0004f-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004f" data-interaction-id="e0004f">
+<h3 class="e-ykrhga-e0004g-s e-heading-base" data-interaction-id="e0004g">VX-12</h3>
+<p class="e-ykrhga-e0004h-s e-paragraph-base" data-interaction-id="e0004h">10HP</p>
+</div>
+<p class="e-ykrhga-e0004i-s e-paragraph-base" data-interaction-id="e0004i">Output &amp; Cue</p>
+<div class="elementor-element elementor-element-e0004j e-con e-atomic-element e-flexbox-base e-ykrhga-e0004j-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004j" data-interaction-id="e0004j">
+</div>
+<p class="e-ykrhga-e0004k-s e-paragraph-base" data-interaction-id="e0004k">44mA +12V / 10mA -12V</p>
+<p class="e-ykrhga-e0004l-s e-paragraph-base" data-interaction-id="e0004l">Balanced outs on the rear, cue bus, and a headphone amp that drives 32 ohm</p>
+<div class="elementor-element elementor-element-e0004m e-con e-atomic-element e-flexbox-base e-ykrhga-e0004m-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004m" data-interaction-id="e0004m">
+<p class="e-ykrhga-e0004n-s e-paragraph-base" data-interaction-id="e0004n">179</p>
+<p class="e-ykrhga-e0004o-s e-paragraph-base" data-interaction-id="e0004o">EUR · IN STOCK</p>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-e0004p e-con e-atomic-element e-flexbox-base e-ykrhga-e0004p-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004p" data-interaction-id="e0004p">
+<div class="elementor-element elementor-element-e0004q e-con e-atomic-element e-flexbox-base e-ykrhga-e0004q-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004q" data-interaction-id="e0004q">
+<p class="e-ykrhga-e0004r-s e-paragraph-base" data-interaction-id="e0004r">02 — SIGNAL PATH</p>
+<h2 class="e-ykrhga-e0004s-s e-heading-base" data-interaction-id="e0004s">What is analogue, and what is not</h2>
+<p class="e-ykrhga-e0004t-s e-paragraph-base" data-interaction-id="e0004t">The audio path is entirely analogue. The only digital parts are the tuning helper and the preset memory, and both can be bypassed with a jumper on the back.</p>
+<p class="e-ykrhga-e0004u-s e-paragraph-base" data-interaction-id="e0004u">We say this plainly because the word analogue gets stretched. No DSP sits between your input jack and your output jack on any module in the range — measure it if you like, the test points are marked on the board.</p>
+</div>
+<div class="elementor-element elementor-element-e0004v e-con e-atomic-element e-flexbox-base e-ykrhga-e0004v-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004v" data-interaction-id="e0004v">
+<div class="elementor-element elementor-element-e0004w e-con e-atomic-element e-flexbox-base e-ykrhga-e0004w-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004w" data-interaction-id="e0004w">
+<div class="elementor-element elementor-element-e0004x e-con e-atomic-element e-flexbox-base e-ykrhga-e0004x-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004x" data-interaction-id="e0004x">
+<p class="e-ykrhga-e0004y-s e-paragraph-base" data-interaction-id="e0004y">ANALOGUE</p>
+<h3 class="e-ykrhga-e0004z-s e-heading-base" data-interaction-id="e0004z">Oscillator cores</h3>
+</div>
+<p class="e-ykrhga-e00050-s e-paragraph-base" data-interaction-id="e00050">Discrete, matched pair, temperature compensated</p>
+</div>
+<div class="elementor-element elementor-element-e00051 e-con e-atomic-element e-flexbox-base e-ykrhga-e00051-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00051" data-interaction-id="e00051">
+<div class="elementor-element elementor-element-e00052 e-con e-atomic-element e-flexbox-base e-ykrhga-e00052-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00052" data-interaction-id="e00052">
+<p class="e-ykrhga-e00053-s e-paragraph-base" data-interaction-id="e00053">ANALOGUE</p>
+<h3 class="e-ykrhga-e00054-s e-heading-base" data-interaction-id="e00054">Filters and VCAs</h3>
+</div>
+<p class="e-ykrhga-e00055-s e-paragraph-base" data-interaction-id="e00055">Transistor ladder and OTA, no lookup tables anywhere</p>
+</div>
+<div class="elementor-element elementor-element-e00056 e-con e-atomic-element e-flexbox-base e-ykrhga-e00056-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00056" data-interaction-id="e00056">
+<div class="elementor-element elementor-element-e00057 e-con e-atomic-element e-flexbox-base e-ykrhga-e00057-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00057" data-interaction-id="e00057">
+<p class="e-ykrhga-e00058-s e-paragraph-base" data-interaction-id="e00058">ANALOGUE</p>
+<h3 class="e-ykrhga-e00059-s e-heading-base" data-interaction-id="e00059">Envelopes and LFOs</h3>
+</div>
+<p class="e-ykrhga-e0005a-s e-paragraph-base" data-interaction-id="e0005a">RC timing, voltage controlled, sub-millisecond attack</p>
+</div>
+<div class="elementor-element elementor-element-e0005b e-con e-atomic-element e-flexbox-base e-ykrhga-e0005b-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0005b" data-interaction-id="e0005b">
+<div class="elementor-element elementor-element-e0005c e-con e-atomic-element e-flexbox-base e-ykrhga-e0005c-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0005c" data-interaction-id="e0005c">
+<p class="e-ykrhga-e0005d-s e-paragraph-base" data-interaction-id="e0005d">DIGITAL</p>
+<h3 class="e-ykrhga-e0005e-s e-heading-base" data-interaction-id="e0005e">Tuning helper</h3>
+</div>
+<p class="e-ykrhga-e0005f-s e-paragraph-base" data-interaction-id="e0005f">A microcontroller reading pitch. Jumper JP1 removes it.</p>
+</div>
+<div class="elementor-element elementor-element-e0005g e-con e-atomic-element e-flexbox-base e-ykrhga-e0005g-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0005g" data-interaction-id="e0005g">
+<div class="elementor-element elementor-element-e0005h e-con e-atomic-element e-flexbox-base e-ykrhga-e0005h-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0005h" data-interaction-id="e0005h">
+<p class="e-ykrhga-e0005i-s e-paragraph-base" data-interaction-id="e0005i">DIGITAL</p>
+<h3 class="e-ykrhga-e0005j-s e-heading-base" data-interaction-id="e0005j">Preset memory</h3>
+</div>
+<p class="e-ykrhga-e0005k-s e-paragraph-base" data-interaction-id="e0005k">Stores knob positions only. Jumper JP2 removes it.</p>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-e0005l e-con e-atomic-element e-flexbox-base e-ykrhga-e0005l-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0005l" data-interaction-id="e0005l">
+<div class="elementor-element elementor-element-e0005m e-con e-atomic-element e-flexbox-base e-ykrhga-e0005m-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0005m" data-interaction-id="e0005m">
+<img alt="Soldering a Voltmoor VX board in the Tallinn workshop" class="e-image-base e-ykrhga-e0005n-s" data-interaction-id="e0005n" decoding="async" height="768" id="262" src="../../_frozen/b2323adc676f74d5.jpg" srcset="../../_frozen/b2323adc676f74d5.jpg 1024w, ../../_frozen/8f290fa99274a8b8.jpg 300w, ../../_frozen/5fc356e0145378ad.jpg 768w" width="1024"/>
+</div>
+<div class="elementor-element elementor-element-e0005o e-con e-atomic-element e-flexbox-base e-ykrhga-e0005o-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0005o" data-interaction-id="e0005o">
+<p class="e-ykrhga-e0005p-s e-paragraph-base" data-interaction-id="e0005p">03 — OPEN BY DEFAULT</p>
+<h2 class="e-ykrhga-e0005q-s e-heading-base" data-interaction-id="e0005q">Open schematics and the repair policy</h2>
+<p class="e-ykrhga-e0005r-s e-paragraph-base" data-interaction-id="e0005r">Full schematics, board files and calibration procedures are published for every module, including discontinued ones. Repair it yourself, or send it to us at cost plus postage forever.</p>
+<div class="elementor-element elementor-element-e0005s e-con e-atomic-element e-flexbox-base e-ykrhga-e0005s-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0005s" data-interaction-id="e0005s">
+</div>
+<div class="elementor-element elementor-element-e0005t e-con e-atomic-element e-flexbox-base e-ykrhga-e0005t-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0005t" data-interaction-id="e0005t">
+<div class="elementor-element elementor-element-e0005u e-con e-atomic-element e-flexbox-base e-ykrhga-e0005u-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0005u" data-interaction-id="e0005u">
+<p class="e-ykrhga-e0005v-s e-paragraph-base" data-interaction-id="e0005v">SCHEMATIC PDF</p>
+<p class="e-ykrhga-e0005w-s e-paragraph-base" data-interaction-id="e0005w">Every revision, including the two we got wrong in 2017</p>
+</div>
+<div class="elementor-element elementor-element-e0005x e-con e-atomic-element e-flexbox-base e-ykrhga-e0005x-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0005x" data-interaction-id="e0005x">
+<p class="e-ykrhga-e0005y-s e-paragraph-base" data-interaction-id="e0005y">GERBERS AND BOM</p>
+<p class="e-ykrhga-e0005z-s e-paragraph-base" data-interaction-id="e0005z">Board files and a sourced parts list with substitutions marked</p>
+</div>
+<div class="elementor-element elementor-element-e00060 e-con e-atomic-element e-flexbox-base e-ykrhga-e00060-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00060" data-interaction-id="e00060">
+<p class="e-ykrhga-e00061-s e-paragraph-base" data-interaction-id="e00061">REPAIR AT COST</p>
+<p class="e-ykrhga-e00062-s e-paragraph-base" data-interaction-id="e00062">Parts plus postage, no labour charge, no expiry date</p>
+</div>
+<div class="elementor-element elementor-element-e00063 e-con e-atomic-element e-flexbox-base e-ykrhga-e00063-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00063" data-interaction-id="e00063">
+<p class="e-ykrhga-e00064-s e-paragraph-base" data-interaction-id="e00064">SPARES FOREVER</p>
+<p class="e-ykrhga-e00065-s e-paragraph-base" data-interaction-id="e00065">Panels, knobs and matched transistor pairs sold individually</p>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-e00066 e-con e-atomic-element e-flexbox-base e-ykrhga-e00066-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00066" data-interaction-id="e00066">
+<div class="elementor-element elementor-element-e00067 e-con e-atomic-element e-flexbox-base e-ykrhga-e00067-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00067" data-interaction-id="e00067">
+<div class="elementor-element elementor-element-e00068 e-con e-atomic-element e-flexbox-base e-ykrhga-e00068-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00068" data-interaction-id="e00068">
+<p class="e-ykrhga-e00069-s e-paragraph-base" data-interaction-id="e00069">04 — CALIBRATION</p>
+<h2 class="e-ykrhga-e0006a-s e-heading-base" data-interaction-id="e0006a">Eleven minutes, at your desk</h2>
+</div>
+<p class="e-ykrhga-e0006b-s e-paragraph-base" data-interaction-id="e0006b">Eleven minutes with a multimeter and a tuner, four trimmers, and a printed card that walks you through it. No proprietary jig, no returning it to the factory.</p>
+</div>
+<div class="elementor-element elementor-element-e0006c e-con e-atomic-element e-grid-base e-ykrhga-e0006c-s" data-e-type="e-grid" data-element_type="e-grid" data-id="e0006c" data-interaction-id="e0006c">
+<div class="elementor-element elementor-element-e0006d e-con e-atomic-element e-flexbox-base e-ykrhga-e0006d-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0006d" data-interaction-id="e0006d">
+<p class="e-ykrhga-e0006e-s e-paragraph-base" data-interaction-id="e0006e">00:00</p>
+<h3 class="e-ykrhga-e0006f-s e-heading-base" data-interaction-id="e0006f">Warm up</h3>
+<p class="e-ykrhga-e0006g-s e-paragraph-base" data-interaction-id="e0006g">Power the module in the case and leave it for three minutes. Cold trimming is why people think analogue drifts.</p>
+</div>
+<div class="elementor-element elementor-element-e0006h e-con e-atomic-element e-flexbox-base e-ykrhga-e0006h-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0006h" data-interaction-id="e0006h">
+<p class="e-ykrhga-e0006i-s e-paragraph-base" data-interaction-id="e0006i">03:00</p>
+<h3 class="e-ykrhga-e0006j-s e-heading-base" data-interaction-id="e0006j">Scale, TR1</h3>
+<p class="e-ykrhga-e0006k-s e-paragraph-base" data-interaction-id="e0006k">Play C2 and C4, adjust until the octave is exact on the tuner. Two passes, it converges.</p>
+</div>
+<div class="elementor-element elementor-element-e0006l e-con e-atomic-element e-flexbox-base e-ykrhga-e0006l-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0006l" data-interaction-id="e0006l">
+<p class="e-ykrhga-e0006m-s e-paragraph-base" data-interaction-id="e0006m">07:00</p>
+<h3 class="e-ykrhga-e0006n-s e-heading-base" data-interaction-id="e0006n">Offset, TR2</h3>
+<p class="e-ykrhga-e0006o-s e-paragraph-base" data-interaction-id="e0006o">Set the low reference against the meter at the marked test point. One turn, rarely more.</p>
+</div>
+<div class="elementor-element elementor-element-e0006p e-con e-atomic-element e-flexbox-base e-ykrhga-e0006p-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0006p" data-interaction-id="e0006p">
+<p class="e-ykrhga-e0006q-s e-paragraph-base" data-interaction-id="e0006q">09:00</p>
+<h3 class="e-ykrhga-e0006r-s e-heading-base" data-interaction-id="e0006r">Shape, TR3 and TR4</h3>
+<p class="e-ykrhga-e0006s-s e-paragraph-base" data-interaction-id="e0006s">Trim the triangle apex and the pulse symmetry by ear or by scope. Write the date on the card.</p>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-e0006t e-con e-atomic-element e-flexbox-base e-ykrhga-e0006t-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0006t" data-interaction-id="e0006t">
+<div class="elementor-element elementor-element-e0006u e-con e-atomic-element e-flexbox-base e-ykrhga-e0006u-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0006u" data-interaction-id="e0006u">
+<p class="e-ykrhga-e0006v-s e-paragraph-base" data-interaction-id="e0006v">05 — DEMO PATCHES</p>
+<h2 class="e-ykrhga-e0006w-s e-heading-base" data-interaction-id="e0006w">Six patches, written out in full</h2>
+<p class="e-ykrhga-e0006x-s e-paragraph-base" data-interaction-id="e0006x">Not videos. Descriptions you can follow with cables in your hand, using modules you can see on the tiles above.</p>
+</div>
+<div class="elementor-element elementor-element-e0006y e-con e-atomic-element e-grid-base e-ykrhga-e0006y-s" data-e-type="e-grid" data-element_type="e-grid" data-id="e0006y" data-interaction-id="e0006y">
+<div class="elementor-element elementor-element-e0006z e-con e-atomic-element e-flexbox-base e-ykrhga-e0006z-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0006z" data-interaction-id="e0006z">
+<div class="elementor-element elementor-element-e00070 e-con e-atomic-element e-flexbox-base e-ykrhga-e00070-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00070" data-interaction-id="e00070">
+</div>
+<div class="elementor-element elementor-element-e00071 e-con e-atomic-element e-flexbox-base e-ykrhga-e00071-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00071" data-interaction-id="e00071">
+<p class="e-ykrhga-e00072-s e-paragraph-base" data-interaction-id="e00072">01</p>
+<h3 class="e-ykrhga-e00073-s e-heading-base" data-interaction-id="e00073">Through-zero drone</h3>
+</div>
+<p class="e-ykrhga-e00074-s e-paragraph-base" data-interaction-id="e00074">VX-3 · VX-5 · VX-10</p>
+<p class="e-ykrhga-e00075-s e-paragraph-base" data-interaction-id="e00075">Both VCO cores at 55Hz, one modulating the other through zero, into the state variable filter in notch and out to the spring tank at full dwell. Sits still for twenty minutes and never repeats.</p>
+</div>
+<div class="elementor-element elementor-element-e00076 e-con e-atomic-element e-flexbox-base e-ykrhga-e00076-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00076" data-interaction-id="e00076">
+<div class="elementor-element elementor-element-e00077 e-con e-atomic-element e-flexbox-base e-ykrhga-e00077-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00077" data-interaction-id="e00077">
+</div>
+<div class="elementor-element elementor-element-e00078 e-con e-atomic-element e-flexbox-base e-ykrhga-e00078-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00078" data-interaction-id="e00078">
+<p class="e-ykrhga-e00079-s e-paragraph-base" data-interaction-id="e00079">02</p>
+<h3 class="e-ykrhga-e0007a-s e-heading-base" data-interaction-id="e0007a">Ladder kick</h3>
+</div>
+<p class="e-ykrhga-e0007b-s e-paragraph-base" data-interaction-id="e0007b">VX-4 · VX-6 · VX-8</p>
+<p class="e-ykrhga-e0007c-s e-paragraph-base" data-interaction-id="e0007c">Self-oscillate the ladder, pitch it with a fast decay envelope, and shape the tail on the exponential VCA. Tune the resonance trimmer for the body you want.</p>
+</div>
+<div class="elementor-element elementor-element-e0007d e-con e-atomic-element e-flexbox-base e-ykrhga-e0007d-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0007d" data-interaction-id="e0007d">
+<div class="elementor-element elementor-element-e0007e e-con e-atomic-element e-flexbox-base e-ykrhga-e0007e-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0007e" data-interaction-id="e0007e">
+</div>
+<div class="elementor-element elementor-element-e0007f e-con e-atomic-element e-flexbox-base e-ykrhga-e0007f-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0007f" data-interaction-id="e0007f">
+<p class="e-ykrhga-e0007g-s e-paragraph-base" data-interaction-id="e0007g">03</p>
+<h3 class="e-ykrhga-e0007h-s e-heading-base" data-interaction-id="e0007h">Clocked sample chatter</h3>
+</div>
+<p class="e-ykrhga-e0007i-s e-paragraph-base" data-interaction-id="e0007i">VX-2 · VX-11 · VX-3</p>
+<p class="e-ykrhga-e0007j-s e-paragraph-base" data-interaction-id="e0007j">Sample and hold on white noise, clocked from the sequencer gate bus, into the second VCO exponential input. Attenuvert it down until it is pitch and not noise.</p>
+</div>
+<div class="elementor-element elementor-element-e0007k e-con e-atomic-element e-flexbox-base e-ykrhga-e0007k-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0007k" data-interaction-id="e0007k">
+<div class="elementor-element elementor-element-e0007l e-con e-atomic-element e-flexbox-base e-ykrhga-e0007l-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0007l" data-interaction-id="e0007l">
+</div>
+<div class="elementor-element elementor-element-e0007m e-con e-atomic-element e-flexbox-base e-ykrhga-e0007m-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0007m" data-interaction-id="e0007m">
+<p class="e-ykrhga-e0007n-s e-paragraph-base" data-interaction-id="e0007n">04</p>
+<h3 class="e-ykrhga-e0007o-s e-heading-base" data-interaction-id="e0007o">Two-hand generative</h3>
+</div>
+<p class="e-ykrhga-e0007p-s e-paragraph-base" data-interaction-id="e0007p">VX-7 · VX-1 · VX-5</p>
+<p class="e-ykrhga-e0007q-s e-paragraph-base" data-interaction-id="e0007q">Two function generators cycling at unrelated rates, cross-patched through the attenuverter to each other, sweeping the filter cutoff from both directions at once.</p>
+</div>
+<div class="elementor-element elementor-element-e0007r e-con e-atomic-element e-flexbox-base e-ykrhga-e0007r-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0007r" data-interaction-id="e0007r">
+<div class="elementor-element elementor-element-e0007s e-con e-atomic-element e-flexbox-base e-ykrhga-e0007s-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0007s" data-interaction-id="e0007s">
+</div>
+<div class="elementor-element elementor-element-e0007t e-con e-atomic-element e-flexbox-base e-ykrhga-e0007t-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0007t" data-interaction-id="e0007t">
+<p class="e-ykrhga-e0007u-s e-paragraph-base" data-interaction-id="e0007u">05</p>
+<h3 class="e-ykrhga-e0007v-s e-heading-base" data-interaction-id="e0007v">BBD feedback bed</h3>
+</div>
+<p class="e-ykrhga-e0007w-s e-paragraph-base" data-interaction-id="e0007w">VX-9 · VX-8 · VX-12</p>
+<p class="e-ykrhga-e0007x-s e-paragraph-base" data-interaction-id="e0007x">Delay output back into its own input past unity, VCA in the loop to keep it from running away, cue bus so you can hear it building before it hits the mix.</p>
+</div>
+<div class="elementor-element elementor-element-e0007y e-con e-atomic-element e-flexbox-base e-ykrhga-e0007y-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0007y" data-interaction-id="e0007y">
+<div class="elementor-element elementor-element-e0007z e-con e-atomic-element e-flexbox-base e-ykrhga-e0007z-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0007z" data-interaction-id="e0007z">
+</div>
+<div class="elementor-element elementor-element-e00080 e-con e-atomic-element e-flexbox-base e-ykrhga-e00080-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00080" data-interaction-id="e00080">
+<p class="e-ykrhga-e00081-s e-paragraph-base" data-interaction-id="e00081">06</p>
+<h3 class="e-ykrhga-e00082-s e-heading-base" data-interaction-id="e00082">West coast bass</h3>
+</div>
+<p class="e-ykrhga-e00083-s e-paragraph-base" data-interaction-id="e00083">VX-3 · VX-7 · VX-8</p>
+<p class="e-ykrhga-e00084-s e-paragraph-base" data-interaction-id="e00084">Single VCO into the function generator used as a lowpass gate substitute, struck by the sequencer gates. Short strikes, long strikes, one knob between them.</p>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-e00085 e-con e-atomic-element e-flexbox-base e-ykrhga-e00085-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00085" data-interaction-id="e00085" id="power">
+<div class="elementor-element elementor-element-e00086 e-con e-atomic-element e-flexbox-base e-ykrhga-e00086-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00086" data-interaction-id="e00086">
+<p class="e-ykrhga-e00087-s e-paragraph-base" data-interaction-id="e00087">06 — POWER BUDGET</p>
+<h2 class="e-ykrhga-e00088-s e-heading-base" data-interaction-id="e00088">Will it fit your case?</h2>
+<p class="e-ykrhga-e00089-s e-paragraph-base" data-interaction-id="e00089">The whole twelve-module range draws 640mA on +12V and 310mA on -12V. Type your case into the calculator and it will tell you honestly if you are cutting it fine.</p>
+<div class="elementor-element elementor-element-e0008a e-con e-atomic-element e-flexbox-base e-ykrhga-e0008a-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0008a" data-interaction-id="e0008a">
+<div class="elementor-element elementor-element-e0008b e-con e-atomic-element e-flexbox-base e-ykrhga-e0008b-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0008b" data-interaction-id="e0008b">
+<p class="e-ykrhga-e0008c-s e-paragraph-base" data-interaction-id="e0008c">CASE</p>
+<p class="e-ykrhga-e0008d-s e-paragraph-base" data-interaction-id="e0008d">SUPPLY</p>
+<p class="e-ykrhga-e0008e-s e-paragraph-base" data-interaction-id="e0008e">VERDICT</p>
+</div>
+<div class="elementor-element elementor-element-e0008f e-con e-atomic-element e-flexbox-base e-ykrhga-e0008f-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0008f" data-interaction-id="e0008f">
+<p class="e-ykrhga-e0008g-s e-paragraph-base" data-interaction-id="e0008g">84HP skiff, 1.4A supply</p>
+<p class="e-ykrhga-e0008h-s e-paragraph-base" data-interaction-id="e0008h">1400 / 1200mA</p>
+<p class="e-ykrhga-e0008i-s e-paragraph-base" data-interaction-id="e0008i">Six modules comfortably</p>
+</div>
+<div class="elementor-element elementor-element-e0008j e-con e-atomic-element e-flexbox-base e-ykrhga-e0008j-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0008j" data-interaction-id="e0008j">
+<p class="e-ykrhga-e0008k-s e-paragraph-base" data-interaction-id="e0008k">104HP two-row, 2A supply</p>
+<p class="e-ykrhga-e0008l-s e-paragraph-base" data-interaction-id="e0008l">2000 / 1500mA</p>
+<p class="e-ykrhga-e0008m-s e-paragraph-base" data-interaction-id="e0008m">The full range, headroom to spare</p>
+</div>
+<div class="elementor-element elementor-element-e0008n e-con e-atomic-element e-flexbox-base e-ykrhga-e0008n-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0008n" data-interaction-id="e0008n">
+<p class="e-ykrhga-e0008o-s e-paragraph-base" data-interaction-id="e0008o">84HP with a 1A brick</p>
+<p class="e-ykrhga-e0008p-s e-paragraph-base" data-interaction-id="e0008p">1000 / 500mA</p>
+<p class="e-ykrhga-e0008q-s e-paragraph-base" data-interaction-id="e0008q">Cutting it fine past nine modules</p>
+</div>
+<div class="elementor-element elementor-element-e0008r e-con e-atomic-element e-flexbox-base e-ykrhga-e0008r-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0008r" data-interaction-id="e0008r">
+<p class="e-ykrhga-e0008s-s e-paragraph-base" data-interaction-id="e0008s">62HP portable, 0.6A supply</p>
+<p class="e-ykrhga-e0008t-s e-paragraph-base" data-interaction-id="e0008t">600 / 300mA</p>
+<p class="e-ykrhga-e0008u-s e-paragraph-base" data-interaction-id="e0008u">Four modules, and skip the delay</p>
+</div>
+</div>
+<p class="e-ykrhga-e0008v-s e-paragraph-base" data-interaction-id="e0008v">The calculator adds a twenty percent margin by default, because a supply running at its rating all evening is a supply that gets warm and starts adding hum to your VCAs.</p>
+</div>
+<div class="elementor-element elementor-element-e0008w e-con e-atomic-element e-flexbox-base e-ykrhga-e0008w-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0008w" data-interaction-id="e0008w">
+<img alt="Eurorack case patched with Voltmoor VX modules" class="e-image-base e-ykrhga-e0008x-s" data-interaction-id="e0008x" decoding="async" height="576" id="261" src="../../_frozen/f05978934940746c.jpg" srcset="../../_frozen/f05978934940746c.jpg 1024w, ../../_frozen/51d2f8e3bb6e32ca.jpg 300w, ../../_frozen/1374cc1fa9a8479e.jpg 768w" width="1024"/>
+</div>
+</div>
+<div class="elementor-element elementor-element-e0008y e-con e-atomic-element e-flexbox-base e-ykrhga-e0008y-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0008y" data-interaction-id="e0008y">
+<div class="elementor-element elementor-element-e0008z e-con e-atomic-element e-flexbox-base e-ykrhga-e0008z-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0008z" data-interaction-id="e0008z">
+<p class="e-ykrhga-e00090-s e-paragraph-base" data-interaction-id="e00090">07 — KIT OR ASSEMBLED</p>
+<h2 class="e-ykrhga-e00091-s e-heading-base" data-interaction-id="e00091">Which one should you buy</h2>
+<p class="e-ykrhga-e00092-s e-paragraph-base" data-interaction-id="e00092">Kits are 35 percent cheaper and take about four hours. Buy the kit if you have soldered before. Buy assembled if this would be your first board and you want to make music this month.</p>
+</div>
+<div class="elementor-element elementor-element-e00093 e-con e-atomic-element e-grid-base e-ykrhga-e00093-s" data-e-type="e-grid" data-element_type="e-grid" data-id="e00093" data-interaction-id="e00093">
+<div class="elementor-element elementor-element-e00094 e-con e-atomic-element e-flexbox-base e-ykrhga-e00094-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00094" data-interaction-id="e00094">
+<div class="elementor-element elementor-element-e00095 e-con e-atomic-element e-flexbox-base e-ykrhga-e00095-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00095" data-interaction-id="e00095">
+<h3 class="e-ykrhga-e00096-s e-heading-base" data-interaction-id="e00096">KIT</h3>
+<p class="e-ykrhga-e00097-s e-paragraph-base" data-interaction-id="e00097">-35% · ~4 HOURS</p>
+</div>
+<div class="elementor-element elementor-element-e00098 e-con e-atomic-element e-flexbox-base e-ykrhga-e00098-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00098" data-interaction-id="e00098">
+</div>
+<p class="e-ykrhga-e00099-s e-paragraph-base" data-interaction-id="e00099">Through-hole throughout, no pre-placed SMD to be scared of</p>
+<p class="e-ykrhga-e0009a-s e-paragraph-base" data-interaction-id="e0009a">Sorted and labelled parts, printed build guide, spare trimmers</p>
+<p class="e-ykrhga-e0009b-s e-paragraph-base" data-interaction-id="e0009b">Matched transistor pairs come pre-matched and taped in order</p>
+<p class="e-ykrhga-e0009c-s e-paragraph-base" data-interaction-id="e0009c">One free replacement board if you cook one, no questions</p>
+<p class="e-ykrhga-e0009d-s e-paragraph-base" data-interaction-id="e0009d">Buy the kit if you have soldered before.</p>
+</div>
+<div class="elementor-element elementor-element-e0009e e-con e-atomic-element e-flexbox-base e-ykrhga-e0009e-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0009e" data-interaction-id="e0009e">
+<div class="elementor-element elementor-element-e0009f e-con e-atomic-element e-flexbox-base e-ykrhga-e0009f-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0009f" data-interaction-id="e0009f">
+<h3 class="e-ykrhga-e0009g-s e-heading-base" data-interaction-id="e0009g">ASSEMBLED</h3>
+<p class="e-ykrhga-e0009h-s e-paragraph-base" data-interaction-id="e0009h">CALIBRATED · TESTED</p>
+</div>
+<div class="elementor-element elementor-element-e0009i e-con e-atomic-element e-flexbox-base e-ykrhga-e0009i-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0009i" data-interaction-id="e0009i">
+</div>
+<p class="e-ykrhga-e0009j-s e-paragraph-base" data-interaction-id="e0009j">Built, burned in for 24 hours and calibrated on our bench</p>
+<p class="e-ykrhga-e0009k-s e-paragraph-base" data-interaction-id="e0009k">Same schematic, same BOM, same repair policy, same trimmers</p>
+<p class="e-ykrhga-e0009l-s e-paragraph-base" data-interaction-id="e0009l">Ships in 2 days from Estonia with the calibration card signed</p>
+<p class="e-ykrhga-e0009m-s e-paragraph-base" data-interaction-id="e0009m">Two year warranty, and repair at cost after that forever</p>
+<p class="e-ykrhga-e0009n-s e-paragraph-base" data-interaction-id="e0009n">Buy assembled if this would be your first board.</p>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-e0009o e-con e-atomic-element e-flexbox-base e-ykrhga-e0009o-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0009o" data-interaction-id="e0009o">
+<p class="e-ykrhga-e0009p-s e-paragraph-base" data-interaction-id="e0009p">08 — ORDER</p>
+<h2 class="e-ykrhga-e0009q-s e-heading-base" data-interaction-id="e0009q">Order direct, or find a dealer</h2>
+<p class="e-ykrhga-e0009r-s e-paragraph-base" data-interaction-id="e0009r">Ships from Estonia in 2 days. Dealers in nine countries listed with stock levels updated nightly.</p>
+<div class="elementor-element elementor-element-e0009s e-con e-atomic-element e-flexbox-base e-ykrhga-e0009s-s" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0009s" data-interaction-id="e0009s">
+<p class="e-ykrhga-e0009t-s e-paragraph-base" data-interaction-id="e0009t"><a class="e-paragraph-link-base" href="#range" target="_self">
+		See the range
+	</a></p>
+<p class="e-ykrhga-e0009u-s e-paragraph-base" data-interaction-id="e0009u"><a class="e-paragraph-link-base" href="#power" target="_self">
+		Find a dealer
+	</a></p>
+</div>
+<p class="e-ykrhga-e0009v-s e-paragraph-base" data-interaction-id="e0009v">VOLTMOOR VX · TALLINN, ESTONIA · SCHEMATICS FOR EVERY MODULE, INCLUDING THE DISCONTINUED ONES</p>
+</div>
+</div>
+<div class="elementor-element elementor-element-e0009w elementor-widget elementor-widget-html" data-e-type="widget" data-element_type="widget" data-id="e0009w" data-widget_type="html.default">
+<script data-exjsx-motion-guard="">(function(){if(!matchMedia("(prefers-reduced-motion: reduce)").matches)return;var z=function(){var s=document.getElementById("elementor-interactions-data");return!!(s&&s.textContent!=="[]")&&(s.textContent="[]",!0)};if(!z()){var o=new MutationObserver(function(){z()&&o.disconnect()});o.observe(document.documentElement,{childList:true,subtree:true});addEventListener("DOMContentLoaded",function(){z();o.disconnect()})}})()</script> </div>
+</div>
+<script id="elementor-interactions-data" type="application/json">[{"elementId":"e00010","dataId":"e00010","interactions":[{"$$type":"interaction-item","value":{"interaction_id":{"$$type":"string","value":"ix-0"},"trigger":{"$$type":"string","value":"scrollIn"},"animation":{"$$type":"animation-preset-props","value":{"effect":{"$$type":"string","value":"fade"},"type":{"$$type":"string","value":"in"},"direction":{"$$type":"string","value":""},"timing_config":{"$$type":"timing-config","value":{"duration":{"$$type":"size","value":{"unit":"ms","size":500}},"delay":{"$$type":"size","value":{"unit":"ms","size":0}}}}}}}}]},{"elementId":"e0006c","dataId":"e0006c","interactions":[{"$$type":"interaction-item","value":{"interaction_id":{"$$type":"string","value":"ix-1"},"trigger":{"$$type":"string","value":"scrollIn"},"animation":{"$$type":"animation-preset-props","value":{"effect":{"$$type":"string","value":"fade"},"type":{"$$type":"string","value":"in"},"direction":{"$$type":"string","value":""},"timing_config":{"$$type":"timing-config","value":{"duration":{"$$type":"size","value":{"unit":"ms","size":500}},"delay":{"$$type":"size","value":{"unit":"ms","size":0}}}}}}}}]},{"elementId":"e0006y","dataId":"e0006y","interactions":[{"$$type":"interaction-item","value":{"interaction_id":{"$$type":"string","value":"ix-2"},"trigger":{"$$type":"string","value":"scrollIn"},"animation":{"$$type":"animation-preset-props","value":{"effect":{"$$type":"string","value":"fade"},"type":{"$$type":"string","value":"in"},"direction":{"$$type":"string","value":""},"timing_config":{"$$type":"timing-config","value":{"duration":{"$$type":"size","value":{"unit":"ms","size":500}},"delay":{"$$type":"size","value":{"unit":"ms","size":0}}}}}}}}]}]</script><script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/twentytwentyfive/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script>
+				( () => {
+					const lazyloadRunObserver = () => {
+						const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+						const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+							entries.forEach( ( entry ) => {
+								if ( entry.isIntersecting ) {
+									let lazyloadBackground = entry.target;
+									if( lazyloadBackground ) {
+										lazyloadBackground.classList.add( 'e-lazyloaded' );
+									}
+									lazyloadBackgroundObserver.unobserve( entry.target );
+								}
+							});
+						}, { rootMargin: '200px 0px 200px 0px' } );
+						lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+							lazyloadBackgroundObserver.observe( lazyloadBackground );
+						} );
+					};
+					const events = [
+						'DOMContentLoaded',
+						'elementor/lazyload/observe',
+					];
+					events.forEach( ( event ) => {
+						document.addEventListener( event, lazyloadRunObserver );
+					} );
+				} )();
+			</script>
+<script id="elementor-webpack-runtime-js" src="../../_frozen/0abc710caab4a8e0.js"></script>
+<script id="elementor-frontend-modules-js" src="../../_frozen/8b05f21356996037.js"></script>
+<script id="jquery-ui-core-js" src="../../_frozen/480a7087aa74b5b4.js"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnX":"Share on X","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"4.2.1","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_optimized_markup":true,"e_panel_promotions":true,"e_pro_free_trial_popup":true,"nested-elements":true,"e_atomic_elements":true,"atomic_widgets_should_enforce_capabilities":true,"editor_mcp":true,"e_bc_migrations":true,"e_classes":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"e_variables_manager":true,"e_opt_in_v4_page":true,"e_opt_in_v4":true,"e_components":true,"e_interactions":true,"e_widget_creation":true,"import-export-customization":true},"urls":{"assets":"http:\/\/127.0.0.1:8950\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"http:\/\/127.0.0.1:8950\/wp-admin\/admin-ajax.php","uploadUrl":"http:\/\/127.0.0.1:8950\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"a7b0c492e3","atomicFormsSendForm":"0045d5964e"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":263,"title":"Voltmoor%20VX%20%E2%80%94%20Modular%20Synthesizer%20Hardware%20%E2%80%93%20Elementor%20Ultra%20Dev","excerpt":"","featuredImage":false}};
+//# sourceURL=elementor-frontend-js-before
+</script>
+<script id="elementor-frontend-js" src="../../_frozen/9d31e838cc042539.js"></script>
+<script id="motion-js-js" src="../../_frozen/653b2fde6849c516.js"></script>
+<script id="elementor-interactions-shared-utils-js" src="../../_frozen/c73c4d5e8f30b208.js"></script>
+<script id="elementor-interactions-js-extra">
+var ElementorInteractionsConfig = {"constants":{"defaultDuration":600,"defaultDelay":0,"slideDistance":100,"scaleStart":0,"defaultEasing":"easeIn","relativeTo":"viewport","repeat":"","start":85,"end":15},"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true}}};
+//# sourceURL=elementor-interactions-js-extra
+</script>
+<script id="elementor-interactions-js" src="../../_frozen/c1d1264dc6654b6a.js"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"about:blank"}}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How this content was made · exjsx</title>
+<meta name="description" content="How this content was made for the exjsx demo archive.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://exjsx.dev/showcase/ai-content/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://exjsx.dev/showcase/ai-content/">
+<meta property="og:title" content="How this content was made · exjsx">
+<meta property="og:description" content="How this content was made for the exjsx demo archive.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="exjsx:content-provenance" content="ai-generated">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="/showcase/assets/showcase.css">
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a><header class="mast"><div class="wrap">
+<a class="brand" href="https://exjsx.dev/"><svg class="mark" viewBox="0 0 32 32" aria-hidden="true"
+ width="26" height="26"><polyline points="6,5 21,16 6,27" fill="none" stroke="currentColor"
+ stroke-width="4.6" stroke-linecap="square"/><polyline points="26,5 11,16 26,27" fill="none"
+ stroke="var(--go)" stroke-width="4.6" stroke-linecap="square"/></svg><span
+ class="wordmark">exjsx<span>.dev</span></span></a>
+<nav aria-label="Primary">
+<a href="/showcase/" aria-current="page">The fifty</a>
+<a href="https://exjsx.dev/" class="opt">The tool</a>
+<a href="https://github.com/Algorismus-io/elementor-ultra" class="opt">GitHub</a>
+<a class="cta" href="https://wpos.ai/fifty/">Read the write-up</a>
+</nav></div></header><main id="main"><div class="wrap"><article class="doc"><h2>How this content was made</h2>
+<p><strong>Short version: AI agents designed, wrote, illustrated and built all fifty demo sites. A human set up the run, wrote a one-paragraph brief per site, and reviewed the result. No human wrote the copy.</strong></p>
+<h3>The pipeline, step by step</h3>
+<div class="tablewrap"><table><thead><tr><th>Stage</th><th>Done by</th><th>Detail</th></tr></thead><tbody><tr><td>Concept and brief</td><td>Human + AI</td><td>A human defined fifty industries and archetypes. An AI expanded each into a one-page brief (audience, sections, palette, fonts, headline direction).</td></tr><tr><td>Copy</td><td><strong>AI</strong> (large language model)</td><td>All headlines, body copy, product names, prices, statistics, testimonials, biographies and credentials. <strong>No human wrote or fact-checked any of it.</strong></td></tr><tr><td>Design</td><td><strong>AI</strong></td><td>Layout, type scale, colour, spacing, responsive behaviour — generated as exjsx JSX.</td></tr><tr><td>Images</td><td><strong>AI</strong></td><td>112 images, FLUX.1 [schnell] (Black Forest Labs) via the fal.ai API. Every person shown is synthetic.</td></tr><tr><td>Build</td><td><strong>AI agent + software</strong></td><td>exjsx transpiled the JSX into native Elementor page structures; agents drove the build, checked the render and fixed failures.</td></tr><tr><td>Review</td><td>Human</td><td>Screenshot review, ranking, and the risk review that produced the notices you are reading.</td></tr></tbody></table></div>
+<p>Total elapsed build time: about one working day.</p>
+<h3>What we label, and where</h3>
+<p>Every one of the fifty pages carries the same disclosure in five places, so that it survives being seen out of context:</p>
+<ol><li><strong>A persistent on-page banner</strong>, first in the page&#x27;s reading order, not dismissible, and present in print and PDF exports.</li><li><strong>The page title</strong>, prefixed <code>[Fictional demo]</code>, so the browser tab and any shared link preview carry it.</li><li><strong>HTML metadata</strong> — <code>&lt;meta name=&quot;ai-generated&quot; content=&quot;true&quot;&gt;</code> and a description that leads with the fiction.</li><li><strong>JSON-LD structured data</strong> — <code>schema.org/WebPage</code> with <code>creativeWorkStatus: &quot;Fictional AI-generated demonstration&quot;</code> and <code>genre: &quot;Fiction&quot;</code>, and an <code>about</code> block stating the business does not exist.</li><li><strong>Image metadata</strong> — IPTC <code>DigitalSourceType</code> set to <code>trainedAlgorithmicMedia</code>, the standard vocabulary term for wholly AI-generated media, plus C2PA Content Credentials where we can sign them.</li></ol>
+<p>The raw demo pages are served <code>noindex</code> so they do not appear in search results, where the banner would not be visible. Only the showcase wrapper pages — which describe the build and are unambiguous about the fiction in their own titles — are indexed. Our reasoning is published in <code>SEO-RULING.md</code>.</p>
+<h3>Why we label it this way</h3>
+<p>Because the failure mode we care about is not &quot;someone reads the disclosure and disagrees with it&quot;. It is &quot;<strong>someone never sees the disclosure at all</strong>&quot; — because they landed on a screenshot, a search result, a social card, or a page fragment. So the label is attached to the artefact at every level that can travel independently: the pixels, the DOM, the metadata, the title, the file.</p>
+<p>We would rather over-label a demo than under-label one that ends up somewhere we did not expect.</p>
+<h3>Regulatory position</h3>
+<p>We publish from the United States. Algorismus LLC is a Texas company, so we take US federal and Texas law as the primary frame and treat the UK and EU regimes as reaching us to the extent that readers there reach us.</p>
+<p><strong>United States — there is no federal requirement to label AI-generated content</strong>, and none in Texas that applies to a project like this one. The Texas Responsible Artificial Intelligence Governance Act, in force since the start of 2026, is built around prohibited intents and around disclosure by government agencies and health care providers; a marketing demonstration archive falls outside its disclosure duties. California&#x27;s AI transparency and training-data statutes bind <em>developers and providers</em> of generative systems. <strong>We are neither</strong> — we are a user of other people&#x27;s models. So every label on this site is voluntary.</p>
+<p><strong>What does bind us is the Federal Trade Commission Act.</strong> Section 5 prohibits deceptive acts and practices, and the test is the <strong>net impression</strong> a reasonable consumer takes away. That is a better fit for this project than any labelling rule, because the only question that matters here is whether someone could come away believing that a fabricated clinic, charity or device is real. The FTC&#x27;s Endorsement Guides (16 CFR Part 255) say in terms, at §255.0(g)(2), that an <strong>&quot;obviously fictional dramatization&quot;</strong> is not an endorsement — and its Rule on Consumer Reviews and Testimonials (16 CFR Part 465) turns on whether a review <strong>&quot;materially misrepresents&quot;</strong>. Both of those carve-outs are earned by making the fiction obvious, not by asserting it. That is what the five labelling layers above are for, and it is why the banner is non-dismissible and first in the reading order rather than a footer. The same logic answers the <strong>Texas Deceptive Trade Practices Act</strong>, whose laundry list is likewise about creating a false impression.</p>
+<p><strong>EU AI Act (Regulation (EU) 2024/1689), Article 50.</strong> Article 50(2) requires <em>providers</em> of generative systems to mark outputs machine-readably — that duty sits with the model vendors, not with us. Article 50(4) requires <em>deployers</em> to disclose AI-generated text published to inform the public on matters of public interest; fictional product pages are not that. We apply both anyway, because the measures cost us nothing: machine-readable marking at the metadata and structured-data layer, and prominent human-readable disclosure at the point of consumption.</p>
+<p><strong>United Kingdom.</strong> There is no statutory requirement to label AI-generated content. We label anyway.</p>
+<p><strong>Advertising rules.</strong> These pages are not advertisements for the fictional businesses shown, because those businesses do not exist and nothing is being sold. They are demonstration material for exjsx. Where they contain claims that would be regulated if made by a real trader — health claims, professional credentials, certifications, comparative performance figures — those claims are fabricated and are labelled as fabricated. Nothing in the archive is offered as substantiation for any claim about exjsx itself; <strong>the only claim we make about our own product is that it built these pages</strong>, which is verifiable from the published sources, build logs and screenshots. In particular, <strong>we do not describe these as case studies and we have no clients to point to</strong> — nobody commissioned any of this work.</p>
+<p><strong>Platform disclosure.</strong> Where we post this work to a platform with its own synthetic-media rules, we disclose there too, in the post itself rather than relying on the linked page: on YouTube via the &quot;AI use&quot; attribute, on Reddit via an explicit tag per its Manipulated Content policy, and on LinkedIn in the visible part of the post. We do not create profiles, pages or accounts for any of the fictional businesses on any platform.</p>
+<h3>What we do not claim</h3>
+<ul><li>We do not claim the content is accurate. <strong>It is not.</strong> It was never fact-checked and much of it is deliberately fabricated.</li><li>We do not claim the images are original or free of third-party rights. Generative models can reproduce training data. See the <code>LICENSE</code> file.</li><li>We do not claim any copyright position on the AI-generated material beyond what the law actually gives us, which in the United States is likely nothing.</li><li>We do not claim the fifty names are clear of third-party trade marks. <strong>They are not, and we know of several collisions.</strong></li></ul>
+<h3>Reproducibility</h3>
+<p>The briefs, the generated JSX sources, the build logs, the screenshots and the ranking data are all published. If you want to check that these pages were built the way we say they were, the evidence is in the repository rather than in our word for it.</p>
+<h3>Contact</h3>
+<p>Questions about how this was made, or about anything on this page: <strong>legal@wpos.ai</strong>.</p></article><p style="margin:40px 0 0"><a class="btn" href="/showcase/">&larr; Back to the fifty</a></p></div></main><div class="notice"><div class="wrap">
+<span class="tag">Fictional demo</span>
+<p>Every one of these fifty businesses is <b>invented</b>. The pages, and all the
+text, statistics, prices, reviews, people and images on them, were
+<b>generated by AI</b> as a design demonstration. Nothing here is a real offer,
+a real endorsement, or professional advice.
+<a href="/showcase/disclosure/">Full notice</a></p>
+</div></div><footer class="foot"><div class="wrap">
+<span>exjsx &mdash; JSX in, native Elementor out. MIT.</span>
+<a href="/showcase/">The fifty</a>
+<a href="/showcase/disclosure/">Content notice</a>
+<a href="https://github.com/Algorismus-io/elementor-ultra">GitHub</a>
+<span class="sp"><a href="https://wpos.ai/fifty/">How this run worked &rarr;</a></span>
+</div></footer></body></html>

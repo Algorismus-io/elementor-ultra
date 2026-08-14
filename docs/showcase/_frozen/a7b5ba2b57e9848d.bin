@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+			<title>Plainroll — £29 flat payroll for UK small businesses &#8211; Elementor Ultra Dev</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name='robots' content='max-image-preview:large' />
+<title>Plainroll — £29 flat payroll for UK small businesses &#8211; Elementor Ultra Dev</title>
+<link rel='dns-prefetch' href='//127.0.0.1' />
+<link rel="alternate" type="application/rss+xml" title="Elementor Ultra Dev &raquo; Feed" href="http://127.0.0.1:8950/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Elementor Ultra Dev &raquo; Comments Feed" href="http://127.0.0.1:8950/comments/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="http://127.0.0.1:8950/wp-json/oembed/1.0/embed?url=http%3A%2F%2F127.0.0.1%3A8950%2Fpaystack-plain%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="http://127.0.0.1:8950/wp-json/oembed/1.0/embed?url=http%3A%2F%2F127.0.0.1%3A8950%2Fpaystack-plain%2F&#038;format=xml" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-color]){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--base: #FFFFFF;--wp--preset--color--contrast: #111111;--wp--preset--color--accent-1: #FFEE58;--wp--preset--color--accent-2: #F6CFF4;--wp--preset--color--accent-3: #503AA8;--wp--preset--color--accent-4: #686868;--wp--preset--color--accent-5: #FBFAF3;--wp--preset--color--accent-6: color-mix(in srgb, currentColor 20%, transparent);--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 0.875rem;--wp--preset--font-size--medium: clamp(1rem, 1rem + ((1vw - 0.2rem) * 0.196), 1.125rem);--wp--preset--font-size--large: clamp(1.125rem, 1.125rem + ((1vw - 0.2rem) * 0.392), 1.375rem);--wp--preset--font-size--x-large: clamp(1.75rem, 1.75rem + ((1vw - 0.2rem) * 0.392), 2rem);--wp--preset--font-size--xx-large: clamp(2.15rem, 2.15rem + ((1vw - 0.2rem) * 1.333), 3rem);--wp--preset--font-family--manrope: Manrope, sans-serif;--wp--preset--font-family--fira-code: "Fira Code", monospace;--wp--preset--spacing--20: 10px;--wp--preset--spacing--30: 20px;--wp--preset--spacing--40: 30px;--wp--preset--spacing--50: clamp(30px, 5vw, 50px);--wp--preset--spacing--60: clamp(30px, 7vw, 70px);--wp--preset--spacing--70: clamp(50px, 7vw, 90px);--wp--preset--spacing--80: clamp(70px, 10vw, 140px);--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:root { --wp--style--global--content-size: 645px;--wp--style--global--wide-size: 1340px; }:where(body) { margin: 0; }.wp-site-blocks { padding-top: var(--wp--style--root--padding-top); padding-bottom: var(--wp--style--root--padding-bottom); }.has-global-padding { padding-right: var(--wp--style--root--padding-right); padding-left: var(--wp--style--root--padding-left); }.has-global-padding > .alignfull { margin-right: calc(var(--wp--style--root--padding-right) * -1); margin-left: calc(var(--wp--style--root--padding-left) * -1); }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) { padding-right: 0; padding-left: 0; }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) > .alignfull { margin-left: 0; margin-right: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 1.2rem; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 1.2rem; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 1.2rem;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 1.2rem;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 1.2rem;}:root :where(.is-layout-grid){gap: 1.2rem;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{background-color: var(--wp--preset--color--base);color: var(--wp--preset--color--contrast);font-family: var(--wp--preset--font-family--manrope);font-size: var(--wp--preset--font-size--large);font-weight: 300;letter-spacing: -0.1px;line-height: 1.4;--wp--style--root--padding-top: 0px;--wp--style--root--padding-right: var(--wp--preset--spacing--50);--wp--style--root--padding-bottom: 0px;--wp--style--root--padding-left: var(--wp--preset--spacing--50);}a:where(:not(.wp-element-button)){color: currentColor;}:root :where(a:where(:not(.wp-element-button)):hover){text-decoration: none;}h1, h2, h3, h4, h5, h6{font-weight: 400;letter-spacing: -0.1px;line-height: 1.125;}h1{font-size: var(--wp--preset--font-size--xx-large);}h2{font-size: var(--wp--preset--font-size--x-large);}h3{font-size: var(--wp--preset--font-size--large);}h4{font-size: var(--wp--preset--font-size--medium);}h5{font-size: var(--wp--preset--font-size--small);letter-spacing: 0.5px;}h6{font-size: var(--wp--preset--font-size--small);font-weight: 700;letter-spacing: 1.4px;text-transform: uppercase;}:root :where(.wp-element-button, .wp-block-button__link){background-color: var(--wp--preset--color--contrast);border-width: 0;color: var(--wp--preset--color--base);font-family: inherit;font-size: var(--wp--preset--font-size--medium);font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: 1rem;padding-right: 2.25rem;padding-bottom: 1rem;padding-left: 2.25rem;text-decoration: none;text-transform: inherit;}:root :where(.wp-element-button:hover, .wp-block-button__link:hover){background-color: color-mix(in srgb, var(--wp--preset--color--contrast) 85%, transparent);border-color: transparent;color: var(--wp--preset--color--base);}:root :where(.wp-element-button:focus, .wp-block-button__link:focus){outline-color: var(--wp--preset--color--accent-4);outline-offset: 2px;}:root :where(.wp-element-caption, .wp-block-audio figcaption, .wp-block-embed figcaption, .wp-block-gallery figcaption, .wp-block-image figcaption, .wp-block-table figcaption, .wp-block-video figcaption){font-size: var(--wp--preset--font-size--small);line-height: 1.4;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-base-color{color: var(--wp--preset--color--base) !important;}.has-contrast-color{color: var(--wp--preset--color--contrast) !important;}.has-accent-1-color{color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-color{color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-color{color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-color{color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-color{color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-color{color: var(--wp--preset--color--accent-6) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-base-background-color{background-color: var(--wp--preset--color--base) !important;}.has-contrast-background-color{background-color: var(--wp--preset--color--contrast) !important;}.has-accent-1-background-color{background-color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-background-color{background-color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-background-color{background-color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-background-color{background-color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-background-color{background-color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-background-color{background-color: var(--wp--preset--color--accent-6) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-base-border-color{border-color: var(--wp--preset--color--base) !important;}.has-contrast-border-color{border-color: var(--wp--preset--color--contrast) !important;}.has-accent-1-border-color{border-color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-border-color{border-color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-border-color{border-color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-border-color{border-color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-border-color{border-color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-border-color{border-color: var(--wp--preset--color--accent-6) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-xx-large-font-size{font-size: var(--wp--preset--font-size--xx-large) !important;}.has-manrope-font-family{font-family: var(--wp--preset--font-family--manrope) !important;}.has-fira-code-font-family{font-family: var(--wp--preset--font-family--fira-code) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<style id="wp-block-template-skip-link-inline-css">
+/*! This file is auto-generated */
+.skip-link.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute!important;width:1px;word-wrap:normal!important;word-break:normal!important}.skip-link.screen-reader-text:focus{background-color:#eee;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}
+/*# sourceURL=/wp-includes/css/wp-block-template-skip-link.min.css */
+</style>
+<style id="twentytwentyfive-style-inline-css">
+a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-site-blocks :focus){outline-width:2px;outline-style:solid}.wp-block-navigation .wp-block-navigation-submenu .wp-block-navigation-item:not(:last-child){margin-bottom:3px}.wp-block-navigation .wp-block-navigation-item .wp-block-navigation-item__content{outline-offset:4px}.wp-block-navigation .wp-block-navigation-item ul.wp-block-navigation__submenu-container .wp-block-navigation-item__content{outline-offset:0}blockquote,caption,figcaption,h1,h2,h3,h4,h5,h6,p{text-wrap:pretty}.more-link{display:block}:where(pre){overflow-x:auto}
+/*# sourceURL=http://127.0.0.1:8950/wp-content/themes/twentytwentyfive/style.min.css */
+</style>
+<link rel='stylesheet' id='elementor-frontend-css' href='http://127.0.0.1:8950/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=4.2.1' media='all' />
+<style id="elementor-frontend-inline-css">
+.e-heading-base a, .e-paragraph-base a { all: unset; cursor: pointer; }form[data-element_type="e-form"].form-state-success [data-element_type="e-form-success-message"],form[data-element_type="e-form"].form-state-error [data-element_type="e-form-error-message"]{ display: block; }
+/*# sourceURL=elementor-frontend-inline-css */
+</style>
+<link rel='stylesheet' id='elementor-post-4-css' href='http://127.0.0.1:8950/wp-content/uploads/elementor/css/post-4.css?ver=1786663961' media='all' />
+<link rel='stylesheet' id='base-desktop-css' href='http://127.0.0.1:8950/wp-content/uploads/elementor/css/base-desktop.css?ver=6a7e586c631f0' media='all' />
+<link rel='stylesheet' id='local-175-frontend-desktop-css' href='http://127.0.0.1:8950/wp-content/uploads/elementor/css/local-175-frontend-desktop.css?ver=6a7e565b88b80' media='all' />
+<link rel='stylesheet' id='local-175-frontend-tablet-css' href='http://127.0.0.1:8950/wp-content/uploads/elementor/css/local-175-frontend-tablet.css?ver=6a7e565b88b80' media='(max-width:1024px)' />
+<link rel='stylesheet' id='base-mobile-css' href='http://127.0.0.1:8950/wp-content/uploads/elementor/css/base-mobile.css?ver=6a7e586c631f0' media='(max-width:767px)' />
+<link rel='stylesheet' id='local-175-frontend-mobile-css' href='http://127.0.0.1:8950/wp-content/uploads/elementor/css/local-175-frontend-mobile.css?ver=6a7e565b88b80' media='(max-width:767px)' />
+<link rel='stylesheet' id='elementor-gf-roboto-css' href='https://fonts.googleapis.com/css?family=Roboto:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&#038;display=swap' media='all' />
+<link rel='stylesheet' id='elementor-gf-robotoslab-css' href='https://fonts.googleapis.com/css?family=Roboto+Slab:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&#038;display=swap' media='all' />
+<link rel='stylesheet' id='elementor-gf-inter-css' href='https://fonts.googleapis.com/css?family=Inter:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&#038;display=swap' media='all' />
+<link rel='stylesheet' id='elementor-gf-familjengrotesk-css' href='https://fonts.googleapis.com/css?family=Familjen+Grotesk:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&#038;display=swap' media='all' />
+<script id="jquery-core-js" src="http://127.0.0.1:8950/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="http://127.0.0.1:8950/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<link rel="https://api.w.org/" href="http://127.0.0.1:8950/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="http://127.0.0.1:8950/wp-json/wp/v2/pages/175" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://127.0.0.1:8950/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 7.0.4" />
+<link rel="canonical" href="http://127.0.0.1:8950/paystack-plain/" />
+<link rel='shortlink' href='http://127.0.0.1:8950/?p=175' />
+<meta name="generator" content="Elementor 4.2.1; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<style class="wp-fonts-local">
+@font-face{font-family:Manrope;font-style:normal;font-weight:200 800;font-display:fallback;src:url('http://127.0.0.1:8950/wp-content/themes/twentytwentyfive/assets/fonts/manrope/Manrope-VariableFont_wght.woff2') format('woff2');}
+@font-face{font-family:"Fira Code";font-style:normal;font-weight:300 700;font-display:fallback;src:url('http://127.0.0.1:8950/wp-content/themes/twentytwentyfive/assets/fonts/fira-code/FiraCode-VariableFont_wght.woff2') format('woff2');}
+</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /></head>
+<body class="wp-singular page-template page-template-elementor_canvas page page-id-175 wp-embed-responsive wp-theme-twentytwentyfive elementor-default elementor-template-canvas elementor-kit-4 elementor-page elementor-page-175">
+			<div data-elementor-type="wp-page" data-elementor-id="175" class="elementor elementor-175">
+						<div class="elementor-element elementor-element-e00000 elementor-widget elementor-widget-html" data-id="e00000" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					<style id="exjsx-raw-1g6vd5e-0">.elementor-element-e00000{margin:0 !important;height:0;line-height:0;}.elementor .e-1g6vd5e-e00006-s.e-1g6vd5e-e00006-s{text-transform: uppercase;}.elementor .e-1g6vd5e-e0000j-s.e-1g6vd5e-e0000j-s{border-top: 3px solid #0F6E5A;}.elementor .e-1g6vd5e-e0000m-s.e-1g6vd5e-e0000m-s{text-transform: uppercase;}.elementor .e-1g6vd5e-e0001h-s.e-1g6vd5e-e0001h-s{border-top: 3px solid #9A9A9A;}.elementor .e-1g6vd5e-e0001k-s.e-1g6vd5e-e0001k-s{text-transform: uppercase;}.elementor .e-1g6vd5e-e0002k-s.e-1g6vd5e-e0002k-s{text-transform: uppercase;}.elementor .e-1g6vd5e-e0002o-s.e-1g6vd5e-e0002o-s{text-transform: uppercase;}.elementor .e-1g6vd5e-e0003e-s.e-1g6vd5e-e0003e-s{text-transform: uppercase;}.elementor .e-1g6vd5e-e00045-s.e-1g6vd5e-e00045-s{border-bottom: 1px solid #E2E2DE;}.elementor .e-1g6vd5e-e00047-s.e-1g6vd5e-e00047-s{text-transform: uppercase;}.elementor .e-1g6vd5e-e0004x-s.e-1g6vd5e-e0004x-s{text-transform: uppercase;}.elementor .e-1g6vd5e-e00052-s.e-1g6vd5e-e00052-s{border-right: 1px solid #E2E2DE;}.elementor .e-1g6vd5e-e00053-s.e-1g6vd5e-e00053-s{text-transform: uppercase;}.elementor .e-1g6vd5e-e00056-s.e-1g6vd5e-e00056-s{border-right: 1px solid #E2E2DE;}.elementor .e-1g6vd5e-e00057-s.e-1g6vd5e-e00057-s{text-transform: uppercase;}.elementor .e-1g6vd5e-e0005b-s.e-1g6vd5e-e0005b-s{text-transform: uppercase;}.elementor .e-1g6vd5e-e0005i-s.e-1g6vd5e-e0005i-s{text-transform: uppercase;}.elementor .e-1g6vd5e-e0005m-s.e-1g6vd5e-e0005m-s{border: 1px solid #E2E2DE;}.elementor .e-1g6vd5e-e0005n-s.e-1g6vd5e-e0005n-s{border-bottom: 1px solid #E2E2DE;}.elementor .e-1g6vd5e-e0005o-s.e-1g6vd5e-e0005o-s{text-transform: uppercase;}.elementor .e-1g6vd5e-e0006d-s.e-1g6vd5e-e0006d-s{text-transform: uppercase;}.elementor .e-1g6vd5e-e0006i-s.e-1g6vd5e-e0006i-s{text-transform: uppercase;}.elementor .e-1g6vd5e-e0006l-s.e-1g6vd5e-e0006l-s{text-transform: uppercase;}.elementor .e-1g6vd5e-e0006r-s.e-1g6vd5e-e0006r-s{text-transform: uppercase;}.elementor .e-1g6vd5e-e00074-s.e-1g6vd5e-e00074-s{border-left: 3px solid #0F6E5A;}.elementor .e-1g6vd5e-e00079-s.e-1g6vd5e-e00079-s{text-transform: uppercase;}</style>				</div>
+		<div class="elementor-element elementor-element-e00001 e-con e-atomic-element e-flexbox-base e-1g6vd5e-e00001-s " data-id="e00001" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00001">
+    <section class="elementor-element elementor-element-e00002 e-con e-atomic-element e-flexbox-base e-1g6vd5e-e00002-s " data-id="e00002" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00002">
+    <div class="elementor-element elementor-element-e00003 e-con e-atomic-element e-flexbox-base e-1g6vd5e-e00003-s " data-id="e00003" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00003">
+    <div class="elementor-element elementor-element-e00004 e-con e-atomic-element e-grid-base e-1g6vd5e-e00004-s " data-id="e00004" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e00004">
+    <div class="elementor-element elementor-element-e00005 e-con e-atomic-element e-flexbox-base e-1g6vd5e-e00005-s " data-id="e00005" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00005">
+    			<p class="e-1g6vd5e-e00006-s e-paragraph-base" data-interaction-id="e00006">Plainroll · flat-fee UK payroll</p>
+					<h1 data-interaction-id="e00007" class="e-1g6vd5e-e00007-s e-heading-base">Payroll for 18 people should not cost <em>£214</em> a month.<br></h1>
+					<p class="e-1g6vd5e-e00008-s e-paragraph-base" data-interaction-id="e00008">Plainroll is £29 a month for up to 50 employees. Pensions, RTI filing, P60s, year-end, payslips and your accountant’s login are all in that number, because there is nothing else to sell you.</p>
+		<div class="elementor-element elementor-element-e00009 e-con e-atomic-element e-flexbox-base e-1g6vd5e-e00009-s " data-id="e00009" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00009">
+    			<p class="e-1g6vd5e-e0000a-s e-paragraph-base" data-interaction-id="e0000a"><a href="#start" target="_self" class="e-paragraph-link-base">
+		Run your first payroll free
+	</a></p>
+					<p class="e-1g6vd5e-e0000b-s e-paragraph-base" data-interaction-id="e0000b">No card. First pay run on us.</p>
+		
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0000c e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0000c-s " data-id="e0000c" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000c">
+    			<p class="e-1g6vd5e-e0000d-s e-paragraph-base" data-interaction-id="e0000d">An 18-person payroll, priced by both sides of the market. Same month, same filings, same people getting paid.</p>
+		<div class="elementor-element elementor-element-e0000e e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0000e-s " data-id="e0000e" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000e">
+    
+</div>
+<div class="elementor-element elementor-element-e0000f e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0000f-s " data-id="e0000f" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000f">
+    			<p class="e-1g6vd5e-e0000g-s e-paragraph-base" data-interaction-id="e0000g">Difference</p>
+					<p class="e-1g6vd5e-e0000h-s e-paragraph-base" data-interaction-id="e0000h">£2,217 a year</p>
+		
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0000i e-con e-atomic-element e-grid-base e-1g6vd5e-e0000i-s " data-id="e0000i" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0000i">
+    <div class="elementor-element elementor-element-e0000j e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0000j-s " data-id="e0000j" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000j">
+    <div class="elementor-element elementor-element-e0000k e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0000k-s " data-id="e0000k" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000k">
+    			<h2 data-interaction-id="e0000l" class="e-1g6vd5e-e0000l-s e-heading-base">Plainroll</h2>
+					<p class="e-1g6vd5e-e0000m-s e-paragraph-base" data-interaction-id="e0000m">Flat</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0000n e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0000n-s " data-id="e0000n" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000n">
+    			<p class="e-1g6vd5e-e0000o-s e-paragraph-base" data-interaction-id="e0000o">Base fee, up to 50 employees</p>
+					<p class="e-1g6vd5e-e0000p-s e-paragraph-base" data-interaction-id="e0000p">£29.00</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0000q e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0000q-s " data-id="e0000q" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000q">
+    			<p class="e-1g6vd5e-e0000r-s e-paragraph-base" data-interaction-id="e0000r">Per employee, × 18</p>
+					<p class="e-1g6vd5e-e0000s-s e-paragraph-base" data-interaction-id="e0000s">£0.00</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0000t e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0000t-s " data-id="e0000t" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000t">
+    			<p class="e-1g6vd5e-e0000u-s e-paragraph-base" data-interaction-id="e0000u">Pension auto-enrolment and assessment</p>
+					<p class="e-1g6vd5e-e0000v-s e-paragraph-base" data-interaction-id="e0000v">£0.00</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0000w e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0000w-s " data-id="e0000w" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000w">
+    			<p class="e-1g6vd5e-e0000x-s e-paragraph-base" data-interaction-id="e0000x">RTI: FPS and EPS to HMRC</p>
+					<p class="e-1g6vd5e-e0000y-s e-paragraph-base" data-interaction-id="e0000y">£0.00</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0000z e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0000z-s " data-id="e0000z" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0000z">
+    			<p class="e-1g6vd5e-e00010-s e-paragraph-base" data-interaction-id="e00010">P45s, P60s and year-end</p>
+					<p class="e-1g6vd5e-e00011-s e-paragraph-base" data-interaction-id="e00011">£0.00</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00012 e-con e-atomic-element e-flexbox-base e-1g6vd5e-e00012-s " data-id="e00012" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00012">
+    			<p class="e-1g6vd5e-e00013-s e-paragraph-base" data-interaction-id="e00013">Off-cycle and corrective pay runs</p>
+					<p class="e-1g6vd5e-e00014-s e-paragraph-base" data-interaction-id="e00014">£0.00</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00015 e-con e-atomic-element e-flexbox-base e-1g6vd5e-e00015-s " data-id="e00015" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00015">
+    			<p class="e-1g6vd5e-e00016-s e-paragraph-base" data-interaction-id="e00016">CSV and Xero export</p>
+					<p class="e-1g6vd5e-e00017-s e-paragraph-base" data-interaction-id="e00017">£0.00</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00018 e-con e-atomic-element e-flexbox-base e-1g6vd5e-e00018-s " data-id="e00018" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00018">
+    			<p class="e-1g6vd5e-e00019-s e-paragraph-base" data-interaction-id="e00019">Accountant seat</p>
+					<p class="e-1g6vd5e-e0001a-s e-paragraph-base" data-interaction-id="e0001a">£0.00</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0001b e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0001b-s " data-id="e0001b" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001b">
+    			<p class="e-1g6vd5e-e0001c-s e-paragraph-base" data-interaction-id="e0001c">Support, phone and email</p>
+					<p class="e-1g6vd5e-e0001d-s e-paragraph-base" data-interaction-id="e0001d">£0.00</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0001e e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0001e-s " data-id="e0001e" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001e">
+    			<p class="e-1g6vd5e-e0001f-s e-paragraph-base" data-interaction-id="e0001f">Total, every month</p>
+					<p class="e-1g6vd5e-e0001g-s e-paragraph-base" data-interaction-id="e0001g">£29.00</p>
+		
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0001h e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0001h-s " data-id="e0001h" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001h">
+    <div class="elementor-element elementor-element-e0001i e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0001i-s " data-id="e0001i" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001i">
+    			<h2 data-interaction-id="e0001j" class="e-1g6vd5e-e0001j-s e-heading-base">The two you are considering</h2>
+					<p class="e-1g6vd5e-e0001k-s e-paragraph-base" data-interaction-id="e0001k">Modular</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0001l e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0001l-s " data-id="e0001l" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001l">
+    			<p class="e-1g6vd5e-e0001m-s e-paragraph-base" data-interaction-id="e0001m">Base fee</p>
+					<p class="e-1g6vd5e-e0001n-s e-paragraph-base" data-interaction-id="e0001n">£8.00</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0001o e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0001o-s " data-id="e0001o" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001o">
+    			<p class="e-1g6vd5e-e0001p-s e-paragraph-base" data-interaction-id="e0001p">Per employee, £4 × 18</p>
+					<p class="e-1g6vd5e-e0001q-s e-paragraph-base" data-interaction-id="e0001q">£72.00</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0001r e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0001r-s " data-id="e0001r" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001r">
+    			<p class="e-1g6vd5e-e0001s-s e-paragraph-base" data-interaction-id="e0001s">Pension module</p>
+					<p class="e-1g6vd5e-e0001t-s e-paragraph-base" data-interaction-id="e0001t">£6.00</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0001u e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0001u-s " data-id="e0001u" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001u">
+    			<p class="e-1g6vd5e-e0001v-s e-paragraph-base" data-interaction-id="e0001v">Year-end, £45 spread over 12</p>
+					<p class="e-1g6vd5e-e0001w-s e-paragraph-base" data-interaction-id="e0001w">£3.75</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0001x e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0001x-s " data-id="e0001x" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0001x">
+    			<p class="e-1g6vd5e-e0001y-s e-paragraph-base" data-interaction-id="e0001y">Off-cycle runs, £12 × 2</p>
+					<p class="e-1g6vd5e-e0001z-s e-paragraph-base" data-interaction-id="e0001z">£24.00</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00020 e-con e-atomic-element e-flexbox-base e-1g6vd5e-e00020-s " data-id="e00020" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00020">
+    			<p class="e-1g6vd5e-e00021-s e-paragraph-base" data-interaction-id="e00021">Support tier you will end up on</p>
+					<p class="e-1g6vd5e-e00022-s e-paragraph-base" data-interaction-id="e00022">£100.00</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00023 e-con e-atomic-element e-flexbox-base e-1g6vd5e-e00023-s " data-id="e00023" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00023">
+    			<p class="e-1g6vd5e-e00024-s e-paragraph-base" data-interaction-id="e00024">P45s, P60s</p>
+					<p class="e-1g6vd5e-e00025-s e-paragraph-base" data-interaction-id="e00025">in the tier</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00026 e-con e-atomic-element e-flexbox-base e-1g6vd5e-e00026-s " data-id="e00026" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00026">
+    			<p class="e-1g6vd5e-e00027-s e-paragraph-base" data-interaction-id="e00027">Accountant seat</p>
+					<p class="e-1g6vd5e-e00028-s e-paragraph-base" data-interaction-id="e00028">£0.00</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00029 e-con e-atomic-element e-flexbox-base e-1g6vd5e-e00029-s " data-id="e00029" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00029">
+    			<p class="e-1g6vd5e-e0002a-s e-paragraph-base" data-interaction-id="e0002a">CSV export</p>
+					<p class="e-1g6vd5e-e0002b-s e-paragraph-base" data-interaction-id="e0002b">£0.00</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0002c e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0002c-s " data-id="e0002c" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002c">
+    			<p class="e-1g6vd5e-e0002d-s e-paragraph-base" data-interaction-id="e0002d">Total, every month</p>
+					<p class="e-1g6vd5e-e0002e-s e-paragraph-base" data-interaction-id="e0002e">£213.75</p>
+		
+</div>
+
+</div>
+
+</div>
+			<p class="e-1g6vd5e-e0002f-s e-paragraph-base" data-interaction-id="e0002f">Call it £214. Their list price, our list price, one 18-person payroll. Nothing on either side is a promotional rate.</p>
+		
+</div>
+
+</section>
+<section class="elementor-element elementor-element-e0002g e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0002g-s " data-id="e0002g" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002g">
+    <div class="elementor-element elementor-element-e0002h e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0002h-s " data-id="e0002h" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002h">
+    <div class="elementor-element elementor-element-e0002i e-con e-atomic-element e-grid-base e-1g6vd5e-e0002i-s " data-id="e0002i" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0002i">
+    <div class="elementor-element elementor-element-e0002j e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0002j-s " data-id="e0002j" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002j">
+    			<p class="e-1g6vd5e-e0002k-s e-paragraph-base" data-interaction-id="e0002k">What flat means</p>
+					<h2 data-interaction-id="e0002l" class="e-1g6vd5e-e0002l-s e-heading-base">One number. The list is not a teaser.</h2>
+					<p class="e-1g6vd5e-e0002m-s e-paragraph-base" data-interaction-id="e0002m">Flat means the invoice does not move when you hire, when someone leaves, when April arrives, or when you need a second pay run because a timesheet came in late.</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0002n e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0002n-s " data-id="e0002n" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002n">
+    			<h3 data-interaction-id="e0002o" class="e-1g6vd5e-e0002o-s e-heading-base">In the £29</h3>
+		<div class="elementor-element elementor-element-e0002p e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0002p-s " data-id="e0002p" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002p">
+    			<p class="e-1g6vd5e-e0002q-s e-paragraph-base" data-interaction-id="e0002q">Auto-enrolment, assessment and re-enrolment</p>
+					<p class="e-1g6vd5e-e0002r-s e-paragraph-base" data-interaction-id="e0002r">included</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0002s e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0002s-s " data-id="e0002s" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002s">
+    			<p class="e-1g6vd5e-e0002t-s e-paragraph-base" data-interaction-id="e0002t">Pension file to your provider</p>
+					<p class="e-1g6vd5e-e0002u-s e-paragraph-base" data-interaction-id="e0002u">included</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0002v e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0002v-s " data-id="e0002v" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002v">
+    			<p class="e-1g6vd5e-e0002w-s e-paragraph-base" data-interaction-id="e0002w">RTI filing, FPS and EPS</p>
+					<p class="e-1g6vd5e-e0002x-s e-paragraph-base" data-interaction-id="e0002x">included</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0002y e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0002y-s " data-id="e0002y" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0002y">
+    			<p class="e-1g6vd5e-e0002z-s e-paragraph-base" data-interaction-id="e0002z">P45s and P60s</p>
+					<p class="e-1g6vd5e-e00030-s e-paragraph-base" data-interaction-id="e00030">included</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00031 e-con e-atomic-element e-flexbox-base e-1g6vd5e-e00031-s " data-id="e00031" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00031">
+    			<p class="e-1g6vd5e-e00032-s e-paragraph-base" data-interaction-id="e00032">Unlimited pay runs</p>
+					<p class="e-1g6vd5e-e00033-s e-paragraph-base" data-interaction-id="e00033">included</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00034 e-con e-atomic-element e-flexbox-base e-1g6vd5e-e00034-s " data-id="e00034" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00034">
+    			<p class="e-1g6vd5e-e00035-s e-paragraph-base" data-interaction-id="e00035">CSV and Xero export</p>
+					<p class="e-1g6vd5e-e00036-s e-paragraph-base" data-interaction-id="e00036">included</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00037 e-con e-atomic-element e-flexbox-base e-1g6vd5e-e00037-s " data-id="e00037" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00037">
+    			<p class="e-1g6vd5e-e00038-s e-paragraph-base" data-interaction-id="e00038">Accountant seat</p>
+					<p class="e-1g6vd5e-e00039-s e-paragraph-base" data-interaction-id="e00039">free forever</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0003a e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0003a-s " data-id="e0003a" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003a">
+    			<p class="e-1g6vd5e-e0003b-s e-paragraph-base" data-interaction-id="e0003b">Support from people who have run payroll</p>
+					<p class="e-1g6vd5e-e0003c-s e-paragraph-base" data-interaction-id="e0003c">included</p>
+		
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e0003d e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0003d-s " data-id="e0003d" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003d">
+    			<h3 data-interaction-id="e0003e" class="e-1g6vd5e-e0003e-s e-heading-base">What they charge extra for</h3>
+		<div class="elementor-element elementor-element-e0003f e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0003f-s " data-id="e0003f" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003f">
+    			<p class="e-1g6vd5e-e0003g-s e-paragraph-base" data-interaction-id="e0003g">Each employee, every month</p>
+					<p class="e-1g6vd5e-e0003h-s e-paragraph-base" data-interaction-id="e0003h">£4 each</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0003i e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0003i-s " data-id="e0003i" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003i">
+    			<p class="e-1g6vd5e-e0003j-s e-paragraph-base" data-interaction-id="e0003j">The pension module</p>
+					<p class="e-1g6vd5e-e0003k-s e-paragraph-base" data-interaction-id="e0003k">£6 a month</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0003l e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0003l-s " data-id="e0003l" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003l">
+    			<p class="e-1g6vd5e-e0003m-s e-paragraph-base" data-interaction-id="e0003m">Year-end processing</p>
+					<p class="e-1g6vd5e-e0003n-s e-paragraph-base" data-interaction-id="e0003n">£45 a year</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0003o e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0003o-s " data-id="e0003o" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003o">
+    			<p class="e-1g6vd5e-e0003p-s e-paragraph-base" data-interaction-id="e0003p">Off-cycle pay run</p>
+					<p class="e-1g6vd5e-e0003q-s e-paragraph-base" data-interaction-id="e0003q">£12 a run</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0003r e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0003r-s " data-id="e0003r" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003r">
+    			<p class="e-1g6vd5e-e0003s-s e-paragraph-base" data-interaction-id="e0003s">Phone support</p>
+					<p class="e-1g6vd5e-e0003t-s e-paragraph-base" data-interaction-id="e0003t">tier upgrade</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0003u e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0003u-s " data-id="e0003u" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003u">
+    			<p class="e-1g6vd5e-e0003v-s e-paragraph-base" data-interaction-id="e0003v">Historic payslip access</p>
+					<p class="e-1g6vd5e-e0003w-s e-paragraph-base" data-interaction-id="e0003w">archive fee</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0003x e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0003x-s " data-id="e0003x" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0003x">
+    			<p class="e-1g6vd5e-e0003y-s e-paragraph-base" data-interaction-id="e0003y">Second company on one login</p>
+					<p class="e-1g6vd5e-e0003z-s e-paragraph-base" data-interaction-id="e0003z">new subscription</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00040 e-con e-atomic-element e-flexbox-base e-1g6vd5e-e00040-s " data-id="e00040" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00040">
+    			<p class="e-1g6vd5e-e00041-s e-paragraph-base" data-interaction-id="e00041">Leaving and taking your data</p>
+					<p class="e-1g6vd5e-e00042-s e-paragraph-base" data-interaction-id="e00042">export fee</p>
+		
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="elementor-element elementor-element-e00043 e-con e-atomic-element e-flexbox-base e-1g6vd5e-e00043-s " data-id="e00043" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00043">
+    <div class="elementor-element elementor-element-e00044 e-con e-atomic-element e-flexbox-base e-1g6vd5e-e00044-s " data-id="e00044" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00044">
+    <div class="elementor-element elementor-element-e00045 e-con e-atomic-element e-flexbox-base e-1g6vd5e-e00045-s " data-id="e00045" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00045">
+    <div class="elementor-element elementor-element-e00046 e-con e-atomic-element e-flexbox-base e-1g6vd5e-e00046-s " data-id="e00046" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00046">
+    			<p class="e-1g6vd5e-e00047-s e-paragraph-base" data-interaction-id="e00047">Payroll day</p>
+					<h2 data-interaction-id="e00048" class="e-1g6vd5e-e00048-s e-heading-base">The eleven minutes, described.</h2>
+		
+</div>
+			<p class="e-1g6vd5e-e00049-s e-paragraph-base" data-interaction-id="e00049">11 min</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0004a e-con e-atomic-element e-grid-base e-1g6vd5e-e0004a-s " data-id="e0004a" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0004a">
+    <div class="elementor-element elementor-element-e0004b e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0004b-s " data-id="e0004b" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004b">
+    <div class="elementor-element elementor-element-e0004c e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0004c-s " data-id="e0004c" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004c">
+    			<p class="e-1g6vd5e-e0004d-s e-paragraph-base" data-interaction-id="e0004d">01</p>
+					<p class="e-1g6vd5e-e0004e-s e-paragraph-base" data-interaction-id="e0004e">minutes 0–4</p>
+		
+</div>
+			<h3 data-interaction-id="e0004f" class="e-1g6vd5e-e0004f-s e-heading-base">Approve the hours</h3>
+					<p class="e-1g6vd5e-e0004g-s e-paragraph-base" data-interaction-id="e0004g">Salaried people are already right. Hourly people arrive from your timesheet, rounded the way you told us to round them, with last month beside them for comparison.</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0004h e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0004h-s " data-id="e0004h" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004h">
+    <div class="elementor-element elementor-element-e0004i e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0004i-s " data-id="e0004i" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004i">
+    			<p class="e-1g6vd5e-e0004j-s e-paragraph-base" data-interaction-id="e0004j">02</p>
+					<p class="e-1g6vd5e-e0004k-s e-paragraph-base" data-interaction-id="e0004k">minutes 4–9</p>
+		
+</div>
+			<h3 data-interaction-id="e0004l" class="e-1g6vd5e-e0004l-s e-heading-base">Check the two flags we raise</h3>
+					<p class="e-1g6vd5e-e0004m-s e-paragraph-base" data-interaction-id="e0004m">A starter with no P45. Someone who crossed the auto-enrolment threshold this month. We do not bury them in a report; they are the only two things on the screen.</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0004n e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0004n-s " data-id="e0004n" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004n">
+    <div class="elementor-element elementor-element-e0004o e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0004o-s " data-id="e0004o" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004o">
+    			<p class="e-1g6vd5e-e0004p-s e-paragraph-base" data-interaction-id="e0004p">03</p>
+					<p class="e-1g6vd5e-e0004q-s e-paragraph-base" data-interaction-id="e0004q">minutes 9–11</p>
+		
+</div>
+			<h3 data-interaction-id="e0004r" class="e-1g6vd5e-e0004r-s e-heading-base">Press run</h3>
+					<p class="e-1g6vd5e-e0004s-s e-paragraph-base" data-interaction-id="e0004s">Payslips go out, the pension file goes to your provider, and the RTI submission goes to HMRC before you have closed the tab.</p>
+		
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="elementor-element elementor-element-e0004t e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0004t-s " data-id="e0004t" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004t">
+    <div class="elementor-element elementor-element-e0004u e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0004u-s " data-id="e0004u" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004u">
+    <div class="elementor-element elementor-element-e0004v e-con e-atomic-element e-grid-base e-1g6vd5e-e0004v-s " data-id="e0004v" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0004v">
+    <div class="elementor-element elementor-element-e0004w e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0004w-s " data-id="e0004w" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0004w">
+    			<p class="e-1g6vd5e-e0004x-s e-paragraph-base" data-interaction-id="e0004x">Compliance</p>
+					<h2 data-interaction-id="e0004y" class="e-1g6vd5e-e0004y-s e-heading-base">Pension, RTI and year-end, handled.</h2>
+					<p class="e-1g6vd5e-e0004z-s e-paragraph-base" data-interaction-id="e0004z">These are the three things that turn a twenty-minute job into a Saturday. They are not modules here. They are the product.</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00050 e-con e-atomic-element e-flexbox-base e-1g6vd5e-e00050-s " data-id="e00050" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00050">
+    <div class="elementor-element elementor-element-e00051 e-con e-atomic-element e-grid-base e-1g6vd5e-e00051-s " data-id="e00051" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e00051">
+    <div class="elementor-element elementor-element-e00052 e-con e-atomic-element e-flexbox-base e-1g6vd5e-e00052-s " data-id="e00052" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00052">
+    			<p class="e-1g6vd5e-e00053-s e-paragraph-base" data-interaction-id="e00053">Pension</p>
+					<h3 data-interaction-id="e00054" class="e-1g6vd5e-e00054-s e-heading-base">Auto-enrolment on the clock</h3>
+					<p class="e-1g6vd5e-e00055-s e-paragraph-base" data-interaction-id="e00055">Every employee assessed each pay period, postponement handled, contributions calculated, the file sent to Nest, Smart, The People’s Pension or your provider. Re-enrolment is diarised three years out and we tell you before it lands.</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00056 e-con e-atomic-element e-flexbox-base e-1g6vd5e-e00056-s " data-id="e00056" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00056">
+    			<p class="e-1g6vd5e-e00057-s e-paragraph-base" data-interaction-id="e00057">RTI</p>
+					<h3 data-interaction-id="e00058" class="e-1g6vd5e-e00058-s e-heading-base">Filed on or before payday</h3>
+					<p class="e-1g6vd5e-e00059-s e-paragraph-base" data-interaction-id="e00059">The FPS goes on the day you run, not the day someone remembers. EPS for statutory recoveries and the employment allowance goes when it is due, and you get the HMRC receipt reference in writing every time.</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0005a e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0005a-s " data-id="e0005a" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0005a">
+    			<p class="e-1g6vd5e-e0005b-s e-paragraph-base" data-interaction-id="e0005b">Year-end</p>
+					<h3 data-interaction-id="e0005c" class="e-1g6vd5e-e0005c-s e-heading-base">April without the invoice</h3>
+					<p class="e-1g6vd5e-e0005d-s e-paragraph-base" data-interaction-id="e0005d">Final submission, P60s to every employee, new tax codes applied from the P9 notices, thresholds rolled forward. It is one email telling you it is done, and it costs the same £29 as March.</p>
+		
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="elementor-element elementor-element-e0005e e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0005e-s " data-id="e0005e" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0005e">
+    <div class="elementor-element elementor-element-e0005f e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0005f-s " data-id="e0005f" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0005f">
+    <div class="elementor-element elementor-element-e0005g e-con e-atomic-element e-grid-base e-1g6vd5e-e0005g-s " data-id="e0005g" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0005g">
+    <div class="elementor-element elementor-element-e0005h e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0005h-s " data-id="e0005h" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0005h">
+    			<p class="e-1g6vd5e-e0005i-s e-paragraph-base" data-interaction-id="e0005i">Switching</p>
+					<h2 data-interaction-id="e0005j" class="e-1g6vd5e-e0005j-s e-heading-base">Switch mid-year without breaking your figures.</h2>
+					<p class="e-1g6vd5e-e0005k-s e-paragraph-base" data-interaction-id="e0005k">Bring your year-to-date figures from any provider mid-year. We reconcile them against your last FPS and tell you if they do not add up before you commit.</p>
+					<p class="e-1g6vd5e-e0005l-s e-paragraph-base" data-interaction-id="e0005l">You do not have to wait for April, and you do not have to run two systems in parallel for a quarter to feel safe. If the reconciliation fails, we tell you which employee and which figure, and nothing moves until you say so.</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0005m e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0005m-s " data-id="e0005m" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0005m">
+    <div class="elementor-element elementor-element-e0005n e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0005n-s " data-id="e0005n" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0005n">
+    			<p class="e-1g6vd5e-e0005o-s e-paragraph-base" data-interaction-id="e0005o">Reconciliation, 18 employees</p>
+					<p class="e-1g6vd5e-e0005p-s e-paragraph-base" data-interaction-id="e0005p">vs last FPS</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0005q e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0005q-s " data-id="e0005q" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0005q">
+    			<p class="e-1g6vd5e-e0005r-s e-paragraph-base" data-interaction-id="e0005r">Gross pay to date</p>
+					<p class="e-1g6vd5e-e0005s-s e-paragraph-base" data-interaction-id="e0005s">matches</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0005t e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0005t-s " data-id="e0005t" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0005t">
+    			<p class="e-1g6vd5e-e0005u-s e-paragraph-base" data-interaction-id="e0005u">PAYE income tax to date</p>
+					<p class="e-1g6vd5e-e0005v-s e-paragraph-base" data-interaction-id="e0005v">matches</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0005w e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0005w-s " data-id="e0005w" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0005w">
+    			<p class="e-1g6vd5e-e0005x-s e-paragraph-base" data-interaction-id="e0005x">Employee NI to date</p>
+					<p class="e-1g6vd5e-e0005y-s e-paragraph-base" data-interaction-id="e0005y">matches</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0005z e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0005z-s " data-id="e0005z" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0005z">
+    			<p class="e-1g6vd5e-e00060-s e-paragraph-base" data-interaction-id="e00060">Employer NI to date</p>
+					<p class="e-1g6vd5e-e00061-s e-paragraph-base" data-interaction-id="e00061">matches</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00062 e-con e-atomic-element e-flexbox-base e-1g6vd5e-e00062-s " data-id="e00062" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00062">
+    			<p class="e-1g6vd5e-e00063-s e-paragraph-base" data-interaction-id="e00063">Pension contributions, 1 employee</p>
+					<p class="e-1g6vd5e-e00064-s e-paragraph-base" data-interaction-id="e00064">£18.40 out</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00065 e-con e-atomic-element e-flexbox-base e-1g6vd5e-e00065-s " data-id="e00065" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00065">
+    			<p class="e-1g6vd5e-e00066-s e-paragraph-base" data-interaction-id="e00066">Student loan deductions</p>
+					<p class="e-1g6vd5e-e00067-s e-paragraph-base" data-interaction-id="e00067">matches</p>
+		
+</div>
+			<p class="e-1g6vd5e-e00068-s e-paragraph-base" data-interaction-id="e00068">One line disagrees. We show you which person, which period and which figure, before your first Plainroll run, not after it.</p>
+		
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="elementor-element elementor-element-e00069 e-con e-atomic-element e-flexbox-base e-1g6vd5e-e00069-s " data-id="e00069" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00069">
+    <div class="elementor-element elementor-element-e0006a e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0006a-s " data-id="e0006a" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0006a">
+    <div class="elementor-element elementor-element-e0006b e-con e-atomic-element e-grid-base e-1g6vd5e-e0006b-s " data-id="e0006b" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0006b">
+    <div class="elementor-element elementor-element-e0006c e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0006c-s " data-id="e0006c" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0006c">
+    			<p class="e-1g6vd5e-e0006d-s e-paragraph-base" data-interaction-id="e0006d">If HMRC writes to you</p>
+					<h2 data-interaction-id="e0006e" class="e-1g6vd5e-e0006e-s e-heading-base">We deal with it, and we pay any penalty that was our error.</h2>
+					<p class="e-1g6vd5e-e0006f-s e-paragraph-base" data-interaction-id="e0006f">If HMRC writes to you about a submission we made, we deal with it and we pay any penalty that was our error. That is in the terms, not just the marketing.</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0006g e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0006g-s " data-id="e0006g" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0006g">
+    <div class="elementor-element elementor-element-e0006h e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0006h-s " data-id="e0006h" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0006h">
+    			<p class="e-1g6vd5e-e0006i-s e-paragraph-base" data-interaction-id="e0006i">Forward the letter</p>
+					<p class="e-1g6vd5e-e0006j-s e-paragraph-base" data-interaction-id="e0006j">One email to the team that filed it. You are not opening a ticket and you are not explaining PAYE to a first-line agent.</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0006k e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0006k-s " data-id="e0006k" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0006k">
+    			<p class="e-1g6vd5e-e0006l-s e-paragraph-base" data-interaction-id="e0006l">Support, in writing</p>
+					<p class="e-1g6vd5e-e0006m-s e-paragraph-base" data-interaction-id="e0006m">Support is email and phone, 8am to 6pm, answered by four people in Manchester who have all run payroll for a living.</p>
+		
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="elementor-element elementor-element-e0006n e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0006n-s " data-id="e0006n" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0006n">
+    <div class="elementor-element elementor-element-e0006o e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0006o-s " data-id="e0006o" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0006o">
+    <div class="elementor-element elementor-element-e0006p e-con e-atomic-element e-grid-base e-1g6vd5e-e0006p-s " data-id="e0006p" data-element_type="e-grid" data-e-type="e-grid" data-interaction-id="e0006p">
+    <div class="elementor-element elementor-element-e0006q e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0006q-s " data-id="e0006q" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0006q">
+    			<p class="e-1g6vd5e-e0006r-s e-paragraph-base" data-interaction-id="e0006r">Your accountant</p>
+					<h2 data-interaction-id="e0006s" class="e-1g6vd5e-e0006s-s e-heading-base">Accountant access, free forever.</h2>
+					<p class="e-1g6vd5e-e0006t-s e-paragraph-base" data-interaction-id="e0006t">Their own login, their own permissions, journals in the format they already use, and the year-end pack without a single forwarded PDF. We do not charge them for it, we do not charge you for it, and we do not use it as the reason you need the next tier up.</p>
+		<div class="elementor-element elementor-element-e0006u e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0006u-s " data-id="e0006u" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0006u">
+    <div class="elementor-element elementor-element-e0006v e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0006v-s " data-id="e0006v" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0006v">
+    			<p class="e-1g6vd5e-e0006w-s e-paragraph-base" data-interaction-id="e0006w">Seats</p>
+					<p class="e-1g6vd5e-e0006x-s e-paragraph-base" data-interaction-id="e0006x">Unlimited</p>
+		
+</div>
+<div class="elementor-element elementor-element-e0006y e-con e-atomic-element e-flexbox-base e-1g6vd5e-e0006y-s " data-id="e0006y" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e0006y">
+    			<p class="e-1g6vd5e-e0006z-s e-paragraph-base" data-interaction-id="e0006z">Export</p>
+					<p class="e-1g6vd5e-e00070-s e-paragraph-base" data-interaction-id="e00070">CSV and Xero</p>
+		
+</div>
+<div class="elementor-element elementor-element-e00071 e-con e-atomic-element e-flexbox-base e-1g6vd5e-e00071-s " data-id="e00071" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00071">
+    			<p class="e-1g6vd5e-e00072-s e-paragraph-base" data-interaction-id="e00072">Price</p>
+					<p class="e-1g6vd5e-e00073-s e-paragraph-base" data-interaction-id="e00073">£0</p>
+		
+</div>
+
+</div>
+
+</div>
+<div class="elementor-element elementor-element-e00074 e-con e-atomic-element e-flexbox-base e-1g6vd5e-e00074-s " data-id="e00074" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00074">
+    			<p class="e-1g6vd5e-e00075-s e-paragraph-base" data-interaction-id="e00075">£0</p>
+					<p class="e-1g6vd5e-e00076-s e-paragraph-base" data-interaction-id="e00076">The accountant seat line on our ledger, and the one line on theirs that is also free — which tells you where the rest of their pricing is hiding.</p>
+		
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="elementor-element elementor-element-e00077 e-con e-atomic-element e-flexbox-base e-1g6vd5e-e00077-s " data-id="e00077" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00077" id="start">
+    <div class="elementor-element elementor-element-e00078 e-con e-atomic-element e-flexbox-base e-1g6vd5e-e00078-s " data-id="e00078" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="e00078">
+    			<p class="e-1g6vd5e-e00079-s e-paragraph-base" data-interaction-id="e00079">£29 a month, up to 50 employees</p>
+					<h2 data-interaction-id="e0007a" class="e-1g6vd5e-e0007a-s e-heading-base">Run your first payroll free.</h2>
+					<p class="e-1g6vd5e-e0007b-s e-paragraph-base" data-interaction-id="e0007b">Bring your figures, run one payroll on us, and check every number against what you were going to file anyway. If it does not add up, you have lost an afternoon and nothing else.</p>
+					<p class="e-1g6vd5e-e0007c-s e-paragraph-base" data-interaction-id="e0007c"><a href="#start" target="_self" class="e-paragraph-link-base">
+		Run your first payroll free
+	</a></p>
+					<p class="e-1g6vd5e-e0007d-s e-paragraph-base" data-interaction-id="e0007d">Plainroll · flat-fee payroll for UK businesses · support 8am–6pm, Manchester</p>
+		
+</div>
+
+</section>
+
+</div>
+		<div class="elementor-element elementor-element-e0007e elementor-widget elementor-widget-html" data-id="e0007e" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					<script data-exjsx-motion-guard>(function(){if(!matchMedia("(prefers-reduced-motion: reduce)").matches)return;var z=function(){var s=document.getElementById("elementor-interactions-data");return!!(s&&s.textContent!=="[]")&&(s.textContent="[]",!0)};if(!z()){var o=new MutationObserver(function(){z()&&o.disconnect()});o.observe(document.documentElement,{childList:true,subtree:true});addEventListener("DOMContentLoaded",function(){z();o.disconnect()})}})()</script>				</div>
+				</div>
+		<script type="application/json" id="elementor-interactions-data">[{"elementId":"e0000i","dataId":"e0000i","interactions":[{"$$type":"interaction-item","value":{"interaction_id":{"$$type":"string","value":"ix-0"},"trigger":{"$$type":"string","value":"scrollIn"},"animation":{"$$type":"animation-preset-props","value":{"effect":{"$$type":"string","value":"fade"},"type":{"$$type":"string","value":"in"},"direction":{"$$type":"string","value":""},"timing_config":{"$$type":"timing-config","value":{"duration":{"$$type":"size","value":{"unit":"ms","size":600}},"delay":{"$$type":"size","value":{"unit":"ms","size":0}}}}}}}}]},{"elementId":"e0004a","dataId":"e0004a","interactions":[{"$$type":"interaction-item","value":{"interaction_id":{"$$type":"string","value":"ix-1"},"trigger":{"$$type":"string","value":"scrollIn"},"animation":{"$$type":"animation-preset-props","value":{"effect":{"$$type":"string","value":"fade"},"type":{"$$type":"string","value":"in"},"direction":{"$$type":"string","value":""},"timing_config":{"$$type":"timing-config","value":{"duration":{"$$type":"size","value":{"unit":"ms","size":600}},"delay":{"$$type":"size","value":{"unit":"ms","size":0}}}}}}}}]}]</script><script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/twentytwentyfive/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+			<script>
+				( () => {
+					const lazyloadRunObserver = () => {
+						const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+						const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+							entries.forEach( ( entry ) => {
+								if ( entry.isIntersecting ) {
+									let lazyloadBackground = entry.target;
+									if( lazyloadBackground ) {
+										lazyloadBackground.classList.add( 'e-lazyloaded' );
+									}
+									lazyloadBackgroundObserver.unobserve( entry.target );
+								}
+							});
+						}, { rootMargin: '200px 0px 200px 0px' } );
+						lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+							lazyloadBackgroundObserver.observe( lazyloadBackground );
+						} );
+					};
+					const events = [
+						'DOMContentLoaded',
+						'elementor/lazyload/observe',
+					];
+					events.forEach( ( event ) => {
+						document.addEventListener( event, lazyloadRunObserver );
+					} );
+				} )();
+			</script>
+			<script id="elementor-webpack-runtime-js" src="http://127.0.0.1:8950/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=4.2.1"></script>
+<script id="elementor-frontend-modules-js" src="http://127.0.0.1:8950/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=4.2.1"></script>
+<script id="jquery-ui-core-js" src="http://127.0.0.1:8950/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnX":"Share on X","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"4.2.1","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_optimized_markup":true,"e_panel_promotions":true,"e_pro_free_trial_popup":true,"nested-elements":true,"e_atomic_elements":true,"atomic_widgets_should_enforce_capabilities":true,"editor_mcp":true,"e_bc_migrations":true,"e_classes":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"e_variables_manager":true,"e_opt_in_v4_page":true,"e_opt_in_v4":true,"e_components":true,"e_interactions":true,"e_widget_creation":true,"import-export-customization":true},"urls":{"assets":"http:\/\/127.0.0.1:8950\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"http:\/\/127.0.0.1:8950\/wp-admin\/admin-ajax.php","uploadUrl":"http:\/\/127.0.0.1:8950\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"a7b0c492e3","atomicFormsSendForm":"0045d5964e"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":175,"title":"Plainroll%20%E2%80%94%20%C2%A329%20flat%20payroll%20for%20UK%20small%20businesses%20%E2%80%93%20Elementor%20Ultra%20Dev","excerpt":"","featuredImage":false}};
+//# sourceURL=elementor-frontend-js-before
+</script>
+<script id="elementor-frontend-js" src="http://127.0.0.1:8950/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=4.2.1"></script>
+<script id="motion-js-js" src="http://127.0.0.1:8950/wp-content/plugins/elementor/assets/lib/motion/motion.min.js?ver=11.13.5"></script>
+<script id="elementor-interactions-shared-utils-js" src="http://127.0.0.1:8950/wp-content/plugins/elementor/assets/js/interactions-shared-utils.min.js?ver=1.0.0"></script>
+<script id="elementor-interactions-js-extra">
+var ElementorInteractionsConfig = {"constants":{"defaultDuration":600,"defaultDelay":0,"slideDistance":100,"scaleStart":0,"defaultEasing":"easeIn","relativeTo":"viewport","repeat":"","start":85,"end":15},"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true}}};
+//# sourceURL=elementor-interactions-js-extra
+</script>
+<script id="elementor-interactions-js" src="http://127.0.0.1:8950/wp-content/plugins/elementor/assets/js/interactions.min.js?ver=1.0.0"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"http://127.0.0.1:8950/wp-includes/js/wp-emoji-release.min.js?ver=7.0.4"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=http://127.0.0.1:8950/wp-includes/js/wp-emoji-loader.min.js
+</script>
+	</body>
+</html>

@@ -1,6 +1,7 @@
 import { Chrome } from '../components/chrome.jsx';
 import { Nav, Hero, Ticker } from '../components/hero.jsx';
 import { Proof } from '../components/proof.jsx';
+import { Fifty } from '../components/fifty.jsx';
 import { Seam } from '../components/seam.jsx';
 import { Loop } from '../components/loop.jsx';
 import { Stack } from '../components/stack.jsx';
@@ -24,6 +25,7 @@ export default ({ theme: t }) => (
       <Hero theme={t} />
       <Ticker />
       <Proof theme={t} />
+      <Fifty theme={t} />
       <Seam theme={t} />
       <Loop theme={t} />
       <Stack theme={t} />

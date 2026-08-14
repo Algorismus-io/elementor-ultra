@@ -1,0 +1,377 @@
+/* exjsx.dev/showcase — chrome for the fifty.
+   ---------------------------------------------------------------------------
+   Same surface as the exjsx.dev landing: warm print paper, print-black ink,
+   Meso set large and uppercase for display, Lay Grotesk for prose, Geist Mono
+   for labels, 2px ink rules, hard offset shadows, one green accent. Every
+   token below is lifted from landing-build/landing/theme.mjs and the
+   conventions in landing-build/landing/components/*.jsx — see BRAND.md for the
+   line-by-line provenance.
+
+   The landing uses near-black as a deliberate CONTRAST BAND (the agent
+   surface, the film frame), never as the ground. The showcase does the same:
+   paper everywhere, and the studio dark reserved for the two surfaces that
+   have to hold somebody else's design — the sandbox frame and the capture
+   plate — plus the closing call to action. That is also what stops fifty
+   wildly different screenshots from fighting the page: a dark plate with an
+   ink border is a neutral mat, and no colour a case study brings ever leaks
+   past it into the chrome. */
+
+/* Self-hosted, same files and same @font-face convention as the landing's
+   Chrome component (landing/components/chrome.jsx). No CDN, no Google Fonts.
+   build.py copies landing-build/wp/wp-content/uploads/fonts/ into dist/ so the
+   local preview resolves the same paths production already serves. */
+@font-face{font-family:'Meso';src:url('/wp-content/uploads/fonts/MesoTRIAL-Regular.otf');font-weight:400;font-display:swap}
+@font-face{font-family:'Meso';src:url('/wp-content/uploads/fonts/MesoTRIAL-Book.otf');font-weight:350;font-display:swap}
+@font-face{font-family:'Lay';src:url('/wp-content/uploads/fonts/LayGrotesk-Regular.otf');font-weight:400;font-display:swap}
+@font-face{font-family:'Lay';src:url('/wp-content/uploads/fonts/LayGrotesk-Medium.otf');font-weight:500;font-display:swap}
+@font-face{font-family:'Lay';src:url('/wp-content/uploads/fonts/LayGrotesk-Bold.otf');font-weight:700;font-display:swap}
+@font-face{font-family:'GeistM';src:url('/wp-content/uploads/fonts/GeistMono-Regular.ttf');font-weight:400;font-display:swap}
+@font-face{font-family:'GeistM';src:url('/wp-content/uploads/fonts/GeistMono-Medium.ttf');font-weight:500;font-display:swap}
+
+:root{
+  /* --- ground: warm print paper (theme.mjs color.paper / .chrig-card) --- */
+  --paper:#FAF8F3;
+  --paper-2:#FBFAF5;        /* card ground */
+  --paper-3:#FFFFFF;        /* raised / active card */
+  --ink:#191914;            /* print black, slightly warm */
+  /* The landing's body-on-paper grey is #6E6B62 (5.02:1 here). This is that
+     colour taken two steps down the same warm ramp so it clears 5.92:1 and
+     holds the contrast floor the previous dark build had — visually the same
+     grey, measurably a better one. Small mono labels go darker again: the old
+     build set them at 3.10:1, which was an AA failure at those sizes. */
+  --dim:#636057;
+  --label:#5F5C54;
+  --line:#DAD5C8;           /* hairlines on paper */
+  --line-2:#C7C0AE;
+  --go:#147434;             /* gate green — AA on paper */
+  --go-bright:#28C840;      /* gate green on the dark band */
+  --warn:#FFC53D;
+
+  /* --- the contrast band: the landing's studio dark --- */
+  --stage:#0A0A0E;
+  --stage-2:#121218;
+  --stage-line:#2E2E3A;
+  --on-stage:#ECECF1;
+  --on-stage-dim:#A8A8B4;
+  --term-dim:#7ED99B;
+
+  --focus:#2F6BFF;          /* the landing's focus ring */
+
+  --display:'Meso','Anton',ui-sans-serif,sans-serif;
+  --sans:'Lay',ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  --mono:'GeistM',ui-monospace,SFMono-Regular,Menlo,monospace;
+  --pad:clamp(20px,5vw,40px);
+  --wide:1240px;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+/* [hidden] is how the archive filter and the capture toggle hide things, and a
+   later `display:` on any element would silently defeat it. Pin it once. */
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%;background:var(--paper)}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--sans);font-size:15px;line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;                 /* belt: nothing may scroll the page sideways */
+}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+/* the landing's ring (chrome.jsx), widened from 2.5px to the 3px the legal
+   agent's disclosure banner already standardised on */
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:2px}
+::selection{background:var(--ink);color:var(--paper)}
+.wrap{max-width:var(--wide);margin:0 auto;padding-inline:var(--pad)}
+.sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;border:0;
+  clip:rect(0 0 0 0);clip-path:inset(50%);overflow:hidden;white-space:nowrap}
+.skip{position:absolute;left:-9999px;top:0;z-index:60;background:var(--ink);color:var(--paper);
+  padding:10px 16px;font:500 13px/1 var(--mono)}
+.skip:focus{left:12px;top:12px}
+
+/* ---------- type ----------
+   Display is Meso, uppercase, weight 400 — exactly how the landing sets .mega,
+   .cc-t and every h2. Prose is Lay; labels are Geist Mono with wide tracking. */
+.eyebrow{
+  font:500 11px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;
+  color:var(--label);display:flex;align-items:center;gap:10px;margin:0 0 18px;
+  border-top:2px solid var(--ink);padding-top:13px;               /* lib.jsx SectionHead */
+  max-width:none;      /* it is a <p>, and p{max-width:68ch} would cut the rule short */
+}
+.eyebrow::before{content:"";width:8px;height:8px;background:var(--go);flex:0 0 auto}
+h1,h2{font-family:var(--display);font-weight:400;text-transform:uppercase;
+  letter-spacing:.008em;margin:0;text-wrap:balance;color:var(--ink)}
+h1{font-size:clamp(34px,5.6vw,68px);line-height:1.03}
+h2{font-size:clamp(24px,3.2vw,40px);line-height:1.06}
+h3{font-weight:700;letter-spacing:-.01em;margin:0;font-size:16px}
+/* the landing's signature: the second line of the hero drawn as an outline */
+h1 .l2{-webkit-text-stroke:2.5px var(--ink);color:transparent}
+@media (max-width:640px){h1 .l2{-webkit-text-stroke:1.5px var(--ink)}}
+p{margin:0 0 1em;max-width:68ch}
+.lede{font-size:clamp(15px,1.5vw,18px);line-height:1.62;color:var(--dim);max-width:60ch}
+.mono{font-family:var(--mono)}
+.dim{color:var(--dim)}
+
+/* ---------- masthead ---------- */
+.mast{position:sticky;top:0;z-index:40;background:var(--paper);
+  border-bottom:2px solid var(--ink)}
+.mast .wrap{display:flex;align-items:center;gap:18px;height:60px}
+.mast a{text-decoration:none}
+.brand{font:400 22px/1 var(--display);letter-spacing:.03em;color:var(--ink);white-space:nowrap;
+  display:inline-flex;align-items:center;gap:10px}
+.brand .mark{flex:0 0 auto;display:block}
+.brand .wordmark span{color:var(--dim)}
+.mast nav{margin-left:auto;display:flex;align-items:center;gap:6px;min-width:0}
+.mast nav a{font:400 14px/1 var(--sans);color:var(--dim);padding:8px 10px;border-radius:6px;
+  white-space:nowrap}
+.mast nav a:hover{color:var(--ink);background:#F1ECE0}
+.mast nav a[aria-current]{color:var(--ink)}
+.cta{font:600 13.5px/1 var(--sans)!important;color:var(--paper)!important;background:var(--ink);
+  padding:10px 16px!important;border-radius:8px;border:2px solid var(--ink)}
+.cta:hover{background:#000;color:var(--paper)!important}
+@media (max-width:720px){.mast nav a.opt{display:none}.brand{font-size:19px}}
+
+/* ---------- the fictional-content strip (chrome-level, always visible) ---------- */
+/* A colophon, not a hazard strip. The wrapper pages already declare the fiction in
+   <title>, the H1, the lede and the AI-content JSON-LD, so this restates it for the
+   reader at the foot of the page in the site's own voice. The in-frame notice on the
+   50 frozen demos is deliberately NOT this — see build.py stamp_live(). */
+.notice{background:transparent;border-top:2px solid var(--ink);margin-top:72px}
+.notice .wrap{display:flex;gap:16px;align-items:baseline;flex-wrap:wrap;padding-block:20px 26px}
+.notice .tag{font:500 11px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;
+  color:var(--label);background:transparent;padding:0;flex:0 0 auto}
+.notice p{margin:0;font-size:13.5px;line-height:1.65;color:var(--dim);flex:1 1 340px;max-width:74ch}
+.notice a{color:var(--ink);font-weight:500;text-underline-offset:2px}
+
+/* ---------- controls ---------- */
+.bar{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;
+  padding:16px 0;border-bottom:1px solid var(--line)}
+.bar .grp{display:flex;align-items:center;gap:8px;flex-wrap:wrap;min-width:0}
+.bar label{font:500 10.5px/1 var(--mono);letter-spacing:.13em;text-transform:uppercase;
+  color:var(--label)}
+.chip{font:400 12.5px/1 var(--sans);color:var(--ink);background:var(--paper-3);
+  border:1.5px solid var(--ink);border-radius:999px;padding:7px 14px;cursor:pointer;
+  transition:color .12s,background .12s,transform .12s;white-space:nowrap;
+  max-width:min(30ch,100%);overflow:hidden;text-overflow:ellipsis}
+.chip:hover{transform:translateY(-2px)}
+.chip[aria-pressed="true"]{color:var(--paper);background:var(--ink);font-weight:500}
+.count{margin-left:auto;font:400 12px/1 var(--mono);color:var(--label);white-space:nowrap}
+.search{flex:1 1 200px;min-width:0;max-width:280px;background:var(--paper-3);color:var(--ink);
+  border:1.5px solid var(--ink);border-radius:999px;padding:8px 15px;
+  font:400 13px/1.2 var(--sans)}
+.search::placeholder{color:var(--dim)}
+
+/* ---------- archive grid ----------
+   A tile is a specimen pinned to the paper: an ink hairline holds whatever
+   ground colour the case study brought, and the hover is the landing's hard
+   offset shadow rather than a glow. */
+.grid{list-style:none;margin:0;padding:36px 0 72px;display:grid;gap:30px 24px;
+  grid-template-columns:repeat(auto-fill,minmax(290px,1fr))}
+.card{position:relative;min-width:0}
+.card a.hit{position:absolute;inset:0;z-index:2;border-radius:12px}
+.card a.hit:focus-visible{outline-offset:4px}
+.plate{position:relative;aspect-ratio:1/.72;overflow:hidden;border-radius:12px;
+  background:var(--paper-3);isolation:isolate;border:1.5px solid var(--ink);
+  transition:transform .18s,box-shadow .18s}
+.plate img{width:100%;height:100%;object-fit:cover;object-position:top center;
+  transition:transform .5s cubic-bezier(.2,.7,.3,1)}
+/* .plate precedes .hit in the DOM, so the keyboard state has to come from the
+   card, not a sibling combinator — :focus-within, not `.hit:focus + …`. */
+.card:hover .plate,.card:focus-within .plate{transform:translateY(-3px);
+  box-shadow:6px 6px 0 var(--ink)}
+.card:hover .plate img{transform:scale(1.028)}
+.rank{position:absolute;top:0;left:0;z-index:3;font:500 11px/1 var(--mono);
+  color:var(--paper);background:var(--ink);
+  padding:7px 10px;border-radius:10px 0 6px 0;letter-spacing:.06em}
+.meta{padding:14px 2px 0}
+.meta h3{margin:0 0 6px;font:400 18px/1.08 var(--display);text-transform:uppercase;
+  letter-spacing:.012em;color:var(--ink)}
+.meta .sub{font:400 12.5px/1.45 var(--sans);color:var(--dim);margin:0;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.swatches{display:flex;gap:0;margin-top:10px;height:5px;border-radius:2px;overflow:hidden;
+  max-width:120px;box-shadow:0 0 0 1px rgba(25,25,20,.22)}
+.swatches i{flex:1 1 0}
+.empty{padding:60px 0 100px;color:var(--dim);font-size:15px}
+.empty b{color:var(--ink)}
+
+/* ---------- case study ---------- */
+.case{padding:44px 0 0}
+.case .top{display:grid;gap:30px 48px;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);
+  align-items:start}
+@media (max-width:900px){.case .top{grid-template-columns:1fr}}
+.rankline{display:flex;align-items:baseline;gap:12px;margin:0 0 14px;flex-wrap:wrap}
+.rankline .n{font:500 12px/1 var(--mono);color:var(--go);letter-spacing:.1em}
+.rankline .of{font:400 12px/1 var(--mono);color:var(--label);letter-spacing:.1em}
+.critique{margin:24px 0 0;padding:18px 22px;background:var(--paper-2);
+  border:1.5px solid var(--line);border-left:4px solid var(--go);border-radius:0 10px 10px 0}
+.critique p{margin:0;font-size:15.5px;line-height:1.52;color:var(--ink);max-width:56ch}
+.critique .who{display:block;margin-top:10px;font:400 11px/1 var(--mono);
+  letter-spacing:.11em;text-transform:uppercase;color:var(--label)}
+
+.specs{border:1.5px solid var(--ink);border-radius:12px;overflow:hidden;background:var(--paper-3)}
+.specs dl{margin:0;display:grid;grid-template-columns:auto 1fr}
+.specs dt{padding:11px 16px;font:500 10.5px/1.5 var(--mono);letter-spacing:.12em;
+  text-transform:uppercase;color:var(--label);border-bottom:1px solid var(--line);
+  white-space:nowrap}
+.specs dd{margin:0;padding:11px 16px 11px 0;font-size:13.5px;color:var(--ink);
+  border-bottom:1px solid var(--line);min-width:0;overflow-wrap:anywhere}
+.specs dl>:nth-last-child(1),.specs dl>:nth-last-child(2){border-bottom:0}
+.pal{display:flex;flex-wrap:wrap;gap:7px;padding:14px 16px;border-top:1px solid var(--line);
+  background:var(--paper-2)}
+.pal figure{margin:0;display:flex;align-items:center;gap:7px}
+.pal i{width:15px;height:15px;border-radius:3px;box-shadow:0 0 0 1px rgba(25,25,20,.3);
+  flex:0 0 auto}
+.pal figcaption{font:400 10.5px/1 var(--mono);color:var(--label);letter-spacing:.02em}
+
+/* ---------- buttons (lib.jsx Btn: 2px ink, radius 10, ink fill or ghost) ---------- */
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 0}
+.btn{display:inline-flex;align-items:center;gap:8px;font:600 14px/1 var(--sans);
+  text-decoration:none;padding:12px 20px;border-radius:10px;border:2px solid var(--ink);
+  color:var(--ink);background:transparent;cursor:pointer;
+  transition:transform .14s,box-shadow .14s,background .14s}
+.btn:hover{transform:translateY(-2px);box-shadow:4px 4px 0 var(--ink)}
+.btn.primary{background:var(--ink);color:var(--paper)}
+.btn[aria-disabled="true"]{opacity:.42;pointer-events:none}
+.btn small{font:400 11px/1 var(--mono);color:var(--label)}
+.btn.primary small{color:rgba(250,248,243,.66)}
+
+/* ---------- the sandbox: the studio-dark contrast band ----------
+   Fifty designs that agree on nothing have to sit on something neutral. The
+   landing already owns a near-black surface for exactly this job (the film
+   frame, the agent surface), so the frame around somebody else's page is that
+   surface, held inside a 2px ink border on the paper. */
+.sandbox{margin:56px 0 0}
+.sandbox-head{display:flex;flex-wrap:wrap;align-items:flex-end;gap:12px 20px;margin-bottom:16px}
+/* the auto margin has to sit on the flex ITEM (the eyebrow+h2 block), not on the
+   h2 nested inside it — otherwise the segmented control never reaches the right
+   edge and the section rule stops at the heading's width. */
+.sandbox-head>div:first-child{flex:1 1 320px;min-width:0}
+.sandbox-head .seg{flex:0 0 auto;margin-bottom:4px}
+.seg{display:inline-flex;background:var(--paper-3);border:1.5px solid var(--ink);
+  border-radius:999px;padding:3px;gap:2px}
+.seg button{font:500 12px/1 var(--sans);color:var(--dim);background:transparent;border:0;
+  padding:8px 14px;border-radius:999px;cursor:pointer;white-space:nowrap}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.frame{border:2px solid var(--ink);border-radius:14px;overflow:hidden;background:var(--stage)}
+.frame-bar{display:flex;align-items:center;gap:10px;padding:10px 14px;
+  border-bottom:1px solid var(--stage-line);background:var(--stage-2)}
+.dots{display:flex;gap:5px;flex:0 0 auto}
+.dots i{width:9px;height:9px;border-radius:50%;background:#3A3A48}
+.frame-bar .url{font:400 11.5px/1 var(--mono);color:var(--on-stage-dim);white-space:nowrap;
+  overflow:hidden;text-overflow:ellipsis;min-width:0;flex:1 1 auto}
+.frame-bar .flag{font:500 10px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;
+  color:#17161B;background:var(--warn);padding:4px 7px;border-radius:3px;flex:0 0 auto}
+.stage-wrap{background:var(--stage);display:flex;justify-content:center;
+  padding:0;transition:padding .2s}
+.stage-wrap.is-mobile{padding:24px 16px}
+.stage{width:100%;border:0;display:block;height:min(76vh,860px);background:#fff;
+  transition:width .25s cubic-bezier(.2,.7,.3,1)}
+.stage-wrap.is-mobile .stage{width:390px;max-width:100%;border-radius:14px;
+  box-shadow:0 0 0 1px var(--stage-line),0 18px 44px rgba(0,0,0,.5)}
+.frame-foot{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;
+  padding:11px 14px;border-top:1px solid var(--stage-line);background:var(--stage-2);
+  font:400 11.5px/1.5 var(--mono);color:var(--on-stage-dim)}
+.frame-foot a{color:var(--term-dim)}
+.stage-off{display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:14px;height:min(76vh,860px);text-align:center;padding:24px}
+.stage-off p{color:var(--on-stage-dim);font-size:13.5px;max-width:44ch;margin:0}
+
+/* ---------- capture plates — the same studio mat ---------- */
+.captures{margin:60px 0 0}
+.shot{border:2px solid var(--ink);border-radius:14px;overflow:hidden;background:var(--stage)}
+.shot figcaption{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline;
+  padding:11px 14px;border-bottom:1px solid var(--stage-line);background:var(--stage-2);
+  font:400 11.5px/1.4 var(--mono);color:var(--on-stage-dim)}
+.shot figcaption b{color:var(--on-stage);font-weight:500}
+.scrollplate{max-height:min(72vh,760px);overflow-y:auto;overflow-x:hidden;
+  overscroll-behavior:contain;background:var(--stage)}
+.capstage{display:flex;justify-content:center;padding:0;transition:padding .2s}
+.capstage.is-mobile{padding:22px 16px}
+.capstage img{width:100%;display:block}
+.capstage.is-mobile img{width:390px;max-width:100%;border-radius:12px;
+  box-shadow:0 0 0 1px var(--stage-line),0 18px 44px rgba(0,0,0,.5)}
+.capnote{margin:11px 2px 0;font-size:11.5px;color:var(--label)}
+
+/* ---------- brief ---------- */
+.brief{margin:60px 0 0}
+.brief-grid{display:grid;gap:22px 40px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.brief-grid section{min-width:0}
+.brief h3{font:500 10.5px/1 var(--mono);letter-spacing:.13em;text-transform:uppercase;
+  color:var(--label);margin:0 0 10px}
+.brief p{font-size:14.5px;color:var(--ink);margin:0;line-height:1.6}
+.seclist{margin:0;padding:0;list-style:none;counter-reset:s}
+.seclist li{counter-increment:s;display:flex;gap:11px;padding:8px 0;
+  border-bottom:1px solid var(--line);font-size:13.5px;color:var(--ink)}
+.seclist li:last-child{border-bottom:0}
+.seclist li::before{content:counter(s,decimal-leading-zero);font:400 11px/1.6 var(--mono);
+  color:var(--go);flex:0 0 auto}
+
+/* ---------- prev / next + footer ---------- */
+.pager{display:grid;gap:16px;grid-template-columns:1fr 1fr;margin:68px 0 0}
+@media (max-width:640px){.pager{grid-template-columns:1fr}}
+.pager a{display:block;padding:18px 20px;border:1.5px solid var(--ink);border-radius:12px;
+  text-decoration:none;background:var(--paper-2);min-width:0;
+  transition:transform .14s,box-shadow .14s}
+.pager a:hover{transform:translateY(-2px);box-shadow:5px 5px 0 var(--ink)}
+.pager .k{display:block;font:500 10.5px/1 var(--mono);letter-spacing:.13em;
+  text-transform:uppercase;color:var(--label);margin-bottom:9px}
+.pager .t{display:block;font:400 19px/1.08 var(--display);text-transform:uppercase;
+  letter-spacing:.012em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pager .r{display:block;font:400 12px/1 var(--mono);color:var(--dim);margin-top:7px}
+.pager a.next{text-align:right}
+.pager a.none{opacity:.3;pointer-events:none;box-shadow:none;transform:none}
+
+/* ---------- closing band — the landing's dark agent surface ---------- */
+.funnel{margin:76px 0 0;border:2px solid var(--ink);border-radius:14px;
+  background:var(--stage);color:var(--on-stage);padding:clamp(26px,4vw,44px)}
+.funnel h2{color:var(--on-stage);margin-bottom:12px}
+.funnel .eyebrow{border-top-color:var(--stage-line);color:var(--on-stage-dim)}
+.funnel .eyebrow::before{background:var(--go-bright)}
+.funnel .lede{color:var(--on-stage-dim)}
+.funnel .row{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.funnel .btn{border-color:var(--on-stage);color:var(--on-stage)}
+.funnel .btn:hover{box-shadow:4px 4px 0 var(--go-bright)}
+.funnel .btn.primary{background:var(--go-bright);border-color:var(--go-bright);color:#04140A}
+.funnel .btn.primary:hover{box-shadow:4px 4px 0 var(--on-stage)}
+.funnel a:not(.btn){color:var(--term-dim)}
+
+footer.foot{margin-top:84px;border-top:2px solid var(--ink);padding:28px 0 56px}
+footer.foot .wrap{display:flex;flex-wrap:wrap;gap:12px 26px;align-items:center;
+  font:400 12px/1.6 var(--mono);color:var(--label)}
+footer.foot a{color:var(--dim);text-decoration:none}
+footer.foot a:hover{color:var(--ink)}
+footer.foot .sp{margin-left:auto}
+
+/* ---------- notice / legal documents ----------
+   Prose set at full ink: a document nobody can read is not a disclosure. */
+.doc{padding:clamp(28px,5vw,52px) 0 0;max-width:74ch}
+.doc h2{font-size:clamp(22px,3vw,34px);margin:0 0 18px}
+.doc h3{font-family:var(--sans);text-transform:none;font-size:19px;font-weight:700;
+  letter-spacing:-.012em;margin:36px 0 10px;color:var(--ink)}
+.doc h4{font-family:var(--sans);text-transform:none;font-size:15px;font-weight:700;
+  margin:26px 0 8px;color:var(--ink)}
+.doc p{font-size:15.5px;line-height:1.62;color:var(--ink);margin:0 0 1.05em;max-width:74ch}
+.doc strong{color:var(--ink);font-weight:700}
+.doc a{color:var(--go);text-underline-offset:2px}
+.doc ul,.doc ol{margin:0 0 1.2em;padding-left:1.35em;color:var(--ink)}
+.doc li{font-size:15px;line-height:1.6;margin-bottom:.5em;padding-left:.2em}
+.doc li::marker{color:var(--go)}
+.doc code{font:400 13px/1.4 var(--mono);background:#EFEADD;color:var(--ink);
+  padding:2px 6px;border-radius:4px;overflow-wrap:anywhere}
+.doc hr{border:0;border-top:1px solid var(--line);margin:40px 0}
+.doc blockquote{margin:0 0 1.2em;padding:2px 0 2px 20px;border-left:3px solid var(--go)}
+.doc blockquote p{margin:0;color:var(--ink)}
+.doc .tablewrap{overflow-x:auto;margin:0 0 1.4em;border:1.5px solid var(--ink);
+  border-radius:10px;-webkit-overflow-scrolling:touch}
+.doc table{border-collapse:collapse;width:100%;min-width:520px;font-size:13.5px}
+.doc th,.doc td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);
+  vertical-align:top;color:var(--ink)}
+.doc th{font:500 10.5px/1.5 var(--mono);letter-spacing:.11em;text-transform:uppercase;
+  color:var(--label);background:var(--paper-2);white-space:nowrap}
+.doc tr:last-child td{border-bottom:0}
+.doc .btn{margin-top:8px}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important}
+  .btn:hover,.chip:hover,.pager a:hover,
+  .card:hover .plate,.card:focus-within .plate{transform:none}
+}

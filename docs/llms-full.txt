@@ -45,6 +45,10 @@ concurrency; op_id idempotency.
 ## Docs & proof
 - https://docs.wpos.ai/ultra
 - https://docs.wpos.ai/ultra/examples/overview — 8 sites built live on camera, one prompt each
+- https://exjsx.dev/showcase/ — 50 more pages from one run (~1 developer day): fifty
+  invented brands, fifty real Elementor pages, ranked best-first by a human design
+  review; each case study embeds the live page, sandboxed. Machine index:
+  https://exjsx.dev/showcase/index.json — all fifty are fictional demonstrations.
 
 ## License
 MIT (c) 2026 Algorismus (also operates wpos.ai). Independent project — not

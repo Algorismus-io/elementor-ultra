@@ -73,6 +73,18 @@ PROOF ....... 8 production-shaped sites, built live on camera,
               films + scrollable results:
               https://docs.wpos.ai/ultra/examples/overview
 
+SHOWCASE .... 50 more pages, one run, ~1 developer day. fifty invented
+              brands, fifty real Elementor pages; each brief named a
+              fictional business, an audience and a visual archetype,
+              the agent did art direction, copy, imagery and the build.
+              humans debugged and ranked them best-first; the weak ones
+              were kept. every case study embeds the live page,
+              sandboxed. all fifty are fictional demonstrations — no
+              real offers, endorsements, or advice.
+              archive ..... https://exjsx.dev/showcase/
+              machine idx . https://exjsx.dev/showcase/index.json
+              how it was made https://exjsx.dev/showcase/ai-content/
+
 SOURCE ...... this very page is elementor-jsx output. excerpt
               of the hero you just flipped from:
 
