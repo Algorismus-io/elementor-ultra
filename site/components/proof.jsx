@@ -28,16 +28,19 @@ export const Proof = ({ theme: t }) => (
       hiding anything.
     </text>
     <text size={12} font={t.font.mono} color={t.color.dim} sx={{ letterSpacing: '.14em' }}>
-      SEVEN CHAPTERS, IN FULL — THE ONE YOU ARE READING IS LIT
+      EIGHT FILMS — PICK ONE. EVERY CHAPTER IN FULL, THE ONE YOU ARE READING IS LIT
     </text>
     <html>{`
+<div class="film-switch" id="film-switch" role="group" aria-label="Choose a film">
+${chips.map(([key, name], i) => `  <button type="button" class="fs-b${i === 0 ? ' on' : ''}" data-i="${i}" aria-pressed="${i === 0 ? 'true' : 'false'}"><span class="fs-n" aria-hidden="true">${String(i + 1).padStart(2, '0')}</span><span class="fs-name">${name}</span><span class="fs-now">NOW PLAYING</span></button>`).join('\n')}
+</div>
 <div class="chrig-outer" id="chrig-outer">
 <div class="chrig" id="chrig">
   <div class="chrig-stage">
     <div class="chrig-frame">
       <video id="chrig-video" muted playsinline preload="metadata" aria-label="Silent screen recording of an AI agent building this site"
-        poster="https://docs.wpos.ai/images/ultra/examples/housemait-thumb.jpg"
-        src="https://docs.wpos.ai/videos/ultra/examples/housemait.mp4?v=3"></video>
+        poster="/wp-content/uploads/film/housemait-thumb.jpg"
+        src="/wp-content/uploads/film/housemait.mp4"></video>
       <div class="chrig-rail" id="chrig-rail" aria-label="Film timeline">
         <div class="chrig-progress" id="chrig-progress"></div>
       </div>
@@ -61,19 +64,26 @@ export const Proof = ({ theme: t }) => (
   var fullBtn=document.getElementById('chrig-full');
   var cap=document.querySelector('.chrig-cap');
   var outer=document.getElementById('chrig-outer');
-  var full=false, active=-1, F=FILMS[0], cards=[], pendingSeek=null;
-  var BASE='https://docs.wpos.ai', VQ='?v=3';
+  var full=false, active=-1, F=FILMS[0], curFilm=0, cards=[], pendingSeek=null;
+  // The films are same-origin now (they were on docs.wpos.ai, which advertises
+  // accept-ranges and then answers a Range request with 200 and the whole body — media
+  // served that way is unseekable in every browser). GitHub Pages answers 206, so the
+  // chapters can steer the film. Posters sit next to them as <slug>-thumb.jpg.
+  var FILM_BASE='/wp-content/uploads/film/';
+  function filmSrc(s){return FILM_BASE+s+'.mp4'}
+  function filmPoster(s){return FILM_BASE+s+'-thumb.jpg'}
   var calm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var onScreen=true;   // is the pinned film actually in front of the reader
   function endT(i){return i<F.ch.length-1?F.ch[i+1].s:F.end}
   // ---- can this film be seeked at all?
-  // docs.wpos.ai answers a Range request with 200 and the whole body, so the browser
-  // marks the media unseekable: v.seekable stays empty however much is buffered, and
-  // any v.currentTime = 38.9 is silently clamped. Measured 2026-08-14. Two modes:
+  // A media file is only seekable if its origin answers Range requests with 206; if it
+  // answers 200 with the whole body, v.seekable stays empty however much is buffered and
+  // any v.currentTime = 38.9 is silently clamped. Same-origin on GitHub Pages this is
+  // true, so SEEK is the normal mode — but the rig keeps measuring rather than assuming,
+  // and degrades honestly on any origin that lies:
   //   SEEK   (seekable) — the chapter the reader scrolls to drives the film.
   //   STREAM (not)      — the film plays straight through and drives the chapter list.
-  // Whichever it is, the seven chapters are readable; the mode only decides who leads.
-  // If the origin ever starts honouring Range, SEEK turns itself back on.
+  // Whichever it is, every chapter is readable; the mode only decides who leads.
   var seekOK=null;
   function probeSeek(force){
     var was=seekOK;
@@ -96,7 +106,7 @@ export const Proof = ({ theme: t }) => (
     });
     return seekOK;
   }
-  ['loadedmetadata','loadeddata','canplay','progress','durationchange'].forEach(function(ev){
+  ['loadedmetadata','loadeddata','canplay','canplaythrough','seeked','progress','durationchange'].forEach(function(ev){
     v.addEventListener(ev,probeSeek);
   });
   function mark(i){
@@ -203,21 +213,56 @@ export const Proof = ({ theme: t }) => (
     if(full){ try{if(seekOK)v.currentTime=0;var p=v.play();if(p&&p.catch)p.catch(function(){})}catch(e){} }
     else { v.pause(); if(active>=0&&seekOK){ v.currentTime=F.ch[active].s; } }
   });
+  // ---- the eight-film switcher.
+  // Eight real <button>s, written into the page as markup (not built here) so they are
+  // tab-reachable with JS off-line, and so the localizer can see their copy. Arrow keys
+  // move focus without loading anything; Enter/Space (the native button activation) is
+  // what actually swaps the film \u2014 a film is ~5 MB, so nothing loads on a keystroke.
+  var swBtns=[].slice.call(document.querySelectorAll('#film-switch .fs-b'));
+  function paintFilmState(i){
+    swBtns.forEach(function(b,j){
+      b.classList.toggle('on',j===i);
+      b.setAttribute('aria-pressed',j===i?'true':'false');
+    });
+    document.querySelectorAll('#chip-row>div').forEach(function(c,j){c.classList.toggle('film-on',j===i)});
+  }
+  // the film must be on screen for a switch to mean anything, but a control that yanks
+  // the page when the film is already visible is worse than one that does nothing.
+  function ensureFilmVisible(){
+    var st=document.querySelector('.chrig-stage'); if(!st)return;
+    var r=st.getBoundingClientRect();
+    if(r.top>=0&&r.bottom<=window.innerHeight)return;                 // fully visible
+    if(r.top>-r.height*0.25&&r.top<window.innerHeight*0.6)return;     // near enough
+    outer.scrollIntoView({behavior:calm?'auto':'smooth',block:'start'});
+  }
   function switchFilm(i){
+    if(i<0||i>=FILMS.length)return;
+    curFilm=i; paintFilmState(i);
     if(FILMS[i]===F)return;
     F=FILMS[i]; active=-1; full=false; v.controls=false;
     fullBtn.textContent='\u25b6 WATCH FULL FILM';
     v.pause();
-    v.poster=BASE+'/images/ultra/examples/'+F.slug+'-thumb.jpg';
-    v.src=BASE+'/videos/ultra/examples/'+F.slug+'.mp4'+VQ;
-    buildFilm();
-    var chips=document.querySelectorAll('#chip-row>div');
-    chips.forEach(function(c,j){c.classList.toggle('film-on',j===i)});
+    v.poster=filmPoster(F.slug);
+    v.src=filmSrc(F.slug);
+    prog.style.width='0%';
+    buildFilm();                 // new chapter cards, new ticks, new caption
     pendingSeek=F.ch[0].s; wantPlay=!calm;
-    // the chips sit below the rig \u2014 bring the film back into view, once, on request
-    outer.scrollIntoView({behavior:calm?'auto':'smooth',block:'start'});
+    ensureFilmVisible();
   }
-  // chips → film switcher (docs link preserved as a small corner arrow)
+  swBtns.forEach(function(b,i){
+    b.addEventListener('click',function(){switchFilm(i)});
+    b.addEventListener('keydown',function(e){
+      var n=null, L=swBtns.length;
+      if(e.key==='ArrowRight'||e.key==='ArrowDown')n=(i+1)%L;
+      else if(e.key==='ArrowLeft'||e.key==='ArrowUp')n=(i-1+L)%L;
+      else if(e.key==='Home')n=0;
+      else if(e.key==='End')n=L-1;
+      if(n===null)return;
+      e.preventDefault(); swBtns[n].focus();
+    });
+  });
+  // the eight palette chips below the rig are a second way in to the same eight films
+  // (docs link preserved as a small corner arrow)
   function wireChips(){
   var chips=document.querySelectorAll('#chip-row>div');
   chips.forEach(function(c,i){
@@ -239,8 +284,8 @@ export const Proof = ({ theme: t }) => (
       nameEl.setAttribute('aria-label','Load the '+FILMS[i].name+' film');
       nameEl.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();switchFilm(i)}});
     }
-    if(i===0)c.classList.add('film-on');
   });
+  paintFilmState(curFilm);
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',wireChips);
   else wireChips();

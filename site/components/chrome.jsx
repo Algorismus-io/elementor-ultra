@@ -99,6 +99,33 @@ export const Chrome = ({ theme: t }) => (
   @media(max-width:899px){#loop-strip>div:first-child{border-radius:12px 12px 0 0}
     #loop-strip>div:last-child{border-radius:0 0 12px 12px}}
 
+  /* ---- the eight-film switcher ----
+     One control per film, in the pill language of .al-chip. The live one is marked three
+     ways so colour is never the only signal: ink fill, an offset shadow, and the
+     "▶ NOW PLAYING" tag that only the active button shows (aria-pressed says the same
+     thing to a screen reader). Real <button>s, so tab and Enter/Space work by default. */
+  .film-switch{display:flex;flex-wrap:wrap;gap:8px;width:100%;margin:2px 0 6px}
+  .fs-b{appearance:none;display:inline-flex;align-items:center;gap:9px;cursor:pointer;
+    border:1.5px solid ${t.color.ink};border-radius:999px;background:#FFFFFF;color:${t.color.ink};
+    padding:9px 15px;font-family:'Lay',sans-serif;font-size:13.5px;line-height:1;
+    transition:transform .2s,box-shadow .2s,background .2s,color .2s}
+  .fs-b .fs-n{font-family:'GeistM',ui-monospace,monospace;font-size:10.5px;letter-spacing:.12em;color:${t.color.dim}}
+  .fs-b .fs-now{display:none}
+  .fs-b:hover{transform:translateY(-2px);box-shadow:3px 3px 0 ${t.color.ink}}
+  .fs-b.on{background:${t.color.ink};color:${t.color.paper};box-shadow:4px 4px 0 ${t.color.go}}
+  .fs-b.on .fs-n{color:${t.color.goBright}}
+  .fs-b.on .fs-now{display:inline-flex;align-items:center;font-family:'GeistM',ui-monospace,monospace;
+    font-size:9.5px;letter-spacing:.12em;color:${t.color.goBright};
+    border-left:1px solid rgba(250,248,243,.3);padding-left:9px}
+  .fs-b.on .fs-now::before{content:'\\25b6';margin-right:5px;font-size:8px}
+  .fs-b:focus-visible{outline:2.5px solid #2F6BFF;outline-offset:2px}
+  @media(max-width:640px){
+    .film-switch{gap:6px}
+    .fs-b{padding:8px 12px;font-size:12.5px;gap:7px}
+    .fs-b .fs-n{font-size:9.5px}
+    .fs-b.on .fs-now{font-size:8.5px;padding-left:7px}
+  }
+
   /* ---- chapter rig ----
      The chapters are an ordinary vertical list at their natural height, in normal
      document flow. The film pins beside them with position:sticky and travels its

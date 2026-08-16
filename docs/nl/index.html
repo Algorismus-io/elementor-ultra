@@ -61,10 +61,10 @@ a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-
 /*# sourceURL=elementor-frontend-inline-css */
 </style>
 <link href="/wp-content/uploads/elementor/css/post-4.css?ver=1786622852" id="elementor-post-4-css" media="all" rel="stylesheet"/>
-<link href="/wp-content/uploads/elementor/css/base-desktop.css?ver=6a7e4bb5a0668" id="base-desktop-css" media="all" rel="stylesheet"/>
-<link href="/wp-content/uploads/elementor/css/global-7-frontend-desktop.css?ver=6a7e4bb5a0e38" id="global-7-frontend-desktop-css" media="all" rel="stylesheet"/>
-<link href="/wp-content/uploads/elementor/css/base-mobile.css?ver=6a7e4bb5a0668" id="base-mobile-css" media="(max-width:767px)" rel="stylesheet"/>
-<link href="/wp-content/uploads/elementor/css/global-7-frontend-mobile.css?ver=6a7e4bb5a0e38" id="global-7-frontend-mobile-css" media="(max-width:767px)" rel="stylesheet"/>
+<link href="/wp-content/uploads/elementor/css/base-desktop.css?ver=6a820af7aa2a8" id="base-desktop-css" media="all" rel="stylesheet"/>
+<link href="/wp-content/uploads/elementor/css/global-7-frontend-desktop.css?ver=6a820af7aae60" id="global-7-frontend-desktop-css" media="all" rel="stylesheet"/>
+<link href="/wp-content/uploads/elementor/css/base-mobile.css?ver=6a820af7aa2a8" id="base-mobile-css" media="(max-width:767px)" rel="stylesheet"/>
+<link href="/wp-content/uploads/elementor/css/global-7-frontend-mobile.css?ver=6a820af7aae60" id="global-7-frontend-mobile-css" media="(max-width:767px)" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=swap" id="elementor-gf-roboto-css" media="all" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=swap" id="elementor-gf-robotoslab-css" media="all" rel="stylesheet"/>
 <script id="jquery-core-js" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
@@ -265,6 +265,33 @@ document.addEventListener('DOMContentLoaded', function(){
   #loop-strip>div:last-child{border-radius:0 12px 12px 0}
   @media(max-width:899px){#loop-strip>div:first-child{border-radius:12px 12px 0 0}
     #loop-strip>div:last-child{border-radius:0 0 12px 12px}}
+
+  /* ---- the eight-film switcher ----
+     One control per film, in the pill language of .al-chip. The live one is marked three
+     ways so colour is never the only signal: ink fill, an offset shadow, and the
+     "▶ NOW PLAYING" tag that only the active button shows (aria-pressed says the same
+     thing to a screen reader). Real <button>s, so tab and Enter/Space work by default. */
+  .film-switch{display:flex;flex-wrap:wrap;gap:8px;width:100%;margin:2px 0 6px}
+  .fs-b{appearance:none;display:inline-flex;align-items:center;gap:9px;cursor:pointer;
+    border:1.5px solid #191914;border-radius:999px;background:#FFFFFF;color:#191914;
+    padding:9px 15px;font-family:'Lay',sans-serif;font-size:13.5px;line-height:1;
+    transition:transform .2s,box-shadow .2s,background .2s,color .2s}
+  .fs-b .fs-n{font-family:'GeistM',ui-monospace,monospace;font-size:10.5px;letter-spacing:.12em;color:#6E6B62}
+  .fs-b .fs-now{display:none}
+  .fs-b:hover{transform:translateY(-2px);box-shadow:3px 3px 0 #191914}
+  .fs-b.on{background:#191914;color:#FAF8F3;box-shadow:4px 4px 0 #147434}
+  .fs-b.on .fs-n{color:#28C840}
+  .fs-b.on .fs-now{display:inline-flex;align-items:center;font-family:'GeistM',ui-monospace,monospace;
+    font-size:9.5px;letter-spacing:.12em;color:#28C840;
+    border-left:1px solid rgba(250,248,243,.3);padding-left:9px}
+  .fs-b.on .fs-now::before{content:'\25b6';margin-right:5px;font-size:8px}
+  .fs-b:focus-visible{outline:2.5px solid #2F6BFF;outline-offset:2px}
+  @media(max-width:640px){
+    .film-switch{gap:6px}
+    .fs-b{padding:8px 12px;font-size:12.5px;gap:7px}
+    .fs-b .fs-n{font-size:9.5px}
+    .fs-b.on .fs-now{font-size:8.5px;padding-left:7px}
+  }
 
   /* ---- chapter rig ----
      The chapters are an ordinary vertical list at their natural height, in normal
@@ -512,12 +539,12 @@ document.addEventListener('DOMContentLoaded', function(){
 </h1> </div>
 <p class="c-1uv5ie e-paragraph-base" data-e-type="widget" data-id="e0000g" data-interaction-id="e0000g"><strong>Bouw Elementor-sites met je eigen AI-agents.</strong> Je agent kan nu al Elementor-pagina's schrijven — blind, in duizenden regels rauwe JSON. Daarom zien ze eruit als agent-werk. Ultra geeft agents getypeerde componenten, hot reload en automatische pass/fail-checks bij elke save. Mooie pagina's krijg je vanzelf zodra agents kunnen zien wat ze doen.</p>
 <div class="elementor-element elementor-element-e0000h e-con e-atomic-element e-flexbox-base c-1y9sgi" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000h" data-interaction-id="e0000h" id="cta-row">
-<div class="elementor-element elementor-element-e0000i e-con e-atomic-element e-flexbox-base c-aq0e13" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000i" data-interaction-id="e0000i">
+<div class="elementor-element elementor-element-e0000i e-con e-atomic-element e-flexbox-base c-14izo5" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000i" data-interaction-id="e0000i">
 <p class="c-7215m7 e-paragraph-base" data-e-type="widget" data-id="e0000j" data-interaction-id="e0000j"><a class="e-paragraph-link-base" href="#proof" target="_self">
 		Kijk hoe een agent bouwt — 1:38
 	</a></p>
 </div>
-<div class="elementor-element elementor-element-e0000k e-con e-atomic-element e-flexbox-base c-1nc2by" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000k" data-interaction-id="e0000k">
+<div class="elementor-element elementor-element-e0000k e-con e-atomic-element e-flexbox-base c-1csgw5" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0000k" data-interaction-id="e0000k">
 <p class="c-194b22 e-paragraph-base" data-e-type="widget" data-id="e0000l" data-interaction-id="e0000l"><a class="e-paragraph-link-base" href="#start" target="_self">
 		Opgezet met één copy-paste
 	</a></p>
@@ -538,13 +565,23 @@ document.addEventListener('DOMContentLoaded', function(){
 </div>
 <h2 class="c-pfkm0a e-heading-base" data-e-type="widget" data-id="e0000t" data-interaction-id="e0000t">Acht echte sites van het web, live nagebouwd door een agent.</h2>
 <p class="c-1tjsdz e-paragraph-base" data-e-type="widget" data-id="e0000u" data-interaction-id="e0000u">Elke film is één ongemonteerde take — dezelfde publieke copy, dezelfde assets als de originele site. Eén prompt van een mens, daarna bouwt de agent sectie voor sectie tegen een live WordPress-site, met een pass/fail-check bij elke save — en de film eindigt in de echte Elementor-editor. De timer in beeld is echte verstreken tijd: geen cuts, geen versnellingen die iets verbergen.</p>
-<p class="c-13g8rm e-paragraph-base" data-e-type="widget" data-id="e0000v" data-interaction-id="e0000v">ZEVEN HOOFDSTUKKEN, COMPLEET — HET HOOFDSTUK DAT JE NU LEEST, LICHT OP</p>
+<p class="c-13g8rm e-paragraph-base" data-e-type="widget" data-id="e0000v" data-interaction-id="e0000v">ACHT FILMS — KIES ER ÉÉN. ELK HOOFDSTUK VOLLEDIG, HET HOOFDSTUK DAT JE LEEST LICHT OP</p>
 <div class="elementor-element elementor-element-e0000w elementor-widget elementor-widget-html" data-e-type="widget" data-element_type="widget" data-id="e0000w" data-widget_type="html.default">
+<div aria-label="Kies een film" class="film-switch" id="film-switch" role="group">
+<button aria-pressed="true" class="fs-b on" data-i="0" type="button"><span aria-hidden="true" class="fs-n">01</span><span class="fs-name">Housemait</span><span class="fs-now">NU TE ZIEN</span></button>
+<button aria-pressed="false" class="fs-b" data-i="1" type="button"><span aria-hidden="true" class="fs-n">02</span><span class="fs-name">Canopy</span><span class="fs-now">NU TE ZIEN</span></button>
+<button aria-pressed="false" class="fs-b" data-i="2" type="button"><span aria-hidden="true" class="fs-n">03</span><span class="fs-name">Alike.page</span><span class="fs-now">NU TE ZIEN</span></button>
+<button aria-pressed="false" class="fs-b" data-i="3" type="button"><span aria-hidden="true" class="fs-n">04</span><span class="fs-name">Triple Kingdom</span><span class="fs-now">NU TE ZIEN</span></button>
+<button aria-pressed="false" class="fs-b" data-i="4" type="button"><span aria-hidden="true" class="fs-n">05</span><span class="fs-name">Billow</span><span class="fs-now">NU TE ZIEN</span></button>
+<button aria-pressed="false" class="fs-b" data-i="5" type="button"><span aria-hidden="true" class="fs-n">06</span><span class="fs-name">Michael Pumo</span><span class="fs-now">NU TE ZIEN</span></button>
+<button aria-pressed="false" class="fs-b" data-i="6" type="button"><span aria-hidden="true" class="fs-n">07</span><span class="fs-name">Mat.</span><span class="fs-now">NU TE ZIEN</span></button>
+<button aria-pressed="false" class="fs-b" data-i="7" type="button"><span aria-hidden="true" class="fs-n">08</span><span class="fs-name">BT—26</span><span class="fs-now">NU TE ZIEN</span></button>
+</div>
 <div class="chrig-outer" id="chrig-outer">
 <div class="chrig" id="chrig">
 <div class="chrig-stage">
 <div class="chrig-frame">
-<video aria-label="Geluidloze schermopname van een AI-agent die deze site bouwt" id="chrig-video" muted="" playsinline="" poster="https://docs.wpos.ai/images/ultra/examples/housemait-thumb.jpg" preload="metadata" src="https://docs.wpos.ai/videos/ultra/examples/housemait.mp4?v=3"></video>
+<video aria-label="Geluidloze schermopname van een AI-agent die deze site bouwt" id="chrig-video" muted="" playsinline="" poster="/wp-content/uploads/film/housemait-thumb.jpg" preload="metadata" src="/wp-content/uploads/film/housemait.mp4"></video>
 <div aria-label="Filmtijdlijn" class="chrig-rail" id="chrig-rail">
 <div class="chrig-progress" id="chrig-progress"></div>
 </div>
@@ -568,19 +605,26 @@ document.addEventListener('DOMContentLoaded', function(){
   var fullBtn=document.getElementById('chrig-full');
   var cap=document.querySelector('.chrig-cap');
   var outer=document.getElementById('chrig-outer');
-  var full=false, active=-1, F=FILMS[0], cards=[], pendingSeek=null;
-  var BASE='https://docs.wpos.ai', VQ='?v=3';
+  var full=false, active=-1, F=FILMS[0], curFilm=0, cards=[], pendingSeek=null;
+  // The films are same-origin now (they were on docs.wpos.ai, which advertises
+  // accept-ranges and then answers a Range request with 200 and the whole body — media
+  // served that way is unseekable in every browser). GitHub Pages answers 206, so the
+  // chapters can steer the film. Posters sit next to them as <slug>-thumb.jpg.
+  var FILM_BASE='/wp-content/uploads/film/';
+  function filmSrc(s){return FILM_BASE+s+'.mp4'}
+  function filmPoster(s){return FILM_BASE+s+'-thumb.jpg'}
   var calm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var onScreen=true;   // is the pinned film actually in front of the reader
   function endT(i){return i<F.ch.length-1?F.ch[i+1].s:F.end}
   // ---- can this film be seeked at all?
-  // docs.wpos.ai answers a Range request with 200 and the whole body, so the browser
-  // marks the media unseekable: v.seekable stays empty however much is buffered, and
-  // any v.currentTime = 38.9 is silently clamped. Measured 2026-08-14. Two modes:
+  // A media file is only seekable if its origin answers Range requests with 206; if it
+  // answers 200 with the whole body, v.seekable stays empty however much is buffered and
+  // any v.currentTime = 38.9 is silently clamped. Same-origin on GitHub Pages this is
+  // true, so SEEK is the normal mode — but the rig keeps measuring rather than assuming,
+  // and degrades honestly on any origin that lies:
   //   SEEK   (seekable) — the chapter the reader scrolls to drives the film.
   //   STREAM (not)      — the film plays straight through and drives the chapter list.
-  // Whichever it is, the seven chapters are readable; the mode only decides who leads.
-  // If the origin ever starts honouring Range, SEEK turns itself back on.
+  // Whichever it is, every chapter is readable; the mode only decides who leads.
   var seekOK=null;
   function probeSeek(force){
     var was=seekOK;
@@ -603,7 +647,7 @@ document.addEventListener('DOMContentLoaded', function(){
     });
     return seekOK;
   }
-  ['loadedmetadata','loadeddata','canplay','progress','durationchange'].forEach(function(ev){
+  ['loadedmetadata','loadeddata','canplay','canplaythrough','seeked','progress','durationchange'].forEach(function(ev){
     v.addEventListener(ev,probeSeek);
   });
   function mark(i){
@@ -710,21 +754,56 @@ document.addEventListener('DOMContentLoaded', function(){
     if(full){ try{if(seekOK)v.currentTime=0;var p=v.play();if(p&&p.catch)p.catch(function(){})}catch(e){} }
     else { v.pause(); if(active>=0&&seekOK){ v.currentTime=F.ch[active].s; } }
   });
+  // ---- the eight-film switcher.
+  // Eight real <button>s, written into the page as markup (not built here) so they are
+  // tab-reachable with JS off-line, and so the localizer can see their copy. Arrow keys
+  // move focus without loading anything; Enter/Space (the native button activation) is
+  // what actually swaps the film — a film is ~5 MB, so nothing loads on a keystroke.
+  var swBtns=[].slice.call(document.querySelectorAll('#film-switch .fs-b'));
+  function paintFilmState(i){
+    swBtns.forEach(function(b,j){
+      b.classList.toggle('on',j===i);
+      b.setAttribute('aria-pressed',j===i?'true':'false');
+    });
+    document.querySelectorAll('#chip-row>div').forEach(function(c,j){c.classList.toggle('film-on',j===i)});
+  }
+  // the film must be on screen for a switch to mean anything, but a control that yanks
+  // the page when the film is already visible is worse than one that does nothing.
+  function ensureFilmVisible(){
+    var st=document.querySelector('.chrig-stage'); if(!st)return;
+    var r=st.getBoundingClientRect();
+    if(r.top>=0&&r.bottom<=window.innerHeight)return;                 // fully visible
+    if(r.top>-r.height*0.25&&r.top<window.innerHeight*0.6)return;     // near enough
+    outer.scrollIntoView({behavior:calm?'auto':'smooth',block:'start'});
+  }
   function switchFilm(i){
+    if(i<0||i>=FILMS.length)return;
+    curFilm=i; paintFilmState(i);
     if(FILMS[i]===F)return;
     F=FILMS[i]; active=-1; full=false; v.controls=false;
     fullBtn.textContent='▶ WATCH FULL FILM';
     v.pause();
-    v.poster=BASE+'/images/ultra/examples/'+F.slug+'-thumb.jpg';
-    v.src=BASE+'/videos/ultra/examples/'+F.slug+'.mp4'+VQ;
-    buildFilm();
-    var chips=document.querySelectorAll('#chip-row>div');
-    chips.forEach(function(c,j){c.classList.toggle('film-on',j===i)});
+    v.poster=filmPoster(F.slug);
+    v.src=filmSrc(F.slug);
+    prog.style.width='0%';
+    buildFilm();                 // new chapter cards, new ticks, new caption
     pendingSeek=F.ch[0].s; wantPlay=!calm;
-    // the chips sit below the rig — bring the film back into view, once, on request
-    outer.scrollIntoView({behavior:calm?'auto':'smooth',block:'start'});
+    ensureFilmVisible();
   }
-  // chips → film switcher (docs link preserved as a small corner arrow)
+  swBtns.forEach(function(b,i){
+    b.addEventListener('click',function(){switchFilm(i)});
+    b.addEventListener('keydown',function(e){
+      var n=null, L=swBtns.length;
+      if(e.key==='ArrowRight'||e.key==='ArrowDown')n=(i+1)%L;
+      else if(e.key==='ArrowLeft'||e.key==='ArrowUp')n=(i-1+L)%L;
+      else if(e.key==='Home')n=0;
+      else if(e.key==='End')n=L-1;
+      if(n===null)return;
+      e.preventDefault(); swBtns[n].focus();
+    });
+  });
+  // the eight palette chips below the rig are a second way in to the same eight films
+  // (docs link preserved as a small corner arrow)
   function wireChips(){
   var chips=document.querySelectorAll('#chip-row>div');
   chips.forEach(function(c,i){
@@ -746,8 +825,8 @@ document.addEventListener('DOMContentLoaded', function(){
       nameEl.setAttribute('aria-label','Load the '+FILMS[i].name+' film');
       nameEl.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();switchFilm(i)}});
     }
-    if(i===0)c.classList.add('film-on');
   });
+  paintFilmState(curFilm);
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',wireChips);
   else wireChips();
@@ -924,12 +1003,12 @@ document.addEventListener('DOMContentLoaded', function(){
 </div>
 </div>
 <div class="elementor-element elementor-element-e00038 e-con e-atomic-element e-flexbox-base c-1y9sgi" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00038" data-interaction-id="e00038" id="cta-fifty">
-<div class="elementor-element elementor-element-e00039 e-con e-atomic-element e-flexbox-base c-aq0e13" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00039" data-interaction-id="e00039">
+<div class="elementor-element elementor-element-e00039 e-con e-atomic-element e-flexbox-base c-14izo5" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00039" data-interaction-id="e00039">
 <p class="c-7215m7 e-paragraph-base" data-e-type="widget" data-id="e0003a" data-interaction-id="e0003a"><a class="e-paragraph-link-base" href="/showcase/" target="_self">
 		Open de showcase — alle 50
 	</a></p>
 </div>
-<div class="elementor-element elementor-element-e0003b e-con e-atomic-element e-flexbox-base c-1nc2by" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003b" data-interaction-id="e0003b">
+<div class="elementor-element elementor-element-e0003b e-con e-atomic-element e-flexbox-base c-1csgw5" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0003b" data-interaction-id="e0003b">
 <p class="c-194b22 e-paragraph-base" data-e-type="widget" data-id="e0003c" data-interaction-id="e0003c"><a class="e-paragraph-link-base" href="/showcase/runtime-conf/" target="_self">
 		Lees de beste
 	</a></p>
@@ -1276,10 +1355,10 @@ document.addEventListener('DOMContentLoaded', function(){
 <h2 class="c-pfkm0a e-heading-base" data-e-type="widget" data-id="e0004m" data-interaction-id="e0004m">Vijf onderdelen. Gebruik ze alle vijf, of één.</h2>
 <div class="elementor-element elementor-element-e0004n e-con e-atomic-element e-flexbox-base c-1bj3gs" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004n" data-interaction-id="e0004n">
 <div class="elementor-element elementor-element-e0004o e-con e-atomic-element e-flexbox-base c-v9vh1x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004o" data-interaction-id="e0004o">
-<div class="elementor-element elementor-element-e0004p e-con e-atomic-element e-flexbox-base c-t5ltjh" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004p" data-interaction-id="e0004p">
+<div class="elementor-element elementor-element-e0004p e-con e-atomic-element e-flexbox-base c-16pz5m" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004p" data-interaction-id="e0004p">
 <p class="c-mqpbg7 e-paragraph-base" data-e-type="widget" data-id="e0004q" data-interaction-id="e0004q">01</p>
 </div>
-<div class="elementor-element elementor-element-e0004r e-con e-atomic-element e-flexbox-base c-l1llb1" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004r" data-interaction-id="e0004r">
+<div class="elementor-element elementor-element-e0004r e-con e-atomic-element e-flexbox-base c-1ekvga" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004r" data-interaction-id="e0004r">
 <p class="c-1v1fb1 e-paragraph-base" data-e-type="widget" data-id="e0004s" data-interaction-id="e0004s">COMPILER + CLI</p>
 </div>
 <div class="elementor-element elementor-element-e0004t e-con e-atomic-element e-flexbox-base c-gnkm40" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004t" data-interaction-id="e0004t">
@@ -1288,10 +1367,10 @@ document.addEventListener('DOMContentLoaded', function(){
 </div>
 </div>
 <div class="elementor-element elementor-element-e0004w e-con e-atomic-element e-flexbox-base c-v9vh1x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004w" data-interaction-id="e0004w">
-<div class="elementor-element elementor-element-e0004x e-con e-atomic-element e-flexbox-base c-t5ltjh" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004x" data-interaction-id="e0004x">
+<div class="elementor-element elementor-element-e0004x e-con e-atomic-element e-flexbox-base c-16pz5m" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004x" data-interaction-id="e0004x">
 <p class="c-mqpbg7 e-paragraph-base" data-e-type="widget" data-id="e0004y" data-interaction-id="e0004y">02</p>
 </div>
-<div class="elementor-element elementor-element-e0004z e-con e-atomic-element e-flexbox-base c-l1llb1" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004z" data-interaction-id="e0004z">
+<div class="elementor-element elementor-element-e0004z e-con e-atomic-element e-flexbox-base c-1ekvga" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0004z" data-interaction-id="e0004z">
 <p class="c-1v1fb1 e-paragraph-base" data-e-type="widget" data-id="e00050" data-interaction-id="e00050">MCP-SERVER</p>
 </div>
 <div class="elementor-element elementor-element-e00051 e-con e-atomic-element e-flexbox-base c-gnkm40" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00051" data-interaction-id="e00051">
@@ -1300,10 +1379,10 @@ document.addEventListener('DOMContentLoaded', function(){
 </div>
 </div>
 <div class="elementor-element elementor-element-e00054 e-con e-atomic-element e-flexbox-base c-v9vh1x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00054" data-interaction-id="e00054">
-<div class="elementor-element elementor-element-e00055 e-con e-atomic-element e-flexbox-base c-t5ltjh" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00055" data-interaction-id="e00055">
+<div class="elementor-element elementor-element-e00055 e-con e-atomic-element e-flexbox-base c-16pz5m" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00055" data-interaction-id="e00055">
 <p class="c-mqpbg7 e-paragraph-base" data-e-type="widget" data-id="e00056" data-interaction-id="e00056">03</p>
 </div>
-<div class="elementor-element elementor-element-e00057 e-con e-atomic-element e-flexbox-base c-l1llb1" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00057" data-interaction-id="e00057">
+<div class="elementor-element elementor-element-e00057 e-con e-atomic-element e-flexbox-base c-1ekvga" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00057" data-interaction-id="e00057">
 <p class="c-1v1fb1 e-paragraph-base" data-e-type="widget" data-id="e00058" data-interaction-id="e00058">COMPANION-PLUGIN</p>
 </div>
 <div class="elementor-element elementor-element-e00059 e-con e-atomic-element e-flexbox-base c-gnkm40" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e00059" data-interaction-id="e00059">
@@ -1312,10 +1391,10 @@ document.addEventListener('DOMContentLoaded', function(){
 </div>
 </div>
 <div class="elementor-element elementor-element-e0005c e-con e-atomic-element e-flexbox-base c-v9vh1x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0005c" data-interaction-id="e0005c">
-<div class="elementor-element elementor-element-e0005d e-con e-atomic-element e-flexbox-base c-t5ltjh" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0005d" data-interaction-id="e0005d">
+<div class="elementor-element elementor-element-e0005d e-con e-atomic-element e-flexbox-base c-16pz5m" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0005d" data-interaction-id="e0005d">
 <p class="c-mqpbg7 e-paragraph-base" data-e-type="widget" data-id="e0005e" data-interaction-id="e0005e">04</p>
 </div>
-<div class="elementor-element elementor-element-e0005f e-con e-atomic-element e-flexbox-base c-l1llb1" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0005f" data-interaction-id="e0005f">
+<div class="elementor-element elementor-element-e0005f e-con e-atomic-element e-flexbox-base c-1ekvga" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0005f" data-interaction-id="e0005f">
 <p class="c-1v1fb1 e-paragraph-base" data-e-type="widget" data-id="e0005g" data-interaction-id="e0005g">VERIFY STUDIO</p>
 </div>
 <div class="elementor-element elementor-element-e0005h e-con e-atomic-element e-flexbox-base c-gnkm40" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0005h" data-interaction-id="e0005h">
@@ -1324,10 +1403,10 @@ document.addEventListener('DOMContentLoaded', function(){
 </div>
 </div>
 <div class="elementor-element elementor-element-e0005k e-con e-atomic-element e-flexbox-base c-v9vh1x" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0005k" data-interaction-id="e0005k">
-<div class="elementor-element elementor-element-e0005l e-con e-atomic-element e-flexbox-base c-t5ltjh" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0005l" data-interaction-id="e0005l">
+<div class="elementor-element elementor-element-e0005l e-con e-atomic-element e-flexbox-base c-16pz5m" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0005l" data-interaction-id="e0005l">
 <p class="c-mqpbg7 e-paragraph-base" data-e-type="widget" data-id="e0005m" data-interaction-id="e0005m">05</p>
 </div>
-<div class="elementor-element elementor-element-e0005n e-con e-atomic-element e-flexbox-base c-l1llb1" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0005n" data-interaction-id="e0005n">
+<div class="elementor-element elementor-element-e0005n e-con e-atomic-element e-flexbox-base c-1ekvga" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0005n" data-interaction-id="e0005n">
 <p class="c-1v1fb1 e-paragraph-base" data-e-type="widget" data-id="e0005o" data-interaction-id="e0005o">LOKALE WORDPRESS</p>
 </div>
 <div class="elementor-element elementor-element-e0005p e-con e-atomic-element e-flexbox-base c-gnkm40" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0005p" data-interaction-id="e0005p">
@@ -1429,12 +1508,12 @@ exactly, step by step. Work autonomously and verify each step.</pre>
 <section class="elementor-element elementor-element-e0006i e-con e-atomic-element e-flexbox-base c-tcyaew" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0006i" data-interaction-id="e0006i" id="colophon">
 <h2 class="c-1dkt28 e-heading-base" data-e-type="widget" data-id="e0006j" data-interaction-id="e0006j">Je agent kan de volgende bouwen.</h2>
 <div class="elementor-element elementor-element-e0006k e-con e-atomic-element e-flexbox-base c-1y9sgi" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0006k" data-interaction-id="e0006k" id="cta-close">
-<div class="elementor-element elementor-element-e0006l e-con e-atomic-element e-flexbox-base c-aq0e13" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0006l" data-interaction-id="e0006l">
+<div class="elementor-element elementor-element-e0006l e-con e-atomic-element e-flexbox-base c-14izo5" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0006l" data-interaction-id="e0006l">
 <p class="c-7215m7 e-paragraph-base" data-e-type="widget" data-id="e0006m" data-interaction-id="e0006m"><a class="e-paragraph-link-base" href="#start" target="_self">
 		Installeer met één copy-paste — gratis
 	</a></p>
 </div>
-<div class="elementor-element elementor-element-e0006n e-con e-atomic-element e-flexbox-base c-1nc2by" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0006n" data-interaction-id="e0006n">
+<div class="elementor-element elementor-element-e0006n e-con e-atomic-element e-flexbox-base c-1csgw5" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e0006n" data-interaction-id="e0006n">
 <p class="c-194b22 e-paragraph-base" data-e-type="widget" data-id="e0006o" data-interaction-id="e0006o"><a class="e-paragraph-link-base" href="https://github.com/Algorismus-io/elementor-jsx" target="_self">
 		★ Geef een ster op GitHub
 	</a></p>
@@ -1605,7 +1684,7 @@ HUMAN? ...... there is a prettier version of this page.
 <script id="elementor-frontend-modules-js" src="/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=4.2.1"></script>
 <script id="jquery-ui-core-js" src="/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3"></script>
 <script id="elementor-frontend-js-before">
-var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnX":"Share on X","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"4.2.1","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_optimized_markup":true,"e_panel_promotions":true,"theme_builder_v2":true,"e_pro_free_trial_popup":true,"nested-elements":true,"e_atomic_elements":true,"atomic_widgets_should_enforce_capabilities":true,"editor_mcp":true,"e_bc_migrations":true,"e_classes":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"e_variables_manager":true,"e_opt_in_v4_page":true,"e_opt_in_v4":true,"e_components":true,"e_interactions":true,"e_widget_creation":true,"import-export-customization":true,"e_pro_atomic_form":true,"mega-menu":true,"e_pro_variables":true,"e_pro_interactions":true},"urls":{"assets":"http:\/\/127.0.0.1:8947\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"http:\/\/127.0.0.1:8947\/wp-admin\/admin-ajax.php","uploadUrl":"http:\/\/127.0.0.1:8947\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"a7b0c492e3","atomicFormsSendForm":"0045d5964e"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":7,"title":"exjsx%20%E2%80%94%20Build%20Elementor%20sites%20with%20AI%20agents%20%28Claude%20Code%2C%20Cursor%2C%20MCP%29","excerpt":"","featuredImage":false}};
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnX":"Share on X","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"4.2.1","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_optimized_markup":true,"e_panel_promotions":true,"theme_builder_v2":true,"e_pro_free_trial_popup":true,"nested-elements":true,"e_atomic_elements":true,"atomic_widgets_should_enforce_capabilities":true,"editor_mcp":true,"e_bc_migrations":true,"e_classes":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"e_variables_manager":true,"e_opt_in_v4_page":true,"e_opt_in_v4":true,"e_components":true,"e_interactions":true,"e_widget_creation":true,"import-export-customization":true,"e_pro_atomic_form":true,"mega-menu":true,"e_pro_variables":true,"e_pro_interactions":true},"urls":{"assets":"http:\/\/127.0.0.1:8947\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"http:\/\/127.0.0.1:8947\/wp-admin\/admin-ajax.php","uploadUrl":"http:\/\/127.0.0.1:8947\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"3d8f1d2f50","atomicFormsSendForm":"8003cbbc1e"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":7,"title":"exjsx%20%E2%80%94%20Build%20Elementor%20sites%20with%20AI%20agents%20%28Claude%20Code%2C%20Cursor%2C%20MCP%29","excerpt":"","featuredImage":false}};
 //# sourceURL=elementor-frontend-js-before
 </script>
 <script id="elementor-frontend-js" src="/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=4.2.1"></script>
@@ -1617,7 +1696,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 //# sourceURL=wp-i18n-js-after
 </script>
 <script id="elementor-pro-frontend-js-before">
-var ElementorProFrontendConfig = {"ajaxurl":"http:\/\/127.0.0.1:8947\/wp-admin\/admin-ajax.php","nonce":"04df921d30","urls":{"assets":"http:\/\/127.0.0.1:8947\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"http:\/\/127.0.0.1:8947\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":false},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"http:\/\/127.0.0.1:8947\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+var ElementorProFrontendConfig = {"ajaxurl":"http:\/\/127.0.0.1:8947\/wp-admin\/admin-ajax.php","nonce":"b23eeac1a3","urls":{"assets":"http:\/\/127.0.0.1:8947\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"http:\/\/127.0.0.1:8947\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":false},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"http:\/\/127.0.0.1:8947\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
 //# sourceURL=elementor-pro-frontend-js-before
 </script>
 <script id="elementor-pro-frontend-js" src="/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=4.1.0"></script>
